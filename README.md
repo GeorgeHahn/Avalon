@@ -20,10 +20,6 @@ COMING SOON:
 
   Kicad Schematic and Board files
   
-  Parts list with prices
-  
-  Data sheets and reference materials
-  
   MPLAB-X Project and source files
   
   
