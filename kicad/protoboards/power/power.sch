@@ -1,5 +1,5 @@
-EESchema Schematic File Version 2  date Wed 08 May 2013 10:32:12 AM ICT
-LIBS:asic-v1_-cache
+EESchema Schematic File Version 2  date Thu 09 May 2013 08:25:29 AM ICT
+LIBS:k16
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -37,7 +37,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "power.sch"
-Date "6 may 2013"
+Date "9 may 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -716,22 +716,16 @@ Connection ~ 9417 4527
 Connection ~ 9321 4527
 Connection ~ 9225 4527
 Wire Wire Line
-	7561 4815 8233 4815
-Wire Wire Line
-	7913 4847 7913 4815
+	7913 4815 7913 4847
 Wire Wire Line
 	7561 4207 7561 4879
 Wire Wire Line
 	7625 4719 7625 4815
 Wire Wire Line
 	7561 4879 7465 4879
-Wire Wire Line
-	8233 4815 8233 4879
 Connection ~ 7913 4815
 Connection ~ 7625 4815
 Connection ~ 7561 4815
-Connection ~ 7945 4815
-Connection ~ 8233 4815
 Wire Wire Line
 	8361 5807 8362 5712
 Wire Wire Line
@@ -953,8 +947,6 @@ Text Label 8169 5807 2    20   ~ 0
 GND
 Text Label 9482 5907 2    20   ~ 0
 GND
-Text Label 8233 4879 0    20   ~ 0
-GND
 Text Label 7475 5894 2    20   ~ 0
 GND
 Text Label 9577 4623 0    20   ~ 0
@@ -962,7 +954,7 @@ GND
 Text Label 8937 3919 0    20   ~ 0
 GND
 Text Label 8777 4847 2    20   ~ 0
-GND
+AGND
 $Comp
 L VDD1 #VDD0101
 U 1 1 5180D692
@@ -981,7 +973,13 @@ VCC
 Text Label 7465 4463 0    20   ~ 0
 GND
 Text Label 8489 4463 0    20   ~ 0
-GND
+AGND
 Text Label 8042 3855 0    20   ~ 0
 GND
+Wire Wire Line
+	7561 4815 7945 4815
+Wire Wire Line
+	8233 4815 8233 4879
+Text Label 7913 4847 0    22   ~ 0
+AGND
 $EndSCHEMATC
