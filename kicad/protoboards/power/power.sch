@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Thu 09 May 2013 11:06:29 AM ICT
+EESchema Schematic File Version 2  date Thu 09 May 2013 01:02:52 PM ICT
 LIBS:k16
 LIBS:power
 LIBS:device
