@@ -1,4 +1,4 @@
-PCBNEW-BOARD Version 2 date Thu 09 May 2013 12:10:19 PM ICT
+PCBNEW-BOARD Version 2 date Thu 09 May 2013 11:15:04 PM ICT
 
 # Created by Pcbnew(2013-mar-13)-testing
 
@@ -34,7 +34,7 @@ $SETUP
 Layers 2
 Layer[0] B.Cu power
 Layer[15] F.Cu power
-TrackWidth 0.3
+TrackWidth 0.254
 TrackWidthList 0.2
 TrackWidthList 0.3
 TrackWidthList 0.5
@@ -69,7 +69,7 @@ Pad2MaskClearance 0.2
 SolderMaskMinWidth 0
 AuxiliaryAxisOrg 98.5 55
 VisibleElements 7FFFDF1F
-PcbPlotParams (pcbplotparams (layerselection 300449799) (usegerberextensions false) (excludeedgelayer true) (linewidth 100000) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 2) (psnegative false) (psa4output false) (plotreference false) (plotvalue false) (plotothertext false) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk false) (outputformat 1) (mirror false) (drillshape 0) (scaleselection 1) (outputdirectory plots/))
+PcbPlotParams (pcbplotparams (layerselection 300449793) (usegerberextensions false) (excludeedgelayer true) (linewidth 100000) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 2) (psnegative false) (psa4output false) (plotreference false) (plotvalue false) (plotothertext false) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk false) (outputformat 1) (mirror false) (drillshape 0) (scaleselection 1) (outputdirectory plots/))
 $EndSETUP
 
 $EQUIPOT
@@ -2136,24 +2136,24 @@ Po 0.94996 0
 $EndPAD
 $EndMODULE C0805
 $MODULE GND2AGND
-Po 156.95 119.6 -0 0 518B2E7D 518B8414 ~~
+Po 156.95 119.6 0 0 518BCB70 518B8414 ~~
 Li GND2AGND
 Sc 518B8414
 AR 
 Op 0 0 0
-T0 0.2 2.425 1.5 1.5 -0 0.15 M V 20 N "GND2AGND"
-T1 0.35 -1.825 1.5 1.5 -0 0.15 M V 20 N "VAL**"
+T0 0.2 2.425 1.5 1.5 0 0.15 M V 20 N "GND2AGND"
+T1 0.35 -1.825 1.5 1.5 0 0.15 M V 20 N "VAL**"
 $PAD
 Sh "1" R 0.5 0.5 0 0 0
 Dr 0 0 0
-At SMD N 00440001
+At SMD N 00000001
 Ne 2 "/AGND"
 Po 0 0.575
 $EndPAD
 $PAD
 Sh "2" R 0.5 0.5 0 0 0
 Dr 0 0 0
-At SMD N 00440001
+At SMD N 00000001
 Ne 3 "/GND"
 Po 0 0.075
 $EndPAD
@@ -2202,7 +2202,7 @@ De 0 0 1 518B0605 0
 Po 0 160.35 121 158.1 118.75 0.3 -1
 De 0 0 1 518B0604 0
 Po 0 156.90164 120.7715 156.90164 120.44836 0.3 -1
-De 15 0 2 0 400000
+De 15 0 2 0 0
 Po 3 156.95 120.4 156.95 120.4 0.5 0.3
 De 15 1 2 0 0
 Po 0 156.90164 120.44836 156.95 120.4 0.3 -1
@@ -2214,7 +2214,7 @@ De 15 0 2 518B843F 0
 Po 3 156.9 121.2 156.9 121.2 0.5 0.3
 De 15 1 2 0 0
 Po 0 156.90164 120.7715 157.3785 120.7715 0.3 -1
-De 15 0 2 0 400000
+De 15 0 2 0 0
 Po 3 157.75 120.4 157.75 120.4 0.5 0.3
 De 15 1 2 0 0
 Po 0 157.3785 120.7715 157.75 120.4 0.3 -1
@@ -2232,7 +2232,7 @@ De 15 1 2 0 0
 Po 0 157.4 120.75 157.75 121.2 0.3 -1
 De 0 0 2 518B8435 0
 Po 0 156.90164 120.7715 156.2785 120.7715 0.3 -1
-De 15 0 2 0 400000
+De 15 0 2 0 0
 Po 3 155.95 121.2 155.95 121.2 0.5 0.3
 De 15 1 2 0 0
 Po 0 156.2785 120.7715 155.95 121.2 0.3 -1
