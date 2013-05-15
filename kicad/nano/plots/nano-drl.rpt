@@ -1,12 +1,11 @@
-Drill report for /home/chris/Dev/klondike/kicad/k16/k16.brd
-Created on Wed 15 May 2013 10:34:48 PM ICT
+Drill report for /home/chris/Dev/klondike/kicad/nano/nano.brd
+Created on Wed 15 May 2013 11:43:29 PM ICT
 Drill report for plated through holes :
-T1  0.30mm  0.012"  (978 holes)
-T2  0.35mm  0.014"  (4 holes)
-T3  1.40mm  0.055"  (6 holes)
-T4  3.00mm  0.118"  (8 holes)
+T1  0.30mm  0.012"  (70 holes)
+T2  0.50mm  0.020"  (2 holes)
+T3  1.02mm  0.040"  (3 holes)
 
-Total plated holes count 996
+Total plated holes count 75
 
 
 Drill report for buried and blind vias :
@@ -27,8 +26,7 @@ Total plated holes count 0
 
 
 Drill report for unplated through holes :
-T1  0.90mm  0.035"  (2 holes)
 
-Total unplated holes count 2
+Total unplated holes count 0
 
 
