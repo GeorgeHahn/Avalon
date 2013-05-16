@@ -1,5 +1,5 @@
 M48
-;DRILL file {Pcbnew (2013-mar-13)-testing} date Wed 15 May 2013 10:34:44 PM ICT
+;DRILL file {Pcbnew (2013-mar-13)-testing} date Thu 16 May 2013 04:33:28 PM ICT
 ;FORMAT={-:-/ absolute / inch / decimal}
 FMAT,2
 INCH,TZ
@@ -686,6 +686,7 @@ X6.7421Y-5.1437
 X6.7421Y-5.7303
 X6.752Y-2.4488
 X6.7646Y-3.5626
+X6.7756Y-5.185
 X6.7776Y-4.6142
 X6.7795Y-4.8366
 X6.7795Y-4.8799
