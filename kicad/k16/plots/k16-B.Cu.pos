@@ -1,0 +1,8 @@
+### Module positions - created on Sat 18 May 2013 09:41:35 AM ICT ###
+### Printed by Pcbnew version pcbnew (2013-mar-13)-testing
+## Unit = inches, Angle = deg.
+## Side : F.Cu
+# Ref    Val                  Package         PosX       PosY        Rot     Side
+GND2AGND VAL**            GND2AGND            2.0886    -1.3130       0.0    B.Cu
+GND2AGND VAL**            GND2AGND            1.8543    -2.6102       0.0    B.Cu
+## End
