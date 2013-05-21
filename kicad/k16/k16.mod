@@ -1,4 +1,4 @@
-PCBNEW-LibModule-V1  Sun 19 May 2013 07:09:29 PM ICT
+PCBNEW-LibModule-V1  Tue 21 May 2013 09:13:05 AM ICT
 # encoding utf-8
 Units mm
 $INDEX
@@ -9,6 +9,7 @@ C0603
 CB3OSC
 FIDICUAL
 GND2AGND
+Hole4mm
 KL-CONN
 MINIBUSB
 PCIEPWR
@@ -285,6 +286,25 @@ Ne 2 "GND"
 Po 0 -0.075
 $EndPAD
 $EndMODULE GND2AGND
+$MODULE Hole4mm
+Po 0 0 0 15 519AD82D 00000000 ~~
+Li Hole4mm
+Cd module 1 pin (ou trou mecanique de percage)
+Kw DEV
+Sc 0
+AR 1pin
+Op 0 0 0
+T0 0 -3.048 1.016 1.016 0 0.254 N I 21 N "Hole4mm"
+T1 0 2.794 1.016 1.016 0 0.254 N I 21 N "P***"
+DC 0 0 0 -2.786 0.381 21
+$PAD
+Sh "1" C 5 5 0 0 0
+Dr 4 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 0 0
+$EndPAD
+$EndMODULE Hole4mm
 $MODULE KL-CONN
 Po 0 0 0 15 5188819B 00000000 ~~
 Li KL-CONN
