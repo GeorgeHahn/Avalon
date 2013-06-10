@@ -3,7 +3,7 @@
 import sys, serial
 from struct import *
 
-workid = 0
+workid = addr = 0
 midstate = "6969696969696969696969696969696969696969696969696969696969696969"
 merkle = "696969696969696969696969"
 
@@ -16,12 +16,12 @@ def kopen(dev='/dev/Klondike'):
 		sys.exit(1)
 
 def sendcmd(cmd, data=""):
-	global ser
+	global ser, addr
 	try:
-		ser.write(cmd+"\0"+data)
+		ser.write(cmd + chr(addr) + data)
 	except serial.SerialException, e:
 		ser = kopen()
-		ser.write(cmd+"\0"+data)
+		ser.write(cmd + chr(addr) + data)
 	data = ser.read(16)
 	if cmd in 'WASED':
 		print "State:%c, ASICs:%u, Slaves:%u, WorkQ:%u, Current WorkID:%x, Temp:%u, Fan:%u, HashCount:%u, ErrCount:%u" % unpack("=cBBBBBBHH", data[2:])
@@ -39,12 +39,19 @@ if __name__ == '__main__':
 	sendcmd('I')
 
 	while True: 
-		cmd = raw_input("Cmds [WAISCE Q]: ").upper()
+		cmd = raw_input("Cmds [WAISCE.Q]: ").upper()
 		if cmd == "":
 			continue
 		data = ""
 		if cmd == 'Q':
 			break
+		elif cmd =='.':
+			addr = raw_input("Target Address: ")
+			if addr == "":
+				addr = 0
+			addr = int(addr)
+			print "Address changed to ", addr
+			continue
 		elif cmd == 'C':
 			clk = raw_input("Clock (or blank for query only): ")
 			if clk != "":
@@ -55,7 +62,7 @@ if __name__ == '__main__':
 			else:
 				data = chr(0)
 		elif cmd == 'E':
-			data = raw_input("1 or 0: ")
+			data = raw_input("1 (enable) or 0 (disable): ")
 		elif cmd in 'WA':
 			workid = (workid+1) % 256
 			data = chr(workid) + midstate.decode('hex') + merkle.decode('hex')
