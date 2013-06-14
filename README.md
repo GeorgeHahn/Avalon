@@ -1,11 +1,15 @@
 klondike
 ========
 
-Bitcoin ASIC mining board project
+Bitcoin ASIC Miner Project
 
 WARNING:
 
   This project is incomplete and in progress. There may be errors, mistakes, incomplete portions at this time. Do NOT use these project files to order circuit boards until they have been finished and confirmed to work.
+  
+  See LICENSE and COPYING files for terms and warranty disclaimer.
+  
+  See RELEASE notes for known problems, and issues.
   
 SUMMARY:
 
@@ -16,12 +20,22 @@ SUMMARY:
   
 STATUS:
 
-  The PCB routing is currently done and I'm making small changes to tidy up, improve and double check the design while waiting on the Avalon communication protocol docs. After they come out I'll finalize any changes and order first prototype boards. During the waiting period for boards to arrive I'll be coding / debugging the firmware and hope to have something workable to program into a test board when it arrives.
+  This project is under active development. Some circuit boards have been ordered and/or arrived for testing.
+  Some prototyping has been completed to verify some aspects of the design and develop firmware.
+  Firmware has been developed and now released under the terms of the GPLv3 license.
   
-COMING SOME DAY:
+TODO:
+  More hardware testing  including ASIC communication, chaining and overall board operation.
+  Testing and debugging I2C chaining firmware.
+  Creating firmware confiurations for K1 and K64 that optimize code.
+  Combined USB/I2C bootloader firmware.
+  Write cgminer driver and support for other host miner software.
+  Integrate cgminer into the repository properly for ARM cross compiling as right now it's not a proper fork.
+  Testing cgminer with driver on a Raspberry Pi for a low-cost, low-power platform.
+  Testing with a TL-WR703N router containing purpose built OpenWrt firmware.
+  Stress testing and reliability under over-clocking situations.
+  
+  
 
-  Kicad Schematic and Board files
-  
-  MPLAB-X Project and source files
   
   
