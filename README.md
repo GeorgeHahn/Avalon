@@ -33,6 +33,8 @@ TODO:
   Creating firmware configurations for K1 and K64 that optimize code.
 
   Combined USB / I2C bootloader firmware.
+  
+  Set up HEXMATE scripting to insert serial# for supporting I2C arbitration.
 
   Write cgminer driver and support for other host miner software.
 
