@@ -25,14 +25,23 @@ STATUS:
   Firmware has been developed and now released under the terms of the GPLv3 license.
   
 TODO:
+
   More hardware testing  including ASIC communication, chaining and overall board operation.
+
   Testing and debugging I2C chaining firmware.
+
   Creating firmware confiurations for K1 and K64 that optimize code.
+
   Combined USB/I2C bootloader firmware.
+
   Write cgminer driver and support for other host miner software.
+
   Integrate cgminer into the repository properly for ARM cross compiling as right now it's not a proper fork.
+
   Testing cgminer with driver on a Raspberry Pi for a low-cost, low-power platform.
+
   Testing with a TL-WR703N router containing purpose built OpenWrt firmware.
+
   Stress testing and reliability under over-clocking situations.
   
   
