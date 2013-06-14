@@ -30,19 +30,19 @@ TODO:
 
   Testing and debugging I2C chaining firmware.
 
-  Creating firmware confiurations for K1 and K64 that optimize code.
+  Creating firmware configurations for K1 and K64 that optimize code.
 
-  Combined USB/I2C bootloader firmware.
+  Combined USB / I2C bootloader firmware.
 
   Write cgminer driver and support for other host miner software.
 
-  Integrate cgminer into the repository properly for ARM cross compiling as right now it's not a proper fork.
+  Integrate cgminer into the repository properly for ARM cross compiling as right now it's not forked.
 
   Testing cgminer with driver on a Raspberry Pi for a low-cost, low-power platform.
 
   Testing with a TL-WR703N router containing purpose built OpenWrt firmware.
 
-  Stress testing and reliability under over-clocking situations.
+  Stress testing and reliability in over-clocking situations.
   
   
 
