@@ -31,6 +31,7 @@ for line in sys.stdin:
 	# so merkle should be last 4 bytes of merkleroot plus time and gbt
 	data = data[-1].decode('hex')
 	minedata = data[64:76].encode('hex')
+	nonce = data[76:80].encode('hex')
 	
 	# midstate is 32 bytes calc'd from data
 	sha = sha256.SHA256()
@@ -40,7 +41,9 @@ for line in sys.stdin:
 	
 	print "midstate = \"%s\"" % midstate
 	print "merkle = \"%s\"" % minedata
+	print "nonce = \"%s\"" % nonce
 	print
+	print "#define GOOD_NONCE          0x%s" % nonce
 	print "#define GOOD_MIDSTATE       { 0x%s,0x%s,0x%s,0x%s,0x%s,0x%s,0x%s,0x%s }" % (midstate[0:8],midstate[8:16],midstate[16:24],midstate[24:32],midstate[32:40],midstate[40:48],midstate[48:56],midstate[56:])
 	print "#define GOOD_DATA           { 0x%s,0x%s,0x%s }" % (minedata[0:8],minedata[8:16],minedata[16:])
 	print

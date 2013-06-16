@@ -49,9 +49,9 @@ extern "C" {
 // number of hashes to delay results while test work pushed
 // eg. 390uS push time / 282 MHz = 109980
 #define DETECT_DELAY_COUNT  109980
-#define GOOD_NONCE          0x80000000
-#define GOOD_MIDSTATE       { 0x69,0x69,0x69,0x69,0x69,0x69,0x69,0x69 }
-#define GOOD_DATA           { 0x69,0x69,0x69 }
+#define GOOD_NONCE          0xe3d69bc9
+#define GOOD_MIDSTATE       { 0x5fddb5bc,0x00bdafd2,0x144684c7,0x19c68fa2,0x27d0a8e3,0x34ad84b2,0xa92c66be,0x3e99a4fd }
+#define GOOD_DATA           { 0xf64684bb,0x51bc1508,0x1a011337 }
 
 // for controlling how bits are adjusted per bank
 #define DATA_ZERO   0x48

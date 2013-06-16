@@ -24,8 +24,9 @@ import sys, serial
 from struct import *
 
 workid = addr = 0
-midstate = "6969696969696969696969696969696969696969696969696969696969696969"
-merkle = "696969696969696969696969"
+midstate = "5fddb5bc00bdafd2144684c719c68fa227d0a8e334ad84b2a92c66be3e99a4fd"
+merkle = "f64684bb51bc15081a011337"
+nonce = "e3d69bc9"
 
 def kopen(dev='/dev/Klondike'):
 	global ser
