@@ -23,34 +23,26 @@
 import sys, sha256
 from struct import *
 
-def flip64(hexdata):
-	return hexdata
-		
-def flip32(hexdata):
-	return hexdata	
-		
-		
 for line in sys.stdin:
 	data = line.strip().split(',')
 
 	# data 128 bytes: ver 4, prevhash 32, merkleroot 32, time 4, gbt 4, nonce 4, padding 48
 	# merkle offset appears to be 64 bytes in
 	# so merkle should be last 4 bytes of merkleroot plus time and gbt
-	ver,prevhash,merkleroot,time,gbt,nonce,pad = unpack("=8s64s64s8s8s8s96s", data[-1])
-	minerdata = merkleroot[56:] + time + gbt
+	data = data[-1].decode('hex')
+	minedata = data[64:76].encode('hex')
 	
 	# midstate is 32 bytes calc'd from data
 	sha = sha256.SHA256()
-	shadata = flip64(ver + prevhash + merkleroot[0:56])
+	shadata = pack(">16L", *unpack("=16L", data[0:64]))
 	sha.update(shadata)
-	midstate = sha.get_bytes().encode('hex')
-	midstate = flip32(midstate)
+	midstate = pack("=8L", *unpack(">8L", sha.get_bytes())).encode('hex')
 	
 	print "midstate = \"%s\"" % midstate
-	print "merkle = \"%s\"" % minerdata
+	print "merkle = \"%s\"" % minedata
 	print
 	print "#define GOOD_MIDSTATE       { 0x%s,0x%s,0x%s,0x%s,0x%s,0x%s,0x%s,0x%s }" % (midstate[0:8],midstate[8:16],midstate[16:24],midstate[24:32],midstate[32:40],midstate[40:48],midstate[48:56],midstate[56:])
-	print "#define GOOD_DATA           { 0x%s,0x%s,0x%s }" % (minerdata[0:8],minerdata[8:16],minerdata[16:])
+	print "#define GOOD_DATA           { 0x%s,0x%s,0x%s }" % (minedata[0:8],minedata[8:16],minedata[16:])
 	print
 	print
 
