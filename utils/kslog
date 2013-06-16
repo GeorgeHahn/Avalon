@@ -1,0 +1,73 @@
+#!/usr/bin/env python
+########
+# 
+# kslog - Klondike Share Log Conversion Utility
+# 
+# (C) Copyright 2013 Chris Savery. 
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+# main.c - main USB cmd loop and dispatch for Klondike mining firmware
+#
+
+import sys, sha256
+from struct import *
+
+def flip64(hexdata):
+	return hexdata
+		
+def flip32(hexdata):
+	return hexdata	
+		
+		
+for line in sys.stdin:
+	data = line.strip().split(',')
+
+	# data 128 bytes: ver 4, prevhash 32, merkleroot 32, time 4, gbt 4, nonce 4, padding 48
+	# merkle offset appears to be 64 bytes in
+	# so merkle should be last 4 bytes of merkleroot plus time and gbt
+	ver,prevhash,merkleroot,time,gbt,nonce,pad = unpack("=8s64s64s8s8s8s96s", data[-1])
+	minerdata = merkleroot[56:] + time + gbt
+	
+	# midstate is 32 bytes calc'd from data
+	sha = sha256.SHA256()
+	shadata = flip64(ver + prevhash + merkleroot[0:56])
+	sha.update(shadata)
+	midstate = sha.get_bytes().encode('hex')
+	midstate = flip32(midstate)
+	
+	print "midstate = \"%s\"" % midstate
+	print "merkle = \"%s\"" % minerdata
+	print
+	print "#define GOOD_MIDSTATE       { 0x%s,0x%s,0x%s,0x%s,0x%s,0x%s,0x%s,0x%s }" % (midstate[0:8],midstate[8:16],midstate[16:24],midstate[24:32],midstate[32:40],midstate[40:48],midstate[48:56],midstate[56:])
+	print "#define GOOD_DATA           { 0x%s,0x%s,0x%s }" % (minerdata[0:8],minerdata[8:16],minerdata[16:])
+	print
+	print
+
+ 
+
+# for reference from cgminer			
+# static void calc_midstate(struct work *work)
+#{
+#	unsigned char data[64];
+#	uint32_t *data32 = (uint32_t *)data;
+#	sha2_context ctx;
+#
+#	flip64(data32, work->data);  flip first 64 bytes
+#	sha2_starts(&ctx);  setup sha256
+#	sha2_update(&ctx, data, 64);  do one sha256 round
+#	memcpy(work->midstate, ctx.state, 32); get the midstate
+#	endian_flip32(work->midstate, work->midstate);  maybe flip 32 bytes depends on endianess of system
+#}
+	
+	
