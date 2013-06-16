@@ -1,4 +1,4 @@
-PCBNEW-BOARD Version 2 date Thu 30 May 2013 09:16:35 AM ICT
+PCBNEW-BOARD Version 2 date Sun 16 Jun 2013 05:52:20 AM ICT
 
 # Created by Pcbnew(2013-mar-13)-testing
 
@@ -7,7 +7,7 @@ encoding utf-8
 Units mm
 LayerCount 4
 EnabledLayers 11EA8007
-VisibleLayers 10AA8006
+VisibleLayers 10AA8000
 Links 1356
 NoConn 2
 Di 92.065 50.704512 201.5666 159.295488
@@ -22,7 +22,7 @@ $EndGENERAL
 $SHEETDESCR
 Sheet A4 11693 8268
 Title ""
-Date "30 may 2013"
+Date "15 jun 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -71,7 +71,7 @@ PadDrill 4
 Pad2MaskClearance 0.1524
 SolderMaskMinWidth 0.1
 AuxiliaryAxisOrg 98.5 55
-VisibleElements 7FFFFF1F
+VisibleElements 7FFFFF3F
 PcbPlotParams (pcbplotparams (layerselection 300449799) (usegerberextensions true) (excludeedgelayer false) (linewidth 100000) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 2) (psnegative false) (psa4output false) (plotreference false) (plotvalue false) (plotothertext false) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk true) (outputformat 1) (mirror false) (drillshape 0) (scaleselection 1) (outputdirectory plots/))
 $EndSETUP
 
@@ -25809,7 +25809,7 @@ Ro 0 0 0
 $EndSHAPE3D
 $EndMODULE PQFN-16
 $MODULE SMD_PIN_2x2
-Po 101.05 132 1800 15 519AC371 519B21AA ~~
+Po 101.05 132 1800 15 51BCEFF9 519B21AA ~~
 Li SMD_PIN_2x2
 Cd Double rangee de contacts 2 x 2 pins
 Kw CONN
@@ -25817,7 +25817,7 @@ Sc 519B21AA
 AR 
 Op 0 0 0
 At SMD
-T0 0.375 -4.15 1.016 1.016 1800 0.2032 N V 21 N "SMD_PIN_2x2"
+T0 0.375 -4.15 1.016 1.016 1800 0.2032 N I 21 N "SMD_PIN_2x2"
 T1 0.275 4.05 1.016 1.016 1800 0.2032 N I 21 N "Val**"
 DS -2.54 -2.54 2.54 -2.54 0.15 21
 DS 2.54 -2.54 2.54 2.54 0.15 21
@@ -25998,6 +25998,7 @@ Cd <b>SMD Capacitor</b>
 Sc 51A6D5FA
 AR /51A6C367
 Op 0 0 0
+At SMD
 T0 0.635 0 1.27 1.27 5400 0.1016 N V 26 N "R47"
 T1 3.175 2.54 1.27 1.27 5400 0.1016 N V 26 N "100R"
 DS -0.24384 -0.22352 0.24384 -0.22352 0.1524 25
