@@ -1,4 +1,4 @@
-PCBNEW-BOARD Version 2 date Sun 16 Jun 2013 05:52:20 AM ICT
+PCBNEW-BOARD Version 2 date Sun 16 Jun 2013 06:16:58 AM ICT
 
 # Created by Pcbnew(2013-mar-13)-testing
 
@@ -7,7 +7,7 @@ encoding utf-8
 Units mm
 LayerCount 4
 EnabledLayers 11EA8007
-VisibleLayers 10AA8000
+VisibleLayers 11200000
 Links 1356
 NoConn 2
 Di 92.065 50.704512 201.5666 159.295488
@@ -71,8 +71,8 @@ PadDrill 4
 Pad2MaskClearance 0.1524
 SolderMaskMinWidth 0.1
 AuxiliaryAxisOrg 98.5 55
-VisibleElements 7FFFFF3F
-PcbPlotParams (pcbplotparams (layerselection 300449799) (usegerberextensions true) (excludeedgelayer false) (linewidth 100000) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 2) (psnegative false) (psa4output false) (plotreference false) (plotvalue false) (plotothertext false) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk true) (outputformat 1) (mirror false) (drillshape 0) (scaleselection 1) (outputdirectory plots/))
+VisibleElements 7FFFFD3F
+PcbPlotParams (pcbplotparams (layerselection 300449799) (usegerberextensions false) (excludeedgelayer false) (linewidth 100000) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 2) (psnegative false) (psa4output false) (plotreference false) (plotvalue false) (plotothertext false) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk false) (outputformat 5) (mirror false) (drillshape 0) (scaleselection 1) (outputdirectory plots/))
 $EndSETUP
 
 $EQUIPOT

@@ -1,4 +1,4 @@
-PCBNEW-BOARD Version 2 date Thu 13 Jun 2013 11:48:57 PM ICT
+PCBNEW-BOARD Version 2 date Sun 16 Jun 2013 07:46:58 AM ICT
 
 # Created by Pcbnew(2013-mar-13)-testing
 
@@ -7,7 +7,7 @@ encoding utf-8
 Units mm
 LayerCount 4
 EnabledLayers 11EE8007
-VisibleLayers 11208000
+VisibleLayers 11200000
 Links 141
 NoConn 0
 Di 97.082534 49.924999 150.215001 103.073022
@@ -22,7 +22,7 @@ $EndGENERAL
 $SHEETDESCR
 Sheet A4 11693 8268
 Title ""
-Date "13 jun 2013"
+Date "16 jun 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -70,7 +70,7 @@ PadDrill 0
 Pad2MaskClearance 0.2
 SolderMaskMinWidth 0
 AuxiliaryAxisOrg 100 50
-VisibleElements 7FFEFF1F
+VisibleElements 7FFEF97F
 PcbPlotParams (pcbplotparams (layerselection 300711943) (usegerberextensions true) (excludeedgelayer false) (linewidth 100000) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 2) (psnegative false) (psa4output false) (plotreference false) (plotvalue false) (plotothertext false) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk false) (outputformat 1) (mirror false) (drillshape 0) (scaleselection 1) (outputdirectory plots/))
 $EndSETUP
 
@@ -2114,15 +2114,15 @@ Ro 0 0 0
 $EndSHAPE3D
 $EndMODULE C0402
 $MODULE sot89
-Po 122.1 84.9 2700 15 5198CDAC 51939401 ~~
+Po 122.1 84.9 2700 15 51BD0AFF 51939401 ~~
 Li sot89
 Cd SOT89
 Sc 51939401
 AR /51938749
 Op 0 0 0
 At SMD
-T0 -0.125 -0.125 1.00076 1.00076 3600 0.20066 N V 21 N "U5"
-T1 -2.99974 -0.20066 1.00076 1.00076 3600 0.20066 N V 21 N "AP7217D/RT9166A"
+T0 -0.125 -0.125 1.00076 1.00076 3600 0.1 N V 21 N "U5"
+T1 -2.99974 -0.20066 1.00076 1.00076 3600 0.20066 N I 21 N "AP7217D/RT9166A"
 DS 1.2446 2.5019 1.7526 2.5019 0.127 21
 DS 1.7526 2.5019 1.7526 1.3081 0.127 21
 DS 1.2446 2.5019 1.2446 1.3081 0.127 21
