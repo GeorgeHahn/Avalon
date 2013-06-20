@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Wed 22 May 2013 09:08:58 AM ICT
+EESchema Schematic File Version 2  date Thu 20 Jun 2013 08:43:58 AM ICT
 LIBS:k16
 LIBS:nano
 LIBS:power
@@ -38,7 +38,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "asic-v1.sch"
-Date "22 may 2013"
+Date "20 jun 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -56,17 +56,6 @@ F 2 "" H 8173 4173 60  0001 C CNN
 F 3 "" H 8173 4173 60  0001 C CNN
 	1    8173 4173
 	1    0    0    -1  
-$EndComp
-$Comp
-L C-EU C3
-U 1 1 517F6EA0
-P 4553 4043
-F 0 "C3" V 4533 3942 22  0000 L BNN
-F 1 "6.8nF" V 4559 3876 22  0000 L CNN
-F 2 "" H 4553 4043 60  0001 C CNN
-F 3 "" H 4553 4043 60  0001 C CNN
-	1    4553 4043
-	0    -1   -1   0   
 $EndComp
 $Comp
 L C-EU C1
@@ -383,8 +372,8 @@ $Comp
 L AP6502A U1
 U 1 1 517F6E0C
 P 4191 4083
-F 0 "U1" H 4287 4275 27  0000 L BNN
-F 1 "AP6502A" H 4287 4339 27  0000 L BNN
+F 0 "U1" H 4179 4277 27  0000 L BNN
+F 1 "AP6502A" H 4184 4323 27  0000 L BNN
 F 2 "" H 4191 4083 60  0001 C CNN
 F 3 "" H 4191 4083 60  0001 C CNN
 	1    4191 4083
@@ -534,11 +523,6 @@ Connection ~ 6029 3855
 Wire Wire Line
 	8333 4703 8333 4893
 Wire Wire Line
-	4617 3918 4617 4043
-Wire Wire Line
-	4479 3987 4712 3987
-Connection ~ 4617 3987
-Wire Wire Line
 	5837 4047 5901 4047
 Wire Wire Line
 	5837 3631 5837 4047
@@ -635,8 +619,6 @@ Wire Wire Line
 Wire Wire Line
 	4832 4103 4481 4103
 Connection ~ 4832 4103
-Wire Wire Line
-	4521 4043 4481 4043
 Wire Wire Line
 	4481 4168 4519 4168
 Wire Wire Line
@@ -744,8 +726,8 @@ $EndComp
 Text Label 7427 4517 0    22   ~ 0
 VCC
 Wire Wire Line
-	4617 3778 4617 3716
-Text Label 4617 3716 0    22   ~ 0
+	4537 3783 4537 3721
+Text Label 4537 3721 0    22   ~ 0
 VIN
 $Comp
 L C-EU C7
@@ -787,12 +769,12 @@ D+
 $Comp
 L SL02-DIODE D1
 U 1 1 5188B154
-P 4617 3883
-F 0 "D1" V 4528 3965 40  0000 C CNN
-F 1 "SL02" V 4586 4001 40  0000 C CNN
-F 2 "~" H 4617 3883 60  0000 C CNN
-F 3 "~" H 4617 3883 60  0000 C CNN
-	1    4617 3883
+P 4537 3888
+F 0 "D1" V 4448 3970 22  0000 C CNN
+F 1 "SL02" V 4478 3988 22  0000 C CNN
+F 2 "~" H 4537 3888 60  0000 C CNN
+F 3 "~" H 4537 3888 60  0000 C CNN
+	1    4537 3888
 	0    1    1    0   
 $EndComp
 Connection ~ 4031 4307
@@ -1329,4 +1311,26 @@ F 3 "" H 7015 3861 60  0001 C CNN
 $EndComp
 Text Label 7015 3911 0    20   ~ 0
 VCC
+Wire Wire Line
+	4670 4043 4481 4043
+Wire Wire Line
+	4479 3987 4537 3987
+Wire Wire Line
+	4633 3987 4712 3987
+$Comp
+L C-EU C3
+U 1 1 517F6EA0
+P 4569 3987
+F 0 "C3" V 4619 3914 22  0000 L BNN
+F 1 "6.8nF" V 4638 3881 22  0000 L CNN
+F 2 "" H 4569 3987 60  0001 C CNN
+F 3 "" H 4569 3987 60  0001 C CNN
+	1    4569 3987
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4670 3987
+Wire Wire Line
+	4670 3987 4670 4043
+Wire Wire Line
+	4537 3987 4537 3923
 $EndSCHEMATC

@@ -1,4 +1,4 @@
-PCBNEW-BOARD Version 2 date Sun 16 Jun 2013 07:42:00 AM ICT
+PCBNEW-BOARD Version 2 date Wed 19 Jun 2013 10:05:51 PM ICT
 
 # Created by Pcbnew(2013-mar-13)-testing
 
@@ -22,7 +22,7 @@ $EndGENERAL
 $SHEETDESCR
 Sheet A4 11693 8268
 Title ""
-Date "16 jun 2013"
+Date "19 jun 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -71,7 +71,7 @@ PadDrill 4
 Pad2MaskClearance 0.1524
 SolderMaskMinWidth 0.1
 AuxiliaryAxisOrg 98.5 55
-VisibleElements 7FFFFF1F
+VisibleElements 7FFFFF3F
 PcbPlotParams (pcbplotparams (layerselection 300449799) (usegerberextensions true) (excludeedgelayer false) (linewidth 100000) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 2) (psnegative false) (psa4output false) (plotreference false) (plotvalue false) (plotothertext false) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk true) (outputformat 1) (mirror false) (drillshape 0) (scaleselection 1) (outputdirectory plots/))
 $EndSETUP
 
@@ -7592,14 +7592,14 @@ Ro 0 0 0
 $EndSHAPE3D
 $EndMODULE C0402
 $MODULE C0402
-Po 176.25 87.75 0 15 00000000 00000000 ~~
+Po 176.25 87.75 0 15 51C1C8BD 00000000 ~~
 Li C0402
 Cd <b>CAPACITOR</b>
 Sc 0
 AR /517F6F18
 Op 0 0 0
 At SMD
-T0 1.905 0 1 1 900 0.1016 N V 26 N "C128"
+T0 -0.25 -0.075 1 1 1800 0.1016 N V 26 N "C128"
 T1 1.905 2.54 1 1 900 0.1016 N I 26 N "0.47uF"
 DS -0.24384 -0.22352 0.24384 -0.22352 0.1524 25
 DS 0.24384 0.22352 -0.24384 0.22352 0.1524 25
@@ -8033,14 +8033,14 @@ Ro 0 0 0
 $EndSHAPE3D
 $EndMODULE C0402
 $MODULE C0402
-Po 176.25 86.55 0 15 00000000 00000000 ~~
+Po 176.25 86.55 0 15 51C1C8C4 00000000 ~~
 Li C0402
 Cd <b>CAPACITOR</b>
 Sc 0
 AR /517F6F02
 Op 0 0 0
 At SMD
-T0 1.905 0 1 1 0 0.1016 N V 26 N "C137"
+T0 -0.15 -0.425 1 1 0 0.1016 N V 26 N "C137"
 T1 1.905 2.54 1 1 0 0.1016 N I 26 N "0.47uF x 8"
 DS -0.24384 -0.22352 0.24384 -0.22352 0.1524 25
 DS 0.24384 0.22352 -0.24384 0.22352 0.1524 25
@@ -8082,14 +8082,14 @@ Ro 0 0 0
 $EndSHAPE3D
 $EndMODULE C0402
 $MODULE C0402
-Po 181.5 87.75 1800 15 00000000 00000000 ~~
+Po 181.5 87.75 1800 15 51C1C8CB 00000000 ~~
 Li C0402
 Cd <b>CAPACITOR</b>
 Sc 0
 AR /517F6F0E
 Op 0 0 0
 At SMD
-T0 1.905 0 1 1 3600 0.1016 N V 26 N "C141"
+T0 0.125 -1.375 1 1 3600 0.1016 N V 26 N "C141"
 T1 3.175 2.54 1 1 3600 0.1016 N I 26 N "0.47uF"
 DS -0.24384 -0.22352 0.24384 -0.22352 0.1524 25
 DS 0.24384 0.22352 -0.24384 0.22352 0.1524 25
@@ -8376,14 +8376,14 @@ Ro 0 0 0
 $EndSHAPE3D
 $EndMODULE C0402
 $MODULE C0402
-Po 181.5 86.5 1800 15 00000000 00000000 ~~
+Po 181.5 86.5 1800 15 51C1C8C8 00000000 ~~
 Li C0402
 Cd <b>CAPACITOR</b>
 Sc 0
 AR /517F6F05
 Op 0 0 0
 At SMD
-T0 1.905 0 1 1 1800 0.1016 N V 26 N "C147"
+T0 -0.075 1.15 1 1 1800 0.1016 N V 26 N "C147"
 T1 3.175 2.54 1 1 1800 0.1016 N I 26 N "0.47uF"
 DS -0.24384 -0.22352 0.24384 -0.22352 0.1524 25
 DS 0.24384 0.22352 -0.24384 0.22352 0.1524 25
