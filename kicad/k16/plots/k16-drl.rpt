@@ -1,12 +1,12 @@
 Drill report for /home/chris/Dev/klondike/kicad/k16/k16.brd
-Created on Thu 30 May 2013 09:17:02 AM ICT
+Created on Sat 22 Jun 2013 02:00:30 AM ICT
 Drill report for plated through holes :
-T1  0.30mm  0.012"  (1019 holes)
+T1  0.30mm  0.012"  (1020 holes)
 T2  0.35mm  0.014"  (4 holes)
 T3  1.40mm  0.055"  (6 holes)
 T4  4.00mm  0.157"  (8 holes)
 
-Total plated holes count 1037
+Total plated holes count 1038
 
 
 Drill report for buried and blind vias :

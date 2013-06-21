@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Thu 20 Jun 2013 08:43:58 AM ICT
+EESchema Schematic File Version 2  date Fri 21 Jun 2013 07:25:55 AM ICT
 LIBS:k16
 LIBS:nano
 LIBS:power
@@ -37,8 +37,8 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "asic-v1.sch"
-Date "20 jun 2013"
+Title "Klondike 1 ASIC Miner"
+Date "21 jun 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -269,23 +269,23 @@ $EndComp
 $Comp
 L VCC #VCC08
 U 1 1 517F6E1C
-P 5837 3631
-F 0 "#VCC08" V 5805 3600 22  0001 L BNN
-F 1 "VCC" H 5837 3631 60  0001 C CNN
-F 2 "" H 5837 3631 60  0001 C CNN
-F 3 "" H 5837 3631 60  0001 C CNN
-	1    5837 3631
+P 5837 3581
+F 0 "#VCC08" V 5805 3550 22  0001 L BNN
+F 1 "VCC" H 5837 3581 60  0001 C CNN
+F 2 "" H 5837 3581 60  0001 C CNN
+F 3 "" H 5837 3581 60  0001 C CNN
+	1    5837 3581
 	1    0    0    -1  
 $EndComp
 $Comp
 L VCC #VCC09
 U 1 1 517F6E3C
-P 7884 3666
-F 0 "#VCC09" V 7852 3635 22  0001 L BNN
-F 1 "VCC" H 7884 3666 60  0001 C CNN
-F 2 "" H 7884 3666 60  0001 C CNN
-F 3 "" H 7884 3666 60  0001 C CNN
-	1    7884 3666
+P 7884 3619
+F 0 "#VCC09" V 7852 3588 22  0001 L BNN
+F 1 "VCC" H 7884 3619 60  0001 C CNN
+F 2 "" H 7884 3619 60  0001 C CNN
+F 3 "" H 7884 3619 60  0001 C CNN
+	1    7884 3619
 	1    0    0    -1  
 $EndComp
 $Comp
