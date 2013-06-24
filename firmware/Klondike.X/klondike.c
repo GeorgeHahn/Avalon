@@ -37,17 +37,23 @@ volatile WORD WorkTicks = WORK_TICKS;
 WORKCFG Cfg = { DEFAULT_HASHCLOCK, DEFAULT_TEMP_TARGET, DEFAULT_TEMP_CRITICAL, DEFAULT_FAN_TARGET };
 WORKTASK WorkQue[MAX_WORK_COUNT];
 volatile BYTE ResultQue[MAX_RESULT_COUNT*4];
-DWORD ClockCfg[2] = { ((DWORD)DEFAULT_HASHCLOCK << 18) | CLOCK_LOW_CFG, ((DWORD)CLOCK_R_VALUE >> 3) | CLOCK_HIGH_CFG };
+DWORD ClockCfg[2] = { ((DWORD)DEFAULT_HASHCLOCK << 18) | CLOCK_LOW_CFG, CLOCK_HIGH_CFG };
 
 DWORD NonceRanges[8];
 
 extern I2CSTATE I2CState;
+extern DWORD PrecalcHashes[6];
 
 void ProcessCmd(char *cmd)
 {
     // cmd is one char, dest address 1 byte, data follows
     // we already know address is ours here
     switch(cmd[0]) {
+        case 'P':
+            WorkQue[ (WorkNow + Status.WorkQC) & WORKMASK ] = *(WORKTASK *)(cmd+2);
+            AsicPreCalc(&WorkQue[WorkNow]);
+            SendCmdReply(cmd, (char *)&PrecalcHashes, sizeof(PrecalcHashes));
+            break;
         case 'W': // queue new work
             if( Status.WorkQC < MAX_WORK_COUNT-1 ) {
                 WorkQue[ (WorkNow + Status.WorkQC) & WORKMASK ] = *(WORKTASK *)(cmd+2);
@@ -78,7 +84,7 @@ void ProcessCmd(char *cmd)
                     Cfg.HashClock = MIN_HASH_CLOCK;
                 if(Cfg.HashClock > MAX_HASH_CLOCK)
                     Cfg.HashClock = MAX_HASH_CLOCK;
-                ClockCfg[0] = ((DWORD)Cfg.HashClock << 18) | 0x00000003;
+                ClockCfg[0] = ((DWORD)Cfg.HashClock << 18) | CLOCK_LOW_CFG;
                 HashTime = 256-(TICK_FACTOR/Cfg.HashClock);
                 PWM1DCH = Cfg.FanTarget;
             }
@@ -276,7 +282,8 @@ void InitWorkTick(void)
     HASH_TRIS_1P = 0;
     HASH_TRIS_1N = 0;
     HASH_IDLE();
-    
+    HASH_CLK_TRIS = 0;
+    HASH_CLK_EN = 1;
 }
 
 void InitResultRx(void)

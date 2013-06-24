@@ -9,10 +9,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S355 _workcfg HashClock TempTarget TempCritical FanTarget ]
 "127 klondike.h
 [v _AsicPreCalc `(v ~T0 @X0 0 ef1`*S356 ]
-"101
-[v _AsicPushWork `(v ~T0 @X0 0 ef ]
 "129
 [v _SendCmdReply `(v ~T0 @X0 0 ef3`*uc`*uc`uc ]
+"45 klondike.c
+[v _PrecalcHashes `ul ~T0 @X0 -> 0 `x e ]
+"101 klondike.h
+[v _AsicPushWork `(v ~T0 @X0 0 ef ]
 "4243 /opt/microchip/xc8/v1.12/include/pic16lf1459.h
 [v _PWM1DCH `Vuc ~T0 @X0 0 e@1554 ]
 [s S127 :4 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -157,6 +159,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _OPTION_REGbits `VS96 ~T0 @X0 0 e@149 ]
 "1879
 [v _LATC `Vuc ~T0 @X0 0 e@270 ]
+[s S87 :4 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S87 . . TRISA4 TRISA5 ]
+[u S86 `S87 1 ]
+[n S86 . . ]
+"982
+[v _TRISAbits `VS86 ~T0 @X0 0 e@140 ]
 [s S189 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S189 . TX9D TRMT BRGH SENDB SYNC TXEN TX9 CSRC ]
 [u S188 `S189 1 ]
@@ -3336,36 +3344,36 @@ Version 3.2 HI-TECH Software Intermediate Code
 :U ..
 -> -> 255 `i `uc
 :U ..
--> -> -> 105 `i `l `ul
--> -> -> 105 `i `l `ul
--> -> -> 105 `i `l `ul
--> -> -> 105 `i `l `ul
--> -> -> 105 `i `l `ul
--> -> -> 105 `i `l `ul
--> -> -> 105 `i `l `ul
--> -> -> 105 `i `l `ul
+-> -> 1608365500 `l `ul
+-> -> 12431314 `l `ul
+-> -> 340165831 `l `ul
+-> -> 432443298 `l `ul
+-> -> 667986147 `l `ul
+-> -> 883786930 `l `ul
+-> -1456707906 `ul
+-> -> 1050256637 `l `ul
 ..
 :U ..
--> -> -> 105 `i `l `ul
--> -> -> 105 `i `l `ul
--> -> -> 105 `i `l `ul
+-> -163150661 `ul
+-> -> 1371280648 `l `ul
+-> -> 436278071 `l `ul
 ..
 ..
 ..
 ]
-[; ;klondike.c: 28: const WORKTASK TestWork = { 0xFF, { 0x69,0x69,0x69,0x69,0x69,0x69,0x69,0x69 }, { 0x69,0x69,0x69 } };
+[; ;klondike.c: 28: const WORKTASK TestWork = { 0xFF, { 0x5fddb5bc,0x00bdafd2,0x144684c7,0x19c68fa2,0x27d0a8e3,0x34ad84b2,0xa92c66be,0x3e99a4fd }, { 0xf64684bb,0x51bc1508,0x1a011337 } };
 "29
 [v _GoodNonce `Cul ~T0 @X0 1 e ]
 [i _GoodNonce
--> -2147483648 `ul
+-> -472474679 `ul
 ]
-[; ;klondike.c: 29: const DWORD GoodNonce = 0x80000000;
+[; ;klondike.c: 29: const DWORD GoodNonce = 0xe3d69bc9;
 "30
 [v _StartNonce `Cul ~T0 @X0 1 e ]
 [i _StartNonce
-- -> -2147483648 `ul -> -> 109980 `l `ul
+- -> -472474679 `ul -> -> 109980 `l `ul
 ]
-[; ;klondike.c: 30: const DWORD StartNonce = (0x80000000 - 109980);
+[; ;klondike.c: 30: const DWORD StartNonce = (0xe3d69bc9 - 109980);
 "32
 [v _WorkNow `uc ~T0 @X0 1 e ]
 [v _BankSize `uc ~T0 @X0 1 e ]
@@ -3381,9 +3389,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 "34
 [v _HashTime `uc ~T0 @X0 1 e ]
 [i _HashTime
--> - -> 256 `i / -> 24000 `i -> 564 `i `uc
+-> - -> 256 `i / -> 24000 `i -> 512 `i `uc
 ]
-[; ;klondike.c: 34: BYTE HashTime = 256-(24000/564);
+[; ;klondike.c: 34: BYTE HashTime = 256-(24000/512);
 "35
 [v _Status `VS354 ~T0 @X0 1 e ]
 [i _Status
@@ -3413,14 +3421,14 @@ Version 3.2 HI-TECH Software Intermediate Code
 [i _Cfg
 :U ..
 :U ..
--> -> 564 `i `us
+-> -> 512 `i `us
 -> -> 60 `i `uc
 -> -> 80 `i `uc
 -> -> 128 `i `uc
 ..
 ..
 ]
-[; ;klondike.c: 37: WORKCFG Cfg = { 564, 60, 80, 128 };
+[; ;klondike.c: 37: WORKCFG Cfg = { 512, 60, 80, 128 };
 "38
 [v _WorkQue `S356 ~T0 @X0 -> 4 `i e ]
 [; ;klondike.c: 38: WORKTASK WorkQue[4];
@@ -3431,726 +3439,749 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _ClockCfg `ul ~T0 @X0 -> 2 `i e ]
 [i _ClockCfg
 :U ..
-| << -> -> 564 `i `ul -> 18 `i -> -> -> 3 `i `l `ul
-| >> -> -> 32 `i `ul -> 3 `i -> -> 771751936 `l `ul
+| << -> -> 512 `i `ul -> 18 `i -> -> 196631 `l `ul
+-> -> -> 372 `i `l `ul
 ..
 ]
-[; ;klondike.c: 40: DWORD ClockCfg[2] = { ((DWORD)564 << 18) | 0x00000003, ((DWORD)32 >> 3) | 0x2e000000 };
+[; ;klondike.c: 40: DWORD ClockCfg[2] = { ((DWORD)512 << 18) | 0x00030017, 0x00000174 };
 "42
 [v _NonceRanges `ul ~T0 @X0 -> 8 `i e ]
 [; ;klondike.c: 42: DWORD NonceRanges[8];
 [; ;klondike.c: 44: extern I2CSTATE I2CState;
-"47
+[; ;klondike.c: 45: extern DWORD PrecalcHashes[6];
+"48
 [v _ProcessCmd `(v ~T0 @X0 1 ef1`*uc ]
 {
-[; ;klondike.c: 46: void ProcessCmd(char *cmd)
-[; ;klondike.c: 47: {
+[; ;klondike.c: 47: void ProcessCmd(char *cmd)
+[; ;klondike.c: 48: {
 [e :U _ProcessCmd ]
 [v _cmd `*uc ~T0 @X0 1 r1 ]
 [f ]
-[; ;klondike.c: 50: switch(cmd[0]) {
-"50
+[; ;klondike.c: 51: switch(cmd[0]) {
+"51
 [e $U 360  ]
 {
-[; ;klondike.c: 51: case 'W':
-"51
-[e :U 361 ]
-[; ;klondike.c: 52: if( Status.WorkQC < 4-1 ) {
+[; ;klondike.c: 52: case 'P':
 "52
-[e $ ! < -> . _Status 3 `i - -> 4 `i -> 1 `i 362  ]
-{
+[e :U 361 ]
 [; ;klondike.c: 53: WorkQue[ (WorkNow + Status.WorkQC) & 4-1 ] = *(WORKTASK *)(cmd+2);
 "53
 [e = *U + &U _WorkQue * -> -> & + -> _WorkNow `i -> . _Status 3 `i - -> 4 `i -> 1 `i `ui `ux -> -> # *U &U _WorkQue `ui `ux *U -> + _cmd * -> -> 2 `i `x -> -> # *U _cmd `i `x `*S356 ]
-[; ;klondike.c: 54: if(Status.WorkQC++ == 0) {
+[; ;klondike.c: 54: AsicPreCalc(&WorkQue[WorkNow]);
 "54
-[e $ ! == -> ++ . _Status 3 -> -> 1 `i `uc `i -> 0 `i 363  ]
-{
-[; ;klondike.c: 55: AsicPreCalc(&WorkQue[WorkNow]);
-"55
 [e ( _AsicPreCalc (1 &U *U + &U _WorkQue * -> _WorkNow `ux -> -> # *U &U _WorkQue `ui `ux ]
-[; ;klondike.c: 56: AsicPushWork();
+[; ;klondike.c: 55: SendCmdReply(cmd, (char *)&PrecalcHashes, sizeof(PrecalcHashes));
+"55
+[e ( _SendCmdReply (3 , , _cmd -> &U _PrecalcHashes `*uc -> -> * -> 6 `i # `ul `ui `uc ]
+[; ;klondike.c: 56: break;
 "56
-[e ( _AsicPushWork ..  ]
+[e $U 359  ]
+[; ;klondike.c: 57: case 'W':
 "57
+[e :U 362 ]
+[; ;klondike.c: 58: if( Status.WorkQC < 4-1 ) {
+"58
+[e $ ! < -> . _Status 3 `i - -> 4 `i -> 1 `i 363  ]
+{
+[; ;klondike.c: 59: WorkQue[ (WorkNow + Status.WorkQC) & 4-1 ] = *(WORKTASK *)(cmd+2);
+"59
+[e = *U + &U _WorkQue * -> -> & + -> _WorkNow `i -> . _Status 3 `i - -> 4 `i -> 1 `i `ui `ux -> -> # *U &U _WorkQue `ui `ux *U -> + _cmd * -> -> 2 `i `x -> -> # *U _cmd `i `x `*S356 ]
+[; ;klondike.c: 60: if(Status.WorkQC++ == 0) {
+"60
+[e $ ! == -> ++ . _Status 3 -> -> 1 `i `uc `i -> 0 `i 364  ]
+{
+[; ;klondike.c: 61: AsicPreCalc(&WorkQue[WorkNow]);
+"61
+[e ( _AsicPreCalc (1 &U *U + &U _WorkQue * -> _WorkNow `ux -> -> # *U &U _WorkQue `ui `ux ]
+[; ;klondike.c: 62: AsicPushWork();
+"62
+[e ( _AsicPushWork ..  ]
+"63
+}
+[e :U 364 ]
+"64
 }
 [e :U 363 ]
-"58
-}
-[e :U 362 ]
-[; ;klondike.c: 57: }
-[; ;klondike.c: 58: }
-[; ;klondike.c: 59: SendCmdReply(cmd, (char *)&Status, sizeof(Status));
-"59
-[e ( _SendCmdReply (3 , , _cmd -> &U _Status `*uc -> -> # _Status `ui `uc ]
-[; ;klondike.c: 60: break;
-"60
-[e $U 359  ]
-[; ;klondike.c: 61: case 'A':
-"61
-[e :U 364 ]
-[; ;klondike.c: 62: Status.WorkQC = WorkNow = 0;
-"62
-[e = . _Status 3 = _WorkNow -> -> 0 `i `uc ]
-[; ;klondike.c: 63: WorkQue[ (WorkNow + Status.WorkQC++) & 4-1 ] = *(WORKTASK *)(cmd+2);
-"63
-[e = *U + &U _WorkQue * -> -> & + -> _WorkNow `i -> ++ . _Status 3 -> -> 1 `i `uc `i - -> 4 `i -> 1 `i `ui `ux -> -> # *U &U _WorkQue `ui `ux *U -> + _cmd * -> -> 2 `i `x -> -> # *U _cmd `i `x `*S356 ]
-[; ;klondike.c: 64: AsicPreCalc(&WorkQue[WorkNow]);
-"64
-[e ( _AsicPreCalc (1 &U *U + &U _WorkQue * -> _WorkNow `ux -> -> # *U &U _WorkQue `ui `ux ]
-[; ;klondike.c: 65: AsicPushWork();
+[; ;klondike.c: 63: }
+[; ;klondike.c: 64: }
+[; ;klondike.c: 65: SendCmdReply(cmd, (char *)&Status, sizeof(Status));
 "65
-[e ( _AsicPushWork ..  ]
-[; ;klondike.c: 66: SendCmdReply(cmd, (char *)&Status, sizeof(Status));
-"66
 [e ( _SendCmdReply (3 , , _cmd -> &U _Status `*uc -> -> # _Status `ui `uc ]
-[; ;klondike.c: 67: break;
+[; ;klondike.c: 66: break;
+"66
+[e $U 359  ]
+[; ;klondike.c: 67: case 'A':
 "67
-[e $U 359  ]
-[; ;klondike.c: 68: case 'I':
-"68
 [e :U 365 ]
-[; ;klondike.c: 69: SendCmdReply(cmd, (char *)&ID, sizeof(ID));
+[; ;klondike.c: 68: Status.WorkQC = WorkNow = 0;
+"68
+[e = . _Status 3 = _WorkNow -> -> 0 `i `uc ]
+[; ;klondike.c: 69: WorkQue[ (WorkNow + Status.WorkQC++) & 4-1 ] = *(WORKTASK *)(cmd+2);
 "69
-[e ( _SendCmdReply (3 , , _cmd -> &U _ID `*uc -> -> # _ID `ui `uc ]
-[; ;klondike.c: 70: break;
+[e = *U + &U _WorkQue * -> -> & + -> _WorkNow `i -> ++ . _Status 3 -> -> 1 `i `uc `i - -> 4 `i -> 1 `i `ui `ux -> -> # *U &U _WorkQue `ui `ux *U -> + _cmd * -> -> 2 `i `x -> -> # *U _cmd `i `x `*S356 ]
+[; ;klondike.c: 70: AsicPreCalc(&WorkQue[WorkNow]);
 "70
-[e $U 359  ]
-[; ;klondike.c: 71: case 'S':
+[e ( _AsicPreCalc (1 &U *U + &U _WorkQue * -> _WorkNow `ux -> -> # *U &U _WorkQue `ui `ux ]
+[; ;klondike.c: 71: AsicPushWork();
 "71
-[e :U 366 ]
+[e ( _AsicPushWork ..  ]
 [; ;klondike.c: 72: SendCmdReply(cmd, (char *)&Status, sizeof(Status));
 "72
 [e ( _SendCmdReply (3 , , _cmd -> &U _Status `*uc -> -> # _Status `ui `uc ]
 [; ;klondike.c: 73: break;
 "73
 [e $U 359  ]
-[; ;klondike.c: 74: case 'C':
+[; ;klondike.c: 74: case 'I':
 "74
-[e :U 367 ]
-[; ;klondike.c: 75: if( cmd[2] != 0 ) {
+[e :U 366 ]
+[; ;klondike.c: 75: SendCmdReply(cmd, (char *)&ID, sizeof(ID));
 "75
-[e $ ! != -> *U + _cmd * -> -> 2 `i `x -> -> # *U _cmd `i `x `i -> 0 `i 368  ]
-{
-[; ;klondike.c: 76: Cfg = *(WORKCFG *)(cmd+2);
+[e ( _SendCmdReply (3 , , _cmd -> &U _ID `*uc -> -> # _ID `ui `uc ]
+[; ;klondike.c: 76: break;
 "76
-[e = _Cfg *U -> + _cmd * -> -> 2 `i `x -> -> # *U _cmd `i `x `*S355 ]
-[; ;klondike.c: 77: if(Cfg.HashClock < 500)
+[e $U 359  ]
+[; ;klondike.c: 77: case 'S':
 "77
-[e $ ! < -> . _Cfg 0 `ui -> -> 500 `i `ui 369  ]
-[; ;klondike.c: 78: Cfg.HashClock = 500;
+[e :U 367 ]
+[; ;klondike.c: 78: SendCmdReply(cmd, (char *)&Status, sizeof(Status));
 "78
-[e = . _Cfg 0 -> -> 500 `i `us ]
-[e :U 369 ]
-[; ;klondike.c: 79: if(Cfg.HashClock > 900)
-"79
-[e $ ! > -> . _Cfg 0 `ui -> -> 900 `i `ui 370  ]
-[; ;klondike.c: 80: Cfg.HashClock = 900;
-"80
-[e = . _Cfg 0 -> -> 900 `i `us ]
-[e :U 370 ]
-[; ;klondike.c: 81: ClockCfg[0] = ((DWORD)Cfg.HashClock << 18) | 0x00000003;
-"81
-[e = *U + &U _ClockCfg * -> -> -> 0 `i `ui `ux -> -> # *U &U _ClockCfg `ui `ux | << -> . _Cfg 0 `ul -> 18 `i -> -> -> 3 `i `l `ul ]
-[; ;klondike.c: 82: HashTime = 256-(24000/Cfg.HashClock);
-"82
-[e = _HashTime -> - -> -> 256 `i `ui / -> -> 24000 `i `ui -> . _Cfg 0 `ui `uc ]
-[; ;klondike.c: 83: PWM1DCH = Cfg.FanTarget;
-"83
-[e = _PWM1DCH . _Cfg 3 ]
-"84
-}
-[e :U 368 ]
-[; ;klondike.c: 84: }
-[; ;klondike.c: 85: SendCmdReply(cmd, (char *)&Cfg, sizeof(Cfg));
-"85
-[e ( _SendCmdReply (3 , , _cmd -> &U _Cfg `*uc -> -> # _Cfg `ui `uc ]
-[; ;klondike.c: 86: break;
-"86
-[e $U 359  ]
-[; ;klondike.c: 87: case 'E':
-"87
-[e :U 371 ]
-[; ;klondike.c: 88: LATAbits.LATA4 = (cmd[2] == '1');
-"88
-[e = . . _LATAbits 0 1 -> -> == -> *U + _cmd * -> -> 2 `i `x -> -> # *U _cmd `i `x `ui -> 49 `ui `i `uc ]
-[; ;klondike.c: 89: Status.State = (cmd[2] == '1') ? 'R' : 'D';
-"89
-[e = . _Status 0 -> ? == -> *U + _cmd * -> -> 2 `i `x -> -> # *U _cmd `i `x `ui -> 49 `ui : -> 82 `ui -> 68 `ui `uc ]
-[; ;klondike.c: 90: SendCmdReply(cmd, (char *)&Status, sizeof(Status));
-"90
 [e ( _SendCmdReply (3 , , _cmd -> &U _Status `*uc -> -> # _Status `ui `uc ]
-[; ;klondike.c: 91: break;
-"91
+[; ;klondike.c: 79: break;
+"79
 [e $U 359  ]
-[; ;klondike.c: 92: case 'Z':
-"92
-[e :U 372 ]
-[; ;klondike.c: 94: SendCmdReply(cmd, (char *)&I2CState, sizeof(I2CState));
-"94
-[e ( _SendCmdReply (3 , , _cmd -> &U _I2CState `*uc -> -> # `S357 `ui `uc ]
-[; ;klondike.c: 98: break;
-"98
-[e $U 359  ]
-[; ;klondike.c: 99: default:
-"99
-[e :U 373 ]
-[; ;klondike.c: 100: break;
-"100
-[e $U 359  ]
-"101
+[; ;klondike.c: 80: case 'C':
+"80
+[e :U 368 ]
+[; ;klondike.c: 81: if( cmd[2] != 0 ) {
+"81
+[e $ ! != -> *U + _cmd * -> -> 2 `i `x -> -> # *U _cmd `i `x `i -> 0 `i 369  ]
+{
+[; ;klondike.c: 82: Cfg = *(WORKCFG *)(cmd+2);
+"82
+[e = _Cfg *U -> + _cmd * -> -> 2 `i `x -> -> # *U _cmd `i `x `*S355 ]
+[; ;klondike.c: 83: if(Cfg.HashClock < 500)
+"83
+[e $ ! < -> . _Cfg 0 `ui -> -> 500 `i `ui 370  ]
+[; ;klondike.c: 84: Cfg.HashClock = 500;
+"84
+[e = . _Cfg 0 -> -> 500 `i `us ]
+[e :U 370 ]
+[; ;klondike.c: 85: if(Cfg.HashClock > 900)
+"85
+[e $ ! > -> . _Cfg 0 `ui -> -> 900 `i `ui 371  ]
+[; ;klondike.c: 86: Cfg.HashClock = 900;
+"86
+[e = . _Cfg 0 -> -> 900 `i `us ]
+[e :U 371 ]
+[; ;klondike.c: 87: ClockCfg[0] = ((DWORD)Cfg.HashClock << 18) | 0x00030017;
+"87
+[e = *U + &U _ClockCfg * -> -> -> 0 `i `ui `ux -> -> # *U &U _ClockCfg `ui `ux | << -> . _Cfg 0 `ul -> 18 `i -> -> 196631 `l `ul ]
+[; ;klondike.c: 88: HashTime = 256-(24000/Cfg.HashClock);
+"88
+[e = _HashTime -> - -> -> 256 `i `ui / -> -> 24000 `i `ui -> . _Cfg 0 `ui `uc ]
+[; ;klondike.c: 89: PWM1DCH = Cfg.FanTarget;
+"89
+[e = _PWM1DCH . _Cfg 3 ]
+"90
 }
-[; ;klondike.c: 101: }
+[e :U 369 ]
+[; ;klondike.c: 90: }
+[; ;klondike.c: 91: SendCmdReply(cmd, (char *)&Cfg, sizeof(Cfg));
+"91
+[e ( _SendCmdReply (3 , , _cmd -> &U _Cfg `*uc -> -> # _Cfg `ui `uc ]
+[; ;klondike.c: 92: break;
+"92
 [e $U 359  ]
-"50
+[; ;klondike.c: 93: case 'E':
+"93
+[e :U 372 ]
+[; ;klondike.c: 94: LATAbits.LATA4 = (cmd[2] == '1');
+"94
+[e = . . _LATAbits 0 1 -> -> == -> *U + _cmd * -> -> 2 `i `x -> -> # *U _cmd `i `x `ui -> 49 `ui `i `uc ]
+[; ;klondike.c: 95: Status.State = (cmd[2] == '1') ? 'R' : 'D';
+"95
+[e = . _Status 0 -> ? == -> *U + _cmd * -> -> 2 `i `x -> -> # *U _cmd `i `x `ui -> 49 `ui : -> 82 `ui -> 68 `ui `uc ]
+[; ;klondike.c: 96: SendCmdReply(cmd, (char *)&Status, sizeof(Status));
+"96
+[e ( _SendCmdReply (3 , , _cmd -> &U _Status `*uc -> -> # _Status `ui `uc ]
+[; ;klondike.c: 97: break;
+"97
+[e $U 359  ]
+[; ;klondike.c: 98: case 'Z':
+"98
+[e :U 373 ]
+[; ;klondike.c: 100: SendCmdReply(cmd, (char *)&I2CState, sizeof(I2CState));
+"100
+[e ( _SendCmdReply (3 , , _cmd -> &U _I2CState `*uc -> -> # `S357 `ui `uc ]
+[; ;klondike.c: 104: break;
+"104
+[e $U 359  ]
+[; ;klondike.c: 105: default:
+"105
+[e :U 374 ]
+[; ;klondike.c: 106: break;
+"106
+[e $U 359  ]
+"107
+}
+[; ;klondike.c: 107: }
+[e $U 359  ]
+"51
 [e :U 360 ]
-[e [\ *U + _cmd * -> -> 0 `i `x -> -> # *U _cmd `i `x , $ -> -> 87 `ui `uc 361
- , $ -> -> 65 `ui `uc 364
- , $ -> -> 73 `ui `uc 365
- , $ -> -> 83 `ui `uc 366
- , $ -> -> 67 `ui `uc 367
- , $ -> -> 69 `ui `uc 371
- , $ -> -> 90 `ui `uc 372
- 373 ]
-"101
+[e [\ *U + _cmd * -> -> 0 `i `x -> -> # *U _cmd `i `x , $ -> -> 80 `ui `uc 361
+ , $ -> -> 87 `ui `uc 362
+ , $ -> -> 65 `ui `uc 365
+ , $ -> -> 73 `ui `uc 366
+ , $ -> -> 83 `ui `uc 367
+ , $ -> -> 67 `ui `uc 368
+ , $ -> -> 69 `ui `uc 372
+ , $ -> -> 90 `ui `uc 373
+ 374 ]
+"107
 [e :U 359 ]
-[; ;klondike.c: 102: LATAbits.LATA5 = 1;;
-"102
+[; ;klondike.c: 108: LATAbits.LATA5 = 1;;
+"108
 [e = . . _LATAbits 0 2 -> -> 1 `i `uc ]
-[; ;klondike.c: 103: }
-"103
+[; ;klondike.c: 109: }
+"109
 [e :UE 358 ]
 }
-"106
+"112
 [v _AsicPushWork `(v ~T0 @X0 1 ef ]
 {
-[; ;klondike.c: 105: void AsicPushWork(void)
-[; ;klondike.c: 106: {
+[; ;klondike.c: 111: void AsicPushWork(void)
+[; ;klondike.c: 112: {
 [e :U _AsicPushWork ]
 [f ]
-[; ;klondike.c: 107: Status.WorkID = WorkQue[WorkNow].WorkID;
-"107
-[e = . _Status 4 . *U + &U _WorkQue * -> _WorkNow `ux -> -> # *U &U _WorkQue `ui `ux 0 ]
-[; ;klondike.c: 108: SendAsicData(&WorkQue[WorkNow], 0x50);
-"108
-[e ( _SendAsicData (2 , &U *U + &U _WorkQue * -> _WorkNow `ux -> -> # *U &U _WorkQue `ui `ux -> -> 80 `i `uc ]
-[; ;klondike.c: 109: Status.HashCount = 0;
-"109
-[e = . _Status 7 -> -> 0 `i `us ]
-[; ;klondike.c: 110: Status.State ='W';
-"110
-[e = . _Status 0 -> -> 87 `ui `uc ]
-[; ;klondike.c: 111: TMR0 = HashTime;
-"111
-[e = _TMR0 _HashTime ]
-[; ;klondike.c: 112: if(Status.WorkQC > 0)
-"112
-[e $ ! > -> . _Status 3 `i -> 0 `i 375  ]
-[; ;klondike.c: 113: AsicPreCalc(&WorkQue[WorkNow]);
+[; ;klondike.c: 113: Status.WorkID = WorkQue[WorkNow].WorkID;
 "113
-[e ( _AsicPreCalc (1 &U *U + &U _WorkQue * -> _WorkNow `ux -> -> # *U &U _WorkQue `ui `ux ]
-[e :U 375 ]
-[; ;klondike.c: 114: }
+[e = . _Status 4 . *U + &U _WorkQue * -> _WorkNow `ux -> -> # *U &U _WorkQue `ui `ux 0 ]
+[; ;klondike.c: 114: SendAsicData(&WorkQue[WorkNow], 0x50);
 "114
-[e :UE 374 ]
-}
+[e ( _SendAsicData (2 , &U *U + &U _WorkQue * -> _WorkNow `ux -> -> # *U &U _WorkQue `ui `ux -> -> 80 `i `uc ]
+[; ;klondike.c: 115: Status.HashCount = 0;
+"115
+[e = . _Status 7 -> -> 0 `i `us ]
+[; ;klondike.c: 116: Status.State ='W';
+"116
+[e = . _Status 0 -> -> 87 `ui `uc ]
+[; ;klondike.c: 117: TMR0 = HashTime;
+"117
+[e = _TMR0 _HashTime ]
+[; ;klondike.c: 118: if(Status.WorkQC > 0)
+"118
+[e $ ! > -> . _Status 3 `i -> 0 `i 376  ]
+[; ;klondike.c: 119: AsicPreCalc(&WorkQue[WorkNow]);
 "119
+[e ( _AsicPreCalc (1 &U *U + &U _WorkQue * -> _WorkNow `ux -> -> # *U &U _WorkQue `ui `ux ]
+[e :U 376 ]
+[; ;klondike.c: 120: }
+"120
+[e :UE 375 ]
+}
+"125
 [v _CheckFanSpeed `(v ~T0 @X0 1 ef ]
 {
-[; ;klondike.c: 118: void CheckFanSpeed(void)
-[; ;klondike.c: 119: {
+[; ;klondike.c: 124: void CheckFanSpeed(void)
+[; ;klondike.c: 125: {
 [e :U _CheckFanSpeed ]
 [f ]
-[; ;klondike.c: 120: if(PWM1OE == 0) {
-"120
-[e $ ! == -> _PWM1OE `i -> 0 `i 377  ]
-{
-[; ;klondike.c: 121: LATCbits.LATC5 = 0;
-"121
-[e = . . _LATCbits 0 5 -> -> 0 `i `uc ]
-[; ;klondike.c: 122: PWM1OE = 1;
-"122
-[e = _PWM1OE -> -> 1 `i `b ]
-[; ;klondike.c: 123: Status.FanSpeed = 0;
-"123
-[e = . _Status 6 -> -> 0 `i `uc ]
-"124
-}
-[; ;klondike.c: 124: }
-[e $U 378  ]
-"125
-[e :U 377 ]
-[; ;klondike.c: 125: else if( IOCAF3 == 1) {
-[e $ ! == -> _IOCAF3 `i -> 1 `i 379  ]
-{
-[; ;klondike.c: 126: IOCAF3 = 0;
+[; ;klondike.c: 126: if(PWM1OE == 0) {
 "126
-[e = _IOCAF3 -> -> 0 `i `b ]
-[; ;klondike.c: 127: LATCbits.LATC5 = 1;
+[e $ ! == -> _PWM1OE `i -> 0 `i 378  ]
+{
+[; ;klondike.c: 127: LATCbits.LATC5 = 0;
 "127
-[e = . . _LATCbits 0 5 -> -> 1 `i `uc ]
-[; ;klondike.c: 128: PWM1OE=0;
+[e = . . _LATCbits 0 5 -> -> 0 `i `uc ]
+[; ;klondike.c: 128: PWM1OE = 1;
 "128
-[e = _PWM1OE -> -> 0 `i `b ]
-[; ;klondike.c: 129: T1CONbits.TMR1CS = 0;
+[e = _PWM1OE -> -> 1 `i `b ]
+[; ;klondike.c: 129: Status.FanSpeed = 0;
 "129
-[e = . . _T1CONbits 0 5 -> -> 0 `i `uc ]
-[; ;klondike.c: 130: T1CONbits.T1CKPS = 3;
+[e = . _Status 6 -> -> 0 `i `uc ]
 "130
-[e = . . _T1CONbits 0 4 -> -> 3 `i `uc ]
-[; ;klondike.c: 131: T1CONbits.TMR1ON = TMR1GE = 1;
+}
+[; ;klondike.c: 130: }
+[e $U 379  ]
 "131
-[e = . . _T1CONbits 0 0 -> -> = _TMR1GE -> -> 1 `i `b `i `uc ]
-[; ;klondike.c: 132: T1GCONbits.T1GPOL = 1;
-"132
-[e = . . _T1GCONbits 0 5 -> -> 1 `i `uc ]
-[; ;klondike.c: 133: T1GCONbits.T1GSS = T1GCONbits.T1GTM = 0;
-"133
-[e = . . _T1GCONbits 0 0 = . . _T1GCONbits 0 4 -> -> 0 `i `uc ]
-[; ;klondike.c: 134: T1GSPM = 1;
-"134
-[e = _T1GSPM -> -> 1 `i `b ]
-[; ;klondike.c: 135: TMR1H = TMR1L = 0;
-"135
-[e = _TMR1H = _TMR1L -> -> 0 `i `uc ]
-[; ;klondike.c: 136: TMR1ON = 1;
-"136
-[e = _TMR1ON -> -> 1 `i `b ]
-[; ;klondike.c: 137: TMR1GIE = TMR1IE = 1;
-"137
-[e = _TMR1GIE = _TMR1IE -> -> 1 `i `b ]
-[; ;klondike.c: 138: T1GCONbits.T1GGO_nDONE = 1;
-"138
-[e = . . _T1GCONbits 0 2 -> -> 1 `i `uc ]
-"139
-}
-[e :U 379 ]
-"140
 [e :U 378 ]
-[; ;klondike.c: 139: }
-[; ;klondike.c: 140: }
-[e :UE 376 ]
-}
+[; ;klondike.c: 131: else if( IOCAF3 == 1) {
+[e $ ! == -> _IOCAF3 `i -> 1 `i 380  ]
+{
+[; ;klondike.c: 132: IOCAF3 = 0;
+"132
+[e = _IOCAF3 -> -> 0 `i `b ]
+[; ;klondike.c: 133: LATCbits.LATC5 = 1;
+"133
+[e = . . _LATCbits 0 5 -> -> 1 `i `uc ]
+[; ;klondike.c: 134: PWM1OE=0;
+"134
+[e = _PWM1OE -> -> 0 `i `b ]
+[; ;klondike.c: 135: T1CONbits.TMR1CS = 0;
+"135
+[e = . . _T1CONbits 0 5 -> -> 0 `i `uc ]
+[; ;klondike.c: 136: T1CONbits.T1CKPS = 3;
+"136
+[e = . . _T1CONbits 0 4 -> -> 3 `i `uc ]
+[; ;klondike.c: 137: T1CONbits.TMR1ON = TMR1GE = 1;
+"137
+[e = . . _T1CONbits 0 0 -> -> = _TMR1GE -> -> 1 `i `b `i `uc ]
+[; ;klondike.c: 138: T1GCONbits.T1GPOL = 1;
+"138
+[e = . . _T1GCONbits 0 5 -> -> 1 `i `uc ]
+[; ;klondike.c: 139: T1GCONbits.T1GSS = T1GCONbits.T1GTM = 0;
+"139
+[e = . . _T1GCONbits 0 0 = . . _T1GCONbits 0 4 -> -> 0 `i `uc ]
+[; ;klondike.c: 140: T1GSPM = 1;
+"140
+[e = _T1GSPM -> -> 1 `i `b ]
+[; ;klondike.c: 141: TMR1H = TMR1L = 0;
+"141
+[e = _TMR1H = _TMR1L -> -> 0 `i `uc ]
+[; ;klondike.c: 142: TMR1ON = 1;
+"142
+[e = _TMR1ON -> -> 1 `i `b ]
+[; ;klondike.c: 143: TMR1GIE = TMR1IE = 1;
 "143
+[e = _TMR1GIE = _TMR1IE -> -> 1 `i `b ]
+[; ;klondike.c: 144: T1GCONbits.T1GGO_nDONE = 1;
+"144
+[e = . . _T1GCONbits 0 2 -> -> 1 `i `uc ]
+"145
+}
+[e :U 380 ]
+"146
+[e :U 379 ]
+[; ;klondike.c: 145: }
+[; ;klondike.c: 146: }
+[e :UE 377 ]
+}
+"149
 [v _DetectAsics `(v ~T0 @X0 1 ef ]
 {
-[; ;klondike.c: 142: void DetectAsics(void)
-[; ;klondike.c: 143: {
+[; ;klondike.c: 148: void DetectAsics(void)
+[; ;klondike.c: 149: {
 [e :U _DetectAsics ]
 [f ]
-[; ;klondike.c: 144: BankSize = 8;
-"144
+[; ;klondike.c: 150: BankSize = 8;
+"150
 [e = _BankSize -> -> 8 `i `uc ]
-[; ;klondike.c: 145: Status.ChipCount = 0;
-"145
+[; ;klondike.c: 151: Status.ChipCount = 0;
+"151
 [e = . _Status 1 -> -> 0 `i `uc ]
-[; ;klondike.c: 146: for(BYTE x = 0; x < BankSize; x++)
-"146
+[; ;klondike.c: 152: for(BYTE x = 0; x < BankSize; x++)
+"152
 {
 [v _x `uc ~T0 @X0 1 a ]
 [e = _x -> -> 0 `i `uc ]
-[e $U 384  ]
-"147
-[e :U 381 ]
-[; ;klondike.c: 147: NonceRanges[x] = StartNonce;
-[e = *U + &U _NonceRanges * -> _x `ux -> -> # *U &U _NonceRanges `ui `ux _StartNonce ]
-"146
-[e ++ _x -> -> 1 `i `uc ]
-[e :U 384 ]
-[e $ < -> _x `i -> _BankSize `i 381  ]
+[e $U 385  ]
+"153
 [e :U 382 ]
-"147
-}
-[; ;klondike.c: 148: AsicPreCalc(&TestWork);
-"148
-[e ( _AsicPreCalc (1 -> &U _TestWork `*S356 ]
-[; ;klondike.c: 149: WorkQue[4-1] = TestWork;
-"149
-[e = *U + &U _WorkQue * -> -> - -> 4 `i -> 1 `i `ui `ux -> -> # *U &U _WorkQue `ui `ux _TestWork ]
-[; ;klondike.c: 150: SendAsicData(&WorkQue[4-1], (StartNonce & 0x80000000) ? 0x90 : 0x48);
-"150
-[e ( _SendAsicData (2 , &U *U + &U _WorkQue * -> -> - -> 4 `i -> 1 `i `ui `ux -> -> # *U &U _WorkQue `ui `ux -> ? != & _StartNonce -> -2147483648 `ul -> -> 0 `i `Cul : -> 144 `i -> 72 `i `uc ]
-[; ;klondike.c: 152: Status.ChipCount = 16;
+[; ;klondike.c: 153: NonceRanges[x] = StartNonce;
+[e = *U + &U _NonceRanges * -> _x `ux -> -> # *U &U _NonceRanges `ui `ux _StartNonce ]
 "152
-[e = . _Status 1 -> -> 16 `i `uc ]
-[; ;klondike.c: 155: BankSize = (Status.ChipCount+1)/2;
+[e ++ _x -> -> 1 `i `uc ]
+[e :U 385 ]
+[e $ < -> _x `i -> _BankSize `i 382  ]
+[e :U 383 ]
+"153
+}
+[; ;klondike.c: 154: AsicPreCalc(&TestWork);
+"154
+[e ( _AsicPreCalc (1 -> &U _TestWork `*S356 ]
+[; ;klondike.c: 155: WorkQue[4-1] = TestWork;
 "155
-[e = _BankSize -> / + -> . _Status 1 `i -> 1 `i -> 2 `i `uc ]
-[; ;klondike.c: 156: WorkTicks = 16777 / BankSize;
+[e = *U + &U _WorkQue * -> -> - -> 4 `i -> 1 `i `ui `ux -> -> # *U &U _WorkQue `ui `ux _TestWork ]
+[; ;klondike.c: 156: SendAsicData(&WorkQue[4-1], (StartNonce & 0x80000000) ? 0x90 : 0x48);
 "156
-[e = _WorkTicks -> / -> 16777 `i -> _BankSize `i `us ]
-[; ;klondike.c: 157: NonceRanges[0] = 0;
-"157
-[e = *U + &U _NonceRanges * -> -> -> 0 `i `ui `ux -> -> # *U &U _NonceRanges `ui `ux -> -> -> 0 `i `l `ul ]
-[; ;klondike.c: 158: for(BYTE x = 1; x < BankSize; x++)
+[e ( _SendAsicData (2 , &U *U + &U _WorkQue * -> -> - -> 4 `i -> 1 `i `ui `ux -> -> # *U &U _WorkQue `ui `ux -> ? != & _StartNonce -> -2147483648 `ul -> -> 0 `i `Cul : -> 144 `i -> 72 `i `uc ]
+[; ;klondike.c: 158: Status.ChipCount = 16;
 "158
+[e = . _Status 1 -> -> 16 `i `uc ]
+[; ;klondike.c: 161: BankSize = (Status.ChipCount+1)/2;
+"161
+[e = _BankSize -> / + -> . _Status 1 `i -> 1 `i -> 2 `i `uc ]
+[; ;klondike.c: 162: WorkTicks = 16777 / BankSize;
+"162
+[e = _WorkTicks -> / -> 16777 `i -> _BankSize `i `us ]
+[; ;klondike.c: 163: NonceRanges[0] = 0;
+"163
+[e = *U + &U _NonceRanges * -> -> -> 0 `i `ui `ux -> -> # *U &U _NonceRanges `ui `ux -> -> -> 0 `i `l `ul ]
+[; ;klondike.c: 164: for(BYTE x = 1; x < BankSize; x++)
+"164
 {
 [v _x `uc ~T0 @X0 1 a ]
 [e = _x -> -> 1 `i `uc ]
-[e $U 388  ]
-"159
-[e :U 385 ]
-[; ;klondike.c: 159: NonceRanges[x] = NonceRanges[x-1] + BankRanges[BankSize-1];
-[e = *U + &U _NonceRanges * -> _x `ux -> -> # *U &U _NonceRanges `ui `ux + *U + &U _NonceRanges * -> -> - -> _x `i -> 1 `i `ui `ux -> -> # *U &U _NonceRanges `ui `ux *U + &U _BankRanges * -> -> - -> _BankSize `i -> 1 `i `ui `ux -> -> # *U &U _BankRanges `ui `ux ]
-"158
-[e ++ _x -> -> 1 `i `uc ]
-[e :U 388 ]
-[e $ < -> _x `i -> _BankSize `i 385  ]
+[e $U 389  ]
+"165
 [e :U 386 ]
-"159
+[; ;klondike.c: 165: NonceRanges[x] = NonceRanges[x-1] + BankRanges[BankSize-1];
+[e = *U + &U _NonceRanges * -> _x `ux -> -> # *U &U _NonceRanges `ui `ux + *U + &U _NonceRanges * -> -> - -> _x `i -> 1 `i `ui `ux -> -> # *U &U _NonceRanges `ui `ux *U + &U _BankRanges * -> -> - -> _BankSize `i -> 1 `i `ui `ux -> -> # *U &U _BankRanges `ui `ux ]
+"164
+[e ++ _x -> -> 1 `i `uc ]
+[e :U 389 ]
+[e $ < -> _x `i -> _BankSize `i 386  ]
+[e :U 387 ]
+"165
 }
-[; ;klondike.c: 160: Status.State ='R';
-"160
+[; ;klondike.c: 166: Status.State ='R';
+"166
 [e = . _Status 0 -> -> 82 `ui `uc ]
-[; ;klondike.c: 161: Status.HashCount = 0;
-"161
-[e = . _Status 7 -> -> 0 `i `us ]
-[; ;klondike.c: 162: }
-"162
-[e :UE 380 ]
-}
+[; ;klondike.c: 167: Status.HashCount = 0;
 "167
+[e = . _Status 7 -> -> 0 `i `us ]
+[; ;klondike.c: 168: }
+"168
+[e :UE 381 ]
+}
+"173
 [v _WorkTick `(v ~T0 @X0 1 ef ]
 {
-[; ;klondike.c: 166: void WorkTick(void)
-[; ;klondike.c: 167: {
+[; ;klondike.c: 172: void WorkTick(void)
+[; ;klondike.c: 173: {
 [e :U _WorkTick ]
 [f ]
-[; ;klondike.c: 168: TMR0IF = 0;
-"168
-[e = _TMR0IF -> -> 0 `i `b ]
-[; ;klondike.c: 170: if((Status.State == 'W') && (++Status.HashCount == WorkTicks)) {
-"170
-[e $ ! && == -> . _Status 0 `ui -> 87 `ui == -> =+ . _Status 7 -> -> 1 `i `us `ui -> _WorkTicks `ui 390  ]
-{
-[; ;klondike.c: 171: WorkNow = (WorkNow+1) & 4-1;
-"171
-[e = _WorkNow -> & + -> _WorkNow `i -> 1 `i - -> 4 `i -> 1 `i `uc ]
-[; ;klondike.c: 172: if(--Status.WorkQC > 0) {
-"172
-[e $ ! > -> =- . _Status 3 -> -> 1 `i `uc `i -> 0 `i 391  ]
-{
-[; ;klondike.c: 173: Status.State = 'P';
-"173
-[e = . _Status 0 -> -> 80 `ui `uc ]
-[; ;klondike.c: 174: return;
+[; ;klondike.c: 174: TMR0IF = 0;
 "174
-[e $UE 389  ]
-"175
-}
-[; ;klondike.c: 175: }
-[e $U 392  ]
+[e = _TMR0IF -> -> 0 `i `b ]
+[; ;klondike.c: 176: if((Status.State == 'W') && (++Status.HashCount == WorkTicks)) {
 "176
-[e :U 391 ]
-[; ;klondike.c: 176: else
-[; ;klondike.c: 177: Status.State = 'R';
-"177
-[e = . _Status 0 -> -> 82 `ui `uc ]
-[e :U 392 ]
-"178
-}
-[; ;klondike.c: 178: }
-[e $U 393  ]
-"179
-[e :U 390 ]
-[; ;klondike.c: 179: else
-[; ;klondike.c: 180: TMR0 = HashTime;
-"180
-[e = _TMR0 _HashTime ]
-[e :U 393 ]
-[; ;klondike.c: 182: if(++SlowTick == 0) {
-"182
-[e $ ! == -> =+ _SlowTick -> -> 1 `i `uc `i -> 0 `i 394  ]
+[e $ ! && == -> . _Status 0 `ui -> 87 `ui == -> =+ . _Status 7 -> -> 1 `i `us `ui -> _WorkTicks `ui 391  ]
 {
-[; ;klondike.c: 183: LATAbits.LATA5 = 0;;
+[; ;klondike.c: 177: WorkNow = (WorkNow+1) & 4-1;
+"177
+[e = _WorkNow -> & + -> _WorkNow `i -> 1 `i - -> 4 `i -> 1 `i `uc ]
+[; ;klondike.c: 178: if(--Status.WorkQC > 0) {
+"178
+[e $ ! > -> =- . _Status 3 -> -> 1 `i `uc `i -> 0 `i 392  ]
+{
+[; ;klondike.c: 179: Status.State = 'P';
+"179
+[e = . _Status 0 -> -> 80 `ui `uc ]
+[; ;klondike.c: 180: return;
+"180
+[e $UE 390  ]
+"181
+}
+[; ;klondike.c: 181: }
+[e $U 393  ]
+"182
+[e :U 392 ]
+[; ;klondike.c: 182: else
+[; ;klondike.c: 183: Status.State = 'R';
 "183
-[e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
-[; ;klondike.c: 184: Status.Temp = ADRESH;
+[e = . _Status 0 -> -> 82 `ui `uc ]
+[e :U 393 ]
 "184
-[e = . _Status 5 _ADRESH ]
-[; ;klondike.c: 186: ADCON0bits.GO_nDONE = 1;
+}
+[; ;klondike.c: 184: }
+[e $U 394  ]
+"185
+[e :U 391 ]
+[; ;klondike.c: 185: else
+[; ;klondike.c: 186: TMR0 = HashTime;
 "186
-[e = . . _ADCON0bits 0 1 -> -> 1 `i `uc ]
-[; ;klondike.c: 187: CheckFanSpeed();
-"187
-[e ( _CheckFanSpeed ..  ]
-"188
-}
+[e = _TMR0 _HashTime ]
 [e :U 394 ]
-[; ;klondike.c: 188: }
-[; ;klondike.c: 190: I2CPoll();
+[; ;klondike.c: 188: if(++SlowTick == 0) {
+"188
+[e $ ! == -> =+ _SlowTick -> -> 1 `i `uc `i -> 0 `i 395  ]
+{
+[; ;klondike.c: 189: LATAbits.LATA5 = 0;;
+"189
+[e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
+[; ;klondike.c: 190: Status.Temp = ADRESH;
 "190
-[e ( _I2CPoll ..  ]
-[; ;klondike.c: 191: }
-"191
-[e :UE 389 ]
-}
+[e = . _Status 5 _ADRESH ]
+[; ;klondike.c: 192: ADCON0bits.GO_nDONE = 1;
+"192
+[e = . . _ADCON0bits 0 1 -> -> 1 `i `uc ]
+[; ;klondike.c: 193: CheckFanSpeed();
+"193
+[e ( _CheckFanSpeed ..  ]
 "194
+}
+[e :U 395 ]
+[; ;klondike.c: 194: }
+[; ;klondike.c: 196: I2CPoll();
+"196
+[e ( _I2CPoll ..  ]
+[; ;klondike.c: 197: }
+"197
+[e :UE 390 ]
+}
+"200
 [v _ResultRx `(v ~T0 @X0 1 ef ]
 {
-[; ;klondike.c: 193: void ResultRx(void)
-[; ;klondike.c: 194: {
+[; ;klondike.c: 199: void ResultRx(void)
+[; ;klondike.c: 200: {
 [e :U _ResultRx ]
 [f ]
-[; ;klondike.c: 195: GIE = 0;
-"195
-[e = _GIE -> -> 0 `i `b ]
-[; ;klondike.c: 196: RCIF = 0;
-"196
-[e = _RCIF -> -> 0 `i `b ]
-"197
-[v _Rw `uc ~T0 @X0 1 a ]
-[; ;klondike.c: 197: BYTE Rw = ResultQC & 0xFC;
-[e = _Rw -> & -> _ResultQC `i -> 252 `i `uc ]
-[; ;klondike.c: 198: ResultQue[ResultQC] = RCREG;
-"198
-[e = *U + &U _ResultQue * -> _ResultQC `ux -> -> # *U &U _ResultQue `ui `ux _RCREG ]
-[; ;klondike.c: 199: ResultQC = (ResultQC+1) & (2*4-1);
-"199
-[e = _ResultQC -> & + -> _ResultQC `i -> 1 `i - * -> 2 `i -> 4 `i -> 1 `i `uc ]
-[; ;klondike.c: 201: if(RCSTAbits.OERR) {
+[; ;klondike.c: 201: GIE = 0;
 "201
-[e $ ! != -> . . _RCSTAbits 0 1 `i -> -> -> 0 `i `Vuc `i 396  ]
-{
-[; ;klondike.c: 202: Status.ErrorCount++;
+[e = _GIE -> -> 0 `i `b ]
+[; ;klondike.c: 202: RCIF = 0;
 "202
-[e ++ . _Status 8 -> -> 1 `i `us ]
-[; ;klondike.c: 203: RCSTAbits.CREN = 0;
+[e = _RCIF -> -> 0 `i `b ]
 "203
-[e = . . _RCSTAbits 0 4 -> -> 0 `i `uc ]
-[; ;klondike.c: 204: RCSTAbits.CREN = 1;
+[v _Rw `uc ~T0 @X0 1 a ]
+[; ;klondike.c: 203: BYTE Rw = ResultQC & 0xFC;
+[e = _Rw -> & -> _ResultQC `i -> 252 `i `uc ]
+[; ;klondike.c: 204: ResultQue[ResultQC] = RCREG;
 "204
-[e = . . _RCSTAbits 0 4 -> -> 1 `i `uc ]
+[e = *U + &U _ResultQue * -> _ResultQC `ux -> -> # *U &U _ResultQue `ui `ux _RCREG ]
+[; ;klondike.c: 205: ResultQC = (ResultQC+1) & (2*4-1);
 "205
-}
-[e :U 396 ]
-[; ;klondike.c: 205: }
-[; ;klondike.c: 207: if((ResultQC & 3) == 0) {
+[e = _ResultQC -> & + -> _ResultQC `i -> 1 `i - * -> 2 `i -> 4 `i -> 1 `i `uc ]
+[; ;klondike.c: 207: if(RCSTAbits.OERR) {
 "207
-[e $ ! == & -> _ResultQC `i -> 3 `i -> 0 `i 397  ]
+[e $ ! != -> . . _RCSTAbits 0 1 `i -> -> -> 0 `i `Vuc `i 397  ]
 {
+[; ;klondike.c: 208: Status.ErrorCount++;
 "208
-[v _buf `uc ~T0 @X0 -> 7 `i a ]
-[; ;klondike.c: 208: BYTE buf[7];
-[; ;klondike.c: 209: buf[0] = '=';
+[e ++ . _Status 8 -> -> 1 `i `us ]
+[; ;klondike.c: 209: RCSTAbits.CREN = 0;
 "209
-[e = *U + &U _buf * -> -> -> 0 `i `ui `ux -> -> # *U &U _buf `ui `ux -> -> 61 `ui `uc ]
-[; ;klondike.c: 210: buf[1] = SlaveAddress;
+[e = . . _RCSTAbits 0 4 -> -> 0 `i `uc ]
+[; ;klondike.c: 210: RCSTAbits.CREN = 1;
 "210
-[e = *U + &U _buf * -> -> -> 1 `i `ui `ux -> -> # *U &U _buf `ui `ux _SlaveAddress ]
-[; ;klondike.c: 211: buf[2] = WorkQue[WorkNow].WorkID;
+[e = . . _RCSTAbits 0 4 -> -> 1 `i `uc ]
 "211
-[e = *U + &U _buf * -> -> -> 2 `i `ui `ux -> -> # *U &U _buf `ui `ux . *U + &U _WorkQue * -> _WorkNow `ux -> -> # *U &U _WorkQue `ui `ux 0 ]
-[; ;klondike.c: 212: buf[3] = ResultQue[Rw++];
-"212
-[e = *U + &U _buf * -> -> -> 3 `i `ui `ux -> -> # *U &U _buf `ui `ux *U + &U _ResultQue * -> ++ _Rw -> -> 1 `i `uc `ux -> -> # *U &U _ResultQue `ui `ux ]
-[; ;klondike.c: 213: buf[4] = ResultQue[Rw++];
-"213
-[e = *U + &U _buf * -> -> -> 4 `i `ui `ux -> -> # *U &U _buf `ui `ux *U + &U _ResultQue * -> ++ _Rw -> -> 1 `i `uc `ux -> -> # *U &U _ResultQue `ui `ux ]
-[; ;klondike.c: 214: buf[5] = ResultQue[Rw++];
-"214
-[e = *U + &U _buf * -> -> -> 5 `i `ui `ux -> -> # *U &U _buf `ui `ux *U + &U _ResultQue * -> ++ _Rw -> -> 1 `i `uc `ux -> -> # *U &U _ResultQue `ui `ux ]
-[; ;klondike.c: 215: buf[6] = ResultQue[Rw];
-"215
-[e = *U + &U _buf * -> -> -> 6 `i `ui `ux -> -> # *U &U _buf `ui `ux *U + &U _ResultQue * -> _Rw `ux -> -> # *U &U _ResultQue `ui `ux ]
-[; ;klondike.c: 217: SendCmdReply(buf, buf+2, sizeof(DWORD));
-"217
-[e ( _SendCmdReply (3 , , &U _buf + &U _buf * -> -> 2 `i `x -> -> # *U &U _buf `i `x -> -> # `ul `ui `uc ]
-"218
 }
 [e :U 397 ]
-[; ;klondike.c: 218: }
-[; ;klondike.c: 219: GIE = 1;
+[; ;klondike.c: 211: }
+[; ;klondike.c: 213: if((ResultQC & 3) == 0) {
+"213
+[e $ ! == & -> _ResultQC `i -> 3 `i -> 0 `i 398  ]
+{
+"214
+[v _buf `uc ~T0 @X0 -> 7 `i a ]
+[; ;klondike.c: 214: BYTE buf[7];
+[; ;klondike.c: 215: buf[0] = '=';
+"215
+[e = *U + &U _buf * -> -> -> 0 `i `ui `ux -> -> # *U &U _buf `ui `ux -> -> 61 `ui `uc ]
+[; ;klondike.c: 216: buf[1] = SlaveAddress;
+"216
+[e = *U + &U _buf * -> -> -> 1 `i `ui `ux -> -> # *U &U _buf `ui `ux _SlaveAddress ]
+[; ;klondike.c: 217: buf[2] = WorkQue[WorkNow].WorkID;
+"217
+[e = *U + &U _buf * -> -> -> 2 `i `ui `ux -> -> # *U &U _buf `ui `ux . *U + &U _WorkQue * -> _WorkNow `ux -> -> # *U &U _WorkQue `ui `ux 0 ]
+[; ;klondike.c: 218: buf[3] = ResultQue[Rw++];
+"218
+[e = *U + &U _buf * -> -> -> 3 `i `ui `ux -> -> # *U &U _buf `ui `ux *U + &U _ResultQue * -> ++ _Rw -> -> 1 `i `uc `ux -> -> # *U &U _ResultQue `ui `ux ]
+[; ;klondike.c: 219: buf[4] = ResultQue[Rw++];
 "219
-[e = _GIE -> -> 1 `i `b ]
-[; ;klondike.c: 220: }
+[e = *U + &U _buf * -> -> -> 4 `i `ui `ux -> -> # *U &U _buf `ui `ux *U + &U _ResultQue * -> ++ _Rw -> -> 1 `i `uc `ux -> -> # *U &U _ResultQue `ui `ux ]
+[; ;klondike.c: 220: buf[5] = ResultQue[Rw++];
 "220
-[e :UE 395 ]
-}
+[e = *U + &U _buf * -> -> -> 5 `i `ui `ux -> -> # *U &U _buf `ui `ux *U + &U _ResultQue * -> ++ _Rw -> -> 1 `i `uc `ux -> -> # *U &U _ResultQue `ui `ux ]
+[; ;klondike.c: 221: buf[6] = ResultQue[Rw];
+"221
+[e = *U + &U _buf * -> -> -> 6 `i `ui `ux -> -> # *U &U _buf `ui `ux *U + &U _ResultQue * -> _Rw `ux -> -> # *U &U _ResultQue `ui `ux ]
+[; ;klondike.c: 223: SendCmdReply(buf, buf+2, sizeof(DWORD));
 "223
+[e ( _SendCmdReply (3 , , &U _buf + &U _buf * -> -> 2 `i `x -> -> # *U &U _buf `i `x -> -> # `ul `ui `uc ]
+"224
+}
+[e :U 398 ]
+[; ;klondike.c: 224: }
+[; ;klondike.c: 225: GIE = 1;
+"225
+[e = _GIE -> -> 1 `i `b ]
+[; ;klondike.c: 226: }
+"226
+[e :UE 396 ]
+}
+"229
 [v _UpdateFanSpeed `(v ~T0 @X0 1 ef ]
 {
-[; ;klondike.c: 222: void UpdateFanSpeed(void)
-[; ;klondike.c: 223: {
+[; ;klondike.c: 228: void UpdateFanSpeed(void)
+[; ;klondike.c: 229: {
 [e :U _UpdateFanSpeed ]
 [f ]
-[; ;klondike.c: 224: TMR1GIF = TMR1IF = 0;
-"224
-[e = _TMR1GIF = _TMR1IF -> -> 0 `i `b ]
-[; ;klondike.c: 225: IOCAF3 = 0;
-"225
-[e = _IOCAF3 -> -> 0 `i `b ]
-[; ;klondike.c: 226: TMR1ON = 0;
-"226
-[e = _TMR1ON -> -> 0 `i `b ]
-[; ;klondike.c: 227: Status.FanSpeed = TMR1H;
-"227
-[e = . _Status 6 _TMR1H ]
-[; ;klondike.c: 228: LATCbits.LATC5 = 0;
-"228
-[e = . . _LATCbits 0 5 -> -> 0 `i `uc ]
-[; ;klondike.c: 229: PWM1OE=1;
-"229
-[e = _PWM1OE -> -> 1 `i `b ]
-[; ;klondike.c: 230: }
+[; ;klondike.c: 230: TMR1GIF = TMR1IF = 0;
 "230
-[e :UE 398 ]
-}
-"235
-[v _InitFAN `(v ~T0 @X0 1 ef ]
-{
-[; ;klondike.c: 234: void InitFAN(void)
-[; ;klondike.c: 235: {
-[e :U _InitFAN ]
-[f ]
-[; ;klondike.c: 236: TRISCbits.TRISC5 = 1;
-"236
-[e = . . _TRISCbits 0 5 -> -> 1 `i `uc ]
-[; ;klondike.c: 237: PWM1CON = 0;
-"237
-[e = _PWM1CON -> -> 0 `i `uc ]
-[; ;klondike.c: 238: PR2 = 0xFF;
-"238
-[e = _PR2 -> -> 255 `i `uc ]
-[; ;klondike.c: 239: PWM1CON = 0xC0;
-"239
-[e = _PWM1CON -> -> 192 `i `uc ]
-[; ;klondike.c: 240: PWM1DCH = 128;
-"240
-[e = _PWM1DCH -> -> 128 `i `uc ]
-[; ;klondike.c: 241: PWM1DCL = 0;
-"241
-[e = _PWM1DCL -> -> 0 `i `uc ]
-[; ;klondike.c: 242: TMR2IF = 0;
-"242
-[e = _TMR2IF -> -> 0 `i `b ]
-[; ;klondike.c: 243: T2CONbits.T2CKPS = 0;
-"243
-[e = . . _T2CONbits 0 0 -> -> 0 `i `uc ]
-[; ;klondike.c: 244: TMR2ON = 1;
-"244
-[e = _TMR2ON -> -> 1 `i `b ]
-[; ;klondike.c: 245: TRISCbits.TRISC5 = 0;
-"245
-[e = . . _TRISCbits 0 5 -> -> 0 `i `uc ]
-[; ;klondike.c: 246: PWM1OE=1;
-"246
-[e = _PWM1OE -> -> 1 `i `b ]
-[; ;klondike.c: 249: T1GSEL = 1;
-"249
-[e = _T1GSEL -> -> 1 `i `b ]
-[; ;klondike.c: 250: IOCAN3 = 1;
-"250
-[e = _IOCAN3 -> -> 1 `i `b ]
-[; ;klondike.c: 251: IOCAF3 = 0;
-"251
+[e = _TMR1GIF = _TMR1IF -> -> 0 `i `b ]
+[; ;klondike.c: 231: IOCAF3 = 0;
+"231
 [e = _IOCAF3 -> -> 0 `i `b ]
-[; ;klondike.c: 252: }
-"252
+[; ;klondike.c: 232: TMR1ON = 0;
+"232
+[e = _TMR1ON -> -> 0 `i `b ]
+[; ;klondike.c: 233: Status.FanSpeed = TMR1H;
+"233
+[e = . _Status 6 _TMR1H ]
+[; ;klondike.c: 234: LATCbits.LATC5 = 0;
+"234
+[e = . . _LATCbits 0 5 -> -> 0 `i `uc ]
+[; ;klondike.c: 235: PWM1OE=1;
+"235
+[e = _PWM1OE -> -> 1 `i `b ]
+[; ;klondike.c: 236: }
+"236
 [e :UE 399 ]
 }
-"255
-[v _InitTempSensor `(v ~T0 @X0 1 ef ]
+"241
+[v _InitFAN `(v ~T0 @X0 1 ef ]
 {
-[; ;klondike.c: 254: void InitTempSensor(void)
-[; ;klondike.c: 255: {
-[e :U _InitTempSensor ]
+[; ;klondike.c: 240: void InitFAN(void)
+[; ;klondike.c: 241: {
+[e :U _InitFAN ]
 [f ]
-[; ;klondike.c: 256: TRISCbits.TRISC2=1;
+[; ;klondike.c: 242: TRISCbits.TRISC5 = 1;
+"242
+[e = . . _TRISCbits 0 5 -> -> 1 `i `uc ]
+[; ;klondike.c: 243: PWM1CON = 0;
+"243
+[e = _PWM1CON -> -> 0 `i `uc ]
+[; ;klondike.c: 244: PR2 = 0xFF;
+"244
+[e = _PR2 -> -> 255 `i `uc ]
+[; ;klondike.c: 245: PWM1CON = 0xC0;
+"245
+[e = _PWM1CON -> -> 192 `i `uc ]
+[; ;klondike.c: 246: PWM1DCH = 128;
+"246
+[e = _PWM1DCH -> -> 128 `i `uc ]
+[; ;klondike.c: 247: PWM1DCL = 0;
+"247
+[e = _PWM1DCL -> -> 0 `i `uc ]
+[; ;klondike.c: 248: TMR2IF = 0;
+"248
+[e = _TMR2IF -> -> 0 `i `b ]
+[; ;klondike.c: 249: T2CONbits.T2CKPS = 0;
+"249
+[e = . . _T2CONbits 0 0 -> -> 0 `i `uc ]
+[; ;klondike.c: 250: TMR2ON = 1;
+"250
+[e = _TMR2ON -> -> 1 `i `b ]
+[; ;klondike.c: 251: TRISCbits.TRISC5 = 0;
+"251
+[e = . . _TRISCbits 0 5 -> -> 0 `i `uc ]
+[; ;klondike.c: 252: PWM1OE=1;
+"252
+[e = _PWM1OE -> -> 1 `i `b ]
+[; ;klondike.c: 255: T1GSEL = 1;
+"255
+[e = _T1GSEL -> -> 1 `i `b ]
+[; ;klondike.c: 256: IOCAN3 = 1;
 "256
-[e = . . _TRISCbits 0 2 -> -> 1 `i `uc ]
-[; ;klondike.c: 259: ADCON0bits.CHS = 6;
-"259
-[e = . . _ADCON0bits 0 2 -> -> 6 `i `uc ]
-[; ;klondike.c: 260: ADCON0bits.ADON = 1;
-"260
-[e = . . _ADCON0bits 0 0 -> -> 1 `i `uc ]
-[; ;klondike.c: 261: ADCON1bits.ADFM = 0;
-"261
-[e = . . _ADCON1bits 0 3 -> -> 0 `i `uc ]
-[; ;klondike.c: 262: ADCON1bits.ADCS = 6;
-"262
-[e = . . _ADCON1bits 0 2 -> -> 6 `i `uc ]
-[; ;klondike.c: 263: ADCON1bits.ADPREF = 0;
-"263
-[e = . . _ADCON1bits 0 0 -> -> 0 `i `uc ]
-[; ;klondike.c: 264: ADCON2bits.TRIGSEL = 0;
-"264
-[e = . . _ADCON2bits 0 1 -> -> 0 `i `uc ]
-[; ;klondike.c: 265: }
-"265
+[e = _IOCAN3 -> -> 1 `i `b ]
+[; ;klondike.c: 257: IOCAF3 = 0;
+"257
+[e = _IOCAF3 -> -> 0 `i `b ]
+[; ;klondike.c: 258: }
+"258
 [e :UE 400 ]
 }
-"268
-[v _InitWorkTick `(v ~T0 @X0 1 ef ]
+"261
+[v _InitTempSensor `(v ~T0 @X0 1 ef ]
 {
-[; ;klondike.c: 267: void InitWorkTick(void)
-[; ;klondike.c: 268: {
-[e :U _InitWorkTick ]
+[; ;klondike.c: 260: void InitTempSensor(void)
+[; ;klondike.c: 261: {
+[e :U _InitTempSensor ]
 [f ]
-[; ;klondike.c: 269: TMR0CS = 0;
+[; ;klondike.c: 262: TRISCbits.TRISC2=1;
+"262
+[e = . . _TRISCbits 0 2 -> -> 1 `i `uc ]
+[; ;klondike.c: 265: ADCON0bits.CHS = 6;
+"265
+[e = . . _ADCON0bits 0 2 -> -> 6 `i `uc ]
+[; ;klondike.c: 266: ADCON0bits.ADON = 1;
+"266
+[e = . . _ADCON0bits 0 0 -> -> 1 `i `uc ]
+[; ;klondike.c: 267: ADCON1bits.ADFM = 0;
+"267
+[e = . . _ADCON1bits 0 3 -> -> 0 `i `uc ]
+[; ;klondike.c: 268: ADCON1bits.ADCS = 6;
+"268
+[e = . . _ADCON1bits 0 2 -> -> 6 `i `uc ]
+[; ;klondike.c: 269: ADCON1bits.ADPREF = 0;
 "269
-[e = _TMR0CS -> -> 0 `i `b ]
-[; ;klondike.c: 270: OPTION_REGbits.PSA = 0;
+[e = . . _ADCON1bits 0 0 -> -> 0 `i `uc ]
+[; ;klondike.c: 270: ADCON2bits.TRIGSEL = 0;
 "270
-[e = . . _OPTION_REGbits 0 1 -> -> 0 `i `uc ]
-[; ;klondike.c: 271: OPTION_REGbits.PS = 7;
+[e = . . _ADCON2bits 0 1 -> -> 0 `i `uc ]
+[; ;klondike.c: 271: }
 "271
-[e = . . _OPTION_REGbits 0 0 -> -> 7 `i `uc ]
-[; ;klondike.c: 272: TMR0 = HashTime;
-"272
-[e = _TMR0 _HashTime ]
-[; ;klondike.c: 274: TRISCbits.TRISC7 = 0;
-"274
-[e = . . _TRISCbits 0 7 -> -> 0 `i `uc ]
-[; ;klondike.c: 275: TRISCbits.TRISC6 = 0;
-"275
-[e = . . _TRISCbits 0 6 -> -> 0 `i `uc ]
-[; ;klondike.c: 276: TRISCbits.TRISC4 = 0;
-"276
-[e = . . _TRISCbits 0 4 -> -> 0 `i `uc ]
-[; ;klondike.c: 277: TRISCbits.TRISC3 = 0;
-"277
-[e = . . _TRISCbits 0 3 -> -> 0 `i `uc ]
-[; ;klondike.c: 278: LATC = 0xD8;;
-"278
-[e = _LATC -> -> 216 `i `uc ]
-[; ;klondike.c: 280: }
-"280
 [e :UE 401 ]
 }
+"274
+[v _InitWorkTick `(v ~T0 @X0 1 ef ]
+{
+[; ;klondike.c: 273: void InitWorkTick(void)
+[; ;klondike.c: 274: {
+[e :U _InitWorkTick ]
+[f ]
+[; ;klondike.c: 275: TMR0CS = 0;
+"275
+[e = _TMR0CS -> -> 0 `i `b ]
+[; ;klondike.c: 276: OPTION_REGbits.PSA = 0;
+"276
+[e = . . _OPTION_REGbits 0 1 -> -> 0 `i `uc ]
+[; ;klondike.c: 277: OPTION_REGbits.PS = 7;
+"277
+[e = . . _OPTION_REGbits 0 0 -> -> 7 `i `uc ]
+[; ;klondike.c: 278: TMR0 = HashTime;
+"278
+[e = _TMR0 _HashTime ]
+[; ;klondike.c: 280: TRISCbits.TRISC7 = 0;
+"280
+[e = . . _TRISCbits 0 7 -> -> 0 `i `uc ]
+[; ;klondike.c: 281: TRISCbits.TRISC6 = 0;
+"281
+[e = . . _TRISCbits 0 6 -> -> 0 `i `uc ]
+[; ;klondike.c: 282: TRISCbits.TRISC4 = 0;
+"282
+[e = . . _TRISCbits 0 4 -> -> 0 `i `uc ]
+[; ;klondike.c: 283: TRISCbits.TRISC3 = 0;
 "283
+[e = . . _TRISCbits 0 3 -> -> 0 `i `uc ]
+[; ;klondike.c: 284: LATC = 0xD8;;
+"284
+[e = _LATC -> -> 216 `i `uc ]
+[; ;klondike.c: 285: TRISAbits.TRISA4 = 0;
+"285
+[e = . . _TRISAbits 0 1 -> -> 0 `i `uc ]
+[; ;klondike.c: 286: LATAbits.LATA4 = 1;
+"286
+[e = . . _LATAbits 0 1 -> -> 1 `i `uc ]
+[; ;klondike.c: 287: }
+"287
+[e :UE 402 ]
+}
+"290
 [v _InitResultRx `(v ~T0 @X0 1 ef ]
 {
-[; ;klondike.c: 282: void InitResultRx(void)
-[; ;klondike.c: 283: {
+[; ;klondike.c: 289: void InitResultRx(void)
+[; ;klondike.c: 290: {
 [e :U _InitResultRx ]
 [f ]
-[; ;klondike.c: 284: TXSTAbits.SYNC = 1;
-"284
-[e = . . _TXSTAbits 0 4 -> -> 1 `i `uc ]
-[; ;klondike.c: 285: RCSTAbits.SPEN = 1;
-"285
-[e = . . _RCSTAbits 0 7 -> -> 1 `i `uc ]
-[; ;klondike.c: 286: TXSTAbits.CSRC = 0;
-"286
-[e = . . _TXSTAbits 0 7 -> -> 0 `i `uc ]
-[; ;klondike.c: 287: ANSELBbits.ANSB5 = 0;
-"287
-[e = . . _ANSELBbits 0 2 -> -> 0 `i `uc ]
-[; ;klondike.c: 288: PIE1bits.RCIE = 1;
-"288
-[e = . . _PIE1bits 0 5 -> -> 1 `i `uc ]
-[; ;klondike.c: 289: INTCONbits.PEIE = 1;
-"289
-[e = . . _INTCONbits 0 6 -> -> 1 `i `uc ]
-[; ;klondike.c: 290: INTCONbits.GIE = 1;
-"290
-[e = . . _INTCONbits 0 7 -> -> 1 `i `uc ]
-[; ;klondike.c: 291: RCSTAbits.CREN = 1;
+[; ;klondike.c: 291: TXSTAbits.SYNC = 1;
 "291
-[e = . . _RCSTAbits 0 4 -> -> 1 `i `uc ]
-[; ;klondike.c: 292: }
+[e = . . _TXSTAbits 0 4 -> -> 1 `i `uc ]
+[; ;klondike.c: 292: RCSTAbits.SPEN = 1;
 "292
-[e :UE 402 ]
+[e = . . _RCSTAbits 0 7 -> -> 1 `i `uc ]
+[; ;klondike.c: 293: TXSTAbits.CSRC = 0;
+"293
+[e = . . _TXSTAbits 0 7 -> -> 0 `i `uc ]
+[; ;klondike.c: 294: ANSELBbits.ANSB5 = 0;
+"294
+[e = . . _ANSELBbits 0 2 -> -> 0 `i `uc ]
+[; ;klondike.c: 295: PIE1bits.RCIE = 1;
+"295
+[e = . . _PIE1bits 0 5 -> -> 1 `i `uc ]
+[; ;klondike.c: 296: INTCONbits.PEIE = 1;
+"296
+[e = . . _INTCONbits 0 6 -> -> 1 `i `uc ]
+[; ;klondike.c: 297: INTCONbits.GIE = 1;
+"297
+[e = . . _INTCONbits 0 7 -> -> 1 `i `uc ]
+[; ;klondike.c: 298: RCSTAbits.CREN = 1;
+"298
+[e = . . _RCSTAbits 0 4 -> -> 1 `i `uc ]
+[; ;klondike.c: 299: }
+"299
+[e :UE 403 ]
 }

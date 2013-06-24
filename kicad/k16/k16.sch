@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Fri 21 Jun 2013 07:32:08 AM ICT
+EESchema Schematic File Version 2  date Mon 24 Jun 2013 11:57:31 PM ICT
 LIBS:k16
 LIBS:power
 LIBS:device
@@ -37,7 +37,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "Klondike 16 ASIC Miner"
-Date "21 jun 2013"
+Date "24 jun 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -5767,23 +5767,13 @@ RES_N
 Wire Wire Line
 	3415 3897 3287 3897
 Wire Wire Line
-	3415 3591 3415 3642
-Wire Wire Line
-	3415 3642 3415 3897
+	3415 3591 3415 3897
 Wire Wire Line
 	3287 3897 3287 3865
 Wire Wire Line
 	3415 3642 3543 3641
 Wire Wire Line
-	3543 3641 3639 3641
-Wire Wire Line
-	3639 3641 3735 3641
-Wire Wire Line
-	3735 3641 3831 3641
-Wire Wire Line
-	3831 3641 3927 3641
-Wire Wire Line
-	3927 3641 4087 3641
+	3543 3641 4087 3641
 Connection ~ 3415 3897
 Connection ~ 3287 3897
 Connection ~ 3831 3641
@@ -5799,23 +5789,11 @@ Wire Wire Line
 Wire Wire Line
 	3415 6329 3287 6329
 Wire Wire Line
-	3415 6031 3415 6073
-Wire Wire Line
-	3415 6073 3415 6329
+	3415 6031 3415 6329
 Wire Wire Line
 	3287 6329 3287 6297
 Wire Wire Line
-	3415 6073 3543 6073
-Wire Wire Line
-	3543 6073 3639 6073
-Wire Wire Line
-	3639 6073 3735 6073
-Wire Wire Line
-	3735 6073 3831 6073
-Wire Wire Line
-	3831 6073 3927 6073
-Wire Wire Line
-	3927 6073 4087 6073
+	3415 6073 4087 6073
 Connection ~ 3415 6329
 Connection ~ 3287 6329
 Connection ~ 3831 6073
@@ -5829,15 +5807,9 @@ Wire Wire Line
 Wire Wire Line
 	2359 6969 2359 6905
 Wire Wire Line
-	3703 5337 3703 5369
+	3703 5337 3703 5401
 Wire Wire Line
-	3703 5369 3703 5401
-Wire Wire Line
-	3316 5337 3383 5337
-Wire Wire Line
-	3383 5337 3511 5337
-Wire Wire Line
-	3511 5337 3703 5337
+	3316 5337 3703 5337
 Wire Wire Line
 	3383 5337 3383 5465
 Wire Wire Line
@@ -5887,32 +5859,16 @@ Wire Wire Line
 Wire Wire Line
 	14533 5791 14533 5855
 Wire Wire Line
-	13541 5983 13541 6271
-Wire Wire Line
-	13541 6271 13541 6303
+	13541 5983 13541 6303
 Wire Wire Line
 	13701 6111 13701 6271
 Wire Wire Line
 	13701 6271 13541 6271
 Connection ~ 13541 6271
 Wire Wire Line
-	5751 3769 5783 3769
+	5751 3769 6039 3769
 Wire Wire Line
-	5783 3769 5815 3769
-Wire Wire Line
-	5815 3769 5847 3769
-Wire Wire Line
-	5847 3769 5879 3769
-Wire Wire Line
-	5879 3769 5911 3769
-Wire Wire Line
-	5911 3769 5943 3769
-Wire Wire Line
-	5943 3769 6039 3769
-Wire Wire Line
-	6039 3769 6039 3912
-Wire Wire Line
-	6039 3912 6039 3961
+	6039 3769 6039 3961
 Connection ~ 6039 3769
 Connection ~ 5751 3769
 Connection ~ 5783 3769
@@ -5928,15 +5884,7 @@ Wire Wire Line
 Wire Wire Line
 	2615 4249 2615 4313
 Wire Wire Line
-	3543 3737 3639 3737
-Wire Wire Line
-	3639 3737 3735 3737
-Wire Wire Line
-	3735 3737 3831 3737
-Wire Wire Line
-	3831 3737 3927 3737
-Wire Wire Line
-	3927 3737 4087 3737
+	3543 3737 4087 3737
 Wire Wire Line
 	4087 3737 4087 3769
 Connection ~ 3639 3737
@@ -5945,19 +5893,11 @@ Connection ~ 3831 3737
 Connection ~ 3927 3737
 Connection ~ 4087 3737
 Wire Wire Line
-	4727 4281 4727 4377
-Wire Wire Line
-	4727 4377 4727 4473
+	4727 4281 4727 4473
 Wire Wire Line
 	4279 4281 4279 4377
 Wire Wire Line
-	4279 4377 4375 4377
-Wire Wire Line
-	4375 4377 4471 4377
-Wire Wire Line
-	4471 4377 4567 4377
-Wire Wire Line
-	4567 4377 4727 4377
+	4279 4377 4727 4377
 Wire Wire Line
 	4567 4281 4567 4377
 Wire Wire Line
@@ -5969,17 +5909,11 @@ Connection ~ 4567 4377
 Connection ~ 4471 4377
 Connection ~ 4375 4377
 Wire Wire Line
-	2711 4665 2775 4665
-Wire Wire Line
-	2775 4665 3063 4665
-Wire Wire Line
-	3063 4665 3095 4665
+	2711 4665 3095 4665
 Wire Wire Line
 	3063 4697 3063 4665
 Wire Wire Line
-	2711 4057 2711 4665
-Wire Wire Line
-	2711 4665 2711 4729
+	2711 4057 2711 4729
 Wire Wire Line
 	2775 4569 2775 4665
 Wire Wire Line
@@ -5998,15 +5932,7 @@ Wire Wire Line
 Wire Wire Line
 	2615 6681 2615 6745
 Wire Wire Line
-	3543 6169 3639 6169
-Wire Wire Line
-	3639 6169 3735 6169
-Wire Wire Line
-	3735 6169 3831 6169
-Wire Wire Line
-	3831 6169 3927 6169
-Wire Wire Line
-	3927 6169 4087 6169
+	3543 6169 4087 6169
 Wire Wire Line
 	4087 6169 4087 6201
 Connection ~ 3639 6169
@@ -6015,19 +5941,11 @@ Connection ~ 3831 6169
 Connection ~ 3927 6169
 Connection ~ 4087 6169
 Wire Wire Line
-	4727 6713 4727 6809
-Wire Wire Line
-	4727 6809 4727 6905
+	4727 6713 4727 6905
 Wire Wire Line
 	4279 6713 4279 6809
 Wire Wire Line
-	4279 6809 4375 6809
-Wire Wire Line
-	4375 6809 4471 6809
-Wire Wire Line
-	4471 6809 4567 6809
-Wire Wire Line
-	4567 6809 4727 6809
+	4279 6809 4727 6809
 Wire Wire Line
 	4567 6713 4567 6809
 Wire Wire Line
@@ -6039,17 +5957,11 @@ Connection ~ 4567 6809
 Connection ~ 4471 6809
 Connection ~ 4375 6809
 Wire Wire Line
-	2711 7097 2775 7097
-Wire Wire Line
-	2775 7097 3063 7097
-Wire Wire Line
-	3063 7097 3095 7097
+	2711 7097 3095 7097
 Wire Wire Line
 	3063 7129 3063 7097
 Wire Wire Line
-	2711 6489 2711 7097
-Wire Wire Line
-	2711 7097 2711 7161
+	2711 6489 2711 7161
 Wire Wire Line
 	2775 7001 2775 7097
 Wire Wire Line
@@ -6064,17 +5976,11 @@ Connection ~ 3383 7097
 Wire Wire Line
 	14180 4349 14375 4349
 Wire Wire Line
-	14375 4349 14375 4620
-Wire Wire Line
-	14375 4620 14375 4652
+	14375 4349 14375 4652
 Wire Wire Line
 	3511 5657 3512 5562
 Wire Wire Line
-	3319 5657 3383 5657
-Wire Wire Line
-	3383 5657 3511 5657
-Wire Wire Line
-	3511 5657 3831 5657
+	3319 5657 3831 5657
 Wire Wire Line
 	3383 5561 3383 5657
 Connection ~ 3511 5657
@@ -6084,53 +5990,29 @@ Wire Wire Line
 Wire Wire Line
 	4023 5689 4632 5686
 Wire Wire Line
-	4632 5686 4727 5686
-Wire Wire Line
-	4727 5686 4823 5686
+	4632 5686 4823 5686
 Wire Wire Line
 	4632 5686 4631 5465
 Wire Wire Line
 	4023 5657 4023 5689
 Wire Wire Line
-	3959 5657 3991 5657
-Wire Wire Line
-	3991 5657 4023 5657
+	3959 5657 4023 5657
 Connection ~ 4632 5686
 Connection ~ 4023 5657
 Connection ~ 3991 5657
 Wire Wire Line
 	14789 7005 14149 7005
 Wire Wire Line
-	14149 6481 14149 7005
-Wire Wire Line
-	14149 7005 14149 7037
+	14149 6481 14149 7037
 Wire Wire Line
 	14149 6481 14670 6480
 Connection ~ 14149 7005
 Wire Wire Line
 	5751 2873 5751 2905
 Wire Wire Line
-	5751 2905 5899 2905
+	5751 2905 6583 2905
 Wire Wire Line
-	5899 2905 6135 2905
-Wire Wire Line
-	6135 2905 6199 2905
-Wire Wire Line
-	6199 2905 6263 2905
-Wire Wire Line
-	6263 2905 6327 2905
-Wire Wire Line
-	6327 2905 6391 2905
-Wire Wire Line
-	6391 2905 6455 2905
-Wire Wire Line
-	6455 2905 6519 2905
-Wire Wire Line
-	6519 2905 6583 2905
-Wire Wire Line
-	6583 2873 6583 2905
-Wire Wire Line
-	6583 2905 6583 2937
+	6583 2873 6583 2937
 Wire Wire Line
 	6519 2905 6519 2873
 Wire Wire Line
@@ -6157,23 +6039,9 @@ Connection ~ 6199 2905
 Connection ~ 6135 2905
 Connection ~ 5899 2905
 Wire Wire Line
-	7287 3769 7319 3769
+	7287 3769 7575 3769
 Wire Wire Line
-	7319 3769 7351 3769
-Wire Wire Line
-	7351 3769 7383 3769
-Wire Wire Line
-	7383 3769 7415 3769
-Wire Wire Line
-	7415 3769 7447 3769
-Wire Wire Line
-	7447 3769 7479 3769
-Wire Wire Line
-	7479 3769 7575 3769
-Wire Wire Line
-	7575 3769 7575 3912
-Wire Wire Line
-	7575 3912 7575 3948
+	7575 3769 7575 3948
 Connection ~ 7575 3769
 Connection ~ 7287 3769
 Connection ~ 7319 3769
@@ -6183,19 +6051,7 @@ Connection ~ 7415 3769
 Connection ~ 7447 3769
 Connection ~ 7479 3769
 Wire Wire Line
-	8823 3769 8855 3769
-Wire Wire Line
-	8855 3769 8887 3769
-Wire Wire Line
-	8887 3769 8919 3769
-Wire Wire Line
-	8919 3769 8951 3769
-Wire Wire Line
-	8951 3769 8983 3769
-Wire Wire Line
-	8983 3769 9015 3769
-Wire Wire Line
-	9015 3769 9111 3769
+	8823 3769 9111 3769
 Connection ~ 9111 3769
 Connection ~ 8823 3769
 Connection ~ 8855 3769
@@ -6205,19 +6061,7 @@ Connection ~ 8951 3769
 Connection ~ 8983 3769
 Connection ~ 9015 3769
 Wire Wire Line
-	10359 3769 10391 3769
-Wire Wire Line
-	10391 3769 10423 3769
-Wire Wire Line
-	10423 3769 10455 3769
-Wire Wire Line
-	10455 3769 10487 3769
-Wire Wire Line
-	10487 3769 10519 3769
-Wire Wire Line
-	10519 3769 10551 3769
-Wire Wire Line
-	10551 3769 10647 3769
+	10359 3769 10647 3769
 Connection ~ 10647 3769
 Connection ~ 10359 3769
 Connection ~ 10391 3769
@@ -6227,19 +6071,7 @@ Connection ~ 10487 3769
 Connection ~ 10519 3769
 Connection ~ 10551 3769
 Wire Wire Line
-	5751 5241 5783 5241
-Wire Wire Line
-	5783 5241 5815 5241
-Wire Wire Line
-	5815 5241 5847 5241
-Wire Wire Line
-	5847 5241 5879 5241
-Wire Wire Line
-	5879 5241 5911 5241
-Wire Wire Line
-	5911 5241 5943 5241
-Wire Wire Line
-	5943 5241 6039 5241
+	5751 5241 6039 5241
 Connection ~ 6039 5241
 Connection ~ 5751 5241
 Connection ~ 5783 5241
@@ -6249,27 +6081,9 @@ Connection ~ 5879 5241
 Connection ~ 5911 5241
 Connection ~ 5943 5241
 Wire Wire Line
-	5751 4377 5879 4377
+	5751 4377 6583 4377
 Wire Wire Line
-	5879 4377 6135 4377
-Wire Wire Line
-	6135 4377 6199 4377
-Wire Wire Line
-	6199 4377 6263 4377
-Wire Wire Line
-	6263 4377 6327 4377
-Wire Wire Line
-	6327 4377 6391 4377
-Wire Wire Line
-	6391 4377 6455 4377
-Wire Wire Line
-	6455 4377 6519 4377
-Wire Wire Line
-	6519 4377 6583 4377
-Wire Wire Line
-	6583 4345 6583 4377
-Wire Wire Line
-	6583 4377 6583 4409
+	6583 4345 6583 4409
 Wire Wire Line
 	6519 4377 6519 4345
 Wire Wire Line
@@ -6287,19 +6101,7 @@ Connection ~ 6391 4377
 Connection ~ 6327 4377
 Connection ~ 6263 4377
 Wire Wire Line
-	7287 5241 7319 5241
-Wire Wire Line
-	7319 5241 7351 5241
-Wire Wire Line
-	7351 5241 7383 5241
-Wire Wire Line
-	7383 5241 7415 5241
-Wire Wire Line
-	7415 5241 7447 5241
-Wire Wire Line
-	7447 5241 7479 5241
-Wire Wire Line
-	7479 5241 7575 5241
+	7287 5241 7575 5241
 Connection ~ 7575 5241
 Connection ~ 7287 5241
 Connection ~ 7319 5241
@@ -6311,27 +6113,9 @@ Connection ~ 7479 5241
 Wire Wire Line
 	7287 4345 7287 4377
 Wire Wire Line
-	7287 4377 7415 4377
+	7287 4377 8119 4377
 Wire Wire Line
-	7415 4377 7671 4377
-Wire Wire Line
-	7671 4377 7735 4377
-Wire Wire Line
-	7735 4377 7799 4377
-Wire Wire Line
-	7799 4377 7863 4377
-Wire Wire Line
-	7863 4377 7927 4377
-Wire Wire Line
-	7927 4377 7991 4377
-Wire Wire Line
-	7991 4377 8055 4377
-Wire Wire Line
-	8055 4377 8119 4377
-Wire Wire Line
-	8119 4345 8119 4377
-Wire Wire Line
-	8119 4377 8119 4409
+	8119 4345 8119 4409
 Wire Wire Line
 	8055 4377 8055 4345
 Wire Wire Line
@@ -6358,19 +6142,7 @@ Connection ~ 7735 4377
 Connection ~ 7671 4377
 Connection ~ 7415 4377
 Wire Wire Line
-	8823 5241 8855 5241
-Wire Wire Line
-	8855 5241 8887 5241
-Wire Wire Line
-	8887 5241 8919 5241
-Wire Wire Line
-	8919 5241 8951 5241
-Wire Wire Line
-	8951 5241 8983 5241
-Wire Wire Line
-	8983 5241 9015 5241
-Wire Wire Line
-	9015 5241 9111 5241
+	8823 5241 9111 5241
 Connection ~ 9111 5241
 Connection ~ 8823 5241
 Connection ~ 8855 5241
@@ -6382,27 +6154,9 @@ Connection ~ 9015 5241
 Wire Wire Line
 	8823 4345 8823 4377
 Wire Wire Line
-	8823 4377 8951 4377
+	8823 4377 9655 4377
 Wire Wire Line
-	8951 4377 9207 4377
-Wire Wire Line
-	9207 4377 9271 4377
-Wire Wire Line
-	9271 4377 9335 4377
-Wire Wire Line
-	9335 4377 9399 4377
-Wire Wire Line
-	9399 4377 9463 4377
-Wire Wire Line
-	9463 4377 9527 4377
-Wire Wire Line
-	9527 4377 9591 4377
-Wire Wire Line
-	9591 4377 9655 4377
-Wire Wire Line
-	9655 4345 9655 4377
-Wire Wire Line
-	9655 4377 9655 4409
+	9655 4345 9655 4409
 Wire Wire Line
 	9591 4377 9591 4345
 Wire Wire Line
@@ -6429,19 +6183,7 @@ Connection ~ 9271 4377
 Connection ~ 9207 4377
 Connection ~ 8951 4377
 Wire Wire Line
-	10359 5241 10391 5241
-Wire Wire Line
-	10391 5241 10423 5241
-Wire Wire Line
-	10423 5241 10455 5241
-Wire Wire Line
-	10455 5241 10487 5241
-Wire Wire Line
-	10487 5241 10519 5241
-Wire Wire Line
-	10519 5241 10551 5241
-Wire Wire Line
-	10551 5241 10647 5241
+	10359 5241 10647 5241
 Connection ~ 10647 5241
 Connection ~ 10359 5241
 Connection ~ 10391 5241
@@ -6453,27 +6195,9 @@ Connection ~ 10551 5241
 Wire Wire Line
 	10359 4345 10359 4377
 Wire Wire Line
-	10359 4377 10487 4377
+	10359 4377 11191 4377
 Wire Wire Line
-	10487 4377 10743 4377
-Wire Wire Line
-	10743 4377 10807 4377
-Wire Wire Line
-	10807 4377 10871 4377
-Wire Wire Line
-	10871 4377 10935 4377
-Wire Wire Line
-	10935 4377 10999 4377
-Wire Wire Line
-	10999 4377 11063 4377
-Wire Wire Line
-	11063 4377 11127 4377
-Wire Wire Line
-	11127 4377 11191 4377
-Wire Wire Line
-	11191 4345 11191 4377
-Wire Wire Line
-	11191 4377 11191 4409
+	11191 4345 11191 4409
 Wire Wire Line
 	11127 4377 11127 4345
 Wire Wire Line
@@ -6500,19 +6224,7 @@ Connection ~ 10807 4377
 Connection ~ 10743 4377
 Connection ~ 10487 4377
 Wire Wire Line
-	5751 6713 5783 6713
-Wire Wire Line
-	5783 6713 5815 6713
-Wire Wire Line
-	5815 6713 5847 6713
-Wire Wire Line
-	5847 6713 5879 6713
-Wire Wire Line
-	5879 6713 5911 6713
-Wire Wire Line
-	5911 6713 5943 6713
-Wire Wire Line
-	5943 6713 6039 6713
+	5751 6713 6039 6713
 Connection ~ 6039 6713
 Connection ~ 5751 6713
 Connection ~ 5783 6713
@@ -6524,27 +6236,9 @@ Connection ~ 5943 6713
 Wire Wire Line
 	5751 5817 5751 5849
 Wire Wire Line
-	5751 5849 5879 5849
+	5751 5849 6583 5849
 Wire Wire Line
-	5879 5849 6135 5849
-Wire Wire Line
-	6135 5849 6199 5849
-Wire Wire Line
-	6199 5849 6263 5849
-Wire Wire Line
-	6263 5849 6327 5849
-Wire Wire Line
-	6327 5849 6391 5849
-Wire Wire Line
-	6391 5849 6455 5849
-Wire Wire Line
-	6455 5849 6519 5849
-Wire Wire Line
-	6519 5849 6583 5849
-Wire Wire Line
-	6583 5817 6583 5849
-Wire Wire Line
-	6583 5849 6583 5881
+	6583 5817 6583 5881
 Wire Wire Line
 	6519 5849 6519 5817
 Wire Wire Line
@@ -6571,19 +6265,7 @@ Connection ~ 6199 5849
 Connection ~ 6135 5849
 Connection ~ 5879 5849
 Wire Wire Line
-	7287 6713 7319 6713
-Wire Wire Line
-	7319 6713 7351 6713
-Wire Wire Line
-	7351 6713 7383 6713
-Wire Wire Line
-	7383 6713 7415 6713
-Wire Wire Line
-	7415 6713 7447 6713
-Wire Wire Line
-	7447 6713 7479 6713
-Wire Wire Line
-	7479 6713 7575 6713
+	7287 6713 7575 6713
 Connection ~ 7575 6713
 Connection ~ 7287 6713
 Connection ~ 7319 6713
@@ -6595,27 +6277,9 @@ Connection ~ 7479 6713
 Wire Wire Line
 	7287 5817 7287 5849
 Wire Wire Line
-	7287 5849 7415 5849
+	7287 5849 8119 5849
 Wire Wire Line
-	7415 5849 7671 5849
-Wire Wire Line
-	7671 5849 7735 5849
-Wire Wire Line
-	7735 5849 7799 5849
-Wire Wire Line
-	7799 5849 7863 5849
-Wire Wire Line
-	7863 5849 7927 5849
-Wire Wire Line
-	7927 5849 7991 5849
-Wire Wire Line
-	7991 5849 8055 5849
-Wire Wire Line
-	8055 5849 8119 5849
-Wire Wire Line
-	8119 5817 8119 5849
-Wire Wire Line
-	8119 5849 8119 5881
+	8119 5817 8119 5881
 Wire Wire Line
 	8055 5849 8055 5817
 Wire Wire Line
@@ -6642,19 +6306,7 @@ Connection ~ 7735 5849
 Connection ~ 7671 5849
 Connection ~ 7415 5849
 Wire Wire Line
-	8823 6713 8855 6713
-Wire Wire Line
-	8855 6713 8887 6713
-Wire Wire Line
-	8887 6713 8919 6713
-Wire Wire Line
-	8919 6713 8951 6713
-Wire Wire Line
-	8951 6713 8983 6713
-Wire Wire Line
-	8983 6713 9015 6713
-Wire Wire Line
-	9015 6713 9111 6713
+	8823 6713 9111 6713
 Connection ~ 9111 6713
 Connection ~ 8823 6713
 Connection ~ 8855 6713
@@ -6666,27 +6318,9 @@ Connection ~ 9015 6713
 Wire Wire Line
 	8823 5817 8823 5849
 Wire Wire Line
-	8823 5849 8951 5849
+	8823 5849 9655 5849
 Wire Wire Line
-	8951 5849 9207 5849
-Wire Wire Line
-	9207 5849 9271 5849
-Wire Wire Line
-	9271 5849 9335 5849
-Wire Wire Line
-	9335 5849 9399 5849
-Wire Wire Line
-	9399 5849 9463 5849
-Wire Wire Line
-	9463 5849 9527 5849
-Wire Wire Line
-	9527 5849 9591 5849
-Wire Wire Line
-	9591 5849 9655 5849
-Wire Wire Line
-	9655 5817 9655 5849
-Wire Wire Line
-	9655 5849 9655 5881
+	9655 5817 9655 5881
 Wire Wire Line
 	9591 5849 9591 5817
 Wire Wire Line
@@ -6713,19 +6347,7 @@ Connection ~ 9271 5849
 Connection ~ 9207 5849
 Connection ~ 8951 5849
 Wire Wire Line
-	10359 6713 10391 6713
-Wire Wire Line
-	10391 6713 10423 6713
-Wire Wire Line
-	10423 6713 10455 6713
-Wire Wire Line
-	10455 6713 10487 6713
-Wire Wire Line
-	10487 6713 10519 6713
-Wire Wire Line
-	10519 6713 10551 6713
-Wire Wire Line
-	10551 6713 10647 6713
+	10359 6713 10647 6713
 Connection ~ 10647 6713
 Connection ~ 10359 6713
 Connection ~ 10391 6713
@@ -6737,27 +6359,9 @@ Connection ~ 10551 6713
 Wire Wire Line
 	10359 5817 10359 5849
 Wire Wire Line
-	10359 5849 10487 5849
+	10359 5849 11191 5849
 Wire Wire Line
-	10487 5849 10743 5849
-Wire Wire Line
-	10743 5849 10807 5849
-Wire Wire Line
-	10807 5849 10871 5849
-Wire Wire Line
-	10871 5849 10935 5849
-Wire Wire Line
-	10935 5849 10999 5849
-Wire Wire Line
-	10999 5849 11063 5849
-Wire Wire Line
-	11063 5849 11127 5849
-Wire Wire Line
-	11127 5849 11191 5849
-Wire Wire Line
-	11191 5817 11191 5849
-Wire Wire Line
-	11191 5849 11191 5881
+	11191 5817 11191 5881
 Wire Wire Line
 	11127 5849 11127 5817
 Wire Wire Line
@@ -6784,19 +6388,7 @@ Connection ~ 10807 5849
 Connection ~ 10743 5849
 Connection ~ 10487 5849
 Wire Wire Line
-	5751 8217 5783 8217
-Wire Wire Line
-	5783 8217 5815 8217
-Wire Wire Line
-	5815 8217 5847 8217
-Wire Wire Line
-	5847 8217 5879 8217
-Wire Wire Line
-	5879 8217 5911 8217
-Wire Wire Line
-	5911 8217 5943 8217
-Wire Wire Line
-	5943 8217 6039 8217
+	5751 8217 6039 8217
 Connection ~ 6039 8217
 Connection ~ 5751 8217
 Connection ~ 5783 8217
@@ -6808,27 +6400,9 @@ Connection ~ 5943 8217
 Wire Wire Line
 	5751 7321 5751 7353
 Wire Wire Line
-	5751 7353 5879 7353
+	5751 7353 6583 7353
 Wire Wire Line
-	5879 7353 6135 7353
-Wire Wire Line
-	6135 7353 6199 7353
-Wire Wire Line
-	6199 7353 6263 7353
-Wire Wire Line
-	6263 7353 6327 7353
-Wire Wire Line
-	6327 7353 6391 7353
-Wire Wire Line
-	6391 7353 6455 7353
-Wire Wire Line
-	6455 7353 6519 7353
-Wire Wire Line
-	6519 7353 6583 7353
-Wire Wire Line
-	6583 7321 6583 7353
-Wire Wire Line
-	6583 7353 6583 7385
+	6583 7321 6583 7385
 Wire Wire Line
 	6519 7353 6519 7321
 Wire Wire Line
@@ -6855,19 +6429,7 @@ Connection ~ 6199 7353
 Connection ~ 6135 7353
 Connection ~ 5879 7353
 Wire Wire Line
-	7287 8217 7319 8217
-Wire Wire Line
-	7319 8217 7351 8217
-Wire Wire Line
-	7351 8217 7383 8217
-Wire Wire Line
-	7383 8217 7415 8217
-Wire Wire Line
-	7415 8217 7447 8217
-Wire Wire Line
-	7447 8217 7479 8217
-Wire Wire Line
-	7479 8217 7575 8217
+	7287 8217 7575 8217
 Connection ~ 7575 8217
 Connection ~ 7287 8217
 Connection ~ 7319 8217
@@ -6879,27 +6441,9 @@ Connection ~ 7479 8217
 Wire Wire Line
 	7287 7321 7287 7353
 Wire Wire Line
-	7287 7353 7415 7353
+	7287 7353 8119 7353
 Wire Wire Line
-	7415 7353 7671 7353
-Wire Wire Line
-	7671 7353 7735 7353
-Wire Wire Line
-	7735 7353 7799 7353
-Wire Wire Line
-	7799 7353 7863 7353
-Wire Wire Line
-	7863 7353 7927 7353
-Wire Wire Line
-	7927 7353 7991 7353
-Wire Wire Line
-	7991 7353 8055 7353
-Wire Wire Line
-	8055 7353 8119 7353
-Wire Wire Line
-	8119 7321 8119 7353
-Wire Wire Line
-	8119 7353 8119 7385
+	8119 7321 8119 7385
 Wire Wire Line
 	8055 7353 8055 7321
 Wire Wire Line
@@ -6926,19 +6470,7 @@ Connection ~ 7735 7353
 Connection ~ 7671 7353
 Connection ~ 7415 7353
 Wire Wire Line
-	8823 8217 8855 8217
-Wire Wire Line
-	8855 8217 8887 8217
-Wire Wire Line
-	8887 8217 8919 8217
-Wire Wire Line
-	8919 8217 8951 8217
-Wire Wire Line
-	8951 8217 8983 8217
-Wire Wire Line
-	8983 8217 9015 8217
-Wire Wire Line
-	9015 8217 9111 8217
+	8823 8217 9111 8217
 Connection ~ 9111 8217
 Connection ~ 8823 8217
 Connection ~ 8855 8217
@@ -6950,27 +6482,9 @@ Connection ~ 9015 8217
 Wire Wire Line
 	8823 7321 8823 7353
 Wire Wire Line
-	8823 7353 8951 7353
+	8823 7353 9655 7353
 Wire Wire Line
-	8951 7353 9207 7353
-Wire Wire Line
-	9207 7353 9271 7353
-Wire Wire Line
-	9271 7353 9335 7353
-Wire Wire Line
-	9335 7353 9399 7353
-Wire Wire Line
-	9399 7353 9463 7353
-Wire Wire Line
-	9463 7353 9527 7353
-Wire Wire Line
-	9527 7353 9591 7353
-Wire Wire Line
-	9591 7353 9655 7353
-Wire Wire Line
-	9655 7321 9655 7353
-Wire Wire Line
-	9655 7353 9655 7385
+	9655 7321 9655 7385
 Wire Wire Line
 	9591 7353 9591 7321
 Wire Wire Line
@@ -6997,19 +6511,7 @@ Connection ~ 9271 7353
 Connection ~ 9207 7353
 Connection ~ 8951 7353
 Wire Wire Line
-	10359 8217 10391 8217
-Wire Wire Line
-	10391 8217 10423 8217
-Wire Wire Line
-	10423 8217 10455 8217
-Wire Wire Line
-	10455 8217 10487 8217
-Wire Wire Line
-	10487 8217 10519 8217
-Wire Wire Line
-	10519 8217 10551 8217
-Wire Wire Line
-	10551 8217 10647 8217
+	10359 8217 10647 8217
 Connection ~ 10647 8217
 Connection ~ 10359 8217
 Connection ~ 10391 8217
@@ -7021,27 +6523,9 @@ Connection ~ 10551 8217
 Wire Wire Line
 	10359 7321 10359 7353
 Wire Wire Line
-	10359 7353 10487 7353
+	10359 7353 11191 7353
 Wire Wire Line
-	10487 7353 10743 7353
-Wire Wire Line
-	10743 7353 10807 7353
-Wire Wire Line
-	10807 7353 10871 7353
-Wire Wire Line
-	10871 7353 10935 7353
-Wire Wire Line
-	10935 7353 10999 7353
-Wire Wire Line
-	10999 7353 11063 7353
-Wire Wire Line
-	11063 7353 11127 7353
-Wire Wire Line
-	11127 7353 11191 7353
-Wire Wire Line
-	11191 7321 11191 7353
-Wire Wire Line
-	11191 7353 11191 7385
+	11191 7321 11191 7385
 Wire Wire Line
 	11127 7353 11127 7321
 Wire Wire Line
@@ -7096,9 +6580,7 @@ Wire Wire Line
 Wire Wire Line
 	14373 5663 14405 5663
 Wire Wire Line
-	14373 5663 14373 6143
-Wire Wire Line
-	14373 6143 14373 6529
+	14373 5663 14373 6529
 Wire Wire Line
 	2775 4249 2839 4249
 Wire Wire Line
@@ -7106,9 +6588,7 @@ Wire Wire Line
 Wire Wire Line
 	2711 3897 2999 3897
 Wire Wire Line
-	2615 4121 2775 4121
-Wire Wire Line
-	2775 4121 2839 4121
+	2615 4121 2839 4121
 Wire Wire Line
 	2615 4121 2615 4153
 Wire Wire Line
@@ -7150,16 +6630,12 @@ Wire Wire Line
 Wire Wire Line
 	4151 4505 4119 4505
 Wire Wire Line
-	3607 4153 3671 4153
-Wire Wire Line
-	3671 4153 3799 4153
+	3607 4153 3799 4153
 Wire Wire Line
 	3671 4121 3671 4153
 Connection ~ 3671 4153
 Wire Wire Line
-	2615 6553 2775 6553
-Wire Wire Line
-	2775 6553 2839 6553
+	2615 6553 2839 6553
 Wire Wire Line
 	2615 6553 2615 6585
 Wire Wire Line
@@ -7195,19 +6671,11 @@ Wire Wire Line
 Wire Wire Line
 	3991 4505 3927 4505
 Wire Wire Line
-	3927 4409 3927 4505
-Wire Wire Line
-	3927 4505 3927 4537
+	3927 4409 3927 4537
 Wire Wire Line
 	4055 4409 4055 4377
 Wire Wire Line
-	3607 4409 3799 4409
-Wire Wire Line
-	3799 4409 3863 4409
-Wire Wire Line
-	3863 4409 3927 4409
-Wire Wire Line
-	3927 4409 4055 4409
+	3607 4409 4055 4409
 Wire Wire Line
 	3863 4665 3863 4409
 Connection ~ 3927 4505
@@ -7236,19 +6704,11 @@ Wire Wire Line
 Wire Wire Line
 	3991 6937 3927 6937
 Wire Wire Line
-	3927 6841 3927 6937
-Wire Wire Line
-	3927 6937 3927 6969
+	3927 6841 3927 6969
 Wire Wire Line
 	4055 6841 4055 6809
 Wire Wire Line
-	3607 6841 3799 6841
-Wire Wire Line
-	3799 6841 3863 6841
-Wire Wire Line
-	3863 6841 3927 6841
-Wire Wire Line
-	3927 6841 4055 6841
+	3607 6841 4055 6841
 Wire Wire Line
 	3863 7097 3863 6841
 Connection ~ 3927 6937
@@ -7265,9 +6725,7 @@ Wire Wire Line
 	3831 6745 3831 6681
 Connection ~ 3831 6681
 Wire Wire Line
-	3607 6585 3671 6585
-Wire Wire Line
-	3671 6585 3799 6585
+	3607 6585 3799 6585
 Wire Wire Line
 	3671 6553 3671 6585
 Connection ~ 3671 6585
@@ -7302,15 +6760,9 @@ Wire Wire Line
 Wire Wire Line
 	4375 5273 4375 5337
 Wire Wire Line
-	4279 5337 4375 5337
+	4279 5337 4439 5337
 Wire Wire Line
-	4375 5337 4439 5337
-Wire Wire Line
-	4279 5337 4279 5369
-Wire Wire Line
-	4279 5369 4279 5401
-Wire Wire Line
-	4279 5401 4279 5433
+	4279 5337 4279 5433
 Connection ~ 4279 5337
 Connection ~ 4279 5369
 Connection ~ 4279 5401
@@ -7318,36 +6770,24 @@ Connection ~ 4375 5337
 Wire Wire Line
 	13253 6207 13253 5855
 Wire Wire Line
-	13009 5855 13253 5855
-Wire Wire Line
-	13253 5855 13317 5855
+	13009 5855 13317 5855
 Wire Wire Line
 	13253 6207 14870 6204
 Wire Wire Line
-	12893 5919 13121 5919
-Wire Wire Line
-	13121 5919 13317 5919
+	12893 5919 13317 5919
 Wire Wire Line
 	14661 5855 14853 5855
 Wire Wire Line
-	14661 5599 14661 5663
-Wire Wire Line
-	14661 5663 14661 5855
+	14661 5599 14661 5855
 Wire Wire Line
 	14661 5663 14533 5663
 Connection ~ 14661 5663
 Wire Wire Line
-	5687 3097 5719 3097
+	5687 3097 5751 3097
 Wire Wire Line
-	5719 3097 5751 3097
+	5687 2681 5687 3097
 Wire Wire Line
-	5687 2681 5687 2745
-Wire Wire Line
-	5687 2745 5687 3097
-Wire Wire Line
-	5687 2745 5751 2745
-Wire Wire Line
-	5751 2745 5898 2745
+	5687 2745 5898 2745
 Wire Wire Line
 	5898 2745 5898 2775
 Wire Wire Line
@@ -7359,15 +6799,9 @@ Connection ~ 5719 3097
 Wire Wire Line
 	13541 5535 13541 5503
 Wire Wire Line
-	13765 4253 13765 4349
+	13765 4253 13765 4477
 Wire Wire Line
-	13765 4349 13765 4477
-Wire Wire Line
-	4567 5337 4631 5337
-Wire Wire Line
-	4631 5337 4727 5337
-Wire Wire Line
-	4727 5337 4887 5337
+	4567 5337 4887 5337
 Wire Wire Line
 	4887 5337 5036 5338
 Wire Wire Line
@@ -7387,9 +6821,7 @@ Connection ~ 4631 5337
 Connection ~ 4887 5337
 Connection ~ 4567 5337
 Wire Wire Line
-	7223 3097 7255 3097
-Wire Wire Line
-	7255 3097 7287 3097
+	7223 3097 7287 3097
 Connection ~ 7287 3097
 Connection ~ 7255 3097
 Wire Wire Line
@@ -7401,31 +6833,19 @@ Connection ~ 8791 3097
 Wire Wire Line
 	10295 3096 10327 3097
 Wire Wire Line
-	10327 3097 10359 3097
-Wire Wire Line
-	10359 3097 10391 3097
+	10327 3097 10391 3097
 Connection ~ 10359 3097
 Connection ~ 10327 3097
 Wire Wire Line
-	5687 4569 5719 4569
-Wire Wire Line
-	5719 4569 5751 4569
+	5687 4569 5751 4569
 Connection ~ 5751 4569
 Connection ~ 5719 4569
 Wire Wire Line
-	7223 4569 7255 4569
+	7223 4569 7287 4569
 Wire Wire Line
-	7255 4569 7287 4569
+	7223 4153 7223 4569
 Wire Wire Line
-	7223 4153 7223 4217
-Wire Wire Line
-	7223 4217 7223 4569
-Wire Wire Line
-	7223 4217 7287 4217
-Wire Wire Line
-	7287 4217 7351 4217
-Wire Wire Line
-	7351 4217 7415 4217
+	7223 4217 7415 4217
 Wire Wire Line
 	7415 4217 7415 4249
 Wire Wire Line
@@ -7437,17 +6857,11 @@ Connection ~ 7287 4217
 Connection ~ 7287 4569
 Connection ~ 7255 4569
 Wire Wire Line
-	8759 4569 8791 4569
+	8759 4569 8823 4569
 Wire Wire Line
-	8791 4569 8823 4569
+	8759 4153 8759 4569
 Wire Wire Line
-	8759 4153 8759 4217
-Wire Wire Line
-	8759 4217 8759 4569
-Wire Wire Line
-	8759 4217 8823 4217
-Wire Wire Line
-	8823 4217 8951 4217
+	8759 4217 8951 4217
 Wire Wire Line
 	8951 4217 8951 4249
 Wire Wire Line
@@ -7458,17 +6872,11 @@ Connection ~ 8823 4217
 Connection ~ 8823 4569
 Connection ~ 8791 4569
 Wire Wire Line
-	10295 4569 10327 4569
+	10295 4569 10359 4569
 Wire Wire Line
-	10327 4569 10359 4569
+	10295 4153 10295 4569
 Wire Wire Line
-	10295 4153 10295 4217
-Wire Wire Line
-	10295 4217 10295 4569
-Wire Wire Line
-	10295 4217 10359 4217
-Wire Wire Line
-	10359 4217 10487 4217
+	10295 4217 10487 4217
 Wire Wire Line
 	10487 4217 10487 4249
 Wire Wire Line
@@ -7479,17 +6887,11 @@ Connection ~ 10359 4217
 Connection ~ 10359 4569
 Connection ~ 10327 4569
 Wire Wire Line
-	5687 6041 5719 6041
+	5687 6041 5751 6041
 Wire Wire Line
-	5719 6041 5751 6041
+	5687 5625 5687 6041
 Wire Wire Line
-	5687 5625 5687 5689
-Wire Wire Line
-	5687 5689 5687 6041
-Wire Wire Line
-	5687 5689 5751 5689
-Wire Wire Line
-	5751 5689 5879 5689
+	5687 5689 5879 5689
 Wire Wire Line
 	5879 5689 5879 5721
 Wire Wire Line
@@ -7500,17 +6902,11 @@ Connection ~ 5751 5689
 Connection ~ 5751 6041
 Connection ~ 5719 6041
 Wire Wire Line
-	7223 6041 7255 6041
+	7223 6041 7287 6041
 Wire Wire Line
-	7255 6041 7287 6041
+	7223 5625 7223 6041
 Wire Wire Line
-	7223 5625 7223 5689
-Wire Wire Line
-	7223 5689 7223 6041
-Wire Wire Line
-	7223 5689 7287 5689
-Wire Wire Line
-	7287 5689 7415 5689
+	7223 5689 7415 5689
 Wire Wire Line
 	7415 5689 7415 5721
 Wire Wire Line
@@ -7521,17 +6917,11 @@ Connection ~ 7287 5689
 Connection ~ 7287 6041
 Connection ~ 7255 6041
 Wire Wire Line
-	8759 6041 8791 6041
+	8759 6041 8823 6041
 Wire Wire Line
-	8791 6041 8823 6041
+	8759 5625 8759 6041
 Wire Wire Line
-	8759 5625 8759 5689
-Wire Wire Line
-	8759 5689 8759 6041
-Wire Wire Line
-	8759 5689 8823 5689
-Wire Wire Line
-	8823 5689 8951 5689
+	8759 5689 8951 5689
 Wire Wire Line
 	8951 5689 8951 5721
 Wire Wire Line
@@ -7542,17 +6932,11 @@ Connection ~ 8823 5689
 Connection ~ 8823 6041
 Connection ~ 8791 6041
 Wire Wire Line
-	10295 6041 10327 6041
+	10295 6041 10359 6041
 Wire Wire Line
-	10327 6041 10359 6041
+	10295 5625 10295 6041
 Wire Wire Line
-	10295 5625 10295 5689
-Wire Wire Line
-	10295 5689 10295 6041
-Wire Wire Line
-	10295 5689 10359 5689
-Wire Wire Line
-	10359 5689 10487 5689
+	10295 5689 10487 5689
 Wire Wire Line
 	10487 5689 10487 5721
 Wire Wire Line
@@ -7563,17 +6947,11 @@ Connection ~ 10359 5689
 Connection ~ 10359 6041
 Connection ~ 10327 6041
 Wire Wire Line
-	5687 7545 5719 7545
+	5687 7545 5751 7545
 Wire Wire Line
-	5719 7545 5751 7545
+	5687 7129 5687 7545
 Wire Wire Line
-	5687 7129 5687 7193
-Wire Wire Line
-	5687 7193 5687 7545
-Wire Wire Line
-	5687 7193 5751 7193
-Wire Wire Line
-	5751 7193 5879 7193
+	5687 7193 5879 7193
 Wire Wire Line
 	5879 7193 5879 7225
 Wire Wire Line
@@ -7584,17 +6962,11 @@ Connection ~ 5751 7193
 Connection ~ 5751 7545
 Connection ~ 5719 7545
 Wire Wire Line
-	7223 7545 7255 7545
+	7223 7545 7287 7545
 Wire Wire Line
-	7255 7545 7287 7545
+	7223 7129 7223 7545
 Wire Wire Line
-	7223 7129 7223 7193
-Wire Wire Line
-	7223 7193 7223 7545
-Wire Wire Line
-	7223 7193 7287 7193
-Wire Wire Line
-	7287 7193 7415 7193
+	7223 7193 7415 7193
 Wire Wire Line
 	7415 7193 7415 7225
 Wire Wire Line
@@ -7605,17 +6977,11 @@ Connection ~ 7287 7193
 Connection ~ 7287 7545
 Connection ~ 7255 7545
 Wire Wire Line
-	8759 7545 8791 7545
+	8759 7545 8823 7545
 Wire Wire Line
-	8791 7545 8823 7545
+	8759 7129 8759 7545
 Wire Wire Line
-	8759 7129 8759 7193
-Wire Wire Line
-	8759 7193 8759 7545
-Wire Wire Line
-	8759 7193 8823 7193
-Wire Wire Line
-	8823 7193 8951 7193
+	8759 7193 8951 7193
 Wire Wire Line
 	8951 7193 8951 7225
 Wire Wire Line
@@ -7626,17 +6992,11 @@ Connection ~ 8823 7193
 Connection ~ 8823 7545
 Connection ~ 8791 7545
 Wire Wire Line
-	10295 7545 10327 7545
+	10295 7545 10359 7545
 Wire Wire Line
-	10327 7545 10359 7545
+	10295 7129 10295 7545
 Wire Wire Line
-	10295 7129 10295 7193
-Wire Wire Line
-	10295 7193 10295 7545
-Wire Wire Line
-	10295 7193 10359 7193
-Wire Wire Line
-	10359 7193 10487 7193
+	10295 7193 10487 7193
 Wire Wire Line
 	10487 7193 10487 7225
 Wire Wire Line
@@ -7649,77 +7009,13 @@ Connection ~ 10327 7545
 Wire Wire Line
 	14661 5471 14661 5407
 Wire Wire Line
-	6647 3097 6615 3097
+	6647 3097 5847 3097
 Wire Wire Line
-	6615 3097 6583 3097
-Wire Wire Line
-	6583 3097 6551 3097
-Wire Wire Line
-	6551 3097 6519 3097
-Wire Wire Line
-	6519 3097 6487 3097
-Wire Wire Line
-	6487 3097 6455 3097
-Wire Wire Line
-	6455 3097 6423 3097
-Wire Wire Line
-	6423 3097 6391 3097
-Wire Wire Line
-	6391 3097 6359 3097
-Wire Wire Line
-	6359 3097 6327 3097
-Wire Wire Line
-	6327 3097 6295 3097
-Wire Wire Line
-	6295 3097 6263 3097
-Wire Wire Line
-	6263 3097 6231 3097
-Wire Wire Line
-	6231 3097 6199 3097
-Wire Wire Line
-	6199 3097 6167 3097
-Wire Wire Line
-	6167 3097 6135 3097
-Wire Wire Line
-	6135 3097 6103 3097
-Wire Wire Line
-	6103 3097 6071 3097
-Wire Wire Line
-	6071 3097 6039 3097
-Wire Wire Line
-	6039 3097 6007 3097
-Wire Wire Line
-	6007 3097 5975 3097
-Wire Wire Line
-	5975 3097 5943 3097
-Wire Wire Line
-	5943 3097 5911 3097
-Wire Wire Line
-	5911 3097 5879 3097
-Wire Wire Line
-	5879 3097 5847 3097
-Wire Wire Line
-	6647 2681 6647 2745
-Wire Wire Line
-	6647 2745 6647 3097
+	6647 2681 6647 3097
 Wire Wire Line
 	6135 2777 6135 2745
 Wire Wire Line
-	6135 2745 6199 2745
-Wire Wire Line
-	6199 2745 6263 2745
-Wire Wire Line
-	6263 2745 6327 2745
-Wire Wire Line
-	6327 2745 6391 2745
-Wire Wire Line
-	6391 2745 6455 2745
-Wire Wire Line
-	6455 2745 6519 2745
-Wire Wire Line
-	6519 2745 6583 2745
-Wire Wire Line
-	6583 2745 6647 2745
+	6135 2745 6647 2745
 Wire Wire Line
 	6583 2777 6583 2745
 Wire Wire Line
@@ -7768,29 +7064,13 @@ Connection ~ 6039 3097
 Connection ~ 6071 3097
 Connection ~ 5879 3097
 Wire Wire Line
-	4727 4089 4727 4153
-Wire Wire Line
-	4727 4153 4727 4185
+	4727 4089 4727 4185
 Wire Wire Line
 	4151 4153 4151 4249
 Wire Wire Line
 	4055 4153 4055 4249
 Wire Wire Line
-	3927 4153 3991 4153
-Wire Wire Line
-	3991 4153 4055 4153
-Wire Wire Line
-	4055 4153 4151 4153
-Wire Wire Line
-	4151 4153 4279 4153
-Wire Wire Line
-	4279 4153 4375 4153
-Wire Wire Line
-	4375 4153 4471 4153
-Wire Wire Line
-	4471 4153 4567 4153
-Wire Wire Line
-	4567 4153 4727 4153
+	3927 4153 4727 4153
 Wire Wire Line
 	3959 4249 3991 4249
 Wire Wire Line
@@ -7812,55 +7092,7 @@ Connection ~ 4471 4153
 Connection ~ 4567 4153
 Connection ~ 3991 4153
 Wire Wire Line
-	8183 3097 8151 3097
-Wire Wire Line
-	8151 3097 8119 3097
-Wire Wire Line
-	8119 3097 8087 3097
-Wire Wire Line
-	8087 3097 8055 3097
-Wire Wire Line
-	8055 3097 8023 3097
-Wire Wire Line
-	8023 3097 7991 3097
-Wire Wire Line
-	7991 3097 7959 3097
-Wire Wire Line
-	7959 3097 7927 3097
-Wire Wire Line
-	7927 3097 7895 3097
-Wire Wire Line
-	7895 3097 7863 3097
-Wire Wire Line
-	7863 3097 7831 3097
-Wire Wire Line
-	7831 3097 7799 3097
-Wire Wire Line
-	7799 3097 7767 3097
-Wire Wire Line
-	7767 3097 7735 3097
-Wire Wire Line
-	7735 3097 7703 3097
-Wire Wire Line
-	7703 3097 7671 3097
-Wire Wire Line
-	7671 3097 7639 3097
-Wire Wire Line
-	7639 3097 7607 3097
-Wire Wire Line
-	7607 3097 7575 3097
-Wire Wire Line
-	7575 3097 7543 3097
-Wire Wire Line
-	7543 3097 7511 3097
-Wire Wire Line
-	7511 3097 7479 3097
-Wire Wire Line
-	7479 3097 7447 3097
-Wire Wire Line
-	7447 3097 7415 3097
-Wire Wire Line
-	7415 3097 7383 3097
+	8183 3097 7383 3097
 Connection ~ 8183 3097
 Connection ~ 7447 3097
 Connection ~ 7479 3097
@@ -7887,55 +7119,7 @@ Connection ~ 7575 3097
 Connection ~ 7607 3097
 Connection ~ 7415 3097
 Wire Wire Line
-	8919 3097 8951 3097
-Wire Wire Line
-	8951 3097 8983 3097
-Wire Wire Line
-	8983 3097 9015 3097
-Wire Wire Line
-	9015 3097 9047 3097
-Wire Wire Line
-	9047 3097 9079 3097
-Wire Wire Line
-	9079 3097 9111 3097
-Wire Wire Line
-	9111 3097 9143 3097
-Wire Wire Line
-	9143 3097 9175 3097
-Wire Wire Line
-	9175 3097 9207 3097
-Wire Wire Line
-	9207 3097 9239 3097
-Wire Wire Line
-	9239 3097 9271 3097
-Wire Wire Line
-	9271 3097 9303 3097
-Wire Wire Line
-	9303 3097 9335 3097
-Wire Wire Line
-	9335 3097 9367 3097
-Wire Wire Line
-	9367 3097 9399 3097
-Wire Wire Line
-	9399 3097 9431 3097
-Wire Wire Line
-	9431 3097 9463 3097
-Wire Wire Line
-	9463 3097 9495 3097
-Wire Wire Line
-	9495 3097 9527 3097
-Wire Wire Line
-	9527 3097 9559 3097
-Wire Wire Line
-	9559 3097 9591 3097
-Wire Wire Line
-	9591 3097 9623 3097
-Wire Wire Line
-	9623 3097 9655 3097
-Wire Wire Line
-	9655 3097 9687 3097
-Wire Wire Line
-	9687 3097 9719 3097
+	8919 3097 9719 3097
 Connection ~ 9719 3097
 Connection ~ 8983 3097
 Connection ~ 9015 3097
@@ -7962,55 +7146,7 @@ Connection ~ 9111 3097
 Connection ~ 9143 3097
 Connection ~ 8951 3097
 Wire Wire Line
-	11255 3097 11223 3097
-Wire Wire Line
-	11223 3097 11191 3097
-Wire Wire Line
-	11191 3097 11159 3097
-Wire Wire Line
-	11159 3097 11127 3097
-Wire Wire Line
-	11127 3097 11095 3097
-Wire Wire Line
-	11095 3097 11063 3097
-Wire Wire Line
-	11063 3097 11031 3097
-Wire Wire Line
-	11031 3097 10999 3097
-Wire Wire Line
-	10999 3097 10967 3097
-Wire Wire Line
-	10967 3097 10935 3097
-Wire Wire Line
-	10935 3097 10903 3097
-Wire Wire Line
-	10903 3097 10871 3097
-Wire Wire Line
-	10871 3097 10839 3097
-Wire Wire Line
-	10839 3097 10807 3097
-Wire Wire Line
-	10807 3097 10775 3097
-Wire Wire Line
-	10775 3097 10743 3097
-Wire Wire Line
-	10743 3097 10711 3097
-Wire Wire Line
-	10711 3097 10679 3097
-Wire Wire Line
-	10679 3097 10647 3097
-Wire Wire Line
-	10647 3097 10615 3097
-Wire Wire Line
-	10615 3097 10583 3097
-Wire Wire Line
-	10583 3097 10551 3097
-Wire Wire Line
-	10551 3097 10519 3097
-Wire Wire Line
-	10519 3097 10487 3097
-Wire Wire Line
-	10487 3097 10455 3097
+	11255 3097 10455 3097
 Connection ~ 11255 3097
 Connection ~ 10519 3097
 Connection ~ 10551 3097
@@ -8037,75 +7173,11 @@ Connection ~ 10647 3097
 Connection ~ 10679 3097
 Connection ~ 10487 3097
 Wire Wire Line
-	6647 4569 6615 4569
+	6647 4569 5847 4569
 Wire Wire Line
-	6615 4569 6583 4569
+	6647 4153 6647 4569
 Wire Wire Line
-	6583 4569 6551 4569
-Wire Wire Line
-	6551 4569 6519 4569
-Wire Wire Line
-	6519 4569 6487 4569
-Wire Wire Line
-	6487 4569 6455 4569
-Wire Wire Line
-	6455 4569 6423 4569
-Wire Wire Line
-	6423 4569 6391 4569
-Wire Wire Line
-	6391 4569 6359 4569
-Wire Wire Line
-	6359 4569 6327 4569
-Wire Wire Line
-	6327 4569 6295 4569
-Wire Wire Line
-	6295 4569 6263 4569
-Wire Wire Line
-	6263 4569 6231 4569
-Wire Wire Line
-	6231 4569 6199 4569
-Wire Wire Line
-	6199 4569 6167 4569
-Wire Wire Line
-	6167 4569 6135 4569
-Wire Wire Line
-	6135 4569 6103 4569
-Wire Wire Line
-	6103 4569 6071 4569
-Wire Wire Line
-	6071 4569 6039 4569
-Wire Wire Line
-	6039 4569 6007 4569
-Wire Wire Line
-	6007 4569 5975 4569
-Wire Wire Line
-	5975 4569 5943 4569
-Wire Wire Line
-	5943 4569 5911 4569
-Wire Wire Line
-	5911 4569 5879 4569
-Wire Wire Line
-	5879 4569 5847 4569
-Wire Wire Line
-	6647 4153 6647 4217
-Wire Wire Line
-	6647 4217 6647 4569
-Wire Wire Line
-	6135 4217 6199 4217
-Wire Wire Line
-	6199 4217 6263 4217
-Wire Wire Line
-	6263 4217 6327 4217
-Wire Wire Line
-	6327 4217 6391 4217
-Wire Wire Line
-	6391 4217 6455 4217
-Wire Wire Line
-	6455 4217 6519 4217
-Wire Wire Line
-	6519 4217 6583 4217
-Wire Wire Line
-	6583 4217 6647 4217
+	6135 4217 6647 4217
 Wire Wire Line
 	6583 4249 6583 4217
 Wire Wire Line
@@ -8151,77 +7223,13 @@ Connection ~ 6039 4569
 Connection ~ 6071 4569
 Connection ~ 5879 4569
 Wire Wire Line
-	8183 4569 8151 4569
+	8183 4569 7383 4569
 Wire Wire Line
-	8151 4569 8119 4569
-Wire Wire Line
-	8119 4569 8087 4569
-Wire Wire Line
-	8087 4569 8055 4569
-Wire Wire Line
-	8055 4569 8023 4569
-Wire Wire Line
-	8023 4569 7991 4569
-Wire Wire Line
-	7991 4569 7959 4569
-Wire Wire Line
-	7959 4569 7927 4569
-Wire Wire Line
-	7927 4569 7895 4569
-Wire Wire Line
-	7895 4569 7863 4569
-Wire Wire Line
-	7863 4569 7831 4569
-Wire Wire Line
-	7831 4569 7799 4569
-Wire Wire Line
-	7799 4569 7767 4569
-Wire Wire Line
-	7767 4569 7735 4569
-Wire Wire Line
-	7735 4569 7703 4569
-Wire Wire Line
-	7703 4569 7671 4569
-Wire Wire Line
-	7671 4569 7639 4569
-Wire Wire Line
-	7639 4569 7607 4569
-Wire Wire Line
-	7607 4569 7575 4569
-Wire Wire Line
-	7575 4569 7543 4569
-Wire Wire Line
-	7543 4569 7511 4569
-Wire Wire Line
-	7511 4569 7479 4569
-Wire Wire Line
-	7479 4569 7447 4569
-Wire Wire Line
-	7447 4569 7415 4569
-Wire Wire Line
-	7415 4569 7383 4569
-Wire Wire Line
-	8183 4153 8183 4217
-Wire Wire Line
-	8183 4217 8183 4569
+	8183 4153 8183 4569
 Wire Wire Line
 	7671 4249 7671 4217
 Wire Wire Line
-	7671 4217 7735 4217
-Wire Wire Line
-	7735 4217 7799 4217
-Wire Wire Line
-	7799 4217 7863 4217
-Wire Wire Line
-	7863 4217 7927 4217
-Wire Wire Line
-	7927 4217 7991 4217
-Wire Wire Line
-	7991 4217 8055 4217
-Wire Wire Line
-	8055 4217 8119 4217
-Wire Wire Line
-	8119 4217 8183 4217
+	7671 4217 8183 4217
 Wire Wire Line
 	8119 4249 8119 4217
 Wire Wire Line
@@ -8270,77 +7278,13 @@ Connection ~ 7575 4569
 Connection ~ 7607 4569
 Connection ~ 7415 4569
 Wire Wire Line
-	9719 4569 9687 4569
+	9719 4569 8919 4569
 Wire Wire Line
-	9687 4569 9655 4569
-Wire Wire Line
-	9655 4569 9623 4569
-Wire Wire Line
-	9623 4569 9591 4569
-Wire Wire Line
-	9591 4569 9559 4569
-Wire Wire Line
-	9559 4569 9527 4569
-Wire Wire Line
-	9527 4569 9495 4569
-Wire Wire Line
-	9495 4569 9463 4569
-Wire Wire Line
-	9463 4569 9431 4569
-Wire Wire Line
-	9431 4569 9399 4569
-Wire Wire Line
-	9399 4569 9367 4569
-Wire Wire Line
-	9367 4569 9335 4569
-Wire Wire Line
-	9335 4569 9303 4569
-Wire Wire Line
-	9303 4569 9271 4569
-Wire Wire Line
-	9271 4569 9239 4569
-Wire Wire Line
-	9239 4569 9207 4569
-Wire Wire Line
-	9207 4569 9175 4569
-Wire Wire Line
-	9175 4569 9143 4569
-Wire Wire Line
-	9143 4569 9111 4569
-Wire Wire Line
-	9111 4569 9079 4569
-Wire Wire Line
-	9079 4569 9047 4569
-Wire Wire Line
-	9047 4569 9015 4569
-Wire Wire Line
-	9015 4569 8983 4569
-Wire Wire Line
-	8983 4569 8951 4569
-Wire Wire Line
-	8951 4569 8919 4569
-Wire Wire Line
-	9719 4153 9719 4217
-Wire Wire Line
-	9719 4217 9719 4569
+	9719 4153 9719 4569
 Wire Wire Line
 	9207 4249 9207 4217
 Wire Wire Line
-	9207 4217 9271 4217
-Wire Wire Line
-	9271 4217 9335 4217
-Wire Wire Line
-	9335 4217 9399 4217
-Wire Wire Line
-	9399 4217 9463 4217
-Wire Wire Line
-	9463 4217 9527 4217
-Wire Wire Line
-	9527 4217 9591 4217
-Wire Wire Line
-	9591 4217 9655 4217
-Wire Wire Line
-	9655 4217 9719 4217
+	9207 4217 9719 4217
 Wire Wire Line
 	9655 4249 9655 4217
 Wire Wire Line
@@ -8389,77 +7333,13 @@ Connection ~ 9111 4569
 Connection ~ 9143 4569
 Connection ~ 8951 4569
 Wire Wire Line
-	11255 4569 11223 4569
+	11255 4569 10455 4569
 Wire Wire Line
-	11223 4569 11191 4569
-Wire Wire Line
-	11191 4569 11159 4569
-Wire Wire Line
-	11159 4569 11127 4569
-Wire Wire Line
-	11127 4569 11095 4569
-Wire Wire Line
-	11095 4569 11063 4569
-Wire Wire Line
-	11063 4569 11031 4569
-Wire Wire Line
-	11031 4569 10999 4569
-Wire Wire Line
-	10999 4569 10967 4569
-Wire Wire Line
-	10967 4569 10935 4569
-Wire Wire Line
-	10935 4569 10903 4569
-Wire Wire Line
-	10903 4569 10871 4569
-Wire Wire Line
-	10871 4569 10839 4569
-Wire Wire Line
-	10839 4569 10807 4569
-Wire Wire Line
-	10807 4569 10775 4569
-Wire Wire Line
-	10775 4569 10743 4569
-Wire Wire Line
-	10743 4569 10711 4569
-Wire Wire Line
-	10711 4569 10679 4569
-Wire Wire Line
-	10679 4569 10647 4569
-Wire Wire Line
-	10647 4569 10615 4569
-Wire Wire Line
-	10615 4569 10583 4569
-Wire Wire Line
-	10583 4569 10551 4569
-Wire Wire Line
-	10551 4569 10519 4569
-Wire Wire Line
-	10519 4569 10487 4569
-Wire Wire Line
-	10487 4569 10455 4569
-Wire Wire Line
-	11255 4153 11255 4217
-Wire Wire Line
-	11255 4217 11255 4569
+	11255 4153 11255 4569
 Wire Wire Line
 	10743 4249 10743 4217
 Wire Wire Line
-	10743 4217 10807 4217
-Wire Wire Line
-	10807 4217 10871 4217
-Wire Wire Line
-	10871 4217 10935 4217
-Wire Wire Line
-	10935 4217 10999 4217
-Wire Wire Line
-	10999 4217 11063 4217
-Wire Wire Line
-	11063 4217 11127 4217
-Wire Wire Line
-	11127 4217 11191 4217
-Wire Wire Line
-	11191 4217 11255 4217
+	10743 4217 11255 4217
 Wire Wire Line
 	11191 4249 11191 4217
 Wire Wire Line
@@ -8508,29 +7388,13 @@ Connection ~ 10647 4569
 Connection ~ 10679 4569
 Connection ~ 10487 4569
 Wire Wire Line
-	4727 6521 4727 6585
-Wire Wire Line
-	4727 6585 4727 6617
+	4727 6521 4727 6617
 Wire Wire Line
 	4151 6585 4151 6681
 Wire Wire Line
 	4055 6585 4055 6681
 Wire Wire Line
-	3927 6585 3991 6585
-Wire Wire Line
-	3991 6585 4055 6585
-Wire Wire Line
-	4055 6585 4151 6585
-Wire Wire Line
-	4151 6585 4279 6585
-Wire Wire Line
-	4279 6585 4375 6585
-Wire Wire Line
-	4375 6585 4471 6585
-Wire Wire Line
-	4471 6585 4567 6585
-Wire Wire Line
-	4567 6585 4727 6585
+	3927 6585 4727 6585
 Wire Wire Line
 	3959 6681 3991 6681
 Wire Wire Line
@@ -8552,77 +7416,13 @@ Connection ~ 4471 6585
 Connection ~ 4567 6585
 Connection ~ 3991 6585
 Wire Wire Line
-	6647 6041 6615 6041
+	6647 6041 5847 6041
 Wire Wire Line
-	6615 6041 6583 6041
-Wire Wire Line
-	6583 6041 6551 6041
-Wire Wire Line
-	6551 6041 6519 6041
-Wire Wire Line
-	6519 6041 6487 6041
-Wire Wire Line
-	6487 6041 6455 6041
-Wire Wire Line
-	6455 6041 6423 6041
-Wire Wire Line
-	6423 6041 6391 6041
-Wire Wire Line
-	6391 6041 6359 6041
-Wire Wire Line
-	6359 6041 6327 6041
-Wire Wire Line
-	6327 6041 6295 6041
-Wire Wire Line
-	6295 6041 6263 6041
-Wire Wire Line
-	6263 6041 6231 6041
-Wire Wire Line
-	6231 6041 6199 6041
-Wire Wire Line
-	6199 6041 6167 6041
-Wire Wire Line
-	6167 6041 6135 6041
-Wire Wire Line
-	6135 6041 6103 6041
-Wire Wire Line
-	6103 6041 6071 6041
-Wire Wire Line
-	6071 6041 6039 6041
-Wire Wire Line
-	6039 6041 6007 6041
-Wire Wire Line
-	6007 6041 5975 6041
-Wire Wire Line
-	5975 6041 5943 6041
-Wire Wire Line
-	5943 6041 5911 6041
-Wire Wire Line
-	5911 6041 5879 6041
-Wire Wire Line
-	5879 6041 5847 6041
-Wire Wire Line
-	6647 5625 6647 5689
-Wire Wire Line
-	6647 5689 6647 6041
+	6647 5625 6647 6041
 Wire Wire Line
 	6135 5721 6135 5689
 Wire Wire Line
-	6135 5689 6199 5689
-Wire Wire Line
-	6199 5689 6263 5689
-Wire Wire Line
-	6263 5689 6327 5689
-Wire Wire Line
-	6327 5689 6391 5689
-Wire Wire Line
-	6391 5689 6455 5689
-Wire Wire Line
-	6455 5689 6519 5689
-Wire Wire Line
-	6519 5689 6583 5689
-Wire Wire Line
-	6583 5689 6647 5689
+	6135 5689 6647 5689
 Wire Wire Line
 	6583 5721 6583 5689
 Wire Wire Line
@@ -8671,77 +7471,13 @@ Connection ~ 6039 6041
 Connection ~ 6071 6041
 Connection ~ 5879 6041
 Wire Wire Line
-	8183 6041 8151 6041
+	8183 6041 7383 6041
 Wire Wire Line
-	8151 6041 8119 6041
-Wire Wire Line
-	8119 6041 8087 6041
-Wire Wire Line
-	8087 6041 8055 6041
-Wire Wire Line
-	8055 6041 8023 6041
-Wire Wire Line
-	8023 6041 7991 6041
-Wire Wire Line
-	7991 6041 7959 6041
-Wire Wire Line
-	7959 6041 7927 6041
-Wire Wire Line
-	7927 6041 7895 6041
-Wire Wire Line
-	7895 6041 7863 6041
-Wire Wire Line
-	7863 6041 7831 6041
-Wire Wire Line
-	7831 6041 7799 6041
-Wire Wire Line
-	7799 6041 7767 6041
-Wire Wire Line
-	7767 6041 7735 6041
-Wire Wire Line
-	7735 6041 7703 6041
-Wire Wire Line
-	7703 6041 7671 6041
-Wire Wire Line
-	7671 6041 7639 6041
-Wire Wire Line
-	7639 6041 7607 6041
-Wire Wire Line
-	7607 6041 7575 6041
-Wire Wire Line
-	7575 6041 7543 6041
-Wire Wire Line
-	7543 6041 7511 6041
-Wire Wire Line
-	7511 6041 7479 6041
-Wire Wire Line
-	7479 6041 7447 6041
-Wire Wire Line
-	7447 6041 7415 6041
-Wire Wire Line
-	7415 6041 7383 6041
-Wire Wire Line
-	8183 5625 8183 5689
-Wire Wire Line
-	8183 5689 8183 6041
+	8183 5625 8183 6041
 Wire Wire Line
 	7671 5721 7671 5689
 Wire Wire Line
-	7671 5689 7735 5689
-Wire Wire Line
-	7735 5689 7799 5689
-Wire Wire Line
-	7799 5689 7863 5689
-Wire Wire Line
-	7863 5689 7927 5689
-Wire Wire Line
-	7927 5689 7991 5689
-Wire Wire Line
-	7991 5689 8055 5689
-Wire Wire Line
-	8055 5689 8119 5689
-Wire Wire Line
-	8119 5689 8183 5689
+	7671 5689 8183 5689
 Wire Wire Line
 	8119 5721 8119 5689
 Wire Wire Line
@@ -8790,77 +7526,13 @@ Connection ~ 7575 6041
 Connection ~ 7607 6041
 Connection ~ 7415 6041
 Wire Wire Line
-	9719 6041 9687 6041
+	9719 6041 8919 6041
 Wire Wire Line
-	9687 6041 9655 6041
-Wire Wire Line
-	9655 6041 9623 6041
-Wire Wire Line
-	9623 6041 9591 6041
-Wire Wire Line
-	9591 6041 9559 6041
-Wire Wire Line
-	9559 6041 9527 6041
-Wire Wire Line
-	9527 6041 9495 6041
-Wire Wire Line
-	9495 6041 9463 6041
-Wire Wire Line
-	9463 6041 9431 6041
-Wire Wire Line
-	9431 6041 9399 6041
-Wire Wire Line
-	9399 6041 9367 6041
-Wire Wire Line
-	9367 6041 9335 6041
-Wire Wire Line
-	9335 6041 9303 6041
-Wire Wire Line
-	9303 6041 9271 6041
-Wire Wire Line
-	9271 6041 9239 6041
-Wire Wire Line
-	9239 6041 9207 6041
-Wire Wire Line
-	9207 6041 9175 6041
-Wire Wire Line
-	9175 6041 9143 6041
-Wire Wire Line
-	9143 6041 9111 6041
-Wire Wire Line
-	9111 6041 9079 6041
-Wire Wire Line
-	9079 6041 9047 6041
-Wire Wire Line
-	9047 6041 9015 6041
-Wire Wire Line
-	9015 6041 8983 6041
-Wire Wire Line
-	8983 6041 8951 6041
-Wire Wire Line
-	8951 6041 8919 6041
-Wire Wire Line
-	9719 5625 9719 5689
-Wire Wire Line
-	9719 5689 9719 6041
+	9719 5625 9719 6041
 Wire Wire Line
 	9207 5721 9207 5689
 Wire Wire Line
-	9207 5689 9271 5689
-Wire Wire Line
-	9271 5689 9335 5689
-Wire Wire Line
-	9335 5689 9399 5689
-Wire Wire Line
-	9399 5689 9463 5689
-Wire Wire Line
-	9463 5689 9527 5689
-Wire Wire Line
-	9527 5689 9591 5689
-Wire Wire Line
-	9591 5689 9655 5689
-Wire Wire Line
-	9655 5689 9719 5689
+	9207 5689 9719 5689
 Wire Wire Line
 	9655 5721 9655 5689
 Wire Wire Line
@@ -8909,77 +7581,13 @@ Connection ~ 9111 6041
 Connection ~ 9143 6041
 Connection ~ 8951 6041
 Wire Wire Line
-	11255 6041 11223 6041
+	11255 6041 10455 6041
 Wire Wire Line
-	11223 6041 11191 6041
-Wire Wire Line
-	11191 6041 11159 6041
-Wire Wire Line
-	11159 6041 11127 6041
-Wire Wire Line
-	11127 6041 11095 6041
-Wire Wire Line
-	11095 6041 11063 6041
-Wire Wire Line
-	11063 6041 11031 6041
-Wire Wire Line
-	11031 6041 10999 6041
-Wire Wire Line
-	10999 6041 10967 6041
-Wire Wire Line
-	10967 6041 10935 6041
-Wire Wire Line
-	10935 6041 10903 6041
-Wire Wire Line
-	10903 6041 10871 6041
-Wire Wire Line
-	10871 6041 10839 6041
-Wire Wire Line
-	10839 6041 10807 6041
-Wire Wire Line
-	10807 6041 10775 6041
-Wire Wire Line
-	10775 6041 10743 6041
-Wire Wire Line
-	10743 6041 10711 6041
-Wire Wire Line
-	10711 6041 10679 6041
-Wire Wire Line
-	10679 6041 10647 6041
-Wire Wire Line
-	10647 6041 10615 6041
-Wire Wire Line
-	10615 6041 10583 6041
-Wire Wire Line
-	10583 6041 10551 6041
-Wire Wire Line
-	10551 6041 10519 6041
-Wire Wire Line
-	10519 6041 10487 6041
-Wire Wire Line
-	10487 6041 10455 6041
-Wire Wire Line
-	11255 5625 11255 5689
-Wire Wire Line
-	11255 5689 11255 6041
+	11255 5625 11255 6041
 Wire Wire Line
 	10743 5721 10743 5689
 Wire Wire Line
-	10743 5689 10807 5689
-Wire Wire Line
-	10807 5689 10871 5689
-Wire Wire Line
-	10871 5689 10935 5689
-Wire Wire Line
-	10935 5689 10999 5689
-Wire Wire Line
-	10999 5689 11063 5689
-Wire Wire Line
-	11063 5689 11127 5689
-Wire Wire Line
-	11127 5689 11191 5689
-Wire Wire Line
-	11191 5689 11255 5689
+	10743 5689 11255 5689
 Wire Wire Line
 	11191 5721 11191 5689
 Wire Wire Line
@@ -9028,77 +7636,13 @@ Connection ~ 10647 6041
 Connection ~ 10679 6041
 Connection ~ 10487 6041
 Wire Wire Line
-	6647 7545 6615 7545
+	6647 7545 5847 7545
 Wire Wire Line
-	6615 7545 6583 7545
-Wire Wire Line
-	6583 7545 6551 7545
-Wire Wire Line
-	6551 7545 6519 7545
-Wire Wire Line
-	6519 7545 6487 7545
-Wire Wire Line
-	6487 7545 6455 7545
-Wire Wire Line
-	6455 7545 6423 7545
-Wire Wire Line
-	6423 7545 6391 7545
-Wire Wire Line
-	6391 7545 6359 7545
-Wire Wire Line
-	6359 7545 6327 7545
-Wire Wire Line
-	6327 7545 6295 7545
-Wire Wire Line
-	6295 7545 6263 7545
-Wire Wire Line
-	6263 7545 6231 7545
-Wire Wire Line
-	6231 7545 6199 7545
-Wire Wire Line
-	6199 7545 6167 7545
-Wire Wire Line
-	6167 7545 6135 7545
-Wire Wire Line
-	6135 7545 6103 7545
-Wire Wire Line
-	6103 7545 6071 7545
-Wire Wire Line
-	6071 7545 6039 7545
-Wire Wire Line
-	6039 7545 6007 7545
-Wire Wire Line
-	6007 7545 5975 7545
-Wire Wire Line
-	5975 7545 5943 7545
-Wire Wire Line
-	5943 7545 5911 7545
-Wire Wire Line
-	5911 7545 5879 7545
-Wire Wire Line
-	5879 7545 5847 7545
-Wire Wire Line
-	6647 7129 6647 7193
-Wire Wire Line
-	6647 7193 6647 7545
+	6647 7129 6647 7545
 Wire Wire Line
 	6135 7225 6135 7193
 Wire Wire Line
-	6135 7193 6199 7193
-Wire Wire Line
-	6199 7193 6263 7193
-Wire Wire Line
-	6263 7193 6327 7193
-Wire Wire Line
-	6327 7193 6391 7193
-Wire Wire Line
-	6391 7193 6455 7193
-Wire Wire Line
-	6455 7193 6519 7193
-Wire Wire Line
-	6519 7193 6583 7193
-Wire Wire Line
-	6583 7193 6647 7193
+	6135 7193 6647 7193
 Wire Wire Line
 	6583 7225 6583 7193
 Wire Wire Line
@@ -9147,77 +7691,13 @@ Connection ~ 6039 7545
 Connection ~ 6071 7545
 Connection ~ 5879 7545
 Wire Wire Line
-	8183 7545 8151 7545
+	8183 7545 7383 7545
 Wire Wire Line
-	8151 7545 8119 7545
-Wire Wire Line
-	8119 7545 8087 7545
-Wire Wire Line
-	8087 7545 8055 7545
-Wire Wire Line
-	8055 7545 8023 7545
-Wire Wire Line
-	8023 7545 7991 7545
-Wire Wire Line
-	7991 7545 7959 7545
-Wire Wire Line
-	7959 7545 7927 7545
-Wire Wire Line
-	7927 7545 7895 7545
-Wire Wire Line
-	7895 7545 7863 7545
-Wire Wire Line
-	7863 7545 7831 7545
-Wire Wire Line
-	7831 7545 7799 7545
-Wire Wire Line
-	7799 7545 7767 7545
-Wire Wire Line
-	7767 7545 7735 7545
-Wire Wire Line
-	7735 7545 7703 7545
-Wire Wire Line
-	7703 7545 7671 7545
-Wire Wire Line
-	7671 7545 7639 7545
-Wire Wire Line
-	7639 7545 7607 7545
-Wire Wire Line
-	7607 7545 7575 7545
-Wire Wire Line
-	7575 7545 7543 7545
-Wire Wire Line
-	7543 7545 7511 7545
-Wire Wire Line
-	7511 7545 7479 7545
-Wire Wire Line
-	7479 7545 7447 7545
-Wire Wire Line
-	7447 7545 7415 7545
-Wire Wire Line
-	7415 7545 7383 7545
-Wire Wire Line
-	8183 7129 8183 7193
-Wire Wire Line
-	8183 7193 8183 7545
+	8183 7129 8183 7545
 Wire Wire Line
 	7671 7225 7671 7193
 Wire Wire Line
-	7671 7193 7735 7193
-Wire Wire Line
-	7735 7193 7799 7193
-Wire Wire Line
-	7799 7193 7863 7193
-Wire Wire Line
-	7863 7193 7927 7193
-Wire Wire Line
-	7927 7193 7991 7193
-Wire Wire Line
-	7991 7193 8055 7193
-Wire Wire Line
-	8055 7193 8119 7193
-Wire Wire Line
-	8119 7193 8183 7193
+	7671 7193 8183 7193
 Wire Wire Line
 	8119 7225 8119 7193
 Wire Wire Line
@@ -9266,77 +7746,13 @@ Connection ~ 7575 7545
 Connection ~ 7607 7545
 Connection ~ 7415 7545
 Wire Wire Line
-	9719 7545 9687 7545
+	9719 7545 8919 7545
 Wire Wire Line
-	9687 7545 9655 7545
-Wire Wire Line
-	9655 7545 9623 7545
-Wire Wire Line
-	9623 7545 9591 7545
-Wire Wire Line
-	9591 7545 9559 7545
-Wire Wire Line
-	9559 7545 9527 7545
-Wire Wire Line
-	9527 7545 9495 7545
-Wire Wire Line
-	9495 7545 9463 7545
-Wire Wire Line
-	9463 7545 9431 7545
-Wire Wire Line
-	9431 7545 9399 7545
-Wire Wire Line
-	9399 7545 9367 7545
-Wire Wire Line
-	9367 7545 9335 7545
-Wire Wire Line
-	9335 7545 9303 7545
-Wire Wire Line
-	9303 7545 9271 7545
-Wire Wire Line
-	9271 7545 9239 7545
-Wire Wire Line
-	9239 7545 9207 7545
-Wire Wire Line
-	9207 7545 9175 7545
-Wire Wire Line
-	9175 7545 9143 7545
-Wire Wire Line
-	9143 7545 9111 7545
-Wire Wire Line
-	9111 7545 9079 7545
-Wire Wire Line
-	9079 7545 9047 7545
-Wire Wire Line
-	9047 7545 9015 7545
-Wire Wire Line
-	9015 7545 8983 7545
-Wire Wire Line
-	8983 7545 8951 7545
-Wire Wire Line
-	8951 7545 8919 7545
-Wire Wire Line
-	9719 7129 9719 7193
-Wire Wire Line
-	9719 7193 9719 7545
+	9719 7129 9719 7545
 Wire Wire Line
 	9207 7225 9207 7193
 Wire Wire Line
-	9207 7193 9271 7193
-Wire Wire Line
-	9271 7193 9335 7193
-Wire Wire Line
-	9335 7193 9399 7193
-Wire Wire Line
-	9399 7193 9463 7193
-Wire Wire Line
-	9463 7193 9527 7193
-Wire Wire Line
-	9527 7193 9591 7193
-Wire Wire Line
-	9591 7193 9655 7193
-Wire Wire Line
-	9655 7193 9719 7193
+	9207 7193 9719 7193
 Wire Wire Line
 	9655 7225 9655 7193
 Wire Wire Line
@@ -9385,77 +7801,13 @@ Connection ~ 9111 7545
 Connection ~ 9143 7545
 Connection ~ 8951 7545
 Wire Wire Line
-	11255 7545 11223 7545
+	11255 7545 10455 7545
 Wire Wire Line
-	11223 7545 11191 7545
-Wire Wire Line
-	11191 7545 11159 7545
-Wire Wire Line
-	11159 7545 11127 7545
-Wire Wire Line
-	11127 7545 11095 7545
-Wire Wire Line
-	11095 7545 11063 7545
-Wire Wire Line
-	11063 7545 11031 7545
-Wire Wire Line
-	11031 7545 10999 7545
-Wire Wire Line
-	10999 7545 10967 7545
-Wire Wire Line
-	10967 7545 10935 7545
-Wire Wire Line
-	10935 7545 10903 7545
-Wire Wire Line
-	10903 7545 10871 7545
-Wire Wire Line
-	10871 7545 10839 7545
-Wire Wire Line
-	10839 7545 10807 7545
-Wire Wire Line
-	10807 7545 10775 7545
-Wire Wire Line
-	10775 7545 10743 7545
-Wire Wire Line
-	10743 7545 10711 7545
-Wire Wire Line
-	10711 7545 10679 7545
-Wire Wire Line
-	10679 7545 10647 7545
-Wire Wire Line
-	10647 7545 10615 7545
-Wire Wire Line
-	10615 7545 10583 7545
-Wire Wire Line
-	10583 7545 10551 7545
-Wire Wire Line
-	10551 7545 10519 7545
-Wire Wire Line
-	10519 7545 10487 7545
-Wire Wire Line
-	10487 7545 10455 7545
-Wire Wire Line
-	11255 7129 11255 7193
-Wire Wire Line
-	11255 7193 11255 7545
+	11255 7129 11255 7545
 Wire Wire Line
 	10743 7225 10743 7193
 Wire Wire Line
-	10743 7193 10807 7193
-Wire Wire Line
-	10807 7193 10871 7193
-Wire Wire Line
-	10871 7193 10935 7193
-Wire Wire Line
-	10935 7193 10999 7193
-Wire Wire Line
-	10999 7193 11063 7193
-Wire Wire Line
-	11063 7193 11127 7193
-Wire Wire Line
-	11127 7193 11191 7193
-Wire Wire Line
-	11191 7193 11255 7193
+	10743 7193 11255 7193
 Wire Wire Line
 	11191 7225 11191 7193
 Wire Wire Line
@@ -9506,23 +7858,15 @@ Connection ~ 10487 7545
 Wire Wire Line
 	2475 5350 2600 5350
 Wire Wire Line
-	2475 5350 2475 5400
+	2475 5350 2475 5450
 Wire Wire Line
-	2475 5400 2475 5450
-Wire Wire Line
-	2475 5500 2475 5550
-Wire Wire Line
-	2475 5550 2475 5600
+	2475 5500 2475 5600
 Wire Wire Line
 	2625 5744 2625 5700
 Wire Wire Line
-	2625 5525 2625 5549
+	2625 5525 2625 5604
 Wire Wire Line
-	2625 5549 2625 5604
-Wire Wire Line
-	2625 5525 2743 5525
-Wire Wire Line
-	2743 5525 2775 5525
+	2625 5525 2775 5525
 Wire Wire Line
 	2475 5550 2625 5549
 Connection ~ 2625 5549
@@ -9532,9 +7876,7 @@ Connection ~ 2475 5350
 Wire Wire Line
 	4632 5686 4632 5757
 Wire Wire Line
-	13613 4314 13613 4413
-Wire Wire Line
-	13613 4413 13613 4414
+	13613 4314 13613 4414
 Wire Wire Line
 	13860 4413 13613 4413
 Connection ~ 13613 4413
@@ -9544,9 +7886,7 @@ Wire Wire Line
 	13009 5721 13009 5855
 Connection ~ 13253 5855
 Wire Wire Line
-	12893 5488 12893 5543
-Wire Wire Line
-	12893 5543 12893 5591
+	12893 5488 12893 5591
 Wire Wire Line
 	13009 5593 13009 5543
 Wire Wire Line
@@ -9557,9 +7897,7 @@ Wire Wire Line
 Wire Wire Line
 	14749 6172 14749 6070
 Wire Wire Line
-	14670 6140 14670 6480
-Wire Wire Line
-	14670 6480 14670 6594
+	14670 6140 14670 6594
 Connection ~ 14670 6480
 Wire Wire Line
 	13121 5919 13122 6238
@@ -9580,53 +7918,37 @@ Wire Wire Line
 Wire Wire Line
 	14707 6070 14749 6070
 Wire Wire Line
-	6387 3771 6387 3879
-Wire Wire Line
-	6387 3879 6387 3936
+	6387 3771 6387 3936
 Wire Wire Line
 	6515 3879 6585 3879
 Wire Wire Line
-	7923 3771 7923 3879
-Wire Wire Line
-	7923 3879 7923 3927
+	7923 3771 7923 3927
 Wire Wire Line
 	8072 3879 8121 3879
 Wire Wire Line
-	9459 3771 9459 3879
-Wire Wire Line
-	9459 3879 9459 3925
+	9459 3771 9459 3925
 Wire Wire Line
 	9587 3879 9657 3879
 Wire Wire Line
-	10995 3771 10995 3880
-Wire Wire Line
-	10995 3880 10995 3922
+	10995 3771 10995 3922
 Wire Wire Line
 	11146 3880 11193 3879
 Wire Wire Line
-	6387 5243 6387 5350
-Wire Wire Line
-	6387 5350 6387 5400
+	6387 5243 6387 5400
 Wire Wire Line
 	6387 5350 6427 5352
 Wire Wire Line
 	6555 5352 6585 5352
 Wire Wire Line
-	7923 5243 7923 5351
-Wire Wire Line
-	7923 5351 7923 5394
+	7923 5243 7923 5394
 Wire Wire Line
 	8083 5351 8121 5351
 Wire Wire Line
-	9459 5243 9459 5352
-Wire Wire Line
-	9459 5352 9459 5385
+	9459 5243 9459 5385
 Wire Wire Line
 	9618 5352 9657 5352
 Wire Wire Line
-	10995 5243 10995 5352
-Wire Wire Line
-	10995 5352 10995 5393
+	10995 5243 10995 5393
 Wire Wire Line
 	11158 5352 11193 5351
 Wire Wire Line
@@ -9634,31 +7956,23 @@ Wire Wire Line
 Wire Wire Line
 	8086 6823 8121 6823
 Wire Wire Line
-	9459 6715 9459 6822
-Wire Wire Line
-	9459 6822 9459 6865
+	9459 6715 9459 6865
 Wire Wire Line
 	9617 6822 9657 6822
 Wire Wire Line
 	11158 6823 11193 6823
 Wire Wire Line
-	6387 8219 6387 8327
-Wire Wire Line
-	6387 8327 6387 8366
+	6387 8219 6387 8366
 Wire Wire Line
 	6550 8327 6585 8327
 Wire Wire Line
-	7923 8219 7923 8327
-Wire Wire Line
-	7923 8327 7923 8365
+	7923 8219 7923 8365
 Wire Wire Line
 	8082 8327 8121 8327
 Wire Wire Line
 	9618 8328 9657 8328
 Wire Wire Line
-	10995 8219 10995 8327
-Wire Wire Line
-	10995 8327 10995 8372
+	10995 8219 10995 8372
 Wire Wire Line
 	11158 8327 11193 8327
 Wire Wire Line
@@ -9666,21 +7980,13 @@ Wire Wire Line
 Wire Wire Line
 	2630 7699 2191 7699
 Wire Wire Line
-	3182 7885 3182 8093
-Wire Wire Line
-	3182 8093 3182 8094
+	3182 7885 3182 8094
 Wire Wire Line
 	3492 7700 4040 7699
 Wire Wire Line
 	4040 7699 4712 7698
 Wire Wire Line
-	2186 8093 2630 8093
-Wire Wire Line
-	2630 8093 3182 8093
-Wire Wire Line
-	3182 8093 4040 8093
-Wire Wire Line
-	4040 8093 4727 8093
+	2186 8093 4727 8093
 Connection ~ 3182 8093
 Wire Wire Line
 	2630 7699 2630 7806
@@ -9695,9 +8001,7 @@ Wire Wire Line
 	4040 8093 4040 7897
 Connection ~ 4040 8093
 Wire Wire Line
-	14326 5258 14326 5302
-Wire Wire Line
-	14326 5302 14326 5354
+	14326 5258 14326 5354
 Wire Wire Line
 	14326 5084 14326 5130
 Wire Wire Line
@@ -9734,19 +8038,15 @@ Wire Wire Line
 Wire Wire Line
 	15068 6140 14981 6140
 Wire Wire Line
-	14981 6140 14950 6172
+	14950 6172 14981 6140
 Wire Wire Line
 	15068 6172 14983 6173
 Wire Wire Line
-	14983 6173 14950 6140
+	14950 6140 14983 6173
 Wire Wire Line
-	14950 6140 14870 6140
+	14670 6140 14950 6140
 Wire Wire Line
-	14870 6140 14670 6140
-Wire Wire Line
-	14950 6172 14870 6172
-Wire Wire Line
-	14870 6172 14749 6172
+	14749 6172 14950 6172
 Connection ~ 14870 6140
 Connection ~ 14870 6172
 Connection ~ 6387 3879
@@ -9755,27 +8055,9 @@ Wire Wire Line
 Wire Wire Line
 	7287 2873 7287 2905
 Wire Wire Line
-	7287 2905 7435 2905
+	7287 2905 8119 2905
 Wire Wire Line
-	7435 2905 7671 2905
-Wire Wire Line
-	7671 2905 7735 2905
-Wire Wire Line
-	7735 2905 7799 2905
-Wire Wire Line
-	7799 2905 7863 2905
-Wire Wire Line
-	7863 2905 7927 2905
-Wire Wire Line
-	7927 2905 7991 2905
-Wire Wire Line
-	7991 2905 8055 2905
-Wire Wire Line
-	8055 2905 8119 2905
-Wire Wire Line
-	8119 2873 8119 2905
-Wire Wire Line
-	8119 2905 8119 2937
+	8119 2873 8119 2937
 Wire Wire Line
 	8055 2905 8055 2873
 Wire Wire Line
@@ -9802,13 +8084,9 @@ Connection ~ 7735 2905
 Connection ~ 7671 2905
 Connection ~ 7435 2905
 Wire Wire Line
-	7223 2681 7223 2745
+	7223 2681 7223 3097
 Wire Wire Line
-	7223 2745 7223 3097
-Wire Wire Line
-	7223 2745 7287 2745
-Wire Wire Line
-	7287 2745 7434 2745
+	7223 2745 7434 2745
 Wire Wire Line
 	7434 2745 7434 2775
 Wire Wire Line
@@ -9816,27 +8094,11 @@ Wire Wire Line
 Connection ~ 7223 2745
 Connection ~ 7287 2745
 Wire Wire Line
-	8183 2681 8183 2745
-Wire Wire Line
-	8183 2745 8183 3097
+	8183 2681 8183 3097
 Wire Wire Line
 	7671 2777 7671 2745
 Wire Wire Line
-	7671 2745 7735 2745
-Wire Wire Line
-	7735 2745 7799 2745
-Wire Wire Line
-	7799 2745 7863 2745
-Wire Wire Line
-	7863 2745 7927 2745
-Wire Wire Line
-	7927 2745 7991 2745
-Wire Wire Line
-	7991 2745 8055 2745
-Wire Wire Line
-	8055 2745 8119 2745
-Wire Wire Line
-	8119 2745 8183 2745
+	7671 2745 8183 2745
 Wire Wire Line
 	8119 2777 8119 2745
 Wire Wire Line
@@ -9862,27 +8124,9 @@ Connection ~ 7735 2745
 Wire Wire Line
 	8824 2874 8824 2906
 Wire Wire Line
-	8824 2906 8972 2906
+	8824 2906 9656 2906
 Wire Wire Line
-	8972 2906 9208 2906
-Wire Wire Line
-	9208 2906 9272 2906
-Wire Wire Line
-	9272 2906 9336 2906
-Wire Wire Line
-	9336 2906 9400 2906
-Wire Wire Line
-	9400 2906 9464 2906
-Wire Wire Line
-	9464 2906 9528 2906
-Wire Wire Line
-	9528 2906 9592 2906
-Wire Wire Line
-	9592 2906 9656 2906
-Wire Wire Line
-	9656 2874 9656 2906
-Wire Wire Line
-	9656 2906 9656 2938
+	9656 2874 9656 2938
 Wire Wire Line
 	9592 2906 9592 2874
 Wire Wire Line
@@ -9909,9 +8153,7 @@ Connection ~ 9272 2906
 Connection ~ 9208 2906
 Connection ~ 8972 2906
 Wire Wire Line
-	8760 2682 8760 2746
-Wire Wire Line
-	8760 2746 8760 3098
+	8760 2682 8760 3098
 Wire Wire Line
 	8760 2746 8824 2746
 Wire Wire Line
@@ -9925,25 +8167,11 @@ Connection ~ 8824 2746
 Wire Wire Line
 	9720 2746 9720 2682
 Wire Wire Line
-	9719 3097 9720 2746
+	9720 2746 9719 3097
 Wire Wire Line
 	9208 2778 9208 2746
 Wire Wire Line
-	9208 2746 9272 2746
-Wire Wire Line
-	9272 2746 9336 2746
-Wire Wire Line
-	9336 2746 9400 2746
-Wire Wire Line
-	9400 2746 9464 2746
-Wire Wire Line
-	9464 2746 9528 2746
-Wire Wire Line
-	9528 2746 9592 2746
-Wire Wire Line
-	9592 2746 9656 2746
-Wire Wire Line
-	9656 2746 9720 2746
+	9208 2746 9720 2746
 Wire Wire Line
 	9656 2778 9656 2746
 Wire Wire Line
@@ -9969,27 +8197,9 @@ Connection ~ 9272 2746
 Wire Wire Line
 	10359 2872 10359 2904
 Wire Wire Line
-	10359 2904 10507 2904
+	10359 2904 11191 2904
 Wire Wire Line
-	10507 2904 10743 2904
-Wire Wire Line
-	10743 2904 10807 2904
-Wire Wire Line
-	10807 2904 10871 2904
-Wire Wire Line
-	10871 2904 10935 2904
-Wire Wire Line
-	10935 2904 10999 2904
-Wire Wire Line
-	10999 2904 11063 2904
-Wire Wire Line
-	11063 2904 11127 2904
-Wire Wire Line
-	11127 2904 11191 2904
-Wire Wire Line
-	11191 2872 11191 2904
-Wire Wire Line
-	11191 2904 11191 2936
+	11191 2872 11191 2936
 Wire Wire Line
 	11127 2904 11127 2872
 Wire Wire Line
@@ -10016,9 +8226,7 @@ Connection ~ 10807 2904
 Connection ~ 10743 2904
 Connection ~ 10507 2904
 Wire Wire Line
-	10295 2680 10295 2744
-Wire Wire Line
-	10295 2744 10295 3096
+	10295 2680 10295 3096
 Wire Wire Line
 	10295 2744 10359 2744
 Wire Wire Line
@@ -10030,27 +8238,11 @@ Wire Wire Line
 Connection ~ 10295 2744
 Connection ~ 10359 2744
 Wire Wire Line
-	11255 2680 11255 2744
-Wire Wire Line
-	11255 2744 11255 3097
+	11255 2680 11255 3097
 Wire Wire Line
 	10743 2776 10743 2744
 Wire Wire Line
-	10743 2744 10807 2744
-Wire Wire Line
-	10807 2744 10871 2744
-Wire Wire Line
-	10871 2744 10935 2744
-Wire Wire Line
-	10935 2744 10999 2744
-Wire Wire Line
-	10999 2744 11063 2744
-Wire Wire Line
-	11063 2744 11127 2744
-Wire Wire Line
-	11127 2744 11191 2744
-Wire Wire Line
-	11191 2744 11255 2744
+	10743 2744 11255 2744
 Wire Wire Line
 	11191 2776 11191 2744
 Wire Wire Line
@@ -10085,13 +8277,9 @@ Wire Wire Line
 Wire Wire Line
 	5879 4217 5879 4249
 Wire Wire Line
-	5687 4217 5751 4217
+	5687 4217 5879 4217
 Wire Wire Line
-	5751 4217 5879 4217
-Wire Wire Line
-	5687 4153 5687 4217
-Wire Wire Line
-	5687 4217 5687 4569
+	5687 4153 5687 4569
 Connection ~ 5879 4377
 Connection ~ 6135 4377
 Connection ~ 6199 4377
@@ -10124,9 +8312,7 @@ Wire Wire Line
 Wire Wire Line
 	12924 6296 12924 6363
 Wire Wire Line
-	12924 6491 12924 6556
-Wire Wire Line
-	12924 6556 12924 6557
+	12924 6491 12924 6557
 Wire Wire Line
 	13072 5991 12924 5991
 Wire Wire Line
@@ -10185,9 +8371,7 @@ Wire Wire Line
 	6422 8327 6387 8327
 Connection ~ 6387 8327
 Wire Wire Line
-	9459 8219 9459 8328
-Wire Wire Line
-	9459 8328 9459 8374
+	9459 8219 9459 8374
 Wire Wire Line
 	9490 8328 9459 8328
 Connection ~ 9459 8328
@@ -10204,23 +8388,17 @@ Wire Wire Line
 	9489 6822 9459 6822
 Connection ~ 9459 6822
 Wire Wire Line
-	6387 6715 6387 6823
-Wire Wire Line
-	6387 6823 6387 6858
+	6387 6715 6387 6858
 Wire Wire Line
 	6423 6823 6387 6823
 Connection ~ 6387 6823
 Wire Wire Line
-	7923 6715 7923 6823
-Wire Wire Line
-	7923 6823 7923 6860
+	7923 6715 7923 6860
 Wire Wire Line
 	7958 6823 7923 6823
 Connection ~ 7923 6823
 Wire Wire Line
-	10995 6715 10995 6823
-Wire Wire Line
-	10995 6823 10995 6863
+	10995 6715 10995 6863
 Wire Wire Line
 	11030 6823 10995 6823
 Connection ~ 10995 6823
@@ -10236,21 +8414,13 @@ Wire Wire Line
 Wire Wire Line
 	2662 2818 2223 2818
 Wire Wire Line
-	3214 3004 3214 3212
-Wire Wire Line
-	3214 3212 3214 3213
+	3214 3004 3214 3213
 Wire Wire Line
 	3524 2819 4072 2818
 Wire Wire Line
 	4072 2818 4744 2817
 Wire Wire Line
-	2218 3212 2662 3212
-Wire Wire Line
-	2662 3212 3214 3212
-Wire Wire Line
-	3214 3212 4072 3212
-Wire Wire Line
-	4072 3212 4759 3212
+	2218 3212 4759 3212
 Connection ~ 3214 3212
 Wire Wire Line
 	2662 2818 2662 2924
@@ -10275,126 +8445,98 @@ Wire Wire Line
 	7748 3912 7575 3912
 Connection ~ 7575 3912
 Wire Wire Line
-	9111 3769 9111 3912
-Wire Wire Line
-	9111 3912 9111 3948
+	9111 3769 9111 3948
 Wire Wire Line
 	9284 3771 9284 3816
 Wire Wire Line
 	9284 3912 9111 3912
 Connection ~ 9111 3912
 Wire Wire Line
-	10647 3769 10647 3912
-Wire Wire Line
-	10647 3912 10647 3948
+	10647 3769 10647 3948
 Wire Wire Line
 	10820 3771 10820 3816
 Wire Wire Line
 	10820 3912 10647 3912
 Connection ~ 10647 3912
 Wire Wire Line
-	6039 5241 6039 5384
-Wire Wire Line
-	6039 5384 6039 5433
+	6039 5241 6039 5433
 Wire Wire Line
 	6212 5243 6212 5288
 Wire Wire Line
 	6212 5384 6039 5384
 Connection ~ 6039 5384
 Wire Wire Line
-	7575 5241 7575 5384
-Wire Wire Line
-	7575 5384 7575 5420
+	7575 5241 7575 5420
 Wire Wire Line
 	7748 5243 7748 5288
 Wire Wire Line
 	7748 5384 7575 5384
 Connection ~ 7575 5384
 Wire Wire Line
-	9111 5241 9111 5384
-Wire Wire Line
-	9111 5384 9111 5421
+	9111 5241 9111 5421
 Wire Wire Line
 	9284 5243 9284 5289
 Wire Wire Line
 	9284 5385 9111 5384
 Connection ~ 9111 5384
 Wire Wire Line
-	10647 5241 10647 5384
-Wire Wire Line
-	10647 5384 10647 5420
+	10647 5241 10647 5420
 Wire Wire Line
 	10820 5243 10820 5288
 Wire Wire Line
 	10820 5384 10647 5384
 Connection ~ 10647 5384
 Wire Wire Line
-	6039 6713 6039 6856
-Wire Wire Line
-	6039 6856 6039 6905
+	6039 6713 6039 6905
 Wire Wire Line
 	6212 6715 6212 6760
 Wire Wire Line
 	6212 6856 6039 6856
 Connection ~ 6039 6856
 Wire Wire Line
-	7575 6713 7575 6856
-Wire Wire Line
-	7575 6856 7575 6905
+	7575 6713 7575 6905
 Wire Wire Line
 	7748 6715 7748 6760
 Wire Wire Line
 	7748 6856 7575 6856
 Connection ~ 7575 6856
 Wire Wire Line
-	9111 6713 9111 6856
-Wire Wire Line
-	9111 6856 9111 6905
+	9111 6713 9111 6905
 Wire Wire Line
 	9284 6715 9284 6760
 Wire Wire Line
 	9284 6856 9111 6856
 Connection ~ 9111 6856
 Wire Wire Line
-	10647 6713 10647 6856
-Wire Wire Line
-	10647 6856 10647 6905
+	10647 6713 10647 6905
 Wire Wire Line
 	10820 6715 10820 6760
 Wire Wire Line
 	10820 6856 10647 6856
 Connection ~ 10647 6856
 Wire Wire Line
-	6039 8217 6039 8360
-Wire Wire Line
-	6039 8360 6039 8409
+	6039 8217 6039 8409
 Wire Wire Line
 	6212 8219 6212 8264
 Wire Wire Line
 	6212 8360 6039 8360
 Connection ~ 6039 8360
 Wire Wire Line
-	7575 8217 7575 8360
-Wire Wire Line
-	7575 8360 7575 8409
+	7575 8217 7575 8409
 Wire Wire Line
 	7748 8219 7748 8264
 Wire Wire Line
 	7748 8360 7575 8360
 Connection ~ 7575 8360
 Wire Wire Line
-	9111 8217 9111 8360
-Wire Wire Line
-	9111 8360 9111 8409
+	9111 8217 9111 8409
 Wire Wire Line
 	9284 8219 9284 8264
 Wire Wire Line
 	9284 8360 9111 8360
 Connection ~ 9111 8360
 Wire Wire Line
-	10647 8217 10647 8360
-Wire Wire Line
-	10647 8360 10647 8409
+	10647 8217 10647 8409
 Wire Wire Line
 	10820 8219 10820 8264
 Wire Wire Line
@@ -10456,7 +8598,7 @@ L R-EU R45
 U 1 1 5196CD55
 P 11915 5661
 F 0 "R45" V 11955 5568 22  0000 L BNN
-F 1 "100K" V 11913 5562 22  0000 L BNN
+F 1 "1K" V 11913 5562 22  0000 L BNN
 F 2 "" H 11915 5661 60  0001 C CNN
 F 3 "" H 11915 5661 60  0001 C CNN
 	1    11915 5661
@@ -10467,7 +8609,7 @@ L R-EU R46
 U 1 1 5196CD5B
 P 12011 5660
 F 0 "R46" V 12048 5694 22  0000 L BNN
-F 1 "100K" V 12000 5693 22  0000 L BNN
+F 1 "1K" V 12000 5693 22  0000 L BNN
 F 2 "" H 12011 5660 60  0001 C CNN
 F 3 "" H 12011 5660 60  0001 C CNN
 	1    12011 5660
@@ -10487,9 +8629,7 @@ $EndComp
 Text Label 11915 5494 0    20   ~ 0
 VCC
 Wire Wire Line
-	11915 5494 11915 5549
-Wire Wire Line
-	11915 5549 11915 5597
+	11915 5494 11915 5597
 Wire Wire Line
 	12011 5549 11915 5549
 Connection ~ 11915 5549

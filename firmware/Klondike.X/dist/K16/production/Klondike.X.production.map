@@ -27,7 +27,7 @@ Linker command line:
   -ASFR31=0F80h-0FEFh -preset_vec=00h,intentry=04h,init,end_init \
   -ppowerup=CODE -pfunctab=CODE -ACONFIG=08007h-08008h -pconfig=CONFIG \
   -DCONFIG=2 -AIDLOC=08000h-08003h -pidloc=IDLOC -DIDLOC=2 -DCODE=2 \
-  -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 -k /tmp/cgtqRNLbD.obj \
+  -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 -k /tmp/cgtmnmpkq.obj \
   dist/K16/production/Klondike.X.production.obj 
 
 Object code version is 3.10
@@ -37,35 +37,38 @@ Machine type is 16LF1459
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-/tmp/cgtqRNLbD.obj
+/tmp/cgtmnmpkq.obj
                 end_init                             3A       3A        2        8       0
                 reset_vec                             0        0        2        0       0
                 config                             8007     8007        2    1000E       0
 dist/K16/production/Klondike.X.production.obj
                 intentry                              4        4       36        8       0
-                text2501                           1443     1443       50     2886       0
-                text2495                            7F1      7F1        E        8       0
-                text2494                            5D1      5D1      166        8       0
-                text2491                           15E7     15E7       85     2BCE       0
+                text2498                           1444     1444       50     2888       0
+                text2492                            7F1      7F1        E        8       0
+                text2491                            5D1      5D1      166        8       0
+                text2488                           15E8     15E8       84     2BD0       0
                 swtext3                            1194     1194       10     22CC       0
-                text2490                           166C     166C       A6     2CD8       0
-                text2489                           13D1     13D1       30     27A2       0
+                text2487                           166C     166C       A6     2CD8       0
+                text2486                           13D2     13D2       30     27A4       0
                 swtext2                            1180     1180       14     22CC       0
-                text2485                           1401     1401       42     2802       0
-                text2484                           1493     1493       62     2926       0
-                text2482                           14F5     14F5       78     29EA       0
+                text2482                           1402     1402       42     2804       0
+                text2481                           1494     1494       62     2928       0
+                text2479                           14F6     14F6       78     29EC       0
                 swtext1                            1166     1166       1A     22CC       0
-                text2479                            429      429      1A8        8       0
-                text2473                             3C       3C      3ED        8       0
-                text2455                           1712     1712       EE     2E24       0
-                text2447                            737      737       BA        8       0
-                text2444                           156D     156D       7A     2ADA       0
+                text2476                            429      429      1A8        8       0
+                text2470                             3C       3C      3ED        8       0
+                text2457                           13B7     13B7       1B     276E       0
+                text2452                           1712     1712       EE     2E24       0
+                text2449                           1388     1388       15     2710       0
+                text2444                            737      737       BA        8       0
+                text2441                           156E     156E       7A     2ADC       0
+                text2439                           1364     1364        C     26C8       0
                 cstackBANK0                          60       60       10       60       1
                 cstackCOMMON                         70       70        E       70       1
                 cstackBANK1                          A0       A0       4F       A0       1
                 cstackBANK2                         16B      16B        4      131       1
-                inittext                           13C5     13C5        C     278A       0
-                clrtext                             802      802        C     1004       0
+                inittext                           1370     1370        C     26E0       0
+                clrtext                            137C     137C        C     26F8       0
                 bssBANK8                            420      420       40      420       1
                 bssBANK7                            3A0      3A0       40      3A0       1
                 bssBANK6                            320      320       20      320       1
@@ -75,10 +78,10 @@ dist/K16/production/Klondike.X.production.obj
                 dataBANK2                           16F      16F        1      131       1
                 bssBANK2                            131      131       3A      131       1
                 bssBANK1                             EF       EF        1       A0       1
-                cinit                               828      828      7D8     1050       0
+                cinit                               802      802      7FE     1004       0
                 nvBANK3                             1EB      1EB        1      1A0       1
                 stringtext                         1000     1000      166       20       0
-                idataBANK3                          80E      80E       1A     101C       0
+                idataBANK3                         139D     139D       1A     273A       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   CONST          
@@ -90,24 +93,27 @@ TOTAL           Name                               Link     Load   Length     Sp
                 end_init                             3A       3A        2         0
                 intentry                              4        4       36         0
                 reset_vec                             0        0        2         0
-                text2501                           1443     1443       50         0
-                text2495                            7F1      7F1        E         0
-                text2494                            5D1      5D1      166         0
-                text2491                           15E7     15E7       85         0
-                text2490                           166C     166C       A6         0
-                text2489                           13D1     13D1       30         0
-                text2485                           1401     1401       42         0
-                text2484                           1493     1493       62         0
-                text2482                           14F5     14F5       78         0
-                text2479                            429      429      1A8         0
-                text2473                             3C       3C      3ED         0
-                text2455                           1712     1712       EE         0
-                text2447                            737      737       BA         0
-                text2444                           156D     156D       7A         0
-                inittext                           13C5     13C5        C         0
-                clrtext                             802      802        C         0
-                cinit                               828      828      7D8         0
-                idataBANK3                          80E      80E       1A         0
+                text2498                           1444     1444       50         0
+                text2492                            7F1      7F1        E         0
+                text2491                            5D1      5D1      166         0
+                text2488                           15E8     15E8       84         0
+                text2487                           166C     166C       A6         0
+                text2486                           13D2     13D2       30         0
+                text2482                           1402     1402       42         0
+                text2481                           1494     1494       62         0
+                text2479                           14F6     14F6       78         0
+                text2476                            429      429      1A8         0
+                text2470                             3C       3C      3ED         0
+                text2457                           13B7     13B7       1B         0
+                text2452                           1712     1712       EE         0
+                text2449                           1388     1388       15         0
+                text2444                            737      737       BA         0
+                text2441                           156E     156E       7A         0
+                text2439                           1364     1364        C         0
+                inittext                           1370     1370        C         0
+                clrtext                            137C     137C        C         0
+                cinit                               802      802      7FE         0
+                idataBANK3                         139D     139D       1A         0
 
         CLASS   STRCODE        
                 stringtext                         1000     1000      166         0
@@ -296,21 +302,24 @@ SEGMENTS        Name                           Load    Length   Top    Selector 
                 bssBANK6                       000320  000020  000340       320       1  BANK6       1
                 bssBANK7                       0003A0  000040  0003E0       3A0       1  BANK7       1
                 bssBANK8                       000420  000040  000460       420       1  BANK8       1
-                clrtext                        000802  00000C  00080E      1004       0  CODE        2
-                idataBANK3                     00080E  00001A  000828      101C       0  CODE        2
-                cinit                          000828  0007D8  001000      1050       0  CODE        2
+                cinit                          000802  0007FE  001000      1004       0  CODE        2
                 stringtext                     001000  000166  001166        20       0  STRCODE     2
                 swtext1                        001166  00003E  0011A4      22CC       0  CONST       2
-                inittext                       0013C5  00000C  0013D1      278A       0  CODE        2
-                text2489                       0013D1  000030  001401      27A2       0  CODE        2
-                text2485                       001401  000042  001443      2802       0  CODE        2
-                text2501                       001443  000050  001493      2886       0  CODE        2
-                text2484                       001493  000062  0014F5      2926       0  CODE        2
-                text2482                       0014F5  000078  00156D      29EA       0  CODE        2
-                text2444                       00156D  00007A  0015E7      2ADA       0  CODE        2
-                text2491                       0015E7  000085  00166C      2BCE       0  CODE        2
-                text2490                       00166C  0000A6  001712      2CD8       0  CODE        2
-                text2455                       001712  0000EE  001800      2E24       0  CODE        2
+                text2439                       001364  00000C  001370      26C8       0  CODE        2
+                inittext                       001370  00000C  00137C      26E0       0  CODE        2
+                clrtext                        00137C  00000C  001388      26F8       0  CODE        2
+                text2449                       001388  000015  00139D      2710       0  CODE        2
+                idataBANK3                     00139D  00001A  0013B7      273A       0  CODE        2
+                text2457                       0013B7  00001B  0013D2      276E       0  CODE        2
+                text2486                       0013D2  000030  001402      27A4       0  CODE        2
+                text2482                       001402  000042  001444      2804       0  CODE        2
+                text2498                       001444  000050  001494      2888       0  CODE        2
+                text2481                       001494  000062  0014F6      2928       0  CODE        2
+                text2479                       0014F6  000078  00156E      29EC       0  CODE        2
+                text2441                       00156E  00007A  0015E8      2ADC       0  CODE        2
+                text2488                       0015E8  000084  00166C      2BD0       0  CODE        2
+                text2487                       00166C  0000A6  001712      2CD8       0  CODE        2
+                text2452                       001712  0000EE  001800      2E24       0  CODE        2
                 config                         008007  000002  008009     1000E       0  CONFIG      2
 
 
@@ -327,15 +336,15 @@ UNUSED ADDRESS RANGES
         BIGRAM           02000-023EF             3F0           1
         CODE             00002-00003               2           2
                          007FF-00801               1
-                         011A4-013C4             221
+                         011A4-01363             1C0
                          01800-01FFF             800
         CONST            00002-00003               2           2
                          007FF-00801               1
-                         011A4-013C4             100
+                         011A4-01363             100
                          01800-01FFF             100
         ENTRY            00002-00003               2           2
                          007FF-00801               1
-                         011A4-013C4             100
+                         011A4-01363             100
                          01800-01FFF             100
         IDLOC            08000-08003               4           2
         RAM              001EC-001EF               4           1
@@ -379,11 +388,11 @@ UNUSED ADDRESS RANGES
         SFR9             00480-0049F              20           1
         STRCODE          00002-00003               2           2
                          007FF-00801               3
-                         011A4-013C4             221
+                         011A4-01363             1C0
                          01800-01FFF             800
         STRING           00002-00003               2           2
                          007FF-00801               1
-                         011A4-013C4             100
+                         011A4-01363             100
                          01800-01FFF             100
 
                                   Symbol Table
@@ -418,27 +427,26 @@ AsicPreCalc@z                             cstackBANK1  000BA
 CDCTxService@byte_to_send                 cstackBANK1  000AA
 CDCTxService@i                            cstackBANK1  000A9
 DetectAsics@x                             cstackBANK2  0016D
-DetectAsics@x_3058                        cstackBANK2  0016E
+DetectAsics@x_3070                        cstackBANK2  0016E
 I2CRelay@count                            cstackBANK1  000A0
 I2CRelay@data                             cstackBANK1  000A1
-PL10                                      text2479     0052A
-PL12                                      text2479     005BD
-PL14                                      text2479     005C3
-PL16                                      text2490     01702
-PL18                                      text2484     014E0
-PL2                                       text2490     016F8
-PL20                                      text2494     00731
-PL22                                      text2490     0170B
-PL24                                      text2473     0041C
-PL26                                      text2484     014E8
-PL28                                      text2473     00423
-PL30                                      text2484     014EF
-PL32                                      text2501     0148D
-PL34                                      text2479     005CD
-PL36                                      text2491     01668
-PL4                                       text2494     00727
-PL6                                       text2479     00517
-PL8                                       text2447     007E1
+PL10                                      text2476     0052A
+PL12                                      text2476     005BD
+PL14                                      text2476     005C3
+PL16                                      text2487     01702
+PL18                                      text2481     014E1
+PL2                                       text2491     00727
+PL20                                      text2491     00731
+PL22                                      text2487     0170B
+PL24                                      text2470     0041C
+PL26                                      text2481     014E9
+PL28                                      text2498     0148E
+PL30                                      text2476     005CD
+PL32                                      text2470     00423
+PL34                                      text2481     014F0
+PL4                                       text2487     016F8
+PL6                                       text2476     00517
+PL8                                       text2444     007E1
 ProcessCmd@cmd                            cstackBANK1  000ED
 ProcessIO@numBytesRead                    cstackBANK1  000EE
 ResultRx@Rw                               cstackBANK0  00067
@@ -485,8 +493,8 @@ _ADRESH                                   (abs)        0009C
 _ANSELA                                   (abs)        0018C
 _ANSELB                                   (abs)        0018D
 _ANSELC                                   (abs)        0018E
-_AsicPreCalc                              cinit        00BBB
-_AsicPushWork                             cinit        008A8
+_AsicPreCalc                              cinit        00BEA
+_AsicPushWork                             cinit        00882
 _BCL1IF                                   (abs)        00093
 _BDT                                      (abs)        00020
 _BankRanges                               stringtext   01001
@@ -494,39 +502,39 @@ _BankSize                                 nvBANK3      001EB
 _BothEP0OutUOWNsSet                       bssBANK2     00145
 _CDCDataInHandle                          bssBANK2     00146
 _CDCDataOutHandle                         bssBANK2     00147
-_CDCInitEP                                text2473     00377
-_CDCTxService                             text2447     00737
+_CDCInitEP                                text2470     00377
+_CDCTxService                             text2444     00737
 _CDCTxService$2241                        cstackBANK1  000A7
 _Cfg                                      dataBANK3    001E6
-_CheckFanSpeed                            text2491     0161E
+_CheckFanSpeed                            text2488     0161F
 _ClockCfg                                 dataBANK3    001DE
 _CtrlTrfData                              (abs)        00058
-_DetectAsics                              text2455     01712
+_DetectAsics                              text2452     01712
 _GIE                                      (abs)        0005F
 _HashTime                                 dataBANK2    0016F
 _I2CAddr                                  bssBANK2     00148
 _I2CCmd                                   bssBANK2     00149
 _I2CCount                                 bssBANK2     0014A
-_I2CDetect                                cinit        00FF6
+_I2CDetect                                text2439     01364
 _I2CInBuf                                 bssBANK3     001AC
-_I2CPoll                                  text2491     0165C
-_I2CRead                                  text2494     00640
-_I2CRelay                                 cinit        00EE9
-_I2CSlave                                 text2490     0166C
+_I2CPoll                                  text2488     0165D
+_I2CRead                                  text2491     00640
+_I2CRelay                                 cinit        00F1C
+_I2CSlave                                 text2487     0166C
 _I2CSlave$2556                            cstackCOMMON 00074
 _I2CState                                 bssBANK2     00168
-_I2CWrite                                 text2489     013D1
+_I2CWrite                                 text2486     013D2
 _ID                                       stringtext   01155
 _INTCONbits                               (abs)        0000B
 _IOCAF3                                   (abs)        01C9B
 _IOCAN3                                   (abs)        01C93
 _ISRCode                                  intentry     00004
-_InitFAN                                  cinit        00FB4
-_InitI2CMaster                            cinit        00F59
-_InitI2CSlave                             cinit        00F6B
-_InitTempSensor                           cinit        00FA3
-_InitWorkTick                             cinit        00FCF
-_InitializeSystem                         cinit        00F4A
+_InitFAN                                  text2457     013B7
+_InitI2CMaster                            cinit        00F8E
+_InitI2CSlave                             cinit        00FA1
+_InitTempSensor                           cinit        00FD9
+_InitWorkTick                             cinit        00FEA
+_InitializeSystem                         cinit        00F7F
 _LATAbits                                 (abs)        0010C
 _LATC                                     (abs)        0010E
 _LATCbits                                 (abs)        0010E
@@ -542,16 +550,16 @@ _PWM1DCH                                  (abs)        00612
 _PWM1DCL                                  (abs)        00611
 _PWM1OE                                   (abs)        0309E
 _PrecalcHashes                            bssBANK3     001AF
-_ProcessCmd                               cinit        00A39
-_ProcessCmd$3028                          cstackBANK1  000EB
-_ProcessIO                                cinit        00A10
+_ProcessCmd                               cinit        00A15
+_ProcessCmd$3040                          cstackBANK1  000EB
+_ProcessIO                                cinit        009EC
 _RCIF                                     (abs)        0008D
 _RCREG                                    (abs)        00199
 _RCSTAbits                                (abs)        0019D
 _RemoteWakeup                             bssBANK2     0014B
 _ResultQC                                 bssBANK2     0014C
 _ResultQue                                bssBANK3     001A0
-_ResultRx                                 text2494     005D1
+_ResultRx                                 text2491     005D1
 _SSP1EN                                   (abs)        010AD
 _SSP1IF                                   (abs)        0008B
 _SSPADD                                   (abs)        00212
@@ -560,9 +568,9 @@ _SSPCON1bits                              (abs)        00215
 _SSPCON2bits                              (abs)        00216
 _SSPCON3bits                              (abs)        00217
 _SSPSTATbits                              (abs)        00214
-_Send32                                   cinit        00961
-_SendAsicData                             cinit        00914
-_SendCmdReply                             cinit        00B86
+_Send32                                   cinit        00940
+_SendAsicData                             cinit        008EE
+_SendCmdReply                             cinit        00BB4
 _SetupPkt                                 (abs)        00050
 _SlaveAddress                             bssBANK2     0014D
 _SlowTick                                 bssBANK3     001AD
@@ -605,56 +613,56 @@ _UIRbits                                  (abs)        00E90
 _USBActiveConfiguration                   bssBANK2     00169
 _USBAlternateInterface                    bssBANK3     001CF
 _USBBusIsSuspended                        bssBANK3     001AE
-_USBCBCheckOtherReq                       text2473     00416
-_USBCBErrorHandler                        text2473     00418
-_USBCBInitEP                              text2473     00376
-_USBCBStdSetDscHandler                    text2473     00415
-_USBCBSuspend                             text2473     0041B
-_USBCBWakeFromSuspend                     text2473     0041A
-_USBCB_SOF_Handler                        text2473     00419
-_USBCheckCDCRequest                       text2501     01443
-_USBCheckStdRequest                       text2473     00066
-_USBConfigureEndpoint                     text2473     003B6
-_USBCtrlEPAllowDataStage                  text2479     004AC
-_USBCtrlEPAllowStatusStage                text2473     002B4
-_USBCtrlEPService                         text2473     002EC
-_USBCtrlEPServiceComplete                 text2479     00477
-_USBCtrlTrfInHandler                      text2479     00429
-_USBCtrlTrfOutHandler                     text2479     00539
-_USBCtrlTrfRxService                      text2479     00556
-_USBCtrlTrfSetupHandler                   text2473     0003C
-_USBCtrlTrfTxService                      text2479     004E2
+_USBCBCheckOtherReq                       text2470     00416
+_USBCBErrorHandler                        text2470     00418
+_USBCBInitEP                              text2470     00376
+_USBCBStdSetDscHandler                    text2470     00415
+_USBCBSuspend                             text2470     0041B
+_USBCBWakeFromSuspend                     text2470     0041A
+_USBCB_SOF_Handler                        text2470     00419
+_USBCheckCDCRequest                       text2498     01444
+_USBCheckStdRequest                       text2470     00066
+_USBConfigureEndpoint                     text2470     003B6
+_USBCtrlEPAllowDataStage                  text2476     004AC
+_USBCtrlEPAllowStatusStage                text2470     002B4
+_USBCtrlEPService                         text2470     002EC
+_USBCtrlEPServiceComplete                 text2476     00477
+_USBCtrlTrfInHandler                      text2476     00429
+_USBCtrlTrfOutHandler                     text2476     00539
+_USBCtrlTrfRxService                      text2476     00556
+_USBCtrlTrfSetupHandler                   text2470     0003C
+_USBCtrlTrfTxService                      text2476     004E2
 _USBDeferINDataStagePackets               bssBANK2     0014E
 _USBDeferOUTDataStagePackets              bssBANK2     0014F
 _USBDeferStatusStagePacket                bssBANK2     00150
-_USBDeviceAttach                          cinit        00F7F
-_USBDeviceInit                            text2444     0156D
+_USBDeviceAttach                          cinit        00FB5
+_USBDeviceInit                            text2441     0156E
 _USBDeviceState                           bssBANK2     00151
-_USBDeviceTasks                           text2473     00176
-_USBEnableEndpoint                        text2473     00397
-_USBStallHandler                          text2473     00344
+_USBDeviceTasks                           text2470     00176
+_USBEnableEndpoint                        text2470     00397
+_USBStallHandler                          text2470     00344
 _USBStatusStageEnabledFlag1               bssBANK2     00152
 _USBStatusStageEnabledFlag2               bssBANK2     00153
 _USBStatusStageTimeoutCounter             bssBANK2     00154
-_USBStdFeatureReqHandler                  text2473     000A2
-_USBStdGetDscHandler                      text2484     01493
-_USBStdGetStatusHandler                   text2485     01401
-_USBStdSetCfgHandler                      text2482     014F5
-_USBSuspend                               text2473     0035C
-_USBTransferOnePacket                     text2447     007A9
-_USBWakeFromSuspend                       text2473     00368
+_USBStdFeatureReqHandler                  text2470     000A2
+_USBStdGetDscHandler                      text2481     01494
+_USBStdGetStatusHandler                   text2482     01402
+_USBStdSetCfgHandler                      text2479     014F6
+_USBSuspend                               text2470     0035C
+_USBTransferOnePacket                     text2444     007A9
+_USBWakeFromSuspend                       text2470     00368
 _USB_CD_Ptr                               stringtext   01035
 _USB_In_Buffer                            bssBANK7     003A0
 _USB_Out_Buffer                           bssBANK8     00420
 _USB_SD_Ptr                               stringtext   0102D
-_USER_USB_CALLBACK_EVENT_HANDLER          text2473     00212
+_USER_USB_CALLBACK_EVENT_HANDLER          text2470     00212
 _USTAT                                    (abs)        00E8F
 _USTATcopy                                bssBANK2     0016A
-_UpdateFanSpeed                           text2495     007F1
-_UserInit                                 cinit        00F98
+_UpdateFanSpeed                           text2492     007F1
+_UserInit                                 cinit        00FCE
 _WorkNow                                  bssBANK2     00155
 _WorkQue                                  (abs)        0233C
-_WorkTick                                 text2491     015E7
+_WorkTick                                 text2488     015E8
 _WorkTicks                                dataBANK3    001D1
 __CFG_CPUDIV$NOCLKDIV                     (abs)        00000
 __CFG_FCMEN$OFF                           (abs)        00000
@@ -870,132 +878,131 @@ __Lstringtext                             stringtext   00000
 __Ltext                                   text         00000
 __S0                                      (abs)        08009
 __S1                                      (abs)        00460
-___awdiv                                  text2455     017C0
+___awdiv                                  text2452     017C0
 ___awdiv@counter                          cstackBANK1  000A4
 ___awdiv@dividend                         cstackBANK1  000A2
 ___awdiv@divisor                          cstackBANK1  000A0
 ___awdiv@quotient                         cstackBANK1  000A6
 ___awdiv@sign                             cstackBANK1  000A5
-___bmul                                   cinit        00E83
+___bmul                                   cinit        00EB6
 ___bmul@multiplicand                      cstackBANK1  000A0
 ___bmul@multiplier                        cstackBANK1  000A2
 ___bmul@product                           cstackBANK1  000A1
-___lwdiv                                  cinit        00EC4
+___lwdiv                                  cinit        00EF7
 ___lwdiv@counter                          cstackBANK1  000A4
 ___lwdiv@dividend                         cstackBANK1  000A2
 ___lwdiv@divisor                          cstackBANK1  000A0
 ___lwdiv@quotient                         cstackBANK1  000A5
-___wmul                                   cinit        008FF
+___wmul                                   cinit        008D9
 ___wmul@multiplicand                      cstackBANK1  000A2
 ___wmul@multiplier                        cstackBANK1  000A0
 ___wmul@product                           cstackBANK1  000A4
 __end_ofAsicPreCalc@K                     stringtext   0102D
-__end_ofPL10                              text2479     00539
-__end_ofPL12                              text2479     005C3
-__end_ofPL14                              text2479     005CD
-__end_ofPL16                              text2490     0170B
-__end_ofPL18                              text2484     014E8
-__end_ofPL2                               text2490     01702
-__end_ofPL20                              text2494     00737
-__end_ofPL22                              text2490     01712
-__end_ofPL24                              text2473     00423
-__end_ofPL26                              text2484     014EF
-__end_ofPL28                              text2473     00429
-__end_ofPL30                              text2484     014F5
-__end_ofPL32                              text2501     01493
-__end_ofPL34                              text2479     005D1
-__end_ofPL36                              text2491     0166C
-__end_ofPL4                               text2494     00731
-__end_ofPL6                               text2479     0052A
-__end_ofPL8                               text2447     007F1
-__end_of_AsicPreCalc                      cinit        00E83
-__end_of_AsicPushWork                     cinit        008FF
+__end_ofPL10                              text2476     00539
+__end_ofPL12                              text2476     005C3
+__end_ofPL14                              text2476     005CD
+__end_ofPL16                              text2487     0170B
+__end_ofPL18                              text2481     014E9
+__end_ofPL2                               text2491     00731
+__end_ofPL20                              text2491     00737
+__end_ofPL22                              text2487     01712
+__end_ofPL24                              text2470     00423
+__end_ofPL26                              text2481     014F0
+__end_ofPL28                              text2498     01494
+__end_ofPL30                              text2476     005D1
+__end_ofPL32                              text2470     00429
+__end_ofPL34                              text2481     014F6
+__end_ofPL4                               text2487     01702
+__end_ofPL6                               text2476     0052A
+__end_ofPL8                               text2444     007F1
+__end_of_AsicPreCalc                      cinit        00EB6
+__end_of_AsicPushWork                     cinit        008D9
 __end_of_BankRanges                       stringtext   01021
-__end_of_CDCInitEP                        text2473     00397
-__end_of_CDCTxService                     text2447     007A9
-__end_of_CheckFanSpeed                    text2491     0165C
-__end_of_DetectAsics                      text2455     017C0
-__end_of_I2CDetect                        cinit        01000
-__end_of_I2CPoll                          text2491     01668
-__end_of_I2CRead                          text2494     006E1
-__end_of_I2CRelay                         cinit        00EFE
-__end_of_I2CSlave                         text2490     016F8
-__end_of_I2CWrite                         text2489     01401
+__end_of_CDCInitEP                        text2470     00397
+__end_of_CDCTxService                     text2444     007A9
+__end_of_CheckFanSpeed                    text2488     0165D
+__end_of_DetectAsics                      text2452     017C0
+__end_of_I2CDetect                        text2439     01370
+__end_of_I2CPoll                          text2488     0166C
+__end_of_I2CRead                          text2491     006E1
+__end_of_I2CRelay                         cinit        00F33
+__end_of_I2CSlave                         text2487     016F8
+__end_of_I2CWrite                         text2486     01402
 __end_of_ID                               stringtext   01162
 __end_of_ISRCode                          intentry     0003A
-__end_of_InitFAN                          cinit        00FCF
-__end_of_InitI2CMaster                    cinit        00F6B
-__end_of_InitI2CSlave                     cinit        00F7F
-__end_of_InitTempSensor                   cinit        00FB4
-__end_of_InitWorkTick                     cinit        00FE1
-__end_of_InitializeSystem                 cinit        00F59
-__end_of_ProcessCmd                       cinit        00B86
-__end_of_ProcessIO                        cinit        00A39
-__end_of_ResultRx                         text2494     0062B
-__end_of_Send32                           cinit        00A10
-__end_of_SendAsicData                     cinit        00961
-__end_of_SendCmdReply                     cinit        00BBB
+__end_of_InitFAN                          text2457     013D2
+__end_of_InitI2CMaster                    cinit        00FA1
+__end_of_InitI2CSlave                     cinit        00FB5
+__end_of_InitTempSensor                   cinit        00FEA
+__end_of_InitWorkTick                     cinit        01000
+__end_of_InitializeSystem                 cinit        00F8E
+__end_of_ProcessCmd                       cinit        00BB4
+__end_of_ProcessIO                        cinit        00A15
+__end_of_ResultRx                         text2491     0062B
+__end_of_Send32                           cinit        009EC
+__end_of_SendAsicData                     cinit        00940
+__end_of_SendCmdReply                     cinit        00BEA
 __end_of_TestWork                         stringtext   01143
-__end_of_USBCBCheckOtherReq               text2473     00418
-__end_of_USBCBErrorHandler                text2473     00419
-__end_of_USBCBInitEP                      text2473     00377
-__end_of_USBCBStdSetDscHandler            text2473     00416
-__end_of_USBCBSuspend                     text2473     0041C
-__end_of_USBCBWakeFromSuspend             text2473     0041B
-__end_of_USBCB_SOF_Handler                text2473     0041A
-__end_of_USBCheckCDCRequest               text2501     0148D
-__end_of_USBCheckStdRequest               text2473     000A2
-__end_of_USBConfigureEndpoint             text2473     003DD
-__end_of_USBCtrlEPAllowDataStage          text2479     004E2
-__end_of_USBCtrlEPAllowStatusStage        text2473     002EC
-__end_of_USBCtrlEPService                 text2473     00344
-__end_of_USBCtrlEPServiceComplete         text2479     004AC
-__end_of_USBCtrlTrfInHandler              text2479     00477
-__end_of_USBCtrlTrfOutHandler             text2479     00556
-__end_of_USBCtrlTrfRxService              text2479     005BD
-__end_of_USBCtrlTrfSetupHandler           text2473     00066
-__end_of_USBCtrlTrfTxService              text2479     00517
-__end_of_USBDeviceAttach                  cinit        00F98
-__end_of_USBDeviceInit                    text2444     015E7
-__end_of_USBDeviceTasks                   text2473     00212
-__end_of_USBEnableEndpoint                text2473     003B6
-__end_of_USBStallHandler                  text2473     0035C
-__end_of_USBStdFeatureReqHandler          text2473     00176
-__end_of_USBStdGetDscHandler              text2484     014E0
-__end_of_USBStdGetStatusHandler           text2485     01443
-__end_of_USBStdSetCfgHandler              text2482     01554
-__end_of_USBSuspend                       text2473     00368
-__end_of_USBTransferOnePacket             text2447     007E1
-__end_of_USBWakeFromSuspend               text2473     00376
+__end_of_USBCBCheckOtherReq               text2470     00418
+__end_of_USBCBErrorHandler                text2470     00419
+__end_of_USBCBInitEP                      text2470     00377
+__end_of_USBCBStdSetDscHandler            text2470     00416
+__end_of_USBCBSuspend                     text2470     0041C
+__end_of_USBCBWakeFromSuspend             text2470     0041B
+__end_of_USBCB_SOF_Handler                text2470     0041A
+__end_of_USBCheckCDCRequest               text2498     0148E
+__end_of_USBCheckStdRequest               text2470     000A2
+__end_of_USBConfigureEndpoint             text2470     003DD
+__end_of_USBCtrlEPAllowDataStage          text2476     004E2
+__end_of_USBCtrlEPAllowStatusStage        text2470     002EC
+__end_of_USBCtrlEPService                 text2470     00344
+__end_of_USBCtrlEPServiceComplete         text2476     004AC
+__end_of_USBCtrlTrfInHandler              text2476     00477
+__end_of_USBCtrlTrfOutHandler             text2476     00556
+__end_of_USBCtrlTrfRxService              text2476     005BD
+__end_of_USBCtrlTrfSetupHandler           text2470     00066
+__end_of_USBCtrlTrfTxService              text2476     00517
+__end_of_USBDeviceAttach                  cinit        00FCE
+__end_of_USBDeviceInit                    text2441     015E8
+__end_of_USBDeviceTasks                   text2470     00212
+__end_of_USBEnableEndpoint                text2470     003B6
+__end_of_USBStallHandler                  text2470     0035C
+__end_of_USBStdFeatureReqHandler          text2470     00176
+__end_of_USBStdGetDscHandler              text2481     014E1
+__end_of_USBStdGetStatusHandler           text2482     01444
+__end_of_USBStdSetCfgHandler              text2479     01555
+__end_of_USBSuspend                       text2470     00368
+__end_of_USBTransferOnePacket             text2444     007E1
+__end_of_USBWakeFromSuspend               text2470     00376
 __end_of_USB_CD_Ptr                       stringtext   01037
 __end_of_USB_SD_Ptr                       stringtext   01035
-__end_of_USER_USB_CALLBACK_EVENT_HANDLER  text2473     00242
-__end_of_UpdateFanSpeed                   text2495     007FF
-__end_of_UserInit                         cinit        00FA3
-__end_of_WorkTick                         text2491     0161E
-__end_of___awdiv                          text2455     01800
-__end_of___bmul                           cinit        00E8F
-__end_of___lwdiv                          cinit        00EE9
-__end_of___wmul                           cinit        00914
-__end_of__initialization                  cinit        00888
+__end_of_USER_USB_CALLBACK_EVENT_HANDLER  text2470     00242
+__end_of_UpdateFanSpeed                   text2492     007FF
+__end_of_UserInit                         cinit        00FD9
+__end_of_WorkTick                         text2488     0161F
+__end_of___awdiv                          text2452     01800
+__end_of___bmul                           cinit        00EC2
+__end_of___lwdiv                          cinit        00F1C
+__end_of___wmul                           cinit        008EE
+__end_of__initialization                  cinit        00862
 __end_of__stringtab                       stringtext   01001
 __end_of_configDescriptor1                stringtext   0107A
 __end_of_device_dsc                       stringtext   01155
-__end_of_getsUSBUSART                     cinit        00F4A
-__end_of_main                             cinit        008A8
-__end_of_memset                           text2482     0156D
-__end_of_putUSBUSART                      cinit        00FF6
-__end_of_rotate                           cinit        00EC4
+__end_of_getsUSBUSART                     cinit        00F7F
+__end_of_main                             cinit        00882
+__end_of_memset                           text2479     0156E
+__end_of_putUSBUSART                      text2449     0139D
+__end_of_rotate                           cinit        00EF7
 __end_of_sd000                            stringtext   01166
 __end_of_sd001                            stringtext   010AE
 __end_of_sd002                            stringtext   010E2
 __end_of_sd003                            stringtext   01116
-__end_ofi1_SendCmdReply                   text2494     00713
-__end_ofi1_USBDeviceInit                  text2473     002B4
-__end_ofi1_USBTransferOnePacket           text2473     00415
-__end_ofi1___wmul                         text2494     00640
-__end_ofi1_putUSBUSART                    text2494     00727
-__initialization                          cinit        00828
+__end_ofi1_SendCmdReply                   text2491     00713
+__end_ofi1_USBDeviceInit                  text2470     002B4
+__end_ofi1_USBTransferOnePacket           text2470     00415
+__end_ofi1___wmul                         text2491     00640
+__end_ofi1_putUSBUSART                    text2491     00727
+__initialization                          cinit        00802
 __pbssBANK1                               bssBANK1     000EF
 __pbssBANK2                               bssBANK2     00131
 __pbssBANK3                               bssBANK3     001A0
@@ -1011,87 +1018,87 @@ __pcstackCOMMON                           cstackCOMMON 00070
 __pdataBANK2                              dataBANK2    0016F
 __pdataBANK3                              dataBANK3    001D1
 __pidataBANK2                             idataBANK2   00000
-__pidataBANK3                             idataBANK3   0080E
+__pidataBANK3                             idataBANK3   0139D
 __pintentry                               intentry     00004
-__pmaintext                               cinit        0088A
+__pmaintext                               cinit        00864
 __pnvBANK3                                nvBANK3      001EB
 __pstringtext                             stringtext   01000
 __pswtext1                                swtext1      01166
 __pswtext2                                swtext2      01180
 __pswtext3                                swtext3      01194
-__ptext2439                               cinit        00F7F
-__ptext2440                               cinit        00F6B
-__ptext2441                               cinit        00F59
-__ptext2442                               cinit        00FF6
-__ptext2443                               cinit        00F4A
-__ptext2444                               text2444     0156D
-__ptext2445                               cinit        00A10
-__ptext2446                               cinit        00EFE
-__ptext2447                               text2447     00737
-__ptext2448                               text2447     007A9
-__ptext2449                               cinit        00EE9
-__ptext2450                               cinit        00A39
-__ptext2451                               cinit        00B86
-__ptext2452                               cinit        00FE1
-__ptext2453                               cinit        008A8
-__ptext2454                               cinit        00F98
-__ptext2455                               text2455     01712
-__ptext2456                               cinit        00914
-__ptext2457                               cinit        00961
-__ptext2458                               cinit        00BBB
-__ptext2459                               cinit        00E8F
-__ptext2460                               cinit        00FB4
-__ptext2461                               cinit        00FA3
-__ptext2462                               cinit        00FCF
-__ptext2463                               cinit        00E83
-__ptext2464                               cinit        008FF
-__ptext2465                               cinit        00EC4
-__ptext2466                               text2455     017C0
-__ptext2468                               text2473     00176
-__ptext2469                               text2473     00368
-__ptext2470                               text2473     0035C
-__ptext2471                               text2473     00344
-__ptext2472                               text2473     002EC
-__ptext2473                               text2473     0003C
-__ptext2474                               text2479     00477
-__ptext2475                               text2479     004AC
-__ptext2476                               text2479     00539
-__ptext2477                               text2479     00556
-__ptext2478                               text2473     002B4
-__ptext2479                               text2479     00429
-__ptext2480                               text2479     004E2
-__ptext2481                               text2473     00066
-__ptext2482                               text2482     014F5
-__ptext2483                               text2482     01554
-__ptext2484                               text2484     01493
-__ptext2485                               text2485     01401
-__ptext2486                               text2473     000A2
-__ptext2487                               text2473     00212
-__ptext2488                               text2494     00640
-__ptext2489                               text2489     013D1
-__ptext2490                               text2490     0166C
-__ptext2491                               text2491     015E7
-__ptext2492                               text2491     0165C
-__ptext2493                               text2491     0161E
-__ptext2494                               text2494     005D1
-__ptext2495                               text2495     007F1
-__ptext2496                               text2473     0041B
-__ptext2497                               text2473     0041A
-__ptext2498                               text2473     00419
-__ptext2499                               text2473     00418
-__ptext2500                               text2473     00416
-__ptext2501                               text2501     01443
-__ptext2502                               text2473     00415
-__ptext2503                               text2473     00376
-__ptext2504                               text2473     00377
-__ptext2505                               text2473     00397
-__ptext2506                               text2473     003B6
-__ptext2507                               text2473     00242
-__ptext2508                               text2473     003DD
-__ptext2509                               text2494     006E1
-__ptext2510                               text2494     00713
-__ptext2511                               text2494     0062B
-__ptext2512                               text2512     00000
+__ptext2436                               cinit        00FB5
+__ptext2437                               cinit        00FA1
+__ptext2438                               cinit        00F8E
+__ptext2439                               text2439     01364
+__ptext2440                               cinit        00F7F
+__ptext2441                               text2441     0156E
+__ptext2442                               cinit        009EC
+__ptext2443                               cinit        00F33
+__ptext2444                               text2444     00737
+__ptext2445                               text2444     007A9
+__ptext2446                               cinit        00F1C
+__ptext2447                               cinit        00A15
+__ptext2448                               cinit        00BB4
+__ptext2449                               text2449     01388
+__ptext2450                               cinit        00882
+__ptext2451                               cinit        00FCE
+__ptext2452                               text2452     01712
+__ptext2453                               cinit        008EE
+__ptext2454                               cinit        00940
+__ptext2455                               cinit        00BEA
+__ptext2456                               cinit        00EC2
+__ptext2457                               text2457     013B7
+__ptext2458                               cinit        00FD9
+__ptext2459                               cinit        00FEA
+__ptext2460                               cinit        00EB6
+__ptext2461                               cinit        008D9
+__ptext2462                               cinit        00EF7
+__ptext2463                               text2452     017C0
+__ptext2465                               text2470     00176
+__ptext2466                               text2470     00368
+__ptext2467                               text2470     0035C
+__ptext2468                               text2470     00344
+__ptext2469                               text2470     002EC
+__ptext2470                               text2470     0003C
+__ptext2471                               text2476     00477
+__ptext2472                               text2476     004AC
+__ptext2473                               text2476     00539
+__ptext2474                               text2476     00556
+__ptext2475                               text2470     002B4
+__ptext2476                               text2476     00429
+__ptext2477                               text2476     004E2
+__ptext2478                               text2470     00066
+__ptext2479                               text2479     014F6
+__ptext2480                               text2479     01555
+__ptext2481                               text2481     01494
+__ptext2482                               text2482     01402
+__ptext2483                               text2470     000A2
+__ptext2484                               text2470     00212
+__ptext2485                               text2491     00640
+__ptext2486                               text2486     013D2
+__ptext2487                               text2487     0166C
+__ptext2488                               text2488     015E8
+__ptext2489                               text2488     0165D
+__ptext2490                               text2488     0161F
+__ptext2491                               text2491     005D1
+__ptext2492                               text2492     007F1
+__ptext2493                               text2470     0041B
+__ptext2494                               text2470     0041A
+__ptext2495                               text2470     00419
+__ptext2496                               text2470     00418
+__ptext2497                               text2470     00416
+__ptext2498                               text2498     01444
+__ptext2499                               text2470     00415
+__ptext2500                               text2470     00376
+__ptext2501                               text2470     00377
+__ptext2502                               text2470     00397
+__ptext2503                               text2470     003B6
+__ptext2504                               text2470     00242
+__ptext2505                               text2470     003DD
+__ptext2506                               text2491     006E1
+__ptext2507                               text2491     00713
+__ptext2508                               text2491     0062B
+__ptext2509                               text2509     00000
 __size_of_AsicPreCalc                     (abs)        00000
 __size_of_AsicPushWork                    (abs)        00000
 __size_of_CDCInitEP                       (abs)        00000
@@ -1182,14 +1189,14 @@ _dummy_encapsulated_cmd_response          bssBANK3     001C7
 _endpoint_number                          bssBANK2     0015B
 _ep_data_in                               bssBANK2     00137
 _ep_data_out                              bssBANK2     0013A
-_getsUSBUSART                             cinit        00EFE
+_getsUSBUSART                             cinit        00F33
 _getsUSBUSART$2193                        cstackBANK1  000AA
 _inPipes                                  bssBANK2     00163
 _last_bit0                                bssBANK2     0015C
 _last_bit1                                bssBANK2     0015D
 _line_coding                              (abs)        00120
-_main                                     cinit        0088A
-_memset                                   text2482     01554
+_main                                     cinit        00864
+_memset                                   text2479     01555
 _outPipes                                 bssBANK2     00131
 _pBDTEntryEP0OutCurrent                   bssBANK2     0015E
 _pBDTEntryEP0OutNext                      bssBANK1     000EF
@@ -1199,8 +1206,8 @@ _pCDCDst                                  bssBANK3     001A8
 _pCDCSrc                                  bssBANK3     001AA
 _pDst                                     bssBANK2     0015F
 _ptr                                      bssBANK2     00160
-_putUSBUSART                              cinit        00FE1
-_rotate                                   cinit        00E8F
+_putUSBUSART                              text2449     01388
+_rotate                                   cinit        00EC2
 _sd000                                    stringtext   01162
 _sd001                                    stringtext   0107A
 _sd002                                    stringtext   010AE
@@ -1209,8 +1216,8 @@ _send32_count                             bssBANK2     00161
 _send32_data                              bssBANK2     00143
 _shortPacketStatus                        bssBANK2     00162
 btemp                                     (abs)        0007E
-clear_ram                                 clrtext      00802
-end_of_initialization                     cinit        00888
+clear_ram                                 clrtext      0137C
+end_of_initialization                     cinit        00862
 getsUSBUSART@buffer                       cstackBANK1  000A9
 getsUSBUSART@len                          cstackBANK1  000A7
 i1SendCmdReply@cmd                        cstackCOMMON 00072
@@ -1225,17 +1232,17 @@ i1USBTransferOnePacket@dir                cstackCOMMON 00070
 i1USBTransferOnePacket@ep                 cstackCOMMON 00075
 i1USBTransferOnePacket@handle             cstackCOMMON 00076
 i1USBTransferOnePacket@len                cstackCOMMON 00072
-i1_SendCmdReply                           text2494     006E1
-i1_USBDeviceInit                          text2473     00242
-i1_USBTransferOnePacket                   text2473     003DD
-i1___wmul                                 text2494     0062B
+i1_SendCmdReply                           text2491     006E1
+i1_USBDeviceInit                          text2470     00242
+i1_USBTransferOnePacket                   text2470     003DD
+i1___wmul                                 text2491     0062B
 i1___wmul@multiplicand                    cstackCOMMON 00072
 i1___wmul@multiplier                      cstackCOMMON 00070
 i1___wmul@product                         cstackCOMMON 00074
-i1_putUSBUSART                            text2494     00713
+i1_putUSBUSART                            text2491     00713
 i1putUSBUSART@data                        cstackCOMMON 00071
 i1putUSBUSART@length                      cstackCOMMON 00070
-init_ram                                  inittext     013C5
+init_ram                                  inittext     01370
 intlevel0                                 functab      00000
 intlevel1                                 functab      00000
 intlevel2                                 functab      00000
@@ -1252,7 +1259,7 @@ reset_vec                                 reset_vec    00000
 rotate@x                                  cstackBANK1  000A3
 rotate@y                                  cstackBANK1  000A7
 start                                     init         0003A
-start_initialization                      cinit        00828
+start_initialization                      cinit        00802
 wtemp0                                    (abs)        0007E
 
 
@@ -1266,7 +1273,7 @@ FUNCTION INFORMATION:
  Auto vars:     Size  Location     Type
 		None
  Return value:  Size  Location     Type
-                  2  1005[COMMON] int 
+                  2  1010[COMMON] int 
  Registers used:
 		wreg, fsr0l, fsr0h, fsr1l, fsr1h, status,2, status,0, btemp+1, pclath, cstack
  Tracked objects:
@@ -1645,7 +1652,7 @@ Total ram usage:        2 bytes
 
  *************** function _ProcessCmd *****************
  Defined at:
-		line 47 in file "klondike.c"
+		line 48 in file "klondike.c"
  Parameters:    Size  Location     Type
   cmd             1    wreg     PTR unsigned char 
 		 -> USB_Out_Buffer(64), 
@@ -1671,8 +1678,8 @@ Total ram usage:        5 bytes
  This function calls:
 		___wmul
 		_AsicPreCalc
-		_AsicPushWork
 		_SendCmdReply
+		_AsicPushWork
 		___lwdiv
  This function is called by:
 		_ProcessIO
@@ -1687,7 +1694,7 @@ Total ram usage:        5 bytes
 		 -> ResultRx@buf(7), USB_Out_Buffer(64), buf(16), 
   data            2    4[BANK1 ] PTR unsigned char 
 		 -> ResultRx@buf(7), Cfg(5), ID(13), Status(11), 
-		 -> buf(16), I2CState(1), 
+		 -> buf(16), I2CState(1), PrecalcHashes(24), 
   count           1    6[BANK1 ] unsigned char 
  Auto vars:     Size  Location     Type
   n               1    9[BANK1 ] unsigned char 
@@ -1749,7 +1756,7 @@ Total ram usage:        2 bytes
 
  *************** function _AsicPushWork *****************
  Defined at:
-		line 106 in file "klondike.c"
+		line 112 in file "klondike.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1815,7 +1822,7 @@ Total ram usage:        0 bytes
 
  *************** function _DetectAsics *****************
  Defined at:
-		line 143 in file "klondike.c"
+		line 149 in file "klondike.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1881,7 +1888,7 @@ Total ram usage:        3 bytes
 
  *************** function _Send32 *****************
  Defined at:
-		line 57 in file "asic.c"
+		line 58 in file "asic.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1889,7 +1896,7 @@ Total ram usage:        3 bytes
  Return value:  Size  Location     Type
 		None               void
  Registers used:
-		wreg
+		None
  Tracked objects:
 		On entry : 
 		On exit  : 
@@ -1911,7 +1918,7 @@ Total ram usage:        0 bytes
 
  *************** function _AsicPreCalc *****************
  Defined at:
-		line 317 in file "asic.c"
+		line 318 in file "asic.c"
  Parameters:    Size  Location     Type
   work            2   16[BANK1 ] PTR struct _worktask
 		 -> WorkQue(180), TestWork(45), 
@@ -1949,7 +1956,7 @@ Total ram usage:       55 bytes
 
  *************** function _rotate *****************
  Defined at:
-		line 312 in file "asic.c"
+		line 313 in file "asic.c"
  Parameters:    Size  Location     Type
   x               4    3[BANK1 ] unsigned long 
   y               1    7[BANK1 ] unsigned char 
@@ -1980,7 +1987,7 @@ Total ram usage:       13 bytes
 
  *************** function _InitFAN *****************
  Defined at:
-		line 235 in file "klondike.c"
+		line 241 in file "klondike.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2010,7 +2017,7 @@ Total ram usage:        0 bytes
 
  *************** function _InitTempSensor *****************
  Defined at:
-		line 255 in file "klondike.c"
+		line 261 in file "klondike.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2040,7 +2047,7 @@ Total ram usage:        0 bytes
 
  *************** function _InitWorkTick *****************
  Defined at:
-		line 268 in file "klondike.c"
+		line 274 in file "klondike.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2966,7 +2973,7 @@ Total ram usage:        6 bytes
 
  *************** function _WorkTick *****************
  Defined at:
-		line 167 in file "klondike.c"
+		line 173 in file "klondike.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -3026,7 +3033,7 @@ Total ram usage:        0 bytes
 
  *************** function _CheckFanSpeed *****************
  Defined at:
-		line 119 in file "klondike.c"
+		line 125 in file "klondike.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -3055,7 +3062,7 @@ Total ram usage:        1 bytes
 
  *************** function _ResultRx *****************
  Defined at:
-		line 194 in file "klondike.c"
+		line 200 in file "klondike.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -3087,7 +3094,7 @@ Total ram usage:       10 bytes
 
  *************** function _UpdateFanSpeed *****************
  Defined at:
-		line 223 in file "klondike.c"
+		line 229 in file "klondike.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -3519,7 +3526,7 @@ Total ram usage:        7 bytes
 		 -> ResultRx@buf(7), USB_Out_Buffer(64), buf(16), 
   SendCmdReply    2    4[COMMON] PTR unsigned char 
 		 -> ResultRx@buf(7), Cfg(5), ID(13), Status(11), 
-		 -> buf(16), I2CState(1), 
+		 -> buf(16), I2CState(1), PrecalcHashes(24), 
   SendCmdReply    1    6[COMMON] unsigned char 
  Auto vars:     Size  Location     Type
   SendCmdReply    1    9[COMMON] unsigned char 
@@ -3615,23 +3622,23 @@ MODULE INFORMATION
 Module		Function		Class		Link	Load	Size
 i2c.c
 		_I2CSlave      		CODE           	166C	0000	140
-		_I2CRelay      		CODE           	0EE9	0000	21
-		_I2CPoll       		CODE           	165C	0000	12
+		_I2CRelay      		CODE           	0F1C	0000	23
+		_I2CPoll       		CODE           	165D	0000	15
 		_I2CRead       		CODE           	0640	0000	161
-		_I2CDetect     		CODE           	0FF6	0000	10
-		_InitI2CSlave  		CODE           	0F6B	0000	20
-		_InitI2CMaster 		CODE           	0F59	0000	18
-		_I2CWrite      		CODE           	13D1	0000	48
+		_I2CDetect     		CODE           	1364	0000	12
+		_InitI2CSlave  		CODE           	0FA1	0000	20
+		_InitI2CMaster 		CODE           	0F8E	0000	19
+		_I2CWrite      		CODE           	13D2	0000	48
 
-i2c.c estimated size: 430
+i2c.c estimated size: 438
 
 /opt/microchip/xc8/v1.12/sources/bmul.c
-		___bmul        		CODE           	0E83	0000	12
+		___bmul        		CODE           	0EB6	0000	12
 
 /opt/microchip/xc8/v1.12/sources/bmul.c estimated size: 12
 
 ../../common/memset.c
-		_memset        		CODE           	1554	0000	25
+		_memset        		CODE           	1555	0000	25
 
 ../../common/memset.c estimated size: 25
 
@@ -3641,83 +3648,82 @@ shared
 		PL22           		CODE           	170B	0000	7
 		_configDescript		STRCODE        	1037	0000	67
 		AsicPreCalc@K  		STRCODE        	1021	0000	12
-		PL32           		CODE           	148D	0000	6
+		PL32           		CODE           	0423	0000	6
 		_USB_CD_Ptr    		STRCODE        	1035	0000	2
 		_sd001         		STRCODE        	107A	0000	52
 		PL14           		CODE           	05C3	0000	10
 		PL24           		CODE           	041C	0000	7
 		__stringtab    		STRCODE        	1000	0000	1
-		PL34           		CODE           	05CD	0000	4
+		PL34           		CODE           	14F0	0000	6
 		PL16           		CODE           	1702	0000	9
-		PL26           		CODE           	14E8	0000	7
-		PL36           		CODE           	1668	0000	4
+		PL26           		CODE           	14E9	0000	7
 		_sd002         		STRCODE        	10AE	0000	52
-		PL18           		CODE           	14E0	0000	8
-		PL28           		CODE           	0423	0000	6
+		PL18           		CODE           	14E1	0000	8
+		PL28           		CODE           	148E	0000	6
 		i1_USBDeviceIni		CODE           	0242	0000	114
 		_ID            		STRCODE        	1155	0000	13
 		i1___wmul      		CODE           	062B	0000	21
 		_sd003         		STRCODE        	10E2	0000	52
-		__initializatio		CODE           	0828	0000	96
+		__initializatio		CODE           	0802	0000	96
 		_device_dsc    		STRCODE        	1143	0000	18
 		_TestWork      		STRCODE        	1116	0000	45
 		i1_SendCmdReply		CODE           	06E1	0000	50
 		_USB_SD_Ptr    		STRCODE        	102D	0000	8
-		PL2            		CODE           	16F8	0000	10
+		PL2            		CODE           	0727	0000	10
 		_sd000         		STRCODE        	1162	0000	4
 		PL10           		CODE           	052A	0000	15
-		PL4            		CODE           	0727	0000	10
+		PL4            		CODE           	16F8	0000	10
 		i1_USBTransferO		CODE           	03DD	0000	56
 		PL20           		CODE           	0731	0000	6
 		_BankRanges    		STRCODE        	1001	0000	32
-		PL30           		CODE           	14EF	0000	6
+		PL30           		CODE           	05CD	0000	4
 		PL6            		CODE           	0517	0000	19
 		i1_putUSBUSART 		CODE           	0713	0000	20
 
-shared estimated size: 871
+shared estimated size: 867
 
 asic.c
-		_Send32        		CODE           	0961	0000	175
-		_SendAsicData  		CODE           	0914	0000	77
-		_rotate        		CODE           	0E8F	0000	53
-		_AsicPreCalc   		CODE           	0BBB	0000	712
+		_Send32        		CODE           	0940	0000	172
+		_SendAsicData  		CODE           	08EE	0000	82
+		_rotate        		CODE           	0EC2	0000	53
+		_AsicPreCalc   		CODE           	0BEA	0000	716
 
-asic.c estimated size: 1017
+asic.c estimated size: 1023
 
 klondike.c
 		_ResultRx      		CODE           	05D1	0000	90
 		_UpdateFanSpeed		CODE           	07F1	0000	14
-		_WorkTick      		CODE           	15E7	0000	55
-		_InitTempSensor		CODE           	0FA3	0000	17
-		_CheckFanSpeed 		CODE           	161E	0000	62
+		_WorkTick      		CODE           	15E8	0000	55
+		_InitTempSensor		CODE           	0FD9	0000	17
+		_CheckFanSpeed 		CODE           	161F	0000	62
 		_DetectAsics   		CODE           	1712	0000	174
-		_InitWorkTick  		CODE           	0FCF	0000	18
-		_AsicPushWork  		CODE           	08A8	0000	87
-		_ProcessCmd    		CODE           	0A39	0000	333
-		_InitFAN       		CODE           	0FB4	0000	27
+		_InitWorkTick  		CODE           	0FEA	0000	22
+		_AsicPushWork  		CODE           	0882	0000	87
+		_ProcessCmd    		CODE           	0A15	0000	415
+		_InitFAN       		CODE           	13B7	0000	27
 
-klondike.c estimated size: 877
+klondike.c estimated size: 963
 
 main.c
 		_USBCBErrorHand		CODE           	0418	0000	1
-		_UserInit      		CODE           	0F98	0000	11
+		_UserInit      		CODE           	0FCE	0000	11
 		_USBCBWakeFromS		CODE           	041A	0000	1
-		_main          		CODE           	088A	0000	30
+		_main          		CODE           	0864	0000	30
 		_USER_USB_CALLB		CODE           	0212	0000	48
 		_USBCBStdSetDsc		CODE           	0415	0000	1
-		_SendCmdReply  		CODE           	0B86	0000	53
+		_SendCmdReply  		CODE           	0BB4	0000	54
 		_USBCBInitEP   		CODE           	0376	0000	1
-		_InitializeSyst		CODE           	0F4A	0000	15
-		_ProcessIO     		CODE           	0A10	0000	41
+		_InitializeSyst		CODE           	0F7F	0000	15
+		_ProcessIO     		CODE           	09EC	0000	41
 		_USBCB_SOF_Hand		CODE           	0419	0000	1
 		_USBCBSuspend  		CODE           	041B	0000	1
 		_USBCBCheckOthe		CODE           	0416	0000	2
 		_ISRCode       		CODE           	0004	0000	54
 
-main.c estimated size: 260
+main.c estimated size: 261
 
 /opt/microchip/xc8/v1.12/sources/wmul.c
-		___wmul        		CODE           	08FF	0000	21
+		___wmul        		CODE           	08D9	0000	21
 
 /opt/microchip/xc8/v1.12/sources/wmul.c estimated size: 21
 
@@ -3727,24 +3733,24 @@ main.c estimated size: 260
 /opt/microchip/xc8/v1.12/sources/awdiv.c estimated size: 64
 
 /opt/microchip/xc8/v1.12/sources/lwdiv.c
-		___lwdiv       		CODE           	0EC4	0000	37
+		___lwdiv       		CODE           	0EF7	0000	37
 
 /opt/microchip/xc8/v1.12/sources/lwdiv.c estimated size: 37
 
 ../USB/CDC Device Driver/usb_function_cdc.c
 		_CDCTxService  		CODE           	0737	0000	114
 		_CDCInitEP     		CODE           	0377	0000	32
-		_putUSBUSART   		CODE           	0FE1	0000	21
-		_getsUSBUSART  		CODE           	0EFE	0000	76
-		_USBCheckCDCReq		CODE           	1443	0000	74
+		_putUSBUSART   		CODE           	1388	0000	21
+		_getsUSBUSART  		CODE           	0F33	0000	76
+		_USBCheckCDCReq		CODE           	1444	0000	74
 
 ../USB/CDC Device Driver/usb_function_cdc.c estimated size: 317
 
 ../USB/usb_device.c
 		_USBCtrlTrfInHa		CODE           	0429	0000	78
 		_USBTransferOne		CODE           	07A9	0000	56
-		_USBDeviceAttac		CODE           	0F7F	0000	25
-		_USBStdGetDscHa		CODE           	1493	0000	77
+		_USBDeviceAttac		CODE           	0FB5	0000	25
+		_USBStdGetDscHa		CODE           	1494	0000	77
 		_USBCtrlEPAllow		CODE           	04AC	0000	54
 		_USBStdFeatureR		CODE           	00A2	0000	212
 		_USBCtrlEPAllow		CODE           	02B4	0000	56
@@ -3752,14 +3758,14 @@ main.c estimated size: 260
 		_USBCtrlTrfOutH		CODE           	0539	0000	29
 		_USBCtrlEPServi		CODE           	0477	0000	53
 		_USBSuspend    		CODE           	035C	0000	12
-		_USBStdSetCfgHa		CODE           	14F5	0000	95
-		_USBStdGetStatu		CODE           	1401	0000	66
+		_USBStdSetCfgHa		CODE           	14F6	0000	95
+		_USBStdGetStatu		CODE           	1402	0000	66
 		_USBWakeFromSus		CODE           	0368	0000	14
 		_USBCtrlTrfRxSe		CODE           	0556	0000	103
 		_USBCtrlTrfTxSe		CODE           	04E2	0000	53
 		_USBEnableEndpo		CODE           	0397	0000	31
 		_USBConfigureEn		CODE           	03B6	0000	39
-		_USBDeviceInit 		CODE           	156D	0000	122
+		_USBDeviceInit 		CODE           	156E	0000	122
 		_USBCtrlEPServi		CODE           	02EC	0000	88
 		_USBStallHandle		CODE           	0344	0000	24
 		_USBDeviceTasks		CODE           	0176	0000	156

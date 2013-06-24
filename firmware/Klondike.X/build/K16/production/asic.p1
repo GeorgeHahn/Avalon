@@ -3171,9 +3171,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;asic.c: 43: Send32();
 "43
 [e ( _Send32 ..  ]
-[; ;asic.c: 44: send32_data = (WORD)&PrecalcHashes; send32_count = 5;
+[; ;asic.c: 44: send32_data = (WORD)&PrecalcHashes[1]; send32_count = 5;
 "44
-[e = _send32_data -> &U _PrecalcHashes `us ]
+[e = _send32_data -> &U *U + &U _PrecalcHashes * -> -> -> 1 `i `ui `ux -> -> # *U &U _PrecalcHashes `ui `ux `us ]
 [e = _send32_count -> -> 5 `i `uc ]
 [; ;asic.c: 45: Send32();
 "45
@@ -3185,9 +3185,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;asic.c: 47: Send32();
 "47
 [e ( _Send32 ..  ]
-[; ;asic.c: 48: send32_data = (WORD)&PrecalcHashes[5]; send32_count = 1;
+[; ;asic.c: 48: send32_data = (WORD)&PrecalcHashes; send32_count = 1;
 "48
-[e = _send32_data -> &U *U + &U _PrecalcHashes * -> -> -> 5 `i `ui `ux -> -> # *U &U _PrecalcHashes `ui `ux `us ]
+[e = _send32_data -> &U _PrecalcHashes `us ]
 [e = _send32_count -> -> 1 `i `uc ]
 [; ;asic.c: 49: Send32();
 "49
@@ -3202,471 +3202,471 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;asic.c: 52: Send32();
 "52
 [e ( _Send32 ..  ]
-[; ;asic.c: 53: GIE = 1;
+[; ;asic.c: 53: LATC = 0xD8;;
 "53
-[e = _GIE -> -> 1 `i `b ]
-[; ;asic.c: 54: }
+[e = _LATC -> -> 216 `i `uc ]
+[; ;asic.c: 54: GIE = 1;
 "54
+[e = _GIE -> -> 1 `i `b ]
+[; ;asic.c: 55: }
+"55
 [e :UE 358 ]
 }
-"57
+"58
 [v _Send32 `(v ~T0 @X0 1 ef ]
 {
-[; ;asic.c: 56: void Send32(void)
-[; ;asic.c: 57: {
+[; ;asic.c: 57: void Send32(void)
+[; ;asic.c: 58: {
 [e :U _Send32 ]
 [f ]
-"59
-[; <"     BANKSEL(LATC) ;# ">
 "60
-[; <"     MOVF (_send32_data) & 0x7F, W ;# ">
+[; <"     BANKSEL(LATC) ;# ">
 "61
-[; <"     MOVWF FSR1L ;# ">
+[; <"     MOVF (_send32_data) & 0x7F, W ;# ">
 "62
-[; <"     MOVF (_send32_data+1) & 0x7F, W ;# ">
+[; <"     MOVWF FSR1L ;# ">
 "63
-[; <"     MOVWF FSR1H ;# ">
+[; <"     MOVF (_send32_data+1) & 0x7F, W ;# ">
 "64
+[; <"     MOVWF FSR1H ;# ">
 "65
-[; <" next_word: ;# ">
 "66
+[; <" next_word: ;# ">
 "67
-[; <"         MOVLW 0x48 ;# ">
 "68
-[; <"     CLRF LATC & 0x7F ;# ">
+[; <"         MOVLW 0x48 ;# ">
 "69
-[; <"     BTFSC INDF1,0 ;# ">
+[; <"     CLRF LATC & 0x7F ;# ">
 "70
-[; <"     MOVLW 0x90 ;# ">
+[; <"     BTFSC INDF1,0 ;# ">
 "71
-[; <"     MOVWF LATC & 0x7F ;# ">
+[; <"     MOVLW 0x90 ;# ">
 "72
+[; <"     MOVWF LATC & 0x7F ;# ">
 "73
 "74
-[; <"         MOVLW 0x48 ;# ">
 "75
-[; <"     CLRF LATC & 0x7F ;# ">
+[; <"         MOVLW 0x48 ;# ">
 "76
-[; <"     BTFSC INDF1,1 ;# ">
+[; <"     CLRF LATC & 0x7F ;# ">
 "77
-[; <"     MOVLW 0x90 ;# ">
+[; <"     BTFSC INDF1,1 ;# ">
 "78
-[; <"     MOVWF LATC & 0x7F ;# ">
+[; <"     MOVLW 0x90 ;# ">
 "79
+[; <"     MOVWF LATC & 0x7F ;# ">
 "80
 "81
-[; <"         MOVLW 0x48 ;# ">
 "82
-[; <"     CLRF LATC & 0x7F ;# ">
+[; <"         MOVLW 0x48 ;# ">
 "83
-[; <"     BTFSC INDF1,2 ;# ">
+[; <"     CLRF LATC & 0x7F ;# ">
 "84
-[; <"     MOVLW 0x90 ;# ">
+[; <"     BTFSC INDF1,2 ;# ">
 "85
-[; <"     MOVWF LATC & 0x7F ;# ">
+[; <"     MOVLW 0x90 ;# ">
 "86
+[; <"     MOVWF LATC & 0x7F ;# ">
 "87
 "88
-[; <"         MOVLW 0x48 ;# ">
 "89
-[; <"     CLRF LATC & 0x7F ;# ">
+[; <"         MOVLW 0x48 ;# ">
 "90
-[; <"     BTFSC INDF1,3 ;# ">
+[; <"     CLRF LATC & 0x7F ;# ">
 "91
-[; <"     MOVLW 0x90 ;# ">
+[; <"     BTFSC INDF1,3 ;# ">
 "92
-[; <"     MOVWF LATC & 0x7F ;# ">
+[; <"     MOVLW 0x90 ;# ">
 "93
+[; <"     MOVWF LATC & 0x7F ;# ">
 "94
 "95
-[; <"         MOVLW 0x48 ;# ">
 "96
-[; <"     CLRF LATC & 0x7F ;# ">
+[; <"         MOVLW 0x48 ;# ">
 "97
-[; <"     BTFSC INDF1,4 ;# ">
+[; <"     CLRF LATC & 0x7F ;# ">
 "98
-[; <"     MOVLW 0x90 ;# ">
+[; <"     BTFSC INDF1,4 ;# ">
 "99
-[; <"     MOVWF LATC & 0x7F ;# ">
+[; <"     MOVLW 0x90 ;# ">
 "100
+[; <"     MOVWF LATC & 0x7F ;# ">
 "101
 "102
-[; <"         MOVLW 0x48 ;# ">
 "103
-[; <"     CLRF LATC & 0x7F ;# ">
+[; <"         MOVLW 0x48 ;# ">
 "104
-[; <"     BTFSC INDF1,5 ;# ">
+[; <"     CLRF LATC & 0x7F ;# ">
 "105
-[; <"     MOVLW 0x90 ;# ">
+[; <"     BTFSC INDF1,5 ;# ">
 "106
-[; <"     MOVWF LATC & 0x7F ;# ">
+[; <"     MOVLW 0x90 ;# ">
 "107
+[; <"     MOVWF LATC & 0x7F ;# ">
 "108
 "109
-[; <"         MOVLW 0x48 ;# ">
 "110
-[; <"     CLRF LATC & 0x7F ;# ">
+[; <"         MOVLW 0x48 ;# ">
 "111
-[; <"     BTFSC INDF1,6 ;# ">
+[; <"     CLRF LATC & 0x7F ;# ">
 "112
-[; <"     MOVLW 0x90 ;# ">
+[; <"     BTFSC INDF1,6 ;# ">
 "113
-[; <"     MOVWF LATC & 0x7F ;# ">
+[; <"     MOVLW 0x90 ;# ">
 "114
+[; <"     MOVWF LATC & 0x7F ;# ">
 "115
 "116
-[; <"         MOVLW 0x48 ;# ">
 "117
-[; <"     CLRF LATC & 0x7F ;# ">
+[; <"         MOVLW 0x48 ;# ">
 "118
-[; <"     BTFSC INDF1,7 ;# ">
+[; <"     CLRF LATC & 0x7F ;# ">
 "119
-[; <"     MOVLW 0x90 ;# ">
+[; <"     BTFSC INDF1,7 ;# ">
 "120
-[; <"     MOVWF LATC & 0x7F ;# ">
+[; <"     MOVLW 0x90 ;# ">
 "121
+[; <"     MOVWF LATC & 0x7F ;# ">
 "122
 "123
-[; <"         ADDFSR FSR1, 0x01 & 0x3F ;# ">
 "124
+[; <"         ADDFSR FSR1, 0x01 & 0x3F ;# ">
 "125
 "126
-[; <"         MOVLW 0x48 ;# ">
 "127
-[; <"     CLRF LATC & 0x7F ;# ">
+[; <"         MOVLW 0x48 ;# ">
 "128
-[; <"     BTFSC INDF1,0 ;# ">
+[; <"     CLRF LATC & 0x7F ;# ">
 "129
-[; <"     MOVLW 0x90 ;# ">
+[; <"     BTFSC INDF1,0 ;# ">
 "130
-[; <"     MOVWF LATC & 0x7F ;# ">
+[; <"     MOVLW 0x90 ;# ">
 "131
+[; <"     MOVWF LATC & 0x7F ;# ">
 "132
 "133
-[; <"         MOVLW 0x48 ;# ">
 "134
-[; <"     CLRF LATC & 0x7F ;# ">
+[; <"         MOVLW 0x48 ;# ">
 "135
-[; <"     BTFSC INDF1,1 ;# ">
+[; <"     CLRF LATC & 0x7F ;# ">
 "136
-[; <"     MOVLW 0x90 ;# ">
+[; <"     BTFSC INDF1,1 ;# ">
 "137
-[; <"     MOVWF LATC & 0x7F ;# ">
+[; <"     MOVLW 0x90 ;# ">
 "138
+[; <"     MOVWF LATC & 0x7F ;# ">
 "139
 "140
-[; <"         MOVLW 0x48 ;# ">
 "141
-[; <"     CLRF LATC & 0x7F ;# ">
+[; <"         MOVLW 0x48 ;# ">
 "142
-[; <"     BTFSC INDF1,2 ;# ">
+[; <"     CLRF LATC & 0x7F ;# ">
 "143
-[; <"     MOVLW 0x90 ;# ">
+[; <"     BTFSC INDF1,2 ;# ">
 "144
-[; <"     MOVWF LATC & 0x7F ;# ">
+[; <"     MOVLW 0x90 ;# ">
 "145
+[; <"     MOVWF LATC & 0x7F ;# ">
 "146
 "147
-[; <"         MOVLW 0x48 ;# ">
 "148
-[; <"     CLRF LATC & 0x7F ;# ">
+[; <"         MOVLW 0x48 ;# ">
 "149
-[; <"     BTFSC INDF1,3 ;# ">
+[; <"     CLRF LATC & 0x7F ;# ">
 "150
-[; <"     MOVLW 0x90 ;# ">
+[; <"     BTFSC INDF1,3 ;# ">
 "151
-[; <"     MOVWF LATC & 0x7F ;# ">
+[; <"     MOVLW 0x90 ;# ">
 "152
+[; <"     MOVWF LATC & 0x7F ;# ">
 "153
 "154
-[; <"         MOVLW 0x48 ;# ">
 "155
-[; <"     CLRF LATC & 0x7F ;# ">
+[; <"         MOVLW 0x48 ;# ">
 "156
-[; <"     BTFSC INDF1,4 ;# ">
+[; <"     CLRF LATC & 0x7F ;# ">
 "157
-[; <"     MOVLW 0x90 ;# ">
+[; <"     BTFSC INDF1,4 ;# ">
 "158
-[; <"     MOVWF LATC & 0x7F ;# ">
+[; <"     MOVLW 0x90 ;# ">
 "159
+[; <"     MOVWF LATC & 0x7F ;# ">
 "160
 "161
-[; <"         MOVLW 0x48 ;# ">
 "162
-[; <"     CLRF LATC & 0x7F ;# ">
+[; <"         MOVLW 0x48 ;# ">
 "163
-[; <"     BTFSC INDF1,5 ;# ">
+[; <"     CLRF LATC & 0x7F ;# ">
 "164
-[; <"     MOVLW 0x90 ;# ">
+[; <"     BTFSC INDF1,5 ;# ">
 "165
-[; <"     MOVWF LATC & 0x7F ;# ">
+[; <"     MOVLW 0x90 ;# ">
 "166
+[; <"     MOVWF LATC & 0x7F ;# ">
 "167
 "168
-[; <"         MOVLW 0x48 ;# ">
 "169
-[; <"     CLRF LATC & 0x7F ;# ">
+[; <"         MOVLW 0x48 ;# ">
 "170
-[; <"     BTFSC INDF1,6 ;# ">
+[; <"     CLRF LATC & 0x7F ;# ">
 "171
-[; <"     MOVLW 0x90 ;# ">
+[; <"     BTFSC INDF1,6 ;# ">
 "172
-[; <"     MOVWF LATC & 0x7F ;# ">
+[; <"     MOVLW 0x90 ;# ">
 "173
+[; <"     MOVWF LATC & 0x7F ;# ">
 "174
 "175
-[; <"         MOVLW 0x48 ;# ">
 "176
-[; <"     CLRF LATC & 0x7F ;# ">
+[; <"         MOVLW 0x48 ;# ">
 "177
-[; <"     BTFSC INDF1,7 ;# ">
+[; <"     CLRF LATC & 0x7F ;# ">
 "178
-[; <"     MOVLW 0x90 ;# ">
+[; <"     BTFSC INDF1,7 ;# ">
 "179
-[; <"     MOVWF LATC & 0x7F ;# ">
+[; <"     MOVLW 0x90 ;# ">
 "180
+[; <"     MOVWF LATC & 0x7F ;# ">
 "181
 "182
-[; <"         ADDFSR FSR1, 0x01 & 0x3F ;# ">
 "183
+[; <"         ADDFSR FSR1, 0x01 & 0x3F ;# ">
 "184
 "185
-[; <"         MOVLW 0x48 ;# ">
 "186
-[; <"     CLRF LATC & 0x7F ;# ">
+[; <"         MOVLW 0x48 ;# ">
 "187
-[; <"     BTFSC INDF1,0 ;# ">
+[; <"     CLRF LATC & 0x7F ;# ">
 "188
-[; <"     MOVLW 0x90 ;# ">
+[; <"     BTFSC INDF1,0 ;# ">
 "189
-[; <"     MOVWF LATC & 0x7F ;# ">
+[; <"     MOVLW 0x90 ;# ">
 "190
+[; <"     MOVWF LATC & 0x7F ;# ">
 "191
 "192
-[; <"         MOVLW 0x48 ;# ">
 "193
-[; <"     CLRF LATC & 0x7F ;# ">
+[; <"         MOVLW 0x48 ;# ">
 "194
-[; <"     BTFSC INDF1,1 ;# ">
+[; <"     CLRF LATC & 0x7F ;# ">
 "195
-[; <"     MOVLW 0x90 ;# ">
+[; <"     BTFSC INDF1,1 ;# ">
 "196
-[; <"     MOVWF LATC & 0x7F ;# ">
+[; <"     MOVLW 0x90 ;# ">
 "197
+[; <"     MOVWF LATC & 0x7F ;# ">
 "198
 "199
-[; <"         MOVLW 0x48 ;# ">
 "200
-[; <"     CLRF LATC & 0x7F ;# ">
+[; <"         MOVLW 0x48 ;# ">
 "201
-[; <"     BTFSC INDF1,2 ;# ">
+[; <"     CLRF LATC & 0x7F ;# ">
 "202
-[; <"     MOVLW 0x90 ;# ">
+[; <"     BTFSC INDF1,2 ;# ">
 "203
-[; <"     MOVWF LATC & 0x7F ;# ">
+[; <"     MOVLW 0x90 ;# ">
 "204
+[; <"     MOVWF LATC & 0x7F ;# ">
 "205
 "206
-[; <"         MOVLW 0x48 ;# ">
 "207
-[; <"     CLRF LATC & 0x7F ;# ">
+[; <"         MOVLW 0x48 ;# ">
 "208
-[; <"     BTFSC INDF1,3 ;# ">
+[; <"     CLRF LATC & 0x7F ;# ">
 "209
-[; <"     MOVLW 0x90 ;# ">
+[; <"     BTFSC INDF1,3 ;# ">
 "210
-[; <"     MOVWF LATC & 0x7F ;# ">
+[; <"     MOVLW 0x90 ;# ">
 "211
+[; <"     MOVWF LATC & 0x7F ;# ">
 "212
 "213
-[; <"         MOVLW 0x48 ;# ">
 "214
-[; <"     CLRF LATC & 0x7F ;# ">
+[; <"         MOVLW 0x48 ;# ">
 "215
-[; <"     BTFSC INDF1,4 ;# ">
+[; <"     CLRF LATC & 0x7F ;# ">
 "216
-[; <"     MOVLW 0x90 ;# ">
+[; <"     BTFSC INDF1,4 ;# ">
 "217
-[; <"     MOVWF LATC & 0x7F ;# ">
+[; <"     MOVLW 0x90 ;# ">
 "218
+[; <"     MOVWF LATC & 0x7F ;# ">
 "219
 "220
-[; <"         MOVLW 0x48 ;# ">
 "221
-[; <"     CLRF LATC & 0x7F ;# ">
+[; <"         MOVLW 0x48 ;# ">
 "222
-[; <"     BTFSC INDF1,5 ;# ">
+[; <"     CLRF LATC & 0x7F ;# ">
 "223
-[; <"     MOVLW 0x90 ;# ">
+[; <"     BTFSC INDF1,5 ;# ">
 "224
-[; <"     MOVWF LATC & 0x7F ;# ">
+[; <"     MOVLW 0x90 ;# ">
 "225
+[; <"     MOVWF LATC & 0x7F ;# ">
 "226
 "227
-[; <"         MOVLW 0x48 ;# ">
 "228
-[; <"     CLRF LATC & 0x7F ;# ">
+[; <"         MOVLW 0x48 ;# ">
 "229
-[; <"     BTFSC INDF1,6 ;# ">
+[; <"     CLRF LATC & 0x7F ;# ">
 "230
-[; <"     MOVLW 0x90 ;# ">
+[; <"     BTFSC INDF1,6 ;# ">
 "231
-[; <"     MOVWF LATC & 0x7F ;# ">
+[; <"     MOVLW 0x90 ;# ">
 "232
+[; <"     MOVWF LATC & 0x7F ;# ">
 "233
 "234
-[; <"         MOVLW 0x48 ;# ">
 "235
-[; <"     CLRF LATC & 0x7F ;# ">
+[; <"         MOVLW 0x48 ;# ">
 "236
-[; <"     BTFSC INDF1,7 ;# ">
+[; <"     CLRF LATC & 0x7F ;# ">
 "237
-[; <"     MOVLW 0x90 ;# ">
+[; <"     BTFSC INDF1,7 ;# ">
 "238
-[; <"     MOVWF LATC & 0x7F ;# ">
+[; <"     MOVLW 0x90 ;# ">
 "239
+[; <"     MOVWF LATC & 0x7F ;# ">
 "240
 "241
-[; <"         ADDFSR FSR1, 0x01 & 0x3F ;# ">
 "242
+[; <"         ADDFSR FSR1, 0x01 & 0x3F ;# ">
 "243
 "244
-[; <"         MOVLW 0x48 ;# ">
 "245
-[; <"     CLRF LATC & 0x7F ;# ">
+[; <"         MOVLW 0x48 ;# ">
 "246
-[; <"     BTFSC INDF1,0 ;# ">
+[; <"     CLRF LATC & 0x7F ;# ">
 "247
-[; <"     MOVLW 0x90 ;# ">
+[; <"     BTFSC INDF1,0 ;# ">
 "248
-[; <"     MOVWF LATC & 0x7F ;# ">
+[; <"     MOVLW 0x90 ;# ">
 "249
+[; <"     MOVWF LATC & 0x7F ;# ">
 "250
 "251
-[; <"         MOVLW 0x48 ;# ">
 "252
-[; <"     CLRF LATC & 0x7F ;# ">
+[; <"         MOVLW 0x48 ;# ">
 "253
-[; <"     BTFSC INDF1,1 ;# ">
+[; <"     CLRF LATC & 0x7F ;# ">
 "254
-[; <"     MOVLW 0x90 ;# ">
+[; <"     BTFSC INDF1,1 ;# ">
 "255
-[; <"     MOVWF LATC & 0x7F ;# ">
+[; <"     MOVLW 0x90 ;# ">
 "256
+[; <"     MOVWF LATC & 0x7F ;# ">
 "257
 "258
-[; <"         MOVLW 0x48 ;# ">
 "259
-[; <"     CLRF LATC & 0x7F ;# ">
+[; <"         MOVLW 0x48 ;# ">
 "260
-[; <"     BTFSC INDF1,2 ;# ">
+[; <"     CLRF LATC & 0x7F ;# ">
 "261
-[; <"     MOVLW 0x90 ;# ">
+[; <"     BTFSC INDF1,2 ;# ">
 "262
-[; <"     MOVWF LATC & 0x7F ;# ">
+[; <"     MOVLW 0x90 ;# ">
 "263
+[; <"     MOVWF LATC & 0x7F ;# ">
 "264
 "265
-[; <"         MOVLW 0x48 ;# ">
 "266
-[; <"     CLRF LATC & 0x7F ;# ">
+[; <"         MOVLW 0x48 ;# ">
 "267
-[; <"     BTFSC INDF1,3 ;# ">
+[; <"     CLRF LATC & 0x7F ;# ">
 "268
-[; <"     MOVLW 0x90 ;# ">
+[; <"     BTFSC INDF1,3 ;# ">
 "269
-[; <"     MOVWF LATC & 0x7F ;# ">
+[; <"     MOVLW 0x90 ;# ">
 "270
+[; <"     MOVWF LATC & 0x7F ;# ">
 "271
 "272
-[; <"         MOVLW 0x48 ;# ">
 "273
-[; <"     CLRF LATC & 0x7F ;# ">
+[; <"         MOVLW 0x48 ;# ">
 "274
-[; <"     BTFSC INDF1,4 ;# ">
+[; <"     CLRF LATC & 0x7F ;# ">
 "275
-[; <"     MOVLW 0x90 ;# ">
+[; <"     BTFSC INDF1,4 ;# ">
 "276
-[; <"     MOVWF LATC & 0x7F ;# ">
+[; <"     MOVLW 0x90 ;# ">
 "277
+[; <"     MOVWF LATC & 0x7F ;# ">
 "278
 "279
-[; <"         MOVLW 0x48 ;# ">
 "280
-[; <"     CLRF LATC & 0x7F ;# ">
+[; <"         MOVLW 0x48 ;# ">
 "281
-[; <"     BTFSC INDF1,5 ;# ">
+[; <"     CLRF LATC & 0x7F ;# ">
 "282
-[; <"     MOVLW 0x90 ;# ">
+[; <"     BTFSC INDF1,5 ;# ">
 "283
-[; <"     MOVWF LATC & 0x7F ;# ">
+[; <"     MOVLW 0x90 ;# ">
 "284
+[; <"     MOVWF LATC & 0x7F ;# ">
 "285
 "286
-[; <"         MOVLW 0x48 ;# ">
 "287
-[; <"     CLRF LATC & 0x7F ;# ">
+[; <"         MOVLW 0x48 ;# ">
 "288
-[; <"     BTFSC INDF1,6 ;# ">
+[; <"     CLRF LATC & 0x7F ;# ">
 "289
-[; <"     MOVLW 0x90 ;# ">
+[; <"     BTFSC INDF1,6 ;# ">
 "290
-[; <"     MOVWF LATC & 0x7F ;# ">
+[; <"     MOVLW 0x90 ;# ">
 "291
+[; <"     MOVWF LATC & 0x7F ;# ">
 "292
 "293
-[; <"         MOVF _last_bit0 & 0x7F,W ;# ">
 "294
-[; <"     CLRF LATC & 0x7F ;# ">
+[; <"         MOVF _last_bit0 & 0x7F,W ;# ">
 "295
-[; <"     BTFSC INDF1,7 ;# ">
+[; <"     CLRF LATC & 0x7F ;# ">
 "296
-[; <"     MOVF _last_bit1 & 0x7F,W ;# ">
+[; <"     BTFSC INDF1,7 ;# ">
 "297
-[; <"     MOVWF LATC & 0x7F ;# ">
+[; <"     MOVF _last_bit1 & 0x7F,W ;# ">
 "298
+[; <"     MOVWF LATC & 0x7F ;# ">
 "299
 "300
-[; <"         ADDFSR FSR1, 0x01 & 0x3F ;# ">
 "301
+[; <"         ADDFSR FSR1, 0x01 & 0x3F ;# ">
 "302
 "303
-[; <"         DECFSZ _send32_count & 0x7F, F ;# ">
 "304
+[; <"         DECFSZ _send32_count & 0x7F, F ;# ">
+"305
 [; <"     GOTO next_word ;# ">
-[; ;asic.c: 306: LATC = 0xD8;;
-"306
-[e = _LATC -> -> 216 `i `uc ]
-[; ;asic.c: 307: }
-"307
+[; ;asic.c: 308: }
+"308
 [e :UE 359 ]
 }
-"312
+"313
 [v _rotate `(ul ~T0 @X0 1 ef2`ul`uc ]
 {
-[; ;asic.c: 311: DWORD rotate(DWORD x, BYTE y)
-[; ;asic.c: 312: {
+[; ;asic.c: 312: DWORD rotate(DWORD x, BYTE y)
+[; ;asic.c: 313: {
 [e :U _rotate ]
 [v _x `ul ~T0 @X0 1 r1 ]
 [v _y `uc ~T0 @X0 1 r2 ]
 [f ]
-[; ;asic.c: 313: return ((x<<y) | (x>>(32-y)));
-"313
+[; ;asic.c: 314: return ((x<<y) | (x>>(32-y)));
+"314
 [e ) | << _x _y >> _x - -> 32 `i -> _y `i ]
 [e $UE 360  ]
-[; ;asic.c: 314: }
-"314
+[; ;asic.c: 315: }
+"315
 [e :UE 360 ]
 }
-"317
+"318
 [v _AsicPreCalc `(v ~T0 @X0 1 ef1`*S356 ]
 {
-[; ;asic.c: 316: void AsicPreCalc(WORKTASK *work)
-[; ;asic.c: 317: {
+[; ;asic.c: 317: void AsicPreCalc(WORKTASK *work)
+[; ;asic.c: 318: {
 [e :U _AsicPreCalc ]
 [v _work `*S356 ~T0 @X0 1 r1 ]
 [f ]
-"318
+"319
 [v F3343 `Cul ~T0 @X0 -> 3 `i s K ]
 [i F3343
 :U ..
@@ -3675,127 +3675,127 @@ Version 3.2 HI-TECH Software Intermediate Code
 -> -1245643825 `ul
 ..
 ]
-"319
+"320
 [v _x `ul ~T0 @X0 1 a ]
 [v _y `ul ~T0 @X0 1 a ]
 [v _z `ul ~T0 @X0 1 a ]
-"320
-[v _m `ul ~T0 @X0 -> 8 `i a ]
 "321
+[v _m `ul ~T0 @X0 -> 8 `i a ]
+"322
 [v _n `uc ~T0 @X0 1 a ]
-[; ;asic.c: 318: const DWORD K[3] = { 0x428a2f98, 0x71374491, 0xb5c0fbcf };
-[; ;asic.c: 319: DWORD x, y, z;
-[; ;asic.c: 320: DWORD m[8];
-[; ;asic.c: 321: BYTE n;
-[; ;asic.c: 323: for(n = 0; n < 8; n++)
-"323
+[; ;asic.c: 319: const DWORD K[3] = { 0x428a2f98, 0x71374491, 0xb5c0fbcf };
+[; ;asic.c: 320: DWORD x, y, z;
+[; ;asic.c: 321: DWORD m[8];
+[; ;asic.c: 322: BYTE n;
+[; ;asic.c: 324: for(n = 0; n < 8; n++)
+"324
 {
 [e = _n -> -> 0 `i `uc ]
 [e $ < -> _n `i -> 8 `i 362  ]
 [e $U 363  ]
-"324
+"325
 [e :U 362 ]
-[; ;asic.c: 324: m[n] = work->MidState[n];
+[; ;asic.c: 325: m[n] = work->MidState[n];
 [e = *U + &U _m * -> _n `ux -> -> # *U &U _m `ui `ux *U + &U . *U _work 1 * -> _n `ux -> -> # *U &U . *U _work 1 `ui `ux ]
-"323
+"324
 [e ++ _n -> -> 1 `i `uc ]
 [e $ < -> _n `i -> 8 `i 362  ]
 [e :U 363 ]
-"324
+"325
 }
-[; ;asic.c: 326: for(n = 0; n < 3; n++) {
-"326
+[; ;asic.c: 327: for(n = 0; n < 3; n++) {
+"327
 {
 [e = _n -> -> 0 `i `uc ]
 [e $ < -> _n `i -> 3 `i 365  ]
 [e $U 366  ]
 [e :U 365 ]
 {
-[; ;asic.c: 328: x = m[5-n] ^ m[6-n];
-"328
-[e = _x ^ *U + &U _m * -> -> - -> 5 `i -> _n `i `ui `ux -> -> # *U &U _m `ui `ux *U + &U _m * -> -> - -> 6 `i -> _n `i `ui `ux -> -> # *U &U _m `ui `ux ]
-[; ;asic.c: 329: x = x & m[4-n];
+[; ;asic.c: 329: x = m[5-n] ^ m[6-n];
 "329
-[e = _x & _x *U + &U _m * -> -> - -> 4 `i -> _n `i `ui `ux -> -> # *U &U _m `ui `ux ]
-[; ;asic.c: 330: x = m[6-n] ^ x;
+[e = _x ^ *U + &U _m * -> -> - -> 5 `i -> _n `i `ui `ux -> -> # *U &U _m `ui `ux *U + &U _m * -> -> - -> 6 `i -> _n `i `ui `ux -> -> # *U &U _m `ui `ux ]
+[; ;asic.c: 330: x = x & m[4-n];
 "330
-[e = _x ^ *U + &U _m * -> -> - -> 6 `i -> _n `i `ui `ux -> -> # *U &U _m `ui `ux _x ]
-[; ;asic.c: 331: x += K[n];
+[e = _x & _x *U + &U _m * -> -> - -> 4 `i -> _n `i `ui `ux -> -> # *U &U _m `ui `ux ]
+[; ;asic.c: 331: x = m[6-n] ^ x;
 "331
-[e =+ _x *U + &U F3343 * -> _n `ux -> -> # *U &U F3343 `ui `ux ]
-[; ;asic.c: 332: x += work->Merkle[n];
+[e = _x ^ *U + &U _m * -> -> - -> 6 `i -> _n `i `ui `ux -> -> # *U &U _m `ui `ux _x ]
+[; ;asic.c: 332: x += K[n];
 "332
-[e =+ _x *U + &U . *U _work 2 * -> _n `ux -> -> # *U &U . *U _work 2 `ui `ux ]
-[; ;asic.c: 333: x += m[7-n];
+[e =+ _x *U + &U F3343 * -> _n `ux -> -> # *U &U F3343 `ui `ux ]
+[; ;asic.c: 333: x += work->Merkle[n];
 "333
-[e =+ _x *U + &U _m * -> -> - -> 7 `i -> _n `i `ui `ux -> -> # *U &U _m `ui `ux ]
-[; ;asic.c: 334: y = rotate(m[4-n], 26);
+[e =+ _x *U + &U . *U _work 2 * -> _n `ux -> -> # *U &U . *U _work 2 `ui `ux ]
+[; ;asic.c: 334: x += m[7-n];
 "334
-[e = _y ( _rotate (2 , *U + &U _m * -> -> - -> 4 `i -> _n `i `ui `ux -> -> # *U &U _m `ui `ux -> -> 26 `i `uc ]
-[; ;asic.c: 335: z = rotate(m[4-n], 21);
+[e =+ _x *U + &U _m * -> -> - -> 7 `i -> _n `i `ui `ux -> -> # *U &U _m `ui `ux ]
+[; ;asic.c: 335: y = rotate(m[4-n], 26);
 "335
-[e = _z ( _rotate (2 , *U + &U _m * -> -> - -> 4 `i -> _n `i `ui `ux -> -> # *U &U _m `ui `ux -> -> 21 `i `uc ]
-[; ;asic.c: 336: z = y^z;
+[e = _y ( _rotate (2 , *U + &U _m * -> -> - -> 4 `i -> _n `i `ui `ux -> -> # *U &U _m `ui `ux -> -> 26 `i `uc ]
+[; ;asic.c: 336: z = rotate(m[4-n], 21);
 "336
-[e = _z ^ _y _z ]
-[; ;asic.c: 337: y = rotate(m[4-n], 7);
+[e = _z ( _rotate (2 , *U + &U _m * -> -> - -> 4 `i -> _n `i `ui `ux -> -> # *U &U _m `ui `ux -> -> 21 `i `uc ]
+[; ;asic.c: 337: z = y^z;
 "337
-[e = _y ( _rotate (2 , *U + &U _m * -> -> - -> 4 `i -> _n `i `ui `ux -> -> # *U &U _m `ui `ux -> -> 7 `i `uc ]
-[; ;asic.c: 338: z = y^z;
-"338
 [e = _z ^ _y _z ]
-[; ;asic.c: 339: m[7-n] = z+x;
+[; ;asic.c: 338: y = rotate(m[4-n], 7);
+"338
+[e = _y ( _rotate (2 , *U + &U _m * -> -> - -> 4 `i -> _n `i `ui `ux -> -> # *U &U _m `ui `ux -> -> 7 `i `uc ]
+[; ;asic.c: 339: z = y^z;
 "339
-[e = *U + &U _m * -> -> - -> 7 `i -> _n `i `ui `ux -> -> # *U &U _m `ui `ux + _z _x ]
-[; ;asic.c: 340: m[3-n] = m[3-n] + m[7-n];
+[e = _z ^ _y _z ]
+[; ;asic.c: 340: m[7-n] = z+x;
 "340
-[e = *U + &U _m * -> -> - -> 3 `i -> _n `i `ui `ux -> -> # *U &U _m `ui `ux + *U + &U _m * -> -> - -> 3 `i -> _n `i `ui `ux -> -> # *U &U _m `ui `ux *U + &U _m * -> -> - -> 7 `i -> _n `i `ui `ux -> -> # *U &U _m `ui `ux ]
-[; ;asic.c: 341: x = rotate(m[((0-n)&7)], 30);
+[e = *U + &U _m * -> -> - -> 7 `i -> _n `i `ui `ux -> -> # *U &U _m `ui `ux + _z _x ]
+[; ;asic.c: 341: m[3-n] = m[3-n] + m[7-n];
 "341
-[e = _x ( _rotate (2 , *U + &U _m * -> -> & - -> 0 `i -> _n `i -> 7 `i `ui `ux -> -> # *U &U _m `ui `ux -> -> 30 `i `uc ]
-[; ;asic.c: 342: y = rotate(m[((0-n)&7)], 19);
+[e = *U + &U _m * -> -> - -> 3 `i -> _n `i `ui `ux -> -> # *U &U _m `ui `ux + *U + &U _m * -> -> - -> 3 `i -> _n `i `ui `ux -> -> # *U &U _m `ui `ux *U + &U _m * -> -> - -> 7 `i -> _n `i `ui `ux -> -> # *U &U _m `ui `ux ]
+[; ;asic.c: 342: x = rotate(m[((0-n)&7)], 30);
 "342
-[e = _y ( _rotate (2 , *U + &U _m * -> -> & - -> 0 `i -> _n `i -> 7 `i `ui `ux -> -> # *U &U _m `ui `ux -> -> 19 `i `uc ]
-[; ;asic.c: 343: y = y^x;
+[e = _x ( _rotate (2 , *U + &U _m * -> -> & - -> 0 `i -> _n `i -> 7 `i `ui `ux -> -> # *U &U _m `ui `ux -> -> 30 `i `uc ]
+[; ;asic.c: 343: y = rotate(m[((0-n)&7)], 19);
 "343
-[e = _y ^ _y _x ]
-[; ;asic.c: 344: x = rotate(m[((0-n)&7)], 10);
+[e = _y ( _rotate (2 , *U + &U _m * -> -> & - -> 0 `i -> _n `i -> 7 `i `ui `ux -> -> # *U &U _m `ui `ux -> -> 19 `i `uc ]
+[; ;asic.c: 344: y = y^x;
 "344
-[e = _x ( _rotate (2 , *U + &U _m * -> -> & - -> 0 `i -> _n `i -> 7 `i `ui `ux -> -> # *U &U _m `ui `ux -> -> 10 `i `uc ]
-[; ;asic.c: 345: y = x^y;
+[e = _y ^ _y _x ]
+[; ;asic.c: 345: x = rotate(m[((0-n)&7)], 10);
 "345
-[e = _y ^ _x _y ]
-[; ;asic.c: 346: x = m[((0-n)&7)] | m[((1-n)&7)];
+[e = _x ( _rotate (2 , *U + &U _m * -> -> & - -> 0 `i -> _n `i -> 7 `i `ui `ux -> -> # *U &U _m `ui `ux -> -> 10 `i `uc ]
+[; ;asic.c: 346: y = x^y;
 "346
-[e = _x | *U + &U _m * -> -> & - -> 0 `i -> _n `i -> 7 `i `ui `ux -> -> # *U &U _m `ui `ux *U + &U _m * -> -> & - -> 1 `i -> _n `i -> 7 `i `ui `ux -> -> # *U &U _m `ui `ux ]
-[; ;asic.c: 347: x = m[((2-n)&7)] & x;
+[e = _y ^ _x _y ]
+[; ;asic.c: 347: x = m[((0-n)&7)] | m[((1-n)&7)];
 "347
-[e = _x & *U + &U _m * -> -> & - -> 2 `i -> _n `i -> 7 `i `ui `ux -> -> # *U &U _m `ui `ux _x ]
-[; ;asic.c: 348: z = m[((0-n)&7)] & m[((1-n)&7)];
+[e = _x | *U + &U _m * -> -> & - -> 0 `i -> _n `i -> 7 `i `ui `ux -> -> # *U &U _m `ui `ux *U + &U _m * -> -> & - -> 1 `i -> _n `i -> 7 `i `ui `ux -> -> # *U &U _m `ui `ux ]
+[; ;asic.c: 348: x = m[((2-n)&7)] & x;
 "348
-[e = _z & *U + &U _m * -> -> & - -> 0 `i -> _n `i -> 7 `i `ui `ux -> -> # *U &U _m `ui `ux *U + &U _m * -> -> & - -> 1 `i -> _n `i -> 7 `i `ui `ux -> -> # *U &U _m `ui `ux ]
-[; ;asic.c: 349: x = x | z;
+[e = _x & *U + &U _m * -> -> & - -> 2 `i -> _n `i -> 7 `i `ui `ux -> -> # *U &U _m `ui `ux _x ]
+[; ;asic.c: 349: z = m[((0-n)&7)] & m[((1-n)&7)];
 "349
-[e = _x | _x _z ]
-[; ;asic.c: 350: m[7-n] += y + x;
+[e = _z & *U + &U _m * -> -> & - -> 0 `i -> _n `i -> 7 `i `ui `ux -> -> # *U &U _m `ui `ux *U + &U _m * -> -> & - -> 1 `i -> _n `i -> 7 `i `ui `ux -> -> # *U &U _m `ui `ux ]
+[; ;asic.c: 350: x = x | z;
 "350
+[e = _x | _x _z ]
+[; ;asic.c: 351: m[7-n] += y + x;
+"351
 [e =+ *U + &U _m * -> -> - -> 7 `i -> _n `i `ui `ux -> -> # *U &U _m `ui `ux + _y _x ]
-[; ;asic.c: 352: PrecalcHashes[n] = m[7-n];
-"352
-[e = *U + &U _PrecalcHashes * -> _n `ux -> -> # *U &U _PrecalcHashes `ui `ux *U + &U _m * -> -> - -> 7 `i -> _n `i `ui `ux -> -> # *U &U _m `ui `ux ]
-[; ;asic.c: 353: PrecalcHashes[n+2] = m[3-n];
+[; ;asic.c: 353: PrecalcHashes[2-n] = m[7-n];
 "353
-[e = *U + &U _PrecalcHashes * -> -> + -> _n `i -> 2 `i `ui `ux -> -> # *U &U _PrecalcHashes `ui `ux *U + &U _m * -> -> - -> 3 `i -> _n `i `ui `ux -> -> # *U &U _m `ui `ux ]
+[e = *U + &U _PrecalcHashes * -> -> - -> 2 `i -> _n `i `ui `ux -> -> # *U &U _PrecalcHashes `ui `ux *U + &U _m * -> -> - -> 7 `i -> _n `i `ui `ux -> -> # *U &U _m `ui `ux ]
+[; ;asic.c: 354: PrecalcHashes[5-n] = m[3-n];
 "354
+[e = *U + &U _PrecalcHashes * -> -> - -> 5 `i -> _n `i `ui `ux -> -> # *U &U _PrecalcHashes `ui `ux *U + &U _m * -> -> - -> 3 `i -> _n `i `ui `ux -> -> # *U &U _m `ui `ux ]
+"355
 }
-"326
+"327
 [e ++ _n -> -> 1 `i `uc ]
 [e $ < -> _n `i -> 3 `i 365  ]
 [e :U 366 ]
-"354
-}
-[; ;asic.c: 354: }
-[; ;asic.c: 355: }
 "355
+}
+[; ;asic.c: 355: }
+[; ;asic.c: 356: }
+"356
 [e :UE 361 ]
 }

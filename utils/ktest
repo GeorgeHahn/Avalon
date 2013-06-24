@@ -43,7 +43,7 @@ def sendcmd(cmd, data=""):
 	except serial.SerialException, e:
 		ser = kopen()
 		ser.write(cmd + chr(addr) + data)
-	data = ser.read(16)
+	data = ser.read(32)
 	if cmd in 'WASED':
 		print "State:%c, ASICs:%u, Slaves:%u, WorkQ:%u, Current WorkID:%x, Temp:%u, Fan:%u, HashCount:%u, ErrCount:%u" % unpack("=cBBBBBBHH", data[2:])
 	elif cmd == 'C':
@@ -84,7 +84,7 @@ if __name__ == '__main__':
 				data = chr(0)
 		elif cmd == 'E':
 			data = raw_input("1 (enable) or 0 (disable): ")
-		elif cmd in 'WA':
+		elif cmd in 'WAP':
 			workid = (workid+1) % 256
 			data = chr(workid) + midstate.decode('hex') + merkle.decode('hex')
 		

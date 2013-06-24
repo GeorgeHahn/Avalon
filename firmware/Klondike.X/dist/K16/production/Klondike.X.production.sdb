@@ -572,7 +572,7 @@ EVENT_TRANSFER_TERMINATED 5
 "303
 [v F3859 `*DCCuc  1 t 2 ]
 [s S2322 _worktask 45 `uc 1 WorkID 1 0 `[8]ul 1 MidState 32 1 `[3]ul 1 Merkle 12 33 ]
-"355 asic.c
+"356 asic.c
 [s S2361 _i2c 1 `uc 1 Next 1 0 :5:0 
 `uc 1 Slave 1 0 :1:5 
 `uc 1 Master 1 0 :1:6 
@@ -643,18 +643,18 @@ EVENT_TRANSFER_TERMINATED 5
 [s S2592 _workstatus 11 `uc 1 State 1 0 `uc 1 ChipCount 1 1 `uc 1 SlaveCount 1 2 `uc 1 WorkQC 1 3 `uc 1 WorkID 1 4 `uc 1 Temp 1 5 `uc 1 FanSpeed 1 6 `us 1 HashCount 2 7 `us 1 ErrorCount 2 9 ]
 [s S2602 _workcfg 5 `us 1 HashClock 2 0 `uc 1 TempTarget 1 2 `uc 1 TempCritical 1 3 `uc 1 FanTarget 1 4 ]
 "4243 /opt/microchip/xc8/v1.12/include/pic16lf1459.h
-[s S2614 . 1 `uc 1 . 1 0 :4:0 
+[s S2615 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 LATA4 1 0 :1:4 
 `uc 1 LATA5 1 0 :1:5 
 ]
-[u S2618 . 1 `S2614 1 . 1 0 ]
+[u S2619 . 1 `S2615 1 . 1 0 ]
 "1827
-[s S2625 _i2c 1 `uc 1 Next 1 0 :5:0 
+[s S2626 _i2c 1 `uc 1 Next 1 0 :5:0 
 `uc 1 Slave 1 0 :1:5 
 `uc 1 Master 1 0 :1:6 
 ]
 "6501
-[s S2633 . 1 `uc 1 LATC0 1 0 :1:0 
+[s S2634 . 1 `uc 1 LATC0 1 0 :1:0 
 `uc 1 LATC1 1 0 :1:1 
 `uc 1 LATC2 1 0 :1:2 
 `uc 1 LATC3 1 0 :1:3 
@@ -663,24 +663,24 @@ EVENT_TRANSFER_TERMINATED 5
 `uc 1 LATC6 1 0 :1:6 
 `uc 1 LATC7 1 0 :1:7 
 ]
-[u S2642 . 1 `S2633 1 . 1 0 ]
+[u S2643 . 1 `S2634 1 . 1 0 ]
 "6343
-[s S2655 . 1 `uc 1 TMR1ON 1 0 :1:0 
+[s S2656 . 1 `uc 1 TMR1ON 1 0 :1:0 
 `uc 1 . 1 0 :1:1 
 `uc 1 nT1SYNC 1 0 :1:2 
 `uc 1 T1OSCEN 1 0 :1:3 
 `uc 1 T1CKPS 1 0 :2:4 
 `uc 1 TMR1CS 1 0 :2:6 
 ]
-[s S2662 . 1 `uc 1 . 1 0 :4:0 
+[s S2663 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 T1CKPS0 1 0 :1:4 
 `uc 1 T1CKPS1 1 0 :1:5 
 `uc 1 TMR1CS0 1 0 :1:6 
 `uc 1 TMR1CS1 1 0 :1:7 
 ]
-[u S2668 . 1 `S2655 1 . 1 0 `S2662 1 . 1 0 ]
+[u S2669 . 1 `S2656 1 . 1 0 `S2663 1 . 1 0 ]
 "6715
-[s S2686 . 1 `uc 1 T1GSS 1 0 :2:0 
+[s S2687 . 1 `uc 1 T1GSS 1 0 :2:0 
 `uc 1 T1GVAL 1 0 :1:2 
 `uc 1 T1GGO_nDONE 1 0 :1:3 
 `uc 1 T1GSPM 1 0 :1:4 
@@ -688,16 +688,16 @@ EVENT_TRANSFER_TERMINATED 5
 `uc 1 T1GPOL 1 0 :1:6 
 `uc 1 TMR1GE 1 0 :1:7 
 ]
-[s S2694 . 1 `uc 1 T1GSS0 1 0 :1:0 
+[s S2695 . 1 `uc 1 T1GSS0 1 0 :1:0 
 `uc 1 T1GSS1 1 0 :1:1 
 ]
-[u S2697 . 1 `S2686 1 . 1 0 `S2694 1 . 1 0 ]
+[u S2698 . 1 `S2687 1 . 1 0 `S2695 1 . 1 0 ]
 "1611
-[s S2720 . 1 `uc 1 ADON 1 0 :1:0 
+[s S2721 . 1 `uc 1 ADON 1 0 :1:0 
 `uc 1 GO_nDONE 1 0 :1:1 
 `uc 1 CHS 1 0 :5:2 
 ]
-[s S2724 . 1 `uc 1 . 1 0 :1:0 
+[s S2725 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 ADGO 1 0 :1:1 
 `uc 1 CHS0 1 0 :1:2 
 `uc 1 CHS1 1 0 :1:3 
@@ -705,12 +705,12 @@ EVENT_TRANSFER_TERMINATED 5
 `uc 1 CHS3 1 0 :1:5 
 `uc 1 CHS4 1 0 :1:6 
 ]
-[s S2732 . 1 `uc 1 . 1 0 :1:0 
+[s S2733 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GO 1 0 :1:1 
 ]
-[u S2735 . 1 `S2720 1 . 1 0 `S2724 1 . 1 0 `S2732 1 . 1 0 ]
+[u S2736 . 1 `S2721 1 . 1 0 `S2725 1 . 1 0 `S2733 1 . 1 0 ]
 "2738
-[s S2759 . 1 `uc 1 RX9D 1 0 :1:0 
+[s S2760 . 1 `uc 1 RX9D 1 0 :1:0 
 `uc 1 OERR 1 0 :1:1 
 `uc 1 FERR 1 0 :1:2 
 `uc 1 ADDEN 1 0 :1:3 
@@ -719,9 +719,9 @@ EVENT_TRANSFER_TERMINATED 5
 `uc 1 RX9 1 0 :1:6 
 `uc 1 SPEN 1 0 :1:7 
 ]
-[u S2768 . 1 `S2759 1 . 1 0 ]
+[u S2769 . 1 `S2760 1 . 1 0 ]
 "6723
-[s S2782 . 1 `uc 1 TRISC0 1 0 :1:0 
+[s S2783 . 1 `uc 1 TRISC0 1 0 :1:0 
 `uc 1 TRISC1 1 0 :1:1 
 `uc 1 TRISC2 1 0 :1:2 
 `uc 1 TRISC3 1 0 :1:3 
@@ -730,13 +730,13 @@ EVENT_TRANSFER_TERMINATED 5
 `uc 1 TRISC6 1 0 :1:6 
 `uc 1 TRISC7 1 0 :1:7 
 ]
-[u S2791 . 1 `S2782 1 . 1 0 ]
+[u S2792 . 1 `S2783 1 . 1 0 ]
 "6729
-[s S2807 . 1 `uc 1 T2CKPS 1 0 :2:0 
+[s S2808 . 1 `uc 1 T2CKPS 1 0 :2:0 
 `uc 1 TMR2ON 1 0 :1:2 
 `uc 1 T2OUTPS 1 0 :4:3 
 ]
-[s S2811 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+[s S2812 . 1 `uc 1 T2CKPS0 1 0 :1:0 
 `uc 1 T2CKPS1 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 T2OUTPS0 1 0 :1:3 
@@ -744,49 +744,55 @@ EVENT_TRANSFER_TERMINATED 5
 `uc 1 T2OUTPS2 1 0 :1:5 
 `uc 1 T2OUTPS3 1 0 :1:6 
 ]
-[u S2819 . 1 `S2807 1 . 1 0 `S2811 1 . 1 0 ]
+[u S2820 . 1 `S2808 1 . 1 0 `S2812 1 . 1 0 ]
 "6353
-[s S2838 . 1 `uc 1 ADPREF 1 0 :2:0 
+[s S2839 . 1 `uc 1 ADPREF 1 0 :2:0 
 `uc 1 . 1 0 :2:2 
 `uc 1 ADCS 1 0 :3:4 
 `uc 1 ADFM 1 0 :1:7 
 ]
-[s S2843 . 1 `uc 1 ADPREF0 1 0 :1:0 
+[s S2844 . 1 `uc 1 ADPREF0 1 0 :1:0 
 `uc 1 ADPREF1 1 0 :1:1 
 `uc 1 . 1 0 :2:2 
 `uc 1 ADCS0 1 0 :1:4 
 `uc 1 ADCS1 1 0 :1:5 
 `uc 1 ADCS2 1 0 :1:6 
 ]
-[u S2850 . 1 `S2838 1 . 1 0 `S2843 1 . 1 0 ]
+[u S2851 . 1 `S2839 1 . 1 0 `S2844 1 . 1 0 ]
 "1730
-[s S2866 . 1 `uc 1 . 1 0 :4:0 
+[s S2867 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 TRIGSEL 1 0 :3:4 
 ]
-[s S2869 . 1 `uc 1 . 1 0 :4:0 
+[s S2870 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 TRIGSEL0 1 0 :1:4 
 `uc 1 TRIGSEL1 1 0 :1:5 
 `uc 1 TRIGSEL2 1 0 :1:6 
 ]
-[u S2874 . 1 `S2866 1 . 1 0 `S2869 1 . 1 0 ]
+[u S2875 . 1 `S2867 1 . 1 0 `S2870 1 . 1 0 ]
 "6703
-[s S2887 . 1 `uc 1 PS 1 0 :3:0 
+[s S2888 . 1 `uc 1 PS 1 0 :3:0 
 `uc 1 PSA 1 0 :1:3 
 `uc 1 TMR0SE 1 0 :1:4 
 `uc 1 TMR0CS 1 0 :1:5 
 `uc 1 INTEDG 1 0 :1:6 
 `uc 1 nWPUEN 1 0 :1:7 
 ]
-[s S2894 . 1 `uc 1 PS0 1 0 :1:0 
+[s S2895 . 1 `uc 1 PS0 1 0 :1:0 
 `uc 1 PS1 1 0 :1:1 
 `uc 1 PS2 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
 `uc 1 T0SE 1 0 :1:4 
 `uc 1 T0CS 1 0 :1:5 
 ]
-[u S2901 . 1 `S2887 1 . 1 0 `S2894 1 . 1 0 ]
+[u S2902 . 1 `S2888 1 . 1 0 `S2895 1 . 1 0 ]
 "1879
-[s S2920 . 1 `uc 1 TX9D 1 0 :1:0 
+[s S2921 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+]
+[u S2925 . 1 `S2921 1 . 1 0 ]
+"982
+[s S2932 . 1 `uc 1 TX9D 1 0 :1:0 
 `uc 1 TRMT 1 0 :1:1 
 `uc 1 BRGH 1 0 :1:2 
 `uc 1 SENDB 1 0 :1:3 
@@ -795,18 +801,18 @@ EVENT_TRANSFER_TERMINATED 5
 `uc 1 TX9 1 0 :1:6 
 `uc 1 CSRC 1 0 :1:7 
 ]
-[u S2929 . 1 `S2920 1 . 1 0 ]
+[u S2941 . 1 `S2932 1 . 1 0 ]
 "2892
-[s S2941 . 1 `uc 1 . 1 0 :4:0 
+[s S2953 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 ANSB4 1 0 :1:4 
 `uc 1 ANSB5 1 0 :1:5 
 ]
-[s S2945 . 1 `uc 1 . 1 0 :4:0 
+[s S2957 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 ANSB 1 0 :4:4 
 ]
-[u S2948 . 1 `S2941 1 . 1 0 `S2945 1 . 1 0 ]
+[u S2960 . 1 `S2953 1 . 1 0 `S2957 1 . 1 0 ]
 "2499
-[s S2959 . 1 `uc 1 TMR1IE 1 0 :1:0 
+[s S2971 . 1 `uc 1 TMR1IE 1 0 :1:0 
 `uc 1 TMR2IE 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 SSP1IE 1 0 :1:3 
@@ -815,9 +821,9 @@ EVENT_TRANSFER_TERMINATED 5
 `uc 1 ADIE 1 0 :1:6 
 `uc 1 TMR1GIE 1 0 :1:7 
 ]
-[u S2968 . 1 `S2959 1 . 1 0 ]
+[u S2980 . 1 `S2971 1 . 1 0 ]
 "1112
-[s S2980 . 1 `uc 1 IOCIF 1 0 :1:0 
+[s S2992 . 1 `uc 1 IOCIF 1 0 :1:0 
 `uc 1 INTF 1 0 :1:1 
 `uc 1 TMR0IF 1 0 :1:2 
 `uc 1 IOCIE 1 0 :1:3 
@@ -826,14 +832,14 @@ EVENT_TRANSFER_TERMINATED 5
 `uc 1 PEIE 1 0 :1:6 
 `uc 1 GIE 1 0 :1:7 
 ]
-[s S2989 . 1 `uc 1 . 1 0 :2:0 
+[s S3001 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 T0IF 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 T0IE 1 0 :1:5 
 ]
-[u S2994 . 1 `S427 1 . 1 0 `S436 1 . 1 0 ]
+[u S3006 . 1 `S427 1 . 1 0 `S436 1 . 1 0 ]
 "6041
-[s S3128 _i2c 1 `uc 1 Next 1 0 :5:0 
+[s S3143 _i2c 1 `uc 1 Next 1 0 :5:0 
 `uc 1 Slave 1 0 :1:5 
 `uc 1 Master 1 0 :1:6 
 ]
@@ -848,26 +854,26 @@ ADDRESS_STATE 16
 CONFIGURED_STATE 32
 ]
 "119 klondike.h
-[s S3154 _workstatus 11 `uc 1 State 1 0 `uc 1 ChipCount 1 1 `uc 1 SlaveCount 1 2 `uc 1 WorkQC 1 3 `uc 1 WorkID 1 4 `uc 1 Temp 1 5 `uc 1 FanSpeed 1 6 `us 1 HashCount 2 7 `us 1 ErrorCount 2 9 ]
+[s S3169 _workstatus 11 `uc 1 State 1 0 `uc 1 ChipCount 1 1 `uc 1 SlaveCount 1 2 `uc 1 WorkQC 1 3 `uc 1 WorkID 1 4 `uc 1 Temp 1 5 `uc 1 FanSpeed 1 6 `us 1 HashCount 2 7 `us 1 ErrorCount 2 9 ]
 "252 ../Include/USB/usb_device.h
-[s S3181 . 1 `uc 1 . 1 0 :4:0 
+[s S3196 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 TRISA4 1 0 :1:4 
 `uc 1 TRISA5 1 0 :1:5 
 ]
-[u S3185 . 1 `S3181 1 . 1 0 ]
+[u S3200 . 1 `S2921 1 . 1 0 ]
 "982 /opt/microchip/xc8/v1.12/include/pic16lf1459.h
-[s S3192 . 1 `uc 1 . 1 0 :4:0 
+[s S3203 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 LATA4 1 0 :1:4 
 `uc 1 LATA5 1 0 :1:5 
 ]
-[u S3196 . 1 `S2614 1 . 1 0 ]
+[u S3207 . 1 `S2615 1 . 1 0 ]
 "617 ../Include/USB/usb_function_cdc.h
 [e E5 _BOOL `uc
 FALSE 0
 TRUE 1
 ]
 "1982 ../Include/USB/usb_device.h
-[s S3218 . 1 `uc 1 . 1 0 :1:0 
+[s S3229 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 ACTIE 1 0 :1:1 
 `uc 1 USBIE 1 0 :1:2 
 `uc 1 BCL1IE 1 0 :1:3 
@@ -876,9 +882,9 @@ TRUE 1
 `uc 1 C2IE 1 0 :1:6 
 `uc 1 OSFIE 1 0 :1:7 
 ]
-[u S3227 . 1 `S250 1 . 1 0 ]
+[u S3238 . 1 `S250 1 . 1 0 ]
 "1168 /opt/microchip/xc8/v1.12/include/pic16lf1459.h
-[s S3230 . 1 `uc 1 . 1 0 :1:0 
+[s S3241 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 SUSPND 1 0 :1:1 
 `uc 1 RESUME 1 0 :1:2 
 `uc 1 USBEN 1 0 :1:3 
@@ -886,7 +892,7 @@ TRUE 1
 `uc 1 SE0 1 0 :1:5 
 `uc 1 PPBRST 1 0 :1:6 
 ]
-[u S3238 . 1 `S278 1 . 1 0 ]
+[u S3249 . 1 `S278 1 . 1 0 ]
 "4869
 [e E3248 . `ui
 EVENT_NONE 0
@@ -1085,11 +1091,11 @@ EVENT_TRANSFER_TERMINATED 5
 [v i1___wmul `(ui  1 e 2 0 ]
 "37 asic.c
 [v _SendAsicData `(v  1 e 0 0 ]
-"57
+"58
 [v _Send32 `(v  1 e 0 0 ]
-"312
+"313
 [v _rotate `(ul  1 e 4 0 ]
-"317
+"318
 [v _AsicPreCalc `(v  1 e 0 0 ]
 "38 i2c.c
 [v _I2CRelay `(v  1 e 0 0 ]
@@ -1107,27 +1113,27 @@ EVENT_TRANSFER_TERMINATED 5
 [v _InitI2CSlave `(v  1 e 0 0 ]
 "176
 [v _InitI2CMaster `(v  1 e 0 0 ]
-"47 klondike.c
+"48 klondike.c
 [v _ProcessCmd `(v  1 e 0 0 ]
-"106
+"112
 [v _AsicPushWork `(v  1 e 0 0 ]
-"119
+"125
 [v _CheckFanSpeed `(v  1 e 0 0 ]
-"143
+"149
 [v _DetectAsics `(v  1 e 0 0 ]
-"167
+"173
 [v _WorkTick `(v  1 e 0 0 ]
-"194
+"200
 [v _ResultRx `(v  1 e 0 0 ]
-"223
+"229
 [v _UpdateFanSpeed `(v  1 e 0 0 ]
-"235
+"241
 [v _InitFAN `(v  1 e 0 0 ]
-"255
+"261
 [v _InitTempSensor `(v  1 e 0 0 ]
-"268
+"274
 [v _InitWorkTick `(v  1 e 0 0 ]
-"283
+"290
 [v _InitResultRx `(v  1 e 0 0 ]
 "61 main.c
 [v _ISRCode `II(v  1 e 0 0 ]
@@ -1464,7 +1470,7 @@ EVENT_TRANSFER_TERMINATED 5
 [v _TMR1L `VEuc  1 e 1 @22 ]
 "703
 [v _TMR1H `VEuc  1 e 1 @23 ]
-[s S2655 . 1 `uc 1 TMR1ON 1 0 :1:0 
+[s S2656 . 1 `uc 1 TMR1ON 1 0 :1:0 
 `uc 1 . 1 0 :1:1 
 `uc 1 nT1SYNC 1 0 :1:2 
 `uc 1 T1OSCEN 1 0 :1:3 
@@ -1472,15 +1478,15 @@ EVENT_TRANSFER_TERMINATED 5
 `uc 1 TMR1CS 1 0 :2:6 
 ]
 "744
-[s S2662 . 1 `uc 1 . 1 0 :4:0 
+[s S2663 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 T1CKPS0 1 0 :1:4 
 `uc 1 T1CKPS1 1 0 :1:5 
 `uc 1 TMR1CS0 1 0 :1:6 
 `uc 1 TMR1CS1 1 0 :1:7 
 ]
-[u S2668 . 1 `S2655 1 . 1 0 `S2662 1 . 1 0 ]
-[v _T1CONbits `VES2668  1 e 1 @24 ]
-[s S2686 . 1 `uc 1 T1GSS 1 0 :2:0 
+[u S2669 . 1 `S2656 1 . 1 0 `S2663 1 . 1 0 ]
+[v _T1CONbits `VES2669  1 e 1 @24 ]
+[s S2687 . 1 `uc 1 T1GSS 1 0 :2:0 
 `uc 1 T1GVAL 1 0 :1:2 
 `uc 1 T1GGO_nDONE 1 0 :1:3 
 `uc 1 T1GSPM 1 0 :1:4 
@@ -1489,19 +1495,19 @@ EVENT_TRANSFER_TERMINATED 5
 `uc 1 TMR1GE 1 0 :1:7 
 ]
 "813
-[s S2694 . 1 `uc 1 T1GSS0 1 0 :1:0 
+[s S2695 . 1 `uc 1 T1GSS0 1 0 :1:0 
 `uc 1 T1GSS1 1 0 :1:1 
 ]
-[u S2697 . 1 `S2686 1 . 1 0 `S2694 1 . 1 0 ]
-[v _T1GCONbits `VES2697  1 e 1 @25 ]
+[u S2698 . 1 `S2687 1 . 1 0 `S2695 1 . 1 0 ]
+[v _T1GCONbits `VES2698  1 e 1 @25 ]
 "881
 [v _PR2 `VEuc  1 e 1 @27 ]
-[s S2807 . 1 `uc 1 T2CKPS 1 0 :2:0 
+[s S2808 . 1 `uc 1 T2CKPS 1 0 :2:0 
 `uc 1 TMR2ON 1 0 :1:2 
 `uc 1 T2OUTPS 1 0 :4:3 
 ]
 "921
-[s S2811 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+[s S2812 . 1 `uc 1 T2CKPS0 1 0 :1:0 
 `uc 1 T2CKPS1 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 T2OUTPS0 1 0 :1:3 
@@ -1509,15 +1515,15 @@ EVENT_TRANSFER_TERMINATED 5
 `uc 1 T2OUTPS2 1 0 :1:5 
 `uc 1 T2OUTPS3 1 0 :1:6 
 ]
-[u S2819 . 1 `S2807 1 . 1 0 `S2811 1 . 1 0 ]
-[v _T2CONbits `VES2819  1 e 1 @28 ]
-[s S2614 . 1 `uc 1 . 1 0 :4:0 
+[u S2820 . 1 `S2808 1 . 1 0 `S2812 1 . 1 0 ]
+[v _T2CONbits `VES2820  1 e 1 @28 ]
+[s S2615 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 LATA4 1 0 :1:4 
 `uc 1 LATA5 1 0 :1:5 
 ]
 "982
-[u S2618 . 1 `S2614 1 . 1 0 ]
-[v _TRISAbits `VES2618  1 e 1 @140 ]
+[u S2619 . 1 `S2615 1 . 1 0 ]
+[v _TRISAbits `VES2619  1 e 1 @140 ]
 [s S2484 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 TRISB4 1 0 :1:4 
 `uc 1 TRISB5 1 0 :1:5 
@@ -1533,7 +1539,7 @@ EVENT_TRANSFER_TERMINATED 5
 [v _PIE1bits `VES259  1 e 1 @145 ]
 "1168
 [v _PIE2bits `VES259  1 e 1 @146 ]
-[s S2887 . 1 `uc 1 PS 1 0 :3:0 
+[s S2888 . 1 `uc 1 PS 1 0 :3:0 
 `uc 1 PSA 1 0 :1:3 
 `uc 1 TMR0SE 1 0 :1:4 
 `uc 1 TMR0CS 1 0 :1:5 
@@ -1541,27 +1547,27 @@ EVENT_TRANSFER_TERMINATED 5
 `uc 1 nWPUEN 1 0 :1:7 
 ]
 "1225
-[s S2894 . 1 `uc 1 PS0 1 0 :1:0 
+[s S2895 . 1 `uc 1 PS0 1 0 :1:0 
 `uc 1 PS1 1 0 :1:1 
 `uc 1 PS2 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
 `uc 1 T0SE 1 0 :1:4 
 `uc 1 T0CS 1 0 :1:5 
 ]
-[u S2901 . 1 `S2887 1 . 1 0 `S2894 1 . 1 0 ]
-[v _OPTION_REGbits `VES2901  1 e 1 @149 ]
+[u S2902 . 1 `S2888 1 . 1 0 `S2895 1 . 1 0 ]
+[v _OPTION_REGbits `VES2902  1 e 1 @149 ]
 "1398
 [v _OSCTUNE `VEuc  1 e 1 @152 ]
 "1461
 [v _OSCCON `VEuc  1 e 1 @153 ]
 "1611
 [v _ADRESH `VEuc  1 e 1 @156 ]
-[s S2720 . 1 `uc 1 ADON 1 0 :1:0 
+[s S2721 . 1 `uc 1 ADON 1 0 :1:0 
 `uc 1 GO_nDONE 1 0 :1:1 
 `uc 1 CHS 1 0 :5:2 
 ]
 "1655
-[s S2724 . 1 `uc 1 . 1 0 :1:0 
+[s S2725 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 ADGO 1 0 :1:1 
 `uc 1 CHS0 1 0 :1:2 
 `uc 1 CHS1 1 0 :1:3 
@@ -1569,39 +1575,39 @@ EVENT_TRANSFER_TERMINATED 5
 `uc 1 CHS3 1 0 :1:5 
 `uc 1 CHS4 1 0 :1:6 
 ]
-[s S2732 . 1 `uc 1 . 1 0 :1:0 
+[s S2733 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GO 1 0 :1:1 
 ]
-[u S2735 . 1 `S2720 1 . 1 0 `S2724 1 . 1 0 `S2732 1 . 1 0 ]
-[v _ADCON0bits `VES2735  1 e 1 @157 ]
-[s S2838 . 1 `uc 1 ADPREF 1 0 :2:0 
+[u S2736 . 1 `S2721 1 . 1 0 `S2725 1 . 1 0 `S2733 1 . 1 0 ]
+[v _ADCON0bits `VES2736  1 e 1 @157 ]
+[s S2839 . 1 `uc 1 ADPREF 1 0 :2:0 
 `uc 1 . 1 0 :2:2 
 `uc 1 ADCS 1 0 :3:4 
 `uc 1 ADFM 1 0 :1:7 
 ]
 "1730
-[s S2843 . 1 `uc 1 ADPREF0 1 0 :1:0 
+[s S2844 . 1 `uc 1 ADPREF0 1 0 :1:0 
 `uc 1 ADPREF1 1 0 :1:1 
 `uc 1 . 1 0 :2:2 
 `uc 1 ADCS0 1 0 :1:4 
 `uc 1 ADCS1 1 0 :1:5 
 `uc 1 ADCS2 1 0 :1:6 
 ]
-[u S2850 . 1 `S2838 1 . 1 0 `S2843 1 . 1 0 ]
-[v _ADCON1bits `VES2850  1 e 1 @158 ]
-[s S2866 . 1 `uc 1 . 1 0 :4:0 
+[u S2851 . 1 `S2839 1 . 1 0 `S2844 1 . 1 0 ]
+[v _ADCON1bits `VES2851  1 e 1 @158 ]
+[s S2867 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 TRIGSEL 1 0 :3:4 
 ]
 "1791
-[s S2869 . 1 `uc 1 . 1 0 :4:0 
+[s S2870 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 TRIGSEL0 1 0 :1:4 
 `uc 1 TRIGSEL1 1 0 :1:5 
 `uc 1 TRIGSEL2 1 0 :1:6 
 ]
-[u S2874 . 1 `S2866 1 . 1 0 `S2869 1 . 1 0 ]
-[v _ADCON2bits `VES2874  1 e 1 @159 ]
+[u S2875 . 1 `S2867 1 . 1 0 `S2870 1 . 1 0 ]
+[v _ADCON2bits `VES2875  1 e 1 @159 ]
 "1827
-[v _LATAbits `VES2618  1 e 1 @268 ]
+[v _LATAbits `VES2619  1 e 1 @268 ]
 "1879
 [v _LATC `VEuc  1 e 1 @270 ]
 "1896
@@ -1610,16 +1616,16 @@ EVENT_TRANSFER_TERMINATED 5
 [v _ANSELA `VEuc  1 e 1 @396 ]
 "2483
 [v _ANSELB `VEuc  1 e 1 @397 ]
-[s S2941 . 1 `uc 1 . 1 0 :4:0 
+[s S2953 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 ANSB4 1 0 :1:4 
 `uc 1 ANSB5 1 0 :1:5 
 ]
 "2499
-[s S2945 . 1 `uc 1 . 1 0 :4:0 
+[s S2957 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 ANSB 1 0 :4:4 
 ]
-[u S2948 . 1 `S2941 1 . 1 0 `S2945 1 . 1 0 ]
-[v _ANSELBbits `VES2948  1 e 1 @397 ]
+[u S2960 . 1 `S2953 1 . 1 0 `S2957 1 . 1 0 ]
+[v _ANSELBbits `VES2960  1 e 1 @397 ]
 "2518
 [v _ANSELC `VEuc  1 e 1 @398 ]
 "2738
@@ -1894,12 +1900,12 @@ EVENT_TRANSFER_TERMINATED 5
 [v I2CRelay@count `uc  1 p 1 0 ]
 "45
 } 0
-"47 klondike.c
+"48 klondike.c
 [v _ProcessCmd `(v  1 e 0 0 ]
 {
 [v ProcessCmd@cmd `*uc  1 a 1 wreg ]
 [v ProcessCmd@cmd `*uc  1 a 1 wreg ]
-"103
+"109
 } 0
 "186 main.c
 [v _SendCmdReply `(v  1 e 0 0 ]
@@ -1920,75 +1926,75 @@ EVENT_TRANSFER_TERMINATED 5
 [v putUSBUSART@length `uc  1 p 1 0 ]
 "706
 } 0
-"106 klondike.c
+"112 klondike.c
 [v _AsicPushWork `(v  1 e 0 0 ]
 {
-"114
+"120
 } 0
 "151 main.c
 [v _UserInit `(v  1 e 0 0 ]
 {
 "160
 } 0
-"143 klondike.c
+"149 klondike.c
 [v _DetectAsics `(v  1 e 0 0 ]
 {
-"158
-[v DetectAsics@x_3058 `uc  1 a 1 3 ]
-"146
+"164
+[v DetectAsics@x_3070 `uc  1 a 1 3 ]
+"152
 [v DetectAsics@x `uc  1 a 1 2 ]
-"162
+"168
 } 0
 "37 asic.c
 [v _SendAsicData `(v  1 e 0 0 ]
 {
 [v SendAsicData@work `*S2322  1 p 2 6 ]
 [v SendAsicData@split `uc  1 p 1 8 ]
-"54
+"55
 } 0
-"57
+"58
 [v _Send32 `(v  1 e 0 0 ]
 {
-"307
+"308
 } 0
-"317
+"318
 [v _AsicPreCalc `(v  1 e 0 0 ]
 {
-"320
+"321
 [v AsicPreCalc@m `[8]ul  1 a 32 30 ]
-"319
+"320
 [v AsicPreCalc@x `ul  1 a 4 66 ]
 [v AsicPreCalc@y `ul  1 a 4 62 ]
 [v AsicPreCalc@z `ul  1 a 4 26 ]
-"321
+"322
 [v AsicPreCalc@n `uc  1 a 1 70 ]
-"317
-[v AsicPreCalc@work `*S2322  1 p 2 16 ]
 "318
+[v AsicPreCalc@work `*S2322  1 p 2 16 ]
+"319
 [v AsicPreCalc@K `DCC[3]ul  1 s 12 K ]
-"355
+"356
 } 0
-"312
+"313
 [v _rotate `(ul  1 e 4 0 ]
 {
 [v rotate@x `ul  1 p 4 3 ]
 [v rotate@y `uc  1 p 1 7 ]
-"314
+"315
 } 0
-"235 klondike.c
+"241 klondike.c
 [v _InitFAN `(v  1 e 0 0 ]
 {
-"252
+"258
 } 0
-"255
+"261
 [v _InitTempSensor `(v  1 e 0 0 ]
 {
-"265
+"271
 } 0
-"268
+"274
 [v _InitWorkTick `(v  1 e 0 0 ]
 {
-"280
+"287
 } 0
 "3 /opt/microchip/xc8/v1.12/sources/bmul.c
 [v ___bmul `(uc  1 e 1 0 ]
@@ -2194,34 +2200,34 @@ EVENT_TRANSFER_TERMINATED 5
 {
 "157
 } 0
-"167 klondike.c
+"173 klondike.c
 [v _WorkTick `(v  1 e 0 0 ]
 {
-"191
+"197
 } 0
 "48 i2c.c
 [v _I2CPoll `(v  1 e 0 0 ]
 {
 "55
 } 0
-"119 klondike.c
+"125 klondike.c
 [v _CheckFanSpeed `(v  1 e 0 0 ]
 {
-"140
+"146
 } 0
-"194
+"200
 [v _ResultRx `(v  1 e 0 0 ]
 {
-"208
+"214
 [v ResultRx@buf `[7]uc  1 a 7 0 ]
-"197
+"203
 [v ResultRx@Rw `uc  1 a 1 7 ]
-"220
+"226
 } 0
-"223
+"229
 [v _UpdateFanSpeed `(v  1 e 0 0 ]
 {
-"230
+"236
 } 0
 "238 main.c
 [v _USBCBSuspend `(v  1 e 0 0 ]

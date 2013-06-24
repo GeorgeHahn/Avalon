@@ -4120,29 +4120,35 @@ void SendCmdReply(char *cmd, BYTE *ReplyBuf, BYTE count);
 # 26 "klondike.c"
 const IDENTITY ID = { 0x10, 0xDEADBEEF, "K16" };
 const DWORD BankRanges[8] = { 0, 0x40000000, 0x2aaaaaaa, 0x20000000, 0x19999999, 0x15555555, 0x12492492, 0x10000000 };
-const WORKTASK TestWork = { 0xFF, { 0x69,0x69,0x69,0x69,0x69,0x69,0x69,0x69 }, { 0x69,0x69,0x69 } };
-const DWORD GoodNonce = 0x80000000;
-const DWORD StartNonce = (0x80000000 - 109980);
+const WORKTASK TestWork = { 0xFF, { 0x5fddb5bc,0x00bdafd2,0x144684c7,0x19c68fa2,0x27d0a8e3,0x34ad84b2,0xa92c66be,0x3e99a4fd }, { 0xf64684bb,0x51bc1508,0x1a011337 } };
+const DWORD GoodNonce = 0xe3d69bc9;
+const DWORD StartNonce = (0xe3d69bc9 - 109980);
 
 BYTE WorkNow, BankSize, ResultQC, SlowTick;
 BYTE SlaveAddress = 0x00;
-BYTE HashTime = 256-(24000/564);
+BYTE HashTime = 256-(24000/512);
 volatile WORKSTATUS Status = {'I',0,0,0,0,0,0,0,0};
 volatile WORD WorkTicks = 16777;
-WORKCFG Cfg = { 564, 60, 80, 128 };
+WORKCFG Cfg = { 512, 60, 80, 128 };
 WORKTASK WorkQue[4];
 volatile BYTE ResultQue[2*4];
-DWORD ClockCfg[2] = { ((DWORD)564 << 18) | 0x00000003, ((DWORD)32 >> 3) | 0x2e000000 };
+DWORD ClockCfg[2] = { ((DWORD)512 << 18) | 0x00030017, 0x00000174 };
 
 DWORD NonceRanges[8];
 
 extern I2CSTATE I2CState;
+extern DWORD PrecalcHashes[6];
 
 void ProcessCmd(char *cmd)
 {
 
 
 switch(cmd[0]) {
+case 'P':
+WorkQue[ (WorkNow + Status.WorkQC) & 4-1 ] = *(WORKTASK *)(cmd+2);
+AsicPreCalc(&WorkQue[WorkNow]);
+SendCmdReply(cmd, (char *)&PrecalcHashes, sizeof(PrecalcHashes));
+break;
 case 'W':
 if( Status.WorkQC < 4-1 ) {
 WorkQue[ (WorkNow + Status.WorkQC) & 4-1 ] = *(WORKTASK *)(cmd+2);
@@ -4173,7 +4179,7 @@ if(Cfg.HashClock < 500)
 Cfg.HashClock = 500;
 if(Cfg.HashClock > 900)
 Cfg.HashClock = 900;
-ClockCfg[0] = ((DWORD)Cfg.HashClock << 18) | 0x00000003;
+ClockCfg[0] = ((DWORD)Cfg.HashClock << 18) | 0x00030017;
 HashTime = 256-(24000/Cfg.HashClock);
 PWM1DCH = Cfg.FanTarget;
 }
@@ -4371,7 +4377,8 @@ TRISCbits.TRISC6 = 0;
 TRISCbits.TRISC4 = 0;
 TRISCbits.TRISC3 = 0;
 LATC = 0xD8;;
-
+TRISAbits.TRISA4 = 0;
+LATAbits.LATA4 = 1;
 }
 
 void InitResultRx(void)

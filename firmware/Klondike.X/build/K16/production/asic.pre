@@ -4136,22 +4136,23 @@ send32_data = (WORD)&ClockCfg; send32_count = 2;
 Send32();
 send32_data = (WORD)&work->Merkle; send32_count = 3;
 Send32();
-send32_data = (WORD)&PrecalcHashes; send32_count = 5;
+send32_data = (WORD)&PrecalcHashes[1]; send32_count = 5;
 Send32();
 send32_data = (WORD)&work->MidState; send32_count = 8;
 Send32();
-send32_data = (WORD)&PrecalcHashes[5]; send32_count = 1;
+send32_data = (WORD)&PrecalcHashes; send32_count = 1;
 Send32();
 last_bit0 = last_bit1 = split;
 send32_data = (WORD)&NonceRanges; send32_count = BankSize;
 Send32();
+LATC = 0xD8;;
 GIE = 1;
 }
 
 void Send32(void)
 {
 
-# 58
+# 59
 #asm
     BANKSEL(LATC)
     MOVF (_send32_data) & 0x7F, W
@@ -4400,8 +4401,8 @@ next_word:
         DECFSZ _send32_count & 0x7F, F
     GOTO next_word
 #endasm 
-    LATC = 0xD8;;
-}
+
+    }
 
 
 
@@ -4446,8 +4447,8 @@ z = m[((0-n)&7)] & m[((1-n)&7)];
 x = x | z;
 m[7-n] += y + x;
 
-PrecalcHashes[n] = m[7-n];
-PrecalcHashes[n+2] = m[3-n];
+PrecalcHashes[2-n] = m[7-n];
+PrecalcHashes[5-n] = m[3-n];
 }
 }
 

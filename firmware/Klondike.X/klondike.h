@@ -35,9 +35,9 @@ extern "C" {
 #define WORK_TICKS          16777
 #define TICK_FACTOR         24000
 #define CLOCK_R_VALUE       32
-#define DEFAULT_HASHCLOCK   564
-#define CLOCK_LOW_CFG       0x00000003
-#define CLOCK_HIGH_CFG      0x2e000000
+#define DEFAULT_HASHCLOCK   512
+#define CLOCK_LOW_CFG       0x00030017
+#define CLOCK_HIGH_CFG      0x00000174
 #define MIN_HASH_CLOCK      500
 #define MAX_HASH_CLOCK      900
 
@@ -158,6 +158,7 @@ void SendCmdReply(char *cmd, BYTE *ReplyBuf, BYTE count);
 #define I2C_CLK         LATBbits.LATB6
 
 #define HASH_CLK_EN     LATAbits.LATA4
+#define HASH_CLK_TRIS   TRISAbits.TRISA4
 
 #define HASH_TRIS_0P    TRISCbits.TRISC7
 #define HASH_TRIS_0N    TRISCbits.TRISC6

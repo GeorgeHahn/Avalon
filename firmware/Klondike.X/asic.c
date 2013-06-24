@@ -41,15 +41,16 @@ void SendAsicData(WORKTASK *work, BYTE split)
     Send32();
     send32_data = (WORD)&work->Merkle; send32_count = 3;
     Send32();
-    send32_data = (WORD)&PrecalcHashes; send32_count = 5;
+    send32_data = (WORD)&PrecalcHashes[1]; send32_count = 5;
     Send32();
     send32_data = (WORD)&work->MidState; send32_count = 8;
     Send32();
-    send32_data = (WORD)&PrecalcHashes[5]; send32_count = 1;
+    send32_data = (WORD)&PrecalcHashes; send32_count = 1;
     Send32();
     last_bit0 = last_bit1 = split;
     send32_data = (WORD)&NonceRanges; send32_count = BankSize;
     Send32();
+    HASH_IDLE();
     GIE = 1;
 }
 
@@ -303,7 +304,7 @@ next_word:
     DECFSZ _send32_count & 0x7F, F
     GOTO next_word
     #endasm
-    HASH_IDLE();
+    
 }
 
 #define r(x) ((x-n)&7)
@@ -349,8 +350,8 @@ void AsicPreCalc(WORKTASK *work)
         x = x | z;
         m[7-n] += y + x;
 
-        PrecalcHashes[n] = m[7-n];
-        PrecalcHashes[n+2] = m[3-n];
+        PrecalcHashes[2-n] = m[7-n];
+        PrecalcHashes[5-n] = m[3-n];
     }
 }
 
