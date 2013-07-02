@@ -2237,7 +2237,7 @@ usb_bulk_transfer(struct libusb_device_handle *dev_handle,
 	errn = errno;
 	cg_runlock(&cgusb_fd_lock);
 
-	if (err < 0)
+	if (err < 0 && err != -7)
 		applog(LOG_DEBUG, "%s%i: %s (amt=%d err=%d ern=%d)",
 				cgpu->drv->name, cgpu->device_id,
 				usb_cmdname(cmd), *transferred, err, errn);
