@@ -16,16 +16,16 @@
         <itemPath>../Include/USB/usb_ch9.h</itemPath>
         <itemPath>../Include/USB/usb_common.h</itemPath>
         <itemPath>../Include/USB/usb_device.h</itemPath>
-        <itemPath>../USB/usb_device_local.h</itemPath>
-        <itemPath>../Include/USB/usb_function_cdc.h</itemPath>
         <itemPath>../Include/USB/usb_hal.h</itemPath>
         <itemPath>../Include/USB/usb_hal_dspic33E.h</itemPath>
-        <itemPath>../USB/usb_hal_local.h</itemPath>
         <itemPath>../Include/USB/usb_hal_pic18.h</itemPath>
         <itemPath>../Include/USB/usb_hal_pic24.h</itemPath>
         <itemPath>../Include/USB/usb_hal_pic24E.h</itemPath>
         <itemPath>../Include/USB/usb_hal_pic32.h</itemPath>
         <itemPath>../Include/USB/usb_hal_pic16f1.h</itemPath>
+        <itemPath>../Include/USB/usb_function_generic.h</itemPath>
+        <itemPath>../USB/usb_device_local.h</itemPath>
+        <itemPath>../USB/usb_hal_local.h</itemPath>
       </logicalFolder>
       <itemPath>../usb_config.h</itemPath>
     </logicalFolder>
@@ -54,8 +54,8 @@
                    projectFiles="true">
       <logicalFolder name="f1" displayName="USB" projectFiles="true">
         <itemPath>../USB/usb_device.c</itemPath>
-        <itemPath>../USB/CDC Device Driver/usb_function_cdc.c</itemPath>
         <itemPath>../USB/usb_hal_pic24.c</itemPath>
+        <itemPath>../USB/usb_function_generic.c</itemPath>
       </logicalFolder>
       <itemPath>../usb_descriptors.c</itemPath>
       <itemPath>asic.c</itemPath>

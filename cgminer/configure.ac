@@ -1,7 +1,7 @@
 ##--##--##--##--##--##--##--##--##--##--##--##--##--##--##--##--##
 ##--##--##--##--##--##--##--##--##--##--##--##--##--##--##--##--##
 m4_define([v_maj], [3])
-m4_define([v_min], [1])
+m4_define([v_min], [3])
 m4_define([v_mic], [1])
 ##--##--##--##--##--##--##--##--##--##--##--##--##--##--##--##--##
 m4_define([v_ver], [v_maj.v_min.v_mic])
@@ -224,6 +224,17 @@ if test "x$bflsc" = xyes; then
 fi
 AM_CONDITIONAL([HAS_BFLSC], [test x$bflsc = xyes])
 
+klondike="no"
+
+AC_ARG_ENABLE([klondike],
+	[AC_HELP_STRING([--enable-klondike],[Compile support for Klondike (default disabled)])],
+	[klondike=$enableval]
+	)
+if test "x$klondike" = xyes; then
+	AC_DEFINE([USE_KLONDIKE], [1], [Defined to 1 if Klondike support is wanted])
+fi
+AM_CONDITIONAL([HAS_KLONDIKE], [test x$klondike = xyes])
+
 bitforce="no"
 
 AC_ARG_ENABLE([bitforce],
@@ -256,17 +267,6 @@ if test "x$avalon" = xyes; then
 	AC_DEFINE([USE_AVALON], [1], [Defined to 1 if Avalon support is wanted])
 fi
 AM_CONDITIONAL([HAS_AVALON], [test x$avalon = xyes])
-
-klondike="no"
-
-AC_ARG_ENABLE([klondike],
-	[AC_HELP_STRING([--enable-klondike],[Compile support for Klondike (default disabled)])],
-	[klondike=$enableval]
-	)
-if test "x$klondike" = xyes; then
-	AC_DEFINE([USE_KLONDIKE], [1], [Defined to 1 if Klondike support is wanted])
-fi
-AM_CONDITIONAL([HAS_KLONDIKE], [test x$klondike = xyes])
 
 modminer="no"
 
@@ -314,14 +314,14 @@ else
 	])
 fi
 
-AM_CONDITIONAL([NEED_FPGAUTILS], [test x$avalon$icarus$bitforce$modminer$ztex != xnonononono])
-AM_CONDITIONAL([NEED_USBUTILS_C], [test x$bitforce$modminer$bflsc$klondike != xnononono])
+AM_CONDITIONAL([NEED_FPGAUTILS], [test x$modminer$ztex != xnono])
+AM_CONDITIONAL([NEED_USBUTILS_C], [test x$avalon$bitforce$modminer$bflsc$icarus$klondike != xnononononono])
 AM_CONDITIONAL([HAVE_CURSES], [test x$curses = xyes])
 AM_CONDITIONAL([WANT_JANSSON], [test x$request_jansson = xtrue])
 AM_CONDITIONAL([HAVE_WINDOWS], [test x$have_win32 = xtrue])
 AM_CONDITIONAL([HAVE_x86_64], [test x$have_x86_64 = xtrue])
 
-if test "x$bitforce$modminer$bflsc$klondike" != xnononono; then
+if test "x$avalon$bitforce$modminer$bflsc$icarus$klondike" != xnononononono; then
 	AC_DEFINE([USE_USBUTILS], [1], [Defined to 1 if usbutils support required])
 fi
 
@@ -331,26 +331,6 @@ then
 else
 	JANSSON_LIBS=-ljansson
 fi
-
-if test "x$icarus" != xno; then
-	AC_ARG_WITH([libudev], [AC_HELP_STRING([--without-libudev], [Autodetect FPGAs using libudev (default enabled)])],
-		[libudev=$withval],
-		[libudev=auto]
-		)
-	if test "x$libudev" != "xno"; then
-		AC_CHECK_HEADER([libudev.h],[
-			libudev=yes
-			UDEV_LIBS=-ludev
-			AC_DEFINE([HAVE_LIBUDEV], [1], [Defined to 1 if libudev is wanted])
-		], [
-			if test "x$libudev" = "xyes"; then
-				AC_MSG_ERROR([libudev not found])
-			fi
-			libudev=no
-		])
-	fi
-fi
-AM_CONDITIONAL([HAVE_LIBUDEV], [test x$libudev != xno])
 
 PKG_PROG_PKG_CONFIG()
 
@@ -364,7 +344,7 @@ if test "x$have_cgminer_sdk" = "xtrue"; then
 	PKG_CONFIG_PATH="$CGMINER_SDK/lib/pkgconfig${PKG_CONFIG_PATH:+:$PKG_CONFIG_PATH}"
 fi
 
-if test "x$ztex$modminer$bitforce$bflsc$klondike" != xnonononono; then
+if test "x$avalon$ztex$modminer$bitforce$bflsc$icarus$klondike" != xnonononononono; then
   case $target in
     *-*-freebsd*)
       LIBUSB_LIBS="-lusb"
@@ -452,7 +432,6 @@ AC_SUBST(PDCURSES_LIBS)
 AC_SUBST(WS2_LIBS)
 AC_SUBST(MM_LIBS)
 AC_SUBST(MATH_LIBS)
-AC_SUBST(UDEV_LIBS)
 AC_SUBST(ADL_CPPFLAGS)
 
 AC_CONFIG_FILES([
@@ -555,16 +534,12 @@ else
 	echo "  Ztex.FPGAs...........: Disabled"
 fi
 
-if test "x$icarus" != xno; then
-	echo "  libudev.detection....: $libudev"
-fi
-
 echo
 echo "Compilation............: make (or gmake)"
 echo "  CPPFLAGS.............: $CPPFLAGS"
 echo "  CFLAGS...............: $CFLAGS $LIBUSB_CFLAGS"
 echo "  LDFLAGS..............: $LDFLAGS $PTHREAD_FLAGS"
-echo "  LDADD................: $DLOPEN_FLAGS $LIBCURL_LIBS $JANSSON_LIBS $PTHREAD_LIBS $OPENCL_LIBS $NCURSES_LIBS $PDCURSES_LIBS $WS2_LIBS $MATH_LIBS $UDEV_LIBS $LIBUSB_LIBS"
+echo "  LDADD................: $DLOPEN_FLAGS $LIBCURL_LIBS $JANSSON_LIBS $PTHREAD_LIBS $OPENCL_LIBS $NCURSES_LIBS $PDCURSES_LIBS $WS2_LIBS $MATH_LIBS $LIBUSB_LIBS"
 echo
 echo "Installation...........: make install (as root if needed, with 'su' or 'sudo')"
 echo "  prefix...............: $prefix"

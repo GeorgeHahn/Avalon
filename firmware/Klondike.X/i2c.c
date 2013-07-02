@@ -124,8 +124,8 @@ void I2CWrite(void)
         }
 }
 
-extern char USB_In_Buffer[64];
-extern char USB_Out_Buffer[64];
+extern char INPacket[64];
+extern char OUTPacket[64];
 
 void I2CSlave(void)
 {
@@ -137,12 +137,12 @@ void I2CSlave(void)
     switch(I2CState.Next)
         {
         case I2C_SLAVE: I2CAddr = SSPBUF; I2CState.Next++; ptr = 0; break;
-        case I2C_SLAVE+1: USB_Out_Buffer[ptr++] = I2CCmd = SSPBUF;
+        case I2C_SLAVE+1: OUTPacket[ptr++] = I2CCmd = SSPBUF;
             if(I2CCmd == '?') I2CState.Next = I2C_SLAVE+3;
             else if(I2CCmd == 'P') I2CState.Next = (I2CCount > 0) ? I2C_SLAVE+6 : 0;
             else I2CState.Next++;
             break;
-        case I2C_SLAVE+2: if(ptr < sizeof(USB_Out_Buffer)) USB_Out_Buffer[ptr++] = SSPBUF; break;
+        case I2C_SLAVE+2: if(ptr < sizeof(OUTPacket)) OUTPacket[ptr++] = SSPBUF; break;
         
         case I2C_SLAVE+3: *(DWORD *)buf = ID.serial; ptr = 0; I2CState.Next++;
         case I2C_SLAVE+4: SSPBUF = buf[ptr++]; SSPCON1bits.CKP = 1; 
@@ -150,7 +150,7 @@ void I2CSlave(void)
         case I2C_SLAVE+5: SlaveAddress = SSPBUF; break;
 
         case I2C_SLAVE+6: I2CCount = ptr = 0; I2CState.Next++;
-        case I2C_SLAVE+7: SSPBUF = USB_In_Buffer[ptr++]; SSPCON1bits.CKP = 1; break;
+        case I2C_SLAVE+7: SSPBUF = INPacket[ptr++]; SSPCON1bits.CKP = 1; break;
         default:
             break;
         }

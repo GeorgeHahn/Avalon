@@ -9,6 +9,8 @@
 #include <pthread.h>
 #include <jansson.h>
 #include <curl/curl.h>
+#include <sched.h>
+
 #include "elist.h"
 #include "uthash.h"
 #include "logging.h"
@@ -17,6 +19,10 @@
 #ifndef WIN32
 # include <sys/socket.h>
 # include <netdb.h>
+#endif
+
+#ifdef USE_USBUTILS
+#include <semaphore.h>
 #endif
 
 #ifdef HAVE_OPENCL
@@ -206,6 +212,11 @@ static inline int fsync (int fd)
 #endif
 #endif
 
+/* No semtimedop on apple so ignore timeout till we implement one */
+#ifdef __APPLE__
+#define semtimedop(SEM, SOPS, VAL, TIMEOUT) semop(SEM, SOPS, VAL)
+#endif
+
 #define MIN(x, y)	((x) > (y) ? (y) : (x))
 #define MAX(x, y)	((x) > (y) ? (x) : (y))
 
@@ -217,7 +228,7 @@ enum drv_driver {
 	DRIVER_ZTEX,
 	DRIVER_BFLSC,
 	DRIVER_AVALON,
-	DRIVER_KLONDIKE,
+	DRIVER_KLONDIKE,	
 	DRIVER_MAX
 };
 
@@ -423,16 +434,13 @@ struct cgpu_info {
 	int device_id;
 	char *name;
 	char *device_path;
-	FILE *device_file;
+	void *device_data;
 	union {
 #ifdef USE_ZTEX
 		struct libztex_device *device_ztex;
 #endif
 #ifdef USE_USBUTILS
 		struct cg_usb_device *usbdev;
-#endif
-#if defined(USE_ICARUS) || defined(USE_AVALON)
-		int device_fd;
 #endif
 	};
 #ifdef USE_AVALON
@@ -546,6 +554,10 @@ struct cgpu_info {
 	pthread_rwlock_t qlock;
 	struct work *queued_work;
 	unsigned int queued_count;
+
+	bool shutdown;
+
+	struct timeval dev_start_tv;
 };
 
 extern bool add_cgpu(struct cgpu_info*);
@@ -565,6 +577,7 @@ struct thr_info {
 	bool		primary_thread;
 
 	pthread_t	pth;
+	cgsem_t		sem;
 	struct thread_q	*q;
 	struct cgpu_info *cgpu;
 	void *cgpu_data;
@@ -701,7 +714,7 @@ endian_flip128(void __maybe_unused *dest_p, const void __maybe_unused *src_p)
 }
 #endif
 
-extern void quit(int status, const char *format, ...);
+extern void _quit(int status);
 
 static inline void mutex_lock(pthread_mutex_t *lock)
 {
@@ -709,10 +722,16 @@ static inline void mutex_lock(pthread_mutex_t *lock)
 		quit(1, "WTF MUTEX ERROR ON LOCK!");
 }
 
-static inline void mutex_unlock(pthread_mutex_t *lock)
+static inline void mutex_unlock_noyield(pthread_mutex_t *lock)
 {
 	if (unlikely(pthread_mutex_unlock(lock)))
 		quit(1, "WTF MUTEX ERROR ON UNLOCK!");
+}
+
+static inline void mutex_unlock(pthread_mutex_t *lock)
+{
+	mutex_unlock_noyield(lock);
+	sched_yield();
 }
 
 static inline int mutex_trylock(pthread_mutex_t *lock)
@@ -736,6 +755,7 @@ static inline void rw_unlock(pthread_rwlock_t *lock)
 {
 	if (unlikely(pthread_rwlock_unlock(lock)))
 		quit(1, "WTF RWLOCK ERROR ON UNLOCK!");
+	sched_yield();
 }
 
 static inline void rd_unlock(pthread_rwlock_t *lock)
@@ -779,7 +799,7 @@ static inline void cg_rlock(cglock_t *lock)
 {
 	mutex_lock(&lock->mutex);
 	rd_lock(&lock->rwlock);
-	mutex_unlock(&lock->mutex);
+	mutex_unlock_noyield(&lock->mutex);
 }
 
 /* Intermediate variant of cglock */
@@ -805,7 +825,7 @@ static inline void cg_wlock(cglock_t *lock)
 static inline void cg_dlock(cglock_t *lock)
 {
 	rd_lock(&lock->rwlock);
-	mutex_unlock(&lock->mutex);
+	mutex_unlock_noyield(&lock->mutex);
 }
 
 static inline void cg_runlock(cglock_t *lock)
@@ -848,11 +868,11 @@ extern char *opt_avalon_options;
 extern char *opt_usb_select;
 extern int opt_usbdump;
 extern bool opt_usb_list_all;
+extern cgsem_t usb_resource_sem;
 #endif
 #ifdef USE_BITFORCE
 extern bool opt_bfl_noncerange;
 #endif
-extern bool ping;
 extern int swork_id;
 
 extern pthread_rwlock_t netacc_lock;
@@ -882,6 +902,8 @@ extern int opt_expiry;
 
 #ifdef USE_USBUTILS
 extern pthread_mutex_t cgusb_lock;
+extern pthread_mutex_t cgusbres_lock;
+extern cglock_t cgusb_fd_lock;
 #endif
 
 extern cglock_t control_lock;
@@ -915,12 +937,14 @@ extern void api(int thr_id);
 
 extern struct pool *current_pool(void);
 extern int enabled_pools;
+extern void get_intrange(char *arg, int *val1, int *val2);
 extern bool detect_stratum(struct pool *pool, char *url);
 extern void print_summary(void);
 extern struct pool *add_pool(void);
 extern bool add_pool_details(struct pool *pool, bool live, char *url, char *user, char *pass);
 
 #define MAX_GPUDEVICES 16
+#define MAX_DEVICES 4096
 
 #define MIN_INTENSITY -10
 #define _MIN_INTENSITY_STR "-10"
@@ -952,6 +976,7 @@ extern bool opt_scrypt;
 extern double total_secs;
 extern int mining_threads;
 extern int total_devices;
+extern int zombie_devs;
 extern struct cgpu_info **devices;
 extern int total_pools;
 extern struct pool **pools;
@@ -1250,14 +1275,15 @@ struct modminer_fpga_state {
 
 extern void get_datestamp(char *, struct timeval *);
 extern void inc_hw_errors(struct thr_info *thr);
-extern void submit_nonce(struct thr_info *thr, struct work *work, uint32_t nonce);
+extern bool submit_nonce(struct thr_info *thr, struct work *work, uint32_t nonce);
 extern struct work *get_queued(struct cgpu_info *cgpu);
 extern struct work *__find_work_bymidstate(struct work *que, char *midstate, size_t midstatelen, char *data, int offset, size_t datalen);
 extern struct work *find_queued_work_bymidstate(struct cgpu_info *cgpu, char *midstate, size_t midstatelen, char *data, int offset, size_t datalen);
 extern void work_completed(struct cgpu_info *cgpu, struct work *work);
 extern void hash_queued_work(struct thr_info *mythr);
 extern void tailsprintf(char *f, const char *fmt, ...);
-extern void wlogprint(const char *f, ...);
+extern void _wlog(const char *str);
+extern void _wlogprint(const char *str);
 extern int curses_int(const char *query);
 extern char *curses_input(const char *query);
 extern void kill_work(void);
@@ -1268,7 +1294,7 @@ extern void write_config(FILE *fcfg);
 extern void zero_bestshare(void);
 extern void zero_stats(void);
 extern void default_save_file(char *filename);
-extern bool log_curses_only(int prio, const char *f, va_list ap);
+extern bool log_curses_only(int prio, const char *datetime, const char *str);
 extern void clear_logwin(void);
 extern void logwin_update(void);
 extern bool pool_tclear(struct pool *pool, bool *var);

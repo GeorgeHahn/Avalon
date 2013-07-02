@@ -28,7 +28,7 @@
 #include "GenericTypeDefs.h"
 #include "Compiler.h"
 #include "USB/usb.h"
-#include "USB/usb_function_generic.h"
+#include "USB/usb_function_cdc.h"
 #include "HardwareProfile.h"
 #include "klondike.h"
 
@@ -39,17 +39,9 @@
     __CONFIG(FOSC_HS & WDTE_OFF & PWRTE_ON & MCLRE_OFF & CP_OFF & BOREN_ON & CLKOUTEN_OFF & IESO_OFF & FCMEN_OFF);
     __CONFIG(WRT_OFF & CPUDIV_NOCLKDIV & USBLSCLK_48MHz & PLLMULT_4x & PLLEN_ENABLED & STVREN_ON &  BORV_LO & LPBOR_OFF & LVP_OFF);
 #endif
-
-#define IN_DATA_BUFFER_ADDRESS 0x2140
-#define OUT_DATA_BUFFER_ADDRESS 0x2190
-#define IN_DATA_BUFFER_ADDRESS_TAG @IN_DATA_BUFFER_ADDRESS
-#define OUT_DATA_BUFFER_ADDRESS_TAG @OUT_DATA_BUFFER_ADDRESS 
-
-unsigned char INPacket[USBGEN_EP_SIZE] IN_DATA_BUFFER_ADDRESS_TAG;		//User application buffer for sending IN packets to the host
-unsigned char OUTPacket[USBGEN_EP_SIZE] OUT_DATA_BUFFER_ADDRESS_TAG;	//User application buffer for receiving and holding OUT packets sent from the host
-
-USB_HANDLE USBGenericOutHandle;  //USB handle.  Must be initialized to 0 at startup.
-USB_HANDLE USBGenericInHandle;   //USB handle.  Must be initialized to 0 at startup.
+ 
+char USB_In_Buffer[64];
+char USB_Out_Buffer[64];
 
 extern WORKSTATUS Status;
 extern BYTE SlaveAddress;
@@ -97,18 +89,18 @@ int main(void)
     while(1)
     {
         #if defined(USB_INTERRUPT)
-            //if(USB_BUS_SENSE && (USBGetDeviceState() == DETACHED_STATE))
-            //{
+            if(USB_BUS_SENSE && (USBGetDeviceState() == DETACHED_STATE))
+            {
                 USBDeviceAttach();              
-            //}
+            }
         #endif
 
-        /*if(USBDeviceState < CONFIGURED_STATE) {
+        if(USBGetDeviceState() == DETACHED_STATE) {
             if(!I2CState.Slave)
                 InitI2CSlave();
             }
         else if(!I2CState.Master)
-            InitI2CMaster();*/
+            InitI2CMaster();
 
         #if defined(USB_POLLING)
 	// Check bus status and service USB interrupts.
@@ -148,9 +140,6 @@ static void InitializeSystem(void)
         ACTCON = 0x90;          //Enable active clock tuning with USB
     #endif
 
-    USBGenericOutHandle = 0;
-    USBGenericInHandle = 0;
-	
     UserInit();
 
     USBDeviceInit();	//usb_device.c.  Initializes USB module SFRs and firmware
@@ -172,39 +161,39 @@ void UserInit(void)
 
 void ProcessIO(void)
 {   
-  
-    if((USBDeviceState < CONFIGURED_STATE)||(USBSuspendControl==1)) return;
+    BYTE numBytesRead;
 
-    /*if(USBGetDeviceState() == DETACHED_STATE) {
+    if(USBGetDeviceState() == DETACHED_STATE) {
         if(I2CCount > 0) {
-            ProcessCmd(OUTPacket);
+            ProcessCmd(USB_Out_Buffer);
             I2CCount = 0;
             }
 	}
-    else*/
-    if(!USBHandleBusy(USBGenericOutHandle)) {
-        //if( OUTPacket[1] != MASTER_ADDRESS )
-        //    I2CRelay(OUTPacket, USBGEN_EP_SIZE);
-        //else
-            ProcessCmd(OUTPacket);
-    USBGenericOutHandle = USBGenRead(USBGEN_EP_NUM,(BYTE*)&OUTPacket,USBGEN_EP_SIZE);
+    else if(USBUSARTIsTxTrfReady()) {
+        numBytesRead = getsUSBUSART(USB_Out_Buffer, 64);
+        if(numBytesRead != 0) {
+            if( USB_Out_Buffer[1] != MASTER_ADDRESS )
+                I2CRelay(USB_Out_Buffer, numBytesRead);
+            else
+                ProcessCmd(USB_Out_Buffer);
+        }
     }
+
+    CDCTxService();
 } //end ProcessIO
 
 void SendCmdReply(char *cmd, BYTE *data, BYTE count)
 {
-    INPacket[0] = cmd[0];
-    INPacket[1] = SlaveAddress;
+    USB_In_Buffer[0] = cmd[0];
+    USB_In_Buffer[1] = SlaveAddress;
     for(BYTE n=0; n < count; n++)
-        INPacket[n+2] = data[n];
+        USB_In_Buffer[n+2] = data[n];
 
-    //if(USBDeviceState < CONFIGURED_STATE) {
-    //    I2CCount = count+2;
-    //}
-    //else
-
-    if(!USBHandleBusy(USBGenericInHandle))
-        USBGenericInHandle = USBGenWrite(USBGEN_EP_NUM,(BYTE*)&INPacket,count+2);
+    if(USBGetDeviceState() == DETACHED_STATE) {
+        I2CCount = count+2;
+    }
+    else
+        putUSBUSART(USB_In_Buffer, count+2);
 }
 
 
@@ -214,7 +203,7 @@ void SendCmdReply(char *cmd, BYTE *data, BYTE count)
 // The USB firmware stack will call the callback functions USBCBxxx() in response to certain USB related
 // events.  For example, if the host PC is powering down, it will stop sending out Start of Frame (SOF)
 // packets to your device.  In response to this, all USB devices are supposed to decrease their power
-// consumption from the USB Vbus to <2.5mA each.  The USB module detects this condition (which according
+// consumption from the USB Vbus to <2.5mA* each.  The USB module detects this condition (which according
 // to the USB specifications is 3+ms of no bus activity/SOF packets) and then calls the USBCBSuspend()
 // function.  You should modify these callback functions to take appropriate actions for each of these
 // conditions.  For example, in the USBCBSuspend(), you may wish to add code that will decrease power
@@ -263,6 +252,10 @@ void USBCBSuspend(void)
 	//cleared inside the usb_device.c file.  Clearing USBActivityIF here will cause 
 	//things to not work as intended.	
 	
+
+    #if defined(__C30__) || defined __XC16__
+        USBSleepOnSuspend();
+    #endif
 }
 
 /******************************************************************************
@@ -291,11 +284,13 @@ void USBCBWakeFromSuspend(void)
 	// If clock switching or other power savings measures were taken when
 	// executing the USBCBSuspend() function, now would be a good time to
 	// switch back to normal full power run mode conditions.  The host allows
-	// a few milliseconds of wakeup time, after which the device must be 
+	// 10+ milliseconds of wakeup time, after which the device must be 
 	// fully back to normal, and capable of receiving and processing USB
 	// packets.  In order to do this, the USB module must receive proper
 	// clocking (IE: 48MHz clock must be available to SIE for full speed USB
-	// operation).
+	// operation).  
+	// Make sure the selected oscillator settings are consistent with USB 
+    // operation before returning from this function.
 }
 
 /********************************************************************
@@ -320,6 +315,8 @@ void USBCB_SOF_Handler(void)
 {
     // No need to clear UIRbits.SOFIF to 0 here.
     // Callback caller is already doing that.
+
+
 }
 
 /*******************************************************************
@@ -389,9 +386,10 @@ void USBCBErrorHandler(void)
  *					firmware, such as that contained in usb_function_hid.c.
  *
  * Note:            None
- *****************************************************************************/
+ *******************************************************************/
 void USBCBCheckOtherReq(void)
 {
+    USBCheckCDCRequest();
 }//end
 
 
@@ -413,14 +411,14 @@ void USBCBCheckOtherReq(void)
  *					optional to support this type of request.
  *
  * Note:            None
- *****************************************************************************/
+ *******************************************************************/
 void USBCBStdSetDscHandler(void)
 {
     // Must claim session ownership if supporting this request
 }//end
 
 
-/******************************************************************************
+/*******************************************************************
  * Function:        void USBCBInitEP(void)
  *
  * PreCondition:    None
@@ -439,13 +437,11 @@ void USBCBStdSetDscHandler(void)
  *					configuration.
  *
  * Note:            None
- *****************************************************************************/
+ *******************************************************************/
 void USBCBInitEP(void)
 {
-    //Enable the application endpoints
-    USBEnableEndpoint(USBGEN_EP_NUM,USB_OUT_ENABLED|USB_IN_ENABLED|USB_HANDSHAKE_ENABLED|USB_DISALLOW_SETUP);
-    //Arm the application OUT endpoint, so it can receive a packet from the host
-    USBGenericOutHandle = USBGenRead(USBGEN_EP_NUM,(BYTE*)&OUTPacket,USBGEN_EP_SIZE);
+    //Enable the CDC data endpoints
+    CDCInitEP();
 }
 
 /********************************************************************
@@ -590,6 +586,36 @@ void USBCBSendResume(void)
 
 
 /*******************************************************************
+ * Function:        void USBCBEP0DataReceived(void)
+ *
+ * PreCondition:    ENABLE_EP0_DATA_RECEIVED_CALLBACK must be
+ *                  defined already (in usb_config.h)
+ *
+ * Input:           None
+ *
+ * Output:          None
+ *
+ * Side Effects:    None
+ *
+ * Overview:        This function is called whenever a EP0 data
+ *                  packet is received.  This gives the user (and
+ *                  thus the various class examples a way to get
+ *                  data that is received via the control endpoint.
+ *                  This function needs to be used in conjunction
+ *                  with the USBCBCheckOtherReq() function since 
+ *                  the USBCBCheckOtherReq() function is the apps
+ *                  method for getting the initial control transfer
+ *                  before the data arrives.
+ *
+ * Note:            None
+ *******************************************************************/
+#if defined(ENABLE_EP0_DATA_RECEIVED_CALLBACK)
+void USBCBEP0DataReceived(void)
+{
+}
+#endif
+
+/*******************************************************************
  * Function:        BOOL USER_USB_CALLBACK_EVENT_HANDLER(
  *                        int event, void *pdata, WORD size)
  *
@@ -653,5 +679,7 @@ BOOL USER_USB_CALLBACK_EVENT_HANDLER(int event, void *pdata, WORD size)
     }      
     return TRUE; 
 }
-/** EOF main.c ***************************************************************/
+
+
+/** EOF main.c *************************************************/
 

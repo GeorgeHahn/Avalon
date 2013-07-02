@@ -25,7 +25,7 @@ bin_SCRIPTS	= $(top_srcdir)/*.cl
 cgminer_LDFLAGS	= $(PTHREAD_FLAGS)
 cgminer_LDADD	= $(DLOPEN_FLAGS) @LIBCURL_LIBS@ @JANSSON_LIBS@ @PTHREAD_LIBS@ \
 		  @OPENCL_LIBS@ @NCURSES_LIBS@ @PDCURSES_LIBS@ @WS2_LIBS@ \
-		  @UDEV_LIBS@ @LIBUSB_LIBS@ @MM_LIBS@ \
+		  @LIBUSB_LIBS@ @MM_LIBS@ \
 		  @MATH_LIBS@ lib/libgnu.a ccan/libccan.a
 
 if HAVE_WINDOWS
@@ -70,6 +70,10 @@ if HAS_BFLSC
 cgminer_SOURCES += driver-bflsc.c
 endif
 
+if HAS_KLONDIKE
+cgminer_SOURCES += driver-klondike.c
+endif
+
 if HAS_BITFORCE
 cgminer_SOURCES += driver-bitforce.c
 endif
@@ -80,10 +84,6 @@ endif
 
 if HAS_AVALON
 cgminer_SOURCES += driver-avalon.c driver-avalon.h
-endif
-
-if HAS_KLONDIKE
-cgminer_SOURCES += driver-klondike.c
 endif
 
 if HAS_MODMINER

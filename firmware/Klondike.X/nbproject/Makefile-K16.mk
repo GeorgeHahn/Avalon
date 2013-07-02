@@ -45,11 +45,11 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/_ext/1360907413/usb_device.p1 ${OBJECTDIR}/_ext/487887514/usb_function_cdc.p1 ${OBJECTDIR}/_ext/1360907413/usb_hal_pic24.p1 ${OBJECTDIR}/_ext/1472/usb_descriptors.p1 ${OBJECTDIR}/asic.p1 ${OBJECTDIR}/i2c.p1 ${OBJECTDIR}/klondike.p1 ${OBJECTDIR}/main.p1
-POSSIBLE_DEPFILES=${OBJECTDIR}/_ext/1360907413/usb_device.p1.d ${OBJECTDIR}/_ext/487887514/usb_function_cdc.p1.d ${OBJECTDIR}/_ext/1360907413/usb_hal_pic24.p1.d ${OBJECTDIR}/_ext/1472/usb_descriptors.p1.d ${OBJECTDIR}/asic.p1.d ${OBJECTDIR}/i2c.p1.d ${OBJECTDIR}/klondike.p1.d ${OBJECTDIR}/main.p1.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/_ext/1360907413/usb_device.p1 ${OBJECTDIR}/_ext/1360907413/usb_hal_pic24.p1 ${OBJECTDIR}/_ext/1360907413/usb_function_generic.p1 ${OBJECTDIR}/_ext/1472/usb_descriptors.p1 ${OBJECTDIR}/asic.p1 ${OBJECTDIR}/i2c.p1 ${OBJECTDIR}/klondike.p1 ${OBJECTDIR}/main.p1
+POSSIBLE_DEPFILES=${OBJECTDIR}/_ext/1360907413/usb_device.p1.d ${OBJECTDIR}/_ext/1360907413/usb_hal_pic24.p1.d ${OBJECTDIR}/_ext/1360907413/usb_function_generic.p1.d ${OBJECTDIR}/_ext/1472/usb_descriptors.p1.d ${OBJECTDIR}/asic.p1.d ${OBJECTDIR}/i2c.p1.d ${OBJECTDIR}/klondike.p1.d ${OBJECTDIR}/main.p1.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/_ext/1360907413/usb_device.p1 ${OBJECTDIR}/_ext/487887514/usb_function_cdc.p1 ${OBJECTDIR}/_ext/1360907413/usb_hal_pic24.p1 ${OBJECTDIR}/_ext/1472/usb_descriptors.p1 ${OBJECTDIR}/asic.p1 ${OBJECTDIR}/i2c.p1 ${OBJECTDIR}/klondike.p1 ${OBJECTDIR}/main.p1
+OBJECTFILES=${OBJECTDIR}/_ext/1360907413/usb_device.p1 ${OBJECTDIR}/_ext/1360907413/usb_hal_pic24.p1 ${OBJECTDIR}/_ext/1360907413/usb_function_generic.p1 ${OBJECTDIR}/_ext/1472/usb_descriptors.p1 ${OBJECTDIR}/asic.p1 ${OBJECTDIR}/i2c.p1 ${OBJECTDIR}/klondike.p1 ${OBJECTDIR}/main.p1
 
 
 CFLAGS=
@@ -79,19 +79,19 @@ ${OBJECTDIR}/_ext/1360907413/usb_device.p1: ../USB/usb_device.c  nbproject/Makef
 	@-${MV} ${OBJECTDIR}/_ext/1360907413/usb_device.d ${OBJECTDIR}/_ext/1360907413/usb_device.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1360907413/usb_device.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
-${OBJECTDIR}/_ext/487887514/usb_function_cdc.p1: ../USB/CDC\ Device\ Driver/usb_function_cdc.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/487887514 
-	@${RM} ${OBJECTDIR}/_ext/487887514/usb_function_cdc.p1.d 
-	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G --asmlist  -D__DEBUG=1 --debugger=pickit3  --double=24 --float=24 --opt=all,+asm,-asmfile,-speed,+space,-debug,9 --addrqual=require --mode=pro -N100 -I".." -I"../Include" --warn=9 --summary=default,-psect,-class,+mem,-hex,-file --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,+osccal,-resetbits,-download,-stackcall,+clib "--errformat=%f:%l: error: %s" "--warnformat=%f:%l: warning: %s" "--msgformat=%f:%l: advisory: %s"  -o${OBJECTDIR}/_ext/487887514/usb_function_cdc.p1  "../USB/CDC Device Driver/usb_function_cdc.c" 
-	@-${MV} ${OBJECTDIR}/_ext/487887514/usb_function_cdc.d ${OBJECTDIR}/_ext/487887514/usb_function_cdc.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/_ext/487887514/usb_function_cdc.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
-	
 ${OBJECTDIR}/_ext/1360907413/usb_hal_pic24.p1: ../USB/usb_hal_pic24.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR}/_ext/1360907413 
 	@${RM} ${OBJECTDIR}/_ext/1360907413/usb_hal_pic24.p1.d 
 	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G --asmlist  -D__DEBUG=1 --debugger=pickit3  --double=24 --float=24 --opt=all,+asm,-asmfile,-speed,+space,-debug,9 --addrqual=require --mode=pro -N100 -I".." -I"../Include" --warn=9 --summary=default,-psect,-class,+mem,-hex,-file --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,+osccal,-resetbits,-download,-stackcall,+clib "--errformat=%f:%l: error: %s" "--warnformat=%f:%l: warning: %s" "--msgformat=%f:%l: advisory: %s"  -o${OBJECTDIR}/_ext/1360907413/usb_hal_pic24.p1  ../USB/usb_hal_pic24.c 
 	@-${MV} ${OBJECTDIR}/_ext/1360907413/usb_hal_pic24.d ${OBJECTDIR}/_ext/1360907413/usb_hal_pic24.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1360907413/usb_hal_pic24.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
+${OBJECTDIR}/_ext/1360907413/usb_function_generic.p1: ../USB/usb_function_generic.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/_ext/1360907413 
+	@${RM} ${OBJECTDIR}/_ext/1360907413/usb_function_generic.p1.d 
+	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G --asmlist  -D__DEBUG=1 --debugger=pickit3  --double=24 --float=24 --opt=all,+asm,-asmfile,-speed,+space,-debug,9 --addrqual=require --mode=pro -N100 -I".." -I"../Include" --warn=9 --summary=default,-psect,-class,+mem,-hex,-file --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,+osccal,-resetbits,-download,-stackcall,+clib "--errformat=%f:%l: error: %s" "--warnformat=%f:%l: warning: %s" "--msgformat=%f:%l: advisory: %s"  -o${OBJECTDIR}/_ext/1360907413/usb_function_generic.p1  ../USB/usb_function_generic.c 
+	@-${MV} ${OBJECTDIR}/_ext/1360907413/usb_function_generic.d ${OBJECTDIR}/_ext/1360907413/usb_function_generic.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/_ext/1360907413/usb_function_generic.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
 ${OBJECTDIR}/_ext/1472/usb_descriptors.p1: ../usb_descriptors.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR}/_ext/1472 
@@ -136,19 +136,19 @@ ${OBJECTDIR}/_ext/1360907413/usb_device.p1: ../USB/usb_device.c  nbproject/Makef
 	@-${MV} ${OBJECTDIR}/_ext/1360907413/usb_device.d ${OBJECTDIR}/_ext/1360907413/usb_device.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1360907413/usb_device.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
-${OBJECTDIR}/_ext/487887514/usb_function_cdc.p1: ../USB/CDC\ Device\ Driver/usb_function_cdc.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/487887514 
-	@${RM} ${OBJECTDIR}/_ext/487887514/usb_function_cdc.p1.d 
-	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G --asmlist  --double=24 --float=24 --opt=all,+asm,-asmfile,-speed,+space,-debug,9 --addrqual=require --mode=pro -N100 -I".." -I"../Include" --warn=9 --summary=default,-psect,-class,+mem,-hex,-file --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,+osccal,-resetbits,-download,-stackcall,+clib "--errformat=%f:%l: error: %s" "--warnformat=%f:%l: warning: %s" "--msgformat=%f:%l: advisory: %s"  -o${OBJECTDIR}/_ext/487887514/usb_function_cdc.p1  "../USB/CDC Device Driver/usb_function_cdc.c" 
-	@-${MV} ${OBJECTDIR}/_ext/487887514/usb_function_cdc.d ${OBJECTDIR}/_ext/487887514/usb_function_cdc.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/_ext/487887514/usb_function_cdc.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
-	
 ${OBJECTDIR}/_ext/1360907413/usb_hal_pic24.p1: ../USB/usb_hal_pic24.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR}/_ext/1360907413 
 	@${RM} ${OBJECTDIR}/_ext/1360907413/usb_hal_pic24.p1.d 
 	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G --asmlist  --double=24 --float=24 --opt=all,+asm,-asmfile,-speed,+space,-debug,9 --addrqual=require --mode=pro -N100 -I".." -I"../Include" --warn=9 --summary=default,-psect,-class,+mem,-hex,-file --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,+osccal,-resetbits,-download,-stackcall,+clib "--errformat=%f:%l: error: %s" "--warnformat=%f:%l: warning: %s" "--msgformat=%f:%l: advisory: %s"  -o${OBJECTDIR}/_ext/1360907413/usb_hal_pic24.p1  ../USB/usb_hal_pic24.c 
 	@-${MV} ${OBJECTDIR}/_ext/1360907413/usb_hal_pic24.d ${OBJECTDIR}/_ext/1360907413/usb_hal_pic24.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1360907413/usb_hal_pic24.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
+${OBJECTDIR}/_ext/1360907413/usb_function_generic.p1: ../USB/usb_function_generic.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/_ext/1360907413 
+	@${RM} ${OBJECTDIR}/_ext/1360907413/usb_function_generic.p1.d 
+	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G --asmlist  --double=24 --float=24 --opt=all,+asm,-asmfile,-speed,+space,-debug,9 --addrqual=require --mode=pro -N100 -I".." -I"../Include" --warn=9 --summary=default,-psect,-class,+mem,-hex,-file --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,+osccal,-resetbits,-download,-stackcall,+clib "--errformat=%f:%l: error: %s" "--warnformat=%f:%l: warning: %s" "--msgformat=%f:%l: advisory: %s"  -o${OBJECTDIR}/_ext/1360907413/usb_function_generic.p1  ../USB/usb_function_generic.c 
+	@-${MV} ${OBJECTDIR}/_ext/1360907413/usb_function_generic.d ${OBJECTDIR}/_ext/1360907413/usb_function_generic.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/_ext/1360907413/usb_function_generic.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
 ${OBJECTDIR}/_ext/1472/usb_descriptors.p1: ../usb_descriptors.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR}/_ext/1472 

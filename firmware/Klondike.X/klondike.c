@@ -23,7 +23,7 @@
 #include <xc.h>
 #include "klondike.h"
 
-const IDENTITY ID = { 0x10, 0xDEADBEEF, "K16" };
+const IDENTITY ID = { 0x10, "K16", 0xDEADBEEF };
 const DWORD BankRanges[8] = { 0, 0x40000000, 0x2aaaaaaa, 0x20000000, 0x19999999, 0x15555555, 0x12492492, 0x10000000 };
 const WORKTASK TestWork = { 0xFF, GOOD_MIDSTATE, GOOD_DATA };
 const DWORD GoodNonce = GOOD_NONCE;
@@ -32,9 +32,8 @@ const DWORD StartNonce = (GOOD_NONCE - DETECT_DELAY_COUNT);
 BYTE WorkNow, BankSize, ResultQC, SlowTick;
 BYTE SlaveAddress = MASTER_ADDRESS;
 BYTE HashTime = 256-(TICK_FACTOR/DEFAULT_HASHCLOCK);
-volatile WORKSTATUS Status = {'I',0,0,0,0,0,0,0,0};
-volatile WORD WorkTicks = WORK_TICKS;
-WORKCFG Cfg = { DEFAULT_HASHCLOCK, DEFAULT_TEMP_TARGET, DEFAULT_TEMP_CRITICAL, DEFAULT_FAN_TARGET };
+volatile WORKSTATUS Status = {'I',0,0,0,0,0,0,0,0, WORK_TICKS };
+WORKCFG Cfg = { DEFAULT_HASHCLOCK, DEFAULT_TEMP_TARGET, DEFAULT_TEMP_CRITICAL, DEFAULT_FAN_TARGET, 0 };
 WORKTASK WorkQue[MAX_WORK_COUNT];
 volatile BYTE ResultQue[MAX_RESULT_COUNT*4];
 DWORD ClockCfg[2] = { ((DWORD)DEFAULT_HASHCLOCK << 18) | CLOCK_LOW_CFG, CLOCK_HIGH_CFG };
@@ -49,15 +48,10 @@ void ProcessCmd(char *cmd)
     // cmd is one char, dest address 1 byte, data follows
     // we already know address is ours here
     switch(cmd[0]) {
-        case 'P':
-            WorkQue[ (WorkNow + Status.WorkQC) & WORKMASK ] = *(WORKTASK *)(cmd+2);
-            AsicPreCalc(&WorkQue[WorkNow]);
-            SendCmdReply(cmd, (char *)&PrecalcHashes, sizeof(PrecalcHashes));
-            break;
         case 'W': // queue new work
             if( Status.WorkQC < MAX_WORK_COUNT-1 ) {
-                WorkQue[ (WorkNow + Status.WorkQC) & WORKMASK ] = *(WORKTASK *)(cmd+2);
-                if(Status.WorkQC++ == 0) {
+                WorkQue[ (WorkNow + Status.WorkQC++) & WORKMASK ] = *(WORKTASK *)(cmd+2);
+                if(Status.State == 'R') {
                     AsicPreCalc(&WorkQue[WorkNow]);
                     AsicPushWork();
                 }
@@ -66,9 +60,10 @@ void ProcessCmd(char *cmd)
             break;
         case 'A': // abort work, reply with hash completion count
             Status.WorkQC = WorkNow = 0;
-            WorkQue[ (WorkNow + Status.WorkQC++) & WORKMASK ] = *(WORKTASK *)(cmd+2);
-            AsicPreCalc(&WorkQue[WorkNow]);
-            AsicPushWork();
+            Status.State = 'R';
+            //WorkQue[ (WorkNow + Status.WorkQC++) & WORKMASK ] = *(WORKTASK *)(cmd+2);
+            //AsicPreCalc(&WorkQue[WorkNow]);
+            //AsicPushWork();
             SendCmdReply(cmd, (char *)&Status, sizeof(Status));
             break;
         case 'I': // return identity 
@@ -95,13 +90,6 @@ void ProcessCmd(char *cmd)
             Status.State = (cmd[2] == '1') ? 'R' : 'D';
             SendCmdReply(cmd, (char *)&Status, sizeof(Status));
             break;
-        case 'Z':
-            //I2CDetect();
-            SendCmdReply(cmd, (char *)&I2CState, sizeof(I2CState));
-//        case 'D': // detect asics
-//            DetectAsics();
-//            SendCmdReply(cmd, (char *)&Status, sizeof(Status));
-            break;
         default:
             break;
         }
@@ -112,10 +100,10 @@ void AsicPushWork(void)
 {
     Status.WorkID = WorkQue[WorkNow].WorkID;
     SendAsicData(&WorkQue[WorkNow], DATA_SPLIT);
+    WorkNow = (WorkNow+1) & WORKMASK;
     Status.HashCount = 0;
     Status.State ='W';
-    TMR0 = HashTime;
-    if(Status.WorkQC > 0)
+    if(--Status.WorkQC > 0)
         AsicPreCalc(&WorkQue[WorkNow]);
 }
 
@@ -155,11 +143,11 @@ void DetectAsics(void)
     WorkQue[MAX_WORK_COUNT-1] = TestWork;
     SendAsicData(&WorkQue[MAX_WORK_COUNT-1], (StartNonce & 0x80000000) ? DATA_ONE : DATA_ZERO);
     // wait for "push work time" for results to return and be counted
-    Status.ChipCount = 16; // just for now
+    Status.ChipCount = 1; // just for now
     
     // pre-calc nonce range values
     BankSize = (Status.ChipCount+1)/2;
-    WorkTicks = WORK_TICKS / BankSize;
+    Status.MaxCount = WORK_TICKS / BankSize;
     NonceRanges[0] = 0;
     for(BYTE x = 1; x < BankSize; x++)
         NonceRanges[x] = NonceRanges[x-1] + BankRanges[BankSize-1];
@@ -172,18 +160,15 @@ void DetectAsics(void)
 void WorkTick(void)
 {
     TMR0IF = 0;
- 
-    if((Status.State == 'W') && (++Status.HashCount == WorkTicks)) {
-        WorkNow = (WorkNow+1) & WORKMASK;
-        if(--Status.WorkQC > 0) {
+    TMR0 = HashTime;
+    if((Status.State == 'W') && (++Status.HashCount == Status.MaxCount)) {
+        if(Status.WorkQC > 0) {
             Status.State = 'P'; // set state to push data and do asap
             return;
         }
         else
             Status.State = 'R';
     }
-    else
-        TMR0 = HashTime;
 
    if(++SlowTick == 0) {
         LED_Off();
@@ -200,9 +185,8 @@ void ResultRx(void)
 {
     GIE = 0;
     RCIF = 0;
-    BYTE Rw = ResultQC & 0xFC;
-    ResultQue[ResultQC] = RCREG;
-    ResultQC = (ResultQC+1) & (MAX_RESULT_COUNT*4-1);
+    
+    ResultQue[ResultQC] = ~RCREG;
 
     if(RCSTAbits.OERR) { // error occured
         Status.ErrorCount++;
@@ -210,18 +194,20 @@ void ResultRx(void)
         RCSTAbits.CREN = 1; // renable
     }
     
-    if((ResultQC & 3) == 0) {
+    if((ResultQC & 3) == 3) {
+        BYTE Rw = ResultQC & 0xFC;
         BYTE buf[7];
         buf[0] = '=';
         buf[1] = SlaveAddress;
-        buf[2] = WorkQue[WorkNow].WorkID;
+        buf[2] = Status.WorkID;
         buf[3] = ResultQue[Rw++];
         buf[4] = ResultQue[Rw++];
         buf[5] = ResultQue[Rw++];
         buf[6] = ResultQue[Rw];
         
-        SendCmdReply(buf, buf+2, sizeof(DWORD));
+        SendCmdReply(buf, buf+2, sizeof(DWORD)+1);
     }
+    ResultQC = (ResultQC+1) & (MAX_RESULT_COUNT*4-1);
     GIE = 1;
 }
 
@@ -288,9 +274,11 @@ void InitWorkTick(void)
 
 void InitResultRx(void)
 {
+    ResultQC = 0;
     TXSTAbits.SYNC = 1;
     RCSTAbits.SPEN = 1;
     TXSTAbits.CSRC = 0;
+    BAUDCONbits.SCKP = 1;
     ANSELBbits.ANSB5 = 0;
     PIE1bits.RCIE = 1;
     INTCONbits.PEIE = 1;

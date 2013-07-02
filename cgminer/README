@@ -27,8 +27,8 @@ irc://irc.freenode.net/cgminer
 
 License: GPLv3.  See COPYING for details.
 
-SEE ALSO ASIC-README, FGPA-README, GPU-README AND SCRYPT-README FOR MORE
-INFORMATION ON EACH.
+SEE ALSO API-README, ASIC-README, FGPA-README, GPU-README AND SCRYPT-README FOR
+MORE INFORMATION ON EACH.
 
 ---
 
@@ -110,15 +110,14 @@ CGMiner specific configuration options:
 	--disable-opencl        Override detection and disable building with opencl
 	--disable-adl           Override detection and disable building with adl
 	--enable-bflsc          Compile support for BFL ASICs (default disabled)
+	--enable-klondike       Compile support for Klondike (default disabled)		
 	--enable-bitforce       Compile support for BitForce FPGAs(default disabled)
-	--enable-icarus         Compile support for Icarus Board(default disabled)
+	--enable-icarus         Compile support for Icarus bitstream FPGAs(default disabled)
 	--enable-modminer       Compile support for ModMiner FPGAs(default disabled)
 	--enable-ztex           Compile support for Ztex Board(default disabled)
 	--enable-avalon         Compile support for Avalon (default disabled)
-	--enable-klondike       Compile support for Klondike (default disabled)	
 	--enable-scrypt         Compile support for scrypt litecoin mining (default disabled)
 	--without-curses        Compile support for curses TUI (default enabled)
-	--without-libudev       Autodetect FPGAs using libudev (default enabled)
 
 Basic *nix build instructions:
 	To actually build:
@@ -154,6 +153,7 @@ Options for both config file and command line:
 --benchmark         Run cgminer in benchmark mode - produces no shares
 --compact           Use compact display without per device statistics
 --debug|-D          Enable debug output
+--device|-d <arg>   Select device to use, one value, range and/or comma separated (e.g. 0-2,4) default: all
 --disable-rejecting Automatically disable pools that continually reject shares
 --expiry|-E <arg>   Upper bound on how many seconds after getting work we consider a share from it stale (default: 120)
 --failover-only     Don't leak work to backup pools when primary pool is lagging
@@ -200,7 +200,6 @@ GPU only options:
 
 --auto-fan          Automatically adjust all GPU fan speeds to maintain a target temperature
 --auto-gpu          Automatically adjust all GPU engine clock speeds to maintain a target temperature
---device|-d <arg>   Select device to use, (Use repeat -d for multiple devices, default: all)
 --disable-gpu|-G    Disable GPU mining even if suitable devices exist
 --gpu-threads|-g <arg> Number of threads per GPU (1 - 10) (default: 2)
 --gpu-dyninterval <arg> Set the refresh interval in ms for GPUs using dynamic intensity (default: 7)
@@ -222,6 +221,7 @@ GPU only options:
 --vectors|-v <arg>  Override detected optimal vector (1, 2 or 4) - one value or comma separated list
 --worksize|-w <arg> Override detected optimal worksize - one value or comma separated list
 
+See GPU-README for more information regarding GPU mining.
 
 SCRYPT only options:
 
@@ -231,18 +231,74 @@ SCRYPT only options:
 
 See SCRYPT-README for more information regarding litecoin mining.
 
-
 ASIC and FPGA mining boards (BFL ASIC, BitForce, Icarus, ModMiner, Ztex)
 only options:
 
-Cgminer will automatically find all of your BFL ASIC, BitForce FPGAs,
-ModMiner FPGAs or Ztex FPGAs
-The --usb option can restrict how many BFL ASIC, BitForce FPGAs or
-ModMiner FPGAs it finds:
+--avalon-auto       Adjust avalon overclock frequency dynamically for best hashrate
+--avalon-fan <arg> Set fanspeed percentage for avalon, single value or range (default: 20-100)
+--avalon-freq <arg> Set frequency range for avalon-auto, single value or range
+--avalon-cutoff <arg> Set avalon overheat cut off temperature (default: 60)
+--avalon-options <arg> Set avalon options baud:miners:asic:timeout:freq
+--avalon-temp <arg> Set avalon target temperature (default: 50)
+--bfl-range         Use nonce range on bitforce devices if supported
+--icarus-options <arg> Set specific FPGA board configurations - one set of values for all or comma separated
+--icarus-timing <arg> Set how the Icarus timing is calculated - one setting/value for all or comma separated
+--usb <arg>         USB device selection (See below)
+--usb-dump          (See FPGA-README)
+
+See FGPA-README and ASIC-README for more information regarding these.
+
+Cgminer should automatically find all of your Avalon ASIC, BFL ASIC, BitForce
+FPGAs, Icarus bitstream FPGAs, ASICMINER usb block erupters, ModMiner FPGAs,
+or Ztex FPGAs
+
+---
+
+USB DEVICES
+
+WINDOWS:
+
+On windows, the direct USB support requires the installation of a WinUSB
+driver (NOT the ftdi_sio driver), and attach it to your devices.
+The easiest way to do this is to use the zadig utility which will install the
+drivers for you and then once you plug in your device you can choose the
+"list all devices" from the "option" menu and you should be able to see the
+device as something like: "BitFORCE SHA256 SC". Choose the install or replace
+driver option and select WinUSB. You can either google for zadig or download
+it from the cgminer directoy in the DOWNLOADS link above.
+
+LINUX:
+
+On linux, the direct USB support requires no drivers at all. However due to
+permissions issues, you may not be able to mine directly on the devices as a
+regular user without giving the user access to the device or by mining as
+root (administrator). In order to give your regular user access, you can make
+him a member of the plugdev group with the following commands:
+
+ sudo usermod -G plugdev -a `whoami`
+
+If your distribution does not have the plugdev group you can create it with:
+
+ sudo groupadd plugdev
+
+In order for the BFL devices to instantly be owned by the plugdev group and
+accessible by anyone from the plugdev group you can copy the file
+"01-cgminer.rules" from the cgminer archive into the /etc/udev/rules.d
+directory with the following command:
+
+ sudo cp 01-cgminer.rules /etc/udev/rules.d/
+
+After this you can either manually restart udev and re-login, or more easily
+just reboot.
+
+Advanced USB options:
+
+The --usb option can restrict how many Avalon, BFL ASIC, BitForce FPGAs,
+ModMiner FPGAs or Icarus bitstream FPGAs it finds:
 
   --usb 1:2,1:3,1:4,1:*
 or
-  --usb BAS:1,BFL:1,MMQ:0
+  --usb BAS:1,BFL:1,MMQ:0,ICA:0
 or
   --usb :10
 
@@ -261,15 +317,16 @@ This is useful if you unplug a device then plug it back in the same port,
 it usually reappears with the same bus_number but a different device_address
 
 You can see the list of all USB devices on linux with 'sudo lsusb'
-Cgminer will list the recognised USB devices with the '--usb-dump 0' option
+Cgminer will list the recognised USB devices with the '-n' option or the
+'--usb-dump 0' option
 The '--usb-dump N' option with a value of N greater than 0 will dump a lot
 of details about each recognised USB device
 If you wish to see all USB devices, include the --usb-list-all option
 
 The second version
-  --usb BAS:1,BFL:1,MMQ:0
+  --usb BAS:1,BFL:1,MMQ:0,ICA:0
 allows you to specify how many devices to choose based on each device
-driver cgminer has - there are currently 3 USB drivers: BAS, BFL & MMQ
+driver cgminer has - there are currently 4 USB drivers: BAS, BFL, MMQ & ICA
 N.B. you can only specify which device driver to limit, not the type of
 each device, e.g. with BAS:n you can limit how many BFL ASIC devices will
 be checked, but you cannot limit the number of each type of BFL ASIC
@@ -284,31 +341,11 @@ not scan for any more
 If one of the 10 devices stops working, hotplug - if enabled, as is default
 - will scan normally again until it has 10 devices
 
+  --usb :0 will disable all USB I/O other than to initialise libusb
 
---scan-serial|-S <arg> Serial port to probe for Icarus mining device
-
-This option is only for Icarus bitstream FPGAs
-
-By default, cgminer will scan for autodetected Icarus unless at least one
--S is specified for that driver. If you specify -S and still want cgminer
-to scan, you must also use "-S auto". If you want to prevent cgminer from
-scanning without specifying a device, you can use "-S noauto". Note that
-presently, autodetection only works on Linux, and might only detect one
-device depending on the version of udev being used.
-
-On linux <arg> is usually of the format /dev/ttyUSBn
-On windows <arg> is usually of the format \\.\COMn
-(where n = the correct device number for the Icarus device)
-
-The official supplied binaries are compiled with support for all FPGAs.
-To force the code to only attempt detection with a specific driver,
-prepend the argument with the driver name followed by a colon.
-For example, "icarus:/dev/ttyUSB0" or using the short name: "ica:/dev/ttyUSB0"
-This option not longer matters since Icarus is the only serial-USB
-device that uses it
-
-For other FPGA details see the FPGA-README
-
+NOTE: The --device option will limit which devices are in use based on their
+numbering order of the total devices, so if you hotplug USB devices regularly,
+it will not reliably be the same devices.
 
 ---
 
@@ -386,32 +423,31 @@ dedicated to this program,
 	http://forum.bitcoin.org/index.php?topic=28402.0
 
 The output line shows the following:
-(5s):1713.6 (avg):1707.8 Mh/s | A:729  R:8  HW:0  U:22.53/m  WU:22.53/m
+(5s):1713.6 (avg):1707.8 Mh/s | A:729  R:8  HW:0  WU:22.53/m
 
 Each column is as follows:
 5s:  A 5 second exponentially decaying average hash rate
 avg: An all time average hash rate
-A:   The number of Accepted shares
-R:   The number of Rejected shares
+A:  The total difficulty of Accepted shares
+R:  The total difficulty of Rejected shares
 HW:  The number of HardWare errors
-U:   The Utility defined as the number of shares / minute
 WU:  The Work Utility defined as the number of diff1 shares work / minute
      (accepted or rejected).
 
- GPU 1: 73.5C 2551RPM | 427.3/443.0Mh/s | A:8 R:0 HW:0 U:4.39/m
+ GPU 1: 73.5C 2551RPM | 427.3/443.0Mh/s | A:8 R:0 HW:0 WU:4.39/m
 
 Each column is as follows:
 Temperature (if supported)
 Fanspeed (if supported)
 A 5 second exponentially decaying average hash rate
 An all time average hash rate
-The number of accepted shares
-The number of rejected shares
+The total difficulty of accepted shares
+The total difficulty of rejected shares
 The number of hardware erorrs
-The utility defines as the number of shares / minute
+The work utility defined as the number of diff1 shares work / minute
 
 The cgminer status line shows:
- ST: 1  SS: 0  NB: 1  LW: 8  GF: 1  RF: 1  WU:4.4/m
+ ST: 1  SS: 0  NB: 1  LW: 8  GF: 1  RF: 1
 
 ST is STaged work items (ready to use).
 SS is Stale Shares discarded (detected and not submitted so don't count as rejects)
@@ -419,7 +455,6 @@ NB is New Blocks detected on the network
 LW is Locally generated Work items
 GF is Getwork Fail Occasions (server slow to provide work)
 RF is Remote Fail occasions (server slow to accept work)
-WU is Work Utility (Rate of difficulty 1 shares solved per minute)
 
 The block display shows:
 Block: 0074c5e482e34a506d2a051a...  Started: [17:17:22]  Best share: 2.71K
@@ -531,15 +566,15 @@ For RPC API details see the API-README file
 
 FAQ
 
-Q: cgminer segfaults when I change my shell window size.
-A: Older versions of libncurses have a bug to do with refreshing a window
-after a size change. Upgrading to a new version of curses will fix it.
-
 Q: Can I mine on servers from different networks (eg smartcoin and bitcoin) at
 the same time?
 A: No, cgminer keeps a database of the block it's working on to ensure it does
 not work on stale blocks, and having different blocks from two networks would
 make it invalidate the work from each other.
+
+Q: Can I configure cgminer to mine with different login credentials or pools
+for each separate device?
+A: No.
 
 Q: Can I put multiple pools in the config file?
 A: Yes, check the example.conf file. Alternatively, set up everything either on
@@ -658,27 +693,6 @@ A: Cgminer currently supports 2 ASICs: Avalon and BitForce SC devices. They
 are Application Specify Integrated Circuit devices and provide the highest
 performance per unit power due to being dedicated to only one purpose.
 
-Q: How do I get my Icarus/Lancelot/Cairnsmore device to auto-recognise?
-A: On linux, if the /dev/ttyUSB* devices don't automatically appear, the only
-thing that needs to be done is to load the driver for them:
-Icarus: sudo modprobe pl2303 vendor=0x067b product=0x230
-Lancelot: sudo modprobe ftdi_sio vendor=0x0403 product=0x6001
-Cairnsmore: sudo modprobe ftdi_sio product=0x8350 vendor=0x0403
-On windows you must install the pl2303 or ftdi driver required for the device
-pl2303: http://prolificusa.com/pl-2303hx-drivers/
-ftdi: http://www.ftdichip.com/Drivers/VCP.htm
-
-Q: On linux I can see the /dev/ttyUSB* devices for my Icarus FPGAs, but
-cgminer can't mine on them
-A: Make sure you have the required priviledges to access the /dev/ttyUSB* devices:
- sudo ls -las /dev/ttyUSB*
-will give output like:
- 0 crw-rw---- 1 root dialout 188, 0 2012-09-11 13:49 /dev/ttyUSB0
-This means your account must have the group 'dialout' or root priviledges
-To permanently give your account the 'dialout' group:
- sudo usermod -G dialout -a `whoami`
-Then logout and back in again
-
 Q: Can I mine scrypt with FPGAs or ASICs?
 A: No.
 
@@ -715,6 +729,27 @@ expressed by cgminer is as multiples of difficulty 1 shares.
 Q: Can I make a donation in litecoin?
 A: Yes, see SCRYPT-README for the address, but the author prefers bitcoin if
 possible.
+
+Q: My keyboard input momentarily pauses or repeats keys every so often on
+windows while mining?
+A: The USB implementation on windows can be very flaky on some hardware and
+every time cgminer looks for new hardware to hotplug it it can cause these
+sorts of problems. You can disable hotplug with:
+--hotplug 0
+
+Q: Can I use a proxy?
+A: Proxies only work with the getwork and GBT protocols using the --proxy
+command. If you wish to use a proxy with stratum, people have supported
+success with various 3rd party tools like proxifier.
+
+Q: What should my Work Utility (WU) be?
+A: Work utility is the product of hashrate * luck and only stabilises over a
+very long period of time. Assuming all your work is valid work, bitcoin mining
+should produce a work utility of approximately 1 per 71.6MH. This means at
+5GH you should have a WU of 5000 / 71.6 or ~ 69. You cannot make your machine
+do "better WU" than this - it is luck related. However you can make it much
+worse if your machine produces a lot of hardware errors producing invalid work.
+
 
 ---
 

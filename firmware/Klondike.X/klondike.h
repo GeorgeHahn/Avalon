@@ -32,7 +32,7 @@ extern "C" {
 #define WORKMASK            MAX_WORK_COUNT-1
 
 // set values for ASIC PLL, we use R=32 N=Freq*2 in MHz
-#define WORK_TICKS          16777
+#define WORK_TICKS          33554 // testing @ half bank, usually 16777
 #define TICK_FACTOR         24000
 #define CLOCK_R_VALUE       32
 #define DEFAULT_HASHCLOCK   512
@@ -47,7 +47,7 @@ extern "C" {
 #define DEFAULT_FAN_TARGET      128 // is 50%
 
 // number of hashes to delay results while test work pushed
-// eg. 390uS push time / 282 MHz = 109980
+// eg. 390uS push time @ 256 MHz startup clock = 99840
 #define DETECT_DELAY_COUNT  109980
 #define GOOD_NONCE          0xe3d69bc9
 #define GOOD_MIDSTATE       { 0x5fddb5bc,0x00bdafd2,0x144684c7,0x19c68fa2,0x27d0a8e3,0x34ad84b2,0xa92c66be,0x3e99a4fd }
@@ -60,8 +60,8 @@ extern "C" {
 
 typedef struct _id {
     BYTE version;
+    char product[7];    
     DWORD serial;
-    char product[8];
 } IDENTITY;
 
 typedef struct _workstatus {
@@ -70,15 +70,16 @@ typedef struct _workstatus {
     BYTE SlaveCount;
     BYTE WorkQC;
     BYTE WorkID;
-    BYTE Temp, FanSpeed;
-    WORD HashCount;
-    WORD ErrorCount;
+    BYTE Temp;
+    BYTE FanSpeed;
+    BYTE ErrorCount;
+    WORD HashCount, MaxCount;
 } WORKSTATUS;
 
 typedef struct _workcfg {
     WORD HashClock;
     BYTE TempTarget, TempCritical;
-    BYTE FanTarget;
+    BYTE FanTarget, pad;
 } WORKCFG;
 
 typedef struct _worktask {

@@ -37,11 +37,9 @@
 
  Change History:
   Rev   Date         Description
-  2.8   8 Oct 2010   Added definitions for supporting new 
-                     USB_ENABLE_STATUS_STAGE_TIMEOUTS feature.
-                     Changed the CDC comm EP and data EP from 2,3
-                     (respectively) to 1,2 respectively, so as to
-                     save RAM.
+  1.0   11/19/2004   Initial release
+  2.1   02/26/2007   Updated for simplicity and to use common
+                     coding style
  *******************************************************************/
 
 /*********************************************************************
@@ -59,7 +57,8 @@
 								// that use EP0 IN or OUT for sending large amounts of
 								// application related data.
 									
-#define USB_MAX_NUM_INT     	2   // For tracking Alternate Setting
+#define USB_MAX_NUM_INT     	1   // For tracking Alternate Setting
+#define USB_MAX_EP_NUMBER	    1
 
 //Device descriptor - if these two definitions are not defined then
 //  a ROM USB_DEVICE_DESCRIPTOR variable by the exact name of device_dsc
@@ -141,7 +140,7 @@
 
 #define USB_SUPPORT_DEVICE
 
-#define USB_NUM_STRING_DESCRIPTORS 4
+#define USB_NUM_STRING_DESCRIPTORS 3
 
 //#define USB_INTERRUPT_LEGACY_CALLBACKS
 #define USB_ENABLE_ALL_HANDLERS
@@ -156,23 +155,14 @@
 //#define USB_ENABLE_TRANSFER_COMPLETE_HANDLER
 
 /** DEVICE CLASS USAGE *********************************************/
-#define USB_USE_CDC
+#define USB_USE_GEN
 
 /** ENDPOINTS ALLOCATION *******************************************/
-#define USB_MAX_EP_NUMBER	    2
 
-/* CDC */
-#define CDC_COMM_INTF_ID        0x0
-#define CDC_COMM_EP              1
-#define CDC_COMM_IN_EP_SIZE      10
+/* Generic */
+#define USBGEN_EP_SIZE          64
+#define USBGEN_EP_NUM            1
 
-#define CDC_DATA_INTF_ID        0x01
-#define CDC_DATA_EP             2
-#define CDC_DATA_OUT_EP_SIZE    64
-#define CDC_DATA_IN_EP_SIZE     64
-
-//#define USB_CDC_SUPPORT_ABSTRACT_CONTROL_MANAGEMENT_CAPABILITIES_D2 //Send_Break command
-#define USB_CDC_SUPPORT_ABSTRACT_CONTROL_MANAGEMENT_CAPABILITIES_D1 //Set_Line_Coding, Set_Control_Line_State, Get_Line_Coding, and Serial_State commands
 /** DEFINITIONS ****************************************************/
 
 #endif //USBCFG_H

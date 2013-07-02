@@ -20,47 +20,70 @@
 # main.c - main USB cmd loop and dispatch for Klondike mining firmware
 #
 
-import sys, serial
+import usb
+import sys, thread
 from struct import *
 
 workid = addr = 0
-midstate = "5fddb5bc00bdafd2144684c719c68fa227d0a8e334ad84b2a92c66be3e99a4fd"
-merkle = "f64684bb51bc15081a011337"
-nonce = "e3d69bc9"
-
-def kopen(dev='/dev/Klondike'):
-	global ser
-	try:
-		return serial.Serial(dev, 115200, timeout=0.1)
-	except serial.SerialException, e:
-		print "Cannot connect to /dev/Klondike"
-		sys.exit(1)
+midstate = "503f522351026a56cc004aa8f1e5decb9640022cd76815739e4d563534175fed"
+merkle = "8cf6b5fd51bc15081a011337"
+nonce = "9fd570cc"
+#midstate = "5fddb5bc00bdafd2144684c719c68fa227d0a8e334ad84b2a92c66be3e99a4fd"
+#merkle = "f64684bb51bc15081a011337"
+#nonce = "e3d69bc9"
 
 def sendcmd(cmd, data=""):
-	global ser, addr
+	global dev, addr
 	try:
-		ser.write(cmd + chr(addr) + data)
-	except serial.SerialException, e:
-		ser = kopen()
-		ser.write(cmd + chr(addr) + data)
-	data = ser.read(32)
-	if cmd in 'WASED':
-		print "State:%c, ASICs:%u, Slaves:%u, WorkQ:%u, Current WorkID:%x, Temp:%u, Fan:%u, HashCount:%u, ErrCount:%u" % unpack("=cBBBBBBHH", data[2:])
-	elif cmd == 'C':
-		print "Clock:%d, Target Temp:%u, Critical Temp:%u, Target Fan: %u" % unpack("=HBBB", data[2:])
-	elif cmd == 'I':
-		print "Version:%x, Serial#:%x, ProductID: %s" % unpack("=BL8s", data[2:])
-	else:
-		print ' '.join(x.encode('hex') for x in data)
+		dev.write(0x01, cmd + chr(addr) + data, 0, 100)
+	except usb.core.USBError, e:
+		print "USB Write Error", e
+		pass
+		
+def chkreply():
+	global dev
+	while True:
+		try:
+			data = dev.read(0x81, 32, 0, 100)
+		except usb.core.USBError, e:
+			if e.errno != 110:
+				print "USB Read Error", e
+			pass
+		else:
+			data = ''.join([chr(x) for x in data])
+			if len(data) > 0:
+				try:
+					cmd = data[0]
+					if cmd in 'WASED':
+						print "\nState:%c, ASICs:%u, Slaves:%u, WorkQ:%u, WorkID:%x, Temp:%u, Fan:%u, ErrCount:%u, HashCount:%u, MaxCount:%u" % unpack("=cBBBBBBBHH", data[2:])
+					elif cmd == 'C':
+						print "\nClock:%d, Target Temp:%u, Critical Temp:%u, Target Fan: %u, Pad:%u" % unpack("=HBBBB", data[2:])
+					elif cmd == 'I':
+						print "\nVersion:%x, ProductID: %s, Serial#:%x" % unpack("=B7sL", data[2:])
+					elif cmd == '=':
+						w,v = unpack("=BL", data[2:])
+						n, = unpack(">L", pack("<L", v - 0xC0))
+						print "\nNonce Found - WorkID:%x, Value:%x, Nonce:%x" % (w, v, n)
+					else:
+						print "\n"+' '.join(x.encode('hex') for x in data)
+				except Exception, e:
+					print "\n<framing error>"
+			print "Cmds [WAISCE.Q]: "
 
+			
 if __name__ == '__main__':
 	
-	ser = kopen()
-	print ser.name
-	sendcmd('I')
+	dev = usb.core.find(idVendor=0x04D8, idProduct=0xF60A)
+	if dev is None:
+		print 'Klondike device not found'
+		exit()
+	dev.set_configuration()
+	print 'Klondike device opened'
+	sendcmd('I')	
+	thread.start_new_thread (chkreply, ())
 
 	while True: 
-		cmd = raw_input("Cmds [WAISCE.Q]: ").upper()
+		cmd = raw_input("").upper()
 		if cmd == "":
 			continue
 		data = ""
@@ -79,15 +102,14 @@ if __name__ == '__main__':
 				data = pack("=H", int(clk))
 				data += pack("=B", int(raw_input("Target Temp: ")))
 				data += pack("=B", int(raw_input("Critical Temp: ")))
-				data += pack("=B", int(raw_input("Target Fan: ")))
+				data += pack("=B", int(raw_input("Target Fan: "))) + chr(0)
 			else:
 				data = chr(0)
 		elif cmd == 'E':
 			data = raw_input("1 (enable) or 0 (disable): ")
-		elif cmd in 'WAP':
+		elif cmd in 'W':
 			workid = (workid+1) % 256
 			data = chr(workid) + midstate.decode('hex') + merkle.decode('hex')
-		
+
 		sendcmd(cmd, data)
 
-	ser.close()	

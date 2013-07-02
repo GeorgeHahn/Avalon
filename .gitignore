@@ -2,4 +2,5 @@ bak
 *.bak
 plots2
 private
-cgminer
+firmware/Klondike.X/build
+firmware/Klondike.X/dist

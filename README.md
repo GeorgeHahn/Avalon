@@ -22,7 +22,10 @@ STATUS:
 
   This project is under active development. Some circuit boards have been ordered and/or arrived for testing.
   Some prototyping has been completed to verify some aspects of the design and develop firmware.
+  ASIC communication works and more work i sunderway to improve reliability.
   Firmware has been developed and now released under the terms of the GPLv3 license.
+  A new cgminer-klondike repo has been created for development with only changed files echoed here in cgminer directory.
+  An initial cgminer driver release has been pushed for testing.
   
 TODO:
 
