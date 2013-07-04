@@ -17,53 +17,68 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
-# main.c - main USB cmd loop and dispatch for Klondike mining firmware
 #
 
 import usb
-import sys, thread
+import sys, thread, time
 from struct import *
 
 workid = addr = 0
-midstate = "503f522351026a56cc004aa8f1e5decb9640022cd76815739e4d563534175fed"
-merkle = "8cf6b5fd51bc15081a011337"
-nonce = "9fd570cc"
-#midstate = "5fddb5bc00bdafd2144684c719c68fa227d0a8e334ad84b2a92c66be3e99a4fd"
-#merkle = "f64684bb51bc15081a011337"
-#nonce = "e3d69bc9"
+
+
+Work =   ["4375c3b7a27cc936f295a6140358e965319322e7cfd11e137df42ea60864a675", "218d522051d547d51a00c94e", "b2cc9f74", "accept"]
+#Work =  ["e8312278a01c1695a12a8940a7c1ec0a9062287161c0a9e3984dddf6e5fd3137", "b0974bdb51d547cf1a00c94e", "29496825", "error"]
+
+#Work = ["93174bc39d32fa7a0c89b2842a18a4d0a9ff6220d4951ba9b4781087aa54a48a", "ab81a7e851d4f0a91a00c94e", "3e6a9aeb", "accept"]
+#Work = ["e6485394a1b78cb7333a94d612cb40e371101d15933fdf2de14ed62b1e093d73", "8b3fa3b451d4ee1c1a00c94e", "8358be9e", "error"]
+#Work = ["81c7594ff688fd5c5b90c19b0bedca21fe79b43c93952949f55e88d58e013774", "1cf5d12e51d4ee1c1a00c94e", "20cde4d0", "accept"]
+#Work = ["eb4ec53ef729fee51f397516a41bfcb46fd8507d3fb50ccc073bc3651ab5ef06", "54cef98851d4ecba1a00c94e", "35237f32", "accept"]
+#Work = ["db7db74e7e606b6b5eb07c56395bc4277cf55d65cc025bf500c7e4be72f22aa1", "43ff3f6551d4ec301a00c94e", "42d57218", "accept"]
+#Work = ["b48ef5555147d05c5303eec6cdbc19eaa8d5de0024a3ab910f833ec623a10a6e", "dda1034351d4e8801a00c94e", "1536033e", "accept"]
+#Work = ["e6485394a1b78cb7333a94d612cb40e371101d15933fdf2de14ed62b1e093d73", "8b3fa3b451d4ee1c1a00c94e", "8358be9e", "error"]
+#Work = ["c94826c30b2e66f1c9eb1d2c4032f869b1bfa949bdedf24f6a31c0f60837f618", "451b737e51d4e7631a00c94e", "aa2c5701", "error"]
+#Work = ["503f522351026a56cc004aa8f1e5decb9640022cd76815739e4d563534175fed", "8cf6b5fd51bc15081a011337", "9fd570cc", "accept"]
+#Work = ["c51c390cee413b1ba2c2bd7bebf69e240afd7abaeb3378099d97bb675d117d42", "4bd8584851d4ec301a00c94e", "5eef2ac2", "error"]
+#Work = ["a19d5971f416e911b7362cda79ebbc45a8d26252f382cb1bedce85ea0bed6fc5", "58db991b51d4ecba1a00c94e", "973bfc23", "error"]
+#Work = ["a19d5971f416e911b7362cda79ebbc45a8d26252f382cb1bedce85ea0bed6fc5", "58db991b51d4ecba1a00c94e", "486daf5e", "error"]
+#Work = ["c7fee5d1822b443d100be7a0949d5790bf2b394a7af01a813582fd7a1bd06284", "bc264a1951d4e7b61a00c94e", "30360499", "accept"]
 
 def sendcmd(cmd, data=""):
 	global dev, addr
 	try:
-		dev.write(0x01, cmd + chr(addr) + data, 0, 100)
+		dev.write(0x01, cmd + chr(addr) + data, 0, 500)
 	except usb.core.USBError, e:
 		print "USB Write Error", e
 		pass
-		
+
 def chkreply():
 	global dev
 	while True:
 		try:
-			data = dev.read(0x81, 32, 0, 100)
+			data = dev.read(0x81, 15, 0, 500)
 		except usb.core.USBError, e:
 			if e.errno != 110:
 				print "USB Read Error", e
+				time.sleep(1)
 			pass
 		else:
 			data = ''.join([chr(x) for x in data])
+			#print "\n"+' '.join(x.encode('hex') for x in data)
+			
 			if len(data) > 0:
 				try:
 					cmd = data[0]
 					if cmd in 'WASED':
-						print "\nState:%c, ASICs:%u, Slaves:%u, WorkQ:%u, WorkID:%x, Temp:%u, Fan:%u, ErrCount:%u, HashCount:%u, MaxCount:%u" % unpack("=cBBBBBBBHH", data[2:])
+						print "\nState:%c, ASICs:%u, Slaves:%u\nWorkQ:%u, WorkID:%02x, Temp:%u, Fan:%u, ErrCount:%u, HashCount:%u, MaxCount:%u" % unpack("=cBBBBBBBHH", data[2:14])
 					elif cmd == 'C':
-						print "\nClock:%d, Target Temp:%u, Critical Temp:%u, Target Fan: %u, Pad:%u" % unpack("=HBBBB", data[2:])
+						print "\nClock:%d, Target Temp:%u, Critical Temp:%u, Target Fan: %u, Pad:%u" % unpack("=HBBBB", data[2:8])
 					elif cmd == 'I':
-						print "\nVersion:%x, ProductID: %s, Serial#:%x" % unpack("=B7sL", data[2:])
+						print "\nVersion:%02x, ProductID:%s, Serial#:%08x" % unpack("=B7sL", data[2:14])
 					elif cmd == '=':
-						w,v = unpack("=BL", data[2:])
+						w,v = unpack("=BL", data[2:7])
 						n, = unpack(">L", pack("<L", v - 0xC0))
-						print "\nNonce Found - WorkID:%x, Value:%x, Nonce:%x" % (w, v, n)
+						chk = "GOOD" if ("%x" % n) == Work[2] else "BAD"
+						print "\nNonce Found - WorkID:%02x, Value:%08x, Nonce:%08x %s" % (w, v, n, chk)
 					else:
 						print "\n"+' '.join(x.encode('hex') for x in data)
 				except Exception, e:
@@ -109,7 +124,7 @@ if __name__ == '__main__':
 			data = raw_input("1 (enable) or 0 (disable): ")
 		elif cmd in 'W':
 			workid = (workid+1) % 256
-			data = chr(workid) + midstate.decode('hex') + merkle.decode('hex')
+			data = chr(workid) + Work[0].decode('hex') + Work[1].decode('hex')
 
 		sendcmd(cmd, data)
 

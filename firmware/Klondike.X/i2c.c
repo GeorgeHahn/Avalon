@@ -15,7 +15,6 @@
  *
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- * main.c - main USB cmd loop and dispatch for Klondike mining firmware
  *
  */
 #include "GenericTypeDefs.h"
@@ -100,7 +99,7 @@ void I2CRead(void)
         case I2C_READ+6: SSPCON2bits.PEN = 1; I2CState.Next++; break;
         case I2C_READ+7: SSPCON2bits.SEN = 1; I2CState.Next = I2C_READ; break;
         case I2C_READ+8: SSPCON2bits.PEN = 1; I2CState.Next++; break;
-        case I2C_READ+9: SendCmdReply(buf, buf+2, ptr-3); I2CState.Next = 0; break;
+        //case I2C_READ+9: SendCmdReply(buf, buf+2, ptr-3); I2CState.Next = 0; break;
         default:
             break;
         }

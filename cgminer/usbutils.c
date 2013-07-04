@@ -64,14 +64,14 @@
 #define MODMINER_TIMEOUT_MS 999
 #define AVALON_TIMEOUT_MS 999
 #define ICARUS_TIMEOUT_MS 999
-#define KLONDIKE_TIMEOUT_MS 50
+#define KLONDIKE_TIMEOUT_MS 999
 #else
 #define BFLSC_TIMEOUT_MS 300
 #define BITFORCE_TIMEOUT_MS 200
 #define MODMINER_TIMEOUT_MS 100
 #define AVALON_TIMEOUT_MS 200
 #define ICARUS_TIMEOUT_MS 200
-#define KLONDIKE_TIMEOUT_MS 50
+#define KLONDIKE_TIMEOUT_MS 200
 #endif
 
 #define USB_READ_MINPOLL 40
@@ -1810,8 +1810,8 @@ static bool usb_check_device(struct device_drv *drv, struct libusb_device *dev, 
 	}
 
 	if (desc.idVendor != look->idVendor || desc.idProduct != look->idProduct) {
-		applog(LOG_DEBUG, "%s looking for %s %04x:%04x but found %04x:%04x instead",
-			drv->name, look->name, look->idVendor, look->idProduct, desc.idVendor, desc.idProduct);
+		//applog(LOG_DEBUG, "%s looking for %s %04x:%04x but found %04x:%04x instead",
+		//	drv->name, look->name, look->idVendor, look->idProduct, desc.idVendor, desc.idProduct);
 
 		return false;
 	}
@@ -2261,7 +2261,7 @@ usb_bulk_transfer(struct libusb_device_handle *dev_handle,
 			errn = errno;
 			cg_runlock(&cgusb_fd_lock);
 
-			if (err < 0)
+			if (err < 0 && err != -7)
 				applog(LOG_DEBUG, "%s%i: %s (amt=%d err=%d ern=%d)",
 						cgpu->drv->name, cgpu->device_id,
 						usb_cmdname(cmd), *transferred, err, errn);

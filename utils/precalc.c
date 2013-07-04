@@ -7,10 +7,11 @@ typedef struct _worktask {
     uint32_t Merkle[3];
 } WORKTASK;
 
-WORKTASK GOOD_WORK = { 0, { 0xcb18a156,0x735fadbc,0xea5b3fc9,0x8ddadef9,0x6c3031aa,0x50cee616,0x826a915d,0x88010577 },
-	{ 0x514898af,0x51bc10ac,0x1a011337 } };
+//WORKTASK Work = { 0, { 0xcb18a156,0x735fadbc,0xea5b3fc9,0x8ddadef9,0x6c3031aa,0x50cee616,0x826a915d,0x88010577 },
+//	{ 0x514898af,0x51bc10ac,0x1a011337 } };
+#include "work.inc"
 
-uint32_t PreCalc[6];
+uint32_t PreCalc[6], hold[6];
 
 const uint32_t SHA256_K[3] = {
 	0x428a2f98, 0x71374491, 0xb5c0fbcf
@@ -98,10 +99,22 @@ void K16AsicPreCalc(WORKTASK *work)
 
 int main(int argc, char **argv)
 {
-	cg_precalc_hash(GOOD_WORK.MidState, GOOD_WORK.Merkle);
-	printf("CG PreCalc - [ %x, %x, %x, %x, %x, %x ]\n", PreCalc[0], PreCalc[1], PreCalc[2], PreCalc[3], PreCalc[4], PreCalc[5]);
+	int n;
 	
-	K16AsicPreCalc(&GOOD_WORK);
-	printf("K16 PreCalc - [ %x, %x, %x, %x, %x, %x ]\n", PreCalc[0], PreCalc[1], PreCalc[2], PreCalc[3], PreCalc[4], PreCalc[5]);
-
+	for(n = 0; n < sizeof(Work)/sizeof(WORKTASK); n++) {
+		int i;
+		
+		cg_precalc_hash(Work[n].MidState, Work[n].Merkle);
+		printf("CG PreCalc - [ %x, %x, %x, %x, %x, %x ]\n", PreCalc[0], PreCalc[1], PreCalc[2], PreCalc[3], PreCalc[4], PreCalc[5]);
+		
+		for(i = 0; i < 6; i++)
+			hold[i] = PreCalc[i];
+			
+		K16AsicPreCalc(&Work[n]);
+		printf("K16 PreCalc - [ %x, %x, %x, %x, %x, %x ]\n\n", PreCalc[0], PreCalc[1], PreCalc[2], PreCalc[3], PreCalc[4], PreCalc[5]);
+		
+		for(i = 0; i < 6; i++)
+			if(hold[i] != PreCalc[i])
+				printf("ERROR at [%d]\n", i);
+	}
 }

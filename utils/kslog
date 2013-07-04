@@ -24,6 +24,14 @@ import sys
 from sha256 import SHA256
 from struct import *
 
+options = "c" if len(sys.argv) < 2 else sys.argv[1]
+
+if 'c' in options:
+	print "WORKTASK Work[] = {"
+else:
+	print "Work = [ "
+
+count = 0
 for line in sys.stdin:
 	logdata = line.strip().split(',')
 
@@ -39,17 +47,25 @@ for line in sys.stdin:
 	shadata = pack("<16L", *unpack(">16L", data[0:64]))
 	sha.update(shadata)
 	midstate = pack(">8L", *unpack("<8L", sha.get_bytes())).encode('hex')
-	
-	print
-	print "midstate = \"%s\"" % midstate
-	print "merkle = \"%s\"" % minedata
-	print "nonce = \"%s\"" % nonce
-	print
-	print "#define GOOD_NONCE          0x%s" % nonce
-	print "#define GOOD_MIDSTATE       { 0x%s,0x%s,0x%s,0x%s,0x%s,0x%s,0x%s,0x%s }" % (midstate[0:8],midstate[8:16],midstate[16:24],midstate[24:32],midstate[32:40],midstate[40:48],midstate[48:56],midstate[56:])
-	print "#define GOOD_DATA           { 0x%s,0x%s,0x%s }" % (minedata[0:8],minedata[8:16],minedata[16:])
-	print
 
+	if count > 0:
+		print ","	
+		
+	# python data output
+	if 'p' in options:
+		print "[\"%s\", \"%s\", \"%s\", \"%s\"]" % (midstate, minedata, nonce, logdata[1]),
+
+	# C data output
+	if 'c' in options:
+		print "{ %d, { 0x%s,0x%s,0x%s,0x%s,0x%s,0x%s,0x%s,0x%s }," % (count, midstate[0:8],midstate[8:16],midstate[16:24],midstate[24:32],midstate[32:40],midstate[40:48],midstate[48:56],midstate[56:]),
+		print "{ 0x%s,0x%s,0x%s } }" % (minedata[0:8],minedata[8:16],minedata[16:]),
+
+	count = count+1
+	
+if 'c' in options:	
+	print "};"
+else:
+	print " ]"
 
 # for reference from cgminer			
 # static void calc_midstate(struct work *work)

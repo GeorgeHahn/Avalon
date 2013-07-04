@@ -15,7 +15,6 @@
  *
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- * main.c - main USB cmd loop and dispatch for Klondike mining firmware
  *
  */
 #include "GenericTypeDefs.h"
@@ -68,7 +67,7 @@ next_word:
     MOVLW DATA_ZERO
     CLRF LATC & 0x7F
     BTFSC INDF1,0
-    MOVLW 0x90
+    MOVLW DATA_ONE
     MOVWF LATC & 0x7F
 
     // bit 1

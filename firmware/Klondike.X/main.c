@@ -16,7 +16,6 @@
  *
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- * main.c - main USB cmd loop and dispatch for Klondike mining firmware
  *
  * Portions Derived from Microchip LPC Dev Kit and USB stack code 
  * are covered under their own license from Microchip and not included
@@ -51,6 +50,8 @@ unsigned char OUTPacket[USBGEN_EP_SIZE] OUT_DATA_BUFFER_ADDRESS_TAG;	//User appl
 USB_HANDLE USBGenericOutHandle;  //USB handle.  Must be initialized to 0 at startup.
 USB_HANDLE USBGenericInHandle;   //USB handle.  Must be initialized to 0 at startup.
 
+BYTE WQI, WQX;
+
 extern WORKSTATUS Status;
 extern BYTE SlaveAddress;
 extern I2CSTATE I2CState;
@@ -73,7 +74,7 @@ void interrupt ISRCode()
         WorkTick();
     if(TMR1GIF)
         UpdateFanSpeed();
-    if(BCL1IF) {
+    /*if(BCL1IF) {
         BCL1IF = 0; I2CState.Next = 0;
     }
     if(SSP1IF) {
@@ -84,7 +85,7 @@ void interrupt ISRCode()
             I2CRead();
         else
             I2CWrite();
-    }
+    }*/
     #if defined(USB_INTERRUPT)
         USBDeviceTasks();
     #endif
@@ -150,6 +151,7 @@ static void InitializeSystem(void)
 
     USBGenericOutHandle = 0;
     USBGenericInHandle = 0;
+    WQI = WQX = 0;
 	
     UserInit();
 
@@ -187,24 +189,31 @@ void ProcessIO(void)
         //    I2CRelay(OUTPacket, USBGEN_EP_SIZE);
         //else
             ProcessCmd(OUTPacket);
-    USBGenericOutHandle = USBGenRead(USBGEN_EP_NUM,(BYTE*)&OUTPacket,USBGEN_EP_SIZE);
+    USBGenericOutHandle = USBGenRead(USBGEN_EP_NUM, (BYTE*)&OUTPacket, USBGEN_EP_SIZE);
+    }
+
+    if(WQI != WQX && !USBHandleBusy(USBGenericInHandle)) {
+        USBGenericInHandle = USBGenWrite(USBGEN_EP_NUM, (BYTE*)&INPacket[WQX*USB_RECORD_SIZE], USB_RECORD_SIZE);
+        WQX = (WQX+1) & 3;
     }
 } //end ProcessIO
 
 void SendCmdReply(char *cmd, BYTE *data, BYTE count)
 {
-    INPacket[0] = cmd[0];
-    INPacket[1] = SlaveAddress;
-    for(BYTE n=0; n < count; n++)
-        INPacket[n+2] = data[n];
+    if(WQI*USB_RECORD_SIZE + count + 2 < USBGEN_EP_SIZE) {
+        INPacket[WQI*USB_RECORD_SIZE] = cmd[0];
+        INPacket[WQI*USB_RECORD_SIZE + 1] = SlaveAddress;
+        for(BYTE n=0; n < count; n++)
+            INPacket[WQI*USB_RECORD_SIZE + n + 2] = data[n];
+        WQI = (WQI+1) & 3;
+    }
 
     //if(USBDeviceState < CONFIGURED_STATE) {
     //    I2CCount = count+2;
     //}
     //else
 
-    if(!USBHandleBusy(USBGenericInHandle))
-        USBGenericInHandle = USBGenWrite(USBGEN_EP_NUM,(BYTE*)&INPacket,count+2);
+
 }
 
 
@@ -392,6 +401,7 @@ void USBCBErrorHandler(void)
  *****************************************************************************/
 void USBCBCheckOtherReq(void)
 {
+    USBCheckVendorRequest();
 }//end
 
 

@@ -15,7 +15,6 @@
  *
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- * main.c - main USB cmd loop and dispatch for Klondike mining firmware
  *
  */
 #include "GenericTypeDefs.h"
@@ -36,7 +35,7 @@ volatile WORKSTATUS Status = {'I',0,0,0,0,0,0,0,0, WORK_TICKS };
 WORKCFG Cfg = { DEFAULT_HASHCLOCK, DEFAULT_TEMP_TARGET, DEFAULT_TEMP_CRITICAL, DEFAULT_FAN_TARGET, 0 };
 WORKTASK WorkQue[MAX_WORK_COUNT];
 volatile BYTE ResultQue[MAX_RESULT_COUNT*4];
-DWORD ClockCfg[2] = { ((DWORD)DEFAULT_HASHCLOCK << 18) | CLOCK_LOW_CFG, CLOCK_HIGH_CFG };
+DWORD ClockCfg[2] = { ((DWORD)2*DEFAULT_HASHCLOCK << 18) | CLOCK_HALF_CFG, CLOCK_HIGH_CFG };
 
 DWORD NonceRanges[8];
 
@@ -58,12 +57,10 @@ void ProcessCmd(char *cmd)
             }
             SendCmdReply(cmd, (char *)&Status, sizeof(Status));
             break;
-        case 'A': // abort work, reply with hash completion count
+        case 'A': // abort work, reply status has hash completed count
             Status.WorkQC = WorkNow = 0;
             Status.State = 'R';
-            //WorkQue[ (WorkNow + Status.WorkQC++) & WORKMASK ] = *(WORKTASK *)(cmd+2);
-            //AsicPreCalc(&WorkQue[WorkNow]);
-            //AsicPushWork();
+            ResultQC = 0;
             SendCmdReply(cmd, (char *)&Status, sizeof(Status));
             break;
         case 'I': // return identity 
@@ -77,9 +74,14 @@ void ProcessCmd(char *cmd)
                 Cfg = *(WORKCFG *)(cmd+2);
                 if(Cfg.HashClock < MIN_HASH_CLOCK)
                     Cfg.HashClock = MIN_HASH_CLOCK;
+                if(Cfg.HashClock < HALF_HASH_CLOCK && Cfg.HashClock > MAX_HASH_CLOCK/2)
+                    Cfg.HashClock = MAX_HASH_CLOCK/2;
                 if(Cfg.HashClock > MAX_HASH_CLOCK)
                     Cfg.HashClock = MAX_HASH_CLOCK;
-                ClockCfg[0] = ((DWORD)Cfg.HashClock << 18) | CLOCK_LOW_CFG;
+                if(Cfg.HashClock < HALF_HASH_CLOCK)
+                    ClockCfg[0] = ((DWORD)2*Cfg.HashClock << 18) | CLOCK_HALF_CFG;
+                else
+                    ClockCfg[0] = ((DWORD)Cfg.HashClock << 18) | CLOCK_LOW_CFG;
                 HashTime = 256-(TICK_FACTOR/Cfg.HashClock);
                 PWM1DCH = Cfg.FanTarget;
             }
@@ -103,6 +105,7 @@ void AsicPushWork(void)
     WorkNow = (WorkNow+1) & WORKMASK;
     Status.HashCount = 0;
     Status.State ='W';
+    ResultQC = 0;
     if(--Status.WorkQC > 0)
         AsicPreCalc(&WorkQue[WorkNow]);
 }
@@ -141,7 +144,7 @@ void DetectAsics(void)
         NonceRanges[x] = StartNonce;
     AsicPreCalc(&TestWork);
     WorkQue[MAX_WORK_COUNT-1] = TestWork;
-    SendAsicData(&WorkQue[MAX_WORK_COUNT-1], (StartNonce & 0x80000000) ? DATA_ONE : DATA_ZERO);
+    //SendAsicData(&WorkQue[MAX_WORK_COUNT-1], (StartNonce & 0x80000000) ? DATA_ONE : DATA_ZERO);
     // wait for "push work time" for results to return and be counted
     Status.ChipCount = 1; // just for now
     
@@ -161,6 +164,10 @@ void WorkTick(void)
 {
     TMR0IF = 0;
     TMR0 = HashTime;
+    if(RCSTAbits.CREN == 0) {
+    RCSTAbits.CREN = 1; // renable Rx
+    ResultQC = 0;       // resync Rx
+    }
     if((Status.State == 'W') && (++Status.HashCount == Status.MaxCount)) {
         if(Status.WorkQC > 0) {
             Status.State = 'P'; // set state to push data and do asap
@@ -183,32 +190,30 @@ void WorkTick(void)
 
 void ResultRx(void)
 {
-    GIE = 0;
-    RCIF = 0;
-    
-    ResultQue[ResultQC] = ~RCREG;
+    while(RCIF) {
+        ResultQue[ResultQC] = ~RCREG;
 
-    if(RCSTAbits.OERR) { // error occured
-        Status.ErrorCount++;
-        RCSTAbits.CREN = 0; // clear error
-        RCSTAbits.CREN = 1; // renable
-    }
+        if(RCSTAbits.OERR) { // error occured
+            Status.ErrorCount++;
+            RCSTAbits.CREN = 0; // clear error, don't re-enable yet
+            return;
+        }
     
-    if((ResultQC & 3) == 3) {
-        BYTE Rw = ResultQC & 0xFC;
-        BYTE buf[7];
-        buf[0] = '=';
-        buf[1] = SlaveAddress;
-        buf[2] = Status.WorkID;
-        buf[3] = ResultQue[Rw++];
-        buf[4] = ResultQue[Rw++];
-        buf[5] = ResultQue[Rw++];
-        buf[6] = ResultQue[Rw];
+        if((ResultQC & 3) == 3) {
+            BYTE Rw = ResultQC & 0xFC;
+            BYTE buf[7];
+            buf[0] = '=';
+            buf[1] = SlaveAddress;
+            buf[2] = Status.WorkID;
+            buf[3] = ResultQue[Rw++];
+            buf[4] = ResultQue[Rw++];
+            buf[5] = ResultQue[Rw++];
+            buf[6] = ResultQue[Rw];
         
-        SendCmdReply(buf, buf+2, sizeof(DWORD)+1);
+            SendCmdReply(buf, buf+2, sizeof(DWORD)+1);
+        }
+        ResultQC = (ResultQC+1) & (MAX_RESULT_COUNT*4-1);
     }
-    ResultQC = (ResultQC+1) & (MAX_RESULT_COUNT*4-1);
-    GIE = 1;
 }
 
 void UpdateFanSpeed(void)

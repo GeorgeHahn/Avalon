@@ -5733,7 +5733,7 @@ bool submit_nonce(struct thr_info *thr, struct work *work, uint32_t nonce)
 	if (be32toh(hash2_32[7]) > diff1targ) {
 		applog(LOG_INFO, "%s%d: invalid nonce - HW error",
 		       thr->cgpu->drv->name, thr->cgpu->device_id);
-
+		sharelog("error", work);
 		inc_hw_errors(thr);
 		ret = false;
 		goto out;
