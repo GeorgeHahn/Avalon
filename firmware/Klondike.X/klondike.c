@@ -82,7 +82,7 @@ void ProcessCmd(char *cmd)
                     ClockCfg[0] = ((DWORD)2*Cfg.HashClock << 18) | CLOCK_HALF_CFG;
                 else
                     ClockCfg[0] = ((DWORD)Cfg.HashClock << 18) | CLOCK_LOW_CFG;
-                HashTime = 256-(TICK_FACTOR/Cfg.HashClock);
+                HashTime = 256-((DWORD)TICK_FACTOR/Cfg.HashClock);
                 PWM1DCH = Cfg.FanTarget;
             }
             SendCmdReply(cmd, (char *)&Cfg, sizeof(Cfg));
