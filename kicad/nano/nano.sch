@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Tue 25 Jun 2013 12:06:05 AM ICT
+EESchema Schematic File Version 2  date Sun 07 Jul 2013 03:35:31 AM ICT
 LIBS:k16
 LIBS:nano
 LIBS:power
@@ -38,7 +38,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Klondike 1 ASIC Miner"
-Date "24 jun 2013"
+Date "6 jul 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -1322,7 +1322,7 @@ L C-EU C3
 U 1 1 517F6EA0
 P 4569 3987
 F 0 "C3" V 4619 3914 22  0000 L BNN
-F 1 "6.8nF" V 4638 3881 22  0000 L CNN
+F 1 "10nF" V 4638 3881 22  0000 L CNN
 F 2 "" H 4569 3987 60  0001 C CNN
 F 3 "" H 4569 3987 60  0001 C CNN
 	1    4569 3987

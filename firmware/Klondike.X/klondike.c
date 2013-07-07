@@ -23,7 +23,9 @@
 #include "klondike.h"
 
 const IDENTITY ID = { 0x10, "K16", 0xDEADBEEF };
-const DWORD BankRanges[8] = { 0, 0x40000000, 0x2aaaaaaa, 0x20000000, 0x19999999, 0x15555555, 0x12492492, 0x10000000 };
+//const DWORD BankRanges[8] = { 0, 0x40000000, 0x2aaaaaaa, 0x20000000, 0x19999999, 0x15555555, 0x12492492, 0x10000000 };
+// testing single bank
+const DWORD BankRanges[8] = { 0, 0x80000000, 0x2aaaaaaa, 0x20000000, 0x19999999, 0x15555555, 0x12492492, 0x10000000 };
 const WORKTASK TestWork = { 0xFF, GOOD_MIDSTATE, GOOD_DATA };
 const DWORD GoodNonce = GOOD_NONCE;
 const DWORD StartNonce = (GOOD_NONCE - DETECT_DELAY_COUNT);
@@ -35,7 +37,7 @@ volatile WORKSTATUS Status = {'I',0,0,0,0,0,0,0,0, WORK_TICKS };
 WORKCFG Cfg = { DEFAULT_HASHCLOCK, DEFAULT_TEMP_TARGET, DEFAULT_TEMP_CRITICAL, DEFAULT_FAN_TARGET, 0 };
 WORKTASK WorkQue[MAX_WORK_COUNT];
 volatile BYTE ResultQue[MAX_RESULT_COUNT*4];
-DWORD ClockCfg[2] = { ((DWORD)2*DEFAULT_HASHCLOCK << 18) | CLOCK_HALF_CFG, CLOCK_HIGH_CFG };
+DWORD ClockCfg[2] = { (((DWORD)DEFAULT_HASHCLOCK*2) << 18) | CLOCK_HALF_CHG, CLOCK_HIGH_CFG };
 
 DWORD NonceRanges[8];
 
@@ -60,7 +62,7 @@ void ProcessCmd(char *cmd)
         case 'A': // abort work, reply status has hash completed count
             Status.WorkQC = WorkNow = 0;
             Status.State = 'R';
-            ResultQC = 0;
+            RCSTAbits.SPEN = 0;  // reset Rx
             SendCmdReply(cmd, (char *)&Status, sizeof(Status));
             break;
         case 'I': // return identity 
@@ -70,18 +72,18 @@ void ProcessCmd(char *cmd)
             SendCmdReply(cmd, (char *)&Status, sizeof(Status)); 
             break;
         case 'C': // set config values 
-            if( cmd[2] != 0 ) {
+            if( *(WORD *)&cmd[2] != 0 ) {
                 Cfg = *(WORKCFG *)(cmd+2);
                 if(Cfg.HashClock < MIN_HASH_CLOCK)
                     Cfg.HashClock = MIN_HASH_CLOCK;
-                if(Cfg.HashClock < HALF_HASH_CLOCK && Cfg.HashClock > MAX_HASH_CLOCK/2)
-                    Cfg.HashClock = MAX_HASH_CLOCK/2;
-                if(Cfg.HashClock > MAX_HASH_CLOCK)
-                    Cfg.HashClock = MAX_HASH_CLOCK;
-                if(Cfg.HashClock < HALF_HASH_CLOCK)
-                    ClockCfg[0] = ((DWORD)2*Cfg.HashClock << 18) | CLOCK_HALF_CFG;
+                if(Cfg.HashClock <= HALF_HASH_CLOCK && Cfg.HashClock >= MAX_HASH_CLOCK/2)
+                    Cfg.HashClock = MAX_HASH_CLOCK/2-1;
+                if(Cfg.HashClock >= MAX_HASH_CLOCK)
+                    Cfg.HashClock = MAX_HASH_CLOCK-1;
+                if(Cfg.HashClock <= HALF_HASH_CLOCK)
+                    ClockCfg[0] = (((DWORD)Cfg.HashClock*2) << 18) | CLOCK_HALF_CHG;
                 else
-                    ClockCfg[0] = ((DWORD)Cfg.HashClock << 18) | CLOCK_LOW_CFG;
+                    ClockCfg[0] = ((DWORD)Cfg.HashClock << 18) | CLOCK_LOW_CHG;
                 HashTime = 256-((DWORD)TICK_FACTOR/Cfg.HashClock);
                 PWM1DCH = Cfg.FanTarget;
             }
@@ -92,6 +94,8 @@ void ProcessCmd(char *cmd)
             Status.State = (cmd[2] == '1') ? 'R' : 'D';
             SendCmdReply(cmd, (char *)&Status, sizeof(Status));
             break;
+        case 'D':
+            SendCmdReply(cmd, (char *)&HashTime, sizeof(HashTime));
         default:
             break;
         }
@@ -142,14 +146,15 @@ void DetectAsics(void)
     Status.ChipCount = 0;
     for(BYTE x = 0; x < BankSize; x++)
         NonceRanges[x] = StartNonce;
-    AsicPreCalc(&TestWork);
-    WorkQue[MAX_WORK_COUNT-1] = TestWork;
-    //SendAsicData(&WorkQue[MAX_WORK_COUNT-1], (StartNonce & 0x80000000) ? DATA_ONE : DATA_ZERO);
+    WorkQue[0] = TestWork;
+    AsicPreCalc(&WorkQue[0]);
+    
+    //SendAsicData(&WorkQue[0], (StartNonce & 0x80000000) ? DATA_ONE : DATA_ZERO);
     // wait for "push work time" for results to return and be counted
-    Status.ChipCount = 1; // just for now
+    Status.ChipCount = 2; // just for testing
     
     // pre-calc nonce range values
-    BankSize = (Status.ChipCount+1)/2;
+    BankSize = Status.ChipCount; //(Status.ChipCount+1)/2;
     Status.MaxCount = WORK_TICKS / BankSize;
     NonceRanges[0] = 0;
     for(BYTE x = 1; x < BankSize; x++)
@@ -164,8 +169,8 @@ void WorkTick(void)
 {
     TMR0IF = 0;
     TMR0 = HashTime;
-    if(RCSTAbits.CREN == 0) {
-    RCSTAbits.CREN = 1; // renable Rx
+    if(RCSTAbits.SPEN == 0) {
+    RCSTAbits.SPEN = 1; // renable Rx
     ResultQC = 0;       // resync Rx
     }
     if((Status.State == 'W') && (++Status.HashCount == Status.MaxCount)) {
@@ -195,7 +200,7 @@ void ResultRx(void)
 
         if(RCSTAbits.OERR) { // error occured
             Status.ErrorCount++;
-            RCSTAbits.CREN = 0; // clear error, don't re-enable yet
+            RCSTAbits.SPEN = 0; // clear error, don't re-enable yet
             return;
         }
     

@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/chris/Dev/klondike/kicad/nano/nano.sch)
-    (date "Tue 25 Jun 2013 12:06:00 AM ICT")
+    (date "Sun 07 Jul 2013 03:34:24 AM ICT")
     (tool "eeschema (2013-mar-13)-testing"))
   (components
     (comp (ref C1)
@@ -239,11 +239,22 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 519C27F7))
     (comp (ref C3)
-      (value 6.8nF)
+      (value 10nF)
       (libsource (lib k16) (part C-EU))
       (sheetpath (names /) (tstamps /))
       (tstamp 517F6EA0)))
   (libparts
+    (libpart (lib k16) (part ASMDB)
+      (fields
+        (field (name Reference) X1)
+        (field (name Value) ASMDB)
+        (field (name Footprint) ~)
+        (field (name Datasheet) ~))
+      (pins
+        (pin (num 1) (name EN) (type BiDi))
+        (pin (num 2) (name GND) (type BiDi))
+        (pin (num 3) (name OUT) (type BiDi))
+        (pin (num 4) (name VCC) (type BiDi))))
     (libpart (lib k16) (part C-EU)
       (fields
         (field (name Reference) C)
@@ -307,43 +318,6 @@
         (pin (num P$46) (name VDD@26) (type BiDi))
         (pin (num P$47) (name DIN_N) (type input))
         (pin (num P$48) (name DIN_P) (type input))))
-    (libpart (lib k16) (part AP7217D/RT9166A)
-      (fields
-        (field (name Reference) U)
-        (field (name Value) AP7217D/RT9166A)
-        (field (name Footprint) ~)
-        (field (name Datasheet) ~))
-      (pins
-        (pin (num 1) (name GND) (type power_in))
-        (pin (num 2) (name VIN) (type power_in))
-        (pin (num 3) (name VOUT) (type power_out))))
-    (libpart (lib k16) (part ASMDB)
-      (fields
-        (field (name Reference) X1)
-        (field (name Value) ASMDB)
-        (field (name Footprint) ~)
-        (field (name Datasheet) ~))
-      (pins
-        (pin (num 1) (name EN) (type BiDi))
-        (pin (num 2) (name GND) (type BiDi))
-        (pin (num 3) (name OUT) (type BiDi))
-        (pin (num 4) (name VCC) (type BiDi))))
-    (libpart (lib nano) (part AP6502A)
-      (fields
-        (field (name Reference) U)
-        (field (name Value) AP6502A)
-        (field (name Footprint) ~)
-        (field (name Datasheet) ~))
-      (pins
-        (pin (num 1) (name BST) (type BiDi))
-        (pin (num 2) (name IN) (type BiDi))
-        (pin (num 3) (name SW) (type BiDi))
-        (pin (num 4) (name GND) (type BiDi))
-        (pin (num 5) (name FB) (type BiDi))
-        (pin (num 6) (name COMP) (type BiDi))
-        (pin (num 7) (name EN) (type BiDi))
-        (pin (num 8) (name SS) (type BiDi))
-        (pin (num 9) (name GND) (type power_in))))
     (libpart (lib k16) (part 74AUP1G02)
       (description "Quad Nor2")
       (footprints
@@ -360,6 +334,32 @@
         (pin (num 3) (name GND) (type power_in))
         (pin (num 4) (name ~) (type output))
         (pin (num 5) (name VCC) (type power_in))))
+    (libpart (lib k16) (part AP7217D/RT9166A)
+      (fields
+        (field (name Reference) U)
+        (field (name Value) AP7217D/RT9166A)
+        (field (name Footprint) ~)
+        (field (name Datasheet) ~))
+      (pins
+        (pin (num 1) (name GND) (type power_in))
+        (pin (num 2) (name VIN) (type power_in))
+        (pin (num 3) (name VOUT) (type power_out))))
+    (libpart (lib nano) (part AP6502A)
+      (fields
+        (field (name Reference) U)
+        (field (name Value) AP6502A)
+        (field (name Footprint) ~)
+        (field (name Datasheet) ~))
+      (pins
+        (pin (num 1) (name BST) (type BiDi))
+        (pin (num 2) (name IN) (type BiDi))
+        (pin (num 3) (name SW) (type BiDi))
+        (pin (num 4) (name GND) (type BiDi))
+        (pin (num 5) (name FB) (type BiDi))
+        (pin (num 6) (name COMP) (type BiDi))
+        (pin (num 7) (name EN) (type BiDi))
+        (pin (num 8) (name SS) (type BiDi))
+        (pin (num 9) (name GND) (type power_in))))
     (libpart (lib k16) (part L0805)
       (fields
         (field (name Reference) _chris)
@@ -462,10 +462,10 @@
         (pin (num 1) (name A) (type passive))
         (pin (num 2) (name K) (type passive)))))
   (libraries
-    (library (logical k16)
-      (uri /home/chris/Dev/klondike/kicad/k16/k16.lib))
     (library (logical nano)
-      (uri nano.lib)))
+      (uri nano.lib))
+    (library (logical k16)
+      (uri /home/chris/Dev/klondike/kicad/k16/k16.lib)))
   (nets
     (net (code 1) (name "")
       (node (ref U3) (pin P$13)))

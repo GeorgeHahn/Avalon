@@ -24,6 +24,7 @@ import sys, thread, time
 from struct import *
 
 workid = addr = 0
+last = time.time()
 
 
 Work =   ["4375c3b7a27cc936f295a6140358e965319322e7cfd11e137df42ea60864a675", "218d522051d547d51a00c94e", "b2cc9f74", "accept"]
@@ -52,7 +53,7 @@ def sendcmd(cmd, data=""):
 		pass
 
 def chkreply():
-	global dev
+	global dev, last
 	while True:
 		try:
 			data = dev.read(0x81, 15, 0, 500)
@@ -63,26 +64,30 @@ def chkreply():
 			pass
 		else:
 			data = ''.join([chr(x) for x in data])
-			#print "\n"+' '.join(x.encode('hex') for x in data)
+			print "\n"+' '.join(x.encode('hex') for x in data)
 			
 			if len(data) > 0:
 				try:
 					cmd = data[0]
-					if cmd in 'WASED':
+					if cmd in 'WASE':
 						print "\nState:%c, ASICs:%u, Slaves:%u\nWorkQ:%u, WorkID:%02x, Temp:%u, Fan:%u, ErrCount:%u, HashCount:%u, MaxCount:%u" % unpack("=cBBBBBBBHH", data[2:14])
 					elif cmd == 'C':
 						print "\nClock:%d, Target Temp:%u, Critical Temp:%u, Target Fan: %u, Pad:%u" % unpack("=HBBBB", data[2:8])
 					elif cmd == 'I':
 						print "\nVersion:%02x, ProductID:%s, Serial#:%08x" % unpack("=B7sL", data[2:14])
 					elif cmd == '=':
+						now = time.time()
 						w,v = unpack("=BL", data[2:7])
+						print "\nNonce Found - WorkID:%02x, Value:%08x (%d secs)" % (w, v, now-last),
+						last = now
 						n, = unpack(">L", pack("<L", v - 0xC0))
 						chk = "GOOD" if ("%x" % n) == Work[2] else "BAD"
-						print "\nNonce Found - WorkID:%02x, Value:%08x, Nonce:%08x %s" % (w, v, n, chk)
+						print ", Nonce:%08x %s" % (n, chk)
+						
 					else:
 						print "\n"+' '.join(x.encode('hex') for x in data)
 				except Exception, e:
-					print "\n<framing error>"
+					print "\n<framing error>", e
 			print "Cmds [WAISCE.Q]: "
 
 			
@@ -119,12 +124,16 @@ if __name__ == '__main__':
 				data += pack("=B", int(raw_input("Critical Temp: ")))
 				data += pack("=B", int(raw_input("Target Fan: "))) + chr(0)
 			else:
-				data = chr(0)
+				data = chr(0)+chr(0)
 		elif cmd == 'E':
 			data = raw_input("1 (enable) or 0 (disable): ")
+		elif cmd == 'D':
+			data = raw_input("enter clock low byte: ")
+			data = data.decode('hex')
 		elif cmd in 'W':
 			workid = (workid+1) % 256
 			data = chr(workid) + Work[0].decode('hex') + Work[1].decode('hex')
+			last = time.time()
 
 		sendcmd(cmd, data)
 

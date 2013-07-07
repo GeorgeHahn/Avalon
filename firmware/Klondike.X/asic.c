@@ -46,11 +46,12 @@ void SendAsicData(WORKTASK *work, BYTE split)
     Send32();
     send32_data = (WORD)&PrecalcHashes; send32_count = 1;
     Send32();
-    last_bit0 = last_bit1 = split;
+    // disable for single bank last_bit0 = last_bit1 = split;
     send32_data = (WORD)&NonceRanges; send32_count = BankSize;
     Send32();
     HASH_IDLE();
     GIE = 1;
+    ClockCfg[0] = ClockCfg[0] & ~CLOCK_NOCHG_MASK;
 }
 
 void Send32(void)

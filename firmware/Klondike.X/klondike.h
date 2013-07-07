@@ -31,17 +31,18 @@ extern "C" {
 #define WORKMASK            MAX_WORK_COUNT-1
 #define USB_RECORD_SIZE     15
 
-// set values for ASIC PLL, we use R=32 N=Freq*2 in MHz
-#define WORK_TICKS          33554 // testing @ half bank, usually 16777
-#define TICK_FACTOR         12000
-#define CLOCK_R_VALUE       32
-#define DEFAULT_HASHCLOCK   256
-#define CLOCK_LOW_CFG       0x00030007
-#define CLOCK_HALF_CFG      0x00030017
-#define CLOCK_HIGH_CFG      0x00000174
-#define MIN_HASH_CLOCK     	256
-#define HALF_HASH_CLOCK     500
-#define MAX_HASH_CLOCK      900
+// set values for ASIC PLL, we use R=16 N=Freq in MHz
+#define WORK_TICKS          14740
+#define TICK_FACTOR         6000
+#define CLOCK_R_VALUE       16
+#define DEFAULT_HASHCLOCK   128
+#define CLOCK_NOCHG_MASK    0x00000002
+#define CLOCK_LOW_CHG       0x00030007
+#define CLOCK_HALF_CHG      0x00030017
+#define CLOCK_HIGH_CFG      0x00000172
+#define MIN_HASH_CLOCK      128
+#define HALF_HASH_CLOCK     250
+#define MAX_HASH_CLOCK      450
 
 // default temp/fan values
 #define DEFAULT_TEMP_TARGET     60 
