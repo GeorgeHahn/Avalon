@@ -62,7 +62,6 @@ void ProcessCmd(char *cmd)
         case 'A': // abort work, reply status has hash completed count
             Status.WorkQC = WorkNow = 0;
             Status.State = 'R';
-            RCSTAbits.SPEN = 0;  // reset Rx
             SendCmdReply(cmd, (char *)&Status, sizeof(Status));
             break;
         case 'I': // return identity 
@@ -109,7 +108,7 @@ void AsicPushWork(void)
     WorkNow = (WorkNow+1) & WORKMASK;
     Status.HashCount = 0;
     Status.State ='W';
-    ResultQC = 0;
+    RESET_RX();
     if(--Status.WorkQC > 0)
         AsicPreCalc(&WorkQue[WorkNow]);
 }

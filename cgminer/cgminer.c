@@ -144,6 +144,7 @@ bool opt_delaynet;
 bool opt_disable_pool;
 char *opt_icarus_options = NULL;
 char *opt_icarus_timing = NULL;
+char *opt_klondike_options = NULL;
 bool opt_worktime;
 #ifdef USE_AVALON
 char *opt_avalon_options = NULL;
@@ -892,6 +893,15 @@ static char *set_icarus_timing(const char *arg)
 }
 #endif
 
+#ifdef USE_KLONDIKE
+static char *set_klondike_options(const char *arg)
+{
+	opt_set_charp(arg, &opt_klondike_options);
+
+	return NULL;
+}
+#endif
+
 #ifdef USE_AVALON
 static char *set_avalon_options(const char *arg)
 {
@@ -1054,6 +1064,11 @@ static struct opt_table opt_config_table[] = {
 		     opt_hidden),
 	OPT_WITH_ARG("--icarus-timing",
 		     set_icarus_timing, NULL, NULL,
+		     opt_hidden),
+#endif
+#ifdef USE_KLONDIKE
+	OPT_WITH_ARG("--klondike-options",
+		     set_klondike_options, NULL, NULL,
 		     opt_hidden),
 #endif
 #ifdef USE_AVALON
@@ -4141,6 +4156,8 @@ void write_config(FILE *fcfg)
 		fprintf(fcfg, ",\n\"icarus-options\" : \"%s\"", json_escape(opt_icarus_options));
 	if (opt_icarus_timing)
 		fprintf(fcfg, ",\n\"icarus-timing\" : \"%s\"", json_escape(opt_icarus_timing));
+	if (opt_klondike_options)
+		fprintf(fcfg, ",\n\"klondike-options\" : \"%s\"", json_escape(opt_klondike_options));
 #ifdef USE_USBUTILS
 	if (opt_usb_select)
 		fprintf(fcfg, ",\n\"usb\" : \"%s\"", json_escape(opt_usb_select));

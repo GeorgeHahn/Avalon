@@ -170,6 +170,7 @@ void SendCmdReply(char *cmd, BYTE *ReplyBuf, BYTE count);
 #define HASH_TRIS_1N    TRISCbits.TRISC3
 #define HASH_IDLE()     LATC = 0xD8;
 
+#define RESET_RX()      { RCSTAbits.SPEN = 0;RCSTAbits.SPEN = 1;ResultQC = 0; }
 #define INPUT_PIN 1
 #define OUTPUT_PIN 0
 
