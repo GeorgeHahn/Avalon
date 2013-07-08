@@ -213,8 +213,8 @@ void ResultRx(void)
             buf[4] = ResultQue[Rw++];
             buf[5] = ResultQue[Rw++];
             buf[6] = ResultQue[Rw];
-        
-            SendCmdReply(buf, buf+2, sizeof(DWORD)+1);
+            if(Status.State == 'W')
+                SendCmdReply(buf, buf+2, sizeof(DWORD)+1);
         }
         ResultQC = (ResultQC+1) & (MAX_RESULT_COUNT*4-1);
     }
