@@ -21,13 +21,14 @@
 
 import usb
 import sys, thread, time
+from datetime import datetime
 from struct import *
 
 workid = addr = 0
-last = time.time()
+last = datetime.now()
 
 
-#Work =   ["4375c3b7a27cc936f295a6140358e965319322e7cfd11e137df42ea60864a675", "218d522051d547d51a00c94e", "b2cc9f74", "accept"]
+Work =   ["4375c3b7a27cc936f295a6140358e965319322e7cfd11e137df42ea60864a675", "218d522051d547d51a00c94e", "b2cc9f74", "accept"]
 #Work =  ["e8312278a01c1695a12a8940a7c1ec0a9062287161c0a9e3984dddf6e5fd3137", "b0974bdb51d547cf1a00c94e", "29496825", "error"]
 
 #Work = ["93174bc39d32fa7a0c89b2842a18a4d0a9ff6220d4951ba9b4781087aa54a48a", "ab81a7e851d4f0a91a00c94e", "3e6a9aeb", "accept"]
@@ -35,7 +36,7 @@ last = time.time()
 #Work = ["81c7594ff688fd5c5b90c19b0bedca21fe79b43c93952949f55e88d58e013774", "1cf5d12e51d4ee1c1a00c94e", "20cde4d0", "accept"]
 #Work = ["eb4ec53ef729fee51f397516a41bfcb46fd8507d3fb50ccc073bc3651ab5ef06", "54cef98851d4ecba1a00c94e", "35237f32", "accept"]
 #Work = ["db7db74e7e606b6b5eb07c56395bc4277cf55d65cc025bf500c7e4be72f22aa1", "43ff3f6551d4ec301a00c94e", "42d57218", "accept"]
-Work = ["b48ef5555147d05c5303eec6cdbc19eaa8d5de0024a3ab910f833ec623a10a6e", "dda1034351d4e8801a00c94e", "1536033e", "accept"]
+#Work = ["b48ef5555147d05c5303eec6cdbc19eaa8d5de0024a3ab910f833ec623a10a6e", "dda1034351d4e8801a00c94e", "1536033e", "accept"]
 #Work = ["e6485394a1b78cb7333a94d612cb40e371101d15933fdf2de14ed62b1e093d73", "8b3fa3b451d4ee1c1a00c94e", "8358be9e", "error"]
 #Work = ["c94826c30b2e66f1c9eb1d2c4032f869b1bfa949bdedf24f6a31c0f60837f618", "451b737e51d4e7631a00c94e", "aa2c5701", "error"]
 #Work = ["503f522351026a56cc004aa8f1e5decb9640022cd76815739e4d563534175fed", "8cf6b5fd51bc15081a011337", "9fd570cc", "accept"]
@@ -64,7 +65,7 @@ def chkreply():
 			pass
 		else:
 			data = ''.join([chr(x) for x in data])
-			print "\n"+' '.join(x.encode('hex') for x in data)
+			#print "\n"+' '.join(x.encode('hex') for x in data)
 			
 			if len(data) > 0:
 				try:
@@ -76,14 +77,14 @@ def chkreply():
 					elif cmd == 'I':
 						print "\nVersion:%02x, ProductID:%s, Serial#:%08x" % unpack("=B7sL", data[2:14])
 					elif cmd == '=':
-						now = time.time()
+						now = datetime.now()
+						diff = now - last
 						w,v = unpack("=BL", data[2:7])
-						print "\nNonce Found - WorkID:%02x, Value:%08x (%d secs)" % (w, v, now-last),
+						print "\nNonce Found - WorkID:%02x, Value:%08x (%.3f secs)" % (w, v, diff.total_seconds()),
 						last = now
 						n, = unpack(">L", pack("<L", v - 0xC0))
 						chk = "GOOD" if ("%x" % n) == Work[2] else "BAD"
 						print ", Nonce:%08x %s" % (n, chk)
-						
 					else:
 						print "\n"+' '.join(x.encode('hex') for x in data)
 				except Exception, e:
@@ -103,37 +104,35 @@ if __name__ == '__main__':
 	thread.start_new_thread (chkreply, ())
 
 	while True: 
-		cmd = raw_input("").upper()
-		if cmd == "":
+		cmds = raw_input("").upper()
+		if cmds == "":
 			continue
-		data = ""
-		if cmd == 'Q':
-			break
-		elif cmd =='.':
-			addr = raw_input("Target Address: ")
-			if addr == "":
-				addr = 0
-			addr = int(addr)
-			print "Address changed to ", addr
-			continue
-		elif cmd == 'C':
-			clk = raw_input("Clock (or blank for query only): ")
-			if clk != "":
-				data = pack("=H", int(clk))
-				data += pack("=B", int(raw_input("Target Temp: ")))
-				data += pack("=B", int(raw_input("Critical Temp: ")))
-				data += pack("=B", int(raw_input("Target Fan: "))) + chr(0)
-			else:
-				data = chr(0)+chr(0)
-		elif cmd == 'E':
-			data = raw_input("1 (enable) or 0 (disable): ")
-		elif cmd == 'D':
-			data = raw_input("enter clock low byte: ")
-			data = data.decode('hex')
-		elif cmd in 'W':
-			workid = (workid+1) % 256
-			data = chr(workid) + Work[0].decode('hex') + Work[1].decode('hex')
-			last = time.time()
-
-		sendcmd(cmd, data)
+		for cmd in cmds:
+			data = ""
+			if cmd == 'Q':
+				exit()
+			elif cmd =='.':
+				addr = raw_input("Target Address: ")
+				if addr == "":
+					addr = 0
+				addr = int(addr)
+				print "Address changed to ", addr
+				continue
+			elif cmd == 'C':
+				clk = raw_input("Clock (or blank for query only): ")
+				if clk != "":
+					data = pack("=H", int(clk))
+					data += pack("=B", int(raw_input("Target Temp: ")))
+					data += pack("=B", int(raw_input("Critical Temp: ")))
+					data += pack("=B", int(raw_input("Target Fan: "))) + chr(0)
+				else:
+					data = chr(0)+chr(0)
+			elif cmd == 'E':
+				data = raw_input("1 (enable) or 0 (disable): ")
+			elif cmd in 'W':
+				workid = (workid+1) % 256
+				data = chr(workid) + Work[0].decode('hex') + Work[1].decode('hex')
+				last = datetime.now()
+	
+			sendcmd(cmd, data)
 

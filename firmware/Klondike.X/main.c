@@ -44,8 +44,8 @@
 #define IN_DATA_BUFFER_ADDRESS_TAG @IN_DATA_BUFFER_ADDRESS
 #define OUT_DATA_BUFFER_ADDRESS_TAG @OUT_DATA_BUFFER_ADDRESS 
 
-unsigned char INPacket[USBGEN_EP_SIZE] IN_DATA_BUFFER_ADDRESS_TAG;		//User application buffer for sending IN packets to the host
-unsigned char OUTPacket[USBGEN_EP_SIZE] OUT_DATA_BUFFER_ADDRESS_TAG;	//User application buffer for receiving and holding OUT packets sent from the host
+unsigned char INPacket[USBGEN_EP_SIZE] IN_DATA_BUFFER_ADDRESS_TAG;      //User application buffer for sending IN packets to the host
+unsigned char OUTPacket[USBGEN_EP_SIZE] OUT_DATA_BUFFER_ADDRESS_TAG;    //User application buffer for receiving and holding OUT packets sent from the host
 
 USB_HANDLE USBGenericOutHandle;  //USB handle.  Must be initialized to 0 at startup.
 USB_HANDLE USBGenericInHandle;   //USB handle.  Must be initialized to 0 at startup.
@@ -68,12 +68,15 @@ void SendCmdReply(char *cmd, BYTE *ReplyBuf, BYTE count);
 
 void interrupt ISRCode()
 {
-    if(RCIF)
+    //if(RCIF)
+    if(IOCBF)
         ResultRx();
-    if(TMR0IF)
-        WorkTick();
-    if(TMR1GIF)
-        UpdateFanSpeed();
+    //if(TMR0IF)
+    //    WorkTick();
+    //if(RCIF)
+    //    ResultRx();
+    //if(TMR1GIF)
+    //    UpdateFanSpeed();
     /*if(BCL1IF) {
         BCL1IF = 0; I2CState.Next = 0;
     }
@@ -112,25 +115,28 @@ int main(void)
             InitI2CMaster();*/
 
         #if defined(USB_POLLING)
-	// Check bus status and service USB interrupts.
+    // Check bus status and service USB interrupts.
         USBDeviceTasks(); // Interrupt or polling method.  If using polling, must call
-        				  // this function periodically.  This function will take care
-        				  // of processing and responding to SETUP transactions 
-        				  // (such as during the enumeration process when you first
-        				  // plug in).  USB hosts require that USB devices should accept
-        				  // and process SETUP packets in a timely fashion.  Therefore,
-        				  // when using polling, this function should be called 
-        				  // regularly (such as once every 1.8ms or faster** [see 
-        				  // inline code comments in usb_device.c for explanation when
-        				  // "or faster" applies])  In most cases, the USBDeviceTasks() 
-        				  // function does not take very long to execute (ex: <100 
-        				  // instruction cycles) before it returns.
+                          // this function periodically.  This function will take care
+                          // of processing and responding to SETUP transactions 
+                          // (such as during the enumeration process when you first
+                          // plug in).  USB hosts require that USB devices should accept
+                          // and process SETUP packets in a timely fashion.  Therefore,
+                          // when using polling, this function should be called 
+                          // regularly (such as once every 1.8ms or faster** [see 
+                          // inline code comments in usb_device.c for explanation when
+                          // "or faster" applies])  In most cases, the USBDeviceTasks() 
+                          // function does not take very long to execute (ex: <100 
+                          // instruction cycles) before it returns.
         #endif
+        
+        if(TMR0IF)
+            WorkTick();
 
         if(Status.State == 'P'){
             AsicPushWork();
         }
-    				  
+                      
         ProcessIO();  
               
     }//end while
@@ -152,11 +158,11 @@ static void InitializeSystem(void)
     USBGenericOutHandle = 0;
     USBGenericInHandle = 0;
     WQI = WQX = 0;
-	
+    
     UserInit();
 
-    USBDeviceInit();	//usb_device.c.  Initializes USB module SFRs and firmware
-    					//variables to known states.
+    USBDeviceInit();    //usb_device.c.  Initializes USB module SFRs and firmware
+                        //variables to known states.
 }//end InitializeSystem
 
 
@@ -164,7 +170,7 @@ void UserInit(void)
 {
     InitLED();
     InitTempSensor();
-    InitFAN();
+    //InitFAN();
     InitWorkTick();
     //InitI2CMaster();
     InitResultRx();
@@ -182,7 +188,7 @@ void ProcessIO(void)
             ProcessCmd(OUTPacket);
             I2CCount = 0;
             }
-	}
+    }
     else*/
     if(!USBHandleBusy(USBGenericOutHandle)) {
         //if( OUTPacket[1] != MASTER_ADDRESS )
@@ -256,22 +262,22 @@ void SendCmdReply(char *cmd, BYTE *data, BYTE count)
  *****************************************************************************/
 void USBCBSuspend(void)
 {
-	//Example power saving code.  Insert appropriate code here for the desired
-	//application behavior.  If the microcontroller will be put to sleep, a
-	//process similar to that shown below may be used:
-	
-	//ConfigureIOPinsForLowPower();
-	//SaveStateOfAllInterruptEnableBits();
-	//DisableAllInterruptEnableBits();
-	//EnableOnlyTheInterruptsWhichWillBeUsedToWakeTheMicro();	//should enable at least USBActivityIF as a wake source
-	//Sleep();
-	//RestoreStateOfAllPreviouslySavedInterruptEnableBits();	//Preferrably, this should be done in the USBCBWakeFromSuspend() function instead.
-	//RestoreIOPinsToNormal();									//Preferrably, this should be done in the USBCBWakeFromSuspend() function instead.
+    //Example power saving code.  Insert appropriate code here for the desired
+    //application behavior.  If the microcontroller will be put to sleep, a
+    //process similar to that shown below may be used:
+    
+    //ConfigureIOPinsForLowPower();
+    //SaveStateOfAllInterruptEnableBits();
+    //DisableAllInterruptEnableBits();
+    //EnableOnlyTheInterruptsWhichWillBeUsedToWakeTheMicro();   //should enable at least USBActivityIF as a wake source
+    //Sleep();
+    //RestoreStateOfAllPreviouslySavedInterruptEnableBits();    //Preferrably, this should be done in the USBCBWakeFromSuspend() function instead.
+    //RestoreIOPinsToNormal();                                  //Preferrably, this should be done in the USBCBWakeFromSuspend() function instead.
 
-	//IMPORTANT NOTE: Do not clear the USBActivityIF (ACTVIF) bit here.  This bit is 
-	//cleared inside the usb_device.c file.  Clearing USBActivityIF here will cause 
-	//things to not work as intended.	
-	
+    //IMPORTANT NOTE: Do not clear the USBActivityIF (ACTVIF) bit here.  This bit is 
+    //cleared inside the usb_device.c file.  Clearing USBActivityIF here will cause 
+    //things to not work as intended.   
+    
 }
 
 /******************************************************************************
@@ -286,25 +292,25 @@ void USBCBSuspend(void)
  * Side Effects:    None
  *
  * Overview:        The host may put USB peripheral devices in low power
- *					suspend mode (by "sending" 3+ms of idle).  Once in suspend
- *					mode, the host may wake the device back up by sending non-
- *					idle state signalling.
- *					
- *					This call back is invoked when a wakeup from USB suspend 
- *					is detected.
+ *                  suspend mode (by "sending" 3+ms of idle).  Once in suspend
+ *                  mode, the host may wake the device back up by sending non-
+ *                  idle state signalling.
+ *                  
+ *                  This call back is invoked when a wakeup from USB suspend 
+ *                  is detected.
  *
  * Note:            None
  *****************************************************************************/
 void USBCBWakeFromSuspend(void)
 {
-	// If clock switching or other power savings measures were taken when
-	// executing the USBCBSuspend() function, now would be a good time to
-	// switch back to normal full power run mode conditions.  The host allows
-	// a few milliseconds of wakeup time, after which the device must be 
-	// fully back to normal, and capable of receiving and processing USB
-	// packets.  In order to do this, the USB module must receive proper
-	// clocking (IE: 48MHz clock must be available to SIE for full speed USB
-	// operation).
+    // If clock switching or other power savings measures were taken when
+    // executing the USBCBSuspend() function, now would be a good time to
+    // switch back to normal full power run mode conditions.  The host allows
+    // a few milliseconds of wakeup time, after which the device must be 
+    // fully back to normal, and capable of receiving and processing USB
+    // packets.  In order to do this, the USB module must receive proper
+    // clocking (IE: 48MHz clock must be available to SIE for full speed USB
+    // operation).
 }
 
 /********************************************************************
@@ -353,21 +359,21 @@ void USBCBErrorHandler(void)
     // No need to clear UEIR to 0 here.
     // Callback caller is already doing that.
 
-	// Typically, user firmware does not need to do anything special
-	// if a USB error occurs.  For example, if the host sends an OUT
-	// packet to your device, but the packet gets corrupted (ex:
-	// because of a bad connection, or the user unplugs the
-	// USB cable during the transmission) this will typically set
-	// one or more USB error interrupt flags.  Nothing specific
-	// needs to be done however, since the SIE will automatically
-	// send a "NAK" packet to the host.  In response to this, the
-	// host will normally retry to send the packet again, and no
-	// data loss occurs.  The system will typically recover
-	// automatically, without the need for application firmware
-	// intervention.
-	
-	// Nevertheless, this callback function is provided, such as
-	// for debugging purposes.
+    // Typically, user firmware does not need to do anything special
+    // if a USB error occurs.  For example, if the host sends an OUT
+    // packet to your device, but the packet gets corrupted (ex:
+    // because of a bad connection, or the user unplugs the
+    // USB cable during the transmission) this will typically set
+    // one or more USB error interrupt flags.  Nothing specific
+    // needs to be done however, since the SIE will automatically
+    // send a "NAK" packet to the host.  In response to this, the
+    // host will normally retry to send the packet again, and no
+    // data loss occurs.  The system will typically recover
+    // automatically, without the need for application firmware
+    // intervention.
+    
+    // Nevertheless, this callback function is provided, such as
+    // for debugging purposes.
 }
 
 
@@ -383,19 +389,19 @@ void USBCBErrorHandler(void)
  * Side Effects:    None
  *
  * Overview:        When SETUP packets arrive from the host, some
- * 					firmware must process the request and respond
- *					appropriately to fulfill the request.  Some of
- *					the SETUP packets will be for standard
- *					USB "chapter 9" (as in, fulfilling chapter 9 of
- *					the official USB specifications) requests, while
- *					others may be specific to the USB device class
- *					that is being implemented.  For example, a HID
- *					class device needs to be able to respond to
- *					"GET REPORT" type of requests.  This
- *					is not a standard USB chapter 9 request, and 
- *					therefore not handled by usb_device.c.  Instead
- *					this request should be handled by class specific 
- *					firmware, such as that contained in usb_function_hid.c.
+ *                  firmware must process the request and respond
+ *                  appropriately to fulfill the request.  Some of
+ *                  the SETUP packets will be for standard
+ *                  USB "chapter 9" (as in, fulfilling chapter 9 of
+ *                  the official USB specifications) requests, while
+ *                  others may be specific to the USB device class
+ *                  that is being implemented.  For example, a HID
+ *                  class device needs to be able to respond to
+ *                  "GET REPORT" type of requests.  This
+ *                  is not a standard USB chapter 9 request, and 
+ *                  therefore not handled by usb_device.c.  Instead
+ *                  this request should be handled by class specific 
+ *                  firmware, such as that contained in usb_function_hid.c.
  *
  * Note:            None
  *****************************************************************************/
@@ -417,10 +423,10 @@ void USBCBCheckOtherReq(void)
  * Side Effects:    None
  *
  * Overview:        The USBCBStdSetDscHandler() callback function is
- *					called when a SETUP, bRequest: SET_DESCRIPTOR request
- *					arrives.  Typically SET_DESCRIPTOR requests are
- *					not used in most applications, and it is
- *					optional to support this type of request.
+ *                  called when a SETUP, bRequest: SET_DESCRIPTOR request
+ *                  arrives.  Typically SET_DESCRIPTOR requests are
+ *                  not used in most applications, and it is
+ *                  optional to support this type of request.
  *
  * Note:            None
  *****************************************************************************/
@@ -443,10 +449,10 @@ void USBCBStdSetDscHandler(void)
  *
  * Overview:        This function is called when the device becomes
  *                  initialized, which occurs after the host sends a
- * 					SET_CONFIGURATION (wValue not = 0) request.  This 
- *					callback function should initialize the endpoints 
- *					for the device's usage according to the current 
- *					configuration.
+ *                  SET_CONFIGURATION (wValue not = 0) request.  This 
+ *                  callback function should initialize the endpoints 
+ *                  for the device's usage according to the current 
+ *                  configuration.
  *
  * Note:            None
  *****************************************************************************/
@@ -470,31 +476,31 @@ void USBCBInitEP(void)
  * Side Effects:    None
  *
  * Overview:        The USB specifications allow some types of USB
- * 					peripheral devices to wake up a host PC (such
- *					as if it is in a low power suspend to RAM state).
- *					This can be a very useful feature in some
- *					USB applications, such as an Infrared remote
- *					control	receiver.  If a user presses the "power"
- *					button on a remote control, it is nice that the
- *					IR receiver can detect this signalling, and then
- *					send a USB "command" to the PC to wake up.
- *					
- *					The USBCBSendResume() "callback" function is used
- *					to send this special USB signalling which wakes 
- *					up the PC.  This function may be called by
- *					application firmware to wake up the PC.  This
- *					function will only be able to wake up the host if
+ *                  peripheral devices to wake up a host PC (such
+ *                  as if it is in a low power suspend to RAM state).
+ *                  This can be a very useful feature in some
+ *                  USB applications, such as an Infrared remote
+ *                  control receiver.  If a user presses the "power"
+ *                  button on a remote control, it is nice that the
+ *                  IR receiver can detect this signalling, and then
+ *                  send a USB "command" to the PC to wake up.
+ *                  
+ *                  The USBCBSendResume() "callback" function is used
+ *                  to send this special USB signalling which wakes 
+ *                  up the PC.  This function may be called by
+ *                  application firmware to wake up the PC.  This
+ *                  function will only be able to wake up the host if
  *                  all of the below are true:
- *					
- *					1.  The USB driver used on the host PC supports
- *						the remote wakeup capability.
- *					2.  The USB configuration descriptor indicates
- *						the device is remote wakeup capable in the
- *						bmAttributes field.
- *					3.  The USB host PC is currently sleeping,
- *						and has previously sent your device a SET 
- *						FEATURE setup packet which "armed" the
- *						remote wakeup capability.   
+ *                  
+ *                  1.  The USB driver used on the host PC supports
+ *                      the remote wakeup capability.
+ *                  2.  The USB configuration descriptor indicates
+ *                      the device is remote wakeup capable in the
+ *                      bmAttributes field.
+ *                  3.  The USB host PC is currently sleeping,
+ *                      and has previously sent your device a SET 
+ *                      FEATURE setup packet which "armed" the
+ *                      remote wakeup capability.   
  *
  *                  If the host has not armed the device to perform remote wakeup,
  *                  then this function will return without actually performing a
@@ -503,7 +509,7 @@ void USBCBInitEP(void)
  *                  wakeup must not drive remote wakeup signalling onto the bus;
  *                  doing so will cause USB compliance testing failure.
  *                  
- *					This callback should send a RESUME signal that
+ *                  This callback should send a RESUME signal that
  *                  has the period of 1-15ms.
  *
  * Note:            This function does nothing and returns quickly, if the USB

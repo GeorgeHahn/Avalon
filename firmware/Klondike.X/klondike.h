@@ -27,15 +27,15 @@ extern "C" {
 
 #define MASTER_ADDRESS      0x00
 #define MAX_WORK_COUNT      4   // must be binary multiple
-#define MAX_RESULT_COUNT    2   // must be binary multiple
 #define WORKMASK            MAX_WORK_COUNT-1
+#define MAX_RESULT_COUNT    2
 #define USB_RECORD_SIZE     15
 
 // set values for ASIC PLL, we use R=16 N=Freq in MHz
-#define WORK_TICKS          14740
-#define TICK_FACTOR         6000
+#define WORK_TICKS          16384   // 2^32 total / 2^18 hashes per tick
+#define TICK_TOTAL          12000   // 2^18 / 21.33uS TMR0 period (adjusted down for push time)
 #define CLOCK_R_VALUE       16
-#define DEFAULT_HASHCLOCK   128
+#define DEFAULT_HASHCLOCK   256
 #define CLOCK_NOCHG_MASK    0x00000002
 #define CLOCK_LOW_CHG       0x00030007
 #define CLOCK_HALF_CHG      0x00030017
@@ -50,7 +50,7 @@ extern "C" {
 #define DEFAULT_FAN_TARGET      128 // is 50%
 
 // number of hashes to delay results while test work pushed
-// eg. 390uS push time @ 256 MHz startup clock = 99840
+// 390uS push time @ 256 MHz startup clock = 99840 hashes
 #define DETECT_DELAY_COUNT  109980
 #define GOOD_NONCE          0xe3d69bc9
 #define GOOD_MIDSTATE       { 0x5fddb5bc,0x00bdafd2,0x144684c7,0x19c68fa2,0x27d0a8e3,0x34ad84b2,0xa92c66be,0x3e99a4fd }
@@ -77,6 +77,7 @@ typedef struct _workstatus {
     BYTE FanSpeed;
     BYTE ErrorCount;
     WORD HashCount, MaxCount;
+    BYTE Noise;
 } WORKSTATUS;
 
 typedef struct _workcfg {

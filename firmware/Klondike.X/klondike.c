@@ -23,21 +23,16 @@
 #include "klondike.h"
 
 const IDENTITY ID = { 0x10, "K16", 0xDEADBEEF };
-//const DWORD BankRanges[8] = { 0, 0x40000000, 0x2aaaaaaa, 0x20000000, 0x19999999, 0x15555555, 0x12492492, 0x10000000 };
-// testing single bank
-const DWORD BankRanges[8] = { 0, 0x80000000, 0x2aaaaaaa, 0x20000000, 0x19999999, 0x15555555, 0x12492492, 0x10000000 };
-const WORKTASK TestWork = { 0xFF, GOOD_MIDSTATE, GOOD_DATA };
-const DWORD GoodNonce = GOOD_NONCE;
-const DWORD StartNonce = (GOOD_NONCE - DETECT_DELAY_COUNT);
 
+DWORD BankRanges[8] = { 0, 0x40000000, 0x2aaaaaaa, 0x20000000, 0x19999999, 0x15555555, 0x12492492, 0x10000000 };
 BYTE WorkNow, BankSize, ResultQC, SlowTick;
 BYTE SlaveAddress = MASTER_ADDRESS;
-BYTE HashTime = 256-(TICK_FACTOR/DEFAULT_HASHCLOCK);
-volatile WORKSTATUS Status = {'I',0,0,0,0,0,0,0,0, WORK_TICKS };
+BYTE HashTime = 256 - ((WORD)TICK_TOTAL/DEFAULT_HASHCLOCK);
+volatile WORKSTATUS Status = {'I',0,0,0,0,0,0,0,0, WORK_TICKS, 0 };
 WORKCFG Cfg = { DEFAULT_HASHCLOCK, DEFAULT_TEMP_TARGET, DEFAULT_TEMP_CRITICAL, DEFAULT_FAN_TARGET, 0 };
 WORKTASK WorkQue[MAX_WORK_COUNT];
 volatile BYTE ResultQue[MAX_RESULT_COUNT*4];
-DWORD ClockCfg[2] = { (((DWORD)DEFAULT_HASHCLOCK*2) << 18) | CLOCK_HALF_CHG, CLOCK_HIGH_CFG };
+DWORD ClockCfg[2] = { (((DWORD)DEFAULT_HASHCLOCK) << 18) | CLOCK_LOW_CHG, CLOCK_HIGH_CFG };
 
 DWORD NonceRanges[8];
 
@@ -83,8 +78,9 @@ void ProcessCmd(char *cmd)
                     ClockCfg[0] = (((DWORD)Cfg.HashClock*2) << 18) | CLOCK_HALF_CHG;
                 else
                     ClockCfg[0] = ((DWORD)Cfg.HashClock << 18) | CLOCK_LOW_CHG;
-                HashTime = 256-((DWORD)TICK_FACTOR/Cfg.HashClock);
+                HashTime = 256 - ((WORD)TICK_TOTAL/Cfg.HashClock);
                 PWM1DCH = Cfg.FanTarget;
+                Status.ErrorCount = 0;
             }
             SendCmdReply(cmd, (char *)&Cfg, sizeof(Cfg));
             break;
@@ -94,7 +90,7 @@ void ProcessCmd(char *cmd)
             SendCmdReply(cmd, (char *)&Status, sizeof(Status));
             break;
         case 'D':
-            SendCmdReply(cmd, (char *)&HashTime, sizeof(HashTime));
+            SendCmdReply(cmd, (char *)&ResultQC, sizeof(ResultQC));
         default:
             break;
         }
@@ -107,8 +103,8 @@ void AsicPushWork(void)
     SendAsicData(&WorkQue[WorkNow], DATA_SPLIT);
     WorkNow = (WorkNow+1) & WORKMASK;
     Status.HashCount = 0;
+    TMR0 = HashTime;
     Status.State ='W';
-    RESET_RX();
     if(--Status.WorkQC > 0)
         AsicPreCalc(&WorkQue[WorkNow]);
 }
@@ -141,6 +137,10 @@ void CheckFanSpeed(void)
 
 void DetectAsics(void)
 {
+/* disabled for now, not fully worked out yet
+   const WORKTASK TestWork = { 0xFF, GOOD_MIDSTATE, GOOD_DATA };
+    const DWORD GoodNonce = GOOD_NONCE;
+    const DWORD StartNonce = (GOOD_NONCE - DETECT_DELAY_COUNT);
     BankSize = 8;
     Status.ChipCount = 0;
     for(BYTE x = 0; x < BankSize; x++)
@@ -149,15 +149,16 @@ void DetectAsics(void)
     AsicPreCalc(&WorkQue[0]);
     
     //SendAsicData(&WorkQue[0], (StartNonce & 0x80000000) ? DATA_ONE : DATA_ZERO);
-    // wait for "push work time" for results to return and be counted
-    Status.ChipCount = 2; // just for testing
+    // wait for "push work time" for results to return and be counted*/
+    
+    Status.ChipCount = 4; // just for testing
     
     // pre-calc nonce range values
     BankSize = Status.ChipCount; //(Status.ChipCount+1)/2;
     Status.MaxCount = WORK_TICKS / BankSize;
     NonceRanges[0] = 0;
     for(BYTE x = 1; x < BankSize; x++)
-        NonceRanges[x] = NonceRanges[x-1] + BankRanges[BankSize-1];
+        NonceRanges[x] = NonceRanges[x-1] + 2*BankRanges[BankSize-1];  // single bank, double range size
     Status.State ='R';
     Status.HashCount = 0;
 }
@@ -166,11 +167,12 @@ void DetectAsics(void)
 
 void WorkTick(void)
 {
+    TMR0 += HashTime;
     TMR0IF = 0;
-    TMR0 = HashTime;
+    //RCREG = 0xFF;
     if(RCSTAbits.SPEN == 0) {
-    RCSTAbits.SPEN = 1; // renable Rx
-    ResultQC = 0;       // resync Rx
+        RCSTAbits.SPEN = 1; // renable Rx
+        ResultQC = 0;       // resync Rx
     }
     if((Status.State == 'W') && (++Status.HashCount == Status.MaxCount)) {
         if(Status.WorkQC > 0) {
@@ -186,38 +188,44 @@ void WorkTick(void)
         Status.Temp = ADRESH;
         // todo: adjust fan speed for target temperature
         ADCON0bits.GO_nDONE = 1;
-        CheckFanSpeed();
+        //CheckFanSpeed();
     }
    //if((SlowTick & 3) == 0)
-    I2CPoll();
+   //I2CPoll();
 }
 
 void ResultRx(void)
 {
-    while(RCIF) {
-        ResultQue[ResultQC] = ~RCREG;
+    //ResultQue[2+ResultQC++] = ~RCREG;
+    BYTE TimeOut = 0;
+    ResultQC = 0;
+    while(ResultQC < 4) {
 
-        if(RCSTAbits.OERR) { // error occured
-            Status.ErrorCount++;
-            RCSTAbits.SPEN = 0; // clear error, don't re-enable yet
-            return;
+        if(RCIF) {
+            ResultQue[2+ResultQC++] = ~RCREG;
+            TimeOut = 0;
         }
-    
-        if((ResultQC & 3) == 3) {
-            BYTE Rw = ResultQC & 0xFC;
-            BYTE buf[7];
-            buf[0] = '=';
-            buf[1] = SlaveAddress;
-            buf[2] = Status.WorkID;
-            buf[3] = ResultQue[Rw++];
-            buf[4] = ResultQue[Rw++];
-            buf[5] = ResultQue[Rw++];
-            buf[6] = ResultQue[Rw];
+        if(TimeOut++ > 32 ) {
+            Status.Noise++;
+            goto outrx;
+        }
+
+        if(RCSTAbits.OERR) { // error occured, either overun or no more bits
             if(Status.State == 'W')
-                SendCmdReply(buf, buf+2, sizeof(DWORD)+1);
+                Status.ErrorCount++;
+            RCSTAbits.SPEN = 0; // clear error, don't re-enable until next tick TMR0, 21.3uS
+            goto outrx;
         }
-        ResultQC = (ResultQC+1) & (MAX_RESULT_COUNT*4-1);
     }
+    
+    if(Status.State == 'W') {
+        ResultQue[0] = '=';
+        ResultQue[1] = Status.WorkID;
+        SendCmdReply(&ResultQue, &ResultQue+1, sizeof(ResultQue)-1);
+    }
+outrx:
+    RCREG = 0xFF; //RCSTAbits.SPEN = 0; RCSTAbits.SPEN = 1;
+    IOCBF = 0;
 }
 
 void UpdateFanSpeed(void)
@@ -271,6 +279,7 @@ void InitWorkTick(void)
     OPTION_REGbits.PSA = 0;
     OPTION_REGbits.PS = 7;
     TMR0 = HashTime;
+    //TMR0IE = 1;
 
     HASH_TRIS_0P = 0;
     HASH_TRIS_0N = 0;
@@ -289,8 +298,12 @@ void InitResultRx(void)
     TXSTAbits.CSRC = 0;
     BAUDCONbits.SCKP = 1;
     ANSELBbits.ANSB5 = 0;
-    PIE1bits.RCIE = 1;
-    INTCONbits.PEIE = 1;
+    //PIE1bits.RCIE = 1;
+    IOCBPbits.IOCBP7 = 1;
+    INTCONbits.IOCIE = 1;
+    IOCBF = 0;
+    //INTCONbits.PEIE = 1;
     INTCONbits.GIE = 1;
     RCSTAbits.CREN = 1;
+    RCREG = 0xFF;
 }

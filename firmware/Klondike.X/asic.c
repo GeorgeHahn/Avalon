@@ -316,7 +316,7 @@ DWORD rotate(DWORD x, BYTE y)
 
 void AsicPreCalc(WORKTASK *work)
 {
-    const DWORD K[3] = { 0x428a2f98, 0x71374491, 0xb5c0fbcf };
+    DWORD K[3] = { 0x428a2f98, 0x71374491, 0xb5c0fbcf };
     DWORD x, y, z;
     DWORD m[8];
     BYTE n;
