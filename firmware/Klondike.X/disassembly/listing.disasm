@@ -1,7 +1,7 @@
 Disassembly Listing for Klondike
 Generated From:
 /home/chris/Dev/klondike/firmware/Klondike.X/dist/K16/production/Klondike.X.production.cof
-Jul 11, 2013 5:52:07 PM
+Jul 11, 2013 8:12:10 PM
 
 ---  /opt/microchip/xc8/v1.12/sources/wmul.c  -----------------------------------------------------------
 1:             unsigned int
@@ -7159,149 +7159,150 @@ Jul 11, 2013 5:52:07 PM
 0550  2557     CALL 0x557
 225:               }
 226:           outrx:
-227:               RCREG = 0xFF; //RCSTAbits.SPEN = 0; RCSTAbits.SPEN = 1;
-0551  30FF     MOVLW 0xFF
-0552  0023     MOVLB 0x3
-0553  0099     MOVWF T1GCON
-228:               IOCBF = 0;
+227:               //RCREG = 0xFF;
+228:               RCSTAbits.SPEN = 0; RCSTAbits.SPEN = 1;
+0551  0023     MOVLB 0x3
+0552  139D     BCF 0x1D, 0x7
+0553  179D     BSF 0x1D, 0x7
+229:               IOCBF = 0;
 0554  0027     MOVLB 0x7
 0555  0196     CLRF TMR1L
-229:           }
+230:           }
 0556  0008     RETURN
-230:           
-231:           void UpdateFanSpeed(void)
-232:           {
-233:               TMR1GIF = TMR1IF = 0;
-234:               IOCAF3 = 0; // skip one cycle
-235:               TMR1ON = 0;
-236:               Status.FanSpeed = TMR1H; // rollover below 330 rpm, not measured
-237:               FAN_PWM = 0; // re-enable PWM fan output
-238:               PWM1OE=1;
-239:           }
-240:           
-241:           // Init functions
-242:           
-243:           void InitFAN(void)
-244:           {
-245:               FAN_TRIS = 1;
-246:               PWM1CON = 0;
-247:               PR2 = 0xFF;
-248:               PWM1CON = 0xC0;
-249:               PWM1DCH = DEFAULT_FAN_TARGET;
-250:               PWM1DCL = 0;
-251:               TMR2IF = 0;
-252:               T2CONbits.T2CKPS = 0;
-253:               TMR2ON = 1;
-254:               FAN_TRIS = 0;
-255:               PWM1OE=1;
-256:           
-257:               // for Fan Tach reading
-258:               T1GSEL = 1;
-259:               IOCAN3 = 1;
-260:               IOCAF3 = 0;
-261:           }
-262:           
-263:           void InitTempSensor(void)
-264:           { 
-265:               THERM_TRIS=1;
+231:           
+232:           void UpdateFanSpeed(void)
+233:           {
+234:               TMR1GIF = TMR1IF = 0;
+235:               IOCAF3 = 0; // skip one cycle
+236:               TMR1ON = 0;
+237:               Status.FanSpeed = TMR1H; // rollover below 330 rpm, not measured
+238:               FAN_PWM = 0; // re-enable PWM fan output
+239:               PWM1OE=1;
+240:           }
+241:           
+242:           // Init functions
+243:           
+244:           void InitFAN(void)
+245:           {
+246:               FAN_TRIS = 1;
+247:               PWM1CON = 0;
+248:               PR2 = 0xFF;
+249:               PWM1CON = 0xC0;
+250:               PWM1DCH = DEFAULT_FAN_TARGET;
+251:               PWM1DCL = 0;
+252:               TMR2IF = 0;
+253:               T2CONbits.T2CKPS = 0;
+254:               TMR2ON = 1;
+255:               FAN_TRIS = 0;
+256:               PWM1OE=1;
+257:           
+258:               // for Fan Tach reading
+259:               T1GSEL = 1;
+260:               IOCAN3 = 1;
+261:               IOCAF3 = 0;
+262:           }
+263:           
+264:           void InitTempSensor(void)
+265:           { 
+266:               THERM_TRIS=1;
 0F07  0021     MOVLB 0x1
 0F08  150E     BSF PORTC, 0x2
-266:               //TEMP_INIT;
-267:               //FVREN = 1;
-268:               ADCON0bits.CHS = TEMP_THERMISTOR;
+267:               //TEMP_INIT;
+268:               //FVREN = 1;
+269:               ADCON0bits.CHS = TEMP_THERMISTOR;
 0F09  081D     MOVF 0x1D, W
 0F0A  3983     ANDLW 0x83
 0F0B  3818     IORLW 0x18
 0F0C  009D     MOVWF 0x1D
-269:               ADCON0bits.ADON = 1;
+270:               ADCON0bits.ADON = 1;
 0F0D  141D     BSF 0x1D, 0x0
-270:               ADCON1bits.ADFM = 0;
+271:               ADCON1bits.ADFM = 0;
 0F0E  139E     BCF 0x1E, 0x7
-271:               ADCON1bits.ADCS = 6;
+272:               ADCON1bits.ADCS = 6;
 0F0F  081E     MOVF 0x1E, W
 0F10  398F     ANDLW 0x8F
 0F11  3860     IORLW 0x60
 0F12  009E     MOVWF 0x1E
-272:               ADCON1bits.ADPREF = 0;
+273:               ADCON1bits.ADPREF = 0;
 0F13  30FC     MOVLW 0xFC
 0F14  059E     ANDWF 0x1E, F
-273:               ADCON2bits.TRIGSEL = 0;
+274:               ADCON2bits.TRIGSEL = 0;
 0F15  308F     MOVLW 0x8F
 0F16  059F     ANDWF 0x1F, F
-274:           }
+275:           }
 0F17  0008     RETURN
-275:           
-276:           void InitWorkTick(void)
-277:           {
-278:               TMR0CS = 0;
+276:           
+277:           void InitWorkTick(void)
+278:           {
+279:               TMR0CS = 0;
 0E09  1295     BCF TMR0, 0x5
-279:               OPTION_REGbits.PSA = 0;
+280:               OPTION_REGbits.PSA = 0;
 0E0A  1195     BCF TMR0, 0x3
-280:               OPTION_REGbits.PS = 7;
+281:               OPTION_REGbits.PS = 7;
 0E0B  3007     MOVLW 0x7
 0E0C  0495     IORWF TMR0, F
-281:               TMR0 = HashTime;
+282:               TMR0 = HashTime;
 0E0D  0022     MOVLB 0x2
 0E0E  084E     MOVF 0x4E, W
 0E0F  0020     MOVLB 0x0
 0E10  0095     MOVWF TMR0
-282:               //TMR0IE = 1;
-283:           
-284:               HASH_TRIS_0P = 0;
+283:               //TMR0IE = 1;
+284:           
+285:               HASH_TRIS_0P = 0;
 0E11  0021     MOVLB 0x1
 0E12  138E     BCF PORTC, 0x7
-285:               HASH_TRIS_0N = 0;
+286:               HASH_TRIS_0N = 0;
 0E13  130E     BCF PORTC, 0x6
-286:               HASH_TRIS_1P = 0;
+287:               HASH_TRIS_1P = 0;
 0E14  120E     BCF PORTC, 0x4
-287:               HASH_TRIS_1N = 0;
+288:               HASH_TRIS_1N = 0;
 0E15  118E     BCF PORTC, 0x3
-288:               HASH_IDLE();
+289:               HASH_IDLE();
 0E16  30D8     MOVLW 0xD8
 0E17  0022     MOVLB 0x2
 0E18  008E     MOVWF PORTC
-289:               HASH_CLK_TRIS = 0;
+290:               HASH_CLK_TRIS = 0;
 0E19  0021     MOVLB 0x1
 0E1A  120C     BCF PORTA, 0x4
-290:               HASH_CLK_EN = 1;
+291:               HASH_CLK_EN = 1;
 0E1B  0022     MOVLB 0x2
 0E1C  160C     BSF PORTA, 0x4
-291:           }
+292:           }
 0E1D  0008     RETURN
-292:           
-293:           void InitResultRx(void)
-294:           {
-295:               ResultQC = 0;
+293:           
+294:           void InitResultRx(void)
+295:           {
+296:               ResultQC = 0;
 0F4B  01CD     CLRF 0x4D
-296:               TXSTAbits.SYNC = 1;
+297:               TXSTAbits.SYNC = 1;
 0F4C  0023     MOVLB 0x3
 0F4D  161E     BSF 0x1E, 0x4
-297:               RCSTAbits.SPEN = 1;
+298:               RCSTAbits.SPEN = 1;
 0F4E  179D     BSF 0x1D, 0x7
-298:               TXSTAbits.CSRC = 0;
+299:               TXSTAbits.CSRC = 0;
 0F4F  139E     BCF 0x1E, 0x7
-299:               BAUDCONbits.SCKP = 1;
+300:               BAUDCONbits.SCKP = 1;
 0F50  161F     BSF 0x1F, 0x4
-300:               ANSELBbits.ANSB5 = 0;
+301:               ANSELBbits.ANSB5 = 0;
 0F51  128D     BCF PORTB, 0x5
-301:               //PIE1bits.RCIE = 1;
-302:               IOCBPbits.IOCBP7 = 1;
+302:               //PIE1bits.RCIE = 1;
+303:               IOCBPbits.IOCBP7 = 1;
 0F52  0027     MOVLB 0x7
 0F53  1794     BSF 0x14, 0x7
-303:               INTCONbits.IOCIE = 1;
+304:               INTCONbits.IOCIE = 1;
 0F54  158B     BSF INTCON, 0x3
-304:               IOCBF = 0;
+305:               IOCBF = 0;
 0F55  0196     CLRF TMR1L
-305:               //INTCONbits.PEIE = 1;
-306:               INTCONbits.GIE = 1;
+306:               //INTCONbits.PEIE = 1;
+307:               INTCONbits.GIE = 1;
 0F56  178B     BSF INTCON, 0x7
-307:               RCSTAbits.CREN = 1;
+308:               RCSTAbits.CREN = 1;
 0F57  0023     MOVLB 0x3
 0F58  161D     BSF 0x1D, 0x4
-308:               RCREG = 0xFF;
+309:               RCREG = 0xFF;
 0F59  30FF     MOVLW 0xFF
 0F5A  0099     MOVWF T1GCON
-309:           }
+310:           }
 0F5B  0008     RETURN
 ---  /home/chris/Dev/klondike/firmware/Klondike.X/asic.c  -----------------------------------------------
 1:             /********

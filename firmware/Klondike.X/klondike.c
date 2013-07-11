@@ -224,7 +224,8 @@ void ResultRx(void)
         SendCmdReply(&ResultQue, &ResultQue+1, sizeof(ResultQue)-1);
     }
 outrx:
-    RCREG = 0xFF; //RCSTAbits.SPEN = 0; RCSTAbits.SPEN = 1;
+    //RCREG = 0xFF;
+    RCSTAbits.SPEN = 0; RCSTAbits.SPEN = 1;
     IOCBF = 0;
 }
 
