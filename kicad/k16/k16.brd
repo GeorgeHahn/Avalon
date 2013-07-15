@@ -1,4 +1,4 @@
-PCBNEW-BOARD Version 2 date Tue 16 Jul 2013 04:18:00 AM ICT
+PCBNEW-BOARD Version 2 date Tue 16 Jul 2013 04:59:12 AM ICT
 
 # Created by Pcbnew(2013-mar-13)-testing
 
@@ -11,7 +11,7 @@ VisibleLayers 11208000
 Links 1390
 NoConn 6
 Di 94.204512 50.704512 201.5666 159.295488
-Ndraw 40
+Ndraw 37
 Ntrack 3895
 Nzone 0
 BoardThickness 1.6
@@ -26318,7 +26318,7 @@ Ro 0 0 0
 $EndSHAPE3D
 $EndMODULE R0402
 $TEXTPCB
-Te "v.0.3.0"
+Te "v.0.3.1"
 Po 142.875 141.725 1.25 1.25 0.3 0
 De 21 1 0 Normal L C
 $EndTEXTPCB
@@ -26465,21 +26465,6 @@ $EndTEXTPCB
 $TEXTPCB
 Te "U1"
 Po 112.2 65.5 1 1 0.2 0
-De 21 1 0 Normal
-$EndTEXTPCB
-$TEXTPCB
-Te "-"
-Po 108.175 113.15 1.5 1.5 0.3 900
-De 21 1 0 Normal
-$EndTEXTPCB
-$TEXTPCB
-Te "+"
-Po 108.2 105.575 1.5 1.5 0.3 0
-De 21 1 0 Normal
-$EndTEXTPCB
-$TEXTPCB
-Te "12V"
-Po 107.7 101.525 1.5 1.5 0.3 2700
 De 21 1 0 Normal
 $EndTEXTPCB
 $TEXTPCB
