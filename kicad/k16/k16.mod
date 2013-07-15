@@ -1,4 +1,4 @@
-PCBNEW-LibModule-V1  Tue 16 Jul 2013 01:57:08 AM ICT
+PCBNEW-LibModule-V1  Tue 16 Jul 2013 04:26:47 AM ICT
 # encoding utf-8
 Units mm
 $INDEX
@@ -427,7 +427,7 @@ Ne 2 "/FANGND"
 Po -1.45 0
 $EndPAD
 $SHAPE3D
-Na "walter\\smd_diode\\do219ab.wrl"
+Na "walter/smd_diode/do219ab.wrl"
 Sc 1 1 1
 Of 0 0 0
 Ro 0 0 0

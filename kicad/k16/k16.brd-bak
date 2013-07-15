@@ -1,4 +1,4 @@
-PCBNEW-BOARD Version 2 date Tue 16 Jul 2013 02:08:24 AM ICT
+PCBNEW-BOARD Version 2 date Tue 16 Jul 2013 02:54:19 AM ICT
 
 # Created by Pcbnew(2013-mar-13)-testing
 
@@ -7,7 +7,7 @@ encoding utf-8
 Units mm
 LayerCount 4
 EnabledLayers 11EA8007
-VisibleLayers 11208000
+VisibleLayers 11208007
 Links 1390
 NoConn 6
 Di 94.204512 50.704512 201.5666 159.295488
@@ -11291,7 +11291,7 @@ Po 0.8 -1.375
 $EndPAD
 $SHAPE3D
 Na "walter/smd_dil/tssop-8.wrl"
-Sc 1 1 1
+Sc 0.8 0.5 1
 Of 0 0 0
 Ro 0 0 0
 $EndSHAPE3D
