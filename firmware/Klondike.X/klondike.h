@@ -33,7 +33,7 @@ extern "C" {
 
 // set values for ASIC PLL, we use R=16 N=Freq in MHz
 #define WORK_TICKS          16384   // 2^32 total / 2^18 hashes per tick
-#define TICK_TOTAL          12000   // 2^18 / 21.33uS TMR0 period (adjusted down for push time)
+#define TICK_TOTAL          12292   // 2^18 / 21.33uS TMR0 period (adjusted down for push time)
 #define CLOCK_R_VALUE       16
 #define DEFAULT_HASHCLOCK   256
 #define CLOCK_NOCHG_MASK    0x00000002
@@ -47,7 +47,7 @@ extern "C" {
 // default temp/fan values
 #define DEFAULT_TEMP_TARGET     60 
 #define DEFAULT_TEMP_CRITICAL   80 
-#define DEFAULT_FAN_TARGET      128 // is 50%
+#define DEFAULT_FAN_TARGET      230 // is 90%
 
 // number of hashes to delay results while test work pushed
 // 390uS push time @ 256 MHz startup clock = 99840 hashes

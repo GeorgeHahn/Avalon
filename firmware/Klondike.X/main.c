@@ -170,7 +170,7 @@ void UserInit(void)
 {
     InitLED();
     InitTempSensor();
-    //InitFAN();
+    InitFAN();
     InitWorkTick();
     //InitI2CMaster();
     InitResultRx();

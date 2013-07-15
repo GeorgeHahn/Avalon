@@ -1,4 +1,4 @@
-## Module report - date Sat 18 May 2013 09:15:17 PM ICT
+## Module report - date Tue 16 Jul 2013 01:38:00 AM ICT
 ## Created by Pcbnew version pcbnew (2013-mar-13)-testing
 ## Unit = inches, Angle = deg.
 ##
@@ -7,9 +7,38 @@ $BeginDESCRIPTION
 
 $BOARD
 unit INCH
-upper_left_corner  3.617860  1.996241
-lower_right_corner  7.953509  6.271476
+upper_left_corner  3.708839  1.996241
+lower_right_corner  7.935693  6.271476
 $EndBOARD
+
+$MODULE "VAL"
+reference "VAL"
+value "Klondike-10mm"
+footprint "Klondike-10mm"
+attribut none
+position  5.990157  4.142717
+orientation  90.00
+layer component
+$EndMODULE  VAL
+
+$MODULE "1PIN"
+reference "1PIN"
+value "P***"
+footprint "Hole4mm"
+attribut none
+position  4.606299  3.051181
+orientation  0.00
+layer component
+$PAD "1"
+position  0.000000  0.000000
+size  0.196850  0.196850
+drill  0.157480
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Circ
+Layer  both
+$EndPAD
+$EndMODULE  1PIN
 
 $MODULE "X1"
 reference "X1"
@@ -62,336 +91,6 @@ Shape  Rect
 Layer  front
 $EndPAD
 $EndMODULE  X1
-
-$MODULE "1PIN"
-reference "1PIN"
-value "P***"
-footprint "1pin"
-attribut none
-position  4.606299  3.051181
-orientation  0.00
-layer component
-$PAD "1"
-position  0.000000  0.000000
-size  0.160000  0.160000
-drill  0.118110
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Circ
-Layer  both
-$EndPAD
-$EndMODULE  1PIN
-
-$MODULE "1PIN"
-reference "1PIN"
-value "P***"
-footprint "1pin"
-attribut none
-position  4.074803  2.362205
-orientation  0.00
-layer component
-$PAD "1"
-position  0.000000  0.000000
-size  0.157480  0.157480
-drill  0.118110
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Circ
-Layer  both
-$EndPAD
-$EndMODULE  1PIN
-
-$MODULE "C19"
-reference "C19"
-value "330uF"
-footprint "UD-10X10_NICHICON"
-attribut smd
-position  5.016142  4.156693
-orientation  90.00
-layer component
-$SHAPE3D
-Na "walter/smd_cap/c_elec_10x10.wrl"
-Sc 1 1 1
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "-"
-position -0.155500  0.000000
-size  0.141700  0.051100
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "+"
-position  0.154500  0.000000
-size  0.141700  0.051100
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  C19
-
-$MODULE "L2"
-reference "L2"
-value "0.36uH"
-footprint "38L361C"
-attribut smd
-position  5.804700  5.158800
-orientation  180.00
-layer component
-$SHAPE3D
-Na "YT Inductors/cms_self.wrl"
-Sc 0.9 0.9 0.6
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "NC"
-position -0.181100  0.000000
-size  0.078700  0.078700
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "1"
-position  0.161400  0.102300
-size  0.110200  0.110200
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position  0.161400 -0.102300
-size  0.110200  0.110200
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  L2
-
-$MODULE "L1"
-reference "L1"
-value "0.36uH"
-footprint "38L361C"
-attribut smd
-position  5.908200  3.112300
-orientation  0.00
-layer component
-$SHAPE3D
-Na "YT Inductors/cms_self.wrl"
-Sc 0.9 0.9 0.6
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "NC"
-position -0.181100  0.000000
-size  0.078700  0.078700
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "1"
-position  0.161400  0.102300
-size  0.110200  0.110200
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position  0.161400 -0.102300
-size  0.110200  0.110200
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  L1
-
-$MODULE "J1"
-reference "J1"
-value "PCIEPWR"
-footprint "PCIEPWR"
-attribut none
-position  4.507874  4.161417
-orientation  270.00
-layer component
-$PAD "1"
-position  0.165300  0.082600
-size  0.082600  0.082600
-drill  0.055100
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Oval
-Layer  both
-$EndPAD
-$PAD "2"
-position  0.000000  0.082600
-size  0.082600  0.082600
-drill  0.055100
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Oval
-Layer  both
-$EndPAD
-$PAD "3"
-position -0.165300  0.082600
-size  0.082600  0.082600
-drill  0.055100
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Oval
-Layer  both
-$EndPAD
-$PAD "6"
-position -0.165300 -0.082600
-size  0.082600  0.082600
-drill  0.055100
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Oval
-Layer  both
-$EndPAD
-$PAD "5"
-position  0.000000 -0.082600
-size  0.082600  0.082600
-drill  0.055100
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Oval
-Layer  both
-$EndPAD
-$PAD "4"
-position  0.165300 -0.082600
-size  0.082600  0.082600
-drill  0.055100
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Oval
-Layer  both
-$EndPAD
-$EndMODULE  J1
-
-$MODULE "C1"
-reference "C1"
-value "1.0uF"
-footprint "C0603"
-attribut smd
-position  5.405512  3.598425
-orientation  0.00
-layer component
-$SHAPE3D
-Na "walter/smd_cap/c_0603.wrl"
-Sc 1 1 1
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$SHAPE3D
-Na "walter/smd_cap/c_0603.wrl"
-Sc 1 1 1
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "1"
-position -0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position  0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  C1
-
-$MODULE "C2"
-reference "C2"
-value "2.2uF"
-footprint "C0603"
-attribut smd
-position  6.146400  3.439900
-orientation  90.00
-layer component
-$SHAPE3D
-Na "walter/smd_cap/c_0603.wrl"
-Sc 1 1 1
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "1"
-position -0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position  0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  C2
-
-$MODULE "C3"
-reference "C3"
-value "100pF"
-footprint "C0603"
-attribut smd
-position  5.825900  3.654800
-orientation  180.00
-layer component
-$SHAPE3D
-Na "walter/smd_cap/c_0603.wrl"
-Sc 1 1 1
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "1"
-position -0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position  0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  C3
 
 $MODULE "R1"
 reference "R1"
@@ -528,278 +227,6 @@ Shape  Rect
 Layer  front
 $EndPAD
 $EndMODULE  R4
-
-$MODULE "C4"
-reference "C4"
-value "10uF"
-footprint "C0805"
-attribut smd
-position  5.405512  3.527559
-orientation  180.00
-layer component
-$SHAPE3D
-Na "walter/smd_cap/c_0805.wrl"
-Sc 1 1 1
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "1"
-position -0.037400  0.000000
-size  0.051100  0.059000
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position  0.037400  0.000000
-size  0.051100  0.059000
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  C4
-
-$MODULE "C5"
-reference "C5"
-value "10uF"
-footprint "C0805"
-attribut smd
-position  5.405512  3.448819
-orientation  180.00
-layer component
-$SHAPE3D
-Na "walter/smd_cap/c_0805.wrl"
-Sc 1 1 1
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "1"
-position -0.037400  0.000000
-size  0.051100  0.059000
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position  0.037400  0.000000
-size  0.051100  0.059000
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  C5
-
-$MODULE "C6"
-reference "C6"
-value "10uF"
-footprint "C0805"
-attribut smd
-position  5.519685  3.405512
-orientation  90.00
-layer component
-$SHAPE3D
-Na "walter/smd_cap/c_0805.wrl"
-Sc 1 1 1
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "1"
-position -0.037400  0.000000
-size  0.051100  0.059000
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position  0.037400  0.000000
-size  0.051100  0.059000
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  C6
-
-$MODULE "C7"
-reference "C7"
-value "10uF"
-footprint "C0805"
-attribut smd
-position  5.602362  3.405512
-orientation  90.00
-layer component
-$SHAPE3D
-Na "walter/smd_cap/c_0805.wrl"
-Sc 1 1 1
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "1"
-position -0.037400  0.000000
-size  0.051100  0.059000
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position  0.037400  0.000000
-size  0.051100  0.059000
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  C7
-
-$MODULE "C8"
-reference "C8"
-value "10uF"
-footprint "C0805"
-attribut smd
-position  5.685039  3.405512
-orientation  90.00
-layer component
-$SHAPE3D
-Na "walter/smd_cap/c_0805.wrl"
-Sc 1 1 1
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "1"
-position -0.037400  0.000000
-size  0.051100  0.059000
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position  0.037400  0.000000
-size  0.051100  0.059000
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  C8
-
-$MODULE "C9"
-reference "C9"
-value "0.1uF"
-footprint "C0603"
-attribut smd
-position  5.755906  3.405512
-orientation  90.00
-layer component
-$SHAPE3D
-Na "walter/smd_cap/c_0603.wrl"
-Sc 1 1 1
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "1"
-position -0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position  0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  C9
-
-$MODULE "C10"
-reference "C10"
-value "0.1uF"
-footprint "C0603"
-attribut smd
-position  5.772400  3.563500
-orientation  180.00
-layer component
-$SHAPE3D
-Na "walter/smd_cap/c_0603.wrl"
-Sc 1 1 1
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "1"
-position -0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position  0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  C10
-
-$MODULE "C11"
-reference "C11"
-value "0.1uF"
-footprint "C0603"
-attribut smd
-position  5.460630  3.062992
-orientation  270.00
-layer component
-$SHAPE3D
-Na "walter/smd_cap/c_0603.wrl"
-Sc 1 1 1
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "1"
-position -0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position  0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  C11
 
 $MODULE "C12"
 reference "C12"
@@ -1011,40 +438,6 @@ Layer  front
 $EndPAD
 $EndMODULE  R6
 
-$MODULE "C16"
-reference "C16"
-value "3.3nF"
-footprint "C0603"
-attribut smd
-position  6.303150  3.582677
-orientation  270.00
-layer component
-$SHAPE3D
-Na "walter/smd_cap/c_0603.wrl"
-Sc 1 1 1
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "1"
-position -0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position  0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  C16
-
 $MODULE "R7"
 reference "R7"
 value "2.87K"
@@ -1078,74 +471,6 @@ Shape  Rect
 Layer  front
 $EndPAD
 $EndMODULE  R7
-
-$MODULE "C17"
-reference "C17"
-value "10nF"
-footprint "C0603"
-attribut smd
-position  5.982600  3.742200
-orientation  0.00
-layer component
-$SHAPE3D
-Na "walter/smd_cap/c_0603.wrl"
-Sc 1 1 1
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "1"
-position -0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position  0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  C17
-
-$MODULE "C18"
-reference "C18"
-value "220pF"
-footprint "C0603"
-attribut smd
-position  5.862200  3.737500
-orientation  180.00
-layer component
-$SHAPE3D
-Na "walter/smd_cap/c_0603.wrl"
-Sc 1 1 1
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "1"
-position -0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position  0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  C18
 
 $MODULE "R8"
 reference "R8"
@@ -1248,108 +573,6 @@ Shape  Rect
 Layer  front
 $EndPAD
 $EndMODULE  R10
-
-$MODULE "C20"
-reference "C20"
-value "1.0uF"
-footprint "C0603"
-attribut smd
-position  5.940945  4.870079
-orientation  90.00
-layer component
-$SHAPE3D
-Na "walter/smd_cap/c_0603.wrl"
-Sc 1 1 1
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "1"
-position -0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position  0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  C20
-
-$MODULE "C21"
-reference "C21"
-value "2.2uF"
-footprint "C0603"
-attribut smd
-position  5.564500  4.833200
-orientation  270.00
-layer component
-$SHAPE3D
-Na "walter/smd_cap/c_0603.wrl"
-Sc 1 1 1
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "1"
-position -0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position  0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  C21
-
-$MODULE "C22"
-reference "C22"
-value "100pF"
-footprint "C0603"
-attribut smd
-position  5.882200  4.610300
-orientation  0.00
-layer component
-$SHAPE3D
-Na "walter/smd_cap/c_0603.wrl"
-Sc 1 1 1
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "1"
-position -0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position  0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  C22
 
 $MODULE "R11"
 reference "R11"
@@ -1486,278 +709,6 @@ Shape  Rect
 Layer  front
 $EndPAD
 $EndMODULE  R14
-
-$MODULE "C23"
-reference "C23"
-value "10uF"
-footprint "C0805"
-attribut smd
-position  6.287402  4.744094
-orientation  0.00
-layer component
-$SHAPE3D
-Na "walter/smd_cap/c_0805.wrl"
-Sc 1 1 1
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "1"
-position -0.037400  0.000000
-size  0.051100  0.059000
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position  0.037400  0.000000
-size  0.051100  0.059000
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  C23
-
-$MODULE "C24"
-reference "C24"
-value "10uF"
-footprint "C0805"
-attribut smd
-position  6.287402  4.826772
-orientation  0.00
-layer component
-$SHAPE3D
-Na "walter/smd_cap/c_0805.wrl"
-Sc 1 1 1
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "1"
-position -0.037400  0.000000
-size  0.051100  0.059000
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position  0.037400  0.000000
-size  0.051100  0.059000
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  C24
-
-$MODULE "C25"
-reference "C25"
-value "10uF"
-footprint "C0805"
-attribut smd
-position  6.181102  4.870079
-orientation  270.00
-layer component
-$SHAPE3D
-Na "walter/smd_cap/c_0805.wrl"
-Sc 1 1 1
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "1"
-position -0.037400  0.000000
-size  0.051100  0.059000
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position  0.037400  0.000000
-size  0.051100  0.059000
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  C25
-
-$MODULE "C26"
-reference "C26"
-value "10uF"
-footprint "C0805"
-attribut smd
-position  6.098425  4.870079
-orientation  270.00
-layer component
-$SHAPE3D
-Na "walter/smd_cap/c_0805.wrl"
-Sc 1 1 1
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "1"
-position -0.037400  0.000000
-size  0.051100  0.059000
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position  0.037400  0.000000
-size  0.051100  0.059000
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  C26
-
-$MODULE "C27"
-reference "C27"
-value "10uF"
-footprint "C0805"
-attribut smd
-position  6.015748  4.870079
-orientation  270.00
-layer component
-$SHAPE3D
-Na "walter/smd_cap/c_0805.wrl"
-Sc 1 1 1
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "1"
-position -0.037400  0.000000
-size  0.051100  0.059000
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position  0.037400  0.000000
-size  0.051100  0.059000
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  C27
-
-$MODULE "C28"
-reference "C28"
-value "0.1uF"
-footprint "C0603"
-attribut smd
-position  6.287402  4.673228
-orientation  0.00
-layer component
-$SHAPE3D
-Na "walter/smd_cap/c_0603.wrl"
-Sc 1 1 1
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "1"
-position -0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position  0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  C28
-
-$MODULE "C29"
-reference "C29"
-value "0.1uF"
-footprint "C0603"
-attribut smd
-position  5.943300  4.698500
-orientation  0.00
-layer component
-$SHAPE3D
-Na "walter/smd_cap/c_0603.wrl"
-Sc 1 1 1
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "1"
-position -0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position  0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  C29
-
-$MODULE "C30"
-reference "C30"
-value "0.1uF"
-footprint "C0603"
-attribut smd
-position  6.251969  5.188976
-orientation  90.00
-layer component
-$SHAPE3D
-Na "walter/smd_cap/c_0603.wrl"
-Sc 1 1 1
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "1"
-position -0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position  0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  C30
 
 $MODULE "C31"
 reference "C31"
@@ -1963,40 +914,6 @@ Layer  front
 $EndPAD
 $EndMODULE  R16
 
-$MODULE "C35"
-reference "C35"
-value "3.3nF"
-footprint "C0603"
-attribut smd
-position  5.411417  4.661417
-orientation  90.00
-layer component
-$SHAPE3D
-Na "walter/smd_cap/c_0603.wrl"
-Sc 1 1 1
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "1"
-position -0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position  0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  C35
-
 $MODULE "R17"
 reference "R17"
 value "2.87K"
@@ -2030,74 +947,6 @@ Shape  Rect
 Layer  front
 $EndPAD
 $EndMODULE  R17
-
-$MODULE "C36"
-reference "C36"
-value "10nF"
-footprint "C0603"
-attribut smd
-position  5.733000  4.515100
-orientation  180.00
-layer component
-$SHAPE3D
-Na "walter/smd_cap/c_0603.wrl"
-Sc 1 1 1
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "1"
-position -0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position  0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  C36
-
-$MODULE "C37"
-reference "C37"
-value "220pF"
-footprint "C0603"
-attribut smd
-position  5.851900  4.515900
-orientation  0.00
-layer component
-$SHAPE3D
-Na "walter/smd_cap/c_0603.wrl"
-Sc 1 1 1
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "1"
-position -0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position  0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  C37
 
 $MODULE "R18"
 reference "R18"
@@ -2201,182 +1050,6 @@ Layer  front
 $EndPAD
 $EndMODULE  R20
 
-$MODULE "C38"
-reference "C38"
-value "22nF"
-footprint "C0603"
-attribut smd
-position  6.515748  4.301181
-orientation  0.00
-layer component
-$SHAPE3D
-Na "walter/smd_cap/c_0603.wrl"
-Sc 1 1 1
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "1"
-position -0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position  0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  C38
-
-$MODULE "C39"
-reference "C39"
-value "22uF"
-footprint "C0603"
-attribut smd
-position  6.580709  3.978346
-orientation  180.00
-layer component
-$SHAPE3D
-Na "walter/smd_cap/c_0603.wrl"
-Sc 1 1 1
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "1"
-position -0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position  0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  C39
-
-$MODULE "C40"
-reference "C40"
-value "22uF"
-footprint "C0603"
-attribut smd
-position  6.580709  3.917323
-orientation  180.00
-layer component
-$SHAPE3D
-Na "walter/smd_cap/c_0603.wrl"
-Sc 1 1 1
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "1"
-position -0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position  0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  C40
-
-$MODULE "C41"
-reference "C41"
-value "10uF"
-footprint "C0805"
-attribut smd
-position  6.440945  3.907480
-orientation  0.00
-layer component
-$SHAPE3D
-Na "walter/smd_cap/c_0805.wrl"
-Sc 1 1 1
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$SHAPE3D
-Na "walter/smd_cap/c_0805.wrl"
-Sc 1 1 1
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "1"
-position -0.037400  0.000000
-size  0.051100  0.059000
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position  0.037400  0.000000
-size  0.051100  0.059000
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  C41
-
-$MODULE "C42"
-reference "C42"
-value "10uF"
-footprint "C0805"
-attribut smd
-position  6.440945  3.988189
-orientation  0.00
-layer component
-$SHAPE3D
-Na "walter/smd_cap/c_0805.wrl"
-Sc 1 1 1
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "1"
-position -0.037400  0.000000
-size  0.051100  0.059000
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position  0.037400  0.000000
-size  0.051100  0.059000
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  C42
-
 $MODULE "R21"
 reference "R21"
 value "10K"
@@ -2411,46 +1084,12 @@ Layer  front
 $EndPAD
 $EndMODULE  R21
 
-$MODULE "L3"
-reference "L3"
-value "L0805"
-footprint "R0805"
-attribut smd
-position  6.648264  4.148391
-orientation  90.00
-layer component
-$SHAPE3D
-Na "walter/smd_inductors/inductor_smd_0805.wrl"
-Sc 1.4 1 0.6
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "1"
-position -0.037400  0.000000
-size  0.051100  0.059000
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position  0.037400  0.000000
-size  0.051100  0.059000
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  L3
-
 $MODULE "J2"
 reference "J2"
 value "~"
 footprint "MINIBUSB"
 attribut none
-position  7.681500  4.133600
+position  7.620079  4.133858
 orientation  90.00
 layer component
 $SHAPE3D
@@ -2630,7 +1269,7 @@ $EndMODULE  C53
 
 $MODULE "C54"
 reference "C54"
-value "0.47uF x 8"
+value "0.47uF"
 footprint "C0402"
 attribut smd
 position  4.003937  2.586614
@@ -3276,7 +1915,7 @@ $EndMODULE  C68
 
 $MODULE "C69"
 reference "C69"
-value "0.47uF x 8"
+value "0.47uF"
 footprint "C0402"
 attribut smd
 position  5.013780  2.499213
@@ -3650,7 +2289,7 @@ $EndMODULE  C82
 
 $MODULE "C83"
 reference "C83"
-value "0.47uF x 8"
+value "0.47uF"
 footprint "C0402"
 attribut smd
 position  4.320866  3.594488
@@ -4024,7 +2663,7 @@ $EndMODULE  C96
 
 $MODULE "C97"
 reference "C97"
-value "0.47uF x 8"
+value "0.47uF"
 footprint "C0402"
 attribut smd
 position  4.712598  3.269685
@@ -4398,7 +3037,7 @@ $EndMODULE  C108
 
 $MODULE "C109"
 reference "C109"
-value "0.47uF x8"
+value "0.47uF"
 footprint "C0402"
 attribut smd
 position  6.446850  2.545276
@@ -4772,7 +3411,7 @@ $EndMODULE  C122
 
 $MODULE "C123"
 reference "C123"
-value "0.47uF x 8"
+value "0.47uF"
 footprint "C0402"
 attribut smd
 position  7.145669  2.645669
@@ -5146,7 +3785,7 @@ $EndMODULE  C136
 
 $MODULE "C137"
 reference "C137"
-value "0.47uF x 8"
+value "0.47uF"
 footprint "C0402"
 attribut smd
 position  6.938976  3.407480
@@ -5217,7 +3856,7 @@ reference "C142"
 value "0.47uF"
 footprint "C0402"
 attribut smd
-position  7.653543  3.454724
+position  7.653543  3.476378
 orientation  0.00
 layer component
 $SHAPE3D
@@ -5489,7 +4128,7 @@ reference "C150"
 value "0.47uF"
 footprint "C0402"
 attribut smd
-position  7.653543  3.405512
+position  7.653543  3.428150
 orientation  0.00
 layer component
 $SHAPE3D
@@ -5520,7 +4159,7 @@ $EndMODULE  C150
 
 $MODULE "C151"
 reference "C151"
-value "0.47uF x 8"
+value "0.47uF"
 footprint "C0402"
 attribut smd
 position  7.318898  3.586614
@@ -5894,7 +4533,7 @@ $EndMODULE  C164
 
 $MODULE "C165"
 reference "C165"
-value "0.47uF x 8"
+value "0.47uF"
 footprint "C0402"
 attribut smd
 position  7.361024  5.754724
@@ -6268,7 +4907,7 @@ $EndMODULE  C178
 
 $MODULE "C179"
 reference "C179"
-value "0.47uF x 8"
+value "0.47uF"
 footprint "C0402"
 attribut smd
 position  6.936024  5.650591
@@ -6475,8 +5114,8 @@ reference "C188"
 value "0.47uF"
 footprint "C0402"
 attribut smd
-position  7.181102  5.088583
-orientation  90.00
+position  7.203740  5.066929
+orientation  180.00
 layer component
 $SHAPE3D
 Na "walter/smd_cap/c_0402.wrl"
@@ -6642,7 +5281,7 @@ $EndMODULE  C192
 
 $MODULE "C193"
 reference "C193"
-value "0.47uF x 8"
+value "0.47uF"
 footprint "C0402"
 attribut smd
 position  7.470472  5.255906
@@ -7016,7 +5655,7 @@ $EndMODULE  C206
 
 $MODULE "C207"
 reference "C207"
-value "0.47uF x 8"
+value "0.47uF"
 footprint "C0402"
 attribut smd
 position  6.773622  5.253937
@@ -7155,7 +5794,7 @@ reference "C214"
 value "0.47uF"
 footprint "C0402"
 attribut smd
-position  4.919291  5.754921
+position  4.888780  5.875000
 orientation  270.00
 layer component
 $SHAPE3D
@@ -7390,7 +6029,7 @@ $EndMODULE  C220
 
 $MODULE "C221"
 reference "C221"
-value "0.47uF  x 8"
+value "0.47uF"
 footprint "C0402"
 attribut smd
 position  5.223425  5.601378
@@ -7631,7 +6270,7 @@ reference "C231"
 value "0.47uF"
 footprint "C0402"
 attribut smd
-position  4.440551  5.307874
+position  4.432087  5.308071
 orientation  0.00
 layer component
 $SHAPE3D
@@ -7764,10 +6403,10 @@ $EndMODULE  C234
 
 $MODULE "C235"
 reference "C235"
-value "0.47uF x 8"
+value "0.47uF"
 footprint "C0402"
 attribut smd
-position  4.219488  5.754921
+position  4.228346  5.747047
 orientation  270.00
 layer component
 $SHAPE3D
@@ -8085,8 +6724,8 @@ reference "C247"
 value "0.47uF"
 footprint "C0402"
 attribut smd
-position  4.710630  5.088583
-orientation  90.00
+position  4.840551  5.211614
+orientation  270.00
 layer component
 $SHAPE3D
 Na "walter/smd_cap/c_0402.wrl"
@@ -8150,7 +6789,7 @@ $EndMODULE  C248
 
 $MODULE "C249"
 reference "C249"
-value "0.47uF x 8"
+value "0.47uF"
 footprint "C0402"
 attribut smd
 position  5.211614  5.040354
@@ -8255,7 +6894,7 @@ reference "C255"
 value "0.47uF"
 footprint "C0402"
 attribut smd
-position  3.996063  4.996063
+position  3.997047  4.973425
 orientation  270.00
 layer component
 $SHAPE3D
@@ -8425,8 +7064,8 @@ reference "C260"
 value "0.47uF"
 footprint "C0402"
 attribut smd
-position  4.332677  5.244094
-orientation  90.00
+position  4.301181  5.278543
+orientation  180.00
 layer component
 $SHAPE3D
 Na "walter/smd_cap/c_0402.wrl"
@@ -8493,8 +7132,8 @@ reference "C262"
 value "0.47uF"
 footprint "C0402"
 attribut smd
-position  3.996063  5.098425
-orientation  90.00
+position  4.079724  5.104331
+orientation  270.00
 layer component
 $SHAPE3D
 Na "walter/smd_cap/c_0402.wrl"
@@ -8524,7 +7163,7 @@ $EndMODULE  C262
 
 $MODULE "C263"
 reference "C263"
-value "0.47uF x 8"
+value "0.47uF"
 footprint "C0402"
 attribut smd
 position  4.194882  4.675197
@@ -8556,56 +7195,13 @@ Layer  front
 $EndPAD
 $EndMODULE  C263
 
-$MODULE "Q1"
-reference "Q1"
-value "NDS351AN"
-footprint "SOT-23"
-attribut smd
-position  7.346457  4.409449
-orientation  90.00
-layer component
-$SHAPE3D
-Na "walter/smd_trans/sot23.wrl"
-Sc 1 1 1
-Of 0 0 0
-Ro 0 0 180
-$EndSHAPE3D
-$PAD "3"
-position  0.039000 -0.040000
-size  0.031000  0.035000
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position -0.037000 -0.040000
-size  0.031000  0.035000
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "1"
-position  0.001000  0.040000
-size  0.031000  0.035000
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  Q1
-
 $MODULE "R22"
 reference "R22"
 value "100R"
 footprint "R0603"
 attribut smd
-position  7.035433  4.019685
-orientation  90.00
+position  6.991142  4.096457
+orientation  270.00
 layer component
 $SHAPE3D
 Na "walter/smd_resistors/r_0603.wrl"
@@ -8638,7 +7234,7 @@ reference "R23"
 value "1K"
 footprint "R0603"
 attribut smd
-position  6.968504  4.019685
+position  6.991142  3.976378
 orientation  270.00
 layer component
 $SHAPE3D
@@ -8672,8 +7268,8 @@ reference "C267"
 value "0.1uF"
 footprint "C0402"
 attribut smd
-position  7.448800  4.049700
-orientation  270.00
+position  7.136811  3.930118
+orientation  0.00
 layer component
 $SHAPE3D
 Na "walter/smd_cap/c_0402.wrl"
@@ -8700,63 +7296,6 @@ Shape  Rect
 Layer  front
 $EndPAD
 $EndMODULE  C267
-
-$MODULE "1PIN"
-reference "1PIN"
-value "P***"
-footprint "1pin"
-attribut none
-position  7.618110  2.362205
-orientation  0.00
-layer component
-$PAD "1"
-position  0.000000  0.000000
-size  0.160000  0.160000
-drill  0.118110
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Circ
-Layer  both
-$EndPAD
-$EndMODULE  1PIN
-
-$MODULE "1PIN"
-reference "1PIN"
-value "P***"
-footprint "1pin"
-attribut none
-position  7.618110  5.905512
-orientation  0.00
-layer component
-$PAD "1"
-position  0.000000  0.000000
-size  0.160000  0.160000
-drill  0.118110
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Circ
-Layer  both
-$EndPAD
-$EndMODULE  1PIN
-
-$MODULE "1PIN"
-reference "1PIN"
-value "P***"
-footprint "1pin"
-attribut none
-position  4.074803  5.905512
-orientation  0.00
-layer component
-$PAD "1"
-position  0.000000  0.000000
-size  0.160000  0.160000
-drill  0.118110
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Circ
-Layer  both
-$EndPAD
-$EndMODULE  1PIN
 
 $MODULE "U21"
 reference "U21"
@@ -8896,69 +7435,12 @@ Layer  front
 $EndPAD
 $EndMODULE  R25
 
-$MODULE "1PIN"
-reference "1PIN"
-value "P***"
-footprint "1pin"
-attribut none
-position  7.047244  3.051181
-orientation  0.00
-layer component
-$PAD "1"
-position  0.000000  0.000000
-size  0.160000  0.160000
-drill  0.118110
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Circ
-Layer  both
-$EndPAD
-$EndMODULE  1PIN
-
-$MODULE "1PIN"
-reference "1PIN"
-value "P***"
-footprint "1pin"
-attribut none
-position  4.606299  5.216535
-orientation  0.00
-layer component
-$PAD "1"
-position  0.000000  0.000000
-size  0.160000  0.160000
-drill  0.118110
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Circ
-Layer  both
-$EndPAD
-$EndMODULE  1PIN
-
-$MODULE "1PIN"
-reference "1PIN"
-value "P***"
-footprint "1pin"
-attribut none
-position  7.047244  5.216535
-orientation  0.00
-layer component
-$PAD "1"
-position  0.000000  0.000000
-size  0.160000  0.160000
-drill  0.118110
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Circ
-Layer  both
-$EndPAD
-$EndMODULE  1PIN
-
 $MODULE "U17"
 reference "U17"
 value "PIC16LF1459"
 footprint "SSOP20"
 attribut smd
-position  7.265300  4.136300
+position  7.226378  4.135827
 orientation  0.00
 layer component
 $SHAPE3D
@@ -9159,7 +7641,7 @@ orientation  270.00
 layer component
 $PAD "2"
 position  0.000000 -0.050000
-size  0.050000  0.050000
+size  0.039370  0.039370
 drill  0.000000
 shape_offset  0.000000  0.000000
 orientation  0.00
@@ -9168,7 +7650,7 @@ Layer  front
 $EndPAD
 $PAD "3"
 position  0.000000  0.050000
-size  0.050000  0.050000
+size  0.039370  0.039370
 drill  0.000000
 shape_offset  0.000000  0.000000
 orientation  0.00
@@ -9177,7 +7659,7 @@ Layer  front
 $EndPAD
 $PAD "4"
 position  0.000000  0.150000
-size  0.050000  0.050000
+size  0.039370  0.039370
 drill  0.000000
 shape_offset  0.000000  0.000000
 orientation  0.00
@@ -9186,7 +7668,7 @@ Layer  front
 $EndPAD
 $PAD "1"
 position  0.000000 -0.150000
-size  0.050000  0.050000
+size  0.039370  0.039370
 drill  0.000000
 shape_offset  0.000000  0.000000
 orientation  0.00
@@ -9195,7 +7677,7 @@ Layer  front
 $EndPAD
 $PAD "5"
 position  0.000000  0.250000
-size  0.050000  0.050000
+size  0.039370  0.039370
 drill  0.000000
 shape_offset  0.000000  0.000000
 orientation  0.00
@@ -9247,172 +7729,6 @@ Layer  front
 $EndPAD
 $EndMODULE  J4
 
-$MODULE "PHNX-2"
-reference "PHNX-2"
-value "VAL**"
-footprint "PHNX-2"
-attribut smd
-position  3.992126  4.309055
-orientation  270.00
-layer component
-$PAD "2"
-position  0.231299  0.000000
-size  0.104331  0.220472
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "3"
-position -0.231299  0.000000
-size  0.104331  0.220472
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "4"
-position -0.049213 -0.192913
-size  0.055118  0.275591
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "5"
-position  0.049213 -0.192913
-size  0.055118  0.275591
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  PHNX-2
-
-$MODULE "U22"
-reference "U22"
-value "AP7217D / RT9166A"
-footprint "sot89"
-attribut smd
-position  5.744094  5.958661
-orientation  90.00
-layer component
-$SHAPE3D
-Na "smd/smd_transistors/sot89.wrl"
-Sc 1 1 1
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "1"
-position -0.059100  0.074800
-size  0.027600  0.063000
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position  0.000000  0.065000
-size  0.027600  0.082700
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "3"
-position  0.059100  0.074800
-size  0.027600  0.063000
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position  0.000000 -0.029500
-size  0.078700  0.108300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  U22
-
-$MODULE "C268"
-reference "C268"
-value "22uF"
-footprint "C0603"
-attribut smd
-position  5.921260  5.958661
-orientation  0.00
-layer component
-$SHAPE3D
-Na "walter/smd_cap/c_0603.wrl"
-Sc 1 1 1
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "1"
-position -0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position  0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  C268
-
-$MODULE "C269"
-reference "C269"
-value "22uF"
-footprint "C0603"
-attribut smd
-position  5.921260  5.899606
-orientation  0.00
-layer component
-$SHAPE3D
-Na "walter/smd_cap/c_0603.wrl"
-Sc 1 1 1
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "1"
-position -0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position  0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  C269
-
 $MODULE "C272"
 reference "C272"
 value "0.01uF"
@@ -9446,74 +7762,6 @@ Shape  Rect
 Layer  front
 $EndPAD
 $EndMODULE  C272
-
-$MODULE "D1"
-reference "D1"
-value "LED"
-footprint "C0603"
-attribut smd
-position  6.996063  4.295276
-orientation  180.00
-layer component
-$SHAPE3D
-Na "smd/led_0805.wrl"
-Sc 0.45 0.25 0.5
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "1"
-position -0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position  0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  D1
-
-$MODULE "D2"
-reference "D2"
-value "LED"
-footprint "C0603"
-attribut smd
-position  7.647638  3.712598
-orientation  180.00
-layer component
-$SHAPE3D
-Na "smd/led_0805.wrl"
-Sc 0.45 0.25 0.5
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "1"
-position -0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position  0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  D2
 
 $MODULE "R26"
 reference "R26"
@@ -10030,7 +8278,7 @@ reference "R41"
 value "100K"
 footprint "C0402"
 attribut smd
-position  3.946850  4.996063
+position  3.947835  4.973425
 orientation  270.00
 layer component
 $SHAPE3D
@@ -10098,8 +8346,8 @@ reference "R43"
 value "100R"
 footprint "R0603"
 attribut smd
-position  7.523622  3.712598
-orientation  180.00
+position  7.728346  3.440945
+orientation  90.00
 layer component
 $SHAPE3D
 Na "walter/smd_resistors/r_0603.wrl"
@@ -10132,7 +8380,7 @@ reference "R44"
 value "100R"
 footprint "R0603"
 attribut smd
-position  6.905512  4.261811
+position  6.881890  4.264764
 orientation  90.00
 layer component
 $SHAPE3D
@@ -10166,8 +8414,8 @@ reference "RT1"
 value "2.2K"
 footprint "SM0402"
 attribut smd
-position  6.931102  3.515748
-orientation  0.00
+position  7.040354  3.271654
+orientation  270.00
 layer component
 $SHAPE3D
 Na "smd\\chip_cms.wrl"
@@ -10194,180 +8442,6 @@ Shape  Rect
 Layer  front
 $EndPAD
 $EndMODULE  RT1
-
-$MODULE "C270"
-reference "C270"
-value "22uF"
-footprint "C0603"
-attribut smd
-position  5.722441  2.315748
-orientation  180.00
-layer component
-$SHAPE3D
-Na "walter/smd_cap/c_0603.wrl"
-Sc 1 1 1
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "1"
-position -0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position  0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  C270
-
-$MODULE "C271"
-reference "C271"
-value "22uF"
-footprint "C0603"
-attribut smd
-position  5.722441  2.371654
-orientation  180.00
-layer component
-$SHAPE3D
-Na "walter/smd_cap/c_0603.wrl"
-Sc 1 1 1
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "1"
-position -0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position  0.033400  0.000000
-size  0.043300  0.039300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  C271
-
-$MODULE "C273"
-reference "C273"
-value "330uF"
-footprint "UD-10X10_NICHICON"
-attribut smd
-position  5.438189  4.156693
-orientation  90.00
-layer component
-$SHAPE3D
-Na "walter/smd_cap/c_elec_10x10.wrl"
-Sc 1 1 1
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "-"
-position -0.155500  0.000000
-size  0.141700  0.051100
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "+"
-position  0.154500  0.000000
-size  0.141700  0.051100
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  C273
-
-$MODULE "U23"
-reference "U23"
-value "AP7172D / RT9166A"
-footprint "sot89"
-attribut smd
-position  5.901181  2.313386
-orientation  270.00
-layer component
-$SHAPE3D
-Na "smd/smd_transistors/sot89.wrl"
-Sc 1 1 1
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "1"
-position -0.059100  0.074800
-size  0.027600  0.063000
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position  0.000000  0.065000
-size  0.027600  0.082700
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "3"
-position  0.059100  0.074800
-size  0.027600  0.063000
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position  0.000000 -0.029500
-size  0.078700  0.108300
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  U23
-
-$MODULE "VAL"
-reference "VAL"
-value "axe1.mod"
-footprint "axelogo.mod"
-attribut smd
-position  5.551181  5.541339
-orientation  0.00
-layer component
-$EndMODULE  VAL
-
-$MODULE "G***"
-reference "G***"
-value "OSHW-logo_silkscreen-front_8mm"
-footprint "OSHW-logo_silkscreen-front_8mm"
-attribut smd
-position  5.933071  4.145669
-orientation  90.00
-layer component
-$EndMODULE  G***
 
 $MODULE "FIDICUAL"
 reference "FIDICUAL"
@@ -10412,7 +8486,7 @@ reference "FIDICUAL"
 value "VAL**"
 footprint "FIDICUAL"
 attribut smd
-position  4.348425  5.807087
+position  4.365157  5.810039
 orientation  0.00
 layer component
 $PAD "3"
@@ -10450,7 +8524,7 @@ reference "FIDICUAL"
 value "VAL**"
 footprint "FIDICUAL"
 attribut smd
-position  4.035433  3.582677
+position  4.020669  3.608268
 orientation  0.00
 layer component
 $PAD "2"
@@ -10526,8 +8600,8 @@ reference "C55"
 value "0.47uF"
 footprint "C0402"
 attribut smd
-position  4.265748  2.417323
-orientation  0.00
+position  4.291339  2.393701
+orientation  270.00
 layer component
 $SHAPE3D
 Na "walter/smd_cap/c_0402.wrl"
@@ -10662,8 +8736,8 @@ reference "C110"
 value "0.47uF"
 footprint "C0402"
 attribut smd
-position  6.751969  2.399606
-orientation  270.00
+position  6.645669  2.310039
+orientation  90.00
 layer component
 $SHAPE3D
 Na "walter/smd_cap/c_0402.wrl"
@@ -10696,7 +8770,7 @@ reference "C124"
 value "0.47uF"
 footprint "C0402"
 attribut smd
-position  7.401575  2.446850
+position  7.414370  2.430118
 orientation  0.00
 layer component
 $SHAPE3D
@@ -10798,7 +8872,7 @@ reference "C166"
 value "0.47uF"
 footprint "C0402"
 attribut smd
-position  7.385827  5.848425
+position  7.332677  5.998031
 orientation  180.00
 layer component
 $SHAPE3D
@@ -10832,8 +8906,8 @@ reference "C180"
 value "0.47uF"
 footprint "C0402"
 attribut smd
-position  6.724409  5.899606
-orientation  180.00
+position  6.622047  5.956693
+orientation  270.00
 layer component
 $SHAPE3D
 Na "walter/smd_cap/c_0402.wrl"
@@ -10866,8 +8940,8 @@ reference "C194"
 value "0.47uF"
 footprint "C0402"
 attribut smd
-position  7.395669  5.277559
-orientation  0.00
+position  7.504921  5.173228
+orientation  180.00
 layer component
 $SHAPE3D
 Na "walter/smd_cap/c_0402.wrl"
@@ -10900,8 +8974,8 @@ reference "C208"
 value "0.47uF"
 footprint "C0402"
 attribut smd
-position  6.822835  5.202756
-orientation  270.00
+position  6.805118  5.167323
+orientation  180.00
 layer component
 $SHAPE3D
 Na "walter/smd_cap/c_0402.wrl"
@@ -10934,8 +9008,8 @@ reference "C222"
 value "0.47uF"
 footprint "C0402"
 attribut smd
-position  4.917323  5.870079
-orientation  90.00
+position  4.973425  5.912402
+orientation  180.00
 layer component
 $SHAPE3D
 Na "walter/smd_cap/c_0402.wrl"
@@ -10968,8 +9042,8 @@ reference "C236"
 value "0.47uF"
 footprint "C0402"
 attribut smd
-position  4.236220  5.848425
-orientation  180.00
+position  4.396654  5.924213
+orientation  270.00
 layer component
 $SHAPE3D
 Na "walter/smd_cap/c_0402.wrl"
@@ -11036,7 +9110,7 @@ reference "C264"
 value "0.47uF"
 footprint "C0402"
 attribut smd
-position  4.381890  5.192913
+position  4.336614  5.191929
 orientation  270.00
 layer component
 $SHAPE3D
@@ -11070,8 +9144,8 @@ reference "C274"
 value "30pF"
 footprint "C0402"
 attribut smd
-position  7.068898  4.413386
-orientation  90.00
+position  7.002953  4.442913
+orientation  0.00
 layer component
 $SHAPE3D
 Na "walter/smd_cap/c_0402.wrl"
@@ -11098,135 +9172,6 @@ Shape  Rect
 Layer  front
 $EndPAD
 $EndMODULE  C274
-
-$MODULE "U24"
-reference "U24"
-value "74AUP1G02"
-footprint "SOT353"
-attribut smd
-position  6.996063  4.405512
-orientation  90.00
-layer component
-$SHAPE3D
-Na "smd/SOT23_5.wrl"
-Sc 0.07 0.09 0.08
-Of 0 0 0
-Ro 0 0 90
-$EndSHAPE3D
-$PAD "1"
-position -0.040000 -0.025000
-size  0.020000  0.012000
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "3"
-position -0.040000  0.025000
-size  0.020000  0.012000
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "5"
-position  0.040000 -0.025000
-size  0.020000  0.012000
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position -0.040000  0.000000
-size  0.020000  0.012000
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "4"
-position  0.040000  0.025000
-size  0.020000  0.012000
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  U24
-
-$MODULE "R45"
-reference "R45"
-value "100K"
-footprint "C0402"
-attribut smd
-position  6.917323  4.391732
-orientation  270.00
-layer component
-$SHAPE3D
-Na "walter/smd_cap/c_0402.wrl"
-Sc 1 1 1
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "1"
-position -0.025500  0.000000
-size  0.027500  0.035400
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position  0.025500  0.000000
-size  0.027500  0.035400
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  R45
-
-$MODULE "R46"
-reference "R46"
-value "100K"
-footprint "C0402"
-attribut smd
-position  6.870079  4.391732
-orientation  270.00
-layer component
-$SHAPE3D
-Na "walter/smd_cap/c_0402.wrl"
-Sc 1 1 1
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "1"
-position -0.025500  0.000000
-size  0.027500  0.035400
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position  0.025500  0.000000
-size  0.027500  0.035400
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$EndMODULE  R46
 
 $MODULE "SMD_PIN_2x2"
 reference "SMD_PIN_2x2"
@@ -11441,7 +9386,7 @@ reference "GND2AGND"
 value "VAL**"
 footprint "GND2AGND"
 attribut virtual
-position  6.000000  3.478346
+position  5.966535  3.474409
 orientation  0.00
 layer copper
 $PAD "1"
@@ -11491,668 +9436,6 @@ Shape  Rect
 Layer  back
 $EndPAD
 $EndMODULE  GND2AGND
-
-$MODULE "U18"
-reference "U18"
-value "IR3895"
-footprint "PQFN-16"
-attribut smd
-position  5.968500  3.465500
-orientation  0.00
-layer component
-$SHAPE3D
-Na "walter/smd_qfn/r-pvqfn-n16.wrl"
-Sc 1.2 1.5 1
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "1"
-position -0.076772  0.116142
-size  0.011800  0.027500
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position -0.051181  0.116142
-size  0.011800  0.027500
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "3"
-position -0.025591  0.116142
-size  0.011800  0.027500
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "4"
-position  0.000000  0.116142
-size  0.011800  0.027500
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "5"
-position  0.025591  0.116142
-size  0.011800  0.027500
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "6"
-position  0.051181  0.116142
-size  0.011800  0.027500
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "7"
-position  0.076772  0.116142
-size  0.011800  0.027500
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "8"
-position  0.096400  0.084600
-size  0.011800  0.027500
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  90.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "9"
-position  0.096400  0.059000
-size  0.011800  0.027500
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  90.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "10"
-position  0.096400  0.033400
-size  0.011800  0.027500
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  90.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "16"
-position -0.096400  0.084600
-size  0.011800  0.027500
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  90.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "15"
-position -0.096400  0.059000
-size  0.011800  0.027500
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  90.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "14"
-position -0.096400  0.033400
-size  0.011800  0.027500
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  90.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "11"
-position  0.078740 -0.053150
-size  0.098031  0.017717
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  90.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "12"
-position  0.008858 -0.046260
-size  0.113780  0.083858
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  90.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "13"
-position -0.067913 -0.053150
-size  0.098031  0.040157
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  90.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "17"
-position -0.001969  0.059055
-size  0.061024  0.105906
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  90.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "13"
-position -0.098425 -0.094488
-size  0.016929  0.023622
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  90.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "13"
-position -0.098425 -0.053150
-size  0.016929  0.023622
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  90.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "13"
-position -0.098425 -0.011811
-size  0.016929  0.023622
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  90.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "11"
-position  0.098425 -0.094488
-size  0.016929  0.023622
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  90.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "11"
-position  0.098425 -0.053150
-size  0.016929  0.023622
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  90.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "11"
-position  0.097441 -0.011811
-size  0.016929  0.023622
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  90.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "12"
-position  0.008858 -0.117126
-size  0.027559  0.016929
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  90.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "12"
-position -0.024606 -0.117126
-size  0.027559  0.016929
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  90.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "12"
-position  0.042323 -0.117126
-size  0.027559  0.016929
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  90.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "P"
-position  0.027559  0.042323
-size  0.047244  0.027559
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  none
-$EndPAD
-$PAD "P"
-position -0.031496  0.042323
-size  0.047244  0.027559
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  none
-$EndPAD
-$PAD "P"
-position -0.031496  0.075787
-size  0.047244  0.027559
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  none
-$EndPAD
-$PAD "P"
-position  0.027559  0.075787
-size  0.047244  0.027559
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  none
-$EndPAD
-$PAD "P"
-position  0.008858 -0.013780
-size  0.077717  0.048819
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  none
-$EndPAD
-$PAD "P"
-position  0.008858 -0.074803
-size  0.077717  0.048819
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  none
-$EndPAD
-$PAD "P1"
-position -0.065945 -0.027559
-size  0.035433  0.045276
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  none
-$EndPAD
-$PAD "P2"
-position -0.065945 -0.078740
-size  0.035433  0.045276
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  none
-$EndPAD
-$PAD "P1"
-position  0.078740 -0.053150
-size  0.014961  0.098031
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  none
-$EndPAD
-$EndMODULE  U18
-
-$MODULE "U19"
-reference "U19"
-value "IR3895"
-footprint "PQFN-16"
-attribut smd
-position  5.732200  4.806400
-orientation  180.00
-layer component
-$SHAPE3D
-Na "walter/smd_qfn/r-pvqfn-n16.wrl"
-Sc 1.2 1.5 1
-Of 0 0 0
-Ro 0 0 0
-$EndSHAPE3D
-$PAD "1"
-position -0.076772  0.116142
-size  0.011800  0.027500
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "2"
-position -0.051181  0.116142
-size  0.011800  0.027500
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "3"
-position -0.025591  0.116142
-size  0.011800  0.027500
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "4"
-position  0.000000  0.116142
-size  0.011800  0.027500
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "5"
-position  0.025591  0.116142
-size  0.011800  0.027500
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "6"
-position  0.051181  0.116142
-size  0.011800  0.027500
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "7"
-position  0.076772  0.116142
-size  0.011800  0.027500
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "8"
-position  0.096400  0.084600
-size  0.011800  0.027500
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  90.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "9"
-position  0.096400  0.059000
-size  0.011800  0.027500
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  90.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "10"
-position  0.096400  0.033400
-size  0.011800  0.027500
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  90.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "16"
-position -0.096400  0.084600
-size  0.011800  0.027500
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  90.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "15"
-position -0.096400  0.059000
-size  0.011800  0.027500
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  90.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "14"
-position -0.096400  0.033400
-size  0.011800  0.027500
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  90.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "11"
-position  0.078740 -0.053150
-size  0.098031  0.017717
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  90.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "12"
-position  0.008858 -0.046260
-size  0.113780  0.083858
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  90.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "13"
-position -0.067913 -0.053150
-size  0.098031  0.040157
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  90.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "17"
-position -0.001969  0.059055
-size  0.061024  0.105906
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  90.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "13"
-position -0.098425 -0.094488
-size  0.016929  0.023622
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  90.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "13"
-position -0.098425 -0.053150
-size  0.016929  0.023622
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  90.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "13"
-position -0.098425 -0.011811
-size  0.016929  0.023622
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  90.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "11"
-position  0.098425 -0.094488
-size  0.016929  0.023622
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  90.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "11"
-position  0.098425 -0.053150
-size  0.016929  0.023622
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  90.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "11"
-position  0.097441 -0.011811
-size  0.016929  0.023622
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  90.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "12"
-position  0.008858 -0.117126
-size  0.027559  0.016929
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  90.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "12"
-position -0.024606 -0.117126
-size  0.027559  0.016929
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  90.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "12"
-position  0.042323 -0.117126
-size  0.027559  0.016929
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  90.00
-Shape  Rect
-Layer  front
-$EndPAD
-$PAD "P"
-position  0.027559  0.042323
-size  0.047244  0.027559
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  none
-$EndPAD
-$PAD "P"
-position -0.031496  0.042323
-size  0.047244  0.027559
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  none
-$EndPAD
-$PAD "P"
-position -0.031496  0.075787
-size  0.047244  0.027559
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  none
-$EndPAD
-$PAD "P"
-position  0.027559  0.075787
-size  0.047244  0.027559
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  none
-$EndPAD
-$PAD "P"
-position  0.008858 -0.013780
-size  0.077717  0.048819
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  none
-$EndPAD
-$PAD "P"
-position  0.008858 -0.074803
-size  0.077717  0.048819
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  none
-$EndPAD
-$PAD "P1"
-position -0.065945 -0.027559
-size  0.035433  0.045276
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  none
-$EndPAD
-$PAD "P2"
-position -0.065945 -0.078740
-size  0.035433  0.045276
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  none
-$EndPAD
-$PAD "P1"
-position  0.078740 -0.053150
-size  0.014961  0.098031
-drill  0.000000
-shape_offset  0.000000  0.000000
-orientation  0.00
-Shape  Rect
-Layer  none
-$EndPAD
-$EndMODULE  U19
 
 $MODULE "U1"
 reference "U1"
@@ -20975,6 +18258,3672 @@ Shape  Rect
 Layer  front
 $EndPAD
 $EndMODULE  U20
+
+$MODULE "U18"
+reference "U18"
+value "IR3895"
+footprint "PQFN-16"
+attribut smd
+position  5.968500  3.465500
+orientation  0.00
+layer component
+$SHAPE3D
+Na "walter/smd_qfn/r-pvqfn-n16.wrl"
+Sc 1.2 1.5 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.076772  0.116142
+size  0.011800  0.027500
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position -0.051181  0.116142
+size  0.011800  0.027500
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "3"
+position -0.025591  0.116142
+size  0.011800  0.027500
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "4"
+position  0.000000  0.116142
+size  0.011800  0.027500
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "5"
+position  0.025591  0.116142
+size  0.011800  0.027500
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "6"
+position  0.051181  0.116142
+size  0.011800  0.027500
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "7"
+position  0.076772  0.116142
+size  0.011800  0.027500
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "8"
+position  0.096400  0.084600
+size  0.011800  0.027500
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  90.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "9"
+position  0.096400  0.059000
+size  0.011800  0.027500
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  90.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "10"
+position  0.096400  0.033400
+size  0.011800  0.027500
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  90.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "16"
+position -0.096400  0.084600
+size  0.011800  0.027500
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  90.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "15"
+position -0.096400  0.059000
+size  0.011800  0.027500
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  90.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "14"
+position -0.096400  0.033400
+size  0.011800  0.027500
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  90.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "11"
+position  0.078740 -0.053150
+size  0.098031  0.017717
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  90.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "12"
+position  0.008858 -0.046260
+size  0.113780  0.083858
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  90.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "13"
+position -0.067913 -0.053150
+size  0.098031  0.040157
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  90.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "17"
+position -0.001969  0.059055
+size  0.061024  0.105906
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  90.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "13"
+position -0.098425 -0.094488
+size  0.016929  0.023622
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  90.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "13"
+position -0.098425 -0.053150
+size  0.016929  0.023622
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  90.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "13"
+position -0.098425 -0.011811
+size  0.016929  0.023622
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  90.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "11"
+position  0.098425 -0.094488
+size  0.016929  0.023622
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  90.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "11"
+position  0.098425 -0.053150
+size  0.016929  0.023622
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  90.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "11"
+position  0.097441 -0.011811
+size  0.016929  0.023622
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  90.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "12"
+position  0.008858 -0.117126
+size  0.027559  0.016929
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  90.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "12"
+position -0.024606 -0.117126
+size  0.027559  0.016929
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  90.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "12"
+position  0.042323 -0.117126
+size  0.027559  0.016929
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  90.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "P"
+position  0.027559  0.042323
+size  0.047244  0.027559
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  none
+$EndPAD
+$PAD "P"
+position -0.031496  0.042323
+size  0.047244  0.027559
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  none
+$EndPAD
+$PAD "P"
+position -0.031496  0.075787
+size  0.047244  0.027559
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  none
+$EndPAD
+$PAD "P"
+position  0.027559  0.075787
+size  0.047244  0.027559
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  none
+$EndPAD
+$PAD "P"
+position  0.008858 -0.013780
+size  0.077717  0.048819
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  none
+$EndPAD
+$PAD "P"
+position  0.008858 -0.074803
+size  0.077717  0.048819
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  none
+$EndPAD
+$PAD "P1"
+position -0.065945 -0.027559
+size  0.035433  0.045276
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  none
+$EndPAD
+$PAD "P2"
+position -0.065945 -0.078740
+size  0.035433  0.045276
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  none
+$EndPAD
+$PAD "P1"
+position  0.078740 -0.053150
+size  0.014961  0.098031
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  none
+$EndPAD
+$EndMODULE  U18
+
+$MODULE "U19"
+reference "U19"
+value "IR3895"
+footprint "PQFN-16"
+attribut smd
+position  5.732200  4.806400
+orientation  180.00
+layer component
+$SHAPE3D
+Na "walter/smd_qfn/r-pvqfn-n16.wrl"
+Sc 1.2 1.5 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.076772  0.116142
+size  0.011800  0.027500
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position -0.051181  0.116142
+size  0.011800  0.027500
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "3"
+position -0.025591  0.116142
+size  0.011800  0.027500
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "4"
+position  0.000000  0.116142
+size  0.011800  0.027500
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "5"
+position  0.025591  0.116142
+size  0.011800  0.027500
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "6"
+position  0.051181  0.116142
+size  0.011800  0.027500
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "7"
+position  0.076772  0.116142
+size  0.011800  0.027500
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "8"
+position  0.096400  0.084600
+size  0.011800  0.027500
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  90.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "9"
+position  0.096400  0.059000
+size  0.011800  0.027500
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  90.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "10"
+position  0.096400  0.033400
+size  0.011800  0.027500
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  90.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "16"
+position -0.096400  0.084600
+size  0.011800  0.027500
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  90.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "15"
+position -0.096400  0.059000
+size  0.011800  0.027500
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  90.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "14"
+position -0.096400  0.033400
+size  0.011800  0.027500
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  90.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "11"
+position  0.078740 -0.053150
+size  0.098031  0.017717
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  90.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "12"
+position  0.008858 -0.046260
+size  0.113780  0.083858
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  90.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "13"
+position -0.067913 -0.053150
+size  0.098031  0.040157
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  90.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "17"
+position -0.001969  0.059055
+size  0.061024  0.105906
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  90.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "13"
+position -0.098425 -0.094488
+size  0.016929  0.023622
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  90.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "13"
+position -0.098425 -0.053150
+size  0.016929  0.023622
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  90.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "13"
+position -0.098425 -0.011811
+size  0.016929  0.023622
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  90.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "11"
+position  0.098425 -0.094488
+size  0.016929  0.023622
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  90.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "11"
+position  0.098425 -0.053150
+size  0.016929  0.023622
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  90.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "11"
+position  0.097441 -0.011811
+size  0.016929  0.023622
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  90.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "12"
+position  0.008858 -0.117126
+size  0.027559  0.016929
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  90.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "12"
+position -0.024606 -0.117126
+size  0.027559  0.016929
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  90.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "12"
+position  0.042323 -0.117126
+size  0.027559  0.016929
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  90.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "P"
+position  0.027559  0.042323
+size  0.047244  0.027559
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  none
+$EndPAD
+$PAD "P"
+position -0.031496  0.042323
+size  0.047244  0.027559
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  none
+$EndPAD
+$PAD "P"
+position -0.031496  0.075787
+size  0.047244  0.027559
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  none
+$EndPAD
+$PAD "P"
+position  0.027559  0.075787
+size  0.047244  0.027559
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  none
+$EndPAD
+$PAD "P"
+position  0.008858 -0.013780
+size  0.077717  0.048819
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  none
+$EndPAD
+$PAD "P"
+position  0.008858 -0.074803
+size  0.077717  0.048819
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  none
+$EndPAD
+$PAD "P1"
+position -0.065945 -0.027559
+size  0.035433  0.045276
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  none
+$EndPAD
+$PAD "P2"
+position -0.065945 -0.078740
+size  0.035433  0.045276
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  none
+$EndPAD
+$PAD "P1"
+position  0.078740 -0.053150
+size  0.014961  0.098031
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  none
+$EndPAD
+$EndMODULE  U19
+
+$MODULE "SMD_PIN_2x2"
+reference "SMD_PIN_2x2"
+value "Val**"
+footprint "SMD_PIN_2x2"
+attribut smd
+position  3.978346  5.196850
+orientation  180.00
+layer component
+$SHAPE3D
+Na "walter/pin_strip/pin_strip_2x2.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "2"
+position -0.050197 -0.104331
+size  0.039370  0.125984
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "4"
+position  0.050197 -0.104331
+size  0.039370  0.125984
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "3"
+position  0.050197  0.104331
+size  0.039370  0.125984
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "1"
+position -0.050197  0.104331
+size  0.039370  0.125984
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  SMD_PIN_2x2
+
+$MODULE "1PIN"
+reference "1PIN"
+value "P***"
+footprint "Hole4mm"
+attribut none
+position  4.074803  2.362205
+orientation  0.00
+layer component
+$PAD "1"
+position  0.000000  0.000000
+size  0.196850  0.196850
+drill  0.157480
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Circ
+Layer  both
+$EndPAD
+$EndMODULE  1PIN
+
+$MODULE "1PIN"
+reference "1PIN"
+value "P***"
+footprint "Hole4mm"
+attribut none
+position  4.074803  5.905512
+orientation  0.00
+layer component
+$PAD "1"
+position  0.000000  0.000000
+size  0.196850  0.196850
+drill  0.157480
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Circ
+Layer  both
+$EndPAD
+$EndMODULE  1PIN
+
+$MODULE "1PIN"
+reference "1PIN"
+value "P***"
+footprint "Hole4mm"
+attribut none
+position  4.606299  5.216535
+orientation  0.00
+layer component
+$PAD "1"
+position  0.000000  0.000000
+size  0.196850  0.196850
+drill  0.157480
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Circ
+Layer  both
+$EndPAD
+$EndMODULE  1PIN
+
+$MODULE "1PIN"
+reference "1PIN"
+value "P***"
+footprint "Hole4mm"
+attribut none
+position  7.047244  5.216535
+orientation  0.00
+layer component
+$PAD "1"
+position  0.000000  0.000000
+size  0.196850  0.196850
+drill  0.157480
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Circ
+Layer  both
+$EndPAD
+$EndMODULE  1PIN
+
+$MODULE "1PIN"
+reference "1PIN"
+value "P***"
+footprint "Hole4mm"
+attribut none
+position  7.618110  5.905512
+orientation  0.00
+layer component
+$PAD "1"
+position  0.000000  0.000000
+size  0.196850  0.196850
+drill  0.157480
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Circ
+Layer  both
+$EndPAD
+$EndMODULE  1PIN
+
+$MODULE "1PIN"
+reference "1PIN"
+value "P***"
+footprint "Hole4mm"
+attribut none
+position  7.618110  2.362205
+orientation  0.00
+layer component
+$PAD "1"
+position  0.000000  0.000000
+size  0.196850  0.196850
+drill  0.157480
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Circ
+Layer  both
+$EndPAD
+$EndMODULE  1PIN
+
+$MODULE "1PIN"
+reference "1PIN"
+value "P***"
+footprint "Hole4mm"
+attribut none
+position  7.047244  3.051181
+orientation  0.00
+layer component
+$PAD "1"
+position  0.000000  0.000000
+size  0.196850  0.196850
+drill  0.157480
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Circ
+Layer  both
+$EndPAD
+$EndMODULE  1PIN
+
+$MODULE "R47"
+reference "R47"
+value "100R"
+footprint "C0402"
+attribut smd
+position  7.001969  4.389764
+orientation  180.00
+layer component
+$SHAPE3D
+Na "walter/smd_cap/c_0402.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.025500  0.000000
+size  0.027500  0.035400
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.025500  0.000000
+size  0.027500  0.035400
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  R47
+
+$MODULE "U25"
+reference "U25"
+value "NL27WZ14"
+footprint "SOT-363"
+attribut smd
+position  7.120079  4.418307
+orientation  0.00
+layer component
+$SHAPE3D
+Na "smd/smd_transistors/sot323-6.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.025591  0.036220
+size  0.011811  0.025984
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "5"
+position  0.000000 -0.036220
+size  0.011811  0.025984
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "3"
+position  0.025591  0.036220
+size  0.011811  0.025984
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.000000  0.036220
+size  0.011811  0.025984
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "4"
+position  0.025591 -0.036220
+size  0.011811  0.025984
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "6"
+position -0.025591 -0.036220
+size  0.011811  0.025984
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  U25
+
+$MODULE "R48"
+reference "R48"
+value "1K"
+footprint "R0603"
+attribut none
+position  7.214567  4.409449
+orientation  270.00
+layer component
+$SHAPE3D
+Na "walter/smd_resistors/r_0603.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.033400  0.000000
+size  0.039300  0.043300
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.033400  0.000000
+size  0.039300  0.043300
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  R48
+
+$MODULE "C275"
+reference "C275"
+value "0.01uF"
+footprint "C0402"
+attribut none
+position  7.218504  4.497047
+orientation  0.00
+layer component
+$SHAPE3D
+Na "walter/smd_cap/c_0402.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.025500  0.000000
+size  0.027500  0.035400
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.025500  0.000000
+size  0.027500  0.035400
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  C275
+
+$MODULE "J1"
+reference "J1"
+value "PCIEPWR"
+footprint "PCIEPWR"
+attribut none
+position  4.507874  4.161417
+orientation  270.00
+layer component
+$PAD "1"
+position  0.165300  0.082600
+size  0.082600  0.082600
+drill  0.055100
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Oval
+Layer  both
+$EndPAD
+$PAD "2"
+position  0.000000  0.082600
+size  0.082600  0.082600
+drill  0.055100
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Oval
+Layer  both
+$EndPAD
+$PAD "3"
+position -0.165300  0.082600
+size  0.082600  0.082600
+drill  0.055100
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Oval
+Layer  both
+$EndPAD
+$PAD "6"
+position -0.165300 -0.082600
+size  0.082600  0.082600
+drill  0.055100
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Oval
+Layer  both
+$EndPAD
+$PAD "5"
+position  0.000000 -0.082600
+size  0.082600  0.082600
+drill  0.055100
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Oval
+Layer  both
+$EndPAD
+$PAD "4"
+position  0.165300 -0.082600
+size  0.082600  0.082600
+drill  0.055100
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Oval
+Layer  both
+$EndPAD
+$PAD ""
+position  0.165300  0.370002
+size  0.118110  0.118110
+drill  0.118110
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Circ
+Layer  both
+$EndPAD
+$PAD ""
+position -0.165300  0.370002
+size  0.118110  0.118110
+drill  0.118110
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Circ
+Layer  both
+$EndPAD
+$EndMODULE  J1
+
+$MODULE "C276"
+reference "C276"
+value "0.1uF"
+footprint "C0402"
+attribut none
+position  7.042323  4.264764
+orientation  270.00
+layer component
+$SHAPE3D
+Na "walter/smd_cap/c_0402.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.019685  0.000000
+size  0.019685  0.027559
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.019685  0.000000
+size  0.019685  0.027559
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  C276
+
+$MODULE "L20"
+reference "L20"
+value "120R @ 100 MHz"
+footprint "L0402"
+attribut none
+position  7.402559  4.167323
+orientation  270.00
+layer component
+$SHAPE3D
+Na "walter/smd_cap/c_0402.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.017717  0.000000
+size  0.019685  0.019685
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.017717  0.000000
+size  0.019685  0.019685
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  L20
+
+$MODULE "L21"
+reference "L21"
+value "120R / 100 MHz"
+footprint "L0402"
+attribut none
+position  7.402559  4.098425
+orientation  270.00
+layer component
+$SHAPE3D
+Na "walter/smd_cap/c_0402.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.017717  0.000000
+size  0.019685  0.019685
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.017717  0.000000
+size  0.019685  0.019685
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  L21
+
+$MODULE "L23"
+reference "L23"
+value "220R / 100 MHz"
+footprint "L0402"
+attribut none
+position  7.403543  4.257874
+orientation  270.00
+layer component
+$SHAPE3D
+Na "walter/smd_cap/c_0402.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.017717  0.000000
+size  0.019685  0.019685
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.017717  0.000000
+size  0.019685  0.019685
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  L23
+
+$MODULE "L22"
+reference "L22"
+value "120R @ 100 MHz"
+footprint "L0402"
+attribut none
+position  7.402559  4.029528
+orientation  270.00
+layer component
+$SHAPE3D
+Na "walter/smd_cap/c_0402.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.017717  0.000000
+size  0.019685  0.019685
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.017717  0.000000
+size  0.019685  0.019685
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  L22
+
+$MODULE "U23"
+reference "U23"
+value "AP7217D / RT9166A"
+footprint "SOT89-3L"
+attribut smd
+position  5.901181  2.313386
+orientation  270.00
+layer component
+$SHAPE3D
+Na "smd/smd_transistors/sot89.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.059100  0.074800
+size  0.035433  0.051181
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.000000  0.065000
+size  0.035433  0.074803
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "3"
+position  0.059100  0.074800
+size  0.035433  0.051181
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.000000 -0.023622
+size  0.066929  0.106299
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  U23
+
+$MODULE "U22"
+reference "U22"
+value "AP7217D / RT9166A"
+footprint "SOT89-3L"
+attribut smd
+position  5.744094  5.958661
+orientation  90.00
+layer component
+$SHAPE3D
+Na "smd/smd_transistors/sot89.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.059100  0.074800
+size  0.035433  0.051181
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.000000  0.065000
+size  0.035433  0.074803
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "3"
+position  0.059100  0.074800
+size  0.035433  0.051181
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.000000 -0.023622
+size  0.066929  0.106299
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  U22
+
+$MODULE "U24"
+reference "U24"
+value "74AUP2G02"
+footprint "VSSOP8"
+attribut none
+position  6.897638  4.414370
+orientation  0.00
+layer component
+$SHAPE3D
+Na "walter/smd_dil/tssop-8.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "4"
+position  0.031496  0.054134
+size  0.015748  0.029528
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "1"
+position -0.031496  0.054134
+size  0.015748  0.029528
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position -0.009843  0.054134
+size  0.011811  0.029528
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "3"
+position  0.009843  0.054134
+size  0.011811  0.029528
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "6"
+position  0.009843 -0.054134
+size  0.011811  0.029528
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "7"
+position -0.009843 -0.054134
+size  0.011811  0.029528
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "8"
+position -0.031496 -0.054134
+size  0.015748  0.029528
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "5"
+position  0.031496 -0.054134
+size  0.015748  0.029528
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  U24
+
+$MODULE "Q1"
+reference "Q1"
+value "NDS351AN"
+footprint "SSOT-3L"
+attribut none
+position  7.331693  4.411417
+orientation  90.00
+layer component
+$SHAPE3D
+Na "walter/smd_trans/sot23.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "3"
+position  0.037402 -0.043307
+size  0.039370  0.055118
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position -0.037402 -0.043307
+size  0.039370  0.055118
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "1"
+position  0.001000  0.043307
+size  0.039370  0.055118
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  Q1
+
+$MODULE "D1"
+reference "D1"
+value "LED"
+footprint "D0603"
+attribut none
+position  6.961614  4.264764
+orientation  270.00
+layer component
+$SHAPE3D
+Na "walter/smd_cap/c_0603.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.029528  0.000000
+size  0.031496  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.029528  0.000000
+size  0.031496  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  D1
+
+$MODULE "D2"
+reference "D2"
+value "LED"
+footprint "D0603"
+attribut none
+position  7.670276  3.527559
+orientation  0.00
+layer component
+$SHAPE3D
+Na "walter/smd_cap/c_0603.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.029528  0.000000
+size  0.031496  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.029528  0.000000
+size  0.031496  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  D2
+
+$MODULE "D3"
+reference "D3"
+value "SL02"
+footprint "DO219AB"
+attribut none
+position  7.459646  4.502953
+orientation  270.00
+layer component
+$SHAPE3D
+Na "walter\\smd_diode\\do219ab.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "2"
+position  0.057087  0.000000
+size  0.051181  0.055118
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "1"
+position -0.057087  0.000000
+size  0.051181  0.055118
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  D3
+
+$MODULE "L1"
+reference "L1"
+value "0.36uH"
+footprint "38L361C"
+attribut none
+position  5.908200  3.112300
+orientation  0.00
+layer component
+$SHAPE3D
+Na "YT Inductors/cms_self.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "NC"
+position -0.179134  0.000000
+size  0.074803  0.078740
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "1"
+position  0.161417  0.108268
+size  0.110236  0.122047
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.161417 -0.108268
+size  0.110236  0.122047
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  L1
+
+$MODULE "L2"
+reference "L2"
+value "0.36uH"
+footprint "38L361C"
+attribut none
+position  5.804700  5.158800
+orientation  180.00
+layer component
+$SHAPE3D
+Na "YT Inductors/cms_self.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "NC"
+position -0.179134  0.000000
+size  0.074803  0.078740
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "1"
+position  0.161417  0.108268
+size  0.110236  0.122047
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.161417 -0.108268
+size  0.110236  0.122047
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  L2
+
+$MODULE "L3"
+reference "L3"
+value "L0805"
+footprint "L0805"
+attribut none
+position  6.652559  4.148622
+orientation  90.00
+layer component
+$SHAPE3D
+Na "walter/smd_resistors/r_0805.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.035433  0.000000
+size  0.031496  0.062992
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.035433  0.000000
+size  0.031496  0.062992
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  L3
+
+$MODULE "L4"
+reference "L4"
+value "FB"
+footprint "L0603"
+attribut none
+position  4.375984  2.374016
+orientation  180.00
+layer component
+$SHAPE3D
+Na "walter/smd_resistors/r_0603.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.031496  0.000000
+size  0.031496  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.031496  0.000000
+size  0.031496  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  L4
+
+$MODULE "L5"
+reference "L5"
+value "FB"
+footprint "L0603"
+attribut none
+position  4.975394  2.349409
+orientation  180.00
+layer component
+$SHAPE3D
+Na "walter/smd_resistors/r_0603.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.031496  0.000000
+size  0.031496  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.031496  0.000000
+size  0.031496  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  L5
+
+$MODULE "L7"
+reference "L7"
+value "FB"
+footprint "L0603"
+attribut none
+position  4.813976  3.019685
+orientation  270.00
+layer component
+$SHAPE3D
+Na "walter/smd_resistors/r_0603.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.031496  0.000000
+size  0.031496  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.031496  0.000000
+size  0.031496  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  L7
+
+$MODULE "L6"
+reference "L6"
+value "FB"
+footprint "L0603"
+attribut none
+position  4.102362  3.017717
+orientation  270.00
+layer component
+$SHAPE3D
+Na "walter/smd_resistors/r_0603.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.031496  0.000000
+size  0.031496  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.031496  0.000000
+size  0.031496  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  L6
+
+$MODULE "L19"
+reference "L19"
+value "FB"
+footprint "L0603"
+attribut none
+position  4.401575  5.211614
+orientation  90.00
+layer component
+$SHAPE3D
+Na "walter/smd_resistors/r_0603.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.031496  0.000000
+size  0.031496  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.031496  0.000000
+size  0.031496  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  L19
+
+$MODULE "L18"
+reference "L18"
+value "FB"
+footprint "L0603"
+attribut none
+position  4.774606  5.299213
+orientation  90.00
+layer component
+$SHAPE3D
+Na "walter/smd_resistors/r_0603.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.031496  0.000000
+size  0.031496  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.031496  0.000000
+size  0.031496  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  L18
+
+$MODULE "L17"
+reference "L17"
+value "FB"
+footprint "L0603"
+attribut none
+position  4.481299  5.926181
+orientation  180.00
+layer component
+$SHAPE3D
+Na "walter/smd_resistors/r_0603.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.031496  0.000000
+size  0.031496  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.031496  0.000000
+size  0.031496  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  L17
+
+$MODULE "L16"
+reference "L16"
+value "FB"
+footprint "L0603"
+attribut none
+position  5.094488  5.932087
+orientation  180.00
+layer component
+$SHAPE3D
+Na "walter/smd_resistors/r_0603.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.031496  0.000000
+size  0.031496  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.031496  0.000000
+size  0.031496  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  L16
+
+$MODULE "L13"
+reference "L13"
+value "FB"
+footprint "L0603"
+attribut none
+position  6.539370  5.930118
+orientation  0.00
+layer component
+$SHAPE3D
+Na "walter/smd_resistors/r_0603.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.031496  0.000000
+size  0.031496  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.031496  0.000000
+size  0.031496  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  L13
+
+$MODULE "L12"
+reference "L12"
+value "FB"
+footprint "L0603"
+attribut none
+position  7.332677  5.936024
+orientation  0.00
+layer component
+$SHAPE3D
+Na "walter/smd_resistors/r_0603.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.031496  0.000000
+size  0.031496  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.031496  0.000000
+size  0.031496  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  L12
+
+$MODULE "L15"
+reference "L15"
+value "FB"
+footprint "L0603"
+attribut none
+position  6.836614  5.252953
+orientation  90.00
+layer component
+$SHAPE3D
+Na "walter/smd_resistors/r_0603.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.031496  0.000000
+size  0.031496  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.031496  0.000000
+size  0.031496  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  L15
+
+$MODULE "L14"
+reference "L14"
+value "FB"
+footprint "L0603"
+attribut none
+position  7.532480  5.255906
+orientation  90.00
+layer component
+$SHAPE3D
+Na "walter/smd_resistors/r_0603.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.031496  0.000000
+size  0.031496  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.031496  0.000000
+size  0.031496  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  L14
+
+$MODULE "L10"
+reference "L10"
+value "FB"
+footprint "L0603"
+attribut none
+position  6.868110  2.996063
+orientation  270.00
+layer component
+$SHAPE3D
+Na "walter/smd_resistors/r_0603.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.031496  0.000000
+size  0.031496  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.031496  0.000000
+size  0.031496  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  L10
+
+$MODULE "L11"
+reference "L11"
+value "FB"
+footprint "L0603"
+attribut none
+position  7.255906  3.017717
+orientation  270.00
+layer component
+$SHAPE3D
+Na "walter/smd_resistors/r_0603.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.031496  0.000000
+size  0.031496  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.031496  0.000000
+size  0.031496  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  L11
+
+$MODULE "L8"
+reference "L8"
+value "FB"
+footprint "L0603"
+attribut none
+position  6.560039  2.330709
+orientation  0.00
+layer component
+$SHAPE3D
+Na "walter/smd_resistors/r_0603.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.031496  0.000000
+size  0.031496  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.031496  0.000000
+size  0.031496  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  L8
+
+$MODULE "L9"
+reference "L9"
+value "FB"
+footprint "L0603"
+attribut none
+position  7.355315  2.366142
+orientation  0.00
+layer component
+$SHAPE3D
+Na "walter/smd_resistors/r_0603.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.031496  0.000000
+size  0.031496  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.031496  0.000000
+size  0.031496  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  L9
+
+$MODULE "C19"
+reference "C19"
+value "330uF"
+footprint "NICHICON-10mm"
+attribut none
+position  5.051575  4.156693
+orientation  90.00
+layer component
+$SHAPE3D
+Na "walter/smd_cap/c_elec_10x10.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "-"
+position -0.157480  0.000000
+size  0.157480  0.098425
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "+"
+position  0.157480  0.000000
+size  0.157480  0.098425
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  C19
+
+$MODULE "C273"
+reference "C273"
+value "330uF"
+footprint "NICHICON-10mm"
+attribut none
+position  5.473622  4.156693
+orientation  90.00
+layer component
+$SHAPE3D
+Na "walter/smd_cap/c_elec_10x10.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "-"
+position -0.157480  0.000000
+size  0.157480  0.098425
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "+"
+position  0.157480  0.000000
+size  0.157480  0.098425
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  C273
+
+$MODULE "C20"
+reference "C20"
+value "1.0uF"
+footprint "C0603"
+attribut none
+position  5.940945  4.870079
+orientation  90.00
+layer component
+$SHAPE3D
+Na "walter/smd_cap/c_0603.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  C20
+
+$MODULE "C9"
+reference "C9"
+value "0.1uF"
+footprint "C0603"
+attribut none
+position  5.755906  3.405512
+orientation  90.00
+layer component
+$SHAPE3D
+Na "walter/smd_cap/c_0603.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  C9
+
+$MODULE "C1"
+reference "C1"
+value "1.0uF"
+footprint "C0603"
+attribut none
+position  5.405512  3.598425
+orientation  0.00
+layer component
+$SHAPE3D
+Na "walter/smd_cap/c_0603.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  C1
+
+$MODULE "C271"
+reference "C271"
+value "22uF"
+footprint "C0603"
+attribut none
+position  5.722441  2.371654
+orientation  180.00
+layer component
+$SHAPE3D
+Na "walter/smd_cap/c_0603.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  C271
+
+$MODULE "C270"
+reference "C270"
+value "22uF"
+footprint "C0603"
+attribut none
+position  5.722441  2.315748
+orientation  180.00
+layer component
+$SHAPE3D
+Na "walter/smd_cap/c_0603.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  C270
+
+$MODULE "C269"
+reference "C269"
+value "22uF"
+footprint "C0603"
+attribut none
+position  5.921260  5.899606
+orientation  0.00
+layer component
+$SHAPE3D
+Na "walter/smd_cap/c_0603.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  C269
+
+$MODULE "C268"
+reference "C268"
+value "22uF"
+footprint "C0603"
+attribut none
+position  5.921260  5.958661
+orientation  0.00
+layer component
+$SHAPE3D
+Na "walter/smd_cap/c_0603.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  C268
+
+$MODULE "C40"
+reference "C40"
+value "22uF"
+footprint "C0603"
+attribut none
+position  6.580709  3.917323
+orientation  180.00
+layer component
+$SHAPE3D
+Na "walter/smd_cap/c_0603.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  C40
+
+$MODULE "C39"
+reference "C39"
+value "22uF"
+footprint "C0603"
+attribut none
+position  6.580709  3.978346
+orientation  180.00
+layer component
+$SHAPE3D
+Na "walter/smd_cap/c_0603.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  C39
+
+$MODULE "C38"
+reference "C38"
+value "22nF"
+footprint "C0603"
+attribut none
+position  6.515748  4.301181
+orientation  0.00
+layer component
+$SHAPE3D
+Na "walter/smd_cap/c_0603.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  C38
+
+$MODULE "C37"
+reference "C37"
+value "220pF"
+footprint "C0603"
+attribut none
+position  5.851900  4.515900
+orientation  0.00
+layer component
+$SHAPE3D
+Na "walter/smd_cap/c_0603.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  C37
+
+$MODULE "C36"
+reference "C36"
+value "10nF"
+footprint "C0603"
+attribut none
+position  5.733000  4.515100
+orientation  180.00
+layer component
+$SHAPE3D
+Na "walter/smd_cap/c_0603.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  C36
+
+$MODULE "C35"
+reference "C35"
+value "3.3nF"
+footprint "C0603"
+attribut none
+position  5.411417  4.661417
+orientation  90.00
+layer component
+$SHAPE3D
+Na "walter/smd_cap/c_0603.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  C35
+
+$MODULE "C30"
+reference "C30"
+value "0.1uF"
+footprint "C0603"
+attribut none
+position  6.250000  5.197835
+orientation  90.00
+layer component
+$SHAPE3D
+Na "walter/smd_cap/c_0603.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  C30
+
+$MODULE "C29"
+reference "C29"
+value "0.1uF"
+footprint "C0603"
+attribut none
+position  5.943300  4.698500
+orientation  0.00
+layer component
+$SHAPE3D
+Na "walter/smd_cap/c_0603.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  C29
+
+$MODULE "C28"
+reference "C28"
+value "0.1uF"
+footprint "C0603"
+attribut none
+position  6.287402  4.673228
+orientation  0.00
+layer component
+$SHAPE3D
+Na "walter/smd_cap/c_0603.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  C28
+
+$MODULE "C22"
+reference "C22"
+value "100pF"
+footprint "C0603"
+attribut none
+position  5.882200  4.610300
+orientation  0.00
+layer component
+$SHAPE3D
+Na "walter/smd_cap/c_0603.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  C22
+
+$MODULE "C21"
+reference "C21"
+value "2.2uF"
+footprint "C0603"
+attribut none
+position  5.564500  4.833200
+orientation  270.00
+layer component
+$SHAPE3D
+Na "walter/smd_cap/c_0603.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  C21
+
+$MODULE "C18"
+reference "C18"
+value "220pF"
+footprint "C0603"
+attribut none
+position  5.862200  3.737500
+orientation  180.00
+layer component
+$SHAPE3D
+Na "walter/smd_cap/c_0603.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  C18
+
+$MODULE "C17"
+reference "C17"
+value "10nF"
+footprint "C0603"
+attribut none
+position  5.982600  3.742200
+orientation  0.00
+layer component
+$SHAPE3D
+Na "walter/smd_cap/c_0603.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  C17
+
+$MODULE "C16"
+reference "C16"
+value "3.3nF"
+footprint "C0603"
+attribut none
+position  6.303150  3.582677
+orientation  270.00
+layer component
+$SHAPE3D
+Na "walter/smd_cap/c_0603.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  C16
+
+$MODULE "C11"
+reference "C11"
+value "0.1uF"
+footprint "C0603"
+attribut none
+position  5.460630  3.066929
+orientation  270.00
+layer component
+$SHAPE3D
+Na "walter/smd_cap/c_0603.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  C11
+
+$MODULE "C10"
+reference "C10"
+value "0.1uF"
+footprint "C0603"
+attribut none
+position  5.772400  3.563500
+orientation  180.00
+layer component
+$SHAPE3D
+Na "walter/smd_cap/c_0603.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  C10
+
+$MODULE "C3"
+reference "C3"
+value "100pF"
+footprint "C0603"
+attribut none
+position  5.825900  3.654800
+orientation  180.00
+layer component
+$SHAPE3D
+Na "walter/smd_cap/c_0603.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  C3
+
+$MODULE "C2"
+reference "C2"
+value "2.2uF"
+footprint "C0603"
+attribut none
+position  6.146400  3.439900
+orientation  90.00
+layer component
+$SHAPE3D
+Na "walter/smd_cap/c_0603.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.031496  0.000000
+size  0.035433  0.031496
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  C2
+
+$MODULE "C42"
+reference "C42"
+value "10uF"
+footprint "C0805"
+attribut smd
+position  6.440945  3.988189
+orientation  0.00
+layer component
+$SHAPE3D
+Na "walter/smd_cap/c_0805.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.041339  0.000000
+size  0.039370  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.041339  0.000000
+size  0.039370  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  C42
+
+$MODULE "C41"
+reference "C41"
+value "10uF"
+footprint "C0805"
+attribut smd
+position  6.440945  3.907480
+orientation  0.00
+layer component
+$SHAPE3D
+Na "walter/smd_cap/c_0805.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.041339  0.000000
+size  0.039370  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.041339  0.000000
+size  0.039370  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  C41
+
+$MODULE "C27"
+reference "C27"
+value "10uF"
+footprint "C0805"
+attribut smd
+position  6.015748  4.870079
+orientation  270.00
+layer component
+$SHAPE3D
+Na "walter/smd_cap/c_0805.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.041339  0.000000
+size  0.039370  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.041339  0.000000
+size  0.039370  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  C27
+
+$MODULE "C26"
+reference "C26"
+value "10uF"
+footprint "C0805"
+attribut smd
+position  6.098425  4.870079
+orientation  270.00
+layer component
+$SHAPE3D
+Na "walter/smd_cap/c_0805.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.041339  0.000000
+size  0.039370  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.041339  0.000000
+size  0.039370  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  C26
+
+$MODULE "C25"
+reference "C25"
+value "10uF"
+footprint "C0805"
+attribut smd
+position  6.181102  4.870079
+orientation  270.00
+layer component
+$SHAPE3D
+Na "walter/smd_cap/c_0805.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.041339  0.000000
+size  0.039370  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.041339  0.000000
+size  0.039370  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  C25
+
+$MODULE "C24"
+reference "C24"
+value "10uF"
+footprint "C0805"
+attribut smd
+position  6.287402  4.826772
+orientation  0.00
+layer component
+$SHAPE3D
+Na "walter/smd_cap/c_0805.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.041339  0.000000
+size  0.039370  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.041339  0.000000
+size  0.039370  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  C24
+
+$MODULE "C23"
+reference "C23"
+value "10uF"
+footprint "C0805"
+attribut smd
+position  6.287402  4.744094
+orientation  0.00
+layer component
+$SHAPE3D
+Na "walter/smd_cap/c_0805.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.041339  0.000000
+size  0.039370  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.041339  0.000000
+size  0.039370  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  C23
+
+$MODULE "C8"
+reference "C8"
+value "10uF"
+footprint "C0805"
+attribut smd
+position  5.685039  3.405512
+orientation  90.00
+layer component
+$SHAPE3D
+Na "walter/smd_cap/c_0805.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.041339  0.000000
+size  0.039370  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.041339  0.000000
+size  0.039370  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  C8
+
+$MODULE "C7"
+reference "C7"
+value "10uF"
+footprint "C0805"
+attribut smd
+position  5.602362  3.405512
+orientation  90.00
+layer component
+$SHAPE3D
+Na "walter/smd_cap/c_0805.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.041339  0.000000
+size  0.039370  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.041339  0.000000
+size  0.039370  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  C7
+
+$MODULE "C6"
+reference "C6"
+value "10uF"
+footprint "C0805"
+attribut smd
+position  5.519685  3.405512
+orientation  90.00
+layer component
+$SHAPE3D
+Na "walter/smd_cap/c_0805.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.041339  0.000000
+size  0.039370  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.041339  0.000000
+size  0.039370  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  C6
+
+$MODULE "C5"
+reference "C5"
+value "10uF"
+footprint "C0805"
+attribut smd
+position  5.405512  3.448819
+orientation  180.00
+layer component
+$SHAPE3D
+Na "walter/smd_cap/c_0805.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.041339  0.000000
+size  0.039370  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.041339  0.000000
+size  0.039370  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  C5
+
+$MODULE "C4"
+reference "C4"
+value "10uF"
+footprint "C0805"
+attribut smd
+position  5.405512  3.527559
+orientation  180.00
+layer component
+$SHAPE3D
+Na "walter/smd_cap/c_0805.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.041339  0.000000
+size  0.039370  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.041339  0.000000
+size  0.039370  0.039370
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  C4
+
+$MODULE "R46"
+reference "R46"
+value "1K"
+footprint "R0603"
+attribut none
+position  6.731299  4.411417
+orientation  270.00
+layer component
+$SHAPE3D
+Na "walter/smd_resistors/r_0603.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.029528  0.000000
+size  0.027559  0.035433
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.029528  0.000000
+size  0.027559  0.035433
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  R46
+
+$MODULE "R45"
+reference "R45"
+value "1K"
+footprint "R0603"
+attribut none
+position  6.811024  4.411417
+orientation  270.00
+layer component
+$SHAPE3D
+Na "walter/smd_resistors/r_0603.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$PAD "1"
+position -0.029528  0.000000
+size  0.027559  0.035433
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$PAD "2"
+position  0.029528  0.000000
+size  0.027559  0.035433
+drill  0.000000
+shape_offset  0.000000  0.000000
+orientation  0.00
+Shape  Rect
+Layer  front
+$EndPAD
+$EndMODULE  R45
 
 $LINE 
 start 3.877953 6.102362

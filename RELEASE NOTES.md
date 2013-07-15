@@ -1,5 +1,24 @@
 Release Notes
 
+July 15, 2013 - K16 Board Revised - v0.3.0 - Final testing
+
+- Dual NOR gate replaces Single NOR gate
+- Inverters added before PIC on result data, clk
+- Schottky Diode added across Fan terminals
+- 1K resistor added to pull down FET gate
+- Ferrite beads added to AVDD on ASIC PLL supply
+- Ferrite beads added to USB D+/D-/GND and shield to GND
+- moved PIC decoupling capacitor to be closer to PIC
+- added 2 more decoupling capacitors near PIC and inverters
+- added NPTh for PICe connector to support horizontal version
+- Phoenix 2 pin power connector removed
+- new logo added (thanks Laserhorse!)
+- moved thermistor to between U7,U8
+- moved large input capacitors a little for better PCIe clearance
+- small edits to clean up traces here and there
+- repositioned a few parts
+- footprints verified and updated against data sheets
+
 June 14, 2013 - Original Release - 0.1.0
 
 The kicad files originated from Eagle CAD files through a conversion. This has caused some weird side effects that make the schematic a nuisance to work with. The parts co-ordinates were placed on a 1 mil grid during conversion making them both very small and very difficult to edit. You must always choose the 1 mil grid option if you hope to do any editing of the wires and parts and even then it's difficult. 

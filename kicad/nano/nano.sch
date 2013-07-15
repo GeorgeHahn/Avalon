@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sun 07 Jul 2013 03:35:31 AM ICT
+EESchema Schematic File Version 2  date Sat 13 Jul 2013 06:53:03 PM ICT
 LIBS:k16
 LIBS:nano
 LIBS:power

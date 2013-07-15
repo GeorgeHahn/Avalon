@@ -1,4 +1,4 @@
-EESchema-DOCLIB  Version 2.0  Date: Fri 21 Jun 2013 07:19:16 AM ICT
+EESchema-DOCLIB  Version 2.0  Date: Sat 13 Jul 2013 09:35:12 PM ICT
 #
 $CMP 7402
 D Single Nor2
@@ -6,6 +6,11 @@ K TTL Nor2
 $ENDCMP
 #
 $CMP 74AUP1G02
+D Quad Nor2
+K TTL Nor2
+$ENDCMP
+#
+$CMP 74AUP2G02
 D Quad Nor2
 K TTL Nor2
 $ENDCMP
@@ -23,6 +28,10 @@ $ENDCMP
 $CMP 74LS28
 D Quad Buffer Nor2
 K TTL Nor2 Buffer
+$ENDCMP
+#
+$CMP NL27WZ14
+D 2 Gate Inverter with Schmitt trigger.
 $ENDCMP
 #
 #End Doc Library

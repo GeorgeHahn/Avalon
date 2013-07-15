@@ -1,14 +1,9 @@
-update=Tue 14 May 2013 04:23:57 PM ICT
-last_client=pcbnew
-[cvpcb]
-version=1
-NetIExt=net
-[cvpcb/libraries]
-EquName1=devcms
+update=Mon 15 Jul 2013 11:40:15 PM ICT
+last_client=cvpcb
 [eeschema]
 version=1
 LibDir=
-NetFmtName=
+NetFmtName=PcbnewAdvanced
 RptD_X=0
 RptD_Y=100
 RptLab=1
@@ -49,23 +44,22 @@ LibName31=valves
 version=1
 LastNetListRead=
 UseCmpFile=1
-PadDrill="    3.000000"
-PadDrillOvalY="    3.000000"
-PadSizeH="    4.064000"
-PadSizeV="    4.064000"
-PcbTextSizeV="    1.500000"
-PcbTextSizeH="    1.500000"
-PcbTextThickness="    0.300000"
+PadDrill="    0.000000"
+PadDrillOvalY="    0.000000"
+PadSizeH="    0.800000"
+PadSizeV="    1.000000"
+PcbTextSizeV="    1.000000"
+PcbTextSizeH="    1.000000"
+PcbTextThickness="    0.200000"
 ModuleTextSizeV="    1.500000"
 ModuleTextSizeH="    1.500000"
 ModuleTextSizeThickness="    0.150000"
-SolderMaskClearance="    0.200000"
-SolderMaskMinWidth="    0.000000"
+SolderMaskClearance="    0.152400"
+SolderMaskMinWidth="    0.100000"
 DrawSegmentWidth="    0.200000"
 BoardOutlineThickness="    0.150000"
-ModuleOutlineThickness="    0.150000"
+ModuleOutlineThickness="    0.025000"
 [pcbnew/libraries]
-LibDir=
 LibName1=k16
 LibName2=sockets
 LibName3=connect
@@ -83,4 +77,10 @@ LibName14=led
 LibName15=dip_sockets
 LibName16=pga_sockets
 LibName17=valves
-LibName18=OSHW-logo
+LibName18=powerint
+LibDir=
+[cvpcb]
+version=1
+NetIExt=net
+[cvpcb/libraries]
+EquName1=devcms

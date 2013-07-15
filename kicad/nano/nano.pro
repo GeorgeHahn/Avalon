@@ -1,10 +1,5 @@
-update=Wed 15 May 2013 08:07:54 PM ICT
-last_client=eeschema
-[cvpcb]
-version=1
-NetIExt=net
-[cvpcb/libraries]
-EquName1=devcms
+update=Sat 13 Jul 2013 06:52:49 PM ICT
+last_client=cvpcb
 [pcbnew]
 version=1
 LastNetListRead=nano.net
@@ -25,7 +20,6 @@ DrawSegmentWidth="    0.200000"
 BoardOutlineThickness="    0.150000"
 ModuleOutlineThickness="    0.150000"
 [pcbnew/libraries]
-LibDir=
 LibName1=/home/chris/Dev/klondike/kicad/k16/k16
 LibName2=sockets
 LibName3=connect
@@ -43,7 +37,7 @@ LibName14=led
 LibName15=dip_sockets
 LibName16=pga_sockets
 LibName17=valves
-LibName18=w_smd_diode
+LibDir=
 [eeschema]
 version=1
 LibDir=
@@ -85,3 +79,8 @@ LibName29=opto
 LibName30=atmel
 LibName31=contrib
 LibName32=valves
+[cvpcb]
+version=1
+NetIExt=net
+[cvpcb/libraries]
+EquName1=devcms

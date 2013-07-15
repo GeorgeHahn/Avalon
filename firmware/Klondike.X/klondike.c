@@ -169,7 +169,6 @@ void WorkTick(void)
 {
     TMR0 += HashTime;
     TMR0IF = 0;
-    //RCREG = 0xFF;
     if(RCSTAbits.SPEN == 0) {
         RCSTAbits.SPEN = 1; // renable Rx
         ResultQC = 0;       // resync Rx
@@ -196,13 +195,12 @@ void WorkTick(void)
 
 void ResultRx(void)
 {
-    //ResultQue[2+ResultQC++] = ~RCREG;
     BYTE TimeOut = 0;
     ResultQC = 0;
     while(ResultQC < 4) {
 
         if(RCIF) {
-            ResultQue[2+ResultQC++] = ~RCREG;
+            ResultQue[2+ResultQC++] = RCREG;
             TimeOut = 0;
         }
         if(TimeOut++ > 32 ) {
@@ -224,7 +222,6 @@ void ResultRx(void)
         SendCmdReply(&ResultQue, &ResultQue+1, sizeof(ResultQue)-1);
     }
 outrx:
-    //RCREG = 0xFF;
     RCSTAbits.SPEN = 0; RCSTAbits.SPEN = 1;
     IOCBF = 0;
 }
@@ -250,15 +247,15 @@ void InitFAN(void)
     PWM1DCH = DEFAULT_FAN_TARGET;
     PWM1DCL = 0;
     TMR2IF = 0;
-    T2CONbits.T2CKPS = 0;
+    T2CONbits.T2CKPS = 1;
     TMR2ON = 1;
     FAN_TRIS = 0;
     PWM1OE=1;
 
     // for Fan Tach reading
-    T1GSEL = 1;
-    IOCAN3 = 1;
-    IOCAF3 = 0;
+    //T1GSEL = 1;
+    //IOCAN3 = 1;
+    //IOCAF3 = 0;
 }
 
 void InitTempSensor(void)
@@ -297,7 +294,7 @@ void InitResultRx(void)
     TXSTAbits.SYNC = 1;
     RCSTAbits.SPEN = 1;
     TXSTAbits.CSRC = 0;
-    BAUDCONbits.SCKP = 1;
+    BAUDCONbits.SCKP = 0;
     ANSELBbits.ANSB5 = 0;
     //PIE1bits.RCIE = 1;
     IOCBPbits.IOCBP7 = 1;
