@@ -1,5 +1,5 @@
-update=Mon 15 Jul 2013 11:40:15 PM ICT
-last_client=cvpcb
+update=Tue 16 Jul 2013 11:23:24 AM ICT
+last_client=pcbnew
 [eeschema]
 version=1
 LibDir=
@@ -40,14 +40,19 @@ LibName28=opto
 LibName29=atmel
 LibName30=contrib
 LibName31=valves
+[cvpcb]
+version=1
+NetIExt=net
+[cvpcb/libraries]
+EquName1=devcms
 [pcbnew]
 version=1
 LastNetListRead=
 UseCmpFile=1
 PadDrill="    0.000000"
 PadDrillOvalY="    0.000000"
-PadSizeH="    0.800000"
-PadSizeV="    1.000000"
+PadSizeH="    0.500000"
+PadSizeV="    0.600000"
 PcbTextSizeV="    1.000000"
 PcbTextSizeH="    1.000000"
 PcbTextThickness="    0.200000"
@@ -60,6 +65,7 @@ DrawSegmentWidth="    0.200000"
 BoardOutlineThickness="    0.150000"
 ModuleOutlineThickness="    0.025000"
 [pcbnew/libraries]
+LibDir=
 LibName1=k16
 LibName2=sockets
 LibName3=connect
@@ -78,9 +84,3 @@ LibName15=dip_sockets
 LibName16=pga_sockets
 LibName17=valves
 LibName18=powerint
-LibDir=
-[cvpcb]
-version=1
-NetIExt=net
-[cvpcb/libraries]
-EquName1=devcms
