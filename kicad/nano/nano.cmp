@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = Sat 13 Jul 2013 06:52:57 PM ICT
+Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = Thu 18 Jul 2013 12:05:09 AM ICT
 
 BeginCmp
 TimeStamp = /517F6E9C;
@@ -43,14 +43,14 @@ IdModule  = C0603;
 EndCmp
 
 BeginCmp
-TimeStamp = /5187D64E;
+TimeStamp = /51E59531;
 Reference = C7;
 ValeurCmp = 0.01uF;
 IdModule  = C0603;
 EndCmp
 
 BeginCmp
-TimeStamp = /517F6D85;
+TimeStamp = /51E59460;
 Reference = C8;
 ValeurCmp = 0.1uF;
 IdModule  = C0402;
@@ -150,7 +150,7 @@ EndCmp
 BeginCmp
 TimeStamp = /517F6E58;
 Reference = C22;
-ValeurCmp = 0.47uF x 8;
+ValeurCmp = 0.47uF;
 IdModule  = C0402;
 EndCmp
 
@@ -162,9 +162,23 @@ IdModule  = C0402;
 EndCmp
 
 BeginCmp
-TimeStamp = /5198B7B0;
+TimeStamp = /51E59538;
 Reference = C24;
 ValeurCmp = 30pF;
+IdModule  = C0402;
+EndCmp
+
+BeginCmp
+TimeStamp = /51E5957B;
+Reference = C25;
+ValeurCmp = 0.01uF;
+IdModule  = C0402;
+EndCmp
+
+BeginCmp
+TimeStamp = /51E5962F;
+Reference = C26;
+ValeurCmp = 0.1uF;
 IdModule  = C0402;
 EndCmp
 
@@ -183,24 +197,24 @@ IdModule  = C0603;
 EndCmp
 
 BeginCmp
-TimeStamp = /5198CB7B;
+TimeStamp = /51E5951D;
 Reference = D3;
 ValeurCmp = LED;
 IdModule  = C0603;
 EndCmp
 
 BeginCmp
-TimeStamp = /51879712;
+TimeStamp = /51E594E1;
 Reference = J1;
-ValeurCmp = I2C;
+ValeurCmp = PINHD-1X4;
 IdModule  = pinhead-1X03;
 EndCmp
 
 BeginCmp
-TimeStamp = /5198BE25;
+TimeStamp = /51E5947E;
 Reference = J2;
-ValeurCmp = PROGPADS;
-IdModule  = PROGPADS;
+ValeurCmp = ~;
+IdModule  = USBAPCB;
 EndCmp
 
 BeginCmp
@@ -208,6 +222,48 @@ TimeStamp = /517F6E1D;
 Reference = L1;
 ValeurCmp = 3.3uH;
 IdModule  = B_IND_4x4;
+EndCmp
+
+BeginCmp
+TimeStamp = /51E5DDCA;
+Reference = L2;
+ValeurCmp = 60R / 100 MHz;
+IdModule  = L0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /51E59637;
+Reference = L3;
+ValeurCmp = 120R @ 100 MHz;
+IdModule  = L0402;
+EndCmp
+
+BeginCmp
+TimeStamp = /51E5963D;
+Reference = L4;
+ValeurCmp = 120R / 100 MHz;
+IdModule  = L0402;
+EndCmp
+
+BeginCmp
+TimeStamp = /51E59643;
+Reference = L5;
+ValeurCmp = 220R @ 100 MHz;
+IdModule  = L0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /51E6081A;
+Reference = L6;
+ValeurCmp = 220R @ 100 MHz;
+IdModule  = L0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /51E594A8;
+Reference = PRG1;
+ValeurCmp = ~;
+IdModule  = PROGPADS;
 EndCmp
 
 BeginCmp
@@ -232,16 +288,16 @@ IdModule  = R0603;
 EndCmp
 
 BeginCmp
-TimeStamp = /5187B4FA;
+TimeStamp = /51E594D4;
 Reference = R4;
-ValeurCmp = 1K;
+ValeurCmp = 2.2K;
 IdModule  = R0603;
 EndCmp
 
 BeginCmp
-TimeStamp = /5187B500;
+TimeStamp = /51E594CE;
 Reference = R5;
-ValeurCmp = 1K;
+ValeurCmp = 2.2K;
 IdModule  = R0603;
 EndCmp
 
@@ -249,7 +305,7 @@ BeginCmp
 TimeStamp = /51938C91;
 Reference = R6;
 ValeurCmp = 100K;
-IdModule  = C0402;
+IdModule  = R0402;
 EndCmp
 
 BeginCmp
@@ -260,23 +316,44 @@ IdModule  = R0603;
 EndCmp
 
 BeginCmp
-TimeStamp = /5198C896;
+TimeStamp = /51E59523;
 Reference = R8;
 ValeurCmp = 100R;
 IdModule  = R0603;
 EndCmp
 
 BeginCmp
-TimeStamp = /519C27F7;
+TimeStamp = /51E5953E;
 Reference = R9;
 ValeurCmp = 1K;
 IdModule  = R0603;
 EndCmp
 
 BeginCmp
-TimeStamp = /519C27F1;
+TimeStamp = /51E59544;
 Reference = R10;
 ValeurCmp = 1K;
+IdModule  = R0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /51E59552;
+Reference = R11;
+ValeurCmp = 100R;
+IdModule  = R0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /51E594FA;
+Reference = R12;
+ValeurCmp = 1K;
+IdModule  = R0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /51E59500;
+Reference = RT1;
+ValeurCmp = 2.2K;
 IdModule  = R0603;
 EndCmp
 
@@ -288,10 +365,10 @@ IdModule  = SOIC-8PAD;
 EndCmp
 
 BeginCmp
-TimeStamp = /517F6E0F;
+TimeStamp = /51E594AF;
 Reference = U2;
-ValeurCmp = PIC16F1459;
-IdModule  = SSOP20;
+ValeurCmp = PIC16LF1459;
+IdModule  = PIC16LF1459-ML;
 EndCmp
 
 BeginCmp
@@ -312,20 +389,27 @@ BeginCmp
 TimeStamp = /51938749;
 Reference = U5;
 ValeurCmp = AP7217D/RT9166A;
-IdModule  = sot89;
+IdModule  = SOT89-3L;
 EndCmp
 
 BeginCmp
-TimeStamp = /5198AE16;
+TimeStamp = /51E59559;
 Reference = U6;
-ValeurCmp = 74AUP1G02;
-IdModule  = SOT353;
+ValeurCmp = 74AUP2G02;
+IdModule  = VSSOP8;
 EndCmp
 
 BeginCmp
-TimeStamp = /517F6DF9;
+TimeStamp = /51E59565;
+Reference = U7;
+ValeurCmp = NL27WZ14;
+IdModule  = SOT363;
+EndCmp
+
+BeginCmp
+TimeStamp = /51E594B5;
 Reference = X1;
-ValeurCmp = ASDMB;
+ValeurCmp = ASMDB;
 IdModule  = QFN4;
 EndCmp
 
