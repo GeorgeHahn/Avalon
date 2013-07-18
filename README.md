@@ -9,7 +9,7 @@ WARNING:
   
   See LICENSE and COPYING files for terms and warranty disclaimer.
   
-  See RELEASE notes for known problems, and issues.
+  See RELEASE NOTES for known problems, and issues.
   
 SUMMARY:
 
@@ -20,30 +20,21 @@ SUMMARY:
   
 STATUS:
 
-  This project is under active development. Some circuit boards have been ordered and/or arrived for testing.
-  Some prototyping has been completed to verify some aspects of the design and develop firmware.
-  ASIC communication works and more work i sunderway to improve reliability.
+  This project is under active development. 
   Firmware has been developed and now released under the terms of the GPLv3 license.
-  A new cgminer-klondike repo has been created for development with only changed files echoed here in cgminer directory.
-  An initial cgminer driver release has been pushed for testing.
+  A new cgminer-klondike repo has been created for development with only changed files echoed here in the cgminer directory.
+  The first prototype board indicated several areas for improvement and a second "Final Beta" is being produced to test full functionality.
+  The cgminer-klondike driver and firmware have both been tested working, but need additional refinement and bug fixes to be ready for general release.
   
 TODO:
 
-  More hardware testing  including ASIC communication, chaining and overall board operation.
+  Bootloader firmware allowing updating via USB/I2C connection.
 
-  Testing and debugging I2C chaining firmware.
+  Integration and debugging of I2C chaining firmware.
 
-  Creating firmware configurations for K1 and K64 that optimize code.
-
-  Combined USB / I2C bootloader firmware.
-  
+  Creating firmware configurations for K1, K16 and K64 that optimize code.
+ 
   Set up HEXMATE scripting to insert serial# for supporting I2C arbitration.
-
-  Write cgminer driver and support for other host miner software.
-
-  Integrate cgminer into the repository properly for ARM cross compiling as right now it's not forked.
-
-  Testing cgminer with driver on a Raspberry Pi for a low-cost, low-power platform.
 
   Testing with a TL-WR703N router containing purpose built OpenWrt firmware.
 
