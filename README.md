@@ -21,10 +21,15 @@ SUMMARY:
 STATUS:
 
   This project is under active development. 
+  
   Firmware has been developed and now released under the terms of the GPLv3 license.
+  
   A new cgminer-klondike repo has been created for development with only changed files echoed here in the cgminer directory.
+  
   The first prototype board indicated several areas for improvement and a second "Final Beta" is being produced to test full functionality.
+  
   The cgminer-klondike driver and firmware have both been tested working, but need additional refinement and bug fixes to be ready for general release.
+  
   
 TODO:
 
