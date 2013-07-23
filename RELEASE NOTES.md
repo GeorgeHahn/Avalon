@@ -1,5 +1,19 @@
 Release Notes
 
+July 23, 2013 - K1 Board Revised - v0.3.0 - Final Beta
+
+The "Final Beta" Revision of K1 has been pushed up to GitHub.
+
+- Added Dual NOR gate and Inverters from testing on K16 to improve result capture.
+- Changed PIC to use QFN version.
+- Added 2mm holes for fastening heat sink.
+- Made both LEDs flashable under software control for better blinkies.
+- Added thermistor for sensing temperature.
+- Added another PIC decoupling capacitor.
+- Fixed issues with buck regulator traces.
+- I2C chain conn. now non-thru hole pads - fits 3 pin header.
+- Added ferrite beads to ASIC power and USB signals.
+
 July 15, 2013 - K16 Board Revised - v0.3.0 - Final testing
 
 - Dual NOR gate replaces Single NOR gate
