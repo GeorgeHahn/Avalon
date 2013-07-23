@@ -1,4 +1,4 @@
-PCBNEW-LibModule-V1  Tue 16 Jul 2013 11:21:23 AM ICT
+PCBNEW-LibModule-V1  Tue 23 Jul 2013 03:59:33 PM ICT
 # encoding utf-8
 Units mm
 $INDEX
@@ -12,7 +12,10 @@ D0603
 DO219AB
 FIDICUAL
 GND2AGND
+Hole2mm
+Hole3mm
 Hole4mm
+KLego
 L0402
 L0603
 L0805
@@ -432,6 +435,44 @@ Ne 2 "GND"
 Po 0 -0.075
 $EndPAD
 $EndMODULE GND2AGND
+$MODULE Hole2mm
+Po 0 0 0 15 51EA818D 00000000 ~~
+Li Hole2mm
+Cd module 1 pin (ou trou mecanique de percage)
+Kw DEV
+Sc 0
+AR 1pin
+Op 0 0 0
+T0 0 -3.048 1.016 1.016 0 0.254 N I 21 N "Hole2mm"
+T1 0 2.794 1.016 1.016 0 0.254 N I 21 N "P***"
+DC 0 0 0 -2 0.3 21
+$PAD
+Sh "1" C 3 3 0 0 0
+Dr 2 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 0 0
+$EndPAD
+$EndMODULE Hole2mm
+$MODULE Hole3mm
+Po 0 0 0 15 51EA81CE 00000000 ~~
+Li Hole3mm
+Cd module 1 pin (ou trou mecanique de percage)
+Kw DEV
+Sc 0
+AR 1pin
+Op 0 0 0
+T0 0 -3.048 1.016 1.016 0 0.254 N I 21 N "Hole3mm"
+T1 0 2.794 1.016 1.016 0 0.254 N I 21 N "P***"
+DC 0 0 0 -2.25 0.3 21
+$PAD
+Sh "1" C 4 4 0 0 0
+Dr 3 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 0 0
+$EndPAD
+$EndMODULE Hole3mm
 $MODULE Hole4mm
 Po 0 0 0 15 519AD82D 00000000 ~~
 Li Hole4mm
@@ -451,6 +492,85 @@ Ne 0 ""
 Po 0 0
 $EndPAD
 $EndMODULE Hole4mm
+$MODULE KLego
+Po 0 0 0 15 51ECA839 00000000 ~~
+Li KLego
+Sc 0
+AR 
+Op 0 0 0
+T0 0.05 -6.7 1.5 1.5 0 0.15 N V 21 N "KLego"
+T1 0.2 7.15 1.5 1.5 0 0.15 N V 21 N "VAL**"
+$PAD
+Sh "" R 1.02 2.5 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0 -2.65
+$EndPAD
+$PAD
+Sh "" R 1.02 2.5 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0 2.65
+$EndPAD
+$PAD
+Sh "3B" R 1.02 2.5 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 2.54 -2.65
+$EndPAD
+$PAD
+Sh "4B" R 1.02 2.5 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 2.54 2.65
+$EndPAD
+$PAD
+Sh "2B" R 1.02 2.5 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 5.08 2.65
+$EndPAD
+$PAD
+Sh "1B" R 1.02 2.5 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 5.08 -2.65
+$EndPAD
+$PAD
+Sh "3A" R 1.02 2.5 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -2.54 -2.65
+$EndPAD
+$PAD
+Sh "1A" R 1.02 2.5 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -5.08 -2.65
+$EndPAD
+$PAD
+Sh "4A" R 1.02 2.5 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -2.54 2.65
+$EndPAD
+$PAD
+Sh "2A" R 1.02 2.5 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -5.08 2.65
+$EndPAD
+$EndMODULE KLego
 $MODULE L0402
 Po 0 0 0 15 51E395F6 00000000 ~~
 Li L0402
@@ -3459,44 +3579,44 @@ Ro 0 0 0
 $EndSHAPE3D
 $EndMODULE TSSOP14
 $MODULE USBAPCB
-Po 0 0 0 15 5187C0BC 00000000 ~~
+Po 0 0 0 15 51EE45D8 00000000 ~~
 Li USBAPCB
 Sc 0
-AR 
+AR /51E5947E
 Op 0 0 0
-T0 0.13 -7.85 1.5 1.5 0 0.15 N I 21 N "USBAPCB"
-T1 0.29 -10.13 1.5 1.5 0 0.15 N I 21 N "VAL**"
+T0 0.13 -7.85 1.5 1.5 0 0.15 N I 21 N "J2"
+T1 0.29 -10.13 1.5 1.5 0 0.15 N I 21 N "~"
 DS -6.03 -6.61 -6.5 -6.61 0.15 21
 DS 6.03 -6.61 6.5 -6.61 0.15 21
 DS 6.03 -6.61 6.03 7.03 0.15 21
 DS 6.03 7.03 -6.03 7.03 0.15 21
 DS -6.03 7.03 -6.03 -6.61 0.15 21
 $PAD
-Sh "4" R 1.27 12.7 0 0 0
-Dr 0 0 0
-At SMD N 00808000
-Ne 0 ""
-Po 3.81 0
-$EndPAD
-$PAD
 Sh "1" R 1.27 12.7 0 0 0
 Dr 0 0 0
 At SMD N 00808000
-Ne 0 ""
-Po -3.81 0
+Ne 3 "N-0000030"
+Po 3.81 0
 $EndPAD
 $PAD
-Sh "2" R 1.27 12 0 0 0
+Sh "5" R 1.27 12.7 0 0 0
 Dr 0 0 0
 At SMD N 00808000
-Ne 0 ""
-Po -1.08 -0.31
+Ne 4 "N-000009"
+Po -3.81 0
 $EndPAD
 $PAD
 Sh "3" R 1.27 12 0 0 0
 Dr 0 0 0
 At SMD N 00808000
-Ne 0 ""
+Ne 1 "/D+"
+Po -1.08 -0.31
+$EndPAD
+$PAD
+Sh "2" R 1.27 12 0 0 0
+Dr 0 0 0
+At SMD N 00808000
+Ne 2 "/D-"
 Po 1.08 -0.31
 $EndPAD
 $EndMODULE USBAPCB

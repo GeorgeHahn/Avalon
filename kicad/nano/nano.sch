@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Thu 18 Jul 2013 12:04:05 AM ICT
+EESchema Schematic File Version 2  date Tue 23 Jul 2013 06:09:05 PM ICT
 LIBS:k16
 LIBS:nano
 LIBS:power
@@ -38,7 +38,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Klondike 1 ASIC Miner"
-Date "17 jul 2013"
+Date "23 jul 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -844,7 +844,7 @@ Wire Wire Line
 	3070 2937 3070 2993
 Wire Wire Line
 	2937 2937 2937 2873
-Text Notes 10174 4343 0    22   ~ 0
+Text Notes 10186 4329 0    22   ~ 0
 I2C BUS
 Text Notes 10246 5085 0    22   ~ 0
 USB
@@ -1007,12 +1007,12 @@ VCC
 $Comp
 L PINHD-1X4 J1
 U 1 1 51E594E1
-P 10128 4298
-F 0 "J1" H 10048 4370 22  0000 L BNN
-F 1 "PINHD-1X4" H 10143 4153 50  0001 L BNN
-F 2 "pinhead-1X04" H 10128 4448 50  0001 C CNN
-F 3 "~" H 10128 4298 60  0000 C CNN
-	1    10128 4298
+P 10128 4330
+F 0 "J1" H 10048 4402 22  0000 L BNN
+F 1 "PINHD-1X4" H 10143 4185 50  0001 L BNN
+F 2 "pinhead-1X04" H 10128 4480 50  0001 C CNN
+F 3 "~" H 10128 4330 60  0000 C CNN
+	1    10128 4330
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1368,14 +1368,15 @@ Connection ~ 8119 3669
 Wire Wire Line
 	9535 3821 9215 3821
 Wire Wire Line
-	9896 4266 9896 4720
+	9896 4606 9895 4297
+Wire Wire Line
+	9896 4606 9896 4720
 Connection ~ 9896 4606
 Wire Wire Line
 	8347 4045 8348 4364
 Wire Wire Line
-	8348 4364 10098 4363
+	8348 4364 10096 4362
 Connection ~ 8347 4045
-Connection ~ 9599 4269
 Wire Wire Line
 	9471 4752 10079 4752
 Wire Wire Line
@@ -1407,9 +1408,6 @@ Wire Wire Line
 	9215 3789 9308 3789
 Wire Wire Line
 	8543 4013 8052 4013
-Wire Wire Line
-	9896 4266 10096 4266
-Connection ~ 10096 4266
 Wire Wire Line
 	8150 4422 8150 4489
 Wire Wire Line
@@ -1600,4 +1598,10 @@ F 3 "" H 9753 5003 60  0001 C CNN
 $EndComp
 Wire Wire Line
 	9817 5003 10015 5003
+Text Label 10096 4362 0    22   ~ 0
+SDA
+Text Label 10096 4330 0    22   ~ 0
+SCK
+Wire Wire Line
+	9895 4297 10096 4298
 $EndSCHEMATC

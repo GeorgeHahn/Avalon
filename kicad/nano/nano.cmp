@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = Thu 18 Jul 2013 12:05:09 AM ICT
+Cmp-Mod V01 Created by PcbNew date = Sat 20 Jul 2013 08:02:06 PM ICT
 
 BeginCmp
 TimeStamp = /517F6E9C;
@@ -193,21 +193,21 @@ BeginCmp
 TimeStamp = /5198D029;
 Reference = D2;
 ValeurCmp = LED;
-IdModule  = C0603;
+IdModule  = D0603;
 EndCmp
 
 BeginCmp
 TimeStamp = /51E5951D;
 Reference = D3;
 ValeurCmp = LED;
-IdModule  = C0603;
+IdModule  = D0603;
 EndCmp
 
 BeginCmp
 TimeStamp = /51E594E1;
 Reference = J1;
 ValeurCmp = PINHD-1X4;
-IdModule  = pinhead-1X03;
+IdModule  = SMD_RA_1x3;
 EndCmp
 
 BeginCmp

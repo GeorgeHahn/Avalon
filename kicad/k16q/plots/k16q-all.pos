@@ -1,4 +1,4 @@
-### Module positions - created on Tue 16 Jul 2013 01:07:22 PM ICT ###
+### Module positions - created on Mon 22 Jul 2013 09:21:17 AM ICT ###
 ### Printed by Pcbnew version pcbnew (2013-mar-13)-testing
 ## Unit = mm, Angle = deg.
 ## Side : All
@@ -250,9 +250,9 @@ C276     0.1uF            C0402              81.8250   -49.3000     270.0    F.C
 D1       LED              D0603              78.3250   -53.3250     270.0    F.Cu
 D2       LED              D0603              96.3250   -34.6000       0.0    F.Cu
 D3       SL02             DO219AB            90.9750   -59.3750     270.0    F.Cu
-FIDICUAL VAL**            FIDICUAL           65.5000   -37.5000       0.0    F.Cu
 FIDICUAL VAL**            FIDICUAL           66.5000   -63.5000       0.0    F.Cu
 FIDICUAL VAL**            FIDICUAL           33.5000   -63.5000       0.0    F.Cu
+FIDICUAL VAL**            FIDICUAL           65.5000   -37.5000       0.0    F.Cu
 FIDICUAL VAL**            FIDICUAL            3.6250   -36.6500       0.0    F.Cu
 FIDICUAL VAL**            FIDICUAL           34.5000    -6.5000       0.0    F.Cu
 FIDICUAL VAL**            FIDICUAL           12.3750   -92.5750       0.0    F.Cu
@@ -284,6 +284,7 @@ L20      120R @ 100 MHz   L0402              89.5250   -50.8500     270.0    F.C
 L21      120R / 100 MHz   L0402              89.5250   -49.1000     270.0    F.Cu
 L22      120R @ 100 MHz   L0402              89.5250   -47.3500     270.0    F.Cu
 L23      220R / 100 MHz   L0402              89.5500   -53.1500     270.0    F.Cu
+PHNX-2   VAL**            PHNX-2              2.9500   -50.7250     270.0    F.Cu
 PRG1     ~                PROGPADS           83.0500   -42.9000     270.0    F.Cu
 Q1       NDS351AN         SSOT-3L            87.7250   -57.0500      90.0    F.Cu
 R1       39.2K            R0603              53.3895   -37.9538       0.0    F.Cu

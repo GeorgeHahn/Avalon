@@ -1,4 +1,4 @@
-PCBNEW-BOARD Version 2 date Wed 17 Jul 2013 10:11:08 PM ICT
+PCBNEW-BOARD Version 2 date Mon 22 Jul 2013 09:20:41 AM ICT
 
 # Created by Pcbnew(2013-mar-13)-testing
 
@@ -7,7 +7,7 @@ encoding utf-8
 Units mm
 LayerCount 4
 EnabledLayers 11EA8007
-VisibleLayers 11008000
+VisibleLayers 11208000
 Links 1392
 NoConn 6
 Di 92.115 50.704512 201.5666 159.295488
@@ -22,7 +22,7 @@ $EndGENERAL
 $SHEETDESCR
 Sheet A4 11693 8268
 Title ""
-Date "17 jul 2013"
+Date "22 jul 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -26314,7 +26314,7 @@ Ro 0 0 0
 $EndSHAPE3D
 $EndMODULE PIC16LF1459-ML
 $TEXTPCB
-Te "v.0.3.1"
+Te "v.0.3.2"
 Po 142.875 141.725 1.25 1.25 0.3 0
 De 21 1 0 Normal L C
 $EndTEXTPCB

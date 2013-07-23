@@ -1,4 +1,4 @@
-update=Sat 13 Jul 2013 06:52:49 PM ICT
+update=Wed 17 Jul 2013 02:10:21 AM ICT
 last_client=cvpcb
 [pcbnew]
 version=1
@@ -20,7 +20,7 @@ DrawSegmentWidth="    0.200000"
 BoardOutlineThickness="    0.150000"
 ModuleOutlineThickness="    0.150000"
 [pcbnew/libraries]
-LibName1=/home/chris/Dev/klondike/kicad/k16/k16
+LibName1=/home/chris/Dev/klondike/kicad/k16s/k16
 LibName2=sockets
 LibName3=connect
 LibName4=discret
@@ -47,7 +47,7 @@ RptD_Y=100
 RptLab=1
 LabSize=60
 [eeschema/libraries]
-LibName1=/home/chris/Dev/klondike/kicad/k16/k16
+LibName1=/home/chris/Dev/klondike/kicad/k16s/k16
 LibName2=nano
 LibName3=power
 LibName4=device
