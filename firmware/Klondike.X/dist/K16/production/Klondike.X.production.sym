@@ -1,157 +1,204 @@
 __size_of_UserInit 0 0 ABS 0
-___lwdiv@dividend 5B 0 BANK0 1
-_USBDeviceTasks 638 0 CODE 0
-___awdiv@counter 5E 0 BANK0 1
-___lwdiv@counter 5E 0 BANK0 1
+___lwdiv@dividend 58 0 BANK0 1
+_USBDeviceTasks D58 0 CODE 0
+__end_ofPL12 67A 0 CODE 0
+__end_ofPL50 6EB 0 CODE 0
+__end_ofPL8 662 0 CODE 0
+___awdiv@counter 5A 0 BANK0 1
+___lwdiv@counter 5A 0 BANK0 1
+PL2 635 0 CODE 0
+PL4 647 0 CODE 0
+PL6 654 0 CODE 0
+PL8 65C 0 CODE 0
 _ID 89F 0 STRING 0
-_USBStdFeatureReqHandler EA5 0 CODE 0
-__end_of_ResultRx 1434 0 CODE 0
-USBStdFeatureReqHandler@p AE 0 BANK1 1
+_USBStdFeatureReqHandler C8D 0 CODE 0
+PL10 662 0 CODE 0
+PL20 69D 0 CODE 0
+PL30 6BE 0 CODE 0
+PL40 9E0 0 CODE 0
+PL12 672 0 CODE 0
+PL50 6E3 0 CODE 0
+PL22 6A5 0 CODE 0
+PL60 900 0 CODE 0
+PL32 6C4 0 CODE 0
+PL70 70E 0 CODE 0
+PL42 9E5 0 CODE 0
+PL80 FEF 0 CODE 0
+PL14 67A 0 CODE 0
+PL52 17F1 0 CODE 0
+PL24 C04 0 CODE 0
+PL62 701 0 CODE 0
+PL34 6CD 0 CODE 0
+PL72 FE3 0 CODE 0
+PL44 FCC 0 CODE 0
+PL82 FF5 0 CODE 0
+PL16 680 0 CODE 0
+PL54 6EB 0 CODE 0
+PL26 C16 0 CODE 0
+PL64 906 0 CODE 0
+PL36 6D2 0 CODE 0
+PL74 17F9 0 CODE 0
+PL46 6DA 0 CODE 0
+PL84 C27 0 CODE 0
+PL18 68A 0 CODE 0
+PL56 6F3 0 CODE 0
+PL28 6AE 0 CODE 0
+PL66 707 0 CODE 0
+PL38 17E6 0 CODE 0
+PL76 FEA 0 CODE 0
+PL48 FD3 0 CODE 0
+PL86 FFB 0 CODE 0
+PL58 6FB 0 CODE 0
+PL68 FDC 0 CODE 0
+PL78 713 0 CODE 0
+PL88 719 0 CODE 0
+__end_of_ResultRx 761 0 CODE 0
+USBStdFeatureReqHandler@p A3 0 BANK1 1
 _PR2 1B 0 ABS 0
 __S0 8009 0 ABS 0
-__S1 360 0 ABS 0
-?_SendCmdReply 5F 0 BANK0 1
+__S1 340 0 ABS 0
+?_SendCmdReply 5C 0 BANK0 1
 _RemoteWakeup 12F 0 BANK2 1
 _GIE 5F 0 ABS 0
 _UIE E92 0 ABS 0
-_endpoint_number 13D 0 BANK2 1
+_endpoint_number 13C 0 BANK2 1
 _BDT 20 0 ABS 0
-_WQI 14A 0 BANK2 1
+_WQI 13A 0 BANK2 1
 _UIR E90 0 ABS 0
-__Hintentry 15 0 CODE 0
+__end_ofPL22 6AE 0 CODE 0
+__end_ofPL60 906 0 CODE 0
+__Hintentry 12 0 CODE 0
 __Lintentry 4 0 CODE 0
-_WQX 14B 0 BANK2 1
+_WQX 13B 0 BANK2 1
 __end_of_configDescriptor1 88D 0 STRING 0
 __pintentry 4 0 CODE 0
-_Cfg 1EA 0 BANK3 1
-USBEnableEndpoint@p 63 0 BANK0 1
-_buf 1A0 0 BANK3 1
-__end_of___awdiv 1358 0 CODE 0
-_ptr 6E 0 BANK0 1
+_Cfg 164 0 BANK2 1
+USBEnableEndpoint@p 5D 0 BANK0 1
+__end_of___awdiv B00 0 CODE 0
 __CFG_PWRTE$ON 0 0 ABS 0
 _UEP0 E98 0 ABS 0
 _UEP1 E99 0 ABS 0
 _TMR0 15 0 ABS 0
 __size_of_USBCBStdSetDscHandler 0 0 ABS 0
-i1_SendCmdReply 93C 0 CODE 0
+i1_SendCmdReply 761 0 CODE 0
 _UCFG E91 0 ABS 0
 _UEIE E97 0 ABS 0
 _RCIF 8D 0 ABS 0
+__end_ofPL32 6CD 0 CODE 0
+__end_ofPL70 713 0 CODE 0
 _LATC 10E 0 ABS 0
-USBEnableEndpoint@ep 65 0 BANK0 1
+USBEnableEndpoint@ep 5F 0 BANK0 1
 _UCON E8E 0 ABS 0
 _UEIR E93 0 ABS 0
-?_AsicPreCalc A0 0 BANK1 1
-USBStdSetCfgHandler@i AC 0 BANK1 1
-_ClockCfg 1E2 0 BANK3 1
-USBStdSetCfgHandler@p A9 0 BANK1 1
+?_AsicPreCalc 66 0 BANK0 1
+USBStdSetCfgHandler@i 68 0 BANK0 1
+_ClockCfg 15C 0 BANK2 1
+USBStdSetCfgHandler@p 65 0 BANK0 1
 __end_of_USB_CD_Ptr 805 0 STRING 0
 __size_of_USBCtrlEPAllowDataStage 0 0 ABS 0
-_USBStallHandler 1F79 0 CODE 0
-_main 1ECF 0 CODE 0
+__end_ofPL42 9EF 0 CODE 0
+__end_ofPL80 FF5 0 CODE 0
+_USBStallHandler F28 0 CODE 0
+_main 6E 0 CODE 0
 __end_of_sd001 839 0 STRING 0
-_I2CInBuf 12D 0 BANK2 1
-_pDst 140 0 BANK2 1
+_pDst 13F 0 BANK2 1
 btemp 7E 0 ABS 0
 _sd000 8AB 0 STRING 0
 _sd001 805 0 STRING 0
 _sd002 839 0 STRING 0
-start 15 0 CODE 0
-__end_of_USBCheckVendorRequest 8B0 0 CODE 0
+start 12 0 CODE 0
+__end_of_USBCheckVendorRequest FA8 0 CODE 0
 __size_of_USBCBWakeFromSuspend 0 0 ABS 0
-USBCtrlTrfTxService@byteToSend 5B 0 BANK0 1
-_TMR1H 17 0 ABS 0
-_USBDeferINDataStagePackets 134 0 BANK2 1
+USBCtrlTrfTxService@byteToSend 58 0 BANK0 1
+__end_ofPL14 680 0 CODE 0
+__end_ofPL52 17F9 0 CODE 0
+_USBDeferINDataStagePackets 133 0 BANK2 1
 _IOCBF 396 0 ABS 0
 ?i1_SendCmdReply 76 0 COMMON 1
-_USBBusIsSuspended 133 0 BANK2 1
-_TMR1L 16 0 ABS 0
 _RCREG 199 0 ABS 0
-_USBWakeFromSuspend 1E79 0 CODE 0
+_USBWakeFromSuspend F47 0 CODE 0
 reset_vec 0 0 CODE 0
 __size_of_USBWakeFromSuspend 0 0 ABS 0
-ResultRx@TimeOut 7D 0 COMMON 1
+ResultRx@TimeOut 7C 0 COMMON 1
 _UADDR E96 0 ABS 0
-_HashTime 14C 0 BANK2 1
+_HashTime 14E 0 BANK2 1
 wtemp0 7E 0 ABS 0
 _USTAT E8F 0 ABS 0
-USBCtrlTrfRxService@i 5D 0 BANK0 1
-_WorkTick 11D8 0 CODE 0
-_ProcessCmd$2047 ED 0 BANK1 1
-_I2CState 12E 0 BANK2 1
+USBCtrlTrfRxService@i 5A 0 BANK0 1
+_WorkTick 602 0 CODE 0
+_ProcessCmd$2047 E3 0 BANK1 1
+__end_ofPL24 C16 0 CODE 0
+__end_ofPL62 707 0 CODE 0
 _SlowTick 132 0 BANK2 1
 __size_of_SendCmdReply 0 0 ABS 0
 __Hconfig 8009 0 CONFIG 0
 __Lconfig 8007 0 CONFIG 0
-USBConfigureEndpoint@direction 59 0 BANK0 1
+USBConfigureEndpoint@direction 56 0 BANK0 1
 __size_of_USBDeviceInit 0 0 ABS 0
-AsicPreCalc@F3347 1D6 0 BANK3 1
+AsicPreCalc@F3347 1D8 0 BANK3 1
 __end_of__stringtab 801 0 STRING 0
 __size_of_WorkTick 0 0 ABS 0
 __Hbigram 0 0 ABS 0
+__end_ofPL34 6D2 0 CODE 0
+__end_ofPL72 FEA 0 CODE 0
 __Lbigram 0 0 ABS 0
-clear_ram 1DAC 0 CODE 0
-_BankSize 168 0 BANK2 1
+clear_ram 8B6 0 CODE 0
+_BankSize 16A 0 BANK2 1
 __Hram 0 0 ABS 0
 __Lram 0 0 ABS 0
 __size_ofi1_SendCmdReply 0 0 ABS 0
-__end_of_USBCtrlTrfInHandler 151E 0 CODE 0
+__end_of_USBCtrlTrfInHandler B54 0 CODE 0
 __HidataBANK6 0 0 ABS 0
 __LidataBANK6 0 0 ABS 0
-__pidataBANK6 1EEE 0 CODE 0
-_InitTempSensor 1DC6 0 CODE 0
+__pidataBANK6 1782 0 CODE 0
+_InitTempSensor A12 0 CODE 0
 i1SendCmdReply@cmd 76 0 COMMON 1
-_IOCAF3 1C9B 0 ABS 0
+__end_ofPL44 FD3 0 CODE 0
+__end_ofPL82 FFB 0 CODE 0
 __Hfunctab 0 0 CODE 0
 __Lfunctab 0 0 CODE 0
 _INPacket 220 0 ABS 0
-_ResultRx 13C4 0 CODE 0
+_ResultRx 71E 0 CODE 0
 _SetupPkt 40 0 ABS 0
-i1___bmul 1E13 0 CODE 0
-__end_of_USBTransferOnePacket 128B 0 CODE 0
-_Send32 B19 0 CODE 0
-AsicPreCalc@work A0 0 BANK1 1
-__end_of_WorkTick 122F 0 CODE 0
-_UserInit 1DE9 0 CODE 0
-_outPipes 1B0 0 BANK3 1
+i1___bmul 7C9 0 CODE 0
+__end_of_USBTransferOnePacket 5ED 0 CODE 0
+_Send32 2D5 0 CODE 0
+AsicPreCalc@work 66 0 BANK0 1
+__end_of_WorkTick 635 0 CODE 0
+_UserInit 9EF 0 CODE 0
+_outPipes 120 0 BANK2 1
 __Hcommon 0 0 ABS 0
 __Lcommon 0 0 ABS 0
-_pBDTEntryOut 126 0 BANK2 1
+__end_ofPL16 68A 0 CODE 0
+__end_ofPL54 6F3 0 CODE 0
+_pBDTEntryOut 12A 0 BANK2 1
 _PIE2bits 92 0 ABS 0
 __Heeprom_data 0 0 EEDATA 2
 __Leeprom_data 0 0 EEDATA 2
-SendCmdReply@n 64 0 BANK0 1
+SendCmdReply@n 67 0 BANK0 1
 _UEP0bits E98 0 ABS 0
 __size_of_USBConfigureEndpoint 0 0 ABS 0
 _PIR2bits 12 0 ABS 0
-i1___wmul 1F30 0 CODE 0
-_TMR1GE CF 0 ABS 0
+i1___wmul 7D5 0 CODE 0
 i1SendCmdReply@count 7A 0 COMMON 1
 _LATAbits 10C 0 ABS 0
-_TMR1IE 488 0 ABS 0
-_LATCbits 10E 0 ABS 0
-_SSPADD 212 0 ABS 0
-__end_of_InitTempSensor 1DD7 0 CODE 0
+__end_of_InitTempSensor A23 0 CODE 0
 _TMR0IF 5A 0 ABS 0
-_TMR1IF 88 0 ABS 0
-_SSP1IF 8B 0 ABS 0
 _TMR2IF 89 0 ABS 0
 _ANSELA 18C 0 ABS 0
 _UCONbits E8E 0 ABS 0
 _PWM1OE 309E 0 ABS 0
 _ANSELB 18D 0 ABS 0
 _ANSELC 18E 0 ABS 0
-?___awdiv 59 0 BANK0 1
-_SSP1EN 10AD 0 ABS 0
-_I2CCount 12C 0 BANK2 1
-?___lwdiv 59 0 BANK0 1
-SendAsicData@work 5F 0 BANK0 1
-?_USBConfigureEndpoint 59 0 BANK0 1
+?___awdiv 56 0 BANK0 1
+?___lwdiv 56 0 BANK0 1
+__end_ofPL26 C27 0 CODE 0
+__end_ofPL64 90C 0 CODE 0
+SendAsicData@work 5C 0 BANK0 1
+?_USBConfigureEndpoint 56 0 BANK0 1
 _TMR0CS 4AD 0 ABS 0
-_pBDTEntryEP0OutNext 6D 0 BANK0 1
-_SSPBUF 211 0 ABS 0
+_pBDTEntryEP0OutNext 6F 0 BANK0 1
 _ADRESH 9C 0 ABS 0
-_TMR1ON C0 0 ABS 0
 _TMR2ON E2 0 ABS 0
 _OSCCON 99 0 ABS 0
 __Habs1 0 0 ABS 0
@@ -159,13 +206,12 @@ __Labs1 0 0 ABS 0
 _ACTCON 39B 0 ABS 0
 __size_of_USBCtrlTrfSetupHandler 0 0 ABS 0
 __size_of_ProcessIO 0 0 ABS 0
-_T1GSPM CC 0 ABS 0
 __Hsfr0 0 0 ABS 0
 __Lsfr0 0 0 ABS 0
-__end_of_USBCBErrorHandler 8B1 0 CODE 0
+__end_of_USBCBErrorHandler FA9 0 CODE 0
 __Hsfr1 0 0 ABS 0
 __Lsfr1 0 0 ABS 0
-_USBDeferOUTDataStagePackets 135 0 BANK2 1
+_USBDeferOUTDataStagePackets 134 0 BANK2 1
 __Hsfr2 0 0 ABS 0
 __Lsfr2 0 0 ABS 0
 __Hsfr3 0 0 ABS 0
@@ -182,69 +228,79 @@ __Hsfr8 0 0 ABS 0
 __Lsfr8 0 0 ABS 0
 __size_of_InitFAN 0 0 ABS 0
 __Hsfr9 0 0 ABS 0
-_USBCBInitEP 1F0E 0 CODE 0
-USBDeviceInit@i_718 5D 0 BANK0 1
+_USBCBInitEP F50 0 CODE 0
+__end_ofPL36 6DA 0 CODE 0
+__end_ofPL74 1800 0 CODE 0
+USBDeviceInit@i_718 5A 0 BANK0 1
 __Lsfr9 0 0 ABS 0
 __size_of_ResultRx 0 0 ABS 0
 __size_of_DetectAsics 0 0 ABS 0
-USBEnableEndpoint@options 60 0 BANK0 1
-_SendAsicData 16D1 0 CODE 0
+USBEnableEndpoint@options 5A 0 BANK0 1
+_SendAsicData 28B 0 CODE 0
 __size_of_ProcessCmd 0 0 ABS 0
-USBStdSetCfgHandler@i_1089 AB 0 BANK1 1
-__end_of_UserInit 1DFD 0 CODE 0
-_ResultQue 1CE 0 BANK3 1
-_USBCtrlTrfSetupHandler 1132 0 CODE 0
-USBTransferOnePacket@data 5E 0 BANK0 1
+USBStdSetCfgHandler@i_1089 67 0 BANK0 1
+__end_of_UserInit 9FC 0 CODE 0
+_ResultQue 141 0 BANK2 1
+_USBCtrlTrfSetupHandler C2B 0 CODE 0
+USBTransferOnePacket@data 5A 0 BANK0 1
+__end_ofPL46 6E3 0 CODE 0
+__end_ofPL84 C2B 0 CODE 0
 __end_of_sd002 86D 0 STRING 0
-__end_of_USBStdGetDscHandler 93C 0 CODE 0
-_I2CCmd 69 0 BANK0 1
-USBDeviceTasks@i B7 0 BANK1 1
+__end_of_USBStdGetDscHandler 17E6 0 CODE 0
+USBDeviceTasks@i A7 0 BANK1 1
 __size_of_InitResultRx 0 0 ABS 0
-_USBCtrlEPService 15AC 0 CODE 0
-__end_of_memset 1025 0 CODE 0
-USBDeviceInit@p 5B 0 BANK0 1
+_USBCtrlEPService ED4 0 CODE 0
+__end_of_memset 973 0 CODE 0
+USBDeviceInit@p 58 0 BANK0 1
 __size_of_USBCtrlEPService 0 0 ABS 0
+__end_ofPL18 69D 0 CODE 0
+__end_ofPL56 6FB 0 CODE 0
 _SlaveAddress 131 0 BANK2 1
-__end_of_USBCBWakeFromSuspend 3 0 CODE 0
+__end_of_USBCBWakeFromSuspend FAB 0 CODE 0
 __Hcode 0 0 ABS 0
 __Lcode 0 0 ABS 0
-i1___bmul@product 73 0 COMMON 1
-_ProcessCmd 432 0 CODE 0
-_rotate 1025 0 CODE 0
+i1___bmul@product 72 0 COMMON 1
+_ProcessCmd 80 0 CODE 0
+_rotate 531 0 CODE 0
 __HcstackBANK0 0 0 ABS 0
+__end_ofPL28 6BE 0 CODE 0
+__end_ofPL66 70E 0 CODE 0
 __LcstackBANK0 0 0 ABS 0
-_DetectAsics C75 0 CODE 0
+_DetectAsics A4C 0 CODE 0
 i1___wmul@product 74 0 COMMON 1
 __size_of_USBStallHandler 0 0 ABS 0
+__ptext1800 524 0 CODE 0
 __pcstackBANK0 50 0 BANK0 1
-___bmul 1E45 0 CODE 0
-__Hinit 15 0 CODE 0
-__Linit 15 0 CODE 0
-___wmul 1F54 0 CODE 0
-_memset 1000 0 CODE 0
-__end_of_main 1EEE 0 CODE 0
-__end_of_USER_USB_CALLBACK_EVENT_HANDLER 1132 0 CODE 0
+___bmul 524 0 CODE 0
+__Hinit 12 0 CODE 0
+__Linit 12 0 CODE 0
+___wmul 211 0 CODE 0
+_memset 961 0 CODE 0
+__end_of_main 80 0 CODE 0
+__end_of_USER_USB_CALLBACK_EVENT_HANDLER E2A 0 CODE 0
 __Htext 0 0 ABS 0
 __Ltext 0 0 ABS 0
-_Status 14D 0 BANK2 1
-___bmul@multiplier 5C 0 BANK0 1
-___wmul@multiplier 59 0 BANK0 1
+_Status 14F 0 BANK2 1
+__end_ofPL38 17F1 0 CODE 0
+__end_ofPL76 FEF 0 CODE 0
+___bmul@multiplier 58 0 BANK0 1
+__ptext1801 211 0 CODE 0
+___wmul@multiplier 56 0 BANK0 1
 __end_of_ID 8AB 0 STRING 0
-__end_of_USBCtrlEPAllowDataStage 11D8 0 CODE 0
-__ptext1920 163E 0 CODE 0
-__end_of_USBStdFeatureReqHandler 1000 0 CODE 0
-end_of_initialization 12EA 0 CODE 0
-_NonceRanges 320 0 BANK6 1
-___awdiv@sign 5F 0 BANK0 1
-__end_of_USBCBStdSetDscHandler 1DA0 0 CODE 0
-__ptext1930 8B6 0 CODE 0
-__end_of_DetectAsics D26 0 CODE 0
+__end_of_USBCtrlEPAllowDataStage BC5 0 CODE 0
+__end_of_USBStdFeatureReqHandler D58 0 CODE 0
+end_of_initialization 6C 0 CODE 0
+_NonceRanges 1A0 0 BANK3 1
+___awdiv@sign 5B 0 BANK0 1
+__end_of_USBCBStdSetDscHandler FA6 0 CODE 0
+__end_of_DetectAsics AC0 0 CODE 0
+__end_ofPL48 FDC 0 CODE 0
+__end_ofPL86 1000 0 CODE 0
 _OUTPacket 2A0 0 ABS 0
-___bmul@multiplicand 59 0 BANK0 1
-AsicPreCalc@x E1 0 BANK1 1
-__ptext1921 1182 0 CODE 0
-__ptext1940 16D1 0 CODE 0
-___wmul@multiplicand 5B 0 BANK0 1
+___bmul@multiplicand 56 0 BANK0 1
+AsicPreCalc@x DC 0 BANK1 1
+__ptext1750 D58 0 CODE 0
+___wmul@multiplicand 58 0 BANK0 1
 ?i1___bmul 70 0 COMMON 1
 __Hsfr10 0 0 ABS 0
 __Lsfr10 0 0 ABS 0
@@ -264,21 +320,22 @@ __Lsfr12 0 0 ABS 0
 __Hsfr22 0 0 ABS 0
 __Lsfr22 0 0 ABS 0
 __size_of_USBCtrlTrfOutHandler 0 0 ABS 0
-__ptext1931 79A 0 CODE 0
-__ptext1950 1DD7 0 CODE 0
+__ptext1760 E9A 0 CODE 0
 __Hsfr13 0 0 ABS 0
-ProcessCmd@cmd EF 0 BANK1 1
+ProcessCmd@cmd E5 0 BANK1 1
 __Lsfr13 0 0 ABS 0
 __Hsfr23 0 0 ABS 0
 __Lsfr23 0 0 ABS 0
 __size_of_USBStdGetStatusHandler 0 0 ABS 0
 __Hsfr14 0 0 ABS 0
+__end_ofPL58 701 0 CODE 0
 __Lsfr14 0 0 ABS 0
-__end_of_InitWorkTick 1E13 0 CODE 0
-__end_of_SendCmdReply C75 0 CODE 0
+__end_of_InitWorkTick A12 0 CODE 0
+__end_of_SendCmdReply 211 0 CODE 0
 __Hsfr24 0 0 ABS 0
-_USBGenericOutHandle 138 0 BANK2 1
+_USBGenericOutHandle 136 0 BANK2 1
 __Lsfr24 0 0 ABS 0
+__ptext1803 71E 0 CODE 0
 __Hsfr15 0 0 ABS 0
 __Lsfr15 0 0 ABS 0
 __Hsfr25 0 0 ABS 0
@@ -287,13 +344,12 @@ __Lsfr25 0 0 ABS 0
 __LnvBANK2 0 0 ABS 0
 __Hsfr16 0 0 ABS 0
 __Lsfr16 0 0 ABS 0
-__end_of_USBCtrlEPAllowStatusStage 14A4 0 CODE 0
+__end_of_USBCtrlEPAllowStatusStage ED4 0 CODE 0
 __Hsfr26 0 0 ABS 0
 __Lsfr26 0 0 ABS 0
-__pnvBANK2 168 0 BANK2 1
-__ptext1922 1FCF 0 CODE 0
-__ptext1941 B19 0 CODE 0
-__ptext1960 105D 0 CODE 0
+__pnvBANK2 16A 0 BANK2 1
+__ptext1751 F47 0 CODE 0
+__ptext1770 602 0 CODE 0
 __Hsfr17 0 0 ABS 0
 __Lsfr17 0 0 ABS 0
 __Hsfr27 0 0 ABS 0
@@ -307,69 +363,67 @@ __Lsfr19 0 0 ABS 0
 __Hsfr29 0 0 ABS 0
 __Lsfr29 0 0 ABS 0
 ?i1___wmul 70 0 COMMON 1
-__ptext1932 EA5 0 CODE 0
-__ptext1951 3 0 CODE 0
-__ptext1970 1E13 0 CODE 0
+__ptext1761 B00 0 CODE 0
+__ptext1780 1A7 0 CODE 0
+__end_ofPL68 FE3 0 CODE 0
 _TRISAbits 8C 0 ABS 0
 _RCSTAbits 19D 0 ABS 0
-_TRISBbits 8D 0 ABS 0
-_send32_count 141 0 BANK2 1
+_send32_count 140 0 BANK2 1
 _TRISCbits 8E 0 ABS 0
 _PWM1DCH 612 0 ABS 0
+__ptext1804 761 0 CODE 0
 _TXSTAbits 19E 0 ABS 0
 _IOCBPbits 394 0 ABS 0
-_T1CONbits 18 0 ABS 0
-_TMR1GIE 48F 0 ABS 0
 __Hstrings 0 0 ABS 0
 _T2CONbits 1C 0 ABS 0
 __Lstrings 0 0 ABS 0
-_TMR1GIF 8F 0 ABS 0
 __pstrings 800 0 STRING 0
-__ptext1923 D26 0 CODE 0
-__ptext1942 17 0 CODE 0
-__ptext1961 122F 0 CODE 0
-_PrecalcHashes 1B6 0 BANK3 1
+__ptext1752 F40 0 CODE 0
+__ptext1771 5ED 0 CODE 0
+__ptext1790 FA8 0 CODE 0
+_PrecalcHashes 1C0 0 BANK3 1
 _PWM1DCL 611 0 ABS 0
-AsicPreCalc@m B9 0 BANK1 1
-_USBCtrlEPServiceComplete 163E 0 CODE 0
-__ptext1914 638 0 CODE 0
-__ptext1933 10E8 0 CODE 0
-__ptext1952 2 0 CODE 0
-__ptext1971 0 0 CODE 0
-_USBCheckVendorRequest 8AF 0 CODE 0
+AsicPreCalc@m B8 0 BANK1 1
+_USBCtrlEPServiceComplete B54 0 CODE 0
+__ptext1762 BC5 0 CODE 0
+__ptext1781 9EF 0 CODE 0
+_USBCheckVendorRequest FA7 0 CODE 0
+__end_ofPL78 719 0 CODE 0
+__ptext1805 7D5 0 CODE 0
 __HdataBANK2 0 0 ABS 0
 __LdataBANK2 0 0 ABS 0
-__ptext1924 1434 0 CODE 0
-__ptext1943 1025 0 CODE 0
-__ptext1962 1E45 0 CODE 0
+__ptext1753 F28 0 CODE 0
+__ptext1772 E2A 0 CODE 0
+__ptext1791 FA6 0 CODE 0
 _OSCTUNE 98 0 ABS 0
-__end_of_USBCtrlTrfSetupHandler 1182 0 CODE 0
+__end_of_USBCtrlTrfSetupHandler C51 0 CODE 0
 __size_of_InitTempSensor 0 0 ABS 0
-__pdataBANK2 14C 0 BANK2 1
-__end_ofi1___wmul 1F54 0 CODE 0
-USBStdGetStatusHandler@p 5A 0 BANK0 1
+__pdataBANK2 14E 0 BANK2 1
+__end_ofi1___wmul 7EA 0 CODE 0
+USBStdGetStatusHandler@p 56 0 BANK0 1
 _PWM1CON 613 0 ABS 0
 __pbssBIGRAM 233C 0 ABS 0
 __Hbank0 0 0 ABS 0
 __Lbank0 0 0 ABS 0
-__ptext1915 1E79 0 CODE 0
-__ptext1934 11D8 0 CODE 0
-__ptext1953 8B1 0 CODE 0
+__ptext1763 C51 0 CODE 0
+__ptext1782 A4C 0 CODE 0
 __size_of_rotate 0 0 ABS 0
 __Hbank1 0 0 ABS 0
 __Lbank1 0 0 ABS 0
+__end_ofPL88 71E 0 CODE 0
 __Hbank2 0 0 ABS 0
 __Lbank2 0 0 ABS 0
-_InitFAN 1E2C 0 CODE 0
+_InitFAN A23 0 CODE 0
+__ptext1806 7C9 0 CODE 0
 __Hbank3 0 0 ABS 0
 __Lbank3 0 0 ABS 0
 __Hbank4 0 0 ABS 0
 __Lbank4 0 0 ABS 0
-AsicPreCalc@y DD 0 BANK1 1
-__ptext1925 14A4 0 CODE 0
-__ptext1944 BC5 0 CODE 0
-__ptext1963 10A2 0 CODE 0
-_USBCtrlTrfOutHandler 1FCF 0 CODE 0
+AsicPreCalc@y D8 0 BANK1 1
+__ptext1754 ED4 0 CODE 0
+__ptext1773 566 0 CODE 0
+__ptext1792 FA7 0 CODE 0
+_USBCtrlTrfOutHandler FAC 0 CODE 0
 __Hbank5 0 0 ABS 0
 __Lbank5 0 0 ABS 0
 __size_of_USBDeviceTasks 0 0 ABS 0
@@ -377,157 +431,153 @@ __Hpowerup 0 0 CODE 0
 __Lpowerup 0 0 CODE 0
 __Hbank6 0 0 ABS 0
 __Lbank6 0 0 ABS 0
-_USBStdSetCfgHandler 9D6 0 CODE 0
+_USBStdSetCfgHandler 90C 0 CODE 0
 __Hbank7 0 0 ABS 0
-USBTransferOnePacket@ep 62 0 BANK0 1
+USBTransferOnePacket@ep 5E 0 BANK0 1
 __Lbank7 0 0 ABS 0
-__end_of_Send32 BC5 0 CODE 0
+__end_of_Send32 381 0 CODE 0
 __Hbank8 0 0 ABS 0
 _device_dsc 88D 0 STRING 0
 __Lbank8 0 0 ABS 0
-__ptext1916 1EB2 0 CODE 0
-__ptext1935 1E95 0 CODE 0
-__ptext1954 8B0 0 CODE 0
+__ptext1764 90C 0 CODE 0
+__ptext1783 A23 0 CODE 0
 __Hbank9 0 0 ABS 0
-_SSPCON1bits 215 0 ABS 0
 __Lbank9 0 0 ABS 0
-_USBAlternateInterface 149 0 BANK2 1
-_SSPCON2bits 216 0 ABS 0
-_SSPCON3bits 217 0 ABS 0
-_USTATcopy 6F 0 BANK0 1
+_USBAlternateInterface EE 0 BANK1 1
+__ptext1807 0 0 CODE 0
+_USTATcopy EF 0 BANK1 1
 __HdataBANK3 0 0 ABS 0
 __LdataBANK3 0 0 ABS 0
-__ptext1926 A75 0 CODE 0
-__ptext1945 1DE9 0 CODE 0
-__ptext1964 12ED 0 CODE 0
-_USBCtrlEPAllowStatusStage 1434 0 CODE 0
-__pdataBANK3 1D6 0 BANK3 1
+__ptext1755 C2B 0 CODE 0
+__ptext1774 80 0 CODE 0
+__ptext1793 FA5 0 CODE 0
+_USBCtrlEPAllowStatusStage E9A 0 CODE 0
+__pdataBANK3 1D8 0 BANK3 1
 __size_of_USBCB_SOF_Handler 0 0 ABS 0
-_USBGenericInHandle 137 0 BANK2 1
-?_SendAsicData 5F 0 BANK0 1
-__ptext1917 1F79 0 CODE 0
-__ptext1936 DE3 0 CODE 0
-__ptext1955 8B2 0 CODE 0
-_USBDeviceInit DE3 0 CODE 0
+_USBGenericInHandle 135 0 BANK2 1
+?_SendAsicData 5C 0 BANK0 1
+__ptext1765 961 0 CODE 0
+__ptext1784 A12 0 CODE 0
+_USBDeviceInit E2A 0 CODE 0
 __HcstackBANK1 0 0 ABS 0
 __LcstackBANK1 0 0 ABS 0
 __pcstackBANK1 A0 0 BANK1 1
-__end_of_AsicPushWork 1800 0 CODE 0
+__end_of_AsicPushWork 28B 0 CODE 0
 __Hclrtext 0 0 ABS 0
-_USBSuspend 1EB2 0 CODE 0
+_USBSuspend F40 0 CODE 0
 __Lclrtext 0 0 ABS 0
-_pBDTEntryEP0OutCurrent 6C 0 BANK0 1
-__ptext1927 1358 0 CODE 0
-__ptext1946 C75 0 CODE 0
-__ptext1965 1F54 0 CODE 0
-AsicPreCalc@K AD 0 BANK1 1
-_USBCBStdSetDscHandler 1D9F 0 CODE 0
+_pBDTEntryEP0OutCurrent 6E 0 BANK0 1
+__ptext1756 B54 0 CODE 0
+__ptext1775 24B 0 CODE 0
+__ptext1794 F50 0 CODE 0
+AsicPreCalc@K A8 0 BANK1 1
+_USBCBStdSetDscHandler FA5 0 CODE 0
 __size_of_USBStdFeatureReqHandler 0 0 ABS 0
-__end_of_USBCtrlTrfOutHandler 2000 0 CODE 0
+__end_of_USBCtrlTrfOutHandler FCC 0 CODE 0
 __size_of_USBEnableEndpoint 0 0 ABS 0
-AsicPreCalc@n E5 0 BANK1 1
-__ptext1918 15AC 0 CODE 0
-__ptext1937 151E 0 CODE 0
-__ptext1956 8AF 0 CODE 0
-__end_of_USBCtrlEPServiceComplete 16D1 0 CODE 0
-_USBCtrlEPAllowDataStage 1182 0 CODE 0
-__ptext1928 9D6 0 CODE 0
-__ptext1947 1E2C 0 CODE 0
-__end_of_USBSuspend 1ECF 0 CODE 0
-__end_of__initialization 12EA 0 CODE 0
-__ptext1919 1132 0 CODE 0
-__ptext1938 432 0 CODE 0
-__ptext1957 1D9F 0 CODE 0
-memset@c 5B 0 BANK0 1
-_USBCtrlTrfInHandler 14A4 0 CODE 0
-__end_of_SendAsicData 1767 0 CODE 0
-__end_of_USBStdSetCfgHandler A75 0 CODE 0
+AsicPreCalc@n E0 0 BANK1 1
+__ptext1766 17A2 0 CODE 0
+__ptext1785 9FC 0 CODE 0
+__end_of_USBCtrlEPServiceComplete B8B 0 CODE 0
+_USBCtrlEPAllowDataStage B8B 0 CODE 0
+__ptext1757 B8B 0 CODE 0
+__ptext1776 28B 0 CODE 0
+__ptext1795 F5F 0 CODE 0
+__end_of_USBSuspend F47 0 CODE 0
+__end_of__initialization 6C 0 CODE 0
+__ptext1767 8C2 0 CODE 0
+__ptext1786 A3B 0 CODE 0
+memset@c 56 0 BANK0 1
+_USBCtrlTrfInHandler B00 0 CODE 0
+__end_of_SendAsicData 2D5 0 CODE 0
+__end_of_USBStdSetCfgHandler 961 0 CODE 0
 _BAUDCONbits 19F 0 ABS 0
-AsicPreCalc@z D9 0 BANK1 1
-__ptext1929 1000 0 CODE 0
-__ptext1948 1DC6 0 CODE 0
-__ptext1967 13C4 0 CODE 0
-__end_of___lwdiv 10E8 0 CODE 0
-_SendCmdReply BC5 0 CODE 0
-USER_USB_CALLBACK_EVENT_HANDLER@event A3 0 BANK1 1
-__end_of_USBStdGetStatusHandler 800 0 CODE 0
-__ptext1939 1767 0 CODE 0
-__ptext1958 1F0E 0 CODE 0
-_SSPSTATbits 214 0 ABS 0
-USBCBSendResume@delay_count 120 0 BANK2 1
-_AsicPreCalc 17 0 CODE 0
+AsicPreCalc@z B4 0 BANK1 1
+__ptext1758 FAC 0 CODE 0
+__ptext1777 2D5 0 CODE 0
+__ptext1796 F7E 0 CODE 0
+__end_of___lwdiv 24B 0 CODE 0
+_SendCmdReply 1A7 0 CODE 0
+USER_USB_CALLBACK_EVENT_HANDLER@event 60 0 BANK0 1
+__end_of_USBStdGetStatusHandler 900 0 CODE 0
+__ptext1768 C8D 0 CODE 0
+__ptext1787 FAB 0 CODE 0
+_AsicPreCalc 381 0 CODE 0
 __size_of_memset 0 0 ABS 0
-__ptext1949 1DFD 0 CODE 0
-__ptext1968 93C 0 CODE 0
-memset@n 5D 0 BANK0 1
+__ptext1759 973 0 CODE 0
+__ptext1778 381 0 CODE 0
+__ptext1797 5B5 0 CODE 0
+memset@n 58 0 BANK0 1
 _ISRCode 4 0 CODE 0
-__end_of_USBCBInitEP 1F30 0 CODE 0
-__end_of_USBWakeFromSuspend 1E95 0 CODE 0
-memset@p 60 0 BANK0 1
+__end_of_USBCBInitEP F5F 0 CODE 0
+__end_of_USBWakeFromSuspend F50 0 CODE 0
+memset@p 5B 0 BANK0 1
 __size_of_SendAsicData 0 0 ABS 0
-__ptext1959 1FA3 0 CODE 0
+__ptext1769 DFB 0 CODE 0
+__ptext1788 FAA 0 CODE 0
 rotate@x 59 0 BANK0 1
-__ptext1969 1F30 0 CODE 0
-_I2CAddr 12B 0 BANK2 1
+__ptext1779 531 0 CODE 0
+__ptext1798 226 0 CODE 0
 __Hidloc 0 0 IDLOC 0
 rotate@y 5D 0 BANK0 1
-_ep_data_in 122 0 BANK2 1
+_ep_data_in 126 0 BANK2 1
 __size_of_AsicPreCalc 0 0 ABS 0
 __Lidloc 0 0 IDLOC 0
 _WorkQue 233C 0 ABS 0
 __end_of_device_dsc 89F 0 STRING 0
-_ProcessIO$2399 166 0 BANK2 1
+__ptext1789 FA9 0 CODE 0
+_ProcessIO$2399 E8 0 BANK1 1
 ?_rotate 59 0 BANK0 1
 __size_of_USBCBErrorHandler 0 0 ABS 0
-init_ram 1DA0 0 CODE 0
+init_ram 175A 0 CODE 0
 __HdataBANK6 0 0 ABS 0
-_AsicPushWork 1767 0 CODE 0
+_AsicPushWork 24B 0 CODE 0
 __LdataBANK6 0 0 ABS 0
-__pdataBANK6 340 0 BANK6 1
-USBTransferOnePacket@handle 63 0 BANK0 1
+__ptext1799 AC0 0 CODE 0
+__pdataBANK6 320 0 BANK6 1
+USBTransferOnePacket@handle 5F 0 BANK0 1
 _USB_CD_Ptr 804 0 STRING 0
-SendCmdReply@cmd 5F 0 BANK0 1
-?___bmul 59 0 BANK0 1
-_USBCheckStdRequest 1358 0 CODE 0
-_inPipes 143 0 BANK2 1
+SendCmdReply@cmd 5C 0 BANK0 1
+?___bmul 56 0 BANK0 1
+_USBCheckStdRequest C51 0 CODE 0
+_inPipes 149 0 BANK2 1
 _USB_SD_Ptr 801 0 STRING 0
-?___wmul 59 0 BANK0 1
+?___wmul 56 0 BANK0 1
 __Hcinit 0 0 ABS 0
 __Lcinit 0 0 ABS 0
-_WorkNow 6B 0 BANK0 1
+_WorkNow EB 0 BANK1 1
 _UIEbits E92 0 ABS 0
-?_memset 59 0 BANK0 1
+?_memset 56 0 BANK0 1
 _UIRbits E90 0 ABS 0
-__end_of_InitializeSystem 1EB2 0 CODE 0
-___awdiv 12ED 0 CODE 0
+__end_of_InitializeSystem 602 0 CODE 0
+___awdiv AC0 0 CODE 0
 __size_of_InitializeSystem 0 0 ABS 0
-___lwdiv 10A2 0 CODE 0
+___lwdiv 226 0 CODE 0
 __size_of_main 0 0 ABS 0
 __size_ofi1___bmul 0 0 ABS 0
 __size_of_USBCBCheckOtherReq 0 0 ABS 0
 _CtrlTrfData 48 0 ABS 0
-__HcstackBANK2 0 0 ABS 0
-__LcstackBANK2 0 0 ABS 0
-_USBStdGetDscHandler 8B6 0 CODE 0
+_USBStdGetDscHandler 17A2 0 CODE 0
 __CFG_MCLRE$OFF 0 0 ABS 0
-_USER_USB_CALLBACK_EVENT_HANDLER 10E8 0 CODE 0
-_shortPacketStatus 142 0 BANK2 1
-__pcstackBANK2 15A 0 BANK2 1
-__end_of_USBCtrlTrfRxService DE3 0 CODE 0
-__end_of_USBCtrlTrfTxService B19 0 CODE 0
-SendCmdReply@data 61 0 BANK0 1
+_USER_USB_CALLBACK_EVENT_HANDLER DFB 0 CODE 0
+_shortPacketStatus EC 0 BANK1 1
+__end_of_USBCtrlTrfRxService 9E0 0 CODE 0
+__end_of_USBCtrlTrfTxService C04 0 CODE 0
+SendCmdReply@data 5E 0 BANK0 1
 __size_of_USBCtrlEPAllowStatusStage 0 0 ABS 0
-__end_of_USBEnableEndpoint 1FCF 0 CODE 0
-__end_ofi1_SendCmdReply 9D6 0 CODE 0
-_BankRanges 340 0 BANK6 1
+__end_of_USBEnableEndpoint F7E 0 CODE 0
+__end_ofi1_SendCmdReply 7C9 0 CODE 0
+_BankRanges 320 0 BANK6 1
 __size_of___lwdiv 0 0 ABS 0
 __HbssBANK0 0 0 ABS 0
 __LbssBANK0 0 0 ABS 0
 __Hbank10 0 0 ABS 0
-__pbssBANK0 67 0 BANK0 1
+__pbssBANK0 6A 0 BANK0 1
 __Lbank10 0 0 ABS 0
-_ProcessIO$2365 164 0 BANK2 1
-_send32_data 128 0 BANK2 1
+__Hpa_nodes 0 0 ABS 0
+_ProcessIO$2365 E6 0 BANK1 1
+_send32_data 12C 0 BANK2 1
+__Lpa_nodes 0 0 ABS 0
 __Hbank20 0 0 BANK20 1
 __Lbank20 0 0 BANK20 1
 __size_of_USBCtrlTrfRxService 0 0 ABS 0
@@ -537,27 +587,30 @@ __Hbank11 0 0 ABS 0
 __Lbank30 0 0 BANK30 1
 __Lbank11 0 0 ABS 0
 __Hbank21 0 0 BANK21 1
-i1___bmul@multiplier 72 0 COMMON 1
+i1___bmul@multiplier 71 0 COMMON 1
 __Lbank21 0 0 BANK21 1
 __size_of_USBCBSuspend 0 0 ABS 0
-USBCtrlTrfInHandler@lastDTS 5E 0 BANK0 1
+USBCtrlTrfInHandler@lastDTS 5B 0 BANK0 1
 __CFG_FCMEN$OFF 0 0 ABS 0
 __Hbank31 0 0 BANK31 1
 __Hbank12 0 0 ABS 0
 __Lbank31 0 0 BANK31 1
 __Lbank12 0 0 ABS 0
-_USBStatusStageEnabledFlag1 139 0 BANK2 1
+_USBStatusStageEnabledFlag1 137 0 BANK2 1
 __Hbank22 0 0 BANK22 1
 __Lbank22 0 0 BANK22 1
 __Hbank13 0 0 BANK13 1
 __Lbank13 0 0 BANK13 1
-USBConfigureEndpoint@EPNum 5E 0 BANK0 1
-_USBEnableEndpoint 1FA3 0 CODE 0
+USBConfigureEndpoint@EPNum 58 0 BANK0 1
+_USBEnableEndpoint F5F 0 CODE 0
+__HbssBANK1 0 0 ABS 0
+__LbssBANK1 0 0 ABS 0
 __Hbank23 0 0 BANK23 1
 __Lbank23 0 0 BANK23 1
 __Hbank14 0 0 BANK14 1
 __size_of_USBCtrlTrfInHandler 0 0 ABS 0
-_last_bit0 13E 0 BANK2 1
+__pbssBANK1 EA 0 BANK1 1
+_last_bit0 13D 0 BANK2 1
 __Lbank14 0 0 BANK14 1
 i1___wmul@multiplier 70 0 COMMON 1
 __Hbank24 0 0 BANK24 1
@@ -567,13 +620,13 @@ __Hbank15 0 0 BANK15 1
 __Lbank15 0 0 BANK15 1
 __Hbank25 0 0 BANK25 1
 __Lbank25 0 0 BANK25 1
-USBStdFeatureReqHandler@current_ep_data AD 0 BANK1 1
-_InitResultRx 1DD7 0 CODE 0
-__end_of_rotate 105D 0 CODE 0
+USBStdFeatureReqHandler@current_ep_data A2 0 BANK1 1
+_InitResultRx A3B 0 CODE 0
+__end_of_rotate 566 0 CODE 0
 __Hbank16 0 0 BANK16 1
-_last_bit1 13F 0 BANK2 1
+_last_bit1 13E 0 BANK2 1
 __Lbank16 0 0 BANK16 1
-_USBStatusStageEnabledFlag2 13A 0 BANK2 1
+_USBStatusStageEnabledFlag2 138 0 BANK2 1
 __Hbank26 0 0 BANK26 1
 __Lbank26 0 0 BANK26 1
 __CFG_CPUDIV$NOCLKDIV 0 0 ABS 0
@@ -586,9 +639,9 @@ __Lbank27 0 0 BANK27 1
 __Hbank18 0 0 BANK18 1
 __pbssBANK2 120 0 BANK2 1
 __Lbank18 0 0 BANK18 1
-USBTransferOnePacket@len 5F 0 BANK0 1
+USBTransferOnePacket@len 5B 0 BANK0 1
 _ADCON0bits 9D 0 ABS 0
-DetectAsics@x 62 0 BANK0 1
+DetectAsics@x 66 0 BANK0 1
 _ADCON1bits 9E 0 ABS 0
 __Hbank28 0 0 BANK28 1
 __size_of___awdiv 0 0 ABS 0
@@ -596,210 +649,167 @@ __Lbank28 0 0 BANK28 1
 i1SendCmdReply@n 7B 0 COMMON 1
 __size_of_USBCBInitEP 0 0 ABS 0
 _ADCON2bits 9F 0 ABS 0
-__end_of_ProcessIO 15AC 0 CODE 0
+__end_of_ProcessIO 5B5 0 CODE 0
 __Hbank19 0 0 BANK19 1
 __Lbank19 0 0 BANK19 1
 __Hbank29 0 0 BANK29 1
 __Lbank29 0 0 BANK29 1
-USBTransferOnePacket@dir 5D 0 BANK0 1
-__end_of_ProcessCmd 638 0 CODE 0
-_USBCB_SOF_Handler 8B1 0 CODE 0
+USBTransferOnePacket@dir 59 0 BANK0 1
+__end_of_ProcessCmd 1A7 0 CODE 0
+_USBCB_SOF_Handler FA9 0 CODE 0
 __HbssBANK3 0 0 ABS 0
 __LbssBANK3 0 0 ABS 0
 __size_of_USBCheckStdRequest 0 0 ABS 0
-SendAsicData@split 61 0 BANK0 1
+SendAsicData@split 5E 0 BANK0 1
 __pbssBANK3 1A0 0 BANK3 1
 _ANSELBbits 18D 0 ABS 0
-__end_of_InitResultRx 1DE9 0 CODE 0
-?_USBTransferOnePacket 5D 0 BANK0 1
-_T1GCONbits 19 0 ABS 0
+__end_of_InitResultRx A4C 0 CODE 0
+?_USBTransferOnePacket 59 0 BANK0 1
 _INTCONbits B 0 ABS 0
-_ep_data_out 124 0 BANK2 1
-_InitializeSystem 1E95 0 CODE 0
-_controlTransferState 13C 0 BANK2 1
-__end_of_AsicPreCalc 432 0 CODE 0
+_ep_data_out 128 0 BANK2 1
+_InitializeSystem 5ED 0 CODE 0
+_controlTransferState 6D 0 BANK0 1
+__end_of_AsicPreCalc 524 0 CODE 0
 __size_of_USBCtrlEPServiceComplete 0 0 ABS 0
-__Hend_init 17 0 CODE 0
-__Lend_init 15 0 CODE 0
-__end_of_USBConfigureEndpoint 10A2 0 CODE 0
-_USBActiveConfiguration 148 0 BANK2 1
-__pswtext1 1800 0 CONST 0
-_USBCtrlTrfRxService D26 0 CODE 0
-__end_of_InitFAN 1E45 0 CODE 0
-___awdiv@divisor 59 0 BANK0 1
-___lwdiv@divisor 59 0 BANK0 1
-_pBDTEntryIn 67 0 BANK0 1
+__Hend_init 14 0 CODE 0
+__Lend_init 12 0 CODE 0
+__end_of_USBConfigureEndpoint FA5 0 CODE 0
+_USBActiveConfiguration ED 0 BANK1 1
+__pswtext1 1000 0 CONST 0
+_USBCtrlTrfRxService 973 0 CODE 0
+__end_of_InitFAN A3B 0 CODE 0
+___awdiv@divisor 56 0 BANK0 1
+___lwdiv@divisor 56 0 BANK0 1
+_pBDTEntryIn 6A 0 BANK0 1
 i1___bmul@multiplicand 70 0 COMMON 1
-_InitWorkTick 1DFD 0 CODE 0
-_USBDeferStatusStagePacket 6A 0 BANK0 1
-__end_ofi1___bmul 1E2C 0 CODE 0
-_USBStatusStageTimeoutCounter 13B 0 BANK2 1
+_InitWorkTick 9FC 0 CODE 0
+_USBDeferStatusStagePacket 6C 0 BANK0 1
+__end_ofi1___bmul 7D5 0 CODE 0
+_USBStatusStageTimeoutCounter 139 0 BANK2 1
 i1___wmul@multiplicand 72 0 COMMON 1
-__end_of_USBDeviceInit EA5 0 CODE 0
-__HbssBANK6 0 0 ABS 0
-__LbssBANK6 0 0 ABS 0
+__end_of_USBDeviceInit E9A 0 CODE 0
 __size_of___wmul 0 0 ABS 0
-memset@p1 59 0 BANK0 1
+memset@p1 5A 0 BANK0 1
 __Hreset_vec 2 0 CODE 0
-__pbssBANK6 320 0 BANK6 1
 __Lreset_vec 0 0 CODE 0
 __HidataBANK2 0 0 ABS 0
 __LidataBANK2 0 0 ABS 0
-__pidataBANK2 1DB8 0 CODE 0
+__pidataBANK2 1766 0 CODE 0
 __size_of_USBStdSetCfgHandler 0 0 ABS 0
 __size_of_USBStdGetDscHandler 0 0 ABS 0
 __end_of_USB_SD_Ptr 804 0 STRING 0
-_USBCBErrorHandler 8B0 0 CODE 0
-_USBCBCheckOtherReq 8B2 0 CODE 0
+_USBCBErrorHandler FA8 0 CODE 0
+_USBCBCheckOtherReq FA6 0 CODE 0
 __size_of_USER_USB_CALLBACK_EVENT_HANDLER 0 0 ABS 0
-__end_of_USBCB_SOF_Handler 8B2 0 CODE 0
+__end_of_USBCB_SOF_Handler FAA 0 CODE 0
 __size_ofi1___wmul 0 0 ABS 0
-__end_of_USBCBSuspend 4 0 CODE 0
+__end_of_USBCBSuspend FAC 0 CODE 0
 intlevel0 0 0 CODE 0
 __CFG_WDTE$OFF 0 0 ABS 0
 __size_of_ISRCode 0 0 ABS 0
 _configDescriptor1 86D 0 STRING 0
 intlevel1 0 0 CODE 0
-_USBCBSuspend 3 0 CODE 0
-_ProcessIO 151E 0 CODE 0
+_USBCBSuspend FAB 0 CODE 0
+_ProcessIO 566 0 CODE 0
 intlevel2 0 0 CODE 0
-__end_of_USBCBCheckOtherReq 8B6 0 CODE 0
+__end_of_USBCBCheckOtherReq FA7 0 CODE 0
 intlevel3 0 0 CODE 0
 __size_of_InitWorkTick 0 0 ABS 0
 i1SendCmdReply@data 78 0 COMMON 1
-_USBCtrlTrfTxService A75 0 CODE 0
-USBDeviceInit@i 5E 0 BANK0 1
+_USBCtrlTrfTxService BC5 0 CODE 0
+USBDeviceInit@i 5B 0 BANK0 1
 intlevel4 0 0 CODE 0
-USBStdFeatureReqHandler@pUEP AB 0 BANK1 1
+USBStdFeatureReqHandler@pUEP A0 0 BANK1 1
 intlevel5 0 0 CODE 0
 __size_of_Send32 0 0 ABS 0
+__end_ofPL2 647 0 CODE 0
 _ResultQC 130 0 BANK2 1
 __size_of_USBSuspend 0 0 ABS 0
 __HidataBANK3 0 0 ABS 0
 __LidataBANK3 0 0 ABS 0
-USBConfigureEndpoint@handle 5F 0 BANK0 1
+USBConfigureEndpoint@handle 59 0 BANK0 1
 __HcstackCOMMON 0 0 ABS 0
 __LcstackCOMMON 0 0 ABS 0
-__pidataBANK3 1E5F 0 CODE 0
+__pidataBANK3 7EA 0 CODE 0
 __pcstackCOMMON 70 0 COMMON 1
-__end_of___wmul 1F79 0 CODE 0
-_USBConfigureEndpoint 105D 0 CODE 0
-start_initialization 128B 0 CODE 0
+__end_of___wmul 226 0 CODE 0
+_USBConfigureEndpoint F7E 0 CODE 0
+start_initialization 14 0 CODE 0
 __end_of_sd000 8AF 0 STRING 0
-__end_of_ISRCode 15 0 CODE 0
-?_USBEnableEndpoint 60 0 BANK0 1
-___awdiv@quotient 60 0 BANK0 1
-___lwdiv@quotient 5F 0 BANK0 1
-_BothEP0OutUOWNsSet 12A 0 BANK2 1
-USBCtrlTrfRxService@byteToRead 5E 0 BANK0 1
-_USBTransferOnePacket 122F 0 CODE 0
+__end_of_ISRCode 12 0 CODE 0
+?_USBEnableEndpoint 5A 0 BANK0 1
+___awdiv@quotient 5C 0 BANK0 1
+___lwdiv@quotient 5B 0 BANK0 1
+_BothEP0OutUOWNsSet 12E 0 BANK2 1
+USBCtrlTrfRxService@byteToRead 5B 0 BANK0 1
+_USBTransferOnePacket 5B5 0 CODE 0
+__end_ofPL10 672 0 CODE 0
+__end_ofPL4 654 0 CODE 0
 __Hmaintext 0 0 ABS 0
 __Lmaintext 0 0 ABS 0
 __CFG_IESO$OFF 0 0 ABS 0
-__pmaintext 1ECF 0 CODE 0
+__pmaintext 6E 0 CODE 0
 _OPTION_REGbits 95 0 ABS 0
-__end_of_USBCtrlEPService 163E 0 CODE 0
+__end_of_USBCtrlEPService F28 0 CODE 0
 __Hinittext 0 0 ABS 0
 __CFG_FOSC$INTOSC 0 0 ABS 0
 __Linittext 0 0 ABS 0
-__end_of_USBStallHandler 1FA3 0 CODE 0
+__end_of_USBStallHandler F40 0 CODE 0
+__end_ofPL20 6A5 0 CODE 0
 __size_of_USBCheckVendorRequest 0 0 ABS 0
-_USBCBWakeFromSuspend 2 0 CODE 0
-__end_of_USBDeviceTasks 79A 0 CODE 0
-__initialization 128B 0 CODE 0
-_USBStdGetStatusHandler 79A 0 CODE 0
-___bmul@product 5B 0 BANK0 1
-SendCmdReply@count 63 0 BANK0 1
-__end_of_USBCheckStdRequest 13C4 0 CODE 0
-___wmul@product 5D 0 BANK0 1
-_USBDeviceState 136 0 BANK2 1
+_USBCBWakeFromSuspend FAA 0 CODE 0
+__end_of_USBDeviceTasks DFB 0 CODE 0
+__initialization 14 0 CODE 0
+__end_ofPL30 6C4 0 CODE 0
+__end_ofPL6 65C 0 CODE 0
+_USBStdGetStatusHandler 8C2 0 CODE 0
+___bmul@product 57 0 BANK0 1
+SendCmdReply@count 60 0 BANK0 1
+__end_of_USBCheckStdRequest C8D 0 CODE 0
+___wmul@product 5A 0 BANK0 1
+_USBDeviceState EA 0 BANK1 1
+__end_ofPL40 9E5 0 CODE 0
 __CFG_LVP$OFF 0 0 ABS 0
 __size_of___bmul 0 0 ABS 0
 __size_of_USBTransferOnePacket 0 0 ABS 0
-__end_of___bmul 1E5F 0 CODE 0
-USBCtrlEPService@setup_cnt B4 0 BANK1 1
-?_USER_USB_CALLBACK_EVENT_HANDLER A3 0 BANK1 1
-___awdiv@dividend 5B 0 BANK0 1
+__end_of___bmul 531 0 CODE 0
+USBCtrlEPService@setup_cnt 69 0 BANK0 1
+?_USER_USB_CALLBACK_EVENT_HANDLER 60 0 BANK0 1
+___awdiv@dividend 58 0 BANK0 1
 %segments
-reset_vec 0 5 CODE 0 0
-intentry 8 FFF CODE 8 0
+reset_vec 0 3 CODE 0 0
+intentry 8 FEB CODE 8 0
 config 1000E 10011 CONFIG 1000E 0
 cstackCOMMON 70 7D COMMON 70 1
 cstackBANK1 A0 EF BANK1 A0 1
-bssBANK3 1A0 1EF BANK3 1A0 1
-bssBANK2 120 168 BANK2 120 1
-bssBANK6 320 35F BANK6 320 1
+bssBANK3 1A0 1E3 BANK3 1A0 1
+bssBANK2 120 16A BANK2 120 1
+dataBANK6 320 33F BANK6 320 1
 cstackBANK0 50 6F BANK0 50 1
-text1932 1D4A 2049 CODE 1D4A 0
-text1936 1BC6 1D49 CODE 1BC6 0
-text1923 1A4C 1BC5 CODE 1A4C 0
-text1946 18EA 1A4B CODE 18EA 0
-text1944 178A 18E9 CODE 178A 0
+text1755 1856 1FFF CODE 1856 0
+text1761 1600 1855 CODE 1600 0
+text1781 13DE 15FF CODE 13DE 0
 strings 1000 115D STRING 1000 0
-text1941 1632 1789 CODE 1632 0
-text1926 14EA 1631 CODE 14EA 0
-text1928 13AC 14E9 CODE 13AC 0
-text1968 1278 13AB CODE 1278 0
-text1939 2ECE 2FFF CODE 2ECE 0
-text1940 2DA2 2ECD CODE 2DA2 0
-text1920 2C7C 2DA1 CODE 2C7C 0
-text1918 2B58 2C7B CODE 2B58 0
-text1937 2A3C 2B57 CODE 2A3C 0
-text1930 116C 1277 CODE 116C 0
-text1925 2948 2A3B CODE 2948 0
-text1924 2868 2947 CODE 2868 0
-text1967 2788 2867 CODE 2788 0
-text1927 26B0 2787 CODE 26B0 0
-text1964 25DA 26AF CODE 25DA 0
-cinit 2516 25D9 CODE 2516 0
-text1961 245E 2515 CODE 245E 0
-text1934 23B0 245D CODE 23B0 0
-text1921 2304 23AF CODE 2304 0
-text1919 2264 2303 CODE 2264 0
-text1933 21D0 2263 CODE 21D0 0
-text1963 2144 21CF CODE 2144 0
-text1960 20BA 2143 CODE 20BA 0
-text1943 204A 20B9 CODE 204A 0
-text1922 3F9E 3FFF CODE 3F9E 0
-text1959 3F46 3F9D CODE 3F46 0
-text1917 3EF2 3F45 CODE 3EF2 0
-text1965 3EA8 3EF1 CODE 3EA8 0
-text1969 3E60 3EA7 CODE 3E60 0
-text1958 3E1C 3E5F CODE 3E1C 0
-idataBANK6 3DDC 3E1B CODE 3DDC 0
-maintext 3D9E 3DDB CODE 3D9E 0
-text1916 3D64 3D9D CODE 3D64 0
-text1935 3D2A 3D63 CODE 3D2A 0
-text1915 3CF2 3D29 CODE 3CF2 0
-idataBANK3 3CBE 3CF1 CODE 3CBE 0
-swtext1 3000 3033 CONST 3000 0
-text1962 3C8A 3CBD CODE 3C8A 0
-text1947 3C58 3C89 CODE 3C58 0
-text1970 3C26 3C57 CODE 3C26 0
-text1949 3BFA 3C25 CODE 3BFA 0
-text1945 3BD2 3BF9 CODE 3BD2 0
-text1950 3BAE 3BD1 CODE 3BAE 0
-text1948 3B8C 3BAD CODE 3B8C 0
-idataBANK2 3B70 3B8B CODE 3B70 0
-clrtext 3B58 3B6F CODE 3B58 0
-inittext 3B40 3B57 CODE 3B40 0
-text1955 1164 116B CODE 1164 0
-text1951 6 7 CODE 6 0
-text1953 1162 1163 CODE 1162 0
-text1954 1160 1161 CODE 1160 0
-text1956 115E 115F CODE 115E 0
-text1957 3B3E 3B3F CODE 3B3E 0
+text1759 12E6 13DD CODE 12E6 0
+text1764 1218 12E5 CODE 1218 0
+text1766 2F44 2FFF CODE 2F44 0
+text1767 1184 1217 CODE 1184 0
+idataBANK6 2F04 2F43 CODE 2F04 0
+idataBANK2 2ECC 2F03 CODE 2ECC 0
+swtext1 2000 2033 CONST 2000 0
+clrtext 116C 1183 CODE 116C 0
+inittext 2EB4 2ECB CODE 2EB4 0
 %locals
 dist/K16/production/Klondike.X.production.obj
 klondike.c
-31 1DB8 0 CODE 0
-32 1DB9 0 CODE 0
+31 1766 0 CODE 0
+32 1767 0 CODE 0
+36 1774 0 CODE 0
+33 177C 0 CODE 0
 asic.c
-320 1E5F 0 CODE 0
+320 7EA 0 CODE 0
 klondike.c
-36 1E6B 0 CODE 0
-33 1E73 0 CODE 0
-28 1EEE 0 CODE 0
+28 1782 0 CODE 0
 ../usb_descriptors.c
 245 801 0 STRING 0
 ../usb_descriptors.c
@@ -817,1271 +827,1189 @@ klondike.c
 ../usb_descriptors.c
 224 8AB 0 STRING 0
 klondike.c
-28 128B 0 CODE 0
+28 14 0 CODE 0
 main.c
-99 1ECF 0 CODE 0
-119 1ED2 0 CODE 0
-133 1ED5 0 CODE 0
-134 1ED9 0 CODE 0
-136 1EDD 0 CODE 0
-137 1EE4 0 CODE 0
-140 1EE7 0 CODE 0
-101 1EEB 0 CODE 0
-143 1EEC 0 CODE 0
-../USB/usb_device.c
-696 638 0 CODE 0
-699 639 0 CODE 0
-702 63B 0 CODE 0
-705 63C 0 CODE 0
-733 63E 0 CODE 0
-734 641 0 CODE 0
-757 642 0 CODE 0
-760 648 0 CODE 0
-763 64A 0 CODE 0
-767 64B 0 CODE 0
-770 651 0 CODE 0
-773 657 0 CODE 0
-781 65B 0 CODE 0
-792 661 0 CODE 0
-794 666 0 CODE 0
-796 667 0 CODE 0
-798 668 0 CODE 0
-799 669 0 CODE 0
-800 66A 0 CODE 0
-801 671 0 CODE 0
-818 672 0 CODE 0
-820 67B 0 CODE 0
-824 681 0 CODE 0
-831 685 0 CODE 0
-833 68A 0 CODE 0
-834 68C 0 CODE 0
-847 68D 0 CODE 0
-849 695 0 CODE 0
-855 698 0 CODE 0
-865 69E 0 CODE 0
-871 6A5 0 CODE 0
-877 6AD 0 CODE 0
-880 6B0 0 CODE 0
-883 6B7 0 CODE 0
-885 6BB 0 CODE 0
-887 6BF 0 CODE 0
-889 6D0 0 CODE 0
-914 6D6 0 CODE 0
-916 6DB 0 CODE 0
-923 6DE 0 CODE 0
-925 6E3 0 CODE 0
-926 6E7 0 CODE 0
-930 6E8 0 CODE 0
-932 6F1 0 CODE 0
-935 6F5 0 CODE 0
-937 6FE 0 CODE 0
-938 70E 0 CODE 0
-953 711 0 CODE 0
-955 718 0 CODE 0
-956 71A 0 CODE 0
-962 71B 0 CODE 0
-964 720 0 CODE 0
-966 72A 0 CODE 0
-969 72F 0 CODE 0
-970 735 0 CODE 0
-972 73F 0 CODE 0
-977 745 0 CODE 0
-979 74A 0 CODE 0
-980 75B 0 CODE 0
-983 75C 0 CODE 0
-989 76E 0 CODE 0
-991 774 0 CODE 0
-992 777 0 CODE 0
-995 778 0 CODE 0
-997 789 0 CODE 0
-999 78A 0 CODE 0
-964 78B 0 CODE 0
-1003 797 0 CODE 0
-1004 799 0 CODE 0
-../USB/usb_device.c
-2457 1E79 0 CODE 0
-2463 1E7B 0 CODE 0
-2470 1E8B 0 CODE 0
-2475 1E8D 0 CODE 0
-2496 1E8E 0 CODE 0
-2499 1E94 0 CODE 0
-../USB/usb_device.c
-2423 1EB2 0 CODE 0
-2424 1EB4 0 CODE 0
-2427 1EBA 0 CODE 0
-2430 1EBB 0 CODE 0
-2437 1EBE 0 CODE 0
-2438 1ECE 0 CODE 0
-../USB/usb_device.c
-2368 1F79 0 CODE 0
-2371 1F7E 0 CODE 0
-2374 1F91 0 CODE 0
-2376 1F99 0 CODE 0
-2379 1F9C 0 CODE 0
-2380 1FA2 0 CODE 0
-../USB/usb_device.c
-2528 15AC 0 CODE 0
-2532 15B2 0 CODE 0
-2536 15B9 0 CODE 0
-2544 15C9 0 CODE 0
-2546 15CF 0 CODE 0
-2549 15D5 0 CODE 0
-2557 15E0 0 CODE 0
-2559 15EA 0 CODE 0
-2560 1600 0 CODE 0
-2557 160A 0 CODE 0
-2562 1616 0 CODE 0
-2565 1624 0 CODE 0
-2566 1627 0 CODE 0
-2570 1628 0 CODE 0
-2572 162C 0 CODE 0
-2573 162D 0 CODE 0
-2577 1638 0 CODE 0
-2578 163C 0 CODE 0
-2580 163D 0 CODE 0
-../USB/usb_device.c
-2627 1132 0 CODE 0
-2628 1134 0 CODE 0
-2629 1136 0 CODE 0
-2630 1138 0 CODE 0
-2631 1139 0 CODE 0
-2632 113A 0 CODE 0
-2641 113B 0 CODE 0
-2642 1145 0 CODE 0
-2643 114A 0 CODE 0
-2644 1154 0 CODE 0
-2645 1159 0 CODE 0
-2647 1163 0 CODE 0
-2648 1165 0 CODE 0
-2649 1167 0 CODE 0
-2650 1169 0 CODE 0
-2656 116B 0 CODE 0
-2657 116E 0 CODE 0
-2670 117E 0 CODE 0
-2671 1181 0 CODE 0
-../USB/usb_device.c
-1791 163E 0 CODE 0
-1797 1640 0 CODE 0
-1799 1645 0 CODE 0
-1801 164A 0 CODE 0
-1812 1650 0 CODE 0
-1814 1655 0 CODE 0
-1819 1659 0 CODE 0
-1820 165B 0 CODE 0
-1821 165C 0 CODE 0
-1828 165D 0 CODE 0
-1829 1665 0 CODE 0
-1830 1671 0 CODE 0
-1831 1678 0 CODE 0
-1833 1680 0 CODE 0
-1836 1681 0 CODE 0
-1838 1686 0 CODE 0
-1852 1689 0 CODE 0
-1854 168E 0 CODE 0
-1877 1692 0 CODE 0
-1878 1694 0 CODE 0
-1879 1695 0 CODE 0
-1881 169B 0 CODE 0
-1883 169F 0 CODE 0
-1896 16A0 0 CODE 0
-1899 16A6 0 CODE 0
-1900 16AE 0 CODE 0
-1901 16BA 0 CODE 0
-1904 16C1 0 CODE 0
-1905 16C3 0 CODE 0
-1906 16C4 0 CODE 0
-1908 16CA 0 CODE 0
-1909 16CE 0 CODE 0
-1910 16CF 0 CODE 0
-1914 16D0 0 CODE 0
-../USB/usb_device.c
-1661 1182 0 CODE 0
-1662 1184 0 CODE 0
-1664 1185 0 CODE 0
-1667 118B 0 CODE 0
-1668 1193 0 CODE 0
-1669 119F 0 CODE 0
-1670 11A6 0 CODE 0
-1675 11A7 0 CODE 0
-1677 11B5 0 CODE 0
-1679 11BF 0 CODE 0
-1684 11C2 0 CODE 0
-1685 11CF 0 CODE 0
-1687 11D7 0 CODE 0
-../USB/usb_device.c
-2696 1FCF 0 CODE 0
-2698 1FD6 0 CODE 0
-2699 1FD9 0 CODE 0
-2704 1FDA 0 CODE 0
-2711 1FDB 0 CODE 0
-2713 1FE0 0 CODE 0
-2714 1FE8 0 CODE 0
-2715 1FF4 0 CODE 0
-2716 1FFB 0 CODE 0
-2719 1FFC 0 CODE 0
-2720 1FFE 0 CODE 0
-2722 1FFF 0 CODE 0
-../USB/usb_device.c
-2025 D26 0 CODE 0
-2031 D2E 0 CODE 0
-2033 D3E 0 CODE 0
-2036 D44 0 CODE 0
-2040 D5B 0 CODE 0
-2042 D5E 0 CODE 0
-2040 D70 0 CODE 0
-2047 D7D 0 CODE 0
-2049 D88 0 CODE 0
-2050 D8F 0 CODE 0
-2051 D9B 0 CODE 0
-2053 DA2 0 CODE 0
-2054 DA9 0 CODE 0
-2057 DAA 0 CODE 0
-2059 DB2 0 CODE 0
-2065 DB3 0 CODE 0
-2066 DBA 0 CODE 0
-2070 DC6 0 CODE 0
-2077 DCD 0 CODE 0
-2084 DD2 0 CODE 0
-2090 DD6 0 CODE 0
-2104 DD7 0 CODE 0
-2106 DDD 0 CODE 0
-2107 DE1 0 CODE 0
-2110 DE2 0 CODE 0
-../USB/usb_device.c
-1596 1434 0 CODE 0
-1598 143A 0 CODE 0
-1599 1440 0 CODE 0
-1601 1445 0 CODE 0
-1605 144B 0 CODE 0
-1607 1451 0 CODE 0
-1608 1456 0 CODE 0
-1609 145D 0 CODE 0
-1610 145E 0 CODE 0
-1612 1465 0 CODE 0
-1617 1466 0 CODE 0
-1618 146E 0 CODE 0
-1619 147A 0 CODE 0
-1620 1481 0 CODE 0
-1624 1484 0 CODE 0
-1625 148C 0 CODE 0
-1626 1498 0 CODE 0
-1627 14A0 0 CODE 0
-1628 14A1 0 CODE 0
-1630 14A3 0 CODE 0
-../USB/usb_device.c
-2751 14A4 0 CODE 0
-2754 14AC 0 CODE 0
-2759 14B0 0 CODE 0
-2761 14B7 0 CODE 0
-2762 14BB 0 CODE 0
-2764 14BF 0 CODE 0
-2765 14C5 0 CODE 0
-2768 14C6 0 CODE 0
-2773 14CD 0 CODE 0
-2775 14D3 0 CODE 0
-2776 14E0 0 CODE 0
-2782 14E3 0 CODE 0
-2786 14EA 0 CODE 0
-2787 14F2 0 CODE 0
-2790 14F3 0 CODE 0
-2792 14F9 0 CODE 0
-2793 1500 0 CODE 0
-2796 1501 0 CODE 0
-2797 1509 0 CODE 0
-2799 150A 0 CODE 0
-2805 150B 0 CODE 0
-2807 1510 0 CODE 0
-2809 1514 0 CODE 0
-2811 1518 0 CODE 0
-2814 151A 0 CODE 0
-2819 151D 0 CODE 0
-../USB/usb_device.c
-1943 A75 0 CODE 0
-1944 A7A 0 CODE 0
-1946 A84 0 CODE 0
-1953 A89 0 CODE 0
-1955 A8F 0 CODE 0
-1956 A91 0 CODE 0
-1957 A92 0 CODE 0
-1959 A98 0 CODE 0
-1960 A9F 0 CODE 0
-1961 AA0 0 CODE 0
-1965 AA1 0 CODE 0
-1970 AB8 0 CODE 0
-1974 AC0 0 CODE 0
-1975 AC5 0 CODE 0
-1977 ACA 0 CODE 0
-1979 ACB 0 CODE 0
-1980 AE5 0 CODE 0
-1977 AE9 0 CODE 0
-1982 AF0 0 CODE 0
-1985 AF1 0 CODE 0
-1987 AF2 0 CODE 0
-1988 B0C 0 CODE 0
-1985 B10 0 CODE 0
-1991 B18 0 CODE 0
-../USB/usb_device.c
-2840 1358 0 CODE 0
-2842 1363 0 CODE 0
-2845 1364 0 CODE 0
-2846 1366 0 CODE 0
-2848 136C 0 CODE 0
-2850 136D 0 CODE 0
-2851 1370 0 CODE 0
-2853 1371 0 CODE 0
-2854 1374 0 CODE 0
-2856 1375 0 CODE 0
-2857 137A 0 CODE 0
-2858 137B 0 CODE 0
-2859 137D 0 CODE 0
-2860 137E 0 CODE 0
-2862 137F 0 CODE 0
-2863 1382 0 CODE 0
-2864 1383 0 CODE 0
-2866 1384 0 CODE 0
-2867 1387 0 CODE 0
-2869 1388 0 CODE 0
-2870 138F 0 CODE 0
-2871 1390 0 CODE 0
-2872 1392 0 CODE 0
-2873 1393 0 CODE 0
-2875 1394 0 CODE 0
-2876 1396 0 CODE 0
-2877 13A3 0 CODE 0
-2879 13A4 0 CODE 0
-2880 13B4 0 CODE 0
-2881 13B5 0 CODE 0
-2883 13B6 0 CODE 0
-2884 13B7 0 CODE 0
-2842 13B8 0 CODE 0
-2885 13C3 0 CODE 0
-2842 1800 0 CONST 0
-../USB/usb_device.c
-2136 9D6 0 CODE 0
-2139 9D8 0 CODE 0
-2142 9F8 0 CODE 0
-2145 A08 0 CODE 0
-2150 A0A 0 CODE 0
-2152 A14 0 CODE 0
-2153 A1A 0 CODE 0
-2150 A20 0 CODE 0
-2157 A2D 0 CODE 0
-2160 A3D 0 CODE 0
-2162 A3F 0 CODE 0
-2165 A44 0 CODE 0
-2166 A48 0 CODE 0
-2169 A4C 0 CODE 0
-2172 A51 0 CODE 0
-2175 A56 0 CODE 0
-2176 A5C 0 CODE 0
-2180 A5D 0 CODE 0
-2185 A6D 0 CODE 0
-2187 A74 0 CODE 0
-/opt/microchip/xc8/v1.12/sources/memset.c
-18 1000 0 CODE 0
-19 1007 0 CODE 0
-20 1008 0 CODE 0
-19 1015 0 CODE 0
-22 1024 0 CODE 0
-../USB/usb_device.c
-2208 8B6 0 CODE 0
-2210 8BD 0 CODE 0
-2212 8C2 0 CODE 0
-2218 8C3 0 CODE 0
-2220 8C8 0 CODE 0
-2221 8CC 0 CODE 0
-2226 8CD 0 CODE 0
-2232 8DB 0 CODE 0
-2233 8EE 0 CODE 0
-2234 901 0 CODE 0
-2239 902 0 CODE 0
-2242 909 0 CODE 0
-2244 916 0 CODE 0
-2245 925 0 CODE 0
-2257 926 0 CODE 0
-2259 929 0 CODE 0
-2261 92A 0 CODE 0
-2262 92C 0 CODE 0
-2263 92D 0 CODE 0
-2212 92E 0 CODE 0
-2263 93A 0 CODE 0
-2265 93B 0 CODE 0
-../USB/usb_device.c
-2284 79A 0 CODE 0
-2285 79C 0 CODE 0
-2287 79D 0 CODE 0
-2290 79E 0 CODE 0
-2297 7A0 0 CODE 0
-2300 7A3 0 CODE 0
-2302 7AA 0 CODE 0
-2304 7AD 0 CODE 0
-2306 7AE 0 CODE 0
-2307 7B0 0 CODE 0
-2309 7B1 0 CODE 0
-2316 7B3 0 CODE 0
-2318 7B8 0 CODE 0
-2319 7C2 0 CODE 0
-2322 7C3 0 CODE 0
-2325 7CD 0 CODE 0
-2326 7DB 0 CODE 0
-2327 7E0 0 CODE 0
-2329 7E1 0 CODE 0
-2287 7E2 0 CODE 0
-2331 7EE 0 CODE 0
-2333 7F3 0 CODE 0
-2334 7F7 0 CODE 0
-2335 7F8 0 CODE 0
-2337 7FF 0 CODE 0
-../USB/usb_device.c
-2952 EA5 0 CODE 0
-2954 EB3 0 CODE 0
-2955 EB5 0 CODE 0
-2956 EBC 0 CODE 0
-2958 EC0 0 CODE 0
-2965 EC4 0 CODE 0
-2969 EE9 0 CODE 0
-2972 EEA 0 CODE 0
-2974 EEF 0 CODE 0
-2975 EFA 0 CODE 0
-2976 F06 0 CODE 0
-2979 F07 0 CODE 0
-2980 F12 0 CODE 0
-2987 F1F 0 CODE 0
-2989 F23 0 CODE 0
-2990 F27 0 CODE 0
-2993 F28 0 CODE 0
-2999 F29 0 CODE 0
-3001 F2E 0 CODE 0
-3002 F3B 0 CODE 0
-3005 F3C 0 CODE 0
-3009 F49 0 CODE 0
-3011 F50 0 CODE 0
-3015 F58 0 CODE 0
-3017 F5D 0 CODE 0
-3018 F64 0 CODE 0
-3021 F65 0 CODE 0
-3026 F6D 0 CODE 0
-3027 F75 0 CODE 0
-3033 F76 0 CODE 0
-3035 F7B 0 CODE 0
-3039 F82 0 CODE 0
-3040 F89 0 CODE 0
-3041 F8D 0 CODE 0
-3042 F9C 0 CODE 0
-3046 F9D 0 CODE 0
-3051 FA3 0 CODE 0
-3057 FA8 0 CODE 0
-3059 FB3 0 CODE 0
-3061 FB8 0 CODE 0
-3062 FBF 0 CODE 0
-3065 FC0 0 CODE 0
-3068 FC7 0 CODE 0
-3071 FCF 0 CODE 0
-3072 FDE 0 CODE 0
-3076 FDF 0 CODE 0
-3124 FE8 0 CODE 0
-3128 FF5 0 CODE 0
-3129 FFE 0 CODE 0
-3131 FFF 0 CODE 0
-main.c
-631 10E8 0 CODE 0
-635 10E9 0 CODE 0
-637 10EA 0 CODE 0
-638 10ED 0 CODE 0
-640 10EE 0 CODE 0
-641 10F1 0 CODE 0
-643 10F2 0 CODE 0
-644 10F5 0 CODE 0
-646 10F6 0 CODE 0
-647 10F9 0 CODE 0
-649 10FA 0 CODE 0
-650 10FD 0 CODE 0
-652 10FE 0 CODE 0
-653 1101 0 CODE 0
-655 1102 0 CODE 0
-656 1105 0 CODE 0
-666 1106 0 CODE 0
-668 1107 0 CODE 0
-669 1108 0 CODE 0
-631 1109 0 CODE 0
-671 1131 0 CODE 0
+99 6E 0 CODE 0
+119 6F 0 CODE 0
+133 72 0 CODE 0
+134 74 0 CODE 0
+136 76 0 CODE 0
+137 7B 0 CODE 0
+140 7D 0 CODE 0
+143 80 0 CODE 0
 klondike.c
-175 11D8 0 CODE 0
-176 11DE 0 CODE 0
-177 11DF 0 CODE 0
-178 11E4 0 CODE 0
-179 11E5 0 CODE 0
-181 11E8 0 CODE 0
-182 1204 0 CODE 0
-183 1208 0 CODE 0
-184 120F 0 CODE 0
-185 1210 0 CODE 0
-187 1211 0 CODE 0
-190 1219 0 CODE 0
-191 1223 0 CODE 0
-192 1224 0 CODE 0
-194 122B 0 CODE 0
-199 122E 0 CODE 0
+44 80 0 CODE 0
+47 81 0 CODE 0
+49 82 0 CODE 0
+50 87 0 CODE 0
+51 B3 0 CODE 0
+52 B7 0 CODE 0
+53 CE 0 CODE 0
+56 D0 0 CODE 0
+57 DB 0 CODE 0
+59 DC 0 CODE 0
+60 DF 0 CODE 0
+64 E3 0 CODE 0
+65 EB 0 CODE 0
+70 EE 0 CODE 0
+71 F2 0 CODE 0
+72 101 0 CODE 0
+73 109 0 CODE 0
+74 10C 0 CODE 0
+75 11A 0 CODE 0
+76 11D 0 CODE 0
+77 124 0 CODE 0
+78 128 0 CODE 0
+79 12D 0 CODE 0
+78 133 0 CODE 0
+79 135 0 CODE 0
+81 13C 0 CODE 0
+82 149 0 CODE 0
+83 15A 0 CODE 0
+84 15D 0 CODE 0
+86 15F 0 CODE 0
+87 16A 0 CODE 0
+89 16D 0 CODE 0
+90 17C 0 CODE 0
+47 18C 0 CODE 0
+102 1A4 0 CODE 0
+103 1A6 0 CODE 0
 main.c
-148 1E95 0 CODE 0
-149 1E97 0 CODE 0
-150 1E98 0 CODE 0
-153 1E9A 0 CODE 0
-154 1E9C 0 CODE 0
-155 1E9E 0 CODE 0
-158 1EA1 0 CODE 0
-159 1EA3 0 CODE 0
-160 1EA4 0 CODE 0
-162 1EAB 0 CODE 0
-164 1EAE 0 CODE 0
-166 1EB1 0 CODE 0
-../USB/usb_device.c
-470 DE3 0 CODE 0
-473 DE5 0 CODE 0
-476 DE7 0 CODE 0
-479 DE8 0 CODE 0
-481 DE9 0 CODE 0
-483 E07 0 CODE 0
-492 E0E 0 CODE 0
-494 E18 0 CODE 0
-492 E2B 0 CODE 0
-498 E35 0 CODE 0
-501 E37 0 CODE 0
-504 E38 0 CODE 0
-507 E39 0 CODE 0
-510 E3A 0 CODE 0
-512 E3B 0 CODE 0
-514 E41 0 CODE 0
-515 E43 0 CODE 0
-516 E45 0 CODE 0
-510 E48 0 CODE 0
-521 E4E 0 CODE 0
-522 E54 0 CODE 0
-524 E5A 0 CODE 0
-525 E5B 0 CODE 0
-526 E5C 0 CODE 0
-530 E5D 0 CODE 0
-532 E67 0 CODE 0
-533 E6C 0 CODE 0
-534 E72 0 CODE 0
-535 E78 0 CODE 0
-530 E7E 0 CODE 0
-539 E89 0 CODE 0
-541 E8D 0 CODE 0
-543 E90 0 CODE 0
-544 E99 0 CODE 0
-545 E9D 0 CODE 0
-548 EA1 0 CODE 0
-551 EA3 0 CODE 0
-552 EA4 0 CODE 0
-main.c
-184 151E 0 CODE 0
-193 152C 0 CODE 0
-197 1547 0 CODE 0
-198 154B 0 CODE 0
-201 1562 0 CODE 0
-202 1582 0 CODE 0
-203 15A4 0 CODE 0
-205 15AB 0 CODE 0
-klondike.c
-44 432 0 CODE 0
-47 434 0 CODE 0
-49 435 0 CODE 0
-50 43C 0 CODE 0
-51 476 0 CODE 0
-52 47C 0 CODE 0
-53 4A3 0 CODE 0
-56 4A7 0 CODE 0
-57 4BA 0 CODE 0
-59 4BB 0 CODE 0
-60 4C2 0 CODE 0
-61 4C6 0 CODE 0
-62 4D9 0 CODE 0
-64 4DA 0 CODE 0
-65 4ED 0 CODE 0
-67 4EE 0 CODE 0
-68 501 0 CODE 0
-70 502 0 CODE 0
-71 50E 0 CODE 0
-72 51D 0 CODE 0
-73 527 0 CODE 0
-74 52B 0 CODE 0
-75 53D 0 CODE 0
-76 541 0 CODE 0
-77 54A 0 CODE 0
-78 54E 0 CODE 0
-79 557 0 CODE 0
-81 582 0 CODE 0
-82 5A6 0 CODE 0
-83 5BE 0 CODE 0
-84 5C2 0 CODE 0
-86 5C5 0 CODE 0
-87 5D8 0 CODE 0
-89 5D9 0 CODE 0
-90 5EC 0 CODE 0
-91 606 0 CODE 0
-92 619 0 CODE 0
-100 61A 0 CODE 0
-101 61B 0 CODE 0
-47 61C 0 CODE 0
-102 635 0 CODE 0
-103 637 0 CODE 0
-klondike.c
-107 1767 0 CODE 0
-108 1792 0 CODE 0
-109 17BE 0 CODE 0
-110 17C7 0 CODE 0
-111 17CA 0 CODE 0
-112 17CD 0 CODE 0
-113 17D3 0 CODE 0
-114 17D9 0 CODE 0
-115 17FF 0 CODE 0
-asic.c
-37 16D1 0 CODE 0
-38 16D2 0 CODE 0
-39 16DE 0 CODE 0
-40 16E8 0 CODE 0
-41 16EB 0 CODE 0
-42 16FB 0 CODE 0
-43 16FE 0 CODE 0
-44 1709 0 CODE 0
-45 170C 0 CODE 0
-46 171C 0 CODE 0
-47 171F 0 CODE 0
-48 1726 0 CODE 0
-50 1729 0 CODE 0
-51 1732 0 CODE 0
-52 173C 0 CODE 0
-53 173F 0 CODE 0
-54 1742 0 CODE 0
-55 1743 0 CODE 0
-56 1766 0 CODE 0
-asic.c
-61 B19 0 CODE 0
-asic.c
-62 B1A 0 CODE 0
-asic.c
-63 B1B 0 CODE 0
-asic.c
-64 B1C 0 CODE 0
-asic.c
-65 B1D 0 CODE 0
-asic.c
-69 B1E 0 CODE 0
-asic.c
-70 B1F 0 CODE 0
-asic.c
-71 B20 0 CODE 0
-asic.c
-72 B21 0 CODE 0
-asic.c
-73 B22 0 CODE 0
-asic.c
-76 B23 0 CODE 0
-asic.c
-77 B24 0 CODE 0
-asic.c
-78 B25 0 CODE 0
-asic.c
-79 B26 0 CODE 0
-asic.c
-80 B27 0 CODE 0
-asic.c
-83 B28 0 CODE 0
-asic.c
-84 B29 0 CODE 0
-asic.c
-85 B2A 0 CODE 0
-asic.c
-86 B2B 0 CODE 0
-asic.c
-87 B2C 0 CODE 0
-asic.c
-90 B2D 0 CODE 0
-asic.c
-91 B2E 0 CODE 0
-asic.c
-92 B2F 0 CODE 0
-asic.c
-93 B30 0 CODE 0
-asic.c
-94 B31 0 CODE 0
-asic.c
-97 B32 0 CODE 0
-asic.c
-98 B33 0 CODE 0
-asic.c
-99 B34 0 CODE 0
-asic.c
-100 B35 0 CODE 0
-asic.c
-101 B36 0 CODE 0
-asic.c
-104 B37 0 CODE 0
-asic.c
-105 B38 0 CODE 0
-asic.c
-106 B39 0 CODE 0
-asic.c
-107 B3A 0 CODE 0
-asic.c
-108 B3B 0 CODE 0
-asic.c
-111 B3C 0 CODE 0
-asic.c
-112 B3D 0 CODE 0
-asic.c
-113 B3E 0 CODE 0
-asic.c
-114 B3F 0 CODE 0
-asic.c
-115 B40 0 CODE 0
-asic.c
-118 B41 0 CODE 0
-asic.c
-119 B42 0 CODE 0
-asic.c
-120 B43 0 CODE 0
-asic.c
-121 B44 0 CODE 0
-asic.c
-122 B45 0 CODE 0
-asic.c
-125 B46 0 CODE 0
-asic.c
-128 B47 0 CODE 0
-asic.c
-129 B48 0 CODE 0
-asic.c
-130 B49 0 CODE 0
-asic.c
-131 B4A 0 CODE 0
-asic.c
-132 B4B 0 CODE 0
-asic.c
-135 B4C 0 CODE 0
-asic.c
-136 B4D 0 CODE 0
-asic.c
-137 B4E 0 CODE 0
-asic.c
-138 B4F 0 CODE 0
-asic.c
-139 B50 0 CODE 0
-asic.c
-142 B51 0 CODE 0
-asic.c
-143 B52 0 CODE 0
-asic.c
-144 B53 0 CODE 0
-asic.c
-145 B54 0 CODE 0
-asic.c
-146 B55 0 CODE 0
-asic.c
-149 B56 0 CODE 0
-asic.c
-150 B57 0 CODE 0
-asic.c
-151 B58 0 CODE 0
-asic.c
-152 B59 0 CODE 0
-asic.c
-153 B5A 0 CODE 0
-asic.c
-156 B5B 0 CODE 0
-asic.c
-157 B5C 0 CODE 0
-asic.c
-158 B5D 0 CODE 0
-asic.c
-159 B5E 0 CODE 0
-asic.c
-160 B5F 0 CODE 0
-asic.c
-163 B60 0 CODE 0
-asic.c
-164 B61 0 CODE 0
-asic.c
-165 B62 0 CODE 0
-asic.c
-166 B63 0 CODE 0
-asic.c
-167 B64 0 CODE 0
-asic.c
-170 B65 0 CODE 0
-asic.c
-171 B66 0 CODE 0
-asic.c
-172 B67 0 CODE 0
-asic.c
-173 B68 0 CODE 0
-asic.c
-174 B69 0 CODE 0
-asic.c
-177 B6A 0 CODE 0
-asic.c
-178 B6B 0 CODE 0
-asic.c
-179 B6C 0 CODE 0
-asic.c
-180 B6D 0 CODE 0
-asic.c
-181 B6E 0 CODE 0
-asic.c
-184 B6F 0 CODE 0
-asic.c
-187 B70 0 CODE 0
-asic.c
-188 B71 0 CODE 0
-asic.c
-189 B72 0 CODE 0
-asic.c
-190 B73 0 CODE 0
-asic.c
-191 B74 0 CODE 0
-asic.c
-194 B75 0 CODE 0
-asic.c
-195 B76 0 CODE 0
-asic.c
-196 B77 0 CODE 0
-asic.c
-197 B78 0 CODE 0
-asic.c
-198 B79 0 CODE 0
-asic.c
-201 B7A 0 CODE 0
-asic.c
-202 B7B 0 CODE 0
-asic.c
-203 B7C 0 CODE 0
-asic.c
-204 B7D 0 CODE 0
-asic.c
-205 B7E 0 CODE 0
-asic.c
-208 B7F 0 CODE 0
-asic.c
-209 B80 0 CODE 0
-asic.c
-210 B81 0 CODE 0
-asic.c
-211 B82 0 CODE 0
-asic.c
-212 B83 0 CODE 0
-asic.c
-215 B84 0 CODE 0
-asic.c
-216 B85 0 CODE 0
-asic.c
-217 B86 0 CODE 0
-asic.c
-218 B87 0 CODE 0
-asic.c
-219 B88 0 CODE 0
-asic.c
-222 B89 0 CODE 0
-asic.c
-223 B8A 0 CODE 0
-asic.c
-224 B8B 0 CODE 0
-asic.c
-225 B8C 0 CODE 0
-asic.c
-226 B8D 0 CODE 0
-asic.c
-229 B8E 0 CODE 0
-asic.c
-230 B8F 0 CODE 0
-asic.c
-231 B90 0 CODE 0
-asic.c
-232 B91 0 CODE 0
-asic.c
-233 B92 0 CODE 0
-asic.c
-236 B93 0 CODE 0
-asic.c
-237 B94 0 CODE 0
-asic.c
-238 B95 0 CODE 0
-asic.c
-239 B96 0 CODE 0
-asic.c
-240 B97 0 CODE 0
-asic.c
-243 B98 0 CODE 0
-asic.c
-246 B99 0 CODE 0
-asic.c
-247 B9A 0 CODE 0
-asic.c
-248 B9B 0 CODE 0
-asic.c
-249 B9C 0 CODE 0
-asic.c
-250 B9D 0 CODE 0
-asic.c
-253 B9E 0 CODE 0
-asic.c
-254 B9F 0 CODE 0
-asic.c
-255 BA0 0 CODE 0
-asic.c
-256 BA1 0 CODE 0
-asic.c
-257 BA2 0 CODE 0
-asic.c
-260 BA3 0 CODE 0
-asic.c
-261 BA4 0 CODE 0
-asic.c
-262 BA5 0 CODE 0
-asic.c
-263 BA6 0 CODE 0
-asic.c
-264 BA7 0 CODE 0
-asic.c
-267 BA8 0 CODE 0
-asic.c
-268 BA9 0 CODE 0
-asic.c
-269 BAA 0 CODE 0
-asic.c
-270 BAB 0 CODE 0
-asic.c
-271 BAC 0 CODE 0
-asic.c
-274 BAD 0 CODE 0
-asic.c
-275 BAE 0 CODE 0
-asic.c
-276 BAF 0 CODE 0
-asic.c
-277 BB0 0 CODE 0
-asic.c
-278 BB1 0 CODE 0
-asic.c
-281 BB2 0 CODE 0
-asic.c
-282 BB3 0 CODE 0
-asic.c
-283 BB4 0 CODE 0
-asic.c
-284 BB5 0 CODE 0
-asic.c
-285 BB6 0 CODE 0
-asic.c
-288 BB7 0 CODE 0
-asic.c
-289 BB8 0 CODE 0
-asic.c
-290 BB9 0 CODE 0
-asic.c
-291 BBA 0 CODE 0
-asic.c
-292 BBB 0 CODE 0
-asic.c
-295 BBC 0 CODE 0
-asic.c
-296 BBD 0 CODE 0
-asic.c
-297 BBE 0 CODE 0
-asic.c
-298 BBF 0 CODE 0
-asic.c
-299 BC0 0 CODE 0
-asic.c
-302 BC1 0 CODE 0
-asic.c
-305 BC2 0 CODE 0
-asic.c
-306 BC3 0 CODE 0
-309 BC4 0 CODE 0
-asic.c
-320 17 0 CODE 0
-325 25 0 CODE 0
-326 2F 0 CODE 0
-325 62 0 CODE 0
-328 6C 0 CODE 0
-330 75 0 CODE 0
-331 AB 0 CODE 0
-332 CF 0 CODE 0
-333 F3 0 CODE 0
-334 106 0 CODE 0
-335 126 0 CODE 0
-336 13B 0 CODE 0
-337 16A 0 CODE 0
-338 199 0 CODE 0
-339 1AD 0 CODE 0
-340 1DC 0 CODE 0
-341 1F0 0 CODE 0
-342 211 0 CODE 0
-343 250 0 CODE 0
-344 27F 0 CODE 0
-345 2AE 0 CODE 0
-346 2C2 0 CODE 0
-347 2F1 0 CODE 0
-348 305 0 CODE 0
-349 33C 0 CODE 0
-350 361 0 CODE 0
-351 398 0 CODE 0
-352 3AC 0 CODE 0
-354 3D0 0 CODE 0
-355 3FB 0 CODE 0
-328 426 0 CODE 0
-357 431 0 CODE 0
-asic.c
-315 1025 0 CODE 0
-316 105C 0 CODE 0
-main.c
-209 BC5 0 CODE 0
-210 BFB 0 CODE 0
-211 C14 0 CODE 0
-212 C2A 0 CODE 0
-213 C2D 0 CODE 0
-212 C5D 0 CODE 0
-214 C6A 0 CODE 0
-223 C74 0 CODE 0
-main.c
-171 1DE9 0 CODE 0
-172 1DED 0 CODE 0
-173 1DF0 0 CODE 0
-174 1DF3 0 CODE 0
-176 1DF6 0 CODE 0
-177 1DF9 0 CODE 0
-179 1DFC 0 CODE 0
-klondike.c
-159 C75 0 CODE 0
-162 C7B 0 CODE 0
-163 C93 0 CODE 0
-164 CAF 0 CODE 0
-165 CB8 0 CODE 0
-166 CBC 0 CODE 0
-165 D0E 0 CODE 0
-167 D1D 0 CODE 0
-168 D23 0 CODE 0
-169 D25 0 CODE 0
-klondike.c
-248 1E2C 0 CODE 0
-249 1E2E 0 CODE 0
-250 1E30 0 CODE 0
-251 1E33 0 CODE 0
-252 1E36 0 CODE 0
-253 1E38 0 CODE 0
-254 1E39 0 CODE 0
-255 1E3B 0 CODE 0
-256 1E3F 0 CODE 0
-257 1E40 0 CODE 0
-258 1E42 0 CODE 0
-264 1E44 0 CODE 0
-klondike.c
-268 1DC6 0 CODE 0
-271 1DC8 0 CODE 0
-272 1DCC 0 CODE 0
-273 1DCD 0 CODE 0
-274 1DCE 0 CODE 0
-275 1DD2 0 CODE 0
-276 1DD4 0 CODE 0
-277 1DD6 0 CODE 0
-klondike.c
-281 1DFD 0 CODE 0
-282 1DFF 0 CODE 0
-283 1E00 0 CODE 0
-284 1E02 0 CODE 0
-287 1E06 0 CODE 0
-288 1E08 0 CODE 0
-289 1E09 0 CODE 0
-290 1E0A 0 CODE 0
-291 1E0B 0 CODE 0
-292 1E0E 0 CODE 0
-293 1E10 0 CODE 0
-294 1E12 0 CODE 0
-klondike.c
-298 1DD7 0 CODE 0
-299 1DD9 0 CODE 0
-300 1DDB 0 CODE 0
-301 1DDC 0 CODE 0
-302 1DDD 0 CODE 0
-303 1DDE 0 CODE 0
-305 1DDF 0 CODE 0
-306 1DE1 0 CODE 0
-307 1DE2 0 CODE 0
-309 1DE3 0 CODE 0
-310 1DE4 0 CODE 0
-311 1DE6 0 CODE 0
-312 1DE8 0 CODE 0
-main.c
-281 3 0 CODE 0
-main.c
-314 2 0 CODE 0
-main.c
-338 8B1 0 CODE 0
-main.c
-377 8B0 0 CODE 0
-main.c
-410 8B2 0 CODE 0
-411 8B5 0 CODE 0
-../USB/usb_function_generic.c
-296 8AF 0 CODE 0
-main.c
-436 1D9F 0 CODE 0
-main.c
-462 1F0E 0 CODE 0
-464 1F18 0 CODE 0
-465 1F2F 0 CODE 0
-../USB/usb_device.c
-1061 1FA3 0 CODE 0
-1063 1FA9 0 CODE 0
-1065 1FAF 0 CODE 0
-1067 1FB4 0 CODE 0
-1076 1FBB 0 CODE 0
-1078 1FC6 0 CODE 0
-1079 1FCE 0 CODE 0
-../USB/usb_device.c
-1718 105D 0 CODE 0
-1719 1063 0 CODE 0
-1721 107C 0 CODE 0
-1726 1080 0 CODE 0
-1728 1085 0 CODE 0
-1729 108E 0 CODE 0
-1732 108F 0 CODE 0
-1736 1098 0 CODE 0
-1737 109C 0 CODE 0
-1754 10A1 0 CODE 0
-../USB/usb_device.c
-1177 122F 0 CODE 0
-1180 1235 0 CODE 0
-1181 123D 0 CODE 0
-1185 123E 0 CODE 0
-1190 1248 0 CODE 0
-1192 124D 0 CODE 0
-1206 1250 0 CODE 0
-1207 125C 0 CODE 0
-1208 1263 0 CODE 0
-1209 126A 0 CODE 0
-1212 1271 0 CODE 0
-1215 1275 0 CODE 0
-1216 127D 0 CODE 0
-1220 127E 0 CODE 0
-1222 1288 0 CODE 0
-1223 128A 0 CODE 0
-/opt/microchip/xc8/v1.12/sources/bmul.c
-3 1E45 0 CODE 0
-4 1E47 0 CODE 0
-7 1E49 0 CODE 0
-8 1E4D 0 CODE 0
-9 1E52 0 CODE 0
-10 1E54 0 CODE 0
-11 1E56 0 CODE 0
-12 1E5C 0 CODE 0
-13 1E5E 0 CODE 0
-/opt/microchip/xc8/v1.12/sources/lwdiv.c
-9 10A2 0 CODE 0
-10 10A5 0 CODE 0
-11 10AB 0 CODE 0
-12 10AD 0 CODE 0
-13 10AE 0 CODE 0
-14 10B3 0 CODE 0
-12 10B8 0 CODE 0
-17 10BE 0 CODE 0
-18 10C3 0 CODE 0
-19 10CD 0 CODE 0
-20 10D1 0 CODE 0
-22 10D3 0 CODE 0
-23 10D8 0 CODE 0
-25 10E0 0 CODE 0
-26 10E7 0 CODE 0
-/opt/microchip/xc8/v1.12/sources/awdiv.c
-9 12ED 0 CODE 0
-10 12EF 0 CODE 0
-11 12F3 0 CODE 0
-12 12F8 0 CODE 0
-14 12FB 0 CODE 0
-15 12FF 0 CODE 0
-16 1304 0 CODE 0
-18 1309 0 CODE 0
-19 130B 0 CODE 0
-20 1311 0 CODE 0
-21 1313 0 CODE 0
-22 1314 0 CODE 0
-23 1319 0 CODE 0
-21 131E 0 CODE 0
-26 1324 0 CODE 0
-27 1329 0 CODE 0
-28 1333 0 CODE 0
-29 1337 0 CODE 0
-31 1339 0 CODE 0
-32 133E 0 CODE 0
-34 1346 0 CODE 0
-35 134A 0 CODE 0
-36 1350 0 CODE 0
-37 1357 0 CODE 0
+209 1A7 0 CODE 0
+210 1CA 0 CODE 0
+211 1DB 0 CODE 0
+212 1E8 0 CODE 0
+213 1EE 0 CODE 0
+212 20A 0 CODE 0
+214 20C 0 CODE 0
+223 210 0 CODE 0
 /opt/microchip/xc8/v1.12/sources/wmul.c
-4 1F54 0 CODE 0
-7 1F58 0 CODE 0
-8 1F5C 0 CODE 0
-9 1F60 0 CODE 0
-10 1F65 0 CODE 0
-11 1F6A 0 CODE 0
-12 1F71 0 CODE 0
-13 1F78 0 CODE 0
+4 211 0 CODE 0
+7 213 0 CODE 0
+8 215 0 CODE 0
+9 219 0 CODE 0
+10 21B 0 CODE 0
+11 21D 0 CODE 0
+12 221 0 CODE 0
+13 225 0 CODE 0
+/opt/microchip/xc8/v1.12/sources/lwdiv.c
+9 226 0 CODE 0
+10 228 0 CODE 0
+11 22C 0 CODE 0
+14 22D 0 CODE 0
+12 22E 0 CODE 0
+13 230 0 CODE 0
+12 232 0 CODE 0
+17 233 0 CODE 0
+18 235 0 CODE 0
+19 23D 0 CODE 0
+20 241 0 CODE 0
+22 242 0 CODE 0
+23 244 0 CODE 0
+25 246 0 CODE 0
+26 24A 0 CODE 0
+klondike.c
+107 24D 0 CODE 0
+108 25C 0 CODE 0
+109 26E 0 CODE 0
+110 272 0 CODE 0
+111 275 0 CODE 0
+112 278 0 CODE 0
+113 27B 0 CODE 0
+114 27E 0 CODE 0
+115 28B 0 CODE 0
+asic.c
+37 28B 0 CODE 0
+38 28C 0 CODE 0
+39 291 0 CODE 0
+40 297 0 CODE 0
+41 299 0 CODE 0
+42 2A1 0 CODE 0
+43 2A3 0 CODE 0
+44 2AA 0 CODE 0
+45 2AE 0 CODE 0
+46 2B3 0 CODE 0
+47 2B5 0 CODE 0
+48 2BC 0 CODE 0
+50 2BE 0 CODE 0
+51 2C3 0 CODE 0
+52 2C9 0 CODE 0
+53 2CA 0 CODE 0
+54 2CD 0 CODE 0
+55 2CE 0 CODE 0
+56 2D4 0 CODE 0
+asic.c
+61 2D5 0 CODE 0
+asic.c
+62 2D6 0 CODE 0
+asic.c
+63 2D7 0 CODE 0
+asic.c
+64 2D8 0 CODE 0
+asic.c
+65 2D9 0 CODE 0
+asic.c
+69 2DA 0 CODE 0
+asic.c
+70 2DB 0 CODE 0
+asic.c
+71 2DC 0 CODE 0
+asic.c
+72 2DD 0 CODE 0
+asic.c
+73 2DE 0 CODE 0
+asic.c
+76 2DF 0 CODE 0
+asic.c
+77 2E0 0 CODE 0
+asic.c
+78 2E1 0 CODE 0
+asic.c
+79 2E2 0 CODE 0
+asic.c
+80 2E3 0 CODE 0
+asic.c
+83 2E4 0 CODE 0
+asic.c
+84 2E5 0 CODE 0
+asic.c
+85 2E6 0 CODE 0
+asic.c
+86 2E7 0 CODE 0
+asic.c
+87 2E8 0 CODE 0
+asic.c
+90 2E9 0 CODE 0
+asic.c
+91 2EA 0 CODE 0
+asic.c
+92 2EB 0 CODE 0
+asic.c
+93 2EC 0 CODE 0
+asic.c
+94 2ED 0 CODE 0
+asic.c
+97 2EE 0 CODE 0
+asic.c
+98 2EF 0 CODE 0
+asic.c
+99 2F0 0 CODE 0
+asic.c
+100 2F1 0 CODE 0
+asic.c
+101 2F2 0 CODE 0
+asic.c
+104 2F3 0 CODE 0
+asic.c
+105 2F4 0 CODE 0
+asic.c
+106 2F5 0 CODE 0
+asic.c
+107 2F6 0 CODE 0
+asic.c
+108 2F7 0 CODE 0
+asic.c
+111 2F8 0 CODE 0
+asic.c
+112 2F9 0 CODE 0
+asic.c
+113 2FA 0 CODE 0
+asic.c
+114 2FB 0 CODE 0
+asic.c
+115 2FC 0 CODE 0
+asic.c
+118 2FD 0 CODE 0
+asic.c
+119 2FE 0 CODE 0
+asic.c
+120 2FF 0 CODE 0
+asic.c
+121 300 0 CODE 0
+asic.c
+122 301 0 CODE 0
+asic.c
+125 302 0 CODE 0
+asic.c
+128 303 0 CODE 0
+asic.c
+129 304 0 CODE 0
+asic.c
+130 305 0 CODE 0
+asic.c
+131 306 0 CODE 0
+asic.c
+132 307 0 CODE 0
+asic.c
+135 308 0 CODE 0
+asic.c
+136 309 0 CODE 0
+asic.c
+137 30A 0 CODE 0
+asic.c
+138 30B 0 CODE 0
+asic.c
+139 30C 0 CODE 0
+asic.c
+142 30D 0 CODE 0
+asic.c
+143 30E 0 CODE 0
+asic.c
+144 30F 0 CODE 0
+asic.c
+145 310 0 CODE 0
+asic.c
+146 311 0 CODE 0
+asic.c
+149 312 0 CODE 0
+asic.c
+150 313 0 CODE 0
+asic.c
+151 314 0 CODE 0
+asic.c
+152 315 0 CODE 0
+asic.c
+153 316 0 CODE 0
+asic.c
+156 317 0 CODE 0
+asic.c
+157 318 0 CODE 0
+asic.c
+158 319 0 CODE 0
+asic.c
+159 31A 0 CODE 0
+asic.c
+160 31B 0 CODE 0
+asic.c
+163 31C 0 CODE 0
+asic.c
+164 31D 0 CODE 0
+asic.c
+165 31E 0 CODE 0
+asic.c
+166 31F 0 CODE 0
+asic.c
+167 320 0 CODE 0
+asic.c
+170 321 0 CODE 0
+asic.c
+171 322 0 CODE 0
+asic.c
+172 323 0 CODE 0
+asic.c
+173 324 0 CODE 0
+asic.c
+174 325 0 CODE 0
+asic.c
+177 326 0 CODE 0
+asic.c
+178 327 0 CODE 0
+asic.c
+179 328 0 CODE 0
+asic.c
+180 329 0 CODE 0
+asic.c
+181 32A 0 CODE 0
+asic.c
+184 32B 0 CODE 0
+asic.c
+187 32C 0 CODE 0
+asic.c
+188 32D 0 CODE 0
+asic.c
+189 32E 0 CODE 0
+asic.c
+190 32F 0 CODE 0
+asic.c
+191 330 0 CODE 0
+asic.c
+194 331 0 CODE 0
+asic.c
+195 332 0 CODE 0
+asic.c
+196 333 0 CODE 0
+asic.c
+197 334 0 CODE 0
+asic.c
+198 335 0 CODE 0
+asic.c
+201 336 0 CODE 0
+asic.c
+202 337 0 CODE 0
+asic.c
+203 338 0 CODE 0
+asic.c
+204 339 0 CODE 0
+asic.c
+205 33A 0 CODE 0
+asic.c
+208 33B 0 CODE 0
+asic.c
+209 33C 0 CODE 0
+asic.c
+210 33D 0 CODE 0
+asic.c
+211 33E 0 CODE 0
+asic.c
+212 33F 0 CODE 0
+asic.c
+215 340 0 CODE 0
+asic.c
+216 341 0 CODE 0
+asic.c
+217 342 0 CODE 0
+asic.c
+218 343 0 CODE 0
+asic.c
+219 344 0 CODE 0
+asic.c
+222 345 0 CODE 0
+asic.c
+223 346 0 CODE 0
+asic.c
+224 347 0 CODE 0
+asic.c
+225 348 0 CODE 0
+asic.c
+226 349 0 CODE 0
+asic.c
+229 34A 0 CODE 0
+asic.c
+230 34B 0 CODE 0
+asic.c
+231 34C 0 CODE 0
+asic.c
+232 34D 0 CODE 0
+asic.c
+233 34E 0 CODE 0
+asic.c
+236 34F 0 CODE 0
+asic.c
+237 350 0 CODE 0
+asic.c
+238 351 0 CODE 0
+asic.c
+239 352 0 CODE 0
+asic.c
+240 353 0 CODE 0
+asic.c
+243 354 0 CODE 0
+asic.c
+246 355 0 CODE 0
+asic.c
+247 356 0 CODE 0
+asic.c
+248 357 0 CODE 0
+asic.c
+249 358 0 CODE 0
+asic.c
+250 359 0 CODE 0
+asic.c
+253 35A 0 CODE 0
+asic.c
+254 35B 0 CODE 0
+asic.c
+255 35C 0 CODE 0
+asic.c
+256 35D 0 CODE 0
+asic.c
+257 35E 0 CODE 0
+asic.c
+260 35F 0 CODE 0
+asic.c
+261 360 0 CODE 0
+asic.c
+262 361 0 CODE 0
+asic.c
+263 362 0 CODE 0
+asic.c
+264 363 0 CODE 0
+asic.c
+267 364 0 CODE 0
+asic.c
+268 365 0 CODE 0
+asic.c
+269 366 0 CODE 0
+asic.c
+270 367 0 CODE 0
+asic.c
+271 368 0 CODE 0
+asic.c
+274 369 0 CODE 0
+asic.c
+275 36A 0 CODE 0
+asic.c
+276 36B 0 CODE 0
+asic.c
+277 36C 0 CODE 0
+asic.c
+278 36D 0 CODE 0
+asic.c
+281 36E 0 CODE 0
+asic.c
+282 36F 0 CODE 0
+asic.c
+283 370 0 CODE 0
+asic.c
+284 371 0 CODE 0
+asic.c
+285 372 0 CODE 0
+asic.c
+288 373 0 CODE 0
+asic.c
+289 374 0 CODE 0
+asic.c
+290 375 0 CODE 0
+asic.c
+291 376 0 CODE 0
+asic.c
+292 377 0 CODE 0
+asic.c
+295 378 0 CODE 0
+asic.c
+296 379 0 CODE 0
+asic.c
+297 37A 0 CODE 0
+asic.c
+298 37B 0 CODE 0
+asic.c
+299 37C 0 CODE 0
+asic.c
+302 37D 0 CODE 0
+asic.c
+305 37E 0 CODE 0
+asic.c
+306 37F 0 CODE 0
+309 380 0 CODE 0
+asic.c
+320 381 0 CODE 0
+325 38F 0 CODE 0
+326 391 0 CODE 0
+325 3AD 0 CODE 0
+328 3B2 0 CODE 0
+330 3B3 0 CODE 0
+331 3D1 0 CODE 0
+332 3DB 0 CODE 0
+333 3E8 0 CODE 0
+334 3F2 0 CODE 0
+335 3FC 0 CODE 0
+336 408 0 CODE 0
+337 416 0 CODE 0
+338 42F 0 CODE 0
+339 434 0 CODE 0
+341 442 0 CODE 0
+342 458 0 CODE 0
+343 476 0 CODE 0
+344 484 0 CODE 0
+345 48F 0 CODE 0
+346 494 0 CODE 0
+348 4A1 0 CODE 0
+349 4B9 0 CODE 0
+350 4C3 0 CODE 0
+351 4DA 0 CODE 0
+352 4E2 0 CODE 0
+354 502 0 CODE 0
+355 511 0 CODE 0
+328 51E 0 CODE 0
+357 524 0 CODE 0
+/opt/microchip/xc8/v1.12/sources/bmul.c
+3 524 0 CODE 0
+4 526 0 CODE 0
+8 527 0 CODE 0
+7 528 0 CODE 0
+8 529 0 CODE 0
+9 52A 0 CODE 0
+10 52B 0 CODE 0
+11 52C 0 CODE 0
+12 52F 0 CODE 0
+13 530 0 CODE 0
+asic.c
+315 531 0 CODE 0
+316 565 0 CODE 0
+main.c
+184 566 0 CODE 0
+193 56E 0 CODE 0
+197 57E 0 CODE 0
+198 581 0 CODE 0
+201 58C 0 CODE 0
+202 5A0 0 CODE 0
+203 5B1 0 CODE 0
+205 5B4 0 CODE 0
+../USB/usb_device.c
+1177 5B5 0 CODE 0
+1180 5B9 0 CODE 0
+1185 5BE 0 CODE 0
+1190 5C4 0 CODE 0
+1192 5C6 0 CODE 0
+1206 5C7 0 CODE 0
+1207 5D3 0 CODE 0
+1208 5D7 0 CODE 0
+1209 5DB 0 CODE 0
+1212 5DF 0 CODE 0
+1215 5E2 0 CODE 0
+1220 5E6 0 CODE 0
+1222 5EB 0 CODE 0
+1223 5EC 0 CODE 0
+main.c
+148 5ED 0 CODE 0
+149 5EF 0 CODE 0
+150 5F0 0 CODE 0
+153 5F2 0 CODE 0
+154 5F4 0 CODE 0
+155 5F6 0 CODE 0
+158 5F9 0 CODE 0
+159 5FB 0 CODE 0
+160 5FC 0 CODE 0
+162 5FE 0 CODE 0
+164 600 0 CODE 0
+166 602 0 CODE 0
+klondike.c
+175 602 0 CODE 0
+176 606 0 CODE 0
+177 607 0 CODE 0
+178 60A 0 CODE 0
+179 60B 0 CODE 0
+181 60D 0 CODE 0
+182 623 0 CODE 0
+183 626 0 CODE 0
+187 629 0 CODE 0
+190 62B 0 CODE 0
+191 62D 0 CODE 0
+192 62E 0 CODE 0
+194 632 0 CODE 0
+199 634 0 CODE 0
+klondike.c
+28 8B6 0 CODE 0
+../USB/usb_device.c
+2627 C2B 0 CODE 0
+2628 C2C 0 CODE 0
+2629 C2E 0 CODE 0
+2630 C30 0 CODE 0
+2631 C31 0 CODE 0
+2632 C32 0 CODE 0
+2641 C34 0 CODE 0
+2642 C36 0 CODE 0
+2641 C37 0 CODE 0
+2642 C39 0 CODE 0
+2643 C3A 0 CODE 0
+2644 C3C 0 CODE 0
+2643 C3D 0 CODE 0
+2644 C3E 0 CODE 0
+2645 C3F 0 CODE 0
+2647 C42 0 CODE 0
+2648 C44 0 CODE 0
+2649 C46 0 CODE 0
+2650 C47 0 CODE 0
+2656 C49 0 CODE 0
+2657 C4B 0 CODE 0
+2670 C4F 0 CODE 0
+2671 C51 0 CODE 0
+../USB/usb_device.c
+2840 C51 0 CODE 0
+2842 C57 0 CODE 0
+2885 C61 0 CODE 0
+2845 C62 0 CODE 0
+2846 C63 0 CODE 0
+2845 C64 0 CODE 0
+2846 C65 0 CODE 0
+2848 C67 0 CODE 0
+2850 C68 0 CODE 0
+2853 C6A 0 CODE 0
+2856 C6C 0 CODE 0
+2857 C71 0 CODE 0
+2858 C72 0 CODE 0
+2859 C74 0 CODE 0
+2860 C75 0 CODE 0
+2862 C76 0 CODE 0
+2866 C78 0 CODE 0
+2869 C79 0 CODE 0
+2875 C7C 0 CODE 0
+2876 C7E 0 CODE 0
+2877 C85 0 CODE 0
+2879 C86 0 CODE 0
+2885 C8D 0 CODE 0
+../USB/usb_device.c
+2952 C8D 0 CODE 0
+2954 C94 0 CODE 0
+2955 C96 0 CODE 0
+2956 C9B 0 CODE 0
+2958 C9F 0 CODE 0
+2965 CA1 0 CODE 0
+2969 CBA 0 CODE 0
+2972 CBC 0 CODE 0
+2974 CBF 0 CODE 0
+2975 CC5 0 CODE 0
+2979 CC8 0 CODE 0
+2980 CCD 0 CODE 0
+2987 CD4 0 CODE 0
+2989 CD6 0 CODE 0
+2990 CD7 0 CODE 0
+2993 CD8 0 CODE 0
+2999 CD9 0 CODE 0
+3001 CDC 0 CODE 0
+3005 CE4 0 CODE 0
+3009 CE7 0 CODE 0
+3011 CEC 0 CODE 0
+3015 CF2 0 CODE 0
+3017 CF5 0 CODE 0
+3021 CF9 0 CODE 0
+3026 D00 0 CODE 0
+3027 D06 0 CODE 0
+3033 D07 0 CODE 0
+3035 D0A 0 CODE 0
+3039 D0D 0 CODE 0
+3035 D0E 0 CODE 0
+3039 D10 0 CODE 0
+3040 D12 0 CODE 0
+3041 D13 0 CODE 0
+3040 D14 0 CODE 0
+3041 D15 0 CODE 0
+3042 D1B 0 CODE 0
+3046 D1C 0 CODE 0
+3051 D1F 0 CODE 0
+3057 D22 0 CODE 0
+3059 D29 0 CODE 0
+3061 D2C 0 CODE 0
+3065 D30 0 CODE 0
+3068 D37 0 CODE 0
+3071 D3A 0 CODE 0
+3072 D41 0 CODE 0
+3124 D43 0 CODE 0
+3128 D52 0 CODE 0
+3131 D57 0 CODE 0
+../USB/usb_device.c
+757 D58 0 CODE 0
+760 D5C 0 CODE 0
+763 D5E 0 CODE 0
+767 D5F 0 CODE 0
+770 D62 0 CODE 0
+773 D66 0 CODE 0
+781 D69 0 CODE 0
+792 D6C 0 CODE 0
+794 D6F 0 CODE 0
+796 D70 0 CODE 0
+798 D71 0 CODE 0
+799 D72 0 CODE 0
+800 D73 0 CODE 0
+818 D76 0 CODE 0
+820 D7A 0 CODE 0
+824 D7B 0 CODE 0
+831 D7D 0 CODE 0
+833 D7F 0 CODE 0
+834 D81 0 CODE 0
+847 D82 0 CODE 0
+849 D85 0 CODE 0
+855 D87 0 CODE 0
+865 D89 0 CODE 0
+871 D8B 0 CODE 0
+877 D8E 0 CODE 0
+880 D90 0 CODE 0
+883 D92 0 CODE 0
+885 D94 0 CODE 0
+887 D96 0 CODE 0
+889 D9E 0 CODE 0
+914 DA0 0 CODE 0
+916 DA3 0 CODE 0
+923 DA4 0 CODE 0
+925 DA7 0 CODE 0
+930 DA9 0 CODE 0
+932 DAD 0 CODE 0
+935 DAF 0 CODE 0
+937 DB2 0 CODE 0
+938 DBB 0 CODE 0
+953 DBD 0 CODE 0
+962 DC2 0 CODE 0
+964 DC5 0 CODE 0
+966 DC7 0 CODE 0
+969 DCA 0 CODE 0
+970 DCD 0 CODE 0
+972 DD4 0 CODE 0
+977 DD6 0 CODE 0
+979 DD9 0 CODE 0
+983 DDD 0 CODE 0
+989 DE4 0 CODE 0
+991 DE7 0 CODE 0
+992 DE9 0 CODE 0
+995 DEA 0 CODE 0
+964 DF4 0 CODE 0
+1004 DFB 0 CODE 0
+main.c
+631 DFB 0 CODE 0
+637 E03 0 CODE 0
+640 E04 0 CODE 0
+643 E05 0 CODE 0
+646 E06 0 CODE 0
+649 E07 0 CODE 0
+652 E08 0 CODE 0
+655 E09 0 CODE 0
+631 E0A 0 CODE 0
+671 E29 0 CODE 0
+../USB/usb_device.c
+470 E2A 0 CODE 0
+473 E2C 0 CODE 0
+476 E2E 0 CODE 0
+479 E2F 0 CODE 0
+481 E30 0 CODE 0
+483 E41 0 CODE 0
+492 E45 0 CODE 0
+494 E47 0 CODE 0
+492 E52 0 CODE 0
+498 E57 0 CODE 0
+501 E59 0 CODE 0
+504 E5A 0 CODE 0
+507 E5B 0 CODE 0
+510 E5C 0 CODE 0
+512 E5F 0 CODE 0
+514 E60 0 CODE 0
+515 E62 0 CODE 0
+516 E63 0 CODE 0
+510 E65 0 CODE 0
+521 E66 0 CODE 0
+522 E69 0 CODE 0
+524 E6A 0 CODE 0
+525 E6B 0 CODE 0
+530 E6C 0 CODE 0
+532 E6E 0 CODE 0
+533 E73 0 CODE 0
+534 E79 0 CODE 0
+535 E7D 0 CODE 0
+530 E80 0 CODE 0
+535 E81 0 CODE 0
+530 E82 0 CODE 0
+539 E86 0 CODE 0
+541 E88 0 CODE 0
+543 E8B 0 CODE 0
+544 E92 0 CODE 0
+545 E94 0 CODE 0
+548 E96 0 CODE 0
+551 E98 0 CODE 0
+552 E99 0 CODE 0
+../USB/usb_device.c
+1596 E9A 0 CODE 0
+1598 E9E 0 CODE 0
+1599 EA0 0 CODE 0
+1601 EA3 0 CODE 0
+1605 EA4 0 CODE 0
+1607 EA9 0 CODE 0
+1608 EAD 0 CODE 0
+1610 EB0 0 CODE 0
+1612 EB2 0 CODE 0
+1617 EB4 0 CODE 0
+1618 EB9 0 CODE 0
+1619 EBE 0 CODE 0
+1620 EC2 0 CODE 0
+1624 EC5 0 CODE 0
+1625 ECA 0 CODE 0
+1626 ECF 0 CODE 0
+1630 ED4 0 CODE 0
+../USB/usb_device.c
+2528 ED4 0 CODE 0
+2532 ED6 0 CODE 0
+2536 EDB 0 CODE 0
+2544 EE2 0 CODE 0
+2546 EE3 0 CODE 0
+2549 EE5 0 CODE 0
+2557 EEE 0 CODE 0
+2559 EEF 0 CODE 0
+2560 F02 0 CODE 0
+2557 F0B 0 CODE 0
+2562 F10 0 CODE 0
+2565 F1E 0 CODE 0
+2570 F1F 0 CODE 0
+2573 F20 0 CODE 0
+2577 F26 0 CODE 0
+2580 F28 0 CODE 0
+../USB/usb_device.c
+2368 F28 0 CODE 0
+2371 F2A 0 CODE 0
+2374 F38 0 CODE 0
+2376 F3C 0 CODE 0
+2379 F3E 0 CODE 0
+2380 F3F 0 CODE 0
+../USB/usb_device.c
+2423 F40 0 CODE 0
+2424 F41 0 CODE 0
+2427 F42 0 CODE 0
+2437 F43 0 CODE 0
+2438 F47 0 CODE 0
+../USB/usb_device.c
+2463 F47 0 CODE 0
+2470 F4B 0 CODE 0
+2475 F4D 0 CODE 0
+2496 F4E 0 CODE 0
+2499 F4F 0 CODE 0
+main.c
+462 F50 0 CODE 0
+464 F54 0 CODE 0
+465 F5E 0 CODE 0
+../USB/usb_device.c
+1061 F5F 0 CODE 0
+1063 F62 0 CODE 0
+1065 F65 0 CODE 0
+1067 F67 0 CODE 0
+1076 F6B 0 CODE 0
+1078 F75 0 CODE 0
+1079 F7D 0 CODE 0
+../USB/usb_device.c
+1718 F7E 0 CODE 0
+1719 F81 0 CODE 0
+1721 F8B 0 CODE 0
+1726 F8F 0 CODE 0
+1728 F92 0 CODE 0
+1732 F96 0 CODE 0
+1736 F9C 0 CODE 0
+1737 FA0 0 CODE 0
+1754 FA4 0 CODE 0
+main.c
+436 FA5 0 CODE 0
+main.c
+410 FA6 0 CODE 0
+411 FA7 0 CODE 0
+../USB/usb_function_generic.c
+296 FA7 0 CODE 0
+main.c
+377 FA8 0 CODE 0
+main.c
+338 FA9 0 CODE 0
+main.c
+314 FAA 0 CODE 0
+main.c
+281 FAB 0 CODE 0
+../USB/usb_device.c
+2696 FAC 0 CODE 0
+2698 FB0 0 CODE 0
+2704 FB2 0 CODE 0
+2711 FB3 0 CODE 0
+2713 FB7 0 CODE 0
+2714 FBC 0 CODE 0
+2715 FC5 0 CODE 0
+2716 FC9 0 CODE 0
+2719 FCA 0 CODE 0
+2722 FCB 0 CODE 0
+../USB/usb_device.c
+2025 973 0 CODE 0
+2031 978 0 CODE 0
+2033 985 0 CODE 0
+2036 988 0 CODE 0
+2040 994 0 CODE 0
+2042 99A 0 CODE 0
+2040 9A7 0 CODE 0
+2047 9AA 0 CODE 0
+2049 9B3 0 CODE 0
+2050 9B8 0 CODE 0
+2051 9BB 0 CODE 0
+2053 9BD 0 CODE 0
+2051 9BE 0 CODE 0
+2053 9C0 0 CODE 0
+2054 9C3 0 CODE 0
+2057 9C4 0 CODE 0
+2065 9C9 0 CODE 0
+2070 9CE 0 CODE 0
+2077 9D2 0 CODE 0
+2084 9D6 0 CODE 0
+2090 9D9 0 CODE 0
+2104 9DA 0 CODE 0
+2106 9DE 0 CODE 0
+2110 9E0 0 CODE 0
+../USB/usb_device.c
+2751 B00 0 CODE 0
+2754 B08 0 CODE 0
+2759 B0A 0 CODE 0
+2761 B0F 0 CODE 0
+2762 B13 0 CODE 0
+2764 B16 0 CODE 0
+2768 B18 0 CODE 0
+2773 B1B 0 CODE 0
+2775 B1E 0 CODE 0
+2776 B29 0 CODE 0
+2782 B2B 0 CODE 0
+2786 B30 0 CODE 0
+2787 B36 0 CODE 0
+2790 B37 0 CODE 0
+2792 B3B 0 CODE 0
+2793 B40 0 CODE 0
+2796 B41 0 CODE 0
+2805 B47 0 CODE 0
+2807 B4A 0 CODE 0
+2809 B4D 0 CODE 0
+2811 B50 0 CODE 0
+2814 B51 0 CODE 0
+2819 B53 0 CODE 0
+../USB/usb_device.c
+1791 B54 0 CODE 0
+1797 B56 0 CODE 0
+1799 B59 0 CODE 0
+1801 B5B 0 CODE 0
+1812 B5E 0 CODE 0
+1814 B62 0 CODE 0
+1819 B63 0 CODE 0
+1820 B65 0 CODE 0
+1821 B66 0 CODE 0
+1828 B67 0 CODE 0
+1830 B69 0 CODE 0
+1831 B6B 0 CODE 0
+1836 B70 0 CODE 0
+1838 B73 0 CODE 0
+1852 B75 0 CODE 0
+1854 B79 0 CODE 0
+1877 B7B 0 CODE 0
+1878 B7D 0 CODE 0
+1879 B7E 0 CODE 0
+1881 B82 0 CODE 0
+1896 B84 0 CODE 0
+1901 B88 0 CODE 0
+1914 B8B 0 CODE 0
+../USB/usb_device.c
+1661 B8B 0 CODE 0
+1662 B8C 0 CODE 0
+1664 B8D 0 CODE 0
+1667 B92 0 CODE 0
+1668 B97 0 CODE 0
+1669 BA1 0 CODE 0
+1675 BA3 0 CODE 0
+1677 BAF 0 CODE 0
+1679 BB6 0 CODE 0
+1684 BB8 0 CODE 0
+1685 BC3 0 CODE 0
+1687 BC5 0 CODE 0
+../USB/usb_device.c
+1943 BC5 0 CODE 0
+1944 BC8 0 CODE 0
+1946 BD0 0 CODE 0
+1953 BD3 0 CODE 0
+1955 BD7 0 CODE 0
+1956 BD9 0 CODE 0
+1957 BDA 0 CODE 0
+1959 BDC 0 CODE 0
+1965 BDE 0 CODE 0
+1970 BEA 0 CODE 0
+1974 BF0 0 CODE 0
+1975 BF3 0 CODE 0
+1979 BF6 0 CODE 0
+1977 BF8 0 CODE 0
+1985 BFF 0 CODE 0
+1991 C04 0 CODE 0
+../USB/usb_device.c
+2842 1000 0 CONST 0
+../USB/usb_device.c
+2136 90C 0 CODE 0
+2139 90D 0 CODE 0
+2136 90E 0 CODE 0
+2139 90F 0 CODE 0
+2142 91F 0 CODE 0
+2145 926 0 CODE 0
+2150 928 0 CODE 0
+2152 92A 0 CODE 0
+2153 930 0 CODE 0
+2150 933 0 CODE 0
+2153 934 0 CODE 0
+2150 935 0 CODE 0
+2157 939 0 CODE 0
+2160 941 0 CODE 0
+2162 943 0 CODE 0
+2165 946 0 CODE 0
+2166 948 0 CODE 0
+2169 949 0 CODE 0
+2172 94C 0 CODE 0
+2175 94F 0 CODE 0
+2176 951 0 CODE 0
+2180 952 0 CODE 0
+2185 95D 0 CODE 0
+2187 960 0 CODE 0
+/opt/microchip/xc8/v1.12/sources/memset.c
+18 961 0 CODE 0
+19 963 0 CODE 0
+20 96C 0 CODE 0
+19 972 0 CODE 0
+22 973 0 CODE 0
+../USB/usb_device.c
+2208 17A2 0 CODE 0
+2210 17A7 0 CODE 0
+2212 17AA 0 CODE 0
+2218 17AB 0 CODE 0
+2220 17B0 0 CODE 0
+2221 17B3 0 CODE 0
+2226 17B4 0 CODE 0
+2232 17B9 0 CODE 0
+2233 17BF 0 CODE 0
+2234 17C5 0 CODE 0
+2239 17C6 0 CODE 0
+2242 17CA 0 CODE 0
+2244 17CE 0 CODE 0
+2245 17D5 0 CODE 0
+2257 17D6 0 CODE 0
+2212 17D9 0 CODE 0
+2265 17E5 0 CODE 0
+../USB/usb_device.c
+2284 8C2 0 CODE 0
+2285 8C4 0 CODE 0
+2287 8C5 0 CODE 0
+2290 8C6 0 CODE 0
+2297 8C8 0 CODE 0
+2300 8CA 0 CODE 0
+2302 8CD 0 CODE 0
+2306 8D0 0 CODE 0
+2307 8D2 0 CODE 0
+2309 8D3 0 CODE 0
+2316 8D5 0 CODE 0
+2318 8D8 0 CODE 0
+2322 8DE 0 CODE 0
+2325 8E0 0 CODE 0
+2326 8E8 0 CODE 0
+2287 8EB 0 CODE 0
+2331 8F6 0 CODE 0
+2333 8F9 0 CODE 0
+2335 8FB 0 CODE 0
+2333 8FC 0 CODE 0
+2334 8FD 0 CODE 0
+2335 8FE 0 CODE 0
+2337 8FF 0 CODE 0
+main.c
+171 9EF 0 CODE 0
+172 9F3 0 CODE 0
+173 9F5 0 CODE 0
+174 9F7 0 CODE 0
+176 9F9 0 CODE 0
+177 9FB 0 CODE 0
+179 9FC 0 CODE 0
+klondike.c
+281 9FC 0 CODE 0
+282 9FE 0 CODE 0
+283 9FF 0 CODE 0
+284 A01 0 CODE 0
+287 A05 0 CODE 0
+288 A07 0 CODE 0
+289 A08 0 CODE 0
+290 A09 0 CODE 0
+291 A0A 0 CODE 0
+292 A0D 0 CODE 0
+293 A0F 0 CODE 0
+294 A11 0 CODE 0
+klondike.c
+268 A12 0 CODE 0
+271 A14 0 CODE 0
+272 A18 0 CODE 0
+273 A19 0 CODE 0
+274 A1A 0 CODE 0
+275 A1E 0 CODE 0
+276 A20 0 CODE 0
+277 A22 0 CODE 0
+klondike.c
+248 A23 0 CODE 0
+249 A24 0 CODE 0
+250 A26 0 CODE 0
+251 A29 0 CODE 0
+252 A2C 0 CODE 0
+253 A2E 0 CODE 0
+254 A2F 0 CODE 0
+255 A31 0 CODE 0
+256 A35 0 CODE 0
+257 A36 0 CODE 0
+258 A38 0 CODE 0
+264 A3A 0 CODE 0
+klondike.c
+298 A3B 0 CODE 0
+299 A3C 0 CODE 0
+300 A3E 0 CODE 0
+301 A3F 0 CODE 0
+302 A40 0 CODE 0
+303 A41 0 CODE 0
+305 A42 0 CODE 0
+306 A44 0 CODE 0
+307 A45 0 CODE 0
+309 A46 0 CODE 0
+310 A47 0 CODE 0
+311 A49 0 CODE 0
+312 A4B 0 CODE 0
+klondike.c
+159 A4C 0 CODE 0
+162 A4F 0 CODE 0
+163 A61 0 CODE 0
+164 A70 0 CODE 0
+165 A75 0 CODE 0
+166 A7E 0 CODE 0
+165 AB9 0 CODE 0
+167 ABA 0 CODE 0
+168 ABD 0 CODE 0
+169 ABF 0 CODE 0
+/opt/microchip/xc8/v1.12/sources/awdiv.c
+9 AC0 0 CODE 0
+10 AC1 0 CODE 0
+11 AC3 0 CODE 0
+12 AC8 0 CODE 0
+14 ACA 0 CODE 0
+15 ACC 0 CODE 0
+16 AD1 0 CODE 0
+18 AD3 0 CODE 0
+19 AD5 0 CODE 0
+20 AD9 0 CODE 0
+23 ADA 0 CODE 0
+21 ADB 0 CODE 0
+22 ADD 0 CODE 0
+21 ADF 0 CODE 0
+26 AE0 0 CODE 0
+27 AE2 0 CODE 0
+28 AEA 0 CODE 0
+29 AEE 0 CODE 0
+31 AEF 0 CODE 0
+32 AF1 0 CODE 0
+34 AF3 0 CODE 0
+35 AF6 0 CODE 0
+36 AFB 0 CODE 0
+37 AFF 0 CODE 0
 main.c
 70 4 0 CODE 0
 72 8 0 CODE 0
-73 D 0 CODE 0
-95 11 0 CODE 0
+73 C 0 CODE 0
+95 E 0 CODE 0
 klondike.c
-203 13C4 0 CODE 0
-204 13C5 0 CODE 0
-205 13C7 0 CODE 0
-207 13C8 0 CODE 0
-208 13CD 0 CODE 0
-209 13DD 0 CODE 0
-211 13DF 0 CODE 0
-212 13E9 0 CODE 0
-213 13EE 0 CODE 0
-216 13EF 0 CODE 0
-217 13F4 0 CODE 0
-218 13FB 0 CODE 0
-219 1400 0 CODE 0
-220 1402 0 CODE 0
-221 1403 0 CODE 0
-205 1404 0 CODE 0
-224 140C 0 CODE 0
-225 1412 0 CODE 0
-226 1417 0 CODE 0
-227 141D 0 CODE 0
-228 142D 0 CODE 0
-230 142E 0 CODE 0
-231 1431 0 CODE 0
-232 1433 0 CODE 0
+203 71E 0 CODE 0
+204 71F 0 CODE 0
+205 721 0 CODE 0
+207 726 0 CODE 0
+208 729 0 CODE 0
+209 734 0 CODE 0
+211 735 0 CODE 0
+212 73A 0 CODE 0
+213 73C 0 CODE 0
+216 73D 0 CODE 0
+217 740 0 CODE 0
+218 744 0 CODE 0
+219 745 0 CODE 0
+220 747 0 CODE 0
+224 748 0 CODE 0
+225 74C 0 CODE 0
+226 74E 0 CODE 0
+227 750 0 CODE 0
+230 75B 0 CODE 0
+231 75E 0 CODE 0
+232 760 0 CODE 0
 main.c
-209 93C 0 CODE 0
-210 96A 0 CODE 0
-211 981 0 CODE 0
-212 996 0 CODE 0
-213 998 0 CODE 0
-212 9BF 0 CODE 0
-214 9CB 0 CODE 0
-223 9D5 0 CODE 0
-/opt/microchip/xc8/v1.12/sources/wmul.c
-4 1F30 0 CODE 0
-7 1F33 0 CODE 0
-8 1F37 0 CODE 0
-9 1F3B 0 CODE 0
-10 1F40 0 CODE 0
-11 1F45 0 CODE 0
-12 1F4C 0 CODE 0
-13 1F53 0 CODE 0
+209 761 0 CODE 0
+210 785 0 CODE 0
+211 795 0 CODE 0
+212 7A0 0 CODE 0
+213 7A5 0 CODE 0
+212 7C2 0 CODE 0
+214 7C4 0 CODE 0
+223 7C8 0 CODE 0
 /opt/microchip/xc8/v1.12/sources/bmul.c
-3 1E13 0 CODE 0
-4 1E14 0 CODE 0
-7 1E16 0 CODE 0
-8 1E1A 0 CODE 0
-9 1E1F 0 CODE 0
-10 1E21 0 CODE 0
-11 1E23 0 CODE 0
-12 1E29 0 CODE 0
-13 1E2B 0 CODE 0
+3 7C9 0 CODE 0
+4 7CA 0 CODE 0
+8 7CB 0 CODE 0
+7 7CC 0 CODE 0
+8 7CD 0 CODE 0
+9 7CE 0 CODE 0
+10 7CF 0 CODE 0
+11 7D0 0 CODE 0
+12 7D3 0 CODE 0
+13 7D4 0 CODE 0
+/opt/microchip/xc8/v1.12/sources/wmul.c
+4 7D5 0 CODE 0
+7 7D7 0 CODE 0
+8 7D9 0 CODE 0
+9 7DD 0 CODE 0
+10 7DF 0 CODE 0
+11 7E1 0 CODE 0
+12 7E5 0 CODE 0
+13 7E9 0 CODE 0

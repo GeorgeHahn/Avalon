@@ -1,4 +1,4 @@
-[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[p PRO_MODE GLOBOPT AUTOSTATIC PIC14 PIC14E SPACEOPT ]
 [d version 1.1 ]
 [d edition pro ]
 [d chip 16LF1459 ]
@@ -927,8 +927,6 @@ EVENT_TRANSFER_TERMINATED 5
 [v _pDst `*.0uc  1 e 1 0 ]
 "294
 [v _RemoteWakeup `E5  1 e 1 0 ]
-"295
-[v _USBBusIsSuspended `E5  1 e 1 0 ]
 [s S126 . 1 `uc 1 filler1 1 0 :1:0 
 `uc 1 ping_pong 1 0 :1:1 
 `uc 1 direction 1 0 :1:2 
@@ -1407,22 +1405,6 @@ EVENT_TRANSFER_TERMINATED 5
 "33
 [v _last_bit0 `Yuc  1 e 1 0 ]
 [v _last_bit1 `Yuc  1 e 1 0 ]
-[s S1340 _i2c 1 `uc 1 Next 1 0 :5:0 
-`uc 1 Slave 1 0 :1:5 
-`uc 1 Master 1 0 :1:6 
-]
-"29 i2c.c
-[v _I2CState `S1340  1 e 1 0 ]
-"30
-[v _I2CCmd `uc  1 e 1 0 ]
-[v _I2CAddr `uc  1 e 1 0 ]
-[v _I2CCount `uc  1 e 1 0 ]
-"31
-[v _I2CInBuf `*uc  1 e 1 0 ]
-"33
-[v _ptr `uc  1 e 1 0 ]
-"34
-[v _buf `[16]uc  1 e 16 0 ]
 [s S1387 _id 12 `uc 1 version 1 0 `[7]uc 1 product 7 1 `ul 1 serial 4 8 ]
 "25 klondike.c
 [v _ID `DCCS1387  1 e 12 0 ]
@@ -1471,7 +1453,7 @@ EVENT_TRANSFER_TERMINATED 5
 [v _USBDeviceTasks `(v  1 e 0 0 ]
 {
 "670
-[v USBDeviceTasks@i `uc  1 a 1 23 ]
+[v USBDeviceTasks@i `uc  1 a 1 7 ]
 "1004
 } 0
 "2456
@@ -1493,7 +1475,7 @@ EVENT_TRANSFER_TERMINATED 5
 [v _USBCtrlEPService `(v  1 s 0 USBCtrlEPService ]
 {
 "2551
-[v USBCtrlEPService@setup_cnt `uc  1 a 1 20 ]
+[v USBCtrlEPService@setup_cnt `uc  1 a 1 25 ]
 "2580
 } 0
 "2623
@@ -1520,9 +1502,9 @@ EVENT_TRANSFER_TERMINATED 5
 [v _USBCtrlTrfRxService `(v  1 s 0 USBCtrlTrfRxService ]
 {
 "2020
-[v USBCtrlTrfRxService@byteToRead `uc  1 a 1 14 ]
+[v USBCtrlTrfRxService@byteToRead `uc  1 a 1 11 ]
 "2021
-[v USBCtrlTrfRxService@i `uc  1 a 1 13 ]
+[v USBCtrlTrfRxService@i `uc  1 a 1 10 ]
 "2110
 } 0
 "1590
@@ -1534,14 +1516,14 @@ EVENT_TRANSFER_TERMINATED 5
 [v _USBCtrlTrfInHandler `(v  1 s 0 USBCtrlTrfInHandler ]
 {
 "2749
-[v USBCtrlTrfInHandler@lastDTS `uc  1 a 1 14 ]
+[v USBCtrlTrfInHandler@lastDTS `uc  1 a 1 11 ]
 "2819
 } 0
 "1938
 [v _USBCtrlTrfTxService `(v  1 s 0 USBCtrlTrfTxService ]
 {
 "1939
-[v USBCtrlTrfTxService@byteToSend `uc  1 a 1 11 ]
+[v USBCtrlTrfTxService@byteToSend `uc  1 a 1 8 ]
 "1991
 } 0
 "2839
@@ -1553,21 +1535,22 @@ EVENT_TRANSFER_TERMINATED 5
 [v _USBStdSetCfgHandler `(v  1 s 0 USBStdSetCfgHandler ]
 {
 "2139
-[v USBStdSetCfgHandler@p `*uc  1 a 2 9 ]
-[v USBStdSetCfgHandler@i_1089 `uc  1 a 1 11 ]
+[v USBStdSetCfgHandler@p `*uc  1 a 2 21 ]
+[v USBStdSetCfgHandler@i_1089 `uc  1 a 1 23 ]
 "2133
-[v USBStdSetCfgHandler@i `uc  1 a 1 12 ]
+[v USBStdSetCfgHandler@i `uc  1 a 1 24 ]
 "2187
 } 0
 "10 /opt/microchip/xc8/v1.12/sources/memset.c
 [v _memset `(*v  1 e 1 0 ]
 {
+[v memset@p1 `*.0v  1 a 1 wreg ]
 "15
-[v memset@p `*uc  1 a 2 16 ]
+[v memset@p `*.0uc  1 a 1 11 ]
 "10
-[v memset@p1 `*v  1 p 2 9 ]
-[v memset@c `i  1 p 2 11 ]
-[v memset@n `ui  1 p 2 13 ]
+[v memset@p1 `*.0v  1 a 1 wreg ]
+[v memset@c `i  1 p 2 6 ]
+[v memset@n `ui  1 p 2 8 ]
 "22
 } 0
 "2207 ../USB/usb_device.c
@@ -1579,30 +1562,30 @@ EVENT_TRANSFER_TERMINATED 5
 [v _USBStdGetStatusHandler `(v  1 s 0 USBStdGetStatusHandler ]
 {
 "2314
-[v USBStdGetStatusHandler@p `*.0S61  1 a 1 10 ]
+[v USBStdGetStatusHandler@p `*.0S61  1 a 1 6 ]
 "2337
 } 0
 "2907
 [v _USBStdFeatureReqHandler `(v  1 s 0 USBStdFeatureReqHandler ]
 {
 "2913
-[v USBStdFeatureReqHandler@pUEP `*uc  1 a 2 11 ]
+[v USBStdFeatureReqHandler@pUEP `*uc  1 a 2 0 ]
 "2908
-[v USBStdFeatureReqHandler@p `*.0S61  1 a 1 14 ]
+[v USBStdFeatureReqHandler@p `*.0S61  1 a 1 3 ]
 [s S134 . 1 `uc 1 ping_pong_state 1 0 :1:0 
 `uc 1 transfer_terminated 1 0 :1:1 
 ]
 "2909
 [u S137 . 1 `S134 1 bits 1 0 `uc 1 Val 1 0 ]
-[v USBStdFeatureReqHandler@current_ep_data `S137  1 a 1 13 ]
+[v USBStdFeatureReqHandler@current_ep_data `S137  1 a 1 2 ]
 "3131
 } 0
 "630 main.c
 [v _USER_USB_CALLBACK_EVENT_HANDLER `(E5  1 e 1 0 ]
 {
-[v USER_USB_CALLBACK_EVENT_HANDLER@event `i  1 p 2 3 ]
-[v USER_USB_CALLBACK_EVENT_HANDLER@pdata `*v  1 p 2 5 ]
-[v USER_USB_CALLBACK_EVENT_HANDLER@size `us  1 p 2 7 ]
+[v USER_USB_CALLBACK_EVENT_HANDLER@event `i  1 p 2 16 ]
+[v USER_USB_CALLBACK_EVENT_HANDLER@pdata `*.0v  1 p 1 18 ]
+[v USER_USB_CALLBACK_EVENT_HANDLER@size `us  1 p 2 19 ]
 "671
 } 0
 "174 klondike.c
@@ -1619,10 +1602,10 @@ EVENT_TRANSFER_TERMINATED 5
 [v _USBDeviceInit `(v  1 e 0 0 ]
 {
 "481
-[v USBDeviceInit@p `*uc  1 a 2 11 ]
-[v USBDeviceInit@i_718 `uc  1 a 1 13 ]
+[v USBDeviceInit@p `*uc  1 a 2 8 ]
+[v USBDeviceInit@i_718 `uc  1 a 1 10 ]
 "468
-[v USBDeviceInit@i `uc  1 a 1 14 ]
+[v USBDeviceInit@i `uc  1 a 1 11 ]
 "552
 } 0
 "182 main.c
@@ -1646,8 +1629,8 @@ EVENT_TRANSFER_TERMINATED 5
 [v _SendAsicData `(v  1 e 0 0 ]
 {
 [s S1300 _worktask 45 `uc 1 WorkID 1 0 `[8]ul 1 MidState 32 1 `[3]ul 1 Merkle 12 33 ]
-[v SendAsicData@work `*S1300  1 p 2 15 ]
-[v SendAsicData@split `uc  1 p 1 17 ]
+[v SendAsicData@work `*S1300  1 p 2 12 ]
+[v SendAsicData@split `uc  1 p 1 14 ]
 "56
 } 0
 "59
@@ -1659,17 +1642,17 @@ EVENT_TRANSFER_TERMINATED 5
 [v _AsicPreCalc `(v  1 e 0 0 ]
 {
 "322
-[v AsicPreCalc@m `[8]ul  1 a 32 25 ]
+[v AsicPreCalc@m `[8]ul  1 a 32 24 ]
 "320
-[v AsicPreCalc@K `[3]ul  1 a 12 13 ]
+[v AsicPreCalc@K `[3]ul  1 a 12 8 ]
 "321
-[v AsicPreCalc@x `ul  1 a 4 65 ]
-[v AsicPreCalc@y `ul  1 a 4 61 ]
-[v AsicPreCalc@z `ul  1 a 4 57 ]
+[v AsicPreCalc@x `ul  1 a 4 60 ]
+[v AsicPreCalc@y `ul  1 a 4 56 ]
+[v AsicPreCalc@z `ul  1 a 4 20 ]
 "323
-[v AsicPreCalc@n `uc  1 a 1 69 ]
+[v AsicPreCalc@n `uc  1 a 1 64 ]
 "319
-[v AsicPreCalc@work `*S1300  1 p 2 0 ]
+[v AsicPreCalc@work `*S1300  1 p 2 22 ]
 "320
 [v AsicPreCalc@F3347 `[3]ul  1 s 12 F3347 ]
 "357
@@ -1685,11 +1668,11 @@ EVENT_TRANSFER_TERMINATED 5
 [v _SendCmdReply `(v  1 e 0 0 ]
 {
 "212
-[v SendCmdReply@n `uc  1 a 1 20 ]
+[v SendCmdReply@n `uc  1 a 1 23 ]
 "208
-[v SendCmdReply@cmd `*uc  1 p 2 15 ]
-[v SendCmdReply@data `*.muc  1 p 2 17 ]
-[v SendCmdReply@count `uc  1 p 1 19 ]
+[v SendCmdReply@cmd `*uc  1 p 2 12 ]
+[v SendCmdReply@data `*.muc  1 p 2 14 ]
+[v SendCmdReply@count `uc  1 p 1 16 ]
 "223
 } 0
 "170
@@ -1701,7 +1684,7 @@ EVENT_TRANSFER_TERMINATED 5
 [v _DetectAsics `(v  1 e 0 0 ]
 {
 "165
-[v DetectAsics@x `uc  1 a 1 18 ]
+[v DetectAsics@x `uc  1 a 1 22 ]
 "169
 } 0
 "247
@@ -1769,10 +1752,10 @@ EVENT_TRANSFER_TERMINATED 5
 {
 [v USBEnableEndpoint@ep `uc  1 a 1 wreg ]
 "1057
-[v USBEnableEndpoint@p `*uc  1 a 2 19 ]
+[v USBEnableEndpoint@p `*uc  1 a 2 13 ]
 "1056
 [v USBEnableEndpoint@ep `uc  1 a 1 wreg ]
-[v USBEnableEndpoint@options `uc  1 p 1 16 ]
+[v USBEnableEndpoint@options `uc  1 p 1 10 ]
 "1079
 } 0
 "1713
@@ -1780,10 +1763,10 @@ EVENT_TRANSFER_TERMINATED 5
 {
 [v USBConfigureEndpoint@EPNum `uc  1 a 1 wreg ]
 "1714
-[v USBConfigureEndpoint@handle `*.0VES61  1 a 1 15 ]
+[v USBConfigureEndpoint@handle `*.0VES61  1 a 1 9 ]
 "1713
 [v USBConfigureEndpoint@EPNum `uc  1 a 1 wreg ]
-[v USBConfigureEndpoint@direction `uc  1 p 1 9 ]
+[v USBConfigureEndpoint@direction `uc  1 p 1 6 ]
 "1754
 } 0
 "1173
@@ -1791,58 +1774,58 @@ EVENT_TRANSFER_TERMINATED 5
 {
 [v USBTransferOnePacket@ep `uc  1 a 1 wreg ]
 "1174
-[v USBTransferOnePacket@handle `*.0VES61  1 a 1 19 ]
+[v USBTransferOnePacket@handle `*.0VES61  1 a 1 15 ]
 "1173
 [v USBTransferOnePacket@ep `uc  1 a 1 wreg ]
-[v USBTransferOnePacket@dir `uc  1 p 1 13 ]
-[v USBTransferOnePacket@data `*uc  1 p 1 14 ]
-[v USBTransferOnePacket@len `uc  1 p 1 15 ]
+[v USBTransferOnePacket@dir `uc  1 p 1 9 ]
+[v USBTransferOnePacket@data `*uc  1 p 1 10 ]
+[v USBTransferOnePacket@len `uc  1 p 1 11 ]
 "1223
-} 0
-"3 /opt/microchip/xc8/v1.12/sources/bmul.c
-[v ___bmul `(uc  1 e 1 0 ]
-{
-[v ___bmul@multiplier `uc  1 a 1 wreg ]
-"4
-[v ___bmul@product `uc  1 a 1 11 ]
-"3
-[v ___bmul@multiplier `uc  1 a 1 wreg ]
-[v ___bmul@multiplicand `uc  1 p 1 9 ]
-"13
 } 0
 "5 /opt/microchip/xc8/v1.12/sources/lwdiv.c
 [v ___lwdiv `(ui  1 e 2 0 ]
 {
 "6
-[v ___lwdiv@quotient `ui  1 a 2 15 ]
+[v ___lwdiv@quotient `ui  1 a 2 11 ]
 "7
-[v ___lwdiv@counter `uc  1 a 1 14 ]
+[v ___lwdiv@counter `uc  1 a 1 10 ]
 "5
-[v ___lwdiv@divisor `ui  1 p 2 9 ]
-[v ___lwdiv@dividend `ui  1 p 2 11 ]
+[v ___lwdiv@divisor `ui  1 p 2 6 ]
+[v ___lwdiv@dividend `ui  1 p 2 8 ]
 "26
 } 0
 "5 /opt/microchip/xc8/v1.12/sources/awdiv.c
 [v ___awdiv `(i  1 e 2 0 ]
 {
 "6
-[v ___awdiv@quotient `i  1 a 2 16 ]
+[v ___awdiv@quotient `i  1 a 2 12 ]
 "7
-[v ___awdiv@sign `uc  1 a 1 15 ]
-[v ___awdiv@counter `uc  1 a 1 14 ]
+[v ___awdiv@sign `uc  1 a 1 11 ]
+[v ___awdiv@counter `uc  1 a 1 10 ]
 "5
-[v ___awdiv@divisor `i  1 p 2 9 ]
-[v ___awdiv@dividend `i  1 p 2 11 ]
+[v ___awdiv@divisor `i  1 p 2 6 ]
+[v ___awdiv@dividend `i  1 p 2 8 ]
 "37
+} 0
+"3 /opt/microchip/xc8/v1.12/sources/bmul.c
+[v ___bmul `(uc  1 e 1 0 ]
+{
+[v ___bmul@multiplier `uc  1 a 1 wreg ]
+"4
+[v ___bmul@product `uc  1 a 1 7 ]
+"3
+[v ___bmul@multiplier `uc  1 a 1 wreg ]
+[v ___bmul@multiplicand `uc  1 p 1 6 ]
+"13
 } 0
 "3 /opt/microchip/xc8/v1.12/sources/wmul.c
 [v ___wmul `(ui  1 e 2 0 ]
 {
 "4
-[v ___wmul@product `ui  1 a 2 13 ]
+[v ___wmul@product `ui  1 a 2 10 ]
 "3
-[v ___wmul@multiplier `ui  1 p 2 9 ]
-[v ___wmul@multiplicand `ui  1 p 2 11 ]
+[v ___wmul@multiplier `ui  1 p 2 6 ]
+[v ___wmul@multiplicand `ui  1 p 2 8 ]
 "13
 } 0
 "70 main.c
@@ -1854,7 +1837,7 @@ EVENT_TRANSFER_TERMINATED 5
 [v _ResultRx `(v  1 e 0 0 ]
 {
 "203
-[v ResultRx@TimeOut `uc  1 a 1 13 ]
+[v ResultRx@TimeOut `uc  1 a 1 12 ]
 "232
 } 0
 "208 main.c
@@ -1878,7 +1861,7 @@ EVENT_TRANSFER_TERMINATED 5
 [v i1___bmul `(uc  1 e 1 0 ]
 {
 [v i1___bmul@multiplier `uc  1 a 1 wreg ]
-[v i1___bmul@product `uc  1 a 1 3 ]
+[v i1___bmul@product `uc  1 a 1 2 ]
 [v i1___bmul@multiplier `uc  1 a 1 wreg ]
 [v i1___bmul@multiplicand `uc  1 p 1 0 ]
 "13
