@@ -25,6 +25,8 @@
 extern "C" {
 #endif
 
+#define FWPWD               "KlondikeRocks"
+
 #define MASTER_ADDRESS      0x00
 #define MAX_WORK_COUNT      4   // must be binary multiple
 #define WORKMASK            MAX_WORK_COUNT-1

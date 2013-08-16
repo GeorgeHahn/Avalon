@@ -46,7 +46,8 @@ void SendAsicData(WORKTASK *work, BYTE split)
     Send32();
     send32_data = (WORD)&PrecalcHashes; send32_count = 1;
     Send32();
-    // disable for single bank last_bit0 = last_bit1 = split;
+    // disable next line for single bank mode
+    last_bit0 = last_bit1 = split;
     send32_data = (WORD)&NonceRanges; send32_count = BankSize;
     Send32();
     HASH_IDLE();

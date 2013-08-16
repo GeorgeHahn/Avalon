@@ -1,4 +1,4 @@
-PCBNEW-BOARD Version 2 date Mon 22 Jul 2013 09:19:00 AM ICT
+PCBNEW-BOARD Version 2 date Mon 22 Jul 2013 09:19:43 AM ICT
 
 # Created by Pcbnew(2013-mar-13)-testing
 
@@ -26323,6 +26323,7 @@ Li PHNX-2
 Sc 51E6B9C6
 AR 
 Op 0 0 0
+At SMD
 T0 0.175 8.35 1.5 1.5 2700 0.15 N V 21 N "PHNX-2"
 T1 0.4 5.8 1.5 1.5 2700 0.15 N V 21 N "VAL**"
 DS -2.75 -2.2 -2.75 -6.2 0.15 21

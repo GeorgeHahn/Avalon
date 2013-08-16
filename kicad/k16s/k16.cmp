@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by PcbNew date = Tue 16 Jul 2013 02:02:54 AM ICT
+Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = Mon 12 Aug 2013 08:33:01 AM ICT
 
 BeginCmp
 TimeStamp = /517F6E90;
@@ -1781,7 +1781,7 @@ EndCmp
 BeginCmp
 TimeStamp = /517F6E1D;
 Reference = L3;
-ValeurCmp = L0805;
+ValeurCmp = 4.7uH;
 IdModule  = L0805;
 EndCmp
 
@@ -1900,7 +1900,7 @@ EndCmp
 BeginCmp
 TimeStamp = /51E39429;
 Reference = L20;
-ValeurCmp = 120R @ 100 MHz;
+ValeurCmp = 120R / 100 MHz;
 IdModule  = L0402;
 EndCmp
 
@@ -1914,7 +1914,7 @@ EndCmp
 BeginCmp
 TimeStamp = /51E3A20B;
 Reference = L22;
-ValeurCmp = 120R @ 100 MHz;
+ValeurCmp = 220R / 100 MHz;
 IdModule  = L0402;
 EndCmp
 
@@ -2103,14 +2103,14 @@ EndCmp
 BeginCmp
 TimeStamp = /51835C78;
 Reference = R24;
-ValeurCmp = 2.2K;
+ValeurCmp = 1K;
 IdModule  = R0603;
 EndCmp
 
 BeginCmp
 TimeStamp = /51835C6D;
 Reference = R25;
-ValeurCmp = 2.2K;
+ValeurCmp = 1K;
 IdModule  = R0603;
 EndCmp
 
