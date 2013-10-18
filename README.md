@@ -1,7 +1,9 @@
-klondike
+Avalon
 ========
 
-Bitcoin ASIC Miner Project
+Public Domain Bitcoin ASIC Miner Project
+
+Firmware and driver based on Klondike Project
 
 WARNING:
 
@@ -13,10 +15,10 @@ WARNING:
   
 SUMMARY:
 
-  This is an open source effort to design and build a Bitcoin mining board based on the Avalon ASIC. The final goal is to have a small 10cm x 10cm board that holds 16 ASIC chips. This board can be controlled via USB or I2C communication. An example host would be a PC, Raspberry Pi or TP-Link WR703N router. The host will run cgminer with a custom driver based on the Avalon one and control the board via USB. The I2C interface allows chaining together more than one board consolidating control by the host system using only one USB connection.
+  This is an open source effort to design and build a Bitcoin mining board based on the second generation Avalon ASIC. The final goal is to have a small board that holds 10 ASIC chips. This board can be controlled via USB communication. An example host would be a PC, Raspberry Pi or TP-Link WR703N router. The host will run cgminer with a custom driver based on the Avalon one and control the board via USB.
     
   
-  Each board has a 6 pin PCI Express power connector allowing efficient powering of many boards from an ATX PSU. A 16 chip board should be capable of 4512 MH/s and consume about 32W power. A low cost Corsair CX-600 PSU should easily power 16 boards using readily available power splitters. This provides for 72 GH/s off one low cost ATX PSU.
+  Each board has a barrel jack power connector. A 10 chip board should be capable of 15000 MH/s and consume about 30W power. Alternatively, the switching power supply onboard can be turned to a lower voltage, trading hashrate for power efficiency. The supply is variable from 0.700V to 1.708V. Each board can be easily powered by a low cost power adapter. In production quantities, this board should cost under $60, depending on the cost of second-gen Avalon chips. This gives it a price per performance ration of $4/GH.
   
 STATUS:
 
@@ -26,24 +28,20 @@ STATUS:
   
   A new cgminer-klondike repo has been created for development with only changed files echoed here in the cgminer directory.
   
-  The first prototype board indicated several areas for improvement and a second "Final Beta" is being produced to test full functionality.
+  The first prototype should be ready for order within the week. The power supply prototype has already been ordered.
   
   The cgminer-klondike driver and firmware have both been tested working, but need additional refinement and bug fixes to be ready for general release.
   
   
 TODO:
 
-  Bootloader firmware allowing updating via USB/I2C connection.
+  Finish hardware design.
 
-  Integration and debugging of I2C chaining firmware.
+  Adapt firmware for alternate microprocessor
 
-  Creating firmware configurations for K1, K16 and K64 that optimize code.
- 
-  Set up HEXMATE scripting to insert serial# for supporting I2C arbitration.
+  Testing with a Raspberry Pi
 
-  Testing with a TL-WR703N router containing purpose built OpenWrt firmware.
-
-  Stress testing and reliability in over-clocking situations.
+  Stress testing and reliability in over-clocking and under-clocking situations.
   
   
 
