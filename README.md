@@ -27,13 +27,13 @@ Firmware and driver based on Klondike Project
   
 ## TODO
 
-  Finish hardware design.
+ - Finish hardware design.
 
-  Adapt firmware for alternate microprocessor
+ - Adapt firmware for alternate microprocessor
 
-  Testing with a Raspberry Pi
+ - Testing with a Raspberry Pi
 
-  Stress testing and reliability in over-clocking and under-clocking situations.
+ - Stress testing and reliability in over-clocking and under-clocking situations.
   
 ## WARNING
 
