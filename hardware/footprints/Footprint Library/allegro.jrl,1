@@ -1,0 +1,85 @@
+\t (00:00:51) allegro 16.6 P004 (v16-6-112G) Windows 32
+\t (00:00:51)     Journal start - Thu Oct 31 02:35:08 2013
+\t (00:00:51)         Host=GEORGEPC User=George Pid=11848 CPUs=8
+\t (00:00:51) 
+\d (00:00:51) Database opened: C:/Users/George/Dropbox/PCBs/Footprint Library/DGG.dra
+\i (00:00:51) generaledit 
+\i (00:00:52) zoom out 1 
+\i (00:00:52) setwindow pcb
+\i (00:00:52) zoom out -2.686 4.230
+\i (00:00:52) trapsize 143
+\i (00:00:52) zoom out 1 
+\i (00:00:52) setwindow pcb
+\i (00:00:52) zoom out -2.451 0.043
+\i (00:00:52) trapsize 143
+\i (00:00:52) zoom in 1 
+\i (00:00:52) setwindow pcb
+\i (00:00:52) zoom in -2.565 -3.208
+\i (00:00:52) trapsize 71
+\i (00:00:53) zoom in 1 
+\i (00:00:53) setwindow pcb
+\i (00:00:53) zoom in -2.593 -3.179
+\i (00:00:53) trapsize 36
+\i (00:00:54) zoom out 1 
+\i (00:00:54) setwindow pcb
+\i (00:00:54) zoom out -3.334 -5.354
+\i (00:00:54) trapsize 71
+\i (00:00:54) prepopup -1.895 -2.716
+\i (00:00:57) pick grid -1.980 0.279
+\t (00:00:57) last pick:  -2.540  0.000
+\i (00:00:57) pick grid dbl -1.980 0.279
+\t (00:00:57) last pick:  -2.540  0.000
+\i (00:01:04) prmed 
+\i (00:01:06) setwindow form.prmedit
+\i (00:01:06) FORM prmedit cancel  
+\i (00:01:06) setwindow pcb
+\i (00:01:06) generaledit 
+\i (00:01:07) pick grid -7.427 4.200
+\t (00:01:07) last pick:  -7.620  5.080
+\e (00:01:10) Command not found: xhilite
+\i (00:01:10) xname_flush 
+\i (00:01:10) done 
+\i (00:01:10) generaledit 
+\i (00:01:33) pick grid 0.615 6.467
+\t (00:01:33) last pick:  0.000  7.620
+\i (00:01:51) pick grid -5.531 1.847
+\t (00:01:51) last pick:  -5.080  2.540
+\i (00:05:14) zoom in 1 
+\i (00:05:14) setwindow pcb
+\i (00:05:14) zoom in 6.418 5.497
+\i (00:05:14) trapsize 36
+\i (00:05:19) refresh symbol 
+\i (00:05:21) setwindow form.upd_element
+\i (00:05:21) FORM upd_element tree 'MULTISEL YES' 'Shape and flash symbols' 
+\i (00:05:21) FORM upd_element tree  'Shape and flash symbols' 
+\i (00:05:23) FORM upd_element refresh  
+\i (00:05:24) FORM upd_element close  
+\i (00:05:24) setwindow pcb
+\i (00:05:24) generaledit 
+\e (03:02:44) Command not found: xhilite
+\i (03:02:44) xname_flush 
+\i (03:02:44) done 
+\i (03:02:44) generaledit 
+\e (03:03:01) Command not found: xhilite
+\i (03:03:01) xname_flush 
+\i (03:03:01) done 
+\i (03:03:01) generaledit 
+\e (03:03:02) Command not found: xdehilite
+\i (03:03:02) xname_flush 
+\i (03:03:02) done 
+\e (03:03:02) Command not found: xhilite
+\i (03:03:02) xname_flush 
+\e (03:03:02) No command active
+\i (03:03:02) done 
+\e (03:03:02) No command active
+\i (03:03:02) generaledit 
+\e (03:03:06) Command not found: xhilite
+\i (03:03:06) xname_flush 
+\i (03:03:06) done 
+\i (03:03:06) generaledit 
+\e (03:03:12) Command not found: xdehilite
+\i (03:03:12) xname_flush 
+\i (03:03:12) done 
+\i (03:03:12) generaledit 
+\i (03:03:33) exit 
+\t (03:03:33)     Journal end - Thu Oct 31 05:37:50 2013

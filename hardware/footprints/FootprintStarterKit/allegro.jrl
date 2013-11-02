@@ -1,0 +1,19 @@
+\t (00:00:01) allegro 16.6 P004 (v16-6-112G) Windows 32
+\t (00:00:01)     Journal start - Sat Nov 02 18:58:20 2013
+\t (00:00:01)         Host=GEORGEPC User=George Pid=1356 CPUs=8
+\t (00:00:01) 
+\t (00:00:03) Opening existing design...
+\d (00:00:04) Database opened: C:/Users/George/Dropbox/PCBs/FootprintStarterKit/sot23.dra
+\i (00:00:04) trapsize 31
+\i (00:00:04) trapsize 30
+\i (00:00:04) trapsize 31
+\i (00:00:04) trapsize 30
+\i (00:00:04) trapsize 25
+\i (00:00:05) trapsize 30
+\i (00:00:05) generaledit 
+\i (00:03:06) pick grid 3.578 3.428
+\t (00:03:06) last pick:  2.540  2.540
+\i (00:03:08) exit 
+\e (00:03:08) Do you want to save the changes you made to sot23.dra?
+\i (00:03:10) fillin no 
+\t (00:03:10)     Journal end - Sat Nov 02 19:01:29 2013

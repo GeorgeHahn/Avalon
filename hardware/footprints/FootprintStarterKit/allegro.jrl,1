@@ -1,0 +1,20 @@
+\t (00:00:20) allegro 16.6 P004 (v16-6-112G) Windows 32
+\t (00:00:20)     Journal start - Thu Oct 31 09:42:33 2013
+\t (00:00:20)         Host=GEORGEPC User=George Pid=9880 CPUs=8
+\t (00:00:20) 
+\d (00:00:20) Database opened: C:/Users/George/Dropbox/PCBs/FootprintStarterKit/res_2512.dra
+\i (00:00:20) generaledit 
+\i (00:00:21) pick grid 1.646 2.730
+\t (00:00:21) last pick:  1.650  2.750
+\i (00:00:22) zoom in 1 
+\i (00:00:22) setwindow pcb
+\i (00:00:22) zoom in 1.646 2.730
+\i (00:00:22) trapsize 48
+\i (00:00:24) pick grid 1.180 2.711
+\t (00:00:24) last pick:  1.200  2.700
+\i (00:00:34) pick grid 2.759 3.225
+\t (00:00:34) last pick:  2.750  3.250
+\i (00:00:41) exit 
+\e (00:00:41) Do you want to save the changes you made to res_2512.dra?
+\i (00:00:42) fillin no 
+\t (00:00:42)     Journal end - Thu Oct 31 09:42:56 2013

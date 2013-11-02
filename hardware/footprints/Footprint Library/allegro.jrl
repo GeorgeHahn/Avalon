@@ -1,0 +1,312 @@
+\t (00:23:12) allegro 16.6 P004 (v16-6-112G) Windows 32
+\t (00:23:12)     Journal start - Fri Nov 01 14:44:53 2013
+\t (00:23:12)         Host=GEORGEPC User=George Pid=4872 CPUs=8
+\t (00:23:12) 
+\t (00:23:12) Starting new design...
+\i (00:23:12) trapsize 3
+\i (00:23:12) trapsize 3
+\i (00:23:12) package symbol wizard 
+\i (00:23:12) generaledit 
+\i (00:24:24) setwindow form.sym_wizard
+\i (00:24:24) FORM sym_wizard rca_smd YES 
+\i (00:24:25) FORM sym_wizard wiz_next  
+\i (00:24:29) FORM sym_wizard load_template  
+\t (00:24:29) Opening existing design...
+\t (00:24:29) Grids are drawn 400, 400 apart for enhanced viewability.
+\i (00:24:29) setwindow pcb
+\i (00:24:29) trapsize 140
+\d (00:24:29) Database opened: D:/Cadence/SPB_16.6/share/pcb/pcb_lib/symbols/template/sym_template.dra
+\i (00:24:30) setwindow form.sym_wizard
+\i (00:24:30) FORM sym_wizard wiz_next  
+\i (00:24:33) FORM sym_wizard pack_units Millimeter 
+\i (00:24:37) FORM sym_wizard pack_units_create Millimeter 
+\i (00:24:40) FORM sym_wizard ref_des C* 
+\i (00:24:41) FORM sym_wizard wiz_next  
+\i (00:24:55) FORM sym_wizard smd_discrete_e1 3.000 
+\i (00:25:05) FORM sym_wizard smd_discrete_width 2.000 
+\i (00:25:06) FORM sym_wizard smd_discrete_len 8.000 
+\i (00:25:07) FORM sym_wizard smd_discrete_width 2.800 
+\i (00:25:14) FORM sym_wizard smd_discrete_len 3.500 
+\i (00:25:14) FORM sym_wizard wiz_next  
+\i (00:25:16) FORM sym_wizard default_pad_browse  
+\i (00:25:26) fillin "rect.pad"
+\i (00:25:27) FORM sym_wizard default_pad_browse  
+\t (00:26:21) No valid name selected.
+\i (00:26:30) fillin "60X100"
+\i (00:26:32) FORM sym_wizard wiz_next  
+\i (00:26:34) FORM sym_wizard wiz_next  
+\i (00:26:40) FORM sym_wizard wiz_finish  
+\w (00:26:40) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\t (00:26:40) Grids are drawn 10.160, 10.160 apart for enhanced viewability.
+\i (00:26:40) setwindow pcb
+\i (00:26:40) trapsize 3543
+\t (00:26:40) Performing DRC...
+\t (00:26:40) No DRC errors detected.
+\w (00:26:40) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\i (00:26:40) trapsize 3543
+\i (00:26:40) trapsize 464
+\i (00:26:40) trapsize 62
+\i (00:26:40) trapsize 62
+\t (00:26:40) Creating package symbol 'C:/Users/George/Dropbox/PCBs/Footprint Library/cap_2917.psm'.
+\t (00:26:40) Starting Create symbol...
+\i (00:26:40) generaledit 
+\i (00:26:41) pick grid 5.802 2.214
+\t (00:26:41) last pick:  5.080  2.540
+\i (00:26:43) pick grid 2.021 0.367
+\t (00:26:43) last pick:  2.540  0.000
+\i (00:26:43) pick grid dbl 2.021 0.367
+\t (00:26:43) last pick:  2.540  0.000
+\i (00:26:43) prepopup 2.021 0.367
+\i (00:26:48) pop dyn_option_select 'Quick Utilities@:@Design Parameters...' 
+\i (00:26:48) prmed 
+\i (00:26:51) setwindow form.prmedit
+\i (00:26:51) FORM prmedit cancel  
+\i (00:26:51) setwindow pcb
+\i (00:26:51) generaledit 
+\i (00:27:03) add pin 
+\i (00:27:10) replace padstack 
+\t (00:27:10) Exiting from Add Pin.
+\i (00:27:12) pick grid 1.647 0.318
+\t (00:27:12) last pick:  2.540  0.000
+\i (00:27:13) prepopup 1.647 0.318
+\i (00:27:15) pick grid 1.809 0.792
+\t (00:27:15) last pick:  2.540  0.000
+\w (00:27:15) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\i (00:27:15) pick grid dbl 1.809 0.792
+\t (00:27:15) last pick:  2.540  0.000
+\e (00:27:15) Symbol and Pin must be '*' when replace = old.
+\i (00:27:18) pick grid 1.809 0.792
+\t (00:27:18) last pick:  2.540  0.000
+\e (00:27:18) Symbol and Pin must be '*' when replace = old.
+\i (00:27:21) replace padstack 
+\i (00:27:31) multpadedit 
+\i (00:27:37) padeditdb 
+\i (00:27:38) pick grid 2.171 0.580
+\t (00:27:38) last pick:  2.540  0.000
+\i (00:27:39) prepopup 2.171 0.580
+\i (00:27:40) done 
+\i (00:27:40) generaledit 
+\i (00:27:41) pick grid 6.838 2.140
+\t (00:27:41) last pick:  7.620  2.540
+\i (00:27:42) pick grid 1.809 0.630
+\t (00:27:42) last pick:  2.540  0.000
+\i (00:27:42) prepopup 1.809 0.630
+\i (00:27:46) replace padstack 
+\i (00:27:47) pick grid 2.083 0.530
+\t (00:27:47) last pick:  2.540  0.000
+\i (00:27:47) prepopup 2.083 0.530
+\i (00:27:48) done 
+\i (00:27:48) generaledit 
+\i (00:27:50) pick grid 2.445 0.080
+\t (00:27:50) last pick:  2.540  0.000
+\i (00:27:50) drag_start grid 1.672 0.130
+\i (00:27:51) drag_stop 7.075 -0.069
+\i (00:27:51) pick grid 1.622 0.193
+\t (00:27:51) last pick:  2.540  0.000
+\i (00:27:52) drag_start grid 2.171 0.679
+\i (00:27:53) drag_stop 1.946 0.068
+\i (00:27:53) pick grid 1.871 0.430
+\t (00:27:53) last pick:  2.540  0.000
+\i (00:27:54) prepopup 1.946 0.679
+\i (00:28:03) pop dyn_option_select 'Customize@:@Enable Single Click Execution' 
+\i (00:28:04) drag_start grid 1.809 0.617
+\i (00:28:04) drag_stop 5.915 -0.943
+\i (00:28:05) pick grid 1.859 0.505
+\t (00:28:05) last pick:  2.540  0.000
+\i (00:28:06) drag_start grid 1.971 -0.019
+\i (00:28:06) drag_stop 2.233 -0.955
+\i (00:28:06) pick grid 1.984 0.080
+\t (00:28:06) last pick:  2.540  0.000
+\i (00:28:10) padeditdb 
+\i (00:28:13) replace padstack 
+\i (00:28:14) pick grid 1.984 0.417
+\t (00:28:14) last pick:  2.540  0.000
+\i (00:28:16) pick grid 1.984 0.417
+\t (00:28:16) last pick:  2.540  0.000
+\w (00:28:16) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\i (00:28:16) pick grid dbl 1.984 0.417
+\t (00:28:16) last pick:  2.540  0.000
+\e (00:28:16) Symbol and Pin must be '*' when replace = old.
+\i (00:28:21) prepopup 1.784 -0.219
+\i (00:28:23) done 
+\i (00:28:23) generaledit 
+\i (00:28:23) prepopup 1.385 0.143
+\i (00:28:24) prepopup 1.759 0.729
+\i (00:28:26) delete 
+\i (00:28:26) generaledit 
+\i (00:28:28) undo 
+\i (00:28:28) trapsize 62
+\i (00:28:28) generaledit 
+\i (00:28:37) etchedit 
+\i (00:28:39) generaledit 
+\i (00:28:40) generaledit 
+\i (00:28:41) etchedit 
+\i (00:28:42) generaledit 
+\i (00:28:51) create detail 
+\i (00:28:53) pick -0.113 5.060
+\t (00:28:53) last pick:  -0.113  5.060
+\i (00:28:53) pick 5.191 3.450
+\t (00:28:53) last pick:  5.191  3.450
+\i (00:28:56) Esc 
+\i (00:28:57) undo 
+\i (00:28:57) trapsize 62
+\i (00:28:57) generaledit 
+\i (00:28:57) prepopup -3.358 6.358
+\i (00:28:58) pick grid -3.358 7.730
+\t (00:28:58) last pick:  -3.175  7.620
+\i (00:29:34) pick grid 2.059 8.354
+\t (00:29:34) last pick:  1.905  8.255
+\i (00:29:42) artwork 
+\i (00:29:44) setwindow form.film_control
+\i (00:29:44) FORM film_control general_parameters  
+\i (00:29:50) FORM film_control film_control  
+\i (00:29:59) FORM film_control cancel  
+\i (00:29:59) setwindow pcb
+\i (00:29:59) generaledit 
+\i (00:30:32) pick grid 1.821 0.555
+\t (00:30:32) last pick:  1.905  0.635
+\i (00:30:33) pick grid 1.959 0.318
+\t (00:30:33) last pick:  1.905  0.635
+\i (00:30:40) padeditdb 
+\i (00:30:47) prepopup 1.672 0.642
+\i (00:30:49) pick grid 1.747 0.954
+\t (00:30:49) last pick:  1.905  1.270
+\i (00:30:49) prepopup 1.784 0.592
+\i (00:30:50) padeditcur 
+\i (00:31:11) setwindow form.padedit
+\i (00:31:11) FORM padedit layers  
+\i (00:31:12) FORM padedit grid row top 
+\i (00:31:23) FORM padedit width 1.6 
+\i (00:31:27) FORM padedit height 2.7 
+\i (00:31:27) FORM padedit grid row soldermask_top 
+\i (00:31:31) FORM padedit width 1.7 
+\i (00:31:35) FORM padedit height 2.8 
+\i (00:31:35) FORM padedit grid row pastemask_top 
+\i (00:31:44) FORM padedit width 1.6 
+\i (00:31:47) FORM padedit height 2.7 
+\i (00:31:47) FORM padedit grid row soldermask_top 
+\i (00:31:48) FORM padedit parameters  
+\i (00:31:53) pse_update_exit 
+\i (00:31:54) setwindow pcb
+\i (00:31:54) pick grid -3.757 2.801
+\t (00:31:54) last pick:  -3.810  2.540
+\i (00:31:56) save 
+\t (00:31:56) DRC Required please wait...
+\t (00:31:56) Performing DRC...
+\t (00:31:56) No DRC errors detected.
+\i (00:31:58) fillin yes 
+\t (00:31:58) Symbol 'cap_2917.psm' created.
+\i (00:31:58) generaledit 
+\i (00:31:59) save 
+\i (00:32:01) fillin yes 
+\t (00:32:01) Symbol 'cap_2917.psm' created.
+\i (00:32:01) generaledit 
+\i (00:32:06) pick grid 5.990 7.381
+\t (00:32:06) last pick:  5.715  7.620
+\i (00:32:10) new 
+\i (01:52:06) newdrawfillin "SOD323.dra" "Package Symbol (Wizard)"
+\t (01:52:06) Starting new design...
+\i (01:52:06) trapsize 62
+\i (01:52:06) trapsize 62
+\i (01:52:07) package symbol wizard 
+\i (01:52:07) generaledit 
+\i (01:52:31) setwindow form.sym_wizard
+\i (01:52:31) FORM sym_wizard rca_smd YES 
+\i (01:52:32) FORM sym_wizard wiz_next  
+\i (01:52:34) FORM sym_wizard load_template  
+\t (01:52:34) Opening existing design...
+\t (01:52:34) Grids are drawn 400, 400 apart for enhanced viewability.
+\i (01:52:34) setwindow pcb
+\i (01:52:34) trapsize 140
+\d (01:52:34) Database opened: D:/Cadence/SPB_16.6/share/pcb/pcb_lib/symbols/template/sym_template.dra
+\i (01:52:35) setwindow form.sym_wizard
+\i (01:52:35) FORM sym_wizard wiz_next  
+\i (01:52:41) FORM sym_wizard pack_units Millimeter 
+\i (01:52:46) FORM sym_wizard wiz_next  
+\i (01:53:44) FORM sym_wizard smd_discrete_e1 2.500 
+\i (01:53:53) FORM sym_wizard smd_discrete_width 1.700 
+\i (01:54:04) FORM sym_wizard smd_discrete_len 1.350 
+\i (01:54:04) FORM sym_wizard wiz_next  
+\i (01:54:25) FORM sym_wizard default_pad_browse  
+\i (01:54:49) fillin "Smd20_17"
+\i (01:54:50) FORM sym_wizard wiz_next  
+\i (01:54:54) FORM sym_wizard wiz_next  
+\i (01:54:56) FORM sym_wizard wiz_finish  
+\w (01:54:56) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\t (01:54:56) Grids are drawn 10.160, 10.160 apart for enhanced viewability.
+\i (01:54:56) setwindow pcb
+\i (01:54:56) trapsize 3543
+\t (01:54:56) Performing DRC...
+\t (01:54:56) No DRC errors detected.
+\w (01:54:56) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\i (01:54:56) trapsize 3543
+\i (01:54:56) trapsize 464
+\i (01:54:56) trapsize 31
+\i (01:54:56) trapsize 31
+\w (01:54:56) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\i (01:54:56) trapsize 1
+\t (01:54:56) Performing DRC...
+\t (01:54:56) No DRC errors detected.
+\t (01:54:56) Creating package symbol 'C:/Users/George/Dropbox/PCBs/Footprint Library/sod323.psm'.
+\t (01:54:56) Starting Create symbol...
+\i (01:54:57) generaledit 
+\i (01:54:58) zoom in 1 
+\i (01:54:58) setwindow pcb
+\i (01:54:58) zoom in -2 -16
+\i (01:54:58) trapsize 1
+\i (01:55:05) pick grid -57 50
+\t (01:55:05) last pick:  -100  100
+\i (01:55:08) save 
+\i (01:55:10) fillin yes 
+\t (01:55:10) Symbol 'sod323.psm' created.
+\i (01:55:10) generaledit 
+\i (02:40:21) new 
+\i (02:41:19) newdrawfillin "HEADER100_5.dra" "Package Symbol"
+\t (02:41:19) Starting new design...
+\i (02:41:19) trapsize 1
+\i (02:41:19) trapsize 1
+\i (02:41:20) generaledit 
+\i (02:41:24) new 
+\e (02:41:24) Do you want to save the changes you made to HEADER100_5.dra?
+\i (02:41:25) fillin no 
+\i (02:41:28) newdrawfillin "HEADER100_5.dra" "Package Symbol (Wizard)"
+\t (02:41:28) Starting new design...
+\i (02:41:28) trapsize 1
+\i (02:41:28) trapsize 1
+\i (02:41:28) package symbol wizard 
+\i (02:41:28) generaledit 
+\i (02:41:31) setwindow form.sym_wizard
+\i (02:41:31) FORM sym_wizard soic YES 
+\i (02:41:31) FORM sym_wizard plcc YES 
+\i (02:41:32) FORM sym_wizard bga YES 
+\i (02:41:33) FORM sym_wizard rca_th YES 
+\i (02:41:33) FORM sym_wizard rca_smd YES 
+\i (02:41:34) FORM sym_wizard sip YES 
+\i (02:41:34) FORM sym_wizard zip YES 
+\i (02:41:36) FORM sym_wizard sip YES 
+\i (02:41:38) FORM sym_wizard wiz_next  
+\i (02:41:40) FORM sym_wizard load_template  
+\t (02:41:40) Opening existing design...
+\t (02:41:40) Grids are drawn 400, 400 apart for enhanced viewability.
+\i (02:41:40) setwindow pcb
+\i (02:41:40) trapsize 140
+\d (02:41:40) Database opened: D:/Cadence/SPB_16.6/share/pcb/pcb_lib/symbols/template/sym_template.dra
+\i (02:41:41) setwindow form.sym_wizard
+\i (02:41:41) FORM sym_wizard wiz_next  
+\i (02:41:45) FORM sym_wizard ref_des J* 
+\i (02:41:46) FORM sym_wizard wiz_next  
+\i (02:41:52) FORM sym_wizard sip_pin_count 5 
+\i (02:41:58) FORM sym_wizard sip_len 550 
+\i (02:41:59) FORM sym_wizard wiz_next  
+\i (02:42:00) FORM sym_wizard default_pad_browse  
+\i (02:43:28) fillin "Th0_8C1_4C"
+\i (02:43:29) FORM sym_wizard wiz_next  
+\i (02:43:34) FORM sym_wizard wiz_back  
+\i (02:43:36) FORM sym_wizard pin1_pad_browse  
+\i (02:43:51) fillin "Th0_8C1_4S"
+\i (02:43:53) FORM sym_wizard wiz_next  
+\i (02:43:54) FORM sym_wizard wiz_next  
+\i (02:43:55) FORM sym_wizard wiz_finish  
+\w (02:43:55) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (02:43:55) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\w (02:43:55) WARNING(SPMHUT-48): Scaled value has been round
