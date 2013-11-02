@@ -1,0 +1,22 @@
+\t (00:00:00) allegro 16.6 P004 (v16-6-112G) Windows 32
+\t (00:00:00)     Journal start - Thu Oct 31 09:42:14 2013
+\t (00:00:00)         Host=GEORGEPC User=George Pid=9880 CPUs=8
+\t (00:00:00) 
+\t (00:00:01) Starting new design...
+\i (00:00:01) trapsize 786
+\i (00:00:01) trapsize 769
+\i (00:00:01) trapsize 789
+\i (00:00:01) trapsize 797
+\i (00:00:02) trapsize 672
+\i (00:00:02) trapsize 672
+\i (00:00:02) generaledit 
+\i (00:00:04) open 
+\i (00:00:19) fillin "C:\Users\George\Dropbox\PCBs\FootprintStarterKit\res_2512.dra"
+\i (00:00:19) cd "C:\Users\George\Dropbox\PCBs\FootprintStarterKit"
+\t (00:00:19) Opening existing design...
+\t (00:00:19) Grids are drawn 0.200, 0.200 apart for enhanced viewability.
+\i (00:00:19) trapsize 96
+\i (00:00:19) trapsize 93
+\i (00:00:19) trapsize 95
+\i (00:00:20) trapsize 95
+\t (00:00:20)     Journal end - Thu Oct 31 09:42:33 2013

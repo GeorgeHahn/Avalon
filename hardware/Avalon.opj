@@ -1,0 +1,186 @@
+(ExpressProject "Avalon"
+  (ProjectVersion "19981106")
+  (ProjectType "PCB")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File "..\parts.olb"
+        (Type "Schematic Library")))
+    (NoModify)
+    (File ".\avalon.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    ("Create Allegro Netlist" "TRUE")
+    ("Allegro Netlist Directory" "netlist")
+    ("View Allegro Netlist Files" "FALSE")
+    ("Allegro Netlist Create DCF File" "FALSE")
+    ("Update Allegro Board" "TRUE")
+    ("Allegro Netlist Output Board File" "allegro\AVALON.brd")
+    ("Allegro Netlist Remove Etch" "FALSE")
+    ("Allegro Netlist Place Changed Component" "ALWAYS_REPLACE")
+    ("Allegro Netlist Open Board in Allegro" "ALLEGRO")
+    ("Allegro Setup Backup Versions" "3")
+    ("Allegro Setup Output Warnings" "TRUE")
+    ("Allegro Setup Ignore Constraints" "FALSE")
+    ("Allegro Setup Part Type Length" "31")
+    ("Allegro Netlist Combine Property String" "PCB Footprint")
+    ("Allegro Netlist Ignore Fixed Property" "FALSE")
+    ("Allegro Netlist User Defined Property" "FALSE")
+    (Netlist_TAB "0"))
+  (Folder "Outputs"
+    (File ".\netlist\pstxnet.dat"
+      (Type "Report")
+      (DisplayName "pstxnet.dat"))
+    (File ".\netlist\pstxprt.dat"
+      (Type "Report")
+      (DisplayName "pstxprt.dat"))
+    (File ".\netlist\pstchip.dat"
+      (Type "Report")
+      (DisplayName "pstchip.dat")))
+  (Folder "Referenced Projects")
+  (PartMRUSelector
+    (CRYSTAL
+      (FullPartName "CRYSTAL.Normal")
+      (LibraryName "D:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (GND
+      (LibraryName "D:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    ("NPN BCE"
+      (FullPartName "NPN BCE.Normal")
+      (LibraryName "D:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\TRANSISTOR.OLB")
+      (DeviceIndex "0"))
+    ("HEADER 3"
+      (FullPartName "HEADER 3.Normal")
+      (LibraryName "D:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
+      (DeviceIndex "0"))
+    (RESISTOR
+      (FullPartName "RESISTOR.Normal")
+      (LibraryName "D:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (LM63
+      (FullPartName "LM63.Normal")
+      (LibraryName "C:\USERS\GEORGE\DROPBOX\PCBS\PARTS.OLB")
+      (DeviceIndex "0"))
+    (VCC_ARROW
+      (LibraryName "D:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    ("BitSyncom A3255Q48"
+      (FullPartName "BitSyncom A3255Q48.Normal")
+      (LibraryName "C:\USERS\GEORGE\DROPBOX\PCBS\PARTS.OLB")
+      (DeviceIndex "0"))
+    ("Molex 0473460001"
+      (FullPartName "Molex 0473460001.Normal")
+      (LibraryName "C:\USERS\GEORGE\DROPBOX\PCBS\PARTS.OLB")
+      (DeviceIndex "0"))
+    (PIC18F45K50
+      (FullPartName "PIC18F45K50.Normal")
+      (LibraryName "C:\USERS\GEORGE\DROPBOX\PCBS\PARTS.OLB")
+      (DeviceIndex "0"))
+    (CSD86350Q5D
+      (FullPartName "CSD86350Q5D.Normal")
+      (LibraryName "C:\USERS\GEORGE\DROPBOX\PCBS\PARTS.OLB")
+      (DeviceIndex "0"))
+    ("HEADER 5"
+      (FullPartName "HEADER 5.Normal")
+      (LibraryName "D:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
+      (DeviceIndex "0"))
+    ("CAP NP"
+      (FullPartName "CAP NP.Normal")
+      (LibraryName "D:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (ASDMB
+      (FullPartName "ASDMB.Normal")
+      (LibraryName "C:\USERS\GEORGE\DROPBOX\PCBS\PARTS.OLB")
+      (DeviceIndex "0"))
+    (IDT74FCT3807APYG
+      (FullPartName "IDT74FCT3807APYG.Normal")
+      (LibraryName "C:\USERS\GEORGE\DROPBOX\PCBS\PARTS.OLB")
+      (DeviceIndex "0"))
+    (LED
+      (FullPartName "LED.Normal")
+      (LibraryName "D:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    ("CONN JACK PWR"
+      (FullPartName "CONN JACK PWR.Normal")
+      (LibraryName "D:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
+      (DeviceIndex "0"))
+    (KA78L05AIDTF
+      (FullPartName "KA78L05AIDTF.Normal")
+      (LibraryName "C:\USERS\GEORGE\DROPBOX\PCBS\PARTS.OLB")
+      (DeviceIndex "0"))
+    (AP1117IE33G-13
+      (FullPartName "AP1117IE33G-13.Normal")
+      (LibraryName "C:\USERS\GEORGE\DROPBOX\PCBS\PARTS.OLB")
+      (DeviceIndex "0"))
+    ("DIODE SCHOTTKY"
+      (FullPartName "DIODE SCHOTTKY.Normal")
+      (LibraryName "D:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (INDUCTOR
+      (FullPartName "INDUCTOR.Normal")
+      (LibraryName "D:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (CAPACITOR
+      (FullPartName "CAPACITOR.Normal")
+      (LibraryName "D:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (LM27213
+      (FullPartName "LM27213.Normal")
+      (LibraryName "C:\USERS\GEORGE\DROPBOX\PCBS\PARTS.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" "C:\USERS\GEORGE\DROPBOX\PCBS\Avalon\avalon.dsn")
+      (Path "Design Resources" "C:\USERS\GEORGE\DROPBOX\PCBS\Avalon\avalon.dsn"
+         "SCHEMATIC1")
+      (Path "Design Resources" "C:\USERS\GEORGE\DROPBOX\PCBS\Avalon\avalon.dsn"
+         "Design Cache")
+      (Path "Design Resources" "Library")
+      (Path "Design Resources" "Library"
+         "C:\USERS\GEORGE\DROPBOX\PCBS\parts.olb")
+      (Path "Outputs")
+      (Select "Design Resources"
+         "C:\USERS\GEORGE\DROPBOX\PCBS\Avalon\avalon.dsn" "SCHEMATIC1" "PAGE1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -4 -27 0 200 0 802"))
+      (Tab 0))
+    (Doc
+      (Type "COrPartDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -27 78 2201 78 911")
+        (PackageScroll "0 0")
+        (PackageZoom "1")
+        (PartPackage "Part")
+        (Scroll "4669 2029")
+        (Zoom "474"))
+      (Path "C:\USERS\GEORGE\DROPBOX\PCBS\PARTS.OLB")
+      (Package "AMC6821SQDBQRQ1"))
+    (Doc
+      (Type "COrPartDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -27 104 2227 104 937")
+        (PackageScroll "0 0")
+        (PackageZoom "1")
+        (PartPackage "Part")
+        (Scroll "4539 1911")
+        (Zoom "475"))
+      (Path "C:\USERS\GEORGE\DROPBOX\PCBS\PARTS.OLB")
+      (Package "LM63"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -27 52 2175 52 885")
+        (Scroll "0 736")
+        (Zoom "232")
+        (Occurrence "/"))
+      (Path "C:\USERS\GEORGE\DROPBOX\PCBS\AVALON\AVALON.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1")))
+  (LastUsedLibraryBrowseDirectory "C:\Users\George\Dropbox\PCBs")
+  (MPSSessionName "George")
+  (ISPCBBASICLICENSE "false"))

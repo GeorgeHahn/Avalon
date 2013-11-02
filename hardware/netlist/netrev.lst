@@ -1,0 +1,163 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Allegro Netrev Import Logic                                      )
+(                                                                     )
+(    Drawing          : AVALON.brd                                    )
+(    Software Version : 16.6P004                                      )
+(    Date/Time        : Sat Nov 02 19:06:07 2013                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+------ Directives ------
+
+RIPUP_ETCH FALSE;
+RIPUP_DELETE_FIRST_SEGMENT FALSE;
+RIPUP_RETAIN_BONDWIRE FALSE;
+RIPUP_SYMBOLS ALWAYS;
+Missing symbol has error FALSE;
+SCHEMATIC_DIRECTORY 'C:\USERS\GEORGE\DROPBOX\PCBS\AVALON\netlist';
+BOARD_DIRECTORY 'C:/USERS/GEORGE/DROPBOX/PCBS/AVALON/allegro';
+OLD_BOARD_NAME 'C:/USERS/GEORGE/DROPBOX/PCBS/AVALON/allegro/AVALON.brd';
+NEW_BOARD_NAME 'C:/USERS/GEORGE/DROPBOX/PCBS/AVALON/allegro/AVALON.brd';
+
+CmdLine: netrev.exe -y 1 -n -i C:\USERS\GEORGE\DROPBOX\PCBS\AVALON\netlist C:\USERS\GEORGE\DROPBOX\PCBS\AVALON\allegro\AVALON.brd C:\USERS\GEORGE\DROPBOX\PCBS\AVALON\allegro\AVALON.brd
+
+------ Preparing to read pst files ------
+
+Starting to read C:/USERS/GEORGE/DROPBOX/PCBS/AVALON/netlist/pstchip.dat 
+   Finished reading C:/USERS/GEORGE/DROPBOX/PCBS/AVALON/netlist/pstchip.dat (00:00:00.09)
+Starting to read C:/USERS/GEORGE/DROPBOX/PCBS/AVALON/netlist/pstxprt.dat 
+   Finished reading C:/USERS/GEORGE/DROPBOX/PCBS/AVALON/netlist/pstxprt.dat (00:00:00.01)
+Starting to read C:/USERS/GEORGE/DROPBOX/PCBS/AVALON/netlist/pstxnet.dat 
+   Finished reading C:/USERS/GEORGE/DROPBOX/PCBS/AVALON/netlist/pstxnet.dat (00:00:00.00)
+
+------ Oversights/Warnings/Errors ------
+
+
+#1   WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
+
+WARNING(SPMHNI-194): Symbol 'CAP_2917' for device 'CAPACITOR_CAP_2917_330UF' not found in PSMPATH or must be "dbdoctor"ed.
+
+     Database has a non-recoverable corruption. Contact Cadence customer support.
+
+#2   WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
+
+WARNING(SPMHNI-194): Symbol 'CUI_PJ_037BH' for device 'CONN JACK PWR_CUI_PJ_037BH_CUI' not found in PSMPATH or must be "dbdoctor"ed.
+
+#3   WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
+
+WARNING(SPMHNI-194): Symbol 'MOLEX_0473460001' for device 'MOLEX 0473460001_MOLEX_04734600' not found in PSMPATH or must be "dbdoctor"ed.
+
+#4   WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
+
+WARNING(SPMHNI-194): Symbol 'HEADER100_3' for device 'HEADER 3_HEADER100_3_FAN' not found in PSMPATH or must be "dbdoctor"ed.
+
+#5   WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
+
+WARNING(SPMHNI-194): Symbol 'ETQ-P4L' for device 'INDUCTOR_ETQ-P4L_560NH' not found in PSMPATH or must be "dbdoctor"ed.
+
+#6   WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
+
+WARNING(SPMHNI-194): Symbol 'RES_1225' for device 'RESISTOR_RES_1225_0.003' not found in PSMPATH or must be "dbdoctor"ed.
+
+#7   WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
+
+WARNING(SPMHNI-194): Symbol 'QFN48' for device 'BITSYNCOM A3255Q48_QFN48_BITSYN' not found in PSMPATH or must be "dbdoctor"ed.
+
+#8   WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
+
+WARNING(SPMHNI-194): Symbol '8-XSON' for device '74AUP2G02_8-XSON_74AUP2G02' not found in PSMPATH or must be "dbdoctor"ed.
+
+#9   WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
+
+WARNING(SPMHNI-194): Symbol 'SC-88' for device 'NL27WZ14DFT2G_SC-88_NL27WZ14DFT' not found in PSMPATH or must be "dbdoctor"ed.
+
+#10  WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
+
+WARNING(SPMHNI-194): Symbol '8SON_POWERBLOCK' for device 'CSD86350Q5D_8SON_POWERBLOCK_CSD' not found in PSMPATH or must be "dbdoctor"ed.
+
+#11  WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
+
+WARNING(SPMHNI-194): Symbol 'TI_D_R_PDSO_G8' for device 'LM63_TI_D_R_PDSO_G8_LM63' not found in PSMPATH or must be "dbdoctor"ed.
+
+#12  WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
+
+WARNING(SPMHNI-194): Symbol 'SOT224' for device 'AP1117IE33G-13_SOT224_AP1117IE3' not found in PSMPATH or must be "dbdoctor"ed.
+
+#13  WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
+
+WARNING(SPMHNI-194): Symbol '8-SOIC' for device 'KA78L05AIDTF_8-SOIC_KA78L05AIDT' not found in PSMPATH or must be "dbdoctor"ed.
+
+#14  WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
+
+WARNING(SPMHNI-194): Symbol '20-SSOP' for device 'IDT74FCT3807APYG_20-SSOP_IDT74F' not found in PSMPATH or must be "dbdoctor"ed.
+
+#15  WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
+
+WARNING(SPMHNI-194): Symbol '4-SMD-DFNLLC' for device 'ASDMB_4-SMD-DFNLLC_ASDMB-25.000' not found in PSMPATH or must be "dbdoctor"ed.
+
+#16  WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
+
+WARNING(SPMHNI-194): Symbol '40-UFQFN' for device 'PIC18F45K50_40-UFQFN_PIC18F45K5' not found in PSMPATH or must be "dbdoctor"ed.
+
+#17  WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
+
+WARNING(SPMHNI-194): Symbol 'HC49_US' for device 'CRYSTAL_HC49_US_CRYSTAL' not found in PSMPATH or must be "dbdoctor"ed.
+
+------ Library Paths ------
+MODULEPATH =  . 
+           D:/Cadence/SPB_16.6/share/local/pcb/modules 
+
+PSMPATH =  . 
+           symbols 
+           .. 
+           ../symbols 
+           D:/Cadence/SPB_16.6/share/local/pcb/symbols 
+           D:/Cadence/SPB_16.6/share/pcb/pcb_lib/symbols 
+           D:/Cadence/SPB_16.6/share/pcb/allegrolib/symbols 
+           C:/Users/George/Dropbox/PCBs/Footprint Library/ 
+           C:/USERS/GEORGE/DROPBOX/PCBS/FootprintStarterKit/ 
+
+PADPATH =  . 
+           symbols 
+           .. 
+           ../symbols 
+           D:/Cadence/SPB_16.6/share/local/pcb/padstacks 
+           D:/Cadence/SPB_16.6/share/pcb/pcb_lib/symbols 
+           D:/Cadence/SPB_16.6/share/pcb/allegrolib/symbols 
+           C:/USERS/GEORGE/DROPBOX/PCBS/Footprint Library/ 
+           C:/USERS/GEORGE/DROPBOX/PCBS/FootprintStarterKit/ 
+
+
+------ Summary Statistics ------
+
+
+netrev run on Nov 2 19:06:07 2013
+   DESIGN NAME : 'AVALON'
+   PACKAGING ON Sep 10 2012 04:46:09
+
+   COMPILE 'logic'
+   CHECK_PIN_NAMES OFF
+   CROSS_REFERENCE OFF
+   FEEDBACK OFF
+   INCREMENTAL OFF
+   INTERFACE_TYPE PHYSICAL
+   MAX_ERRORS 500
+   MERGE_MINIMUM 5
+   NET_NAME_CHARS '#%&()*+-./:=>?@[]^_`|'
+   NET_NAME_LENGTH 24
+   OVERSIGHTS ON
+   REPLACE_CHECK OFF
+   SINGLE_NODE_NETS ON
+   SPLIT_MINIMUM 0
+   SUPPRESS   20
+   WARNINGS ON
+
+ No error detected
+ No oversight detected
+ 17 warnings detected
+
+cpu time      0:03:31
+elapsed time  0:00:01
+
