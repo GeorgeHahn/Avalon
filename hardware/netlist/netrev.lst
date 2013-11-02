@@ -4,7 +4,7 @@
 (                                                                     )
 (    Drawing          : AVALON.brd                                    )
 (    Software Version : 16.6P004                                      )
-(    Date/Time        : Sat Nov 02 19:06:07 2013                      )
+(    Date/Time        : Sat Nov 02 19:14:05 2013                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -16,21 +16,21 @@ RIPUP_DELETE_FIRST_SEGMENT FALSE;
 RIPUP_RETAIN_BONDWIRE FALSE;
 RIPUP_SYMBOLS ALWAYS;
 Missing symbol has error FALSE;
-SCHEMATIC_DIRECTORY 'C:\USERS\GEORGE\DROPBOX\PCBS\AVALON\netlist';
-BOARD_DIRECTORY 'C:/USERS/GEORGE/DROPBOX/PCBS/AVALON/allegro';
-OLD_BOARD_NAME 'C:/USERS/GEORGE/DROPBOX/PCBS/AVALON/allegro/AVALON.brd';
-NEW_BOARD_NAME 'C:/USERS/GEORGE/DROPBOX/PCBS/AVALON/allegro/AVALON.brd';
+SCHEMATIC_DIRECTORY 'C:\USERS\GEORGE\DOCUMENTS\GITHUB\AVALON\HARDWARE\netlist';
+BOARD_DIRECTORY 'C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro';
+OLD_BOARD_NAME 'C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd';
+NEW_BOARD_NAME 'C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd';
 
-CmdLine: netrev.exe -y 1 -n -i C:\USERS\GEORGE\DROPBOX\PCBS\AVALON\netlist C:\USERS\GEORGE\DROPBOX\PCBS\AVALON\allegro\AVALON.brd C:\USERS\GEORGE\DROPBOX\PCBS\AVALON\allegro\AVALON.brd
+CmdLine: netrev.exe -y 1 -n -i C:\USERS\GEORGE\DOCUMENTS\GITHUB\AVALON\HARDWARE\netlist C:\USERS\GEORGE\DOCUMENTS\GITHUB\AVALON\HARDWARE\allegro\AVALON.brd C:\USERS\GEORGE\DOCUMENTS\GITHUB\AVALON\HARDWARE\allegro\AVALON.brd
 
 ------ Preparing to read pst files ------
 
-Starting to read C:/USERS/GEORGE/DROPBOX/PCBS/AVALON/netlist/pstchip.dat 
-   Finished reading C:/USERS/GEORGE/DROPBOX/PCBS/AVALON/netlist/pstchip.dat (00:00:00.09)
-Starting to read C:/USERS/GEORGE/DROPBOX/PCBS/AVALON/netlist/pstxprt.dat 
-   Finished reading C:/USERS/GEORGE/DROPBOX/PCBS/AVALON/netlist/pstxprt.dat (00:00:00.01)
-Starting to read C:/USERS/GEORGE/DROPBOX/PCBS/AVALON/netlist/pstxnet.dat 
-   Finished reading C:/USERS/GEORGE/DROPBOX/PCBS/AVALON/netlist/pstxnet.dat (00:00:00.00)
+Starting to read C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/netlist/pstchip.dat 
+   Finished reading C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/netlist/pstchip.dat (00:00:00.04)
+Starting to read C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/netlist/pstxprt.dat 
+   Finished reading C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/netlist/pstxprt.dat (00:00:00.00)
+Starting to read C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/netlist/pstxnet.dat 
+   Finished reading C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/netlist/pstxnet.dat (00:00:00.00)
 
 ------ Oversights/Warnings/Errors ------
 
@@ -133,7 +133,7 @@ PADPATH =  .
 ------ Summary Statistics ------
 
 
-netrev run on Nov 2 19:06:07 2013
+netrev run on Nov 2 19:14:05 2013
    DESIGN NAME : 'AVALON'
    PACKAGING ON Sep 10 2012 04:46:09
 
@@ -158,6 +158,6 @@ netrev run on Nov 2 19:06:07 2013
  No oversight detected
  17 warnings detected
 
-cpu time      0:03:31
+cpu time      0:00:44
 elapsed time  0:00:01
 

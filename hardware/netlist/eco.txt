@@ -2,8 +2,8 @@
 |                                 ECO   REPORT                                 |
 |                                                                    Page   1  |
 |------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DROPBOX/PCBS/AVALON/allegro/AVALON.brd                      |
-|                                                    Sat Nov 02 19:06:08 2013  |
+|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
+|                                                    Sat Nov 02 19:14:05 2013  |
 |------------------------------------------------------------------------------|
 | NET CHANGES                                                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
@@ -58,8 +58,8 @@
 |                                 ECO   REPORT                                 |
 |                                                                    Page   2  |
 |------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DROPBOX/PCBS/AVALON/allegro/AVALON.brd                      |
-|                                                    Sat Nov 02 19:06:08 2013  |
+|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
+|                                                    Sat Nov 02 19:14:05 2013  |
 |------------------------------------------------------------------------------|
 | NET CHANGES                                                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
@@ -114,8 +114,8 @@
 |                                 ECO   REPORT                                 |
 |                                                                    Page   3  |
 |------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DROPBOX/PCBS/AVALON/allegro/AVALON.brd                      |
-|                                                    Sat Nov 02 19:06:08 2013  |
+|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
+|                                                    Sat Nov 02 19:14:05 2013  |
 |------------------------------------------------------------------------------|
 | NET CHANGES                                                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
@@ -170,8 +170,8 @@
 |                                 ECO   REPORT                                 |
 |                                                                    Page   4  |
 |------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DROPBOX/PCBS/AVALON/allegro/AVALON.brd                      |
-|                                                    Sat Nov 02 19:06:08 2013  |
+|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
+|                                                    Sat Nov 02 19:14:05 2013  |
 |------------------------------------------------------------------------------|
 | NET CHANGES                                                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
@@ -226,8 +226,8 @@
 |                                 ECO   REPORT                                 |
 |                                                                    Page   5  |
 |------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DROPBOX/PCBS/AVALON/allegro/AVALON.brd                      |
-|                                                    Sat Nov 02 19:06:08 2013  |
+|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
+|                                                    Sat Nov 02 19:14:05 2013  |
 |------------------------------------------------------------------------------|
 | NET CHANGES                                                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
@@ -282,8 +282,8 @@
 |                                 ECO   REPORT                                 |
 |                                                                    Page   6  |
 |------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DROPBOX/PCBS/AVALON/allegro/AVALON.brd                      |
-|                                                    Sat Nov 02 19:06:08 2013  |
+|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
+|                                                    Sat Nov 02 19:14:05 2013  |
 |------------------------------------------------------------------------------|
 | NET CHANGES                                                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
@@ -338,8 +338,8 @@
 |                                 ECO   REPORT                                 |
 |                                                                    Page   7  |
 |------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DROPBOX/PCBS/AVALON/allegro/AVALON.brd                      |
-|                                                    Sat Nov 02 19:06:08 2013  |
+|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
+|                                                    Sat Nov 02 19:14:05 2013  |
 |------------------------------------------------------------------------------|
 | NET CHANGES                                                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
@@ -394,8 +394,8 @@
 |                                 ECO   REPORT                                 |
 |                                                                    Page   8  |
 |------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DROPBOX/PCBS/AVALON/allegro/AVALON.brd                      |
-|                                                    Sat Nov 02 19:06:08 2013  |
+|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
+|                                                    Sat Nov 02 19:14:05 2013  |
 |------------------------------------------------------------------------------|
 | NET CHANGES                                                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
@@ -450,8 +450,8 @@
 |                                 ECO   REPORT                                 |
 |                                                                    Page   9  |
 |------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DROPBOX/PCBS/AVALON/allegro/AVALON.brd                      |
-|                                                    Sat Nov 02 19:06:08 2013  |
+|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
+|                                                    Sat Nov 02 19:14:05 2013  |
 |------------------------------------------------------------------------------|
 | NET CHANGES                                                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
@@ -506,8 +506,8 @@
 |                                 ECO   REPORT                                 |
 |                                                                    Page  10  |
 |------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DROPBOX/PCBS/AVALON/allegro/AVALON.brd                      |
-|                                                    Sat Nov 02 19:06:08 2013  |
+|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
+|                                                    Sat Nov 02 19:14:05 2013  |
 |------------------------------------------------------------------------------|
 | NET CHANGES                                                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
@@ -562,8 +562,8 @@
 |                                 ECO   REPORT                                 |
 |                                                                    Page  11  |
 |------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DROPBOX/PCBS/AVALON/allegro/AVALON.brd                      |
-|                                                    Sat Nov 02 19:06:08 2013  |
+|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
+|                                                    Sat Nov 02 19:14:05 2013  |
 |------------------------------------------------------------------------------|
 | NET CHANGES                                                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
@@ -618,8 +618,8 @@
 |                                 ECO   REPORT                                 |
 |                                                                    Page  12  |
 |------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DROPBOX/PCBS/AVALON/allegro/AVALON.brd                      |
-|                                                    Sat Nov 02 19:06:08 2013  |
+|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
+|                                                    Sat Nov 02 19:14:05 2013  |
 |------------------------------------------------------------------------------|
 | NET CHANGES                                                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
@@ -674,8 +674,8 @@
 |                                 ECO   REPORT                                 |
 |                                                                    Page  13  |
 |------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DROPBOX/PCBS/AVALON/allegro/AVALON.brd                      |
-|                                                    Sat Nov 02 19:06:08 2013  |
+|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
+|                                                    Sat Nov 02 19:14:05 2013  |
 |------------------------------------------------------------------------------|
 | NET CHANGES                                                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
@@ -700,8 +700,8 @@
 |                                 ECO   REPORT                                 |
 |                                                                    Page  14  |
 |------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DROPBOX/PCBS/AVALON/allegro/AVALON.brd                      |
-|                                                    Sat Nov 02 19:06:08 2013  |
+|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
+|                                                    Sat Nov 02 19:14:05 2013  |
 |------------------------------------------------------------------------------|
 | COMPONENT DEFINITION added to board drawing                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
@@ -756,8 +756,8 @@
 |                                 ECO   REPORT                                 |
 |                                                                    Page  15  |
 |------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DROPBOX/PCBS/AVALON/allegro/AVALON.brd                      |
-|                                                    Sat Nov 02 19:06:08 2013  |
+|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
+|                                                    Sat Nov 02 19:14:05 2013  |
 |------------------------------------------------------------------------------|
 | COMPONENT DEFINITION added to board drawing                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
@@ -773,8 +773,8 @@
 |                                 ECO   REPORT                                 |
 |                                                                    Page  16  |
 |------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DROPBOX/PCBS/AVALON/allegro/AVALON.brd                      |
-|                                                    Sat Nov 02 19:06:08 2013  |
+|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
+|                                                    Sat Nov 02 19:14:05 2013  |
 |------------------------------------------------------------------------------|
 | COMPONENTS ADDED to board drawing                                            |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
@@ -829,8 +829,8 @@
 |                                 ECO   REPORT                                 |
 |                                                                    Page  17  |
 |------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DROPBOX/PCBS/AVALON/allegro/AVALON.brd                      |
-|                                                    Sat Nov 02 19:06:08 2013  |
+|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
+|                                                    Sat Nov 02 19:14:05 2013  |
 |------------------------------------------------------------------------------|
 | COMPONENTS ADDED to board drawing                                            |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
@@ -885,8 +885,8 @@
 |                                 ECO   REPORT                                 |
 |                                                                    Page  18  |
 |------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DROPBOX/PCBS/AVALON/allegro/AVALON.brd                      |
-|                                                    Sat Nov 02 19:06:08 2013  |
+|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
+|                                                    Sat Nov 02 19:14:05 2013  |
 |------------------------------------------------------------------------------|
 | COMPONENTS ADDED to board drawing                                            |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
@@ -941,8 +941,8 @@
 |                                 ECO   REPORT                                 |
 |                                                                    Page  19  |
 |------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DROPBOX/PCBS/AVALON/allegro/AVALON.brd                      |
-|                                                    Sat Nov 02 19:06:08 2013  |
+|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
+|                                                    Sat Nov 02 19:14:05 2013  |
 |------------------------------------------------------------------------------|
 | COMPONENTS ADDED to board drawing                                            |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
@@ -997,8 +997,8 @@
 |                                 ECO   REPORT                                 |
 |                                                                    Page  20  |
 |------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DROPBOX/PCBS/AVALON/allegro/AVALON.brd                      |
-|                                                    Sat Nov 02 19:06:08 2013  |
+|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
+|                                                    Sat Nov 02 19:14:05 2013  |
 |------------------------------------------------------------------------------|
 | COMPONENTS ADDED to board drawing                                            |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
@@ -1053,8 +1053,8 @@
 |                                 ECO   REPORT                                 |
 |                                                                    Page  21  |
 |------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DROPBOX/PCBS/AVALON/allegro/AVALON.brd                      |
-|                                                    Sat Nov 02 19:06:08 2013  |
+|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
+|                                                    Sat Nov 02 19:14:05 2013  |
 |------------------------------------------------------------------------------|
 | COMPONENTS ADDED to board drawing                                            |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
@@ -1074,8 +1074,8 @@
 |                                 ECO   REPORT                                 |
 |                                                                    Page  22  |
 |------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DROPBOX/PCBS/AVALON/allegro/AVALON.brd                      |
-|                                                    Sat Nov 02 19:06:08 2013  |
+|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
+|                                                    Sat Nov 02 19:14:05 2013  |
 |------------------------------------------------------------------------------|
 | SLOT PROPERTIES added to board drawing                                       |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
@@ -1130,8 +1130,8 @@
 |                                 ECO   REPORT                                 |
 |                                                                    Page  23  |
 |------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DROPBOX/PCBS/AVALON/allegro/AVALON.brd                      |
-|                                                    Sat Nov 02 19:06:08 2013  |
+|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
+|                                                    Sat Nov 02 19:14:05 2013  |
 |------------------------------------------------------------------------------|
 | SLOT PROPERTIES added to board drawing                                       |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
@@ -1186,8 +1186,8 @@
 |                                 ECO   REPORT                                 |
 |                                                                    Page  24  |
 |------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DROPBOX/PCBS/AVALON/allegro/AVALON.brd                      |
-|                                                    Sat Nov 02 19:06:08 2013  |
+|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
+|                                                    Sat Nov 02 19:14:05 2013  |
 |------------------------------------------------------------------------------|
 | SLOT PROPERTIES added to board drawing                                       |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
@@ -1242,8 +1242,8 @@
 |                                 ECO   REPORT                                 |
 |                                                                    Page  25  |
 |------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DROPBOX/PCBS/AVALON/allegro/AVALON.brd                      |
-|                                                    Sat Nov 02 19:06:08 2013  |
+|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
+|                                                    Sat Nov 02 19:14:05 2013  |
 |------------------------------------------------------------------------------|
 | SLOT PROPERTIES added to board drawing                                       |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
@@ -1298,8 +1298,8 @@
 |                                 ECO   REPORT                                 |
 |                                                                    Page  26  |
 |------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DROPBOX/PCBS/AVALON/allegro/AVALON.brd                      |
-|                                                    Sat Nov 02 19:06:08 2013  |
+|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
+|                                                    Sat Nov 02 19:14:05 2013  |
 |------------------------------------------------------------------------------|
 | SLOT PROPERTIES added to board drawing                                       |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
@@ -1354,8 +1354,8 @@
 |                                 ECO   REPORT                                 |
 |                                                                    Page  27  |
 |------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DROPBOX/PCBS/AVALON/allegro/AVALON.brd                      |
-|                                                    Sat Nov 02 19:06:08 2013  |
+|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
+|                                                    Sat Nov 02 19:14:05 2013  |
 |------------------------------------------------------------------------------|
 | SLOT PROPERTIES added to board drawing                                       |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |

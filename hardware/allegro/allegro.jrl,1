@@ -1,105 +1,15 @@
 \t (00:00:00) allegro 16.6 P004 (v16-6-112G) Windows 32
-\t (00:00:00)     Journal start - Fri Nov 01 14:21:41 2013
-\t (00:00:00)         Host=GEORGEPC User=George Pid=4872 CPUs=8
+\t (00:00:00)     Journal start - Sat Nov 02 19:06:11 2013
+\t (00:00:00)         Host=GEORGEPC User=George Pid=7776 CPUs=8
 \t (00:00:00) 
 \t (00:00:02) Opening existing design...
 \d (00:00:02) Database opened: C:/USERS/GEORGE/DROPBOX/PCBS/AVALON/allegro/AVALON.brd
-\i (00:00:02) trapsize 12725
-\i (00:00:02) trapsize 12445
-\i (00:00:02) trapsize 12772
-\i (00:00:02) trapsize 12908
-\i (00:00:02) trapsize 10877
-\i (00:00:02) trapsize 10877
-\i (00:00:03) generaledit 
-\i (00:05:42) new 
-\i (00:05:59) newdrawfillin "CAP_2917.dra" "Package Symbol (Wizard)"
-\t (00:05:59) Starting new design...
-\i (00:06:00) trapsize 10877
-\i (00:06:00) trapsize 10546
-\i (00:06:00) trapsize 10780
-\i (00:06:00) trapsize 10780
-\i (00:06:00) trapsize 10780
-\i (00:06:00) package symbol wizard 
-\i (00:06:00) generaledit 
-   (00:06:09) Loading cmds.cxt 
-   (00:06:09) Loading axlcore.cxt 
-\i (00:06:09) setwindow form.sym_wizard
-\i (00:06:09) FORM sym_wizard rca_smd YES 
-\i (00:06:11) FORM sym_wizard wiz_next  
-\i (00:06:13) FORM sym_wizard wiz_next  
-\i (00:06:14) fillin confirm
-\i (00:06:15) FORM sym_wizard load_template  
-\t (00:06:15) Opening existing design...
-\t (00:06:15) Grids are drawn 400, 400 apart for enhanced viewability.
-\i (00:06:15) setwindow pcb
-\i (00:06:15) trapsize 140
-\d (00:06:15) Database opened: D:/Cadence/SPB_16.6/share/pcb/pcb_lib/symbols/template/sym_template.dra
-\i (00:06:17) setwindow form.sym_wizard
-\i (00:06:17) FORM sym_wizard wiz_next  
-\i (00:07:22) FORM sym_wizard ref_des C* 
-\i (00:07:23) FORM sym_wizard wiz_next  
-\i (00:10:24) FORM sym_wizard wiz_back  
-\i (00:10:28) FORM sym_wizard pack_units Millimeter 
-\i (00:10:30) FORM sym_wizard wiz_next  
-\i (00:10:43) FORM sym_wizard smd_discrete_e1 2.700 
-\i (00:11:02) FORM sym_wizard smd_discrete_width 3.500 
-\i (00:11:10) FORM sym_wizard smd_discrete_len 2.800 
-\i (00:11:10) FORM sym_wizard wiz_next  
-\i (00:11:19) FORM sym_wizard default_pad_browse  
-\i (00:14:17) fillin "Smd70_230"
-\i (00:14:19) FORM sym_wizard wiz_next  
-\i (00:14:22) FORM sym_wizard wiz_next  
-\i (00:14:24) FORM sym_wizard wiz_finish  
-\w (00:14:24) WARNING(SPMHUT-48): Scaled value has been rounded off.
-\t (00:14:24) Grids are drawn 10.160, 10.160 apart for enhanced viewability.
-\i (00:14:24) setwindow pcb
-\i (00:14:24) trapsize 3543
-\t (00:14:24) Performing DRC...
-\t (00:14:24) No DRC errors detected.
-\w (00:14:24) WARNING(SPMHUT-48): Scaled value has been rounded off.
-\i (00:14:24) trapsize 3543
-\i (00:14:24) trapsize 464
-\i (00:14:24) trapsize 62
-\i (00:14:24) trapsize 62
-\w (00:14:24) WARNING(SPMHUT-48): Scaled value has been rounded off.
-\i (00:14:24) trapsize 2
-\t (00:14:24) Performing DRC...
-\t (00:14:24) No DRC errors detected.
-\t (00:14:24) Creating package symbol 'C:/USERS/GEORGE/DROPBOX/PCBS/AVALON/allegro/cap_2917.psm'.
-\t (00:14:24) Starting Create symbol...
-\i (00:14:24) generaledit 
-\i (00:14:25) pick grid -10 -177
-\t (00:14:25) last pick:  0  -200
-\i (00:14:27) pick grid -39 -73
-\t (00:14:27) last pick:  0  -100
-\i (00:14:27) pick grid dbl -39 -73
-\t (00:14:27) last pick:  0  -100
-\i (00:14:28) prepopup -44 92
-\i (00:14:32) pick grid 294 -211
-\t (00:14:32) last pick:  300  -200
-\t (00:15:05) last pick:  315  -148
-\w (00:15:05) WARNING(SPMHUT-40): Pick is outside the extent of the drawing ... pick again.
-\i (00:15:05) pick grid 68 -59
-\t (00:15:05) last pick:  100  -100
-\i (00:15:06) prepopup 68 -59
-\i (00:15:09) pick grid -68 -147
-\t (00:15:09) last pick:  -100  -100
-\i (00:15:11) pick grid -61 -75
-\t (00:15:11) last pick:  -100  -100
-\i (00:15:11) pick grid dbl -61 -75
-\t (00:15:11) last pick:  -100  -100
-\i (00:15:11) prepopup -61 -75
-\i (00:15:12) pick grid -64 -79
-\t (00:15:12) last pick:  -100  -100
-\i (00:15:13) prepopup -36 -80
-\i (00:15:15) pick grid -187 -20
-\t (00:15:15) last pick:  -200  0
-\i (00:15:18) new 
-\e (00:15:18) Do you want to save the changes you made to C:/USERS/GEORGE/DROPBOX/PCBS/AVALON/allegro/CAP_2917.dra?
-\i (00:15:20) fillin yes 
-\t (00:15:21) Symbol 'cap_2917.psm' created.
-\i (00:15:23) newdrawfillin "menu_cancel"
-\i (00:15:23) generaledit 
-\i (00:21:56) new 
-\i (00:23:12) newdrawfillin "CAP_2917.dra" "Package Symbol (Wizard)"
-\t (00:23:12)     Journal end - Fri Nov 01 14:44:53 2013
+\i (00:00:03) trapsize 12725
+\i (00:00:03) trapsize 12445
+\i (00:00:03) trapsize 12772
+\i (00:00:03) trapsize 12908
+\i (00:00:03) trapsize 10877
+\i (00:00:03) trapsize 10877
+\i (00:00:04) generaledit 
+\i (00:00:09) exit 
+\t (00:00:10)     Journal end - Sat Nov 02 19:06:21 2013

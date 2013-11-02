@@ -3,7 +3,7 @@
   (ProjectType "PCB")
   (Folder "Design Resources"
     (Folder "Library"
-      (File "..\parts.olb"
+      (File ".\parts.olb"
         (Type "Schematic Library")))
     (NoModify)
     (File ".\avalon.dsn"
@@ -132,55 +132,16 @@
   (GlobalState
     (FileView
       (Path "Design Resources")
-      (Path "Design Resources" "C:\USERS\GEORGE\DROPBOX\PCBS\Avalon\avalon.dsn")
-      (Path "Design Resources" "C:\USERS\GEORGE\DROPBOX\PCBS\Avalon\avalon.dsn"
-         "SCHEMATIC1")
-      (Path "Design Resources" "C:\USERS\GEORGE\DROPBOX\PCBS\Avalon\avalon.dsn"
-         "Design Cache")
       (Path "Design Resources" "Library")
       (Path "Design Resources" "Library"
-         "C:\USERS\GEORGE\DROPBOX\PCBS\parts.olb")
-      (Path "Outputs")
-      (Select "Design Resources"
-         "C:\USERS\GEORGE\DROPBOX\PCBS\Avalon\avalon.dsn" "SCHEMATIC1" "PAGE1"))
+         "c:\users\george\documents\github\avalon\hardware\parts.olb")
+      (Path "Outputs"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
         (Placement "44 2 3 -1 -1 -4 -27 0 200 0 802"))
-      (Tab 0))
-    (Doc
-      (Type "COrPartDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -4 -27 78 2201 78 911")
-        (PackageScroll "0 0")
-        (PackageZoom "1")
-        (PartPackage "Part")
-        (Scroll "4669 2029")
-        (Zoom "474"))
-      (Path "C:\USERS\GEORGE\DROPBOX\PCBS\PARTS.OLB")
-      (Package "AMC6821SQDBQRQ1"))
-    (Doc
-      (Type "COrPartDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -4 -27 104 2227 104 937")
-        (PackageScroll "0 0")
-        (PackageZoom "1")
-        (PartPackage "Part")
-        (Scroll "4539 1911")
-        (Zoom "475"))
-      (Path "C:\USERS\GEORGE\DROPBOX\PCBS\PARTS.OLB")
-      (Package "LM63"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -4 -27 52 2175 52 885")
-        (Scroll "0 736")
-        (Zoom "232")
-        (Occurrence "/"))
-      (Path "C:\USERS\GEORGE\DROPBOX\PCBS\AVALON\AVALON.DSN")
-      (Schematic "SCHEMATIC1")
-      (Page "PAGE1")))
+      (Tab 0)))
   (LastUsedLibraryBrowseDirectory "C:\Users\George\Dropbox\PCBs")
   (MPSSessionName "George")
   (ISPCBBASICLICENSE "false"))

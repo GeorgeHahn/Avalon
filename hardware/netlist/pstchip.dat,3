@@ -1,5 +1,5 @@
 FILE_TYPE=LIBRARY_PARTS;
-{ Using PSTWRITER 16.6.0 d001Nov-01-2013 at 14:21:35}
+{ Using PSTWRITER 16.6.0 d001Nov-02-2013 at 19:06:04}
 primitive 'CAPACITOR_CAP_2917_330UF';
   pin
     '1':
@@ -73,6 +73,21 @@ primitive 'CAP NP_CAP_0603_30PF';
     PART_NAME='CAP NP';
     JEDEC_TYPE='cap_0603';
     VALUE='30pF';
+  end_body;
+end_primitive;
+primitive 'CAP NP_CAP_0603_XUF';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='CAP NP';
+    JEDEC_TYPE='cap_0603';
+    VALUE='XuF';
   end_body;
 end_primitive;
 primitive 'CAP NP_CAP_0603_22UF';
@@ -279,6 +294,24 @@ primitive 'MOLEX 0473460001_MOLEX_04734600';
     VALUE='Molex 0473460001';
   end_body;
 end_primitive;
+primitive 'HEADER 3_HEADER100_3_FAN';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+    '3':
+      PIN_NUMBER='(3)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='HEADER 3';
+    JEDEC_TYPE='header100_3';
+    VALUE='FAN';
+  end_body;
+end_primitive;
 primitive 'INDUCTOR_ETQ-P4L_560NH';
   pin
     '1':
@@ -292,6 +325,24 @@ primitive 'INDUCTOR_ETQ-P4L_560NH';
     PART_NAME='INDUCTOR';
     JEDEC_TYPE='ETQ-P4L';
     VALUE='560nH';
+  end_body;
+end_primitive;
+primitive 'NPN BCE_SOT23_BC817-25-7-F';
+  pin
+    'B':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    'C':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+    'E':
+      PIN_NUMBER='(3)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='NPN BCE';
+    JEDEC_TYPE='sot23';
+    VALUE='BC817-25-7-F';
   end_body;
 end_primitive;
 primitive 'RESISTOR_RES_0805_10';
@@ -442,6 +493,81 @@ primitive 'RESISTOR_RES_0603_40K';
     PART_NAME='RESISTOR';
     JEDEC_TYPE='res_0603';
     VALUE='40k';
+  end_body;
+end_primitive;
+primitive 'RESISTOR_RES_1206_1K, 1/4W';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='RESISTOR';
+    JEDEC_TYPE='res_1206';
+    VALUE='1k, 1/4W';
+  end_body;
+end_primitive;
+primitive 'RESISTOR_RES_0603_13K';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='RESISTOR';
+    JEDEC_TYPE='res_0603';
+    VALUE='13k';
+  end_body;
+end_primitive;
+primitive 'RESISTOR_RES_0603_10K';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='RESISTOR';
+    JEDEC_TYPE='res_0603';
+    VALUE='10k';
+  end_body;
+end_primitive;
+primitive 'RESISTOR_RES_0603_10';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='RESISTOR';
+    JEDEC_TYPE='res_0603';
+    VALUE='10';
+  end_body;
+end_primitive;
+primitive 'RESISTOR_RES_0603_470';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='RESISTOR';
+    JEDEC_TYPE='res_0603';
+    VALUE='470';
   end_body;
 end_primitive;
 primitive 'RESISTOR_RES_0603_RESISTOR';
@@ -840,6 +966,39 @@ primitive 'CSD86350Q5D_8SON_POWERBLOCK_CSD';
     VALUE='CSD86350Q5D';
   end_body;
 end_primitive;
+primitive 'LM63_TI_D_R_PDSO_G8_LM63';
+  pin
+    'VDD':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    'D+':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+    'D-':
+      PIN_NUMBER='(3)';
+      PINUSE='UNSPEC';
+    'PWM':
+      PIN_NUMBER='(4)';
+      PINUSE='UNSPEC';
+    'GND':
+      PIN_NUMBER='(5)';
+      PINUSE='UNSPEC';
+    'ALERT/TACH':
+      PIN_NUMBER='(6)';
+      PINUSE='UNSPEC';
+    'SMBDAT':
+      PIN_NUMBER='(7)';
+      PINUSE='UNSPEC';
+    'SMBCLK':
+      PIN_NUMBER='(8)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='LM63';
+    JEDEC_TYPE='TI_D_R_PDSO_G8';
+    VALUE='LM63';
+  end_body;
+end_primitive;
 primitive 'AP1117IE33G-13_SOT224_AP1117IE3';
   pin
     'VIN':
@@ -1103,6 +1262,21 @@ primitive 'PIC18F45K50_40-UFQFN_PIC18F45K5';
     PART_NAME='PIC18F45K50';
     JEDEC_TYPE='40-ufqfn';
     VALUE='PIC18F45K50';
+  end_body;
+end_primitive;
+primitive 'CRYSTAL_HC49_US_CRYSTAL';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='CRYSTAL';
+    JEDEC_TYPE='hc49_us';
+    VALUE='CRYSTAL';
   end_body;
 end_primitive;
 END.

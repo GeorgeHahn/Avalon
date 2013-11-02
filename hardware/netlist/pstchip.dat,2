@@ -1,5 +1,5 @@
 FILE_TYPE=LIBRARY_PARTS;
-{ Using PSTWRITER 16.6.0 d001Nov-01-2013 at 08:06:20}
+{ Using PSTWRITER 16.6.0 d001Nov-01-2013 at 14:21:35}
 primitive 'CAPACITOR_CAP_2917_330UF';
   pin
     '1':
@@ -58,6 +58,21 @@ primitive 'CAP NP_CAP_1206_22UF';
     PART_NAME='CAP NP';
     JEDEC_TYPE='cap_1206';
     VALUE='22uF';
+  end_body;
+end_primitive;
+primitive 'CAP NP_CAP_0603_30PF';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='CAP NP';
+    JEDEC_TYPE='cap_0603';
+    VALUE='30pF';
   end_body;
 end_primitive;
 primitive 'CAP NP_CAP_0603_22UF';
@@ -384,6 +399,21 @@ primitive 'RESISTOR_RES_0603_0';
     VALUE='0';
   end_body;
 end_primitive;
+primitive 'RESISTOR_RES_0603_1K';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='RESISTOR';
+    JEDEC_TYPE='res_0603';
+    VALUE='1k';
+  end_body;
+end_primitive;
 primitive 'RESISTOR_RES_0603_5.11K';
   pin
     '1':
@@ -397,6 +427,21 @@ primitive 'RESISTOR_RES_0603_5.11K';
     PART_NAME='RESISTOR';
     JEDEC_TYPE='res_0603';
     VALUE='5.11k';
+  end_body;
+end_primitive;
+primitive 'RESISTOR_RES_0603_40K';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='RESISTOR';
+    JEDEC_TYPE='res_0603';
+    VALUE='40k';
   end_body;
 end_primitive;
 primitive 'RESISTOR_RES_0603_RESISTOR';
@@ -699,6 +744,66 @@ primitive 'BITSYNCOM A3255Q48_QFN48_BITSYN';
     VALUE='BitSyncom A3255Q48';
   end_body;
 end_primitive;
+primitive '74AUP2G02_8-XSON_74AUP2G02';
+  pin
+    '1A':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    '1B':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+    '2Y':
+      PIN_NUMBER='(3)';
+      PINUSE='UNSPEC';
+    'GND':
+      PIN_NUMBER='(4)';
+      PINUSE='UNSPEC';
+    '2A':
+      PIN_NUMBER='(5)';
+      PINUSE='UNSPEC';
+    '2B':
+      PIN_NUMBER='(6)';
+      PINUSE='UNSPEC';
+    '1Y':
+      PIN_NUMBER='(7)';
+      PINUSE='UNSPEC';
+    'VCC':
+      PIN_NUMBER='(8)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='74AUP2G02';
+    JEDEC_TYPE='8-xson';
+    VALUE='74AUP2G02';
+  end_body;
+end_primitive;
+primitive 'NL27WZ14DFT2G_SC-88_NL27WZ14DFT';
+  pin
+    'IN_A1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    'GND':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+    'IN_A2':
+      PIN_NUMBER='(3)';
+      PINUSE='UNSPEC';
+    'OUT_Y1':
+      PIN_NUMBER='(4)';
+      PINUSE='UNSPEC';
+    'VCC':
+      PIN_NUMBER='(5)';
+      PINUSE='UNSPEC';
+    'OUT_Y2':
+      PIN_NUMBER='(6)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='NL27WZ14DFT2G';
+    JEDEC_TYPE='sc-88';
+    VALUE='NL27WZ14DFT2G';
+  end_body;
+end_primitive;
 primitive 'CSD86350Q5D_8SON_POWERBLOCK_CSD';
   pin
     'VIN':
@@ -992,9 +1097,6 @@ primitive 'PIC18F45K50_40-UFQFN_PIC18F45K5';
       PINUSE='UNSPEC';
     'RC6':
       PIN_NUMBER='(40)';
-      PINUSE='UNSPEC';
-    'EP':
-      PIN_NUMBER='(EP)';
       PINUSE='UNSPEC';
   end_pin;
   body
