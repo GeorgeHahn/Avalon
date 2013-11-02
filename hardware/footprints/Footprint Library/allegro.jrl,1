@@ -1,85 +1,721 @@
-\t (00:00:51) allegro 16.6 P004 (v16-6-112G) Windows 32
-\t (00:00:51)     Journal start - Thu Oct 31 02:35:08 2013
-\t (00:00:51)         Host=GEORGEPC User=George Pid=11848 CPUs=8
-\t (00:00:51) 
-\d (00:00:51) Database opened: C:/Users/George/Dropbox/PCBs/Footprint Library/DGG.dra
-\i (00:00:51) generaledit 
-\i (00:00:52) zoom out 1 
-\i (00:00:52) setwindow pcb
-\i (00:00:52) zoom out -2.686 4.230
-\i (00:00:52) trapsize 143
-\i (00:00:52) zoom out 1 
-\i (00:00:52) setwindow pcb
-\i (00:00:52) zoom out -2.451 0.043
-\i (00:00:52) trapsize 143
-\i (00:00:52) zoom in 1 
-\i (00:00:52) setwindow pcb
-\i (00:00:52) zoom in -2.565 -3.208
-\i (00:00:52) trapsize 71
-\i (00:00:53) zoom in 1 
-\i (00:00:53) setwindow pcb
-\i (00:00:53) zoom in -2.593 -3.179
-\i (00:00:53) trapsize 36
-\i (00:00:54) zoom out 1 
-\i (00:00:54) setwindow pcb
-\i (00:00:54) zoom out -3.334 -5.354
-\i (00:00:54) trapsize 71
-\i (00:00:54) prepopup -1.895 -2.716
-\i (00:00:57) pick grid -1.980 0.279
-\t (00:00:57) last pick:  -2.540  0.000
-\i (00:00:57) pick grid dbl -1.980 0.279
-\t (00:00:57) last pick:  -2.540  0.000
-\i (00:01:04) prmed 
-\i (00:01:06) setwindow form.prmedit
-\i (00:01:06) FORM prmedit cancel  
-\i (00:01:06) setwindow pcb
-\i (00:01:06) generaledit 
-\i (00:01:07) pick grid -7.427 4.200
-\t (00:01:07) last pick:  -7.620  5.080
-\e (00:01:10) Command not found: xhilite
-\i (00:01:10) xname_flush 
-\i (00:01:10) done 
-\i (00:01:10) generaledit 
-\i (00:01:33) pick grid 0.615 6.467
-\t (00:01:33) last pick:  0.000  7.620
-\i (00:01:51) pick grid -5.531 1.847
-\t (00:01:51) last pick:  -5.080  2.540
-\i (00:05:14) zoom in 1 
-\i (00:05:14) setwindow pcb
-\i (00:05:14) zoom in 6.418 5.497
-\i (00:05:14) trapsize 36
-\i (00:05:19) refresh symbol 
-\i (00:05:21) setwindow form.upd_element
-\i (00:05:21) FORM upd_element tree 'MULTISEL YES' 'Shape and flash symbols' 
-\i (00:05:21) FORM upd_element tree  'Shape and flash symbols' 
-\i (00:05:23) FORM upd_element refresh  
-\i (00:05:24) FORM upd_element close  
-\i (00:05:24) setwindow pcb
-\i (00:05:24) generaledit 
-\e (03:02:44) Command not found: xhilite
-\i (03:02:44) xname_flush 
-\i (03:02:44) done 
-\i (03:02:44) generaledit 
-\e (03:03:01) Command not found: xhilite
-\i (03:03:01) xname_flush 
-\i (03:03:01) done 
-\i (03:03:01) generaledit 
-\e (03:03:02) Command not found: xdehilite
-\i (03:03:02) xname_flush 
-\i (03:03:02) done 
-\e (03:03:02) Command not found: xhilite
-\i (03:03:02) xname_flush 
-\e (03:03:02) No command active
-\i (03:03:02) done 
-\e (03:03:02) No command active
-\i (03:03:02) generaledit 
-\e (03:03:06) Command not found: xhilite
-\i (03:03:06) xname_flush 
-\i (03:03:06) done 
-\i (03:03:06) generaledit 
-\e (03:03:12) Command not found: xdehilite
-\i (03:03:12) xname_flush 
-\i (03:03:12) done 
-\i (03:03:12) generaledit 
-\i (03:03:33) exit 
-\t (03:03:33)     Journal end - Thu Oct 31 05:37:50 2013
+\t (00:00:29) allegro 16.6 P004 (v16-6-112G) Windows 32
+\t (00:00:29)     Journal start - Sat Nov 02 19:21:38 2013
+\t (00:00:29)         Host=GEORGEPC User=George Pid=5712 CPUs=8
+\t (00:00:29) 
+\d (00:00:29) Database opened: C:/Users/George/Dropbox/PCBs/Footprint Library/HEADER100_5.dra
+\i (00:00:29) generaledit 
+\i (00:00:30) zoom out 1 
+\i (00:00:30) setwindow pcb
+\i (00:00:30) zoom out -101 234
+\i (00:00:30) trapsize 5
+\i (00:00:30) zoom out 1 
+\i (00:00:30) setwindow pcb
+\i (00:00:30) zoom out 64 233
+\i (00:00:30) trapsize 6
+\i (00:00:30) zoom out 1 
+\i (00:00:30) setwindow pcb
+\i (00:00:30) zoom out 191 584
+\i (00:00:30) trapsize 6
+\i (00:00:30) zoom in 1 
+\i (00:00:30) setwindow pcb
+\i (00:00:30) zoom in 118 490
+\i (00:00:30) trapsize 3
+\i (00:00:31) zoom out 1 
+\i (00:00:31) setwindow pcb
+\i (00:00:31) zoom out -35 88
+\i (00:00:31) trapsize 6
+\i (00:00:32) zoom in 1 
+\i (00:00:32) setwindow pcb
+\i (00:00:32) zoom in -34 -260
+\i (00:00:32) trapsize 3
+\i (00:00:33) zoom in 1 
+\i (00:00:33) setwindow pcb
+\i (00:00:33) zoom in 101 -104
+\i (00:00:33) trapsize 2
+\i (00:00:34) zoom out 1 
+\i (00:00:34) setwindow pcb
+\i (00:00:34) zoom out 53 -105
+\i (00:00:34) trapsize 3
+\i (00:00:36) zoom out 1 
+\i (00:00:36) setwindow pcb
+\i (00:00:36) zoom out 85 -133
+\i (00:00:36) trapsize 6
+\i (00:00:36) zoom out 1 
+\i (00:00:36) setwindow pcb
+\i (00:00:36) zoom out 436 -7
+\i (00:00:36) trapsize 6
+\i (00:00:36) zoom out 1 
+\i (00:00:36) setwindow pcb
+\i (00:00:36) zoom out 436 -7
+\i (00:00:36) trapsize 6
+\i (00:00:36) zoom out 1 
+\i (00:00:36) setwindow pcb
+\i (00:00:36) zoom out 436 -7
+\i (00:00:36) trapsize 6
+\i (00:00:36) zoom out 1 
+\i (00:00:36) setwindow pcb
+\i (00:00:36) zoom out 436 -7
+\i (00:00:36) trapsize 6
+\i (00:00:36) zoom in 1 
+\i (00:00:36) setwindow pcb
+\i (00:00:36) zoom in 436 -7
+\i (00:00:36) trapsize 3
+\i (00:00:36) zoom in 1 
+\i (00:00:36) setwindow pcb
+\i (00:00:36) zoom in 83 -8
+\i (00:00:36) trapsize 2
+\i (00:00:36) zoom in 1 
+\i (00:00:36) setwindow pcb
+\i (00:00:36) zoom in 45 -8
+\i (00:00:36) trapsize 1
+\i (00:00:36) zoom in 1 
+\i (00:00:36) setwindow pcb
+\i (00:00:36) zoom in 45 -8
+\i (00:00:36) trapsize 1
+\i (00:00:36) zoom out 1 
+\i (00:00:36) setwindow pcb
+\i (00:00:36) zoom out 45 -8
+\i (00:00:36) trapsize 1
+\i (00:00:36) zoom out 1 
+\i (00:00:36) setwindow pcb
+\i (00:00:36) zoom out 41 -8
+\i (00:00:36) trapsize 2
+\i (00:00:36) zoom out 1 
+\i (00:00:36) setwindow pcb
+\i (00:00:36) zoom out 33 -8
+\i (00:00:36) trapsize 3
+\i (00:00:37) zoom in 1 
+\i (00:00:37) setwindow pcb
+\i (00:00:37) zoom in -121 6
+\i (00:00:37) trapsize 2
+\i (00:00:37) roam start
+\i (00:00:37) roam x 32
+\i (00:00:37) roam y 48
+\i (00:00:38) roam x 160
+\i (00:00:38) roam y 128
+\i (00:00:38) roam y 64
+\i (00:00:38) roam y 16
+\i (00:00:38) roam y 16
+\i (00:00:38) roam y -16
+\i (00:00:38) roam x -64
+\i (00:00:38) roam y -32
+\i (00:00:38) roam x -80
+\i (00:00:38) roam x -32
+\i (00:00:38) roam x -80
+\i (00:00:38) roam y -32
+\i (00:00:38) roam x -112
+\i (00:00:38) roam y -32
+\i (00:00:38) roam x -48
+\i (00:00:38) roam y -16
+\i (00:00:38) roam y -16
+\i (00:00:38) roam y -16
+\i (00:00:38) roam y -16
+\i (00:00:38) roam y -16
+\i (00:00:39) roam y -16
+\i (00:00:39) roam y -16
+\i (00:00:39) roam x 48
+\i (00:00:39) roam y -32
+\i (00:00:39) roam x 112
+\i (00:00:39) roam y -48
+\i (00:00:39) roam x 48
+\i (00:00:39) roam y -16
+\i (00:00:39) roam x 16
+\i (00:00:39) roam y -16
+\i (00:00:39) roam x 16
+\i (00:00:39) roam y -16
+\i (00:00:39) roam y -16
+\i (00:00:39) roam x 16
+\i (00:00:39) roam y -16
+\i (00:00:39) roam y -32
+\i (00:00:39) roam y -16
+\i (00:00:39) roam y -16
+\i (00:00:39) roam y -16
+\i (00:00:39) roam y -16
+\i (00:00:39) roam y -16
+\i (00:00:39) roam x -16
+\i (00:00:39) roam y -16
+\i (00:00:39) roam y -16
+\i (00:00:39) roam x -16
+\i (00:00:39) roam y -16
+\i (00:00:39) roam x -16
+\i (00:00:39) roam y -16
+\i (00:00:39) roam y -16
+\i (00:00:40) roam x -16
+\i (00:00:40) roam y -16
+\i (00:00:40) roam end
+\i (00:00:40) zoom out 1 
+\i (00:00:40) setwindow pcb
+\i (00:00:40) zoom out -131 107
+\i (00:00:40) trapsize 3
+\i (00:00:40) roam start
+\i (00:00:41) roam y -96
+\i (00:00:41) roam y -64
+\i (00:00:41) roam y -16
+\i (00:00:41) roam y -32
+\i (00:00:41) roam y -16
+\i (00:00:41) roam y -16
+\i (00:00:41) roam y 64
+\i (00:00:41) roam y 64
+\i (00:00:41) roam y 64
+\i (00:00:41) roam y 32
+\i (00:00:41) roam y 32
+\i (00:00:41) roam y 48
+\i (00:00:41) roam y 64
+\i (00:00:41) roam y 80
+\i (00:00:41) roam y 80
+\i (00:00:41) roam y 48
+\i (00:00:42) roam y -16
+\i (00:00:42) roam y -16
+\i (00:00:42) roam y -48
+\i (00:00:42) roam y -48
+\i (00:00:42) roam y -48
+\i (00:00:42) roam y -32
+\i (00:00:42) roam y -64
+\i (00:00:42) roam y -48
+\i (00:00:42) roam y -16
+\i (00:00:42) roam y -16
+\i (00:00:42) roam end
+\i (00:00:43) pick grid 11 -1
+\t (00:00:43) last pick:  0  0
+\i (00:00:44) pick grid -4 -121
+\t (00:00:44) last pick:  0  -100
+\e (00:00:45) Command not found: Del
+\i (00:00:46) prepopup -3 -101
+\i (00:00:47) pop dyn_option_select @:@Delete 
+\i (00:00:47) delete 
+\i (00:00:47) generaledit 
+\i (00:00:47) prepopup 7 -192
+\i (00:00:48) pop dyn_option_select @:@Delete 
+\i (00:00:48) delete 
+\i (00:00:48) generaledit 
+\i (00:00:49) pick grid -32 -88
+\t (00:00:49) last pick:  0  -100
+\i (00:00:49) prepopup 21 -85
+\i (00:00:51) pick grid -6 -53
+\t (00:00:51) last pick:  0  -100
+\i (00:00:51) drag_start grid 149 332
+\i (00:00:52) roam y 16
+\i (00:00:52) drag_stop -102 -315
+\i (00:00:53) prepopup -6 110
+\i (00:00:57) pick grid 148 193
+\t (00:00:57) last pick:  100  200
+\i (00:00:58) pick grid -3 -122
+\t (00:00:58) last pick:  0  -100
+\i (00:00:58) pick grid dbl -3 -122
+\t (00:00:58) last pick:  0  -100
+\i (00:00:58) prepopup -2 -80
+\i (00:01:03) pop dyn_option_select '@:@Property edit' 
+\i (00:01:03) property edit 
+\i (00:01:06) setwindow text
+\i (00:01:06) close 
+\i (00:01:07) setwindow form.editprop1
+\i (00:01:07) FORM editprop1 properties Dyn_Do_Not_Void 
+\i (00:01:08) FORM editprop1 properties Embedded_Via_Keepout 
+\i (00:01:08) FORM editprop1 properties Fixed 
+\i (00:01:08) FORM editprop1 properties Idf_Other_Outline 
+\i (00:01:09) FORM editprop1 properties Idf_Owner 
+\i (00:01:09) FORM editprop1 properties Idx_Bend_Type_Info 
+\i (00:01:09) FORM editprop1 properties Idx_Exclude 
+\i (00:01:09) FORM editprop1 properties Idx_Other_Outline 
+\i (00:01:10) FORM editprop1 properties Idx_Owner 
+\i (00:01:10) FORM editprop1 properties Material 
+\i (00:01:10) FORM editprop1 properties Net_Short 
+\i (00:01:10) FORM editprop1 properties Nodrc_Component_Board_Overlap 
+\i (00:01:10) FORM editprop1 properties Nodrc_Etch_Outside_Keepin 
+\i (00:01:10) FORM editprop1 properties Ok_Unassigned_Shape 
+\i (00:01:10) FORM editprop1 properties Package_Height_Max 
+\i (00:01:10) FORM editprop1 properties Package_Height_Min 
+\i (00:01:10) FORM editprop1 properties Rfpcb_Object 
+\i (00:01:10) FORM editprop1 properties Routes_Allowed 
+\i (00:01:10) FORM editprop1 properties Shapes_Allowed 
+\i (00:01:10) FORM editprop1 properties Spif_Turret 
+\i (00:01:10) FORM editprop1 properties Thickness 
+\i (00:01:11) FORM editprop1 properties Vias_Allowed 
+\i (00:01:11) FORM editprop1 properties Wirebond_Finger_Shape 
+\i (00:01:13) setwindow form.editprop2
+\i (00:01:13) FORM editprop2 reset  
+\i (00:01:15) setwindow pcb
+\i (00:01:15) generaledit 
+\i (00:01:15) prepopup 5 -56
+\i (00:01:22) pop dyn_option_select 'Quick Utilities@:@Design Parameters...' 
+\i (00:01:22) prmed 
+\i (00:01:27) setwindow form.prmedit
+\i (00:01:27) FORM prmedit design  
+\i (00:01:30) FORM prmedit text  
+\i (00:01:31) FORM prmedit shapes  
+\i (00:01:31) FORM prmedit flow_planning  
+\i (00:01:32) FORM prmedit route  
+\i (00:01:33) FORM prmedit shapes  
+\i (00:01:34) FORM prmedit cancel  
+\i (00:01:35) setwindow pcb
+\i (00:01:35) generaledit 
+\i (00:01:35) pick grid 45 260
+\t (00:01:35) last pick:  0  300
+\i (00:01:35) pick grid dbl 45 260
+\t (00:01:35) last pick:  0  300
+\i (00:01:36) prepopup 32 260
+\i (00:01:41) pop dyn_option_select '@:@Show element' 
+\i (00:01:41) show element 
+\i (00:01:41) generaledit 
+\i (00:01:46) setwindow text
+\i (00:01:46) close 
+\i (00:01:47) setwindow pcb
+\i (00:01:47) prepopup 10 -95
+\i (00:01:52) pop dyn_option_select 'Application Mode@:@General Edit' 
+\i (00:01:52) generaledit 
+\i (00:01:52) prepopup -31 -41
+\i (00:01:55) pop dyn_option_select @:@Move 
+\i (00:01:55) move 
+\t (00:01:55) last pick:  0  0
+\t (00:01:55) last pick:  0  0
+\t (00:01:55) Element has no origin, using pick.
+\t (00:01:55) Pick new location for the element(s).
+\i (00:01:56) Esc 
+\i (00:01:57) pick grid 49 23
+\t (00:01:57) last pick:  0  0
+\i (00:01:57) generaledit 
+\i (00:01:57) prepopup 10 -43
+\i (00:01:59) drag_start grid 193 365
+\i (00:01:59) drag_stop -120 -113
+\i (00:01:59) prepopup 3 -54
+\i (00:02:04) pick grid 311 68
+\t (00:02:04) last pick:  300  100
+\i (00:02:04) prepopup -26 -118
+\i (00:02:05) pop dyn_option_select @:@Move 
+\i (00:02:05) move 
+\t (00:02:05) last pick:  0  -100
+\t (00:02:05) last pick:  0  -100
+\t (00:02:05) Element has no origin, using pick.
+\t (00:02:05) Pick new location for the element(s).
+\i (00:02:06) roam y 96 
+\i (00:02:06) roam y 96
+\i (00:02:09) pick grid 32 -151
+\t (00:02:09) last pick:  0  -200
+\i (00:02:09) generaledit 
+\i (00:02:10) pick grid 261 -50
+\t (00:02:10) last pick:  300  0
+\i (00:02:10) pick grid 115 293
+\t (00:02:10) last pick:  100  300
+\i (00:02:11) zoom out 1 
+\i (00:02:11) setwindow pcb
+\i (00:02:11) zoom out 115 293
+\i (00:02:11) trapsize 6
+\i (00:02:11) zoom in 1 
+\i (00:02:11) setwindow pcb
+\i (00:02:11) zoom in 415 450
+\i (00:02:11) trapsize 3
+\i (00:02:12) zoom out 1 
+\i (00:02:12) setwindow pcb
+\i (00:02:12) zoom out 5 312
+\i (00:02:12) trapsize 6
+\i (00:02:12) zoom out 1 
+\i (00:02:12) setwindow pcb
+\i (00:02:12) zoom out 275 176
+\i (00:02:12) trapsize 6
+\i (00:02:12) zoom out 1 
+\i (00:02:12) setwindow pcb
+\i (00:02:12) zoom out 275 176
+\i (00:02:12) trapsize 6
+\i (00:02:12) zoom out 1 
+\i (00:02:12) setwindow pcb
+\i (00:02:12) zoom out 275 176
+\i (00:02:12) trapsize 6
+\i (00:02:13) zoom in 1 
+\i (00:02:13) setwindow pcb
+\i (00:02:13) zoom in -54 -174
+\i (00:02:13) trapsize 3
+\i (00:02:14) prepopup -2 252
+\i (00:02:15) pop dyn_option_select @:@Move 
+\i (00:02:15) move 
+\t (00:02:15) last pick:  0  300
+\t (00:02:15) last pick:  0  300
+\t (00:02:15) Element has no origin, using pick.
+\t (00:02:15) Pick new location for the element(s).
+\i (00:02:16) pick grid -19 150
+\t (00:02:16) last pick:  0  200
+\i (00:02:16) generaledit 
+\i (00:02:17) prepopup 17 260
+\i (00:02:18) pick grid 3 257
+\t (00:02:18) last pick:  0  300
+\i (00:02:19) drag_start grid 20 257
+\i (00:02:19) drag_stop -46 230
+\i (00:02:20) drag_start grid 35 282
+\i (00:02:20) drag_stop -87 233
+\i (00:02:21) prepopup -8 259
+\i (00:02:22) pick grid 133 309
+\t (00:02:22) last pick:  100  300
+\i (00:02:22) drag_start grid 117 302
+\i (00:02:22) drag_stop -88 239
+\i (00:02:23) drag_start grid ext 17 -228
+\i (00:02:24) drag_stop grid ext 8 -302
+\i (00:02:24) pick grid 32 -274
+\t (00:02:24) last pick:  0  -300
+\i (00:02:25) pick grid 197 -135
+\t (00:02:25) last pick:  200  -100
+\i (00:02:27) drag_start grid 136 282
+\i (00:02:29) drag_stop 164 263
+\i (00:02:29) pick grid -12 200
+\t (00:02:29) last pick:  0  200
+\i (00:02:30) prepopup 4 200
+\i (00:02:31) pick grid 232 274
+\t (00:02:31) last pick:  200  300
+\i (00:02:32) pick grid 1 -6
+\t (00:02:32) last pick:  0  0
+\i (00:02:33) prepopup 1 -6
+\i (00:02:33) pop dyn_option_select @:@Move 
+\i (00:02:33) move 
+\t (00:02:34) last pick:  0  0
+\t (00:02:34) last pick:  0  0
+\t (00:02:34) Pick new location for the element(s).
+\i (00:02:35) pick grid -9 -51
+\t (00:02:35) last pick:  0  -100
+\i (00:02:35) generaledit 
+\i (00:02:35) pick grid -6 113
+\t (00:02:35) last pick:  0  100
+\i (00:02:36) prepopup 3 99
+\i (00:02:37) pop dyn_option_select @:@Move 
+\i (00:02:37) move 
+\t (00:02:37) last pick:  0  100
+\t (00:02:37) last pick:  0  100
+\t (00:02:37) Pick new location for the element(s).
+\i (00:02:37) pick grid -22 49
+\t (00:02:37) last pick:  0  0
+\i (00:02:37) generaledit 
+\i (00:02:38) pick grid -2 211
+\t (00:02:38) last pick:  0  200
+\i (00:02:38) prepopup -2 211
+\i (00:02:39) pop dyn_option_select @:@Move 
+\i (00:02:39) move 
+\t (00:02:39) last pick:  0  200
+\t (00:02:39) last pick:  0  200
+\t (00:02:39) Pick new location for the element(s).
+\i (00:02:40) pick grid -50 149
+\t (00:02:40) last pick:  0  100
+\i (00:02:40) generaledit 
+\i (00:02:41) pick grid 92 291
+\t (00:02:41) last pick:  100  300
+\i (00:02:41) drag_start grid 137 287
+\i (00:02:41) drag_stop 59 278
+\i (00:02:42) drag_start grid 37 272
+\i (00:02:42) slide 
+\t (00:02:42) Selected item not valid for current operation, ignored: Horizontal Line Segment "Package Geometry/Assembly_Top"
+\t (00:02:42) No valid items selected for the current operation, exiting.
+\i (00:02:42) generaledit 
+\i (00:02:43) drag_stop grid 36 170
+\i (00:02:44) prepopup 21 273
+\i (00:02:52) pop dyn_option_select Line@:@Move 
+\i (00:02:52) move 
+\t (00:02:52) last pick:  0  300
+\t (00:02:52) last pick:  0  300
+\t (00:02:52) Element has no origin, using pick.
+\t (00:02:52) Pick new location for the element(s).
+\i (00:02:53) pick grid -29 249
+\t (00:02:53) last pick:  0  200
+\i (00:02:53) generaledit 
+\i (00:02:54) pick grid 200 233
+\t (00:02:54) last pick:  200  200
+\i (00:02:56) pick grid 13 276
+\t (00:02:56) last pick:  0  300
+\i (00:02:56) prepopup 13 276
+\i (00:02:59) pop dyn_option_select Line@:@Move 
+\i (00:02:59) move 
+\t (00:02:59) last pick:  0  300
+\t (00:02:59) last pick:  0  300
+\t (00:02:59) Element has no origin, using pick.
+\t (00:02:59) Pick new location for the element(s).
+\i (00:03:01) pick grid 49 150
+\t (00:03:01) last pick:  0  200
+\i (00:03:01) generaledit 
+\i (00:03:02) pick grid 311 144
+\t (00:03:02) last pick:  300  100
+\i (00:03:03) pick grid 36 -374
+\t (00:03:03) last pick:  0  -400
+\i (00:03:03) prepopup 36 -374
+\i (00:03:07) pick grid 183 -292
+\t (00:03:07) last pick:  200  -300
+\i (00:03:07) drag_start grid -10 -266
+\i (00:03:07) move 
+\t (00:03:07) last pick:  0  -300
+\t (00:03:07) Element has no origin, using pick.
+\t (00:03:07) Pick new location for the element(s).
+\i (00:03:08) drag_stop grid 362 -278
+\e (00:03:08) ERROR(SPMHA1-71): Rectangle is outside of the extents.
+\i (00:03:08) pick grid 151 -264
+\t (00:03:08) last pick:  200  -300
+\i (00:03:09) generaledit 
+\i (00:03:09) pick grid -34 -326
+\t (00:03:09) last pick:  0  -300
+\i (00:03:10) prepopup -8 -325
+\i (00:03:12) pick grid -9 -259
+\t (00:03:12) last pick:  0  -300
+\i (00:03:12) drag_start grid -18 -301
+\i (00:03:12) move 
+\t (00:03:12) last pick:  0  -300
+\t (00:03:12) Element has no origin, using pick.
+\t (00:03:12) Pick new location for the element(s).
+\i (00:03:13) drag_stop grid 319 -292
+\i (00:03:13) generaledit 
+\t (00:03:13) last pick:  464  -279
+\w (00:03:13) WARNING(SPMHUT-40): Pick is outside the extent of the drawing ... pick again.
+\i (00:03:14) pick grid 30 -264
+\t (00:03:14) last pick:  0  -300
+\i (00:03:15) pick grid 9 -373
+\t (00:03:15) last pick:  0  -400
+\i (00:03:16) prepopup 12 -376
+\i (00:03:26) pick grid 99 -280
+\t (00:03:26) last pick:  100  -300
+\i (00:03:27) drag_start grid 2 -375
+\i (00:03:27) slide 
+\t (00:03:27) Selected item not valid for current operation, ignored: Horizontal Line Segment "Package Geometry/Assembly_Top"
+\t (00:03:27) No valid items selected for the current operation, exiting.
+\i (00:03:27) generaledit 
+\i (00:03:28) drag_stop grid 12 -161
+\i (00:03:29) pick grid -13 -317
+\t (00:03:29) last pick:  0  -300
+\i (00:03:43) pick grid 187 293
+\t (00:03:43) last pick:  200  300
+\i (00:03:43) pick grid 219 139
+\t (00:03:43) last pick:  200  100
+\i (00:03:44) prepopup 219 139
+\i (00:04:19) pick grid -8 -259
+\t (00:04:19) last pick:  0  -300
+\i (00:04:20) pick grid 54 -267
+\t (00:04:20) last pick:  100  -300
+\i (00:04:20) prepopup 54 -267
+\i (00:04:27) pop dyn_option_select 'Line@:@Property edit' 
+\i (00:04:28) property edit 
+\i (00:04:34) generaledit 
+\i (00:04:36) prepopup 55 -212
+\i (00:04:40) pop dyn_option_select '@:@Property edit' 
+\i (00:04:40) property edit 
+\i (00:04:42) generaledit 
+\i (00:04:43) prepopup 55 -136
+\i (00:05:03) pick grid 13 167
+\t (00:05:03) last pick:  0  200
+\i (00:05:06) vertex 
+\i (00:05:08) pick grid 52 -376
+\t (00:05:08) last pick:  100  -400
+\t (00:05:08) last pick:  55  -375
+\i (00:05:14) prepopup 29 -271
+\i (00:05:16) pop dyn_option_select '@:@Design parameters...' 
+\i (00:05:19) setwindow form.prmedit
+\i (00:05:19) FORM prmedit cancel  
+\i (00:05:20) setwindow pcb
+\i (00:05:20) prepopup 40 -248
+\i (00:05:21) prepopup 10 -215
+\i (00:05:22) prepopup -14 -200
+\i (00:05:31) Esc 
+\i (00:05:32) prepopup -96 -212
+\i (00:05:33) cancel 
+\i (00:05:33) generaledit 
+\i (00:05:37) vertex 
+\i (00:05:39) pick grid 2 -375
+\t (00:05:39) last pick:  0  -400
+\t (00:05:39) last pick:  2  -375
+\i (00:05:47) undo 
+\i (00:05:47) trapsize 3
+\i (00:05:47) generaledit 
+\i (00:06:23) pick grid 39 -372
+\t (00:06:23) last pick:  0  -400
+\i (00:06:24) pick grid 31 -375
+\t (00:06:24) last pick:  0  -400
+\i (00:06:27) prepopup 29 -377
+\i (00:06:35) vertex 
+\t (00:06:35) Selected item not valid for current operation, ignored: Horizontal Line Segment "Package Geometry/Assembly_Top"
+\t (00:06:35) No valid items selected for the current operation, exiting.
+\i (00:06:35) generaledit 
+\i (00:06:39) pick grid 50 -375
+\t (00:06:39) last pick:  100  -400
+\e (00:06:43) Command not found: -300
+\i (00:06:46) pick grid 49 -367
+\t (00:06:46) last pick:  0  -400
+\i (00:06:46) pick grid 49 -372
+\t (00:06:46) last pick:  0  -400
+\i (00:06:48) drag_start grid 47 -373
+\i (00:06:48) slide 
+\t (00:06:48) Selected item not valid for current operation, ignored: Horizontal Line Segment "Package Geometry/Assembly_Top"
+\t (00:06:48) No valid items selected for the current operation, exiting.
+\i (00:06:48) generaledit 
+\i (00:06:48) drag_stop grid 13 -316
+\i (00:06:49) pick grid 0 -375
+\t (00:06:49) last pick:  0  -400
+\i (00:06:50) prepopup -153 184
+\i (00:06:54) vertex 
+\t (00:06:54) Selected item not valid for current operation, ignored: Horizontal Line Segment "Package Geometry/Assembly_Top"
+\t (00:06:54) No valid items selected for the current operation, exiting.
+\i (00:06:54) generaledit 
+\i (00:06:57) pick grid 51 -377
+\t (00:06:57) last pick:  100  -400
+\i (00:06:59) drag_start grid 52 -374
+\i (00:06:59) slide 
+\t (00:06:59) Selected item not valid for current operation, ignored: Horizontal Line Segment "Package Geometry/Assembly_Top"
+\t (00:06:59) No valid items selected for the current operation, exiting.
+\i (00:06:59) generaledit 
+\i (00:07:00) drag_stop grid 67 -421
+\i (00:07:00) pick grid 47 -376
+\t (00:07:00) last pick:  0  -400
+\i (00:07:01) drag_start grid 44 -374
+\i (00:07:01) slide 
+\t (00:07:01) Selected item not valid for current operation, ignored: Horizontal Line Segment "Package Geometry/Assembly_Top"
+\t (00:07:01) No valid items selected for the current operation, exiting.
+\i (00:07:01) generaledit 
+\i (00:07:01) drag_stop grid -44 -432
+\i (00:07:02) pick grid -160 -266
+\t (00:07:02) last pick:  -200  -300
+\i (00:07:06) vertex 
+\i (00:07:08) pick grid -56 -375
+\t (00:07:08) last pick:  -100  -400
+\t (00:07:08) last pick:  -55  -375
+\i (00:07:14) roam y 96 
+\i (00:07:14) roam y 96
+\e (00:07:18) Command not found: -300
+\e (00:07:21) Command not found: 300
+\i (00:07:22) prepopup -170 -223
+\i (00:07:22) pop delete vertex 
+\t (00:07:22) No DRC errors detected.
+\i (00:07:23) prepopup -150 -162
+\i (00:07:24) pick grid -203 -214
+\t (00:07:24) last pick:  -200  -200
+\w (00:07:24) WARNING(SPMHGE-604): No editable vertex was found.
+\i (00:07:24) undo 
+\i (00:07:24) trapsize 3
+\i (00:07:25) generaledit 
+\i (00:07:26) pick grid 48 -373
+\t (00:07:26) last pick:  0  -400
+\i (00:07:26) pick grid 45 -376
+\t (00:07:26) last pick:  0  -400
+\i (00:07:26) prepopup 45 -376
+\i (00:07:27) pick grid 38 -373
+\t (00:07:27) last pick:  0  -400
+\i (00:07:27) pick grid dbl 38 -373
+\t (00:07:27) last pick:  0  -400
+\i (00:07:28) pick grid -169 64
+\t (00:07:28) last pick:  -200  100
+\i (00:07:30) vertex 
+\i (00:07:32) pick grid 53 -374
+\t (00:07:32) last pick:  100  -400
+\t (00:07:32) last pick:  55  -375
+\e (00:07:35) Command not found: 300
+\i (00:07:37) Esc 
+\i (00:07:39) undo 
+\i (00:07:39) trapsize 3
+\i (00:07:39) generaledit 
+\i (00:07:40) Esc 
+\i (00:07:40) pick grid -158 -266
+\t (00:07:40) last pick:  -200  -300
+\i (00:07:43) shape edit boundary 
+\i (00:07:45) pick grid 7 -377
+\t (00:07:45) last pick:  0  -400
+\i (00:07:45) pick grid 13 -375
+\t (00:07:45) last pick:  0  -400
+\i (00:07:46) Esc 
+\i (00:07:47) pick grid 25 -334
+\t (00:07:47) last pick:  0  -300
+\i (00:07:47) pick grid 25 -374
+\t (00:07:47) last pick:  0  -400
+\i (00:07:47) prepopup 30 -374
+\i (00:07:49) cancel 
+\i (00:07:49) generaledit 
+\i (00:07:49) pick grid 2 -370
+\t (00:07:49) last pick:  0  -400
+\i (00:07:50) pick grid 20 -372
+\t (00:07:50) last pick:  0  -400
+\i (00:07:50) pick grid 22 -374
+\t (00:07:50) last pick:  0  -400
+\i (00:07:51) prepopup 22 -375
+\i (00:07:53) pick grid -8 -375
+\t (00:07:53) last pick:  0  -400
+\i (00:07:53) pick grid dbl -8 -375
+\t (00:07:53) last pick:  0  -400
+\i (00:07:53) pick grid -8 -375
+\t (00:07:53) last pick:  0  -400
+\i (00:07:53) prepopup -8 -375
+\i (00:07:54) pick grid -17 -375
+\t (00:07:54) last pick:  0  -400
+\i (00:07:58) shape edit boundary 
+\i (00:08:00) pick grid 211 -372
+\t (00:08:00) last pick:  200  -400
+\t (00:08:00) Pick the edit starting point on the shape boundary.
+\i (00:08:02) pick grid 190 -375
+\t (00:08:02) last pick:  200  -400
+\w (00:08:02) WARNING(SPMHGE-615): Nothing found ... pick selected shape boundary.
+\i (00:08:03) pick grid 201 -378
+\t (00:08:03) last pick:  200  -400
+\w (00:08:03) WARNING(SPMHGE-615): Nothing found ... pick selected shape boundary.
+\i (00:08:04) prepopup 204 -372
+\i (00:08:06) done 
+\i (00:08:07) generaledit 
+\i (00:08:07) pick grid 175 -373
+\t (00:08:07) last pick:  200  -400
+\i (00:08:08) prepopup 175 -374
+\i (00:08:09) pick grid 147 -412
+\t (00:08:09) last pick:  100  -400
+\i (00:08:09) drag_start grid 192 -372
+\i (00:08:09) move 
+\t (00:08:09) last pick:  200  -400
+\t (00:08:09) Element has no origin, using pick.
+\t (00:08:09) Pick new location for the element(s).
+\i (00:08:10) drag_stop grid 197 -234
+\i (00:08:10) generaledit 
+\i (00:08:12) undo 
+\i (00:08:12) trapsize 3
+\i (00:08:12) generaledit 
+\i (00:08:12) pick grid 214 -168
+\t (00:08:12) last pick:  200  -200
+\i (00:08:30) shape select 
+\i (00:08:30) pick grid 203 55
+\t (00:08:30) last pick:  200  100
+\i (00:08:32) pick grid 145 -374
+\t (00:08:32) last pick:  100  -400
+\t (00:08:32) last pick:  145  -375
+\e (00:08:37) Command not found: 300
+\e (00:08:40) Command not found: 300, 100
+\i (00:08:47) prepopup 183 -195
+\i (00:08:51) pop shape param 
+\t (00:08:51) Shape on this layer does not support parameters.
+\i (00:09:01) Esc 
+\i (00:09:02) Esc 
+\i (00:09:04) Esc 
+\i (00:09:05) prepopup 42 121
+\i (00:09:09) cancel 
+\i (00:09:09) generaledit 
+\i (00:09:10) pick grid 169 -132
+\t (00:09:10) last pick:  200  -100
+\i (00:09:10) prepopup 193 -75
+\i (00:09:16) pop dyn_option_select 'Quick Utilities@:@Grids...' 
+\i (00:09:16) define grid 
+\t (00:09:16) Spacing fields allow simple equations to aid calculations; prefix with =
+\i (00:09:16) generaledit 
+\i (00:09:23) setwindow form.grid
+\i (00:09:23) FORM grid done  
+\i (00:09:24) setwindow pcb
+\i (00:09:24) pick grid 49 228
+\t (00:09:24) last pick:  0  200
+\i (00:11:48) new 
+\e (00:11:48) Do you want to save the changes you made to HEADER100_5.dra?
+\i (00:11:50) fillin no 
+\i (00:11:56) newdrawfillin "HEADER100_3.dra" "Package Symbol (Wizard)"
+\t (00:11:56) Starting new design...
+\i (00:11:56) trapsize 6
+\i (00:11:56) trapsize 6
+\i (00:11:56) package symbol wizard 
+\i (00:11:56) generaledit 
+   (00:11:59) Loading cmds.cxt 
+   (00:11:59) Loading axlcore.cxt 
+\i (00:11:59) setwindow form.sym_wizard
+\i (00:11:59) FORM sym_wizard rca_th YES 
+\i (00:12:00) FORM sym_wizard bga YES 
+\i (00:12:01) FORM sym_wizard dip YES 
+\i (00:12:01) FORM sym_wizard soic YES 
+\i (00:12:02) FORM sym_wizard plcc YES 
+\i (00:12:02) FORM sym_wizard bga YES 
+\i (00:12:03) FORM sym_wizard sip YES 
+\i (00:12:03) FORM sym_wizard zip YES 
+\i (00:12:04) FORM sym_wizard sip YES 
+\i (00:12:05) FORM sym_wizard wiz_next  
+\i (00:12:07) FORM sym_wizard load_template  
+\t (00:12:07) Opening existing design...
+\t (00:12:07) Grids are drawn 400, 400 apart for enhanced viewability.
+\i (00:12:07) setwindow pcb
+\i (00:12:07) trapsize 140
+\d (00:12:07) Database opened: D:/Cadence/SPB_16.6/share/pcb/pcb_lib/symbol
