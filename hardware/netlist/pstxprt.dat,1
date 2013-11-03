@@ -1,5 +1,5 @@
 FILE_TYPE = EXPANDEDPARTLIST;
-{ Using PSTWRITER 16.6.0 d001Nov-01-2013 at 08:06:20 }
+{ Using PSTWRITER 16.6.0 d001Nov-02-2013 at 22:25:32 }
 DIRECTIVES
  PST_VERSION='PST_HDL_CENTRIC_VERSION_0';
  ROOT_DRAWING='AVALON';
@@ -754,6 +754,36 @@ SECTION_NUMBER 1
  '@AVALON.SCHEMATIC1(SCH_1):INS82641@DISCRETE.CAP NP.NORMAL(CHIPS)':
  C_PATH='@avalon.schematic1(sch_1):ins82641@discrete.\cap np.normal\(chips)',
  P_PATH='@avalon.schematic1(sch_1):page1_ins82641@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C167 'CAP NP_CAP_0603_30PF':;
+
+SECTION_NUMBER 1
+ '@AVALON.SCHEMATIC1(SCH_1):INS125231@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@avalon.schematic1(sch_1):ins125231@discrete.\cap np.normal\(chips)',
+ P_PATH='@avalon.schematic1(sch_1):page1_ins125231@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C168 'CAP NP_CAP_0603_XUF':;
+
+SECTION_NUMBER 1
+ '@AVALON.SCHEMATIC1(SCH_1):INS159937@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@avalon.schematic1(sch_1):ins159937@discrete.\cap np.normal\(chips)',
+ P_PATH='@avalon.schematic1(sch_1):page1_ins159937@discrete.\cap np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C169 'CAP NP_CAP_0603_XUF':;
+
+SECTION_NUMBER 1
+ '@AVALON.SCHEMATIC1(SCH_1):INS159963@DISCRETE.CAP NP.NORMAL(CHIPS)':
+ C_PATH='@avalon.schematic1(sch_1):ins159963@discrete.\cap np.normal\(chips)',
+ P_PATH='@avalon.schematic1(sch_1):page1_ins159963@discrete.\cap np.normal\(chips)',
  PRIM_FILE='.\pstchip.dat',
  SECTION='';
 
@@ -1748,12 +1778,32 @@ SECTION_NUMBER 1
  SECTION='';
 
 PART_NAME
+ J4 'HEADER 3_HEADER100_3_FAN':;
+
+SECTION_NUMBER 1
+ '@AVALON.SCHEMATIC1(SCH_1):INS143746@CONNECTOR.HEADER 3.NORMAL(CHIPS)':
+ C_PATH='@avalon.schematic1(sch_1):ins143746@connector.\header 3.normal\(chips)',
+ P_PATH='@avalon.schematic1(sch_1):page1_ins143746@connector.\header 3.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
  L1 'INDUCTOR_ETQ-P4L_560NH':;
 
 SECTION_NUMBER 1
  '@AVALON.SCHEMATIC1(SCH_1):INS8699@DISCRETE.INDUCTOR.NORMAL(CHIPS)':
  C_PATH='@avalon.schematic1(sch_1):ins8699@discrete.\inductor.normal\(chips)',
  P_PATH='@avalon.schematic1(sch_1):page1_ins8699@discrete.\inductor.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ Q1 'NPN BCE_SOT23_BC817-25-7-F':;
+
+SECTION_NUMBER 1
+ '@AVALON.SCHEMATIC1(SCH_1):INS148262@TRANSISTOR.NPN BCE.NORMAL(CHIPS)':
+ C_PATH='@avalon.schematic1(sch_1):ins148262@transistor.\npn bce.normal\(chips)',
+ P_PATH='@avalon.schematic1(sch_1):page1_ins148262@transistor.\npn bce.normal\(chips)',
  PRIM_FILE='.\pstchip.dat',
  SECTION='';
 
@@ -1948,12 +1998,102 @@ SECTION_NUMBER 1
  SECTION='';
 
 PART_NAME
+ R27 'RESISTOR_RES_0603_1K':;
+
+SECTION_NUMBER 1
+ '@AVALON.SCHEMATIC1(SCH_1):INS121388@DISCRETE.RESISTOR.NORMAL(CHIPS)':
+ C_PATH='@avalon.schematic1(sch_1):ins121388@discrete.\resistor.normal\(chips)',
+ P_PATH='@avalon.schematic1(sch_1):page1_ins121388@discrete.\resistor.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R28 'RESISTOR_RES_0603_1K':;
+
+SECTION_NUMBER 1
+ '@AVALON.SCHEMATIC1(SCH_1):INS121692@DISCRETE.RESISTOR.NORMAL(CHIPS)':
+ C_PATH='@avalon.schematic1(sch_1):ins121692@discrete.\resistor.normal\(chips)',
+ P_PATH='@avalon.schematic1(sch_1):page1_ins121692@discrete.\resistor.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R29 'RESISTOR_RES_0603_100':;
+
+SECTION_NUMBER 1
+ '@AVALON.SCHEMATIC1(SCH_1):INS125187@DISCRETE.RESISTOR.NORMAL(CHIPS)':
+ C_PATH='@avalon.schematic1(sch_1):ins125187@discrete.\resistor.normal\(chips)',
+ P_PATH='@avalon.schematic1(sch_1):page1_ins125187@discrete.\resistor.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
  R3 'RESISTOR_RES_0603_5.11K':;
 
 SECTION_NUMBER 1
  '@AVALON.SCHEMATIC1(SCH_1):INS269@DISCRETE.RESISTOR.NORMAL(CHIPS)':
  C_PATH='@avalon.schematic1(sch_1):ins269@discrete.\resistor.normal\(chips)',
  P_PATH='@avalon.schematic1(sch_1):page1_ins269@discrete.\resistor.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R30 'RESISTOR_RES_0603_40K':;
+
+SECTION_NUMBER 1
+ '@AVALON.SCHEMATIC1(SCH_1):INS133358@DISCRETE.RESISTOR.NORMAL(CHIPS)':
+ C_PATH='@avalon.schematic1(sch_1):ins133358@discrete.\resistor.normal\(chips)',
+ P_PATH='@avalon.schematic1(sch_1):page1_ins133358@discrete.\resistor.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R31 'RESISTOR_RES_1206_1K, 1/4W':;
+
+SECTION_NUMBER 1
+ '@AVALON.SCHEMATIC1(SCH_1):INS143719@DISCRETE.RESISTOR.NORMAL(CHIPS)':
+ C_PATH='@avalon.schematic1(sch_1):ins143719@discrete.\resistor.normal\(chips)',
+ P_PATH='@avalon.schematic1(sch_1):page1_ins143719@discrete.\resistor.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R32 'RESISTOR_RES_0603_13K':;
+
+SECTION_NUMBER 1
+ '@AVALON.SCHEMATIC1(SCH_1):INS143774@DISCRETE.RESISTOR.NORMAL(CHIPS)':
+ C_PATH='@avalon.schematic1(sch_1):ins143774@discrete.\resistor.normal\(chips)',
+ P_PATH='@avalon.schematic1(sch_1):page1_ins143774@discrete.\resistor.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R33 'RESISTOR_RES_0603_10K':;
+
+SECTION_NUMBER 1
+ '@AVALON.SCHEMATIC1(SCH_1):INS143800@DISCRETE.RESISTOR.NORMAL(CHIPS)':
+ C_PATH='@avalon.schematic1(sch_1):ins143800@discrete.\resistor.normal\(chips)',
+ P_PATH='@avalon.schematic1(sch_1):page1_ins143800@discrete.\resistor.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R34 'RESISTOR_RES_0603_10':;
+
+SECTION_NUMBER 1
+ '@AVALON.SCHEMATIC1(SCH_1):INS152446@DISCRETE.RESISTOR.NORMAL(CHIPS)':
+ C_PATH='@avalon.schematic1(sch_1):ins152446@discrete.\resistor.normal\(chips)',
+ P_PATH='@avalon.schematic1(sch_1):page1_ins152446@discrete.\resistor.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R35 'RESISTOR_RES_0603_470':;
+
+SECTION_NUMBER 1
+ '@AVALON.SCHEMATIC1(SCH_1):INS152477@DISCRETE.RESISTOR.NORMAL(CHIPS)':
+ C_PATH='@avalon.schematic1(sch_1):ins152477@discrete.\resistor.normal\(chips)',
+ P_PATH='@avalon.schematic1(sch_1):page1_ins152477@discrete.\resistor.normal\(chips)',
  PRIM_FILE='.\pstchip.dat',
  SECTION='';
 
@@ -2098,12 +2238,42 @@ SECTION_NUMBER 1
  SECTION='';
 
 PART_NAME
+ U18 '74AUP2G02_8-XSON_74AUP2G02':;
+
+SECTION_NUMBER 1
+ '@AVALON.SCHEMATIC1(SCH_1):INS122446@PARTS.74AUP2G02.NORMAL(CHIPS)':
+ C_PATH='@avalon.schematic1(sch_1):ins122446@parts.\74aup2g02.normal\(chips)',
+ P_PATH='@avalon.schematic1(sch_1):page1_ins122446@parts.\74aup2g02.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U19 'NL27WZ14DFT2G_SC-88_NL27WZ14DFT':;
+
+SECTION_NUMBER 1
+ '@AVALON.SCHEMATIC1(SCH_1):INS129397@PARTS.NL27WZ14DFT2G.NORMAL(CHIPS)':
+ C_PATH='@avalon.schematic1(sch_1):ins129397@parts.\nl27wz14dft2g.normal\(chips)',
+ P_PATH='@avalon.schematic1(sch_1):page1_ins129397@parts.\nl27wz14dft2g.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
  U2 'CSD86350Q5D_8SON_POWERBLOCK_CSD':;
 
 SECTION_NUMBER 1
  '@AVALON.SCHEMATIC1(SCH_1):INS32819@PARTS.CSD86350Q5D.NORMAL(CHIPS)':
  C_PATH='@avalon.schematic1(sch_1):ins32819@parts.\csd86350q5d.normal\(chips)',
  P_PATH='@avalon.schematic1(sch_1):page1_ins32819@parts.\csd86350q5d.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U20 'LM63_TI_D_R_PDSO_G8_LM63':;
+
+SECTION_NUMBER 1
+ '@AVALON.SCHEMATIC1(SCH_1):INS142884@PARTS.LM63.NORMAL(CHIPS)':
+ C_PATH='@avalon.schematic1(sch_1):ins142884@parts.\lm63.normal\(chips)',
+ P_PATH='@avalon.schematic1(sch_1):page1_ins142884@parts.\lm63.normal\(chips)',
  PRIM_FILE='.\pstchip.dat',
  SECTION='';
 
@@ -2174,6 +2344,16 @@ SECTION_NUMBER 1
  '@AVALON.SCHEMATIC1(SCH_1):INS64177@PARTS.BITSYNCOM A3255Q48.NORMAL(CHIPS)':
  C_PATH='@avalon.schematic1(sch_1):ins64177@parts.\bitsyncom a3255q48.normal\(chips)',
  P_PATH='@avalon.schematic1(sch_1):page1_ins64177@parts.\bitsyncom a3255q48.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ Y1 'CRYSTAL_HC49_US_CRYSTAL':;
+
+SECTION_NUMBER 1
+ '@AVALON.SCHEMATIC1(SCH_1):INS165354@DISCRETE.CRYSTAL.NORMAL(CHIPS)':
+ C_PATH='@avalon.schematic1(sch_1):ins165354@discrete.\crystal.normal\(chips)',
+ P_PATH='@avalon.schematic1(sch_1):page1_ins165354@discrete.\crystal.normal\(chips)',
  PRIM_FILE='.\pstchip.dat',
  SECTION='';
 

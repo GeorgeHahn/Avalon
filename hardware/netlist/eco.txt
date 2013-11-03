@@ -2,1375 +2,161 @@
 |                                 ECO   REPORT                                 |
 |                                                                    Page   1  |
 |------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
-|                                                    Sat Nov 02 19:14:05 2013  |
+|  C:/Users/George/Documents/GitHub/Avalon/hardware/allegro/AVALON.brd         |
+|                                                    Sat Nov 02 22:30:39 2013  |
 |------------------------------------------------------------------------------|
 | NET CHANGES                                                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|   net  name |  type of change |                net     pins                  |
+|   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-  1V0          pins ADDED TO this new net
-                                 C58.1          C66.1          C78.1          
-                                 C90.1          C102.1         C118.1         
-                                 C132.1         C144.1         C150.1         
-                                 C160.1         U8.6           U8.7           
-                                 U9.6           U9.7           U10.6          
-                                 U10.7          U11.6          U11.7          
-                                 U12.6          U12.7          U13.6          
-                                 U13.7          U14.6          U14.7          
-                                 U15.6          U15.7          U16.6          
-                                 U16.7          U17.6          U17.7          
+  GND          pins ADDED TO this existing net (pins not previously on any net)
+                                 U8.49                          
+                                 U9.49                          
+                                 U10.49                         
+                                 U11.49                         
+                                 U12.49                         
+                                 U13.49                         
+                                 U14.49                         
+                                 U15.49                         
+                                 U16.49                         
+                                 U17.49                         
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  3V3          pins ADDED TO this new net
-                                 C36.1          C37.1          C44.1          
-                                 C45.1          C46.1          C55.1          
-                                 C56.1          C63.1          C64.1          
-                                 C75.1          C76.1          C87.1          
-                                 C88.1          C99.1          C100.1         
-                                 C111.1         C112.1         C123.1         
-                                 C124.1         C129.1         C130.1         
-                                 C141.1         C142.1         C157.1         
-                                 C158.1         J2.2           R17.1          
-                                 R18.1          R19.1          R20.1          
-                                 R21.1          R22.1          R23.1          
-                                 R24.1          R25.1          R26.1          
-                                 R27.2          R28.2          R30.1          
-                                 R35.2          U3.2           U5.4           
-                                 U5.8           U5.15          U5.20          
-                                 U6.4           U7.7           U7.26          
-                                 U7.33          U8.24          U8.37          
-                                 U9.24          U9.37          U10.24         
-                                 U10.37         U11.24         U11.37         
-                                 U12.24         U12.37         U13.24         
-                                 U13.37         U14.24         U14.37         
-                                 U15.24         U15.37         U16.24         
-                                 U16.37         U17.24         U17.37         
-                                 U18.8          U19.5          U20.1          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  5V0          pins ADDED TO this new net
-                                 C8.2           C9.2           C42.1          
-                                 C43.1          R1.2           R12.2          
-                                 U1.15          U1.33          U1.42          
-                                 U4.1           
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  CK_EN        pins ADDED TO this new net
+  VCORE        pins ADDED TO this existing net (pins not previously on any net)
+                                 U8.40                          
+                                 U8.41                          
+                                 U8.42                          
+                                 U8.45                          
+                                 U8.46                          
+                                 U8.47                          
+                                 U8.48                          
+                                 U9.40                          
+                                 U9.41                          
+                                 U9.42                          
+                                 U9.45                          
+                                 U9.46                          
+                                 U9.47                          
+                                 U9.48                          
+                                 U10.40                         
+                                 U10.41                         
+                                 U10.42                         
+                                 U10.45                         
+                                 U10.46                         
+                                 U10.47                         
+                                 U10.48                         
+                                 U11.40                         
+                                 U11.41                         
+                                 U11.42                         
+                                 U11.45                         
+                                 U11.46                         
+                                 U11.47                         
+                                 U11.48                         
+                                 U12.40                         
+                                 U12.41                         
+                                 U12.42                         
+                                 U12.45                         
 |------------------------------------------------------------------------------|
 |                                 ECO   REPORT                                 |
 |                                                                    Page   2  |
 |------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
-|                                                    Sat Nov 02 19:14:05 2013  |
+|  C:/Users/George/Documents/GitHub/Avalon/hardware/allegro/AVALON.brd         |
+|                                                    Sat Nov 02 22:30:39 2013  |
 |------------------------------------------------------------------------------|
 | NET CHANGES                                                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|   net  name |  type of change |                net     pins                  |
+|   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-                                 U1.12          U7.23          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  CLK1         pins ADDED TO this new net
-                                 U5.3           U16.9          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  CLK2         pins ADDED TO this new net
-                                 U5.5           U17.9          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  CLK3         pins ADDED TO this new net
-                                 U5.7           U13.9          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  CLK4         pins ADDED TO this new net
-                                 U5.9           U14.9          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  CLK5         pins ADDED TO this new net
-                                 U5.11          U15.9          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  CLK6         pins ADDED TO this new net
-                                 U5.12          U8.9           
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  CLK7         pins ADDED TO this new net
-                                 U5.14          U9.9           
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  CLK8         pins ADDED TO this new net
-                                 U5.16          U10.9          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  CLK9         pins ADDED TO this new net
-                                 U5.18          U11.9          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  CLK10        pins ADDED TO this new net
-                                 U5.19          U12.9          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  D+           pins ADDED TO this new net
-                                 J3.3           U7.39          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  D-           pins ADDED TO this new net
-                                 J3.2           U7.38          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  FANCLK       pins ADDED TO this new net
-                                 U7.9           U20.8          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  FANDAT       pins ADDED TO this new net
-                                 U7.8           U20.7          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  FANPWM       pins ADDED TO this new net
+                                 U12.46                         
+                                 U12.47                         
+                                 U12.48                         
+                                 U13.40                         
+                                 U13.41                         
+                                 U13.42                         
+                                 U13.45                         
+                                 U13.46                         
+                                 U13.47                         
+                                 U13.48                         
+                                 U14.40                         
+                                 U14.41                         
+                                 U14.42                         
+                                 U14.45                         
+                                 U14.46                         
+                                 U14.47                         
+                                 U14.48                         
+                                 U15.40                         
+                                 U15.41                         
+                                 U15.42                         
+                                 U15.45                         
+                                 U15.46                         
+                                 U15.47                         
+                                 U15.48                         
+                                 U16.40                         
+                                 U16.41                         
+                                 U16.42                         
+                                 U16.45                         
+                                 U16.46                         
+                                 U16.47                         
+                                 U16.48                         
+                                 U17.40                         
+                                 U17.41                         
+                                 U17.42                         
+                                 U17.45                         
+                                 U17.46                         
+                                 U17.47                         
+                                 U17.48                         
 |------------------------------------------------------------------------------|
 |                                 ECO   REPORT                                 |
 |                                                                    Page   3  |
 |------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
-|                                                    Sat Nov 02 19:14:05 2013  |
+|  C:/Users/George/Documents/GitHub/Avalon/hardware/allegro/AVALON.brd         |
+|                                                    Sat Nov 02 22:30:39 2013  |
 |------------------------------------------------------------------------------|
-| NET CHANGES                                                                  |
+| COMPONENT DEFINITION added to board drawing                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|   net  name |  type of change |                net     pins                  |
+|    device type                                                               |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-                                 R34.1          U20.4          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  GND          pins ADDED TO this new net
-                                 C1.2           C2.2           C6.2           
-                                 C7.1           C8.1           C9.1           
-                                 C10.1          C11.1          C12.1          
-                                 C13.1          C14.2          C15.2          
-                                 C16.2          C17.2          C18.2          
-                                 C19.2          C20.2          C21.2          
-                                 C22.2          C23.2          C24.2          
-                                 C25.2          C26.2          C27.2          
-                                 C28.2          C29.2          C30.2          
-                                 C31.2          C32.2          C33.2          
-                                 C34.2          C35.2          C36.2          
-                                 C37.2          C38.2          C39.2          
-                                 C40.2          C41.2          C42.2          
-                                 C43.2          C44.2          C45.2          
-                                 C46.2          C47.2          C48.2          
-                                 C49.2          C50.2          C51.2          
-                                 C52.2          C53.2          C54.2          
-                                 C55.2          C56.2          C57.1          
-                                 C58.2          C59.2          C60.2          
-                                 C61.2          C62.2          C63.2          
-                                 C64.2          C65.1          C66.2          
-                                 C67.2          C68.2          C69.2          
-                                 C70.2          C71.2          C72.2          
-                                 C73.2          C74.2          C75.2          
-                                 C76.2          C77.1          C78.2          
-                                 C79.2          C80.2          C81.2          
-                                 C82.2          C83.2          C84.2          
-                                 C85.2          C86.2          C87.2          
-                                 C88.2          C89.1          C90.2          
-                                 C91.2          C92.2          C93.2          
-                                 C94.2          C95.2          C96.2          
-                                 C97.2          C98.2          C99.2          
-                                 C100.2         C101.1         C102.2         
-                                 C103.2         C104.2         C105.2         
-                                 C106.2         C107.2         C108.2         
-                                 C109.2         C110.2         C111.2         
-                                 C112.2         C113.1         C114.2         
-                                 C115.2         C116.2         C117.2         
-                                 C118.2         C119.2         C120.2         
-                                 C121.2         C122.2         C123.2         
-                                 C124.2         C125.2         C126.2         
-                                 C127.2         C128.2         C129.2         
+ BITSYNCOM A3255Q48_QFN48_BITSYN
 |------------------------------------------------------------------------------|
 |                                 ECO   REPORT                                 |
 |                                                                    Page   4  |
 |------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
-|                                                    Sat Nov 02 19:14:05 2013  |
+|  C:/Users/George/Documents/GitHub/Avalon/hardware/allegro/AVALON.brd         |
+|                                                    Sat Nov 02 22:30:39 2013  |
 |------------------------------------------------------------------------------|
-| NET CHANGES                                                                  |
+| COMPONENTS CHANGED from one device type to another in board drawing          |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|   net  name |  type of change |                net     pins                  |
+|    ref des        | new device type     |   x   |   y   |  old  device type  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-                                 C130.2         C131.1         C132.2         
-                                 C133.2         C134.2         C135.2         
-                                 C136.2         C137.2         C138.2         
-                                 C139.2         C140.2         C141.2         
-                                 C142.2         C143.1         C144.2         
-                                 C145.2         C146.2         C147.2         
-                                 C148.2         C149.1         C150.2         
-                                 C151.2         C152.2         C153.2         
-                                 C154.2         C155.2         C156.2         
-                                 C157.2         C158.2         C159.1         
-                                 C160.2         C161.2         C162.2         
-                                 C163.2         C164.2         C165.2         
-                                 C166.2         C167.1         C168.2         
-                                 C169.2         D2.1           D3.1           
-                                 D4.1           D5.1           J1.1           
-                                 J2.3           J3.5           J3.6           
-                                 Q1.3           R5.1           R7.1           
-                                 R33.1          U1.5           U1.13          
-                                 U1.23          U1.34          U1.35          
-                                 U1.45          U2.9           U3.3           
-                                 U4.2           U4.3           U4.6           
-                                 U4.7           U5.2           U5.6           
-                                 U5.10          U5.13          U5.17          
-                                 U6.2           U7.6           U7.27          
-                                 U8.5           U8.8           U8.12          
-                                 U8.23          U8.27          U8.38          
-                                 U8.EP          U9.5           U9.8           
-                                 U9.12          U9.23          U9.27          
-                                 U9.38          U9.EP          U10.5          
-                                 U10.8          U10.12         U10.23         
-                                 U10.27         U10.38         U10.EP         
-                                 U11.5          U11.8          U11.12         
-                                 U11.23         U11.27         U11.38         
-                                 U11.EP         U12.5          U12.8          
-                                 U12.12         U12.23         U12.27         
-                                 U12.38         U12.EP         U13.5          
-                                 U13.8          U13.12         U13.23         
-                                 U13.27         U13.38         U13.EP         
-                                 U14.5          U14.8          U14.12         
-                                 U14.23         U14.27         U14.38         
-                                 U14.EP         U15.5          U15.8          
-                                 U15.12         U15.23         U15.27         
-                                 U15.38         U15.EP         U16.5          
-                                 U16.8          U16.12         U16.23         
-                                 U16.27         U16.38         U16.EP         
+ U8                  BITSYNCOM A3255Q48_QFN48_BITSYN                 BITSYNCOM A3255Q48_QFN48_BITSYN
+ U9                  BITSYNCOM A3255Q48_QFN48_BITSYN                 BITSYNCOM A3255Q48_QFN48_BITSYN
+ U10                 BITSYNCOM A3255Q48_QFN48_BITSYN                 BITSYNCOM A3255Q48_QFN48_BITSYN
+ U11                 BITSYNCOM A3255Q48_QFN48_BITSYN                 BITSYNCOM A3255Q48_QFN48_BITSYN
+ U12                 BITSYNCOM A3255Q48_QFN48_BITSYN                 BITSYNCOM A3255Q48_QFN48_BITSYN
+ U13                 BITSYNCOM A3255Q48_QFN48_BITSYN                 BITSYNCOM A3255Q48_QFN48_BITSYN
+ U14                 BITSYNCOM A3255Q48_QFN48_BITSYN                 BITSYNCOM A3255Q48_QFN48_BITSYN
+ U15                 BITSYNCOM A3255Q48_QFN48_BITSYN                 BITSYNCOM A3255Q48_QFN48_BITSYN
+ U16                 BITSYNCOM A3255Q48_QFN48_BITSYN                 BITSYNCOM A3255Q48_QFN48_BITSYN
+ U17                 BITSYNCOM A3255Q48_QFN48_BITSYN                 BITSYNCOM A3255Q48_QFN48_BITSYN
 |------------------------------------------------------------------------------|
 |                                 ECO   REPORT                                 |
 |                                                                    Page   5  |
 |------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
-|                                                    Sat Nov 02 19:14:05 2013  |
-|------------------------------------------------------------------------------|
-| NET CHANGES                                                                  |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|   net  name |  type of change |                net     pins                  |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-                                 U17.5          U17.8          U17.12         
-                                 U17.23         U17.27         U17.38         
-                                 U17.EP         U18.4          U19.2          
-                                 U20.5          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  IC1_NO       pins ADDED TO this new net
-                                 U16.35         U17.2          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  IC1_PO       pins ADDED TO this new net
-                                 U16.36         U17.1          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  IC2_NO       pins ADDED TO this new net
-                                 U13.2          U17.35         
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  IC2_PO       pins ADDED TO this new net
-                                 U13.1          U17.36         
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  IC3_NO       pins ADDED TO this new net
-                                 U13.35         U14.2          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  IC3_PO       pins ADDED TO this new net
-                                 U13.36         U14.1          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  IC4_NO       pins ADDED TO this new net
-                                 U14.35         U15.2          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  IC4_PO       pins ADDED TO this new net
-                                 U14.36         U15.1          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  IC5_NO       pins ADDED TO this new net
-                                 U8.2           U15.35         
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  IC5_PO       pins ADDED TO this new net
-                                 U8.1           U15.36         
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  IC6_NO       pins ADDED TO this new net
-                                 U8.35          U9.2           
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  IC6_PO       pins ADDED TO this new net
-                                 U8.36          U9.1           
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  IC7_NO       pins ADDED TO this new net
-                                 U9.35          U10.2          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  IC7_PO       pins ADDED TO this new net
-|------------------------------------------------------------------------------|
-|                                 ECO   REPORT                                 |
-|                                                                    Page   6  |
-|------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
-|                                                    Sat Nov 02 19:14:05 2013  |
-|------------------------------------------------------------------------------|
-| NET CHANGES                                                                  |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|   net  name |  type of change |                net     pins                  |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-                                 U9.36          U10.1          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  IC8_NO       pins ADDED TO this new net
-                                 U10.35         U11.2          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  IC8_PO       pins ADDED TO this new net
-                                 U10.36         U11.1          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  IC9_NO       pins ADDED TO this new net
-                                 U11.35         U12.2          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  IC9_PO       pins ADDED TO this new net
-                                 U11.36         U12.1          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  ICSPCLK      pins ADDED TO this new net
-                                 J2.5           U7.14          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  ICSPDAT      pins ADDED TO this new net
-                                 J2.4           U7.15          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  INV_CLK      pins ADDED TO this new net
-                                 U18.3          U19.1          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  INV_DAT      pins ADDED TO this new net
-                                 C167.2         R29.2          U18.6          
-                                 U19.3          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  LED0         pins ADDED TO this new net
-                                 R13.1          U7.34          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  LED1         pins ADDED TO this new net
-                                 R14.1          U7.35          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  LED2         pins ADDED TO this new net
-                                 R15.1          U7.36          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  LED3         pins ADDED TO this new net
-                                 R16.1          U7.37          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  MCLR         pins ADDED TO this new net
-                                 J2.1           R30.2          U7.16          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N09260       pins ADDED TO this new net
-                                 R2.2           U1.26          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-|------------------------------------------------------------------------------|
-|                                 ECO   REPORT                                 |
-|                                                                    Page   7  |
-|------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
-|                                                    Sat Nov 02 19:14:05 2013  |
-|------------------------------------------------------------------------------|
-| NET CHANGES                                                                  |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|   net  name |  type of change |                net     pins                  |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-  N09264       pins ADDED TO this new net
-                                 R1.1           U1.24          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N09284       pins ADDED TO this new net
-                                 D1.1           R12.1          U1.48          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N09297       pins ADDED TO this new net
-                                 C3.1           D1.2           U1.1           
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N09312       pins ADDED TO this new net
-                                 C3.2           U1.3           U2.4           
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N09333       pins ADDED TO this new net
-                                 U1.2           U2.3           
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N09337       pins ADDED TO this new net
-                                 U1.47          U2.5           
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N09737       pins ADDED TO this new net
-                                 C4.1           L1.2           R9.1           
-                                 R11.2          U1.7           
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N09769       pins ADDED TO this new net
-                                 C4.2           R10.1          U1.8           
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N09949       pins ADDED TO this new net
-                                 C5.2           R11.1          U1.9           
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N09959       pins ADDED TO this new net
-                                 C5.1           C6.1           U1.10          
-                                 U1.11          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N10238       pins ADDED TO this new net
-                                 R2.1           R3.2           U1.17          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N10242       pins ADDED TO this new net
-                                 R3.1           R4.2           U1.27          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N10246       pins ADDED TO this new net
-                                 R4.1           R5.2           U1.28          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N11769       pins ADDED TO this new net
-                                 R6.2           U1.31          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N11775       pins ADDED TO this new net
-|------------------------------------------------------------------------------|
-|                                 ECO   REPORT                                 |
-|                                                                    Page   8  |
-|------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
-|                                                    Sat Nov 02 19:14:05 2013  |
-|------------------------------------------------------------------------------|
-| NET CHANGES                                                                  |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|   net  name |  type of change |                net     pins                  |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-                                 R6.1           R7.2           U1.32          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N12290       pins ADDED TO this new net
-                                 C7.2           U1.25          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N13217       pins ADDED TO this new net
-                                 L1.1           U2.6           U2.7           
-                                 U2.8           
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N17851       pins ADDED TO this new net
-                                 D2.2           R13.2          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N17964       pins ADDED TO this new net
-                                 D3.2           R14.2          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N18200       pins ADDED TO this new net
-                                 D4.2           R15.2          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N18437       pins ADDED TO this new net
-                                 D5.2           R16.2          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N20040       pins ADDED TO this new net
-                                 U5.1           U6.3           
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N59408       pins ADDED TO this new net
-                                 C57.2          R17.2          U8.44          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N64105       pins ADDED TO this new net
-                                 C65.2          R18.2          U9.44          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N66132       pins ADDED TO this new net
-                                 C77.2          R19.2          U10.44         
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N68274       pins ADDED TO this new net
-                                 C89.2          R20.2          U11.44         
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N71327       pins ADDED TO this new net
-                                 C101.2         R21.2          U12.44         
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N79431       pins ADDED TO this new net
-                                 C113.2         R22.2          U13.44         
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N80361       pins ADDED TO this new net
-                                 C131.2         R23.2          U14.44         
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-|------------------------------------------------------------------------------|
-|                                 ECO   REPORT                                 |
-|                                                                    Page   9  |
-|------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
-|                                                    Sat Nov 02 19:14:05 2013  |
-|------------------------------------------------------------------------------|
-| NET CHANGES                                                                  |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|   net  name |  type of change |                net     pins                  |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-  N81231       pins ADDED TO this new net
-                                 C143.2         R24.2          U15.44         
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N81631       pins ADDED TO this new net
-                                 C149.2         R25.2          U16.44         
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N82307       pins ADDED TO this new net
-                                 C159.2         R26.2          U17.44         
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N125152      pins ADDED TO this new net
-                                 R29.1          U18.5          U18.7          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N143816      pins ADDED TO this new net
-                                 R32.1          R33.2          U20.6          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N143829      pins ADDED TO this new net
-                                 J4.2           R31.2          R32.2          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N145139      pins ADDED TO this new net
-                                 J4.1           Q1.2           
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N152495      pins ADDED TO this new net
-                                 Q1.1           R34.2          R35.1          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  OSC1         pins ADDED TO this new net
-                                 C169.1         U7.28          Y1.1           
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  OSC2         pins ADDED TO this new net
-                                 C168.1         U7.29          Y1.2           
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  PGOOD        pins ADDED TO this new net
-                                 U1.14          U7.24          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  REP_N        pins ADDED TO this new net
-                                 R28.1          U8.16          U9.16          
-                                 U10.16         U11.16         U12.16         
-                                 U13.16         U14.16         U15.16         
-                                 U16.16         U17.16         U18.2          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  REP_P        pins ADDED TO this new net
-                                 R27.1          U8.17          U9.17          
-                                 U10.17         U11.17         U12.17         
-                                 U13.17         U14.17         U15.17         
-                                 U16.17         U17.17         U18.1          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-|------------------------------------------------------------------------------|
-|                                 ECO   REPORT                                 |
-|                                                                    Page  10  |
-|------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
-|                                                    Sat Nov 02 19:14:05 2013  |
-|------------------------------------------------------------------------------|
-| NET CHANGES                                                                  |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|   net  name |  type of change |                net     pins                  |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-  RESPONSE_CLK pins ADDED TO this new net
-                                 U7.40          U19.4          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  RESPONSE_DAT pins ADDED TO this new net
-                                 U7.1           U19.6          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  UC_NO        pins ADDED TO this new net
-                                 U7.13          U16.2          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  UC_PO        pins ADDED TO this new net
-                                 U7.12          U16.1          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  VCORE        pins ADDED TO this new net
-                                 C1.1           C2.1           C14.1          
-                                 C15.1          C16.1          C17.1          
-                                 C18.1          C19.1          C20.1          
-                                 C21.1          C22.1          C23.1          
-                                 C24.1          C25.1          C26.1          
-                                 C27.1          C28.1          C29.1          
-                                 C30.1          C31.1          C32.1          
-                                 C33.1          C34.1          C35.1          
-                                 C47.1          C48.1          C49.1          
-                                 C50.1          C51.1          C52.1          
-                                 C53.1          C54.1          C59.1          
-                                 C60.1          C61.1          C62.1          
-                                 C67.1          C68.1          C69.1          
-                                 C70.1          C71.1          C72.1          
-                                 C73.1          C74.1          C79.1          
-                                 C80.1          C81.1          C82.1          
-                                 C83.1          C84.1          C85.1          
-                                 C86.1          C91.1          C92.1          
-                                 C93.1          C94.1          C95.1          
-                                 C96.1          C97.1          C98.1          
-                                 C103.1         C104.1         C105.1         
-                                 C106.1         C107.1         C108.1         
-                                 C109.1         C110.1         C114.1         
-                                 C115.1         C116.1         C117.1         
-                                 C119.1         C120.1         C121.1         
-                                 C122.1         C125.1         C126.1         
-                                 C127.1         C128.1         C133.1         
-                                 C134.1         C135.1         C136.1         
-                                 C137.1         C138.1         C139.1         
-                                 C140.1         C145.1         C146.1         
-                                 C147.1         C148.1         C151.1         
-                                 C152.1         C153.1         C154.1         
-|------------------------------------------------------------------------------|
-|                                 ECO   REPORT                                 |
-|                                                                    Page  11  |
-|------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
-|                                                    Sat Nov 02 19:14:05 2013  |
-|------------------------------------------------------------------------------|
-| NET CHANGES                                                                  |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|   net  name |  type of change |                net     pins                  |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-                                 C155.1         C156.1         C161.1         
-                                 C162.1         C163.1         C164.1         
-                                 C165.1         C166.1         R9.2           
-                                 R10.2          U1.16          U8.3           
-                                 U8.4           U8.10          U8.11          
-                                 U8.13          U8.14          U8.15          
-                                 U8.18          U8.19          U8.20          
-                                 U8.21          U8.22          U8.25          
-                                 U8.26          U8.28          U8.29          
-                                 U8.30          U8.31          U8.32          
-                                 U8.33          U8.34          U8.39          
-                                 U9.3           U9.4           U9.10          
-                                 U9.11          U9.13          U9.14          
-                                 U9.15          U9.18          U9.19          
-                                 U9.20          U9.21          U9.22          
-                                 U9.25          U9.26          U9.28          
-                                 U9.29          U9.30          U9.31          
-                                 U9.32          U9.33          U9.34          
-                                 U9.39          U10.3          U10.4          
-                                 U10.10         U10.11         U10.13         
-                                 U10.14         U10.15         U10.18         
-                                 U10.19         U10.20         U10.21         
-                                 U10.22         U10.25         U10.26         
-                                 U10.28         U10.29         U10.30         
-                                 U10.31         U10.32         U10.33         
-                                 U10.34         U10.39         U11.3          
-                                 U11.4          U11.10         U11.11         
-                                 U11.13         U11.14         U11.15         
-                                 U11.18         U11.19         U11.20         
-                                 U11.21         U11.22         U11.25         
-                                 U11.26         U11.28         U11.29         
-                                 U11.30         U11.31         U11.32         
-                                 U11.33         U11.34         U11.39         
-                                 U12.3          U12.4          U12.10         
-                                 U12.11         U12.13         U12.14         
-                                 U12.15         U12.18         U12.19         
-                                 U12.20         U12.21         U12.22         
-                                 U12.25         U12.26         U12.28         
-                                 U12.29         U12.30         U12.31         
-                                 U12.32         U12.33         U12.34         
-                                 U12.39         U13.3          U13.4          
-                                 U13.10         U13.11         U13.13         
-                                 U13.14         U13.15         U13.18         
-                                 U13.19         U13.20         U13.21         
-                                 U13.22         U13.25         U13.26         
-|------------------------------------------------------------------------------|
-|                                 ECO   REPORT                                 |
-|                                                                    Page  12  |
-|------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
-|                                                    Sat Nov 02 19:14:05 2013  |
-|------------------------------------------------------------------------------|
-| NET CHANGES                                                                  |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|   net  name |  type of change |                net     pins                  |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-                                 U13.28         U13.29         U13.30         
-                                 U13.31         U13.32         U13.33         
-                                 U13.34         U13.39         U14.3          
-                                 U14.4          U14.10         U14.11         
-                                 U14.13         U14.14         U14.15         
-                                 U14.18         U14.19         U14.20         
-                                 U14.21         U14.22         U14.25         
-                                 U14.26         U14.28         U14.29         
-                                 U14.30         U14.31         U14.32         
-                                 U14.33         U14.34         U14.39         
-                                 U15.3          U15.4          U15.10         
-                                 U15.11         U15.13         U15.14         
-                                 U15.15         U15.18         U15.19         
-                                 U15.20         U15.21         U15.22         
-                                 U15.25         U15.26         U15.28         
-                                 U15.29         U15.30         U15.31         
-                                 U15.32         U15.33         U15.34         
-                                 U15.39         U16.3          U16.4          
-                                 U16.10         U16.11         U16.13         
-                                 U16.14         U16.15         U16.18         
-                                 U16.19         U16.20         U16.21         
-                                 U16.22         U16.25         U16.26         
-                                 U16.28         U16.29         U16.30         
-                                 U16.31         U16.32         U16.33         
-                                 U16.34         U16.39         U17.3          
-                                 U17.4          U17.10         U17.11         
-                                 U17.13         U17.14         U17.15         
-                                 U17.18         U17.19         U17.20         
-                                 U17.21         U17.22         U17.25         
-                                 U17.26         U17.28         U17.29         
-                                 U17.30         U17.31         U17.32         
-                                 U17.33         U17.34         U17.39         
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  VID0         pins ADDED TO this new net
-                                 U1.41          U7.17          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  VID1         pins ADDED TO this new net
-                                 U1.40          U7.18          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  VID2         pins ADDED TO this new net
-                                 U1.39          U7.19          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  VID3         pins ADDED TO this new net
-                                 U1.38          U7.20          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-|------------------------------------------------------------------------------|
-|                                 ECO   REPORT                                 |
-|                                                                    Page  13  |
-|------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
-|                                                    Sat Nov 02 19:14:05 2013  |
-|------------------------------------------------------------------------------|
-| NET CHANGES                                                                  |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|   net  name |  type of change |                net     pins                  |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-  VID4         pins ADDED TO this new net
-                                 U1.37          U7.21          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  VID5         pins ADDED TO this new net
-                                 U1.36          U7.22          
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  VIN          pins ADDED TO this new net
-                                 C10.2          C11.2          C12.2          
-                                 C13.2          C38.1          C39.1          
-                                 C40.1          C41.1          J1.3           
-                                 J4.3           R31.1          U2.1           
-                                 U2.2           U3.1           U4.8           
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  VUSB         pins ADDED TO this new net
-                                 J3.1           
-|------------------------------------------------------------------------------|
-|                                 ECO   REPORT                                 |
-|                                                                    Page  14  |
-|------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
-|                                                    Sat Nov 02 19:14:05 2013  |
-|------------------------------------------------------------------------------|
-| COMPONENT DEFINITION added to board drawing                                  |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|    device type                                                               |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- 74AUP2G02_8-XSON_74AUP2G02
- AP1117IE33G-13_SOT224_AP1117IE3
- ASDMB_4-SMD-DFNLLC_ASDMB-25.000
- BITSYNCOM A3255Q48_QFN48_BITSYN
- CAP NP_CAP_0603_0.01UF
- CAP NP_CAP_0603_0.022UF
- CAP NP_CAP_0603_0.1UF
- CAP NP_CAP_0603_0.47UF
- CAP NP_CAP_0603_1200PF
- CAP NP_CAP_0603_1UF
- CAP NP_CAP_0603_22UF
- CAP NP_CAP_0603_30PF
- CAP NP_CAP_0603_4.7UF
- CAP NP_CAP_0603_XUF
- CAP NP_CAP_1206_22UF
- CAP NP_CAP_1206_4.7UF
- CAPACITOR_CAP_2917_330UF
- CONN JACK PWR_CUI_PJ_037BH_CUI
- CRYSTAL_HC49_US_CRYSTAL
- CSD86350Q5D_8SON_POWERBLOCK_CSD
- DIODE SCHOTTKY_SOD323_CMDSH-3
- HEADER 3_HEADER100_3_FAN
- HEADER 5_HEADER100_5_ICSP
- IDT74FCT3807APYG_20-SSOP_IDT74F
- INDUCTOR_ETQ-P4L_560NH
- KA78L05AIDTF_8-SOIC_KA78L05AIDT
- LED_RES_0805_LED
- LM27213_DGG_LM27213
- LM63_TI_D_R_PDSO_G8_LM63
- MOLEX 0473460001_MOLEX_04734600
- NL27WZ14DFT2G_SC-88_NL27WZ14DFT
- NPN BCE_SOT23_BC817-25-7-F
- PIC18F45K50_40-UFQFN_PIC18F45K5
- RESISTOR_RES_0603_0
- RESISTOR_RES_0603_10
- RESISTOR_RES_0603_100
- RESISTOR_RES_0603_182
- RESISTOR_RES_0603_470
- RESISTOR_RES_0603_1.21K
- RESISTOR_RES_0603_100K
- RESISTOR_RES_0603_10K
- RESISTOR_RES_0603_13K
- RESISTOR_RES_0603_1K
- RESISTOR_RES_0603_40K
- RESISTOR_RES_0603_5.11K
-|------------------------------------------------------------------------------|
-|                                 ECO   REPORT                                 |
-|                                                                    Page  15  |
-|------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
-|                                                    Sat Nov 02 19:14:05 2013  |
-|------------------------------------------------------------------------------|
-| COMPONENT DEFINITION added to board drawing                                  |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|    device type                                                               |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- RESISTOR_RES_0603_75-100
- RESISTOR_RES_0603_RESISTOR
- RESISTOR_RES_0805_10
- RESISTOR_RES_0805_2.2
- RESISTOR_RES_1206_1K, 1/4W
- RESISTOR_RES_1225_0.003
-|------------------------------------------------------------------------------|
-|                                 ECO   REPORT                                 |
-|                                                                    Page  16  |
-|------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
-|                                                    Sat Nov 02 19:14:05 2013  |
-|------------------------------------------------------------------------------|
-| COMPONENTS ADDED to board drawing                                            |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|    ref des        |    device type                                           |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- C1                  CAPACITOR_CAP_2917_330UF 
- C2                  CAPACITOR_CAP_2917_330UF 
- C3                  CAP NP_CAP_0603_22UF  
- C4                  CAP NP_CAP_0603_1200PF 
- C5                  CAP NP_CAP_0603_1200PF 
- C6                  CAP NP_CAP_0603_0.1UF 
- C7                  CAP NP_CAP_0603_0.022UF 
- C8                  CAP NP_CAP_0603_1UF   
- C9                  CAP NP_CAP_0603_1UF   
- C10                 CAP NP_CAP_1206_4.7UF 
- C11                 CAP NP_CAP_1206_4.7UF 
- C12                 CAP NP_CAP_1206_4.7UF 
- C13                 CAP NP_CAP_1206_4.7UF 
- C14                 CAP NP_CAP_1206_22UF  
- C15                 CAP NP_CAP_1206_22UF  
- C16                 CAP NP_CAP_1206_22UF  
- C17                 CAP NP_CAP_1206_22UF  
- C18                 CAP NP_CAP_1206_22UF  
- C19                 CAP NP_CAP_1206_22UF  
- C20                 CAP NP_CAP_1206_22UF  
- C21                 CAP NP_CAP_1206_22UF  
- C22                 CAP NP_CAP_1206_22UF  
- C23                 CAP NP_CAP_1206_22UF  
- C24                 CAP NP_CAP_1206_22UF  
- C25                 CAP NP_CAP_1206_22UF  
- C26                 CAP NP_CAP_1206_22UF  
- C27                 CAP NP_CAP_1206_22UF  
- C28                 CAP NP_CAP_1206_22UF  
- C29                 CAP NP_CAP_1206_22UF  
- C30                 CAP NP_CAP_1206_22UF  
- C31                 CAP NP_CAP_1206_22UF  
- C32                 CAP NP_CAP_1206_22UF  
- C33                 CAP NP_CAP_1206_22UF  
- C34                 CAP NP_CAP_1206_22UF  
- C35                 CAP NP_CAP_1206_22UF  
- C36                 CAP NP_CAP_0603_0.01UF 
- C37                 CAP NP_CAP_0603_4.7UF 
- C38                 CAP NP_CAP_0603_0.01UF 
- C39                 CAP NP_CAP_0603_4.7UF 
- C40                 CAP NP_CAP_0603_0.01UF 
- C41                 CAP NP_CAP_0603_4.7UF 
- C42                 CAP NP_CAP_0603_0.01UF 
- C43                 CAP NP_CAP_0603_4.7UF 
- C44                 CAP NP_CAP_0603_0.01UF 
- C45                 CAP NP_CAP_0603_4.7UF 
-|------------------------------------------------------------------------------|
-|                                 ECO   REPORT                                 |
-|                                                                    Page  17  |
-|------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
-|                                                    Sat Nov 02 19:14:05 2013  |
-|------------------------------------------------------------------------------|
-| COMPONENTS ADDED to board drawing                                            |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|    ref des        |    device type                                           |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- C46                 CAP NP_CAP_0603_0.01UF 
- C47                 CAP NP_CAP_0603_0.47UF 
- C48                 CAP NP_CAP_0603_0.47UF 
- C49                 CAP NP_CAP_0603_0.47UF 
- C50                 CAP NP_CAP_0603_0.47UF 
- C51                 CAP NP_CAP_0603_0.47UF 
- C52                 CAP NP_CAP_0603_0.47UF 
- C53                 CAP NP_CAP_0603_0.47UF 
- C54                 CAP NP_CAP_0603_0.47UF 
- C55                 CAP NP_CAP_0603_0.47UF 
- C56                 CAP NP_CAP_0603_0.47UF 
- C57                 CAP NP_CAP_0603_0.47UF 
- C58                 CAP NP_CAP_0603_0.47UF 
- C59                 CAP NP_CAP_0603_0.47UF 
- C60                 CAP NP_CAP_0603_0.47UF 
- C61                 CAP NP_CAP_0603_0.47UF 
- C62                 CAP NP_CAP_0603_0.47UF 
- C63                 CAP NP_CAP_0603_0.47UF 
- C64                 CAP NP_CAP_0603_0.47UF 
- C65                 CAP NP_CAP_0603_0.47UF 
- C66                 CAP NP_CAP_0603_0.47UF 
- C67                 CAP NP_CAP_0603_0.47UF 
- C68                 CAP NP_CAP_0603_0.47UF 
- C69                 CAP NP_CAP_0603_0.47UF 
- C70                 CAP NP_CAP_0603_0.47UF 
- C71                 CAP NP_CAP_0603_0.47UF 
- C72                 CAP NP_CAP_0603_0.47UF 
- C73                 CAP NP_CAP_0603_0.47UF 
- C74                 CAP NP_CAP_0603_0.47UF 
- C75                 CAP NP_CAP_0603_0.47UF 
- C76                 CAP NP_CAP_0603_0.47UF 
- C77                 CAP NP_CAP_0603_0.47UF 
- C78                 CAP NP_CAP_0603_0.47UF 
- C79                 CAP NP_CAP_0603_0.47UF 
- C80                 CAP NP_CAP_0603_0.47UF 
- C81                 CAP NP_CAP_0603_0.47UF 
- C82                 CAP NP_CAP_0603_0.47UF 
- C83                 CAP NP_CAP_0603_0.47UF 
- C84                 CAP NP_CAP_0603_0.47UF 
- C85                 CAP NP_CAP_0603_0.47UF 
- C86                 CAP NP_CAP_0603_0.47UF 
- C87                 CAP NP_CAP_0603_0.47UF 
- C88                 CAP NP_CAP_0603_0.47UF 
- C89                 CAP NP_CAP_0603_0.47UF 
- C90                 CAP NP_CAP_0603_0.47UF 
-|------------------------------------------------------------------------------|
-|                                 ECO   REPORT                                 |
-|                                                                    Page  18  |
-|------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
-|                                                    Sat Nov 02 19:14:05 2013  |
-|------------------------------------------------------------------------------|
-| COMPONENTS ADDED to board drawing                                            |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|    ref des        |    device type                                           |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- C91                 CAP NP_CAP_0603_0.47UF 
- C92                 CAP NP_CAP_0603_0.47UF 
- C93                 CAP NP_CAP_0603_0.47UF 
- C94                 CAP NP_CAP_0603_0.47UF 
- C95                 CAP NP_CAP_0603_0.47UF 
- C96                 CAP NP_CAP_0603_0.47UF 
- C97                 CAP NP_CAP_0603_0.47UF 
- C98                 CAP NP_CAP_0603_0.47UF 
- C99                 CAP NP_CAP_0603_0.47UF 
- C100                CAP NP_CAP_0603_0.47UF 
- C101                CAP NP_CAP_0603_0.47UF 
- C102                CAP NP_CAP_0603_0.47UF 
- C103                CAP NP_CAP_0603_0.47UF 
- C104                CAP NP_CAP_0603_0.47UF 
- C105                CAP NP_CAP_0603_0.47UF 
- C106                CAP NP_CAP_0603_0.47UF 
- C107                CAP NP_CAP_0603_0.47UF 
- C108                CAP NP_CAP_0603_0.47UF 
- C109                CAP NP_CAP_0603_0.47UF 
- C110                CAP NP_CAP_0603_0.47UF 
- C111                CAP NP_CAP_0603_0.47UF 
- C112                CAP NP_CAP_0603_0.47UF 
- C113                CAP NP_CAP_0603_0.47UF 
- C114                CAP NP_CAP_0603_0.47UF 
- C115                CAP NP_CAP_0603_0.47UF 
- C116                CAP NP_CAP_0603_0.47UF 
- C117                CAP NP_CAP_0603_0.47UF 
- C118                CAP NP_CAP_0603_0.47UF 
- C119                CAP NP_CAP_0603_0.47UF 
- C120                CAP NP_CAP_0603_0.47UF 
- C121                CAP NP_CAP_0603_0.47UF 
- C122                CAP NP_CAP_0603_0.47UF 
- C123                CAP NP_CAP_0603_0.47UF 
- C124                CAP NP_CAP_0603_0.47UF 
- C125                CAP NP_CAP_0603_0.47UF 
- C126                CAP NP_CAP_0603_0.47UF 
- C127                CAP NP_CAP_0603_0.47UF 
- C128                CAP NP_CAP_0603_0.47UF 
- C129                CAP NP_CAP_0603_0.47UF 
- C130                CAP NP_CAP_0603_0.47UF 
- C131                CAP NP_CAP_0603_0.47UF 
- C132                CAP NP_CAP_0603_0.47UF 
- C133                CAP NP_CAP_0603_0.47UF 
- C134                CAP NP_CAP_0603_0.47UF 
- C135                CAP NP_CAP_0603_0.47UF 
-|------------------------------------------------------------------------------|
-|                                 ECO   REPORT                                 |
-|                                                                    Page  19  |
-|------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
-|                                                    Sat Nov 02 19:14:05 2013  |
-|------------------------------------------------------------------------------|
-| COMPONENTS ADDED to board drawing                                            |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|    ref des        |    device type                                           |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- C136                CAP NP_CAP_0603_0.47UF 
- C137                CAP NP_CAP_0603_0.47UF 
- C138                CAP NP_CAP_0603_0.47UF 
- C139                CAP NP_CAP_0603_0.47UF 
- C140                CAP NP_CAP_0603_0.47UF 
- C141                CAP NP_CAP_0603_0.47UF 
- C142                CAP NP_CAP_0603_0.47UF 
- C143                CAP NP_CAP_0603_0.47UF 
- C144                CAP NP_CAP_0603_0.47UF 
- C145                CAP NP_CAP_0603_0.47UF 
- C146                CAP NP_CAP_0603_0.47UF 
- C147                CAP NP_CAP_0603_0.47UF 
- C148                CAP NP_CAP_0603_0.47UF 
- C149                CAP NP_CAP_0603_0.47UF 
- C150                CAP NP_CAP_0603_0.47UF 
- C151                CAP NP_CAP_0603_0.47UF 
- C152                CAP NP_CAP_0603_0.47UF 
- C153                CAP NP_CAP_0603_0.47UF 
- C154                CAP NP_CAP_0603_0.47UF 
- C155                CAP NP_CAP_0603_0.47UF 
- C156                CAP NP_CAP_0603_0.47UF 
- C157                CAP NP_CAP_0603_0.47UF 
- C158                CAP NP_CAP_0603_0.47UF 
- C159                CAP NP_CAP_0603_0.47UF 
- C160                CAP NP_CAP_0603_0.47UF 
- C161                CAP NP_CAP_0603_0.47UF 
- C162                CAP NP_CAP_0603_0.47UF 
- C163                CAP NP_CAP_0603_0.47UF 
- C164                CAP NP_CAP_0603_0.47UF 
- C165                CAP NP_CAP_0603_0.47UF 
- C166                CAP NP_CAP_0603_0.47UF 
- C167                CAP NP_CAP_0603_30PF  
- C168                CAP NP_CAP_0603_XUF   
- C169                CAP NP_CAP_0603_XUF   
- D1                  DIODE SCHOTTKY_SOD323_CMDSH-3 
- D2                  LED_RES_0805_LED      
- D3                  LED_RES_0805_LED      
- D4                  LED_RES_0805_LED      
- D5                  LED_RES_0805_LED      
- J1                  CONN JACK PWR_CUI_PJ_037BH_CUI 
- J2                  HEADER 5_HEADER100_5_ICSP 
- J3                  MOLEX 0473460001_MOLEX_04734600 
- J4                  HEADER 3_HEADER100_3_FAN 
- L1                  INDUCTOR_ETQ-P4L_560NH 
- Q1                  NPN BCE_SOT23_BC817-25-7-F 
-|------------------------------------------------------------------------------|
-|                                 ECO   REPORT                                 |
-|                                                                    Page  20  |
-|------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
-|                                                    Sat Nov 02 19:14:05 2013  |
-|------------------------------------------------------------------------------|
-| COMPONENTS ADDED to board drawing                                            |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|    ref des        |    device type                                           |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- R1                  RESISTOR_RES_0805_10  
- R2                  RESISTOR_RES_0603_0   
- R3                  RESISTOR_RES_0603_5.11K 
- R4                  RESISTOR_RES_0603_RESISTOR 
- R5                  RESISTOR_RES_0603_RESISTOR 
- R6                  RESISTOR_RES_0603_1.21K 
- R7                  RESISTOR_RES_0603_100K 
- R9                  RESISTOR_RES_1225_0.003 
- R10                 RESISTOR_RES_0603_182 
- R11                 RESISTOR_RES_0603_100 
- R12                 RESISTOR_RES_0805_2.2 
- R13                 RESISTOR_RES_0603_75-100 
- R14                 RESISTOR_RES_0603_75-100 
- R15                 RESISTOR_RES_0603_75-100 
- R16                 RESISTOR_RES_0603_75-100 
- R17                 RESISTOR_RES_0603_100K 
- R18                 RESISTOR_RES_0603_100K 
- R19                 RESISTOR_RES_0603_100K 
- R20                 RESISTOR_RES_0603_100K 
- R21                 RESISTOR_RES_0603_100K 
- R22                 RESISTOR_RES_0603_100K 
- R23                 RESISTOR_RES_0603_100K 
- R24                 RESISTOR_RES_0603_100K 
- R25                 RESISTOR_RES_0603_100K 
- R26                 RESISTOR_RES_0603_100K 
- R27                 RESISTOR_RES_0603_1K  
- R28                 RESISTOR_RES_0603_1K  
- R29                 RESISTOR_RES_0603_100 
- R30                 RESISTOR_RES_0603_40K 
- R31                 RESISTOR_RES_1206_1K, 1/4W 
- R32                 RESISTOR_RES_0603_13K 
- R33                 RESISTOR_RES_0603_10K 
- R34                 RESISTOR_RES_0603_10  
- R35                 RESISTOR_RES_0603_470 
- U1                  LM27213_DGG_LM27213   
- U2                  CSD86350Q5D_8SON_POWERBLOCK_CSD 
- U3                  AP1117IE33G-13_SOT224_AP1117IE3 
- U4                  KA78L05AIDTF_8-SOIC_KA78L05AIDT 
- U5                  IDT74FCT3807APYG_20-SSOP_IDT74F 
- U6                  ASDMB_4-SMD-DFNLLC_ASDMB-25.000 
- U7                  PIC18F45K50_40-UFQFN_PIC18F45K5 
- U8                  BITSYNCOM A3255Q48_QFN48_BITSYN 
- U9                  BITSYNCOM A3255Q48_QFN48_BITSYN 
- U10                 BITSYNCOM A3255Q48_QFN48_BITSYN 
- U11                 BITSYNCOM A3255Q48_QFN48_BITSYN 
-|------------------------------------------------------------------------------|
-|                                 ECO   REPORT                                 |
-|                                                                    Page  21  |
-|------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
-|                                                    Sat Nov 02 19:14:05 2013  |
-|------------------------------------------------------------------------------|
-| COMPONENTS ADDED to board drawing                                            |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|    ref des        |    device type                                           |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- U12                 BITSYNCOM A3255Q48_QFN48_BITSYN 
- U13                 BITSYNCOM A3255Q48_QFN48_BITSYN 
- U14                 BITSYNCOM A3255Q48_QFN48_BITSYN 
- U15                 BITSYNCOM A3255Q48_QFN48_BITSYN 
- U16                 BITSYNCOM A3255Q48_QFN48_BITSYN 
- U17                 BITSYNCOM A3255Q48_QFN48_BITSYN 
- U18                 74AUP2G02_8-XSON_74AUP2G02 
- U19                 NL27WZ14DFT2G_SC-88_NL27WZ14DFT 
- U20                 LM63_TI_D_R_PDSO_G8_LM63 
- Y1                  CRYSTAL_HC49_US_CRYSTAL 
-|------------------------------------------------------------------------------|
-|                                 ECO   REPORT                                 |
-|                                                                    Page  22  |
-|------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
-|                                                    Sat Nov 02 19:14:05 2013  |
+|  C:/Users/George/Documents/GitHub/Avalon/hardware/allegro/AVALON.brd         |
+|                                                    Sat Nov 02 22:30:39 2013  |
 |------------------------------------------------------------------------------|
 | SLOT PROPERTIES added to board drawing                                       |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
 |   slot_id    |   x   |   y   |   property   |             value              |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- C1.2                           PRIM_FILE      .\pstchip.dat
- C2.2                           PRIM_FILE      .\pstchip.dat
- C3.2                           PRIM_FILE      .\pstchip.dat
- C4.2                           PRIM_FILE      .\pstchip.dat
- C5.2                           PRIM_FILE      .\pstchip.dat
- C6.2                           PRIM_FILE      .\pstchip.dat
- C7.2                           PRIM_FILE      .\pstchip.dat
- C8.2                           PRIM_FILE      .\pstchip.dat
- C9.2                           PRIM_FILE      .\pstchip.dat
- C10.2                          PRIM_FILE      .\pstchip.dat
- C11.2                          PRIM_FILE      .\pstchip.dat
- C12.2                          PRIM_FILE      .\pstchip.dat
- C13.2                          PRIM_FILE      .\pstchip.dat
- C14.2                          PRIM_FILE      .\pstchip.dat
- C15.2                          PRIM_FILE      .\pstchip.dat
- C16.2                          PRIM_FILE      .\pstchip.dat
- C17.2                          PRIM_FILE      .\pstchip.dat
- C18.2                          PRIM_FILE      .\pstchip.dat
- C19.2                          PRIM_FILE      .\pstchip.dat
- C20.2                          PRIM_FILE      .\pstchip.dat
- C21.2                          PRIM_FILE      .\pstchip.dat
- C22.2                          PRIM_FILE      .\pstchip.dat
- C23.2                          PRIM_FILE      .\pstchip.dat
- C24.2                          PRIM_FILE      .\pstchip.dat
- C25.2                          PRIM_FILE      .\pstchip.dat
- C26.2                          PRIM_FILE      .\pstchip.dat
- C27.2                          PRIM_FILE      .\pstchip.dat
- C28.2                          PRIM_FILE      .\pstchip.dat
- C29.2                          PRIM_FILE      .\pstchip.dat
- C30.2                          PRIM_FILE      .\pstchip.dat
- C31.2                          PRIM_FILE      .\pstchip.dat
- C32.2                          PRIM_FILE      .\pstchip.dat
- C33.2                          PRIM_FILE      .\pstchip.dat
- C34.2                          PRIM_FILE      .\pstchip.dat
- C35.2                          PRIM_FILE      .\pstchip.dat
- C36.2                          PRIM_FILE      .\pstchip.dat
- C37.2                          PRIM_FILE      .\pstchip.dat
- C38.2                          PRIM_FILE      .\pstchip.dat
- C39.2                          PRIM_FILE      .\pstchip.dat
- C40.2                          PRIM_FILE      .\pstchip.dat
- C41.2                          PRIM_FILE      .\pstchip.dat
- C42.2                          PRIM_FILE      .\pstchip.dat
- C43.2                          PRIM_FILE      .\pstchip.dat
- C44.2                          PRIM_FILE      .\pstchip.dat
- C45.2                          PRIM_FILE      .\pstchip.dat
-|------------------------------------------------------------------------------|
-|                                 ECO   REPORT                                 |
-|                                                                    Page  23  |
-|------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
-|                                                    Sat Nov 02 19:14:05 2013  |
-|------------------------------------------------------------------------------|
-| SLOT PROPERTIES added to board drawing                                       |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|   slot_id    |   x   |   y   |   property   |             value              |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- C46.2                          PRIM_FILE      .\pstchip.dat
- C47.2                          PRIM_FILE      .\pstchip.dat
- C48.2                          PRIM_FILE      .\pstchip.dat
- C49.2                          PRIM_FILE      .\pstchip.dat
- C50.2                          PRIM_FILE      .\pstchip.dat
- C51.2                          PRIM_FILE      .\pstchip.dat
- C52.2                          PRIM_FILE      .\pstchip.dat
- C53.2                          PRIM_FILE      .\pstchip.dat
- C54.2                          PRIM_FILE      .\pstchip.dat
- C55.2                          PRIM_FILE      .\pstchip.dat
- C56.2                          PRIM_FILE      .\pstchip.dat
- C57.2                          PRIM_FILE      .\pstchip.dat
- C58.2                          PRIM_FILE      .\pstchip.dat
- C59.2                          PRIM_FILE      .\pstchip.dat
- C60.2                          PRIM_FILE      .\pstchip.dat
- C61.2                          PRIM_FILE      .\pstchip.dat
- C62.2                          PRIM_FILE      .\pstchip.dat
- C63.2                          PRIM_FILE      .\pstchip.dat
- C64.2                          PRIM_FILE      .\pstchip.dat
- C65.2                          PRIM_FILE      .\pstchip.dat
- C66.2                          PRIM_FILE      .\pstchip.dat
- C67.2                          PRIM_FILE      .\pstchip.dat
- C68.2                          PRIM_FILE      .\pstchip.dat
- C69.2                          PRIM_FILE      .\pstchip.dat
- C70.2                          PRIM_FILE      .\pstchip.dat
- C71.2                          PRIM_FILE      .\pstchip.dat
- C72.2                          PRIM_FILE      .\pstchip.dat
- C73.2                          PRIM_FILE      .\pstchip.dat
- C74.2                          PRIM_FILE      .\pstchip.dat
- C75.2                          PRIM_FILE      .\pstchip.dat
- C76.2                          PRIM_FILE      .\pstchip.dat
- C77.2                          PRIM_FILE      .\pstchip.dat
- C78.2                          PRIM_FILE      .\pstchip.dat
- C79.2                          PRIM_FILE      .\pstchip.dat
- C80.2                          PRIM_FILE      .\pstchip.dat
- C81.2                          PRIM_FILE      .\pstchip.dat
- C82.2                          PRIM_FILE      .\pstchip.dat
- C83.2                          PRIM_FILE      .\pstchip.dat
- C84.2                          PRIM_FILE      .\pstchip.dat
- C85.2                          PRIM_FILE      .\pstchip.dat
- C86.2                          PRIM_FILE      .\pstchip.dat
- C87.2                          PRIM_FILE      .\pstchip.dat
- C88.2                          PRIM_FILE      .\pstchip.dat
- C89.2                          PRIM_FILE      .\pstchip.dat
- C90.2                          PRIM_FILE      .\pstchip.dat
-|------------------------------------------------------------------------------|
-|                                 ECO   REPORT                                 |
-|                                                                    Page  24  |
-|------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
-|                                                    Sat Nov 02 19:14:05 2013  |
-|------------------------------------------------------------------------------|
-| SLOT PROPERTIES added to board drawing                                       |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|   slot_id    |   x   |   y   |   property   |             value              |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- C91.2                          PRIM_FILE      .\pstchip.dat
- C92.2                          PRIM_FILE      .\pstchip.dat
- C93.2                          PRIM_FILE      .\pstchip.dat
- C94.2                          PRIM_FILE      .\pstchip.dat
- C95.2                          PRIM_FILE      .\pstchip.dat
- C96.2                          PRIM_FILE      .\pstchip.dat
- C97.2                          PRIM_FILE      .\pstchip.dat
- C98.2                          PRIM_FILE      .\pstchip.dat
- C99.2                          PRIM_FILE      .\pstchip.dat
- C100.2                         PRIM_FILE      .\pstchip.dat
- C101.2                         PRIM_FILE      .\pstchip.dat
- C102.2                         PRIM_FILE      .\pstchip.dat
- C103.2                         PRIM_FILE      .\pstchip.dat
- C104.2                         PRIM_FILE      .\pstchip.dat
- C105.2                         PRIM_FILE      .\pstchip.dat
- C106.2                         PRIM_FILE      .\pstchip.dat
- C107.2                         PRIM_FILE      .\pstchip.dat
- C108.2                         PRIM_FILE      .\pstchip.dat
- C109.2                         PRIM_FILE      .\pstchip.dat
- C110.2                         PRIM_FILE      .\pstchip.dat
- C111.2                         PRIM_FILE      .\pstchip.dat
- C112.2                         PRIM_FILE      .\pstchip.dat
- C113.2                         PRIM_FILE      .\pstchip.dat
- C114.2                         PRIM_FILE      .\pstchip.dat
- C115.2                         PRIM_FILE      .\pstchip.dat
- C116.2                         PRIM_FILE      .\pstchip.dat
- C117.2                         PRIM_FILE      .\pstchip.dat
- C118.2                         PRIM_FILE      .\pstchip.dat
- C119.2                         PRIM_FILE      .\pstchip.dat
- C120.2                         PRIM_FILE      .\pstchip.dat
- C121.2                         PRIM_FILE      .\pstchip.dat
- C122.2                         PRIM_FILE      .\pstchip.dat
- C123.2                         PRIM_FILE      .\pstchip.dat
- C124.2                         PRIM_FILE      .\pstchip.dat
- C125.2                         PRIM_FILE      .\pstchip.dat
- C126.2                         PRIM_FILE      .\pstchip.dat
- C127.2                         PRIM_FILE      .\pstchip.dat
- C128.2                         PRIM_FILE      .\pstchip.dat
- C129.2                         PRIM_FILE      .\pstchip.dat
- C130.2                         PRIM_FILE      .\pstchip.dat
- C131.2                         PRIM_FILE      .\pstchip.dat
- C132.2                         PRIM_FILE      .\pstchip.dat
- C133.2                         PRIM_FILE      .\pstchip.dat
- C134.2                         PRIM_FILE      .\pstchip.dat
- C135.2                         PRIM_FILE      .\pstchip.dat
-|------------------------------------------------------------------------------|
-|                                 ECO   REPORT                                 |
-|                                                                    Page  25  |
-|------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
-|                                                    Sat Nov 02 19:14:05 2013  |
-|------------------------------------------------------------------------------|
-| SLOT PROPERTIES added to board drawing                                       |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|   slot_id    |   x   |   y   |   property   |             value              |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- C136.2                         PRIM_FILE      .\pstchip.dat
- C137.2                         PRIM_FILE      .\pstchip.dat
- C138.2                         PRIM_FILE      .\pstchip.dat
- C139.2                         PRIM_FILE      .\pstchip.dat
- C140.2                         PRIM_FILE      .\pstchip.dat
- C141.2                         PRIM_FILE      .\pstchip.dat
- C142.2                         PRIM_FILE      .\pstchip.dat
- C143.2                         PRIM_FILE      .\pstchip.dat
- C144.2                         PRIM_FILE      .\pstchip.dat
- C145.2                         PRIM_FILE      .\pstchip.dat
- C146.2                         PRIM_FILE      .\pstchip.dat
- C147.2                         PRIM_FILE      .\pstchip.dat
- C148.2                         PRIM_FILE      .\pstchip.dat
- C149.2                         PRIM_FILE      .\pstchip.dat
- C150.2                         PRIM_FILE      .\pstchip.dat
- C151.2                         PRIM_FILE      .\pstchip.dat
- C152.2                         PRIM_FILE      .\pstchip.dat
- C153.2                         PRIM_FILE      .\pstchip.dat
- C154.2                         PRIM_FILE      .\pstchip.dat
- C155.2                         PRIM_FILE      .\pstchip.dat
- C156.2                         PRIM_FILE      .\pstchip.dat
- C157.2                         PRIM_FILE      .\pstchip.dat
- C158.2                         PRIM_FILE      .\pstchip.dat
- C159.2                         PRIM_FILE      .\pstchip.dat
- C160.2                         PRIM_FILE      .\pstchip.dat
- C161.2                         PRIM_FILE      .\pstchip.dat
- C162.2                         PRIM_FILE      .\pstchip.dat
- C163.2                         PRIM_FILE      .\pstchip.dat
- C164.2                         PRIM_FILE      .\pstchip.dat
- C165.2                         PRIM_FILE      .\pstchip.dat
- C166.2                         PRIM_FILE      .\pstchip.dat
- C167.2                         PRIM_FILE      .\pstchip.dat
- C168.2                         PRIM_FILE      .\pstchip.dat
- C169.2                         PRIM_FILE      .\pstchip.dat
- D1.2                           PRIM_FILE      .\pstchip.dat
- D2.1                           PRIM_FILE      .\pstchip.dat
- D3.1                           PRIM_FILE      .\pstchip.dat
- D4.1                           PRIM_FILE      .\pstchip.dat
- D5.1                           PRIM_FILE      .\pstchip.dat
- J1.3                           PRIM_FILE      .\pstchip.dat
- J2.5                           PRIM_FILE      .\pstchip.dat
- J3.1                           PRIM_FILE      .\pstchip.dat
- J4.3                           PRIM_FILE      .\pstchip.dat
- L1.2                           PRIM_FILE      .\pstchip.dat
- Q1.3                           PRIM_FILE      .\pstchip.dat
-|------------------------------------------------------------------------------|
-|                                 ECO   REPORT                                 |
-|                                                                    Page  26  |
-|------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
-|                                                    Sat Nov 02 19:14:05 2013  |
-|------------------------------------------------------------------------------|
-| SLOT PROPERTIES added to board drawing                                       |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|   slot_id    |   x   |   y   |   property   |             value              |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- R1.2                           PRIM_FILE      .\pstchip.dat
- R2.2                           PRIM_FILE      .\pstchip.dat
- R3.2                           PRIM_FILE      .\pstchip.dat
- R4.2                           PRIM_FILE      .\pstchip.dat
- R5.2                           PRIM_FILE      .\pstchip.dat
- R6.2                           PRIM_FILE      .\pstchip.dat
- R7.2                           PRIM_FILE      .\pstchip.dat
- R9.2                           PRIM_FILE      .\pstchip.dat
- R10.2                          PRIM_FILE      .\pstchip.dat
- R11.2                          PRIM_FILE      .\pstchip.dat
- R12.2                          PRIM_FILE      .\pstchip.dat
- R13.2                          PRIM_FILE      .\pstchip.dat
- R14.2                          PRIM_FILE      .\pstchip.dat
- R15.2                          PRIM_FILE      .\pstchip.dat
- R16.2                          PRIM_FILE      .\pstchip.dat
- R17.2                          PRIM_FILE      .\pstchip.dat
- R18.2                          PRIM_FILE      .\pstchip.dat
- R19.2                          PRIM_FILE      .\pstchip.dat
- R20.2                          PRIM_FILE      .\pstchip.dat
- R21.2                          PRIM_FILE      .\pstchip.dat
- R22.2                          PRIM_FILE      .\pstchip.dat
- R23.2                          PRIM_FILE      .\pstchip.dat
- R24.2                          PRIM_FILE      .\pstchip.dat
- R25.2                          PRIM_FILE      .\pstchip.dat
- R26.2                          PRIM_FILE      .\pstchip.dat
- R27.2                          PRIM_FILE      .\pstchip.dat
- R28.2                          PRIM_FILE      .\pstchip.dat
- R29.2                          PRIM_FILE      .\pstchip.dat
- R30.2                          PRIM_FILE      .\pstchip.dat
- R31.2                          PRIM_FILE      .\pstchip.dat
- R32.2                          PRIM_FILE      .\pstchip.dat
- R33.2                          PRIM_FILE      .\pstchip.dat
- R34.2                          PRIM_FILE      .\pstchip.dat
- R35.2                          PRIM_FILE      .\pstchip.dat
- U1.15                          PRIM_FILE      .\pstchip.dat
- U2.8                           PRIM_FILE      .\pstchip.dat
- U3.2                           PRIM_FILE      .\pstchip.dat
- U4.1                           PRIM_FILE      .\pstchip.dat
- U5.20                          PRIM_FILE      .\pstchip.dat
- U6.4                           PRIM_FILE      .\pstchip.dat
- U7.33                          PRIM_FILE      .\pstchip.dat
  U8.9                           PRIM_FILE      .\pstchip.dat
  U9.9                           PRIM_FILE      .\pstchip.dat
  U10.9                          PRIM_FILE      .\pstchip.dat
  U11.9                          PRIM_FILE      .\pstchip.dat
-|------------------------------------------------------------------------------|
-|                                 ECO   REPORT                                 |
-|                                                                    Page  27  |
-|------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
-|                                                    Sat Nov 02 19:14:05 2013  |
-|------------------------------------------------------------------------------|
-| SLOT PROPERTIES added to board drawing                                       |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|   slot_id    |   x   |   y   |   property   |             value              |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
  U12.9                          PRIM_FILE      .\pstchip.dat
  U13.9                          PRIM_FILE      .\pstchip.dat
  U14.9                          PRIM_FILE      .\pstchip.dat
  U15.9                          PRIM_FILE      .\pstchip.dat
  U16.9                          PRIM_FILE      .\pstchip.dat
  U17.9                          PRIM_FILE      .\pstchip.dat
- U18.8                          PRIM_FILE      .\pstchip.dat
- U19.5                          PRIM_FILE      .\pstchip.dat
- U20.1                          PRIM_FILE      .\pstchip.dat
- Y1.2                           PRIM_FILE      .\pstchip.dat
 |------------------------------------------------------------------------------|
-|   total ECO changes reported  1494                                           |
+|   total ECO changes reported  101                                            |
 |------------------------------------------------------------------------------|

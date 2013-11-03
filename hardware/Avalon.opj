@@ -26,7 +26,9 @@
     ("Allegro Netlist Combine Property String" "PCB Footprint")
     ("Allegro Netlist Ignore Fixed Property" "FALSE")
     ("Allegro Netlist User Defined Property" "FALSE")
-    (Netlist_TAB "0"))
+    (Netlist_TAB "0")
+    ("Allegro Netlist Input Board File"
+       "C:\Users\George\Documents\GitHub\Avalon\hardware\allegro\AVALON.brd"))
   (Folder "Outputs"
     (File ".\netlist\pstxnet.dat"
       (Type "Report")
@@ -132,16 +134,29 @@
   (GlobalState
     (FileView
       (Path "Design Resources")
+      (Path "Design Resources" ".\avalon.dsn")
+      (Path "Design Resources" ".\avalon.dsn" "SCHEMATIC1")
+      (Path "Design Resources" ".\avalon.dsn" "Design Cache")
       (Path "Design Resources" "Library")
-      (Path "Design Resources" "Library"
-         "c:\users\george\documents\github\avalon\hardware\parts.olb")
-      (Path "Outputs"))
+      (Path "Design Resources" "Library" ".\parts.olb")
+      (Path "Outputs")
+      (Select "Design Resources" ".\avalon.dsn" "SCHEMATIC1" "PAGE1"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
         (Placement "44 2 3 -1 -1 -4 -27 0 200 0 802"))
-      (Tab 0)))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -27 156 2279 156 989")
+        (Scroll "0 10")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path "C:\USERS\GEORGE\DOCUMENTS\GITHUB\AVALON\HARDWARE\AVALON.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1")))
   (LastUsedLibraryBrowseDirectory "C:\Users\George\Dropbox\PCBs")
   (MPSSessionName "George")
   (ISPCBBASICLICENSE "false"))

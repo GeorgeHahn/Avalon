@@ -1,5 +1,5 @@
 FILE_TYPE=LIBRARY_PARTS;
-{ Using PSTWRITER 16.6.0 d001Nov-02-2013 at 19:14:05}
+{ Using PSTWRITER 16.6.0 d001Nov-02-2013 at 22:30:39}
 primitive 'CAPACITOR_CAP_2917_330UF';
   pin
     '1':
@@ -854,14 +854,35 @@ primitive 'BITSYNCOM A3255Q48_QFN48_BITSYN';
     'DVDD22':
       PIN_NUMBER='(39)';
       PINUSE='UNSPEC';
+    'DVDD23':
+      PIN_NUMBER='(40)';
+      PINUSE='UNSPEC';
+    'DVDD24':
+      PIN_NUMBER='(41)';
+      PINUSE='UNSPEC';
+    'DVDD25':
+      PIN_NUMBER='(42)';
+      PINUSE='UNSPEC';
     'CORE_CLKOUT':
       PIN_NUMBER='(43)';
       PINUSE='UNSPEC';
     'RSTIN':
       PIN_NUMBER='(44)';
       PINUSE='UNSPEC';
+    'DVDD26':
+      PIN_NUMBER='(45)';
+      PINUSE='UNSPEC';
+    'DVDD27':
+      PIN_NUMBER='(46)';
+      PINUSE='UNSPEC';
+    'DVDD28':
+      PIN_NUMBER='(47)';
+      PINUSE='UNSPEC';
+    'DVDD29':
+      PIN_NUMBER='(48)';
+      PINUSE='UNSPEC';
     'EPVSS':
-      PIN_NUMBER='(EP)';
+      PIN_NUMBER='(49)';
       PINUSE='UNSPEC';
   end_pin;
   body

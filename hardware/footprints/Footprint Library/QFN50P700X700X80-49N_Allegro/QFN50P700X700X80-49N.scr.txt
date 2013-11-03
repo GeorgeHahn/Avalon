@@ -1,0 +1,988 @@
+cd "C:/Users/George/Dropbox/PCBs/Footprint Library/QFN50P700X700X80-49N_Allegro"
+version 16.5
+scriptmode +i +n
+
+
+# Allegro Pad Stack Export  r80_25
+
+padeditlib 
+fillin "r80_25"
+setwindow form.padedit
+pse_new
+fillin "r80_25"
+FORM padedit units Millimeter
+fillin yes
+FORM padedit decimal_places 4
+FORM padedit inner_layer_opt YES
+FORM padedit single YES
+
+setwindow Form.padedit
+FORM padedit layers
+
+FORM padedit grid row begin_layer
+FORM padedit grid change begin_layer,begin_layer TOP
+FORM padedit geometry Rectangle
+FORM padedit width 0.8000
+FORM padedit height 0.2500
+
+FORM padedit grid row SOLDERMASK_TOP
+FORM padedit geometry Rectangle
+FORM padedit width 0.8000
+FORM padedit height 0.2500
+
+FORM padedit grid row PASTEMASK_TOP
+FORM padedit geometry Rectangle
+FORM padedit width 0.8000
+FORM padedit height 0.2500
+
+pse_check
+pse_save
+fillin yes 
+pse_exit
+fillin "menu_cancel"
+fillin yes 
+setwindow pcb
+generaledit 
+
+
+
+# Allegro Pad Stack Export  thermal540X540
+
+padeditlib 
+fillin "thermal540X540"
+setwindow form.padedit
+pse_new
+fillin "thermal540X540"
+FORM padedit units Millimeter
+fillin yes
+FORM padedit decimal_places 4
+FORM padedit inner_layer_opt YES
+FORM padedit single YES
+
+setwindow Form.padedit
+FORM padedit layers
+
+FORM padedit grid row begin_layer
+FORM padedit grid change begin_layer,begin_layer TOP
+FORM padedit geometry Rectangle
+FORM padedit width 5.4000
+FORM padedit height 5.4000
+
+FORM padedit grid row SOLDERMASK_TOP
+FORM padedit geometry Rectangle
+FORM padedit width 5.4000
+FORM padedit height 5.4000
+
+FORM padedit grid row PASTEMASK_TOP
+FORM padedit geometry Rectangle
+FORM padedit width 5.4000
+FORM padedit height 5.4000
+
+pse_check
+pse_save
+fillin yes 
+pse_exit
+fillin "menu_cancel"
+fillin yes 
+setwindow pcb
+generaledit 
+
+
+
+# Allegro Package Export  QFN50P700X700X80-49N
+
+setwindow pcb
+new "QFN50P700X700X80-49N.dra" "Package Symbol"
+
+setwindow Form.vf_vis
+FORM vf_vis 1 all_colorvisible YES
+FORM vf_vis 2 all_colorvisible YES
+setwindow pcb
+Color
+setwindow Form.cvf_main
+FORM cvf_main class_list Components
+FORM cvf_main all_visible1 YES
+FORM cvf_main all_visible2 YES
+FORM cvf_main all_visible3 YES
+FORM cvf_main class_list Geometry
+FORM cvf_main all_visible5 YES
+FORM cvf_main package_geometry/pin_number/visible NO
+FORM cvf_main class_list Stack-Up
+FORM cvf_main all_visible1 YES
+FORM cvf_main ok
+generaledit
+prmed
+setwindow Form.prmedit
+FORM prmedit design
+FORM prmedit lock_direction Off
+FORM prmedit units Millimeter
+FORM prmedit accuracy 4
+FORM prmedit size Other
+FORM prmedit x -65.5800
+FORM prmedit y -66.0800
+FORM prmedit width 131.7200
+FORM prmedit height 131.7200
+FORM prmedit done  
+setwindow pcb
+
+
+add pin
+setwindow Form.mini
+FORM mini pad_name r80_25
+FORM mini next_pin_number 1
+rotate
+iangle 0
+FORM mini pintype_mechanical NO
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick -3.4500 2.7500
+done
+
+add pin
+setwindow Form.mini
+FORM mini pad_name r80_25
+FORM mini next_pin_number 2
+rotate
+iangle 0
+FORM mini pintype_mechanical NO
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick -3.4500 2.2500
+done
+
+add pin
+setwindow Form.mini
+FORM mini pad_name r80_25
+FORM mini next_pin_number 3
+rotate
+iangle 0
+FORM mini pintype_mechanical NO
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick -3.4500 1.7500
+done
+
+add pin
+setwindow Form.mini
+FORM mini pad_name r80_25
+FORM mini next_pin_number 4
+rotate
+iangle 0
+FORM mini pintype_mechanical NO
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick -3.4500 1.2500
+done
+
+add pin
+setwindow Form.mini
+FORM mini pad_name r80_25
+FORM mini next_pin_number 5
+rotate
+iangle 0
+FORM mini pintype_mechanical NO
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick -3.4500 0.7500
+done
+
+add pin
+setwindow Form.mini
+FORM mini pad_name r80_25
+FORM mini next_pin_number 6
+rotate
+iangle 0
+FORM mini pintype_mechanical NO
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick -3.4500 0.2500
+done
+
+add pin
+setwindow Form.mini
+FORM mini pad_name r80_25
+FORM mini next_pin_number 7
+rotate
+iangle 0
+FORM mini pintype_mechanical NO
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick -3.4500 -0.2500
+done
+
+add pin
+setwindow Form.mini
+FORM mini pad_name r80_25
+FORM mini next_pin_number 8
+rotate
+iangle 0
+FORM mini pintype_mechanical NO
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick -3.4500 -0.7500
+done
+
+add pin
+setwindow Form.mini
+FORM mini pad_name r80_25
+FORM mini next_pin_number 9
+rotate
+iangle 0
+FORM mini pintype_mechanical NO
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick -3.4500 -1.2500
+done
+
+add pin
+setwindow Form.mini
+FORM mini pad_name r80_25
+FORM mini next_pin_number 10
+rotate
+iangle 0
+FORM mini pintype_mechanical NO
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick -3.4500 -1.7500
+done
+
+add pin
+setwindow Form.mini
+FORM mini pad_name r80_25
+FORM mini next_pin_number 11
+rotate
+iangle 0
+FORM mini pintype_mechanical NO
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick -3.4500 -2.2500
+done
+
+add pin
+setwindow Form.mini
+FORM mini pad_name r80_25
+FORM mini next_pin_number 12
+rotate
+iangle 0
+FORM mini pintype_mechanical NO
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick -3.4500 -2.7500
+done
+
+add pin
+setwindow Form.mini
+FORM mini pad_name r80_25
+FORM mini next_pin_number 13
+rotate
+iangle 90
+FORM mini pintype_mechanical NO
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick -2.7500 -3.4500
+done
+
+add pin
+setwindow Form.mini
+FORM mini pad_name r80_25
+FORM mini next_pin_number 14
+rotate
+iangle 90
+FORM mini pintype_mechanical NO
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick -2.2500 -3.4500
+done
+
+add pin
+setwindow Form.mini
+FORM mini pad_name r80_25
+FORM mini next_pin_number 15
+rotate
+iangle 90
+FORM mini pintype_mechanical NO
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick -1.7500 -3.4500
+done
+
+add pin
+setwindow Form.mini
+FORM mini pad_name r80_25
+FORM mini next_pin_number 16
+rotate
+iangle 90
+FORM mini pintype_mechanical NO
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick -1.2500 -3.4500
+done
+
+add pin
+setwindow Form.mini
+FORM mini pad_name r80_25
+FORM mini next_pin_number 17
+rotate
+iangle 90
+FORM mini pintype_mechanical NO
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick -0.7500 -3.4500
+done
+
+add pin
+setwindow Form.mini
+FORM mini pad_name r80_25
+FORM mini next_pin_number 18
+rotate
+iangle 90
+FORM mini pintype_mechanical NO
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick -0.2500 -3.4500
+done
+
+add pin
+setwindow Form.mini
+FORM mini pad_name r80_25
+FORM mini next_pin_number 19
+rotate
+iangle 90
+FORM mini pintype_mechanical NO
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick 0.2500 -3.4500
+done
+
+add pin
+setwindow Form.mini
+FORM mini pad_name r80_25
+FORM mini next_pin_number 20
+rotate
+iangle 90
+FORM mini pintype_mechanical NO
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick 0.7500 -3.4500
+done
+
+add pin
+setwindow Form.mini
+FORM mini pad_name r80_25
+FORM mini next_pin_number 21
+rotate
+iangle 90
+FORM mini pintype_mechanical NO
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick 1.2500 -3.4500
+done
+
+add pin
+setwindow Form.mini
+FORM mini pad_name r80_25
+FORM mini next_pin_number 22
+rotate
+iangle 90
+FORM mini pintype_mechanical NO
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick 1.7500 -3.4500
+done
+
+add pin
+setwindow Form.mini
+FORM mini pad_name r80_25
+FORM mini next_pin_number 23
+rotate
+iangle 90
+FORM mini pintype_mechanical NO
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick 2.2500 -3.4500
+done
+
+add pin
+setwindow Form.mini
+FORM mini pad_name r80_25
+FORM mini next_pin_number 24
+rotate
+iangle 90
+FORM mini pintype_mechanical NO
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick 2.7500 -3.4500
+done
+
+add pin
+setwindow Form.mini
+FORM mini pad_name r80_25
+FORM mini next_pin_number 25
+rotate
+iangle 180
+FORM mini pintype_mechanical NO
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick 3.4500 -2.7500
+done
+
+add pin
+setwindow Form.mini
+FORM mini pad_name r80_25
+FORM mini next_pin_number 26
+rotate
+iangle 180
+FORM mini pintype_mechanical NO
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick 3.4500 -2.2500
+done
+
+add pin
+setwindow Form.mini
+FORM mini pad_name r80_25
+FORM mini next_pin_number 27
+rotate
+iangle 180
+FORM mini pintype_mechanical NO
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick 3.4500 -1.7500
+done
+
+add pin
+setwindow Form.mini
+FORM mini pad_name r80_25
+FORM mini next_pin_number 28
+rotate
+iangle 180
+FORM mini pintype_mechanical NO
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick 3.4500 -1.2500
+done
+
+add pin
+setwindow Form.mini
+FORM mini pad_name r80_25
+FORM mini next_pin_number 29
+rotate
+iangle 180
+FORM mini pintype_mechanical NO
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick 3.4500 -0.7500
+done
+
+add pin
+setwindow Form.mini
+FORM mini pad_name r80_25
+FORM mini next_pin_number 30
+rotate
+iangle 180
+FORM mini pintype_mechanical NO
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick 3.4500 -0.2500
+done
+
+add pin
+setwindow Form.mini
+FORM mini pad_name r80_25
+FORM mini next_pin_number 31
+rotate
+iangle 180
+FORM mini pintype_mechanical NO
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick 3.4500 0.2500
+done
+
+add pin
+setwindow Form.mini
+FORM mini pad_name r80_25
+FORM mini next_pin_number 32
+rotate
+iangle 180
+FORM mini pintype_mechanical NO
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick 3.4500 0.7500
+done
+
+add pin
+setwindow Form.mini
+FORM mini pad_name r80_25
+FORM mini next_pin_number 33
+rotate
+iangle 180
+FORM mini pintype_mechanical NO
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick 3.4500 1.2500
+done
+
+add pin
+setwindow Form.mini
+FORM mini pad_name r80_25
+FORM mini next_pin_number 34
+rotate
+iangle 180
+FORM mini pintype_mechanical NO
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick 3.4500 1.7500
+done
+
+add pin
+setwindow Form.mini
+FORM mini pad_name r80_25
+FORM mini next_pin_number 35
+rotate
+iangle 180
+FORM mini pintype_mechanical NO
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick 3.4500 2.2500
+done
+
+add pin
+setwindow Form.mini
+FORM mini pad_name r80_25
+FORM mini next_pin_number 36
+rotate
+iangle 180
+FORM mini pintype_mechanical NO
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick 3.4500 2.7500
+done
+
+add pin
+setwindow Form.mini
+FORM mini pad_name r80_25
+FORM mini next_pin_number 37
+rotate
+iangle 270
+FORM mini pintype_mechanical NO
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick 2.7500 3.4500
+done
+
+add pin
+setwindow Form.mini
+FORM mini pad_name r80_25
+FORM mini next_pin_number 38
+rotate
+iangle 270
+FORM mini pintype_mechanical NO
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick 2.2500 3.4500
+done
+
+add pin
+setwindow Form.mini
+FORM mini pad_name r80_25
+FORM mini next_pin_number 39
+rotate
+iangle 270
+FORM mini pintype_mechanical NO
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick 1.7500 3.4500
+done
+
+add pin
+setwindow Form.mini
+FORM mini pad_name r80_25
+FORM mini next_pin_number 40
+rotate
+iangle 270
+FORM mini pintype_mechanical NO
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick 1.2500 3.4500
+done
+
+add pin
+setwindow Form.mini
+FORM mini pad_name r80_25
+FORM mini next_pin_number 41
+rotate
+iangle 270
+FORM mini pintype_mechanical NO
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick 0.7500 3.4500
+done
+
+add pin
+setwindow Form.mini
+FORM mini pad_name r80_25
+FORM mini next_pin_number 42
+rotate
+iangle 270
+FORM mini pintype_mechanical NO
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick 0.2500 3.4500
+done
+
+add pin
+setwindow Form.mini
+FORM mini pad_name r80_25
+FORM mini next_pin_number 43
+rotate
+iangle 270
+FORM mini pintype_mechanical NO
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick -0.2500 3.4500
+done
+
+add pin
+setwindow Form.mini
+FORM mini pad_name r80_25
+FORM mini next_pin_number 44
+rotate
+iangle 270
+FORM mini pintype_mechanical NO
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick -0.7500 3.4500
+done
+
+add pin
+setwindow Form.mini
+FORM mini pad_name r80_25
+FORM mini next_pin_number 45
+rotate
+iangle 270
+FORM mini pintype_mechanical NO
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick -1.2500 3.4500
+done
+
+add pin
+setwindow Form.mini
+FORM mini pad_name r80_25
+FORM mini next_pin_number 46
+rotate
+iangle 270
+FORM mini pintype_mechanical NO
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick -1.7500 3.4500
+done
+
+add pin
+setwindow Form.mini
+FORM mini pad_name r80_25
+FORM mini next_pin_number 47
+rotate
+iangle 270
+FORM mini pintype_mechanical NO
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick -2.2500 3.4500
+done
+
+add pin
+setwindow Form.mini
+FORM mini pad_name r80_25
+FORM mini next_pin_number 48
+rotate
+iangle 270
+FORM mini pintype_mechanical NO
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick -2.7500 3.4500
+done
+
+add pin
+setwindow Form.mini
+FORM mini pad_name thermal540X540
+FORM mini next_pin_number 49
+rotate
+iangle 0
+FORM mini pintype_mechanical YES
+FORM mini offsetx 0
+FORM mini offsety 0
+setwindow pcb
+pick 0.0000 0.0000
+done
+
+#  Export body graphics
+
+
+add line
+setwindow Form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass DISPLAY_TOP
+setwindow pcb
+pick -4.1000 -4.1000
+pick -4.1000 4.1000
+pick 4.1000 4.1000
+pick 4.1000 -4.1000
+pick -4.1000 -4.1000
+done
+
+shape add
+setwindow Form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass PLACE_BOUND_TOP
+FORM mini dyns_fill_type Static solid
+FORM mini dyns_grid None
+FORM mini dyns_lock_mode Line
+setwindow pcb
+pick -4.1000 -4.1000
+pick -4.1000 4.1000
+pick 4.1000 4.1000
+pick 4.1000 -4.1000
+pick -4.1000 -4.1000
+done
+
+setwindow pcb
+package_height
+pick grid 0 0
+setwindow Form.mini
+FORM mini height_max 0.8000mm
+done
+
+
+shape add
+setwindow Form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass DFA_BOUND_TOP
+FORM mini dyns_fill_type Static solid
+FORM mini dyns_grid None
+FORM mini dyns_lock_mode Line
+setwindow pcb
+pick -4.1000 -4.1000
+pick -4.1000 4.1000
+pick 4.1000 4.1000
+pick 4.1000 -4.1000
+pick -4.1000 -4.1000
+done
+
+shape add
+setwindow Form.mini
+FORM mini class MANUFACTURING
+FORM mini subclass NO_PROBE_TOP
+FORM mini dyns_fill_type Static solid
+FORM mini dyns_grid None
+FORM mini dyns_lock_mode Line
+setwindow pcb
+pick -4.1000 -4.1000
+pick -4.1000 4.1000
+pick 4.1000 4.1000
+pick 4.1000 -4.1000
+pick -4.1000 -4.1000
+done
+
+add line
+setwindow Form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+FORM mini line_width 0.1000
+setwindow pcb
+pick 3.5000 3.5000
+pick 3.5000 -3.5000
+pick -3.5000 -3.5000
+pick -3.5000 3.5000
+pick 3.5000 3.5000
+done
+
+add line
+setwindow Form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+FORM mini line_width 0.1000
+setwindow pcb
+pick -3.5000 3.4000
+pick -3.4000 3.5000
+done
+
+add line
+setwindow Form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+FORM mini line_width 0.1000
+setwindow pcb
+pick -3.5000 3.3000
+pick -3.3000 3.5000
+done
+
+add line
+setwindow Form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+FORM mini line_width 0.1000
+setwindow pcb
+pick -3.5000 3.2000
+pick -3.2000 3.5000
+done
+
+add line
+setwindow Form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+FORM mini line_width 0.1000
+setwindow pcb
+pick -3.5000 3.1000
+pick -3.1000 3.5000
+done
+
+add line
+setwindow Form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass SILKSCREEN_TOP
+FORM mini line_width 0.2000
+setwindow pcb
+pick -3.2250 -3.5000
+pick -3.5000 -3.5000
+pick -3.5000 -3.2250
+done
+
+add line
+setwindow Form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass SILKSCREEN_TOP
+FORM mini line_width 0.2000
+setwindow pcb
+pick -3.5000 3.2250
+pick -3.5000 3.2590
+pick -3.2590 3.5000
+pick -3.2250 3.5000
+done
+
+add line
+setwindow Form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass SILKSCREEN_TOP
+FORM mini line_width 0.2000
+setwindow pcb
+pick 3.2250 3.5000
+pick 3.5000 3.5000
+pick 3.5000 3.2250
+done
+
+add line
+setwindow Form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass SILKSCREEN_TOP
+FORM mini line_width 0.2000
+setwindow pcb
+pick 3.5000 -3.2250
+pick 3.5000 -3.5000
+pick 3.2250 -3.5000
+done
+
+
+add circle
+setwindow Form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass SILKSCREEN_TOP
+FORM mini line_width 0.0000
+setwindow pcb
+pick -4.4000 2.7500
+pick -4.2000 2.7500
+done
+
+Label refdes
+setwindow Form.mini
+FORM mini text_block 3
+FORM mini angle 0
+FORM mini mirror NO
+FORM mini text_justification Center
+FORM mini class REF DES
+FORM mini subclass ASSEMBLY_TOP
+setwindow pcb
+pick 0.0000 -0.6750
+Text "Ref"
+done
+setwindow pcb
+
+Label refdes
+setwindow Form.mini
+FORM mini text_block 3
+FORM mini angle 0
+FORM mini mirror NO
+FORM mini text_justification Center
+FORM mini class REF DES
+FORM mini subclass SILKSCREEN_TOP
+setwindow pcb
+pick 0.0000 3.3250
+Text "Ref"
+done
+setwindow pcb
+
+Label device
+setwindow Form.mini
+FORM mini text_block 3
+FORM mini angle 0
+FORM mini mirror NO
+FORM mini text_justification Center
+FORM mini class DEVICE TYPE
+FORM mini subclass SILKSCREEN_TOP
+setwindow pcb
+pick 0.0000 3.3250
+Text "Dev"
+done
+setwindow pcb
+
+generaledit
+zoom fit
+save_as
+fillin "QFN50P700X700X80-49N"

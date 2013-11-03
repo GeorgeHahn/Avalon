@@ -1,23 +1,110 @@
-\t (00:00:20) allegro 16.6 P004 (v16-6-112G) Windows 32
-\t (00:00:20)     Journal start - Sat Nov 02 19:33:59 2013
-\t (00:00:20)         Host=GEORGEPC User=George Pid=11508 CPUs=8
-\t (00:00:20) 
-\d (00:00:20) Database opened: C:/Users/George/Dropbox/PCBs/Footprint Library/HEADER100_5.dra
-\i (00:00:21) generaledit 
-\i (00:00:21) pick grid -6 188
-\t (00:00:21) last pick:  0  200
-\i (00:00:21) prepopup -6 188
-\i (00:00:37) padeditdb 
-\i (00:00:38) pick grid 4 194
-\t (00:00:38) last pick:  0  200
-\i (00:00:38) pick grid 3 208
-\t (00:00:38) last pick:  0  200
-\i (00:00:38) pick grid dbl 3 208
-\t (00:00:38) last pick:  0  200
-\i (00:00:39) prepopup 3 208
-\i (00:00:41) padeditcur 
-\i (00:01:50) setwindow form.padedit
-\i (00:01:50) pse_exit
-\i (00:01:55) setwindow pcb
-\i (00:01:55) exit 
-\t (00:01:56)     Journal end - Sat Nov 02 19:35:35 2013
+\t (00:00:01) allegro 16.6 P004 (v16-6-112G) Windows 32
+\t (00:00:01)     Journal start - Sat Nov 02 22:27:33 2013
+\t (00:00:01)         Host=GEORGEPC User=George Pid=13448 CPUs=8
+\t (00:00:01) 
+\t (00:00:03) Opening existing design...
+\d (00:00:03) Database opened: C:/Users/George/Documents/GitHub/Avalon/hardware/footprints/Footprint Library/QFN48.dra
+\i (00:00:03) trapsize 233
+\i (00:00:03) trapsize 230
+\i (00:00:04) trapsize 234
+\i (00:00:04) trapsize 211
+\i (00:00:04) trapsize 331
+\i (00:00:04) generaledit 
+\i (00:00:17) pick grid -0.7451 1.5732
+\t (00:00:17) last pick:  0.0000  2.5400
+\i (00:00:18) prepopup -0.7451 1.5732
+\i (00:00:20) pop dyn_option_select '@:@Show element' 
+\i (00:00:20) show element 
+\i (00:00:20) generaledit 
+\i (00:00:25) pick grid -3.3304 2.7039
+\t (00:00:25) last pick:  -2.5400  2.5400
+\i (00:00:26) prepopup -3.7933 2.7965
+\i (00:00:36) pop dyn_option_select '@:@Show element' 
+\i (00:00:36) show element 
+\i (00:00:36) generaledit 
+\i (00:00:41) pick grid -2.1336 1.9766
+\t (00:00:41) last pick:  -2.5400  2.5400
+\i (00:00:41) prepopup -2.1336 1.9766
+\i (00:00:45) setwindow text
+\i (00:00:45) close 
+\i (00:00:48) setwindow pcb
+\i (00:00:48) add pin 
+\t (00:00:48) Using 'THERMAL540X540.pad'.
+\i (00:00:50) pick grid 6.3563 -0.0269
+\t (00:00:50) last pick:  7.6200  0.0000
+\t (00:00:50) Using 'THERMAL540X540.pad'.
+\i (00:00:50) Esc 
+\w (00:00:50) WARNING(SPMHA1-314): Illegal event.
+\i (00:00:51) Esc 
+\w (00:00:51) WARNING(SPMHA1-314): Illegal event.
+\i (00:00:51) prepopup 4.9148 3.7089
+\i (00:00:53) done 
+\t (00:00:53) Exiting from Add Pin.
+\i (00:00:53) generaledit 
+\i (00:00:53) pick grid 6.4158 1.5997
+\t (00:00:53) last pick:  7.6200  2.5400
+\i (00:00:54) prepopup 6.4158 1.5997
+\i (00:00:55) pop dyn_option_select '@:@Show element' 
+\i (00:00:55) show element 
+\i (00:00:55) generaledit 
+\i (00:01:01) pick grid -3.7536 2.7898
+\t (00:01:01) last pick:  -2.5400  2.5400
+\i (00:01:02) prepopup -3.7536 2.7898
+\i (00:01:03) pop dyn_option_select '@:@Show element' 
+\i (00:01:03) show element 
+\i (00:01:03) generaledit 
+\i (00:01:04) prepopup -2.0675 2.4394
+\i (00:01:06) pop dyn_option_select '@:@Show element' 
+\i (00:01:06) show element 
+\i (00:01:06) generaledit 
+\i (00:01:08) pick grid -1.3931 2.1154
+\t (00:01:08) last pick:  -2.5400  2.5400
+\i (00:01:09) pick grid 3.6585 1.6922
+\t (00:01:09) last pick:  2.5400  2.5400
+\i (00:01:09) prepopup 6.9778 1.8575
+\i (00:01:10) pick grid 6.5348 1.7385
+\t (00:01:10) last pick:  7.6200  2.5400
+\i (00:01:10) prepopup 6.5348 1.7385
+\i (00:01:11) pop dyn_option_select '@:@Show element' 
+\i (00:01:11) show element 
+\i (00:01:11) generaledit 
+\i (00:01:12) pick grid 0.4914 2.2146
+\t (00:01:12) last pick:  0.0000  2.5400
+\e (00:01:13) Command not found: Del
+\i (00:01:14) prepopup 1.3113 1.8642
+\i (00:01:15) pop dyn_option_select @:@Delete 
+\i (00:01:15) delete 
+\i (00:01:15) generaledit 
+\i (00:01:15) drag_start grid 6.9448 1.3352
+\i (00:01:16) drag_stop 6.8522 1.4211
+\i (00:01:16) pick grid 8.1680 1.3616
+\t (00:01:16) last pick:  7.6200  2.5400
+\i (00:01:17) drag_start grid 7.3150 1.3947
+\i (00:01:18) drag_stop 7.0439 1.3550
+\i (00:01:18) prepopup 7.0439 1.3550
+\i (00:01:18) pop dyn_option_select @:@Move 
+\i (00:01:18) move 
+\t (00:01:19) last pick:  7.6200  2.5400
+\t (00:01:19) last pick:  7.6200  0.0000
+\t (00:01:19) Pick new location for the element(s).
+\i (00:01:20) pick grid 0.7029 1.2558
+\t (00:01:20) last pick:  0.0000  0.0000
+\i (00:01:20) generaledit 
+\i (00:01:21) setwindow text
+\i (00:01:21) close 
+\i (00:01:22) setwindow pcb
+\i (00:01:22) save 
+\i (00:01:24) fillin yes 
+\t (00:01:25) Symbol 'qfn48.psm' created.
+\i (00:01:25) generaledit 
+\i (00:03:57) open 
+\i (00:04:00) fillin "CAP_2917.dra"
+\t (00:04:00) Opening existing design...
+\i (00:04:00) trapsize 31
+\d (00:04:00) Database opened: C:/Users/George/Documents/GitHub/Avalon/hardware/footprints/Footprint Library/CAP_2917.dra
+\i (00:04:00) generaledit 
+\i (00:04:01) pick grid -3.156 1.278
+\t (00:04:01) last pick:  -3.175  1.270
+\i (00:06:48) pick grid -3.454 0.645
+\t (00:06:48) last pick:  -3.175  0.635
+\
