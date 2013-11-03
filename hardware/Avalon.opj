@@ -27,8 +27,9 @@
     ("Allegro Netlist Ignore Fixed Property" "FALSE")
     ("Allegro Netlist User Defined Property" "FALSE")
     (Netlist_TAB "0")
-    ("Allegro Netlist Input Board File"
-       "C:\Users\George\Documents\GitHub\Avalon\hardware\allegro\AVALON.brd"))
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420")
+    ("Allegro Netlist Input Board File" "allegro\AVALON.brd"))
   (Folder "Outputs"
     (File ".\netlist\pstxnet.dat"
       (Type "Report")
@@ -41,6 +42,10 @@
       (DisplayName "pstchip.dat")))
   (Folder "Referenced Projects")
   (PartMRUSelector
+    (CSD86350Q5D
+      (FullPartName "CSD86350Q5D.Normal")
+      (LibraryName "C:\USERS\GEORGE\DOCUMENTS\GITHUB\AVALON\HARDWARE\PARTS.OLB")
+      (DeviceIndex "0"))
     (CRYSTAL
       (FullPartName "CRYSTAL.Normal")
       (LibraryName "D:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
@@ -77,10 +82,6 @@
       (DeviceIndex "0"))
     (PIC18F45K50
       (FullPartName "PIC18F45K50.Normal")
-      (LibraryName "C:\USERS\GEORGE\DROPBOX\PCBS\PARTS.OLB")
-      (DeviceIndex "0"))
-    (CSD86350Q5D
-      (FullPartName "CSD86350Q5D.Normal")
       (LibraryName "C:\USERS\GEORGE\DROPBOX\PCBS\PARTS.OLB")
       (DeviceIndex "0"))
     ("HEADER 5"
@@ -145,13 +146,13 @@
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -4 -27 0 200 0 802"))
+        (Placement "44 0 1 -1 -1 -1 -1 0 700 0 1421"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -4 -27 156 2279 156 989")
-        (Scroll "0 10")
+        (Placement "44 2 3 -1 -1 -4 -27 52 1172 52 881")
+        (Scroll "440 0")
         (Zoom "100")
         (Occurrence "/"))
       (Path "C:\USERS\GEORGE\DOCUMENTS\GITHUB\AVALON\HARDWARE\AVALON.DSN")

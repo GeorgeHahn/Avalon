@@ -1,5 +1,5 @@
 FILE_TYPE=LIBRARY_PARTS;
-{ Using PSTWRITER 16.6.0 d001Nov-02-2013 at 22:25:32}
+{ Using PSTWRITER 16.6.0 d001Nov-03-2013 at 02:58:46}
 primitive 'CAPACITOR_CAP_2917_330UF';
   pin
     '1':
@@ -882,7 +882,7 @@ primitive 'BITSYNCOM A3255Q48_QFN48_BITSYN';
       PIN_NUMBER='(48)';
       PINUSE='UNSPEC';
     'EPVSS':
-      PIN_NUMBER='(50)';
+      PIN_NUMBER='(49)';
       PINUSE='UNSPEC';
   end_pin;
   body
@@ -891,7 +891,7 @@ primitive 'BITSYNCOM A3255Q48_QFN48_BITSYN';
     VALUE='BitSyncom A3255Q48';
   end_body;
 end_primitive;
-primitive '74AUP2G02_8-XSON_74AUP2G02';
+primitive '74AUP2G02_8-XSON_74AUP2G02GF,11';
   pin
     '1A':
       PIN_NUMBER='(1)';
@@ -921,7 +921,7 @@ primitive '74AUP2G02_8-XSON_74AUP2G02';
   body
     PART_NAME='74AUP2G02';
     JEDEC_TYPE='8-xson';
-    VALUE='74AUP2G02';
+    VALUE='74AUP2G02GF,115';
   end_body;
 end_primitive;
 primitive 'NL27WZ14DFT2G_SC-88_NL27WZ14DFT';
@@ -949,42 +949,6 @@ primitive 'NL27WZ14DFT2G_SC-88_NL27WZ14DFT';
     PART_NAME='NL27WZ14DFT2G';
     JEDEC_TYPE='sc-88';
     VALUE='NL27WZ14DFT2G';
-  end_body;
-end_primitive;
-primitive 'CSD86350Q5D_8SON_POWERBLOCK_CSD';
-  pin
-    'VIN':
-      PIN_NUMBER='(1)';
-      PINUSE='POWER';
-    'TG':
-      PIN_NUMBER='(3)';
-      PINUSE='POWER';
-    'TGR':
-      PIN_NUMBER='(4)';
-      PINUSE='POWER';
-    'BG':
-      PIN_NUMBER='(5)';
-      PINUSE='POWER';
-    'VSW':
-      PIN_NUMBER='(6)';
-      PINUSE='POWER';
-    'VSW2':
-      PIN_NUMBER='(7)';
-      PINUSE='POWER';
-    'VSW3':
-      PIN_NUMBER='(8)';
-      PINUSE='POWER';
-    'VIN2':
-      PIN_NUMBER='(2)';
-      PINUSE='POWER';
-    'PGND':
-      PIN_NUMBER='(9)';
-      PINUSE='POWER';
-  end_pin;
-  body
-    PART_NAME='CSD86350Q5D';
-    JEDEC_TYPE='8SON_PowerBlock';
-    VALUE='CSD86350Q5D';
   end_body;
 end_primitive;
 primitive 'LM63_TI_D_R_PDSO_G8_LM63';
@@ -1020,6 +984,42 @@ primitive 'LM63_TI_D_R_PDSO_G8_LM63';
     VALUE='LM63';
   end_body;
 end_primitive;
+primitive 'CSD86350Q5D_8SON_POWERBLOCK_CSD';
+  pin
+    'VIN':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    'TG':
+      PIN_NUMBER='(3)';
+      PINUSE='UNSPEC';
+    'TGR':
+      PIN_NUMBER='(4)';
+      PINUSE='UNSPEC';
+    'BG':
+      PIN_NUMBER='(5)';
+      PINUSE='UNSPEC';
+    'VSW':
+      PIN_NUMBER='(6)';
+      PINUSE='UNSPEC';
+    'VSW2':
+      PIN_NUMBER='(7)';
+      PINUSE='UNSPEC';
+    'VSW3':
+      PIN_NUMBER='(8)';
+      PINUSE='UNSPEC';
+    'VIN2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+    'PGND':
+      PIN_NUMBER='(11)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='CSD86350Q5D';
+    JEDEC_TYPE='8SON_PowerBlock';
+    VALUE='CSD86350Q5D';
+  end_body;
+end_primitive;
 primitive 'AP1117IE33G-13_SOT224_AP1117IE3';
   pin
     'VIN':
@@ -1036,6 +1036,7 @@ primitive 'AP1117IE33G-13_SOT224_AP1117IE3';
     PART_NAME='AP1117IE33G-13';
     JEDEC_TYPE='sot224';
     VALUE='AP1117IE33G-13';
+    NC_PINS='(4)';
   end_body;
 end_primitive;
 primitive 'KA78L05AIDTF_8-SOIC_KA78L05AIDT';

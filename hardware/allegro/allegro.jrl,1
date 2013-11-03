@@ -1,89 +1,30 @@
 \t (00:00:00) allegro 16.6 P004 (v16-6-112G) Windows 32
-\t (00:00:00)     Journal start - Sat Nov 02 22:14:39 2013
-\t (00:00:00)         Host=GEORGEPC User=George Pid=13448 CPUs=8
+\t (00:00:00)     Journal start - Sun Nov 03 02:08:10 2013
+\t (00:00:00)         Host=GEORGEPC User=George Pid=2044 CPUs=8
 \t (00:00:00) 
 \t (00:00:02) Opening existing design...
 \d (00:00:02) Database opened: C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd
-\i (00:00:03) trapsize 1591
-\i (00:00:03) trapsize 1556
-\i (00:00:03) trapsize 1597
-\i (00:00:03) trapsize 1614
-\i (00:00:03) trapsize 1360
-\i (00:00:03) trapsize 1360
-\i (00:00:03) generaledit 
-\i (00:00:13) quickplace 
-\i (00:00:15) setwindow form.quickplc
-\i (00:00:15) FORM quickplc place  
-\w (00:00:15) WARNING(SPMHUT-48): Scaled value has been rounded off.
-\w (00:00:15) WARNING(SPMHA1-230): Database has a non-recoverable corruption. Contact Cadence customer support.
-\w (00:00:15) WARNING(SPMHA1-230): Database has a non-recoverable corruption. Contact Cadence customer support.
-\e (00:00:15) Component(s) could not be placed.  See logfile for errors.
-\i (00:00:16) FORM quickplc done  
-\i (00:00:16) setwindow pcb
-\i (00:00:16) generaledit 
-\i (00:00:20) place manual 
-\i (00:00:23) setwindow form.plc_manual
-\i (00:00:23) FORM plc_manual tree 'MULTISEL YES' 'Components by refdes' 
-\w (00:00:23) WARNING(SPMHA1-230): Database has a non-recoverable corruption. Contact Cadence customer support.
-\w (00:00:23) WARNING(SPMHA1-230): Database has a non-recoverable corruption. Contact Cadence customer support.
-\w (00:00:23) WARNING(SPMHA1-230): Database has a non-recoverable corruption. Contact Cadence customer support.
-\e (00:00:23) Cannot load symbol 'CAP_2917'
-\i (00:00:23) FORM plc_manual tree  'Components by refdes' 
-\i (00:00:25) setwindow pcb
-\i (00:00:25) pick grid 5073.91 19172.63
-\t (00:00:25) last pick:  5100.00  19200.00
-\w (00:00:25) WARNING(SPMHA1-230): Database has a non-recoverable corruption. Contact Cadence customer support.
-\w (00:00:25) WARNING(SPMHA1-230): Database has a non-recoverable corruption. Contact Cadence customer support.
-\w (00:00:25) WARNING(SPMHA1-230): Database has a non-recoverable corruption. Contact Cadence customer support.
-\e (00:00:25) Cannot load symbol 'CAP_2917'
-\i (00:00:25) pick grid 4791.12 19161.76
-\t (00:00:25) last pick:  4800.00  19200.00
-\e (00:00:25) Cannot load symbol 'CUI_PJ_037BH'
-\i (00:00:25) pick grid 4554.56 19148.16
-\t (00:00:25) last pick:  4600.00  19100.00
-\e (00:00:25) Cannot load symbol 'MOLEX_0473460001'
-\i (00:00:25) pick grid 4538.24 19148.16
-\t (00:00:25) last pick:  4500.00  19100.00
-\e (00:00:25) Cannot load symbol 'ETQ-P4L'
-\i (00:00:26) pick grid 4505.61 19140.00
-\t (00:00:26) last pick:  4500.00  19100.00
-\e (00:00:26) Cannot load symbol '8SON_POWERBLOCK'
-\i (00:00:26) pick grid dbl 4505.61 19140.00
-\t (00:00:26) last pick:  4500.00  19100.00
-\e (00:00:26) Cannot load symbol 'SOT224'
-\i (00:00:26) pick grid 4500.17 19137.28
-\t (00:00:26) last pick:  4500.00  19100.00
-\e (00:00:26) Cannot load symbol '8-SOIC'
-\i (00:00:26) pick grid dbl 4500.17 19137.28
-\t (00:00:26) last pick:  4500.00  19100.00
-\e (00:00:26) Cannot load symbol '20-SSOP'
-\i (00:00:27) pick grid 4500.17 19137.28
-\t (00:00:27) last pick:  4500.00  19100.00
-\e (00:00:27) Cannot load symbol '4-SMD-DFNLLC'
-\i (00:00:27) pick grid 4380.53 19118.25
-\t (00:00:27) last pick:  4400.00  19100.00
-\e (00:00:27) Cannot load symbol '40-UFQFN'
-\i (00:00:27) pick grid 4271.77 19096.50
-\t (00:00:27) last pick:  4300.00  19100.00
-\t (00:00:27) Placing U8 / BITSYNCOM A3255Q48_QFN48_BITSYN / QFN48 on Top.
-\i (00:00:27) pick grid dbl 4271.77 19096.50
-\t (00:00:27) last pick:  4300.00  19100.00
-\e (00:00:27) ERROR(SPMHGE-82): Pin numbers do not match between symbol and component. Run dev_check on device file for more information.
-\t (00:00:27) Placing U8 / BITSYNCOM A3255Q48_QFN48_BITSYN / QFN48 on Top.
-\t (00:00:27) Placing U9 / BITSYNCOM A3255Q48_QFN48_BITSYN / QFN48 on Top.
-\i (00:00:32) pick grid 4149.40 19115.53
-\t (00:00:32) last pick:  4100.00  19100.00
-\e (00:00:32) ERROR(SPMHGE-82): Pin numbers do not match between symbol and component. Run dev_check on device file for more information.
-\t (00:00:32) Placing U9 / BITSYNCOM A3255Q48_QFN48_BITSYN / QFN48 on Top.
-\t (00:00:32) Placing U10 / BITSYNCOM A3255Q48_QFN48_BITSYN / QFN48 on Top.
-\i (00:00:35) setwindow form.plc_manual
-\i (00:00:35) FORM plc_manual cancel  
-\i (00:00:35) setwindow pcb
-\i (00:00:35) generaledit 
-\e (00:00:43) Command not found: dev_check
-\i (00:00:44) roam y -96 
-\i (00:00:44) roam y -96
-\i (00:06:27) exit 
-\e (00:06:27) Do you want to save the changes you made to AVALON.brd?
-\i (00:06:28) fillin no 
-\t (00:06:28)     Journal end - Sat Nov 02 22:21:07 2013
+\i (00:00:02) trapsize 1877
+\i (00:00:03) trapsize 1852
+\i (00:00:03) trapsize 1881
+\i (00:00:03) trapsize 1893
+\i (00:00:03) trapsize 1893
+\i (00:00:04) placementedit 
+\i (00:00:09) place manual 
+\i (00:00:11) setwindow form.plc_manual
+\i (00:00:11) FORM plc_manual tree 'MULTISEL YES' U2 'Components by refdes' 
+\t (00:00:11) Placing U2 / CSD86350Q5D_8SON_POWERBLOCK_CSD / 8SON_POWERBLOCK on Top.
+\i (00:00:11) FORM plc_manual tree  U2 'Components by refdes' 
+\i (00:00:13) setwindow pcb
+\i (00:00:13) pick grid 5992.29 14841.53
+\t (00:00:13) last pick:  6000.00  14800.00
+\e (00:00:13) ERROR(SPMHGE-82): Pin numbers do not match between symbol and component. Run dev_check on device file for more information.
+\t (00:00:13) Placing U2 / CSD86350Q5D_8SON_POWERBLOCK_CSD / 8SON_POWERBLOCK on Top.
+\i (00:00:32) setwindow form.plc_manual
+\i (00:00:32) FORM plc_manual cancel  
+\i (00:00:32) setwindow pcb
+\i (00:00:32) placementedit 
+\i (00:00:33) exit 
+\e (00:00:33) Do you want to save the changes you made to AVALON.brd?
+\i (00:00:34) fillin yes 
+\t (00:00:34)     Journal end - Sun Nov 03 02:08:44 2013

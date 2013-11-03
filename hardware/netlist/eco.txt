@@ -2,161 +2,81 @@
 |                                 ECO   REPORT                                 |
 |                                                                    Page   1  |
 |------------------------------------------------------------------------------|
-|  C:/Users/George/Documents/GitHub/Avalon/hardware/allegro/AVALON.brd         |
-|                                                    Sat Nov 02 22:30:39 2013  |
+|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
+|                                                    Sun Nov 03 03:03:56 2013  |
 |------------------------------------------------------------------------------|
 | NET CHANGES                                                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
 |   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
   GND          pins ADDED TO this existing net (pins not previously on any net)
-                                 U8.49                          
-                                 U9.49                          
-                                 U10.49                         
-                                 U11.49                         
-                                 U12.49                         
-                                 U13.49                         
-                                 U14.49                         
-                                 U15.49                         
-                                 U16.49                         
-                                 U17.49                         
+                                 U21.9                          
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  VCORE        pins ADDED TO this existing net (pins not previously on any net)
-                                 U8.40                          
-                                 U8.41                          
-                                 U8.42                          
-                                 U8.45                          
-                                 U8.46                          
-                                 U8.47                          
-                                 U8.48                          
-                                 U9.40                          
-                                 U9.41                          
-                                 U9.42                          
-                                 U9.45                          
-                                 U9.46                          
-                                 U9.47                          
-                                 U9.48                          
-                                 U10.40                         
-                                 U10.41                         
-                                 U10.42                         
-                                 U10.45                         
-                                 U10.46                         
-                                 U10.47                         
-                                 U10.48                         
-                                 U11.40                         
-                                 U11.41                         
-                                 U11.42                         
-                                 U11.45                         
-                                 U11.46                         
-                                 U11.47                         
-                                 U11.48                         
-                                 U12.40                         
-                                 U12.41                         
-                                 U12.42                         
-                                 U12.45                         
+  N09312       pins ADDED TO this existing net (pins not previously on any net)
+                                 U21.4                          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N09333       pins ADDED TO this existing net (pins not previously on any net)
+                                 U21.3                          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N09337       pins ADDED TO this existing net (pins not previously on any net)
+                                 U21.5                          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N13217       pins ADDED TO this existing net (pins not previously on any net)
+                                 U21.6                          
+                                 U21.7                          
+                                 U21.8                          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  VIN          pins ADDED TO this existing net (pins not previously on any net)
+                                 U21.1                          
+                                 U21.2                          
 |------------------------------------------------------------------------------|
 |                                 ECO   REPORT                                 |
 |                                                                    Page   2  |
 |------------------------------------------------------------------------------|
-|  C:/Users/George/Documents/GitHub/Avalon/hardware/allegro/AVALON.brd         |
-|                                                    Sat Nov 02 22:30:39 2013  |
-|------------------------------------------------------------------------------|
-| NET CHANGES                                                                  |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-                                 U12.46                         
-                                 U12.47                         
-                                 U12.48                         
-                                 U13.40                         
-                                 U13.41                         
-                                 U13.42                         
-                                 U13.45                         
-                                 U13.46                         
-                                 U13.47                         
-                                 U13.48                         
-                                 U14.40                         
-                                 U14.41                         
-                                 U14.42                         
-                                 U14.45                         
-                                 U14.46                         
-                                 U14.47                         
-                                 U14.48                         
-                                 U15.40                         
-                                 U15.41                         
-                                 U15.42                         
-                                 U15.45                         
-                                 U15.46                         
-                                 U15.47                         
-                                 U15.48                         
-                                 U16.40                         
-                                 U16.41                         
-                                 U16.42                         
-                                 U16.45                         
-                                 U16.46                         
-                                 U16.47                         
-                                 U16.48                         
-                                 U17.40                         
-                                 U17.41                         
-                                 U17.42                         
-                                 U17.45                         
-                                 U17.46                         
-                                 U17.47                         
-                                 U17.48                         
-|------------------------------------------------------------------------------|
-|                                 ECO   REPORT                                 |
-|                                                                    Page   3  |
-|------------------------------------------------------------------------------|
-|  C:/Users/George/Documents/GitHub/Avalon/hardware/allegro/AVALON.brd         |
-|                                                    Sat Nov 02 22:30:39 2013  |
+|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
+|                                                    Sun Nov 03 03:03:56 2013  |
 |------------------------------------------------------------------------------|
 | COMPONENT DEFINITION added to board drawing                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
 |    device type                                                               |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- BITSYNCOM A3255Q48_QFN48_BITSYN
+ CSD86350Q5D_QFN127P600X500X150-
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   3  |
+|------------------------------------------------------------------------------|
+|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
+|                                                    Sun Nov 03 03:03:56 2013  |
+|------------------------------------------------------------------------------|
+| COMPONENTS DELETED from board drawing                                        |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|    ref des        |    device type      |   x   |   y                        |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ U2                  CSD86350Q5D_8SON_POWERBLOCK_CSD                
 |------------------------------------------------------------------------------|
 |                                 ECO   REPORT                                 |
 |                                                                    Page   4  |
 |------------------------------------------------------------------------------|
-|  C:/Users/George/Documents/GitHub/Avalon/hardware/allegro/AVALON.brd         |
-|                                                    Sat Nov 02 22:30:39 2013  |
+|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
+|                                                    Sun Nov 03 03:03:56 2013  |
 |------------------------------------------------------------------------------|
-| COMPONENTS CHANGED from one device type to another in board drawing          |
+| COMPONENTS ADDED to board drawing                                            |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|    ref des        | new device type     |   x   |   y   |  old  device type  |
+|    ref des        |    device type                                           |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- U8                  BITSYNCOM A3255Q48_QFN48_BITSYN                 BITSYNCOM A3255Q48_QFN48_BITSYN
- U9                  BITSYNCOM A3255Q48_QFN48_BITSYN                 BITSYNCOM A3255Q48_QFN48_BITSYN
- U10                 BITSYNCOM A3255Q48_QFN48_BITSYN                 BITSYNCOM A3255Q48_QFN48_BITSYN
- U11                 BITSYNCOM A3255Q48_QFN48_BITSYN                 BITSYNCOM A3255Q48_QFN48_BITSYN
- U12                 BITSYNCOM A3255Q48_QFN48_BITSYN                 BITSYNCOM A3255Q48_QFN48_BITSYN
- U13                 BITSYNCOM A3255Q48_QFN48_BITSYN                 BITSYNCOM A3255Q48_QFN48_BITSYN
- U14                 BITSYNCOM A3255Q48_QFN48_BITSYN                 BITSYNCOM A3255Q48_QFN48_BITSYN
- U15                 BITSYNCOM A3255Q48_QFN48_BITSYN                 BITSYNCOM A3255Q48_QFN48_BITSYN
- U16                 BITSYNCOM A3255Q48_QFN48_BITSYN                 BITSYNCOM A3255Q48_QFN48_BITSYN
- U17                 BITSYNCOM A3255Q48_QFN48_BITSYN                 BITSYNCOM A3255Q48_QFN48_BITSYN
+ U21                 CSD86350Q5D_QFN127P600X500X150- 
 |------------------------------------------------------------------------------|
 |                                 ECO   REPORT                                 |
 |                                                                    Page   5  |
 |------------------------------------------------------------------------------|
-|  C:/Users/George/Documents/GitHub/Avalon/hardware/allegro/AVALON.brd         |
-|                                                    Sat Nov 02 22:30:39 2013  |
+|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
+|                                                    Sun Nov 03 03:03:56 2013  |
 |------------------------------------------------------------------------------|
 | SLOT PROPERTIES added to board drawing                                       |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
 |   slot_id    |   x   |   y   |   property   |             value              |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- U8.9                           PRIM_FILE      .\pstchip.dat
- U9.9                           PRIM_FILE      .\pstchip.dat
- U10.9                          PRIM_FILE      .\pstchip.dat
- U11.9                          PRIM_FILE      .\pstchip.dat
- U12.9                          PRIM_FILE      .\pstchip.dat
- U13.9                          PRIM_FILE      .\pstchip.dat
- U14.9                          PRIM_FILE      .\pstchip.dat
- U15.9                          PRIM_FILE      .\pstchip.dat
- U16.9                          PRIM_FILE      .\pstchip.dat
- U17.9                          PRIM_FILE      .\pstchip.dat
+ U21.8                          PRIM_FILE      .\pstchip.dat
 |------------------------------------------------------------------------------|
-|   total ECO changes reported  101                                            |
+|   total ECO changes reported  13                                             |
 |------------------------------------------------------------------------------|
