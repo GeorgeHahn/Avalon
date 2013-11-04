@@ -1,175 +1,284 @@
 \t (00:00:00) allegro 16.6 P004 (v16-6-112G) Windows 32
-\t (00:00:00)     Journal start - Sun Nov 03 16:52:24 2013
-\t (00:00:00)         Host=GEORGEPC User=George Pid=12500 CPUs=8
+\t (00:00:00)     Journal start - Sun Nov 03 23:21:56 2013
+\t (00:00:00)         Host=GEORGEPC User=George Pid=7332 CPUs=8
 \t (00:00:00) 
-\t (00:00:02) Opening existing design...
-\d (00:00:02) Database opened: C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd
-\i (00:00:03) trapsize 515
-\i (00:00:03) trapsize 508
-\i (00:00:03) trapsize 516
-\i (00:00:03) trapsize 520
-\i (00:00:03) trapsize 520
-\i (00:00:03) generaledit 
-\i (00:00:05) pick grid 4881.63 18341.66
-\t (00:00:05) last pick:  4880.00  18340.00
-\i (00:00:05) zoom in 1 
-\i (00:00:05) setwindow pcb
-\i (00:00:05) zoom in 4036.68 18716.85
-\i (00:00:05) trapsize 260
+\t (00:00:00) Opening existing design...
+\d (00:00:00) Database opened: C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd
+\i (00:00:01) trapsize 76
+\i (00:00:01) trapsize 75
+\i (00:00:01) trapsize 76
+\i (00:00:01) trapsize 77
+\i (00:00:01) trapsize 77
+\i (00:00:02) placementedit 
+\i (00:00:03) pick grid 6649.37 17069.68
+\t (00:00:03) last pick:  6650.00  17070.00
+\i (00:00:03) zoom out 1 
+\i (00:00:03) setwindow pcb
+\i (00:00:03) zoom out 6649.37 17069.68
+\i (00:00:03) trapsize 153
+\i (00:00:04) zoom out 1 
+\i (00:00:04) setwindow pcb
+\i (00:00:04) zoom out 6649.36 17069.68
+\i (00:00:04) trapsize 306
+\i (00:00:04) zoom out 1 
+\i (00:00:04) setwindow pcb
+\i (00:00:04) zoom out 6649.36 17069.69
+\i (00:00:04) trapsize 612
+\i (00:00:04) zoom out 1 
+\i (00:00:04) setwindow pcb
+\i (00:00:04) zoom out 6649.35 17069.69
+\i (00:00:04) trapsize 1224
 \i (00:00:06) zoom out 1 
 \i (00:00:06) setwindow pcb
-\i (00:00:06) zoom out 4024.21 18523.54
-\i (00:00:06) trapsize 520
-\i (00:00:06) zoom in 1 
-\i (00:00:06) setwindow pcb
-\i (00:00:06) zoom in 4021.10 18507.96
-\i (00:00:06) trapsize 260
+\i (00:00:06) zoom out 6517.14 16981.54
+\t (00:00:06) Grids are drawn 40.00, 40.00 apart for enhanced viewability.
+\i (00:00:06) trapsize 2448
 \i (00:00:07) zoom in 1 
 \i (00:00:07) setwindow pcb
-\i (00:00:07) zoom in 4025.78 18499.13
-\i (00:00:07) trapsize 130
+\i (00:00:07) zoom in 5581.88 17201.89
+\i (00:00:07) trapsize 1224
 \i (00:00:08) zoom in 1 
 \i (00:00:08) setwindow pcb
-\i (00:00:08) zoom in 4222.21 18591.89
-\i (00:00:08) trapsize 65
+\i (00:00:08) zoom in 5150.98 17603.42
+\i (00:00:08) trapsize 612
+\i (00:00:08) zoom in 1 
+\i (00:00:08) setwindow pcb
+\i (00:00:08) zoom in 5150.98 17603.43
+\i (00:00:08) trapsize 306
+\i (00:00:09) zoom in 1 
+\i (00:00:09) setwindow pcb
+\i (00:00:09) zoom in 5220.76 17573.43
+\i (00:00:09) trapsize 153
 \i (00:00:09) zoom out 1 
 \i (00:00:09) setwindow pcb
-\i (00:00:09) zoom out 4168.94 18612.03
-\i (00:00:09) trapsize 130
-\i (00:00:10) add connect 
-\t (00:00:10) Pick first element.
-\i (00:00:11) pick grid 4162.97 18649.18
-\t (00:00:11) last pick:  4160.00  18650.00
-\t (00:00:11) last pick:  4164.17  18649.21
-\t (00:00:11) Target Symbol Pin is defined on TOP.
-\t (00:00:11) last pick:  4164.17  18649.21
-\i (00:00:12) zoom out 1 
-\i (00:00:12) setwindow pcb
-\i (00:00:12) zoom out 4162.97 18649.18
-\i (00:00:12) trapsize 260
-\i (00:00:12) mouse_pos 4161.93 18665.29
+\i (00:00:09) zoom out 5412.65 17530.59
+\i (00:00:09) trapsize 306
+\i (00:00:11) zoom out 1 
+\i (00:00:11) setwindow pcb
+\i (00:00:11) zoom out 4997.66 17481.62
+\i (00:00:11) trapsize 612
+\i (00:00:11) zoom in 1 
+\i (00:00:11) setwindow pcb
+\i (00:00:11) zoom in 4997.66 17481.62
+\i (00:00:11) trapsize 306
 \i (00:00:12) zoom in 1 
 \i (00:00:12) setwindow pcb
-\i (00:00:12) zoom in 4174.92 18714.66
-\i (00:00:12) trapsize 130
+\i (00:00:12) zoom in 5141.50 17493.24
+\i (00:00:12) trapsize 153
 \i (00:00:13) zoom in 1 
 \i (00:00:13) setwindow pcb
-\i (00:00:13) zoom in 4175.96 18713.62
-\i (00:00:13) trapsize 65
-\i (00:00:14) Esc 
-\i (00:00:14) mouse_pos 4170.38 18703.10
-\i (00:00:14) mouse_pos 4146.47 18674.78
-\i (00:00:14) mouse_pos 4144.91 18672.44
-\i (00:00:15) mouse_pos 4144.91 18660.88
+\i (00:00:13) zoom in 5217.40 17481.31
+\i (00:00:13) trapsize 77
+\i (00:00:14) zoom out 1 
+\i (00:00:14) setwindow pcb
+\i (00:00:14) zoom out 5215.88 17481.16
+\i (00:00:14) trapsize 153
+\i (00:00:14) zoom out 1 
+\i (00:00:14) setwindow pcb
+\i (00:00:14) zoom out 5091.31 17482.07
+\i (00:00:14) trapsize 306
 \i (00:00:15) zoom out 1 
 \i (00:00:15) setwindow pcb
-\i (00:00:15) zoom out 4139.85 18645.55
-\i (00:00:15) trapsize 130
-\i (00:00:16) Esc 
-\i (00:00:16) mouse_pos 4162.19 18665.82
-\i (00:00:17) mouse_pos 4175.18 18692.58
-\i (00:00:17) prepopup 4148.16 18703.23
+\i (00:00:15) zoom out 5089.47 17482.08
+\i (00:00:15) trapsize 612
+\i (00:00:16) pick grid 5135.97 17426.99
+\t (00:00:16) last pick:  5140.00  17430.00
+\i (00:00:16) move 
+\t (00:00:16) last pick:  5140.00  17430.00
+\t (00:00:16) Moving C2 / CAPACITOR_CAP_2917_330UF / CAP_2917.
+\t (00:00:16) Pick new location for the element(s).
+\i (00:00:17) prepopup 5132.30 17425.77
 \i (00:00:18) cancel 
-\i (00:00:18) generaledit 
-\i (00:00:19) zoom in 1 
-\i (00:00:19) setwindow pcb
-\i (00:00:19) zoom in 4309.51 18741.16
-\i (00:00:19) trapsize 65
-\i (00:00:19) zoom out 1 
-\i (00:00:19) setwindow pcb
-\i (00:00:19) zoom out 4280.41 18743.51
-\i (00:00:19) trapsize 130
-\i (00:00:22) zoom out 1 
-\i (00:00:22) setwindow pcb
-\i (00:00:22) zoom out 4165.57 18654.90
-\i (00:00:22) trapsize 260
-\i (00:00:22) zoom in 1 
-\i (00:00:22) setwindow pcb
-\i (00:00:22) zoom in 4153.09 18613.86
-\i (00:00:22) trapsize 130
-\i (00:00:23) zoom in 1 
-\i (00:00:23) setwindow pcb
-\i (00:00:23) zoom in 4152.83 18612.30
-\i (00:00:23) trapsize 65
-\i (00:00:23) zoom in 1 
-\i (00:00:23) setwindow pcb
-\i (00:00:23) zoom in 4152.83 18612.30
-\i (00:00:23) trapsize 32
-\i (00:00:24) zoom out 1 
-\i (00:00:24) setwindow pcb
-\i (00:00:24) zoom out 4151.33 18611.53
-\i (00:00:24) trapsize 65
-\i (00:00:25) zoom out 1 
-\i (00:00:25) setwindow pcb
-\i (00:00:25) zoom out 4151.34 18611.52
-\i (00:00:25) trapsize 130
-\i (00:00:30) pick grid 4119.62 18725.59
-\t (00:00:30) last pick:  4120.00  18730.00
-\i (00:00:31) zoom out 1 
-\i (00:00:31) setwindow pcb
-\i (00:00:31) zoom out 4119.62 18725.59
-\i (00:00:31) trapsize 260
-\i (00:00:32) zoom in 1 
+\i (00:00:18) placementedit 
+\i (00:00:30) refresh padstack 
+\i (00:00:32) setwindow form.rf_pad
+\i (00:00:32) FORM rf_pad execute  
+\t (00:00:32) Starting Refreshing padstacks...
+\t (00:00:32) Opening existing design...
 \i (00:00:32) setwindow pcb
-\i (00:00:32) zoom in 4119.62 18725.60
-\i (00:00:32) trapsize 130
-\i (00:00:32) zoom out 1 
-\i (00:00:32) setwindow pcb
-\i (00:00:32) zoom out 4119.62 18725.60
-\i (00:00:32) trapsize 260
-\i (00:00:33) zoom in 1 
-\i (00:00:33) setwindow pcb
-\i (00:00:33) zoom in 4119.62 18725.61
-\i (00:00:33) trapsize 130
-\i (00:00:33) zoom in 1 
-\i (00:00:33) setwindow pcb
-\i (00:00:33) zoom in 4140.41 18576.20
-\i (00:00:33) trapsize 65
-\i (00:00:34) zoom in 1 
+\i (00:00:32) trapsize 612
+\i (00:00:34) setwindow form.rf_pad
+\i (00:00:34) FORM rf_pad cancel  
 \i (00:00:34) setwindow pcb
-\i (00:00:34) zoom in 4140.41 18576.20
-\i (00:00:34) trapsize 32
+\i (00:00:34) placementedit 
 \i (00:00:34) zoom out 1 
 \i (00:00:34) setwindow pcb
-\i (00:00:34) zoom out 4169.06 18601.34
-\i (00:00:34) trapsize 65
-\i (00:00:34) zoom out 1 
-\i (00:00:34) setwindow pcb
-\i (00:00:34) zoom out 4169.45 18602.12
-\i (00:00:34) trapsize 130
-\i (00:00:35) zoom in 1 
-\i (00:00:35) setwindow pcb
-\i (00:00:35) zoom in 4126.05 18549.89
-\i (00:00:35) trapsize 65
-\i (00:00:35) zoom in 1 
-\i (00:00:35) setwindow pcb
-\i (00:00:35) zoom in 4125.41 18547.04
-\i (00:00:35) trapsize 32
-\i (00:00:36) zoom out 1 
+\i (00:00:34) zoom out 4987.85 17624.08
+\i (00:00:34) trapsize 1224
+\i (00:00:36) zoom in 1 
 \i (00:00:36) setwindow pcb
-\i (00:00:36) zoom out 4125.41 18547.04
-\i (00:00:36) trapsize 65
-\i (00:00:36) zoom out 1 
+\i (00:00:36) zoom in 6473.98 17139.32
+\i (00:00:36) trapsize 612
+\i (00:00:36) zoom in 1 
 \i (00:00:36) setwindow pcb
-\i (00:00:36) zoom out 4125.42 18547.05
-\i (00:00:36) trapsize 130
-\i (00:00:37) zoom in 1 
-\i (00:00:37) setwindow pcb
-\i (00:00:37) zoom in 4246.49 18452.21
-\i (00:00:37) trapsize 65
-\i (00:00:37) zoom in 1 
-\i (00:00:37) setwindow pcb
-\i (00:00:37) zoom in 4249.09 18452.47
-\i (00:00:37) trapsize 32
-\i (00:00:47) xNet 1V0 
-\i (00:00:47) xname_flush 
-\i (00:00:57) xNet 1V0 
-\i (00:00:57) xname_flush 
-\i (00:01:10) xNet 1V0 
-\i (00:01:10) xname_flush 
-\i (00:01:15) xNet 1V0 
-\i (00:01:15) xname_flush 
-\i (00:01:33) exit 
-\e (00:01:33) Do you want to save the changes you made to AVALON.brd?
-\i (00:01:34) fillin no 
-\t (00:01:34)     Journal end - Sun Nov 03 16:53:58 2013
+\i (00:00:36) zoom in 6473.99 17139.32
+\i (00:00:36) trapsize 306
+\i (00:00:36) zoom in 1 
+\i (00:00:36) setwindow pcb
+\i (00:00:36) zoom in 6428.08 17086.07
+\i (00:00:37) trapsize 153
+\i (00:00:38) pick grid 6390.13 17019.05
+\t (00:00:38) last pick:  6390.00  17020.00
+\i (00:00:38) move 
+\t (00:00:38) last pick:  6390.00  17020.00
+\t (00:00:38) Moving D5 / LED_0_RES_0805_LED / RES_0805.
+\t (00:00:38) Pick new location for the element(s).
+\i (00:00:38) prepopup 6374.52 17024.25
+\i (00:00:39) cancel 
+\i (00:00:39) placementedit 
+\i (00:00:47) dbdoctor 
+\i (00:00:49) setwindow form.dbdoctor_allegro
+\i (00:00:49) FORM dbdoctor_allegro shapes YES 
+\i (00:00:51) FORM dbdoctor_allegro execute  
+\t (00:00:51) Dbdoctor in progress - please wait.
+\t (00:00:51) Checking db records
+\t (00:00:51)     checking for orphans...
+\t (00:00:51)     Checked  55 percent
+\t (00:00:51)     Checked 100 percent
+\w (00:00:52) Run batch DRC to correctly regenerate DRC errs.
+
+\t (00:00:52) Done dbdoctor.
+\t (00:00:52) Dbdoctor completed.
+\i (00:00:55) FORM dbdoctor_allegro close  
+\i (00:00:55) setwindow pcb
+\i (00:00:55) placementedit 
+\i (00:01:49) refresh symbol 
+\i (00:01:56) setwindow form.upd_element
+\i (00:01:56) FORM upd_element tree 'MULTISEL YES' 'Package symbols' 
+\i (00:01:56) FORM upd_element tree  'Package symbols' 
+\i (00:01:58) FORM upd_element refresh  
+\t (00:01:58) Starting Refresh Symbol...
+\t (00:02:00) Opening existing design...
+\i (00:02:00) setwindow pcb
+\i (00:02:00) trapsize 153
+\i (00:02:03) pick grid 6377.28 17115.45
+\t (00:02:03) last pick:  6380.00  17120.00
+\i (00:02:03) zoom out 1 
+\i (00:02:03) setwindow pcb
+\i (00:02:03) zoom out 6547.44 17078.73
+\i (00:02:03) trapsize 306
+\i (00:02:03) zoom out 1 
+\i (00:02:03) setwindow pcb
+\i (00:02:03) zoom out 6551.72 17076.28
+\i (00:02:03) trapsize 612
+\i (00:02:04) zoom out 1 
+\i (00:02:04) setwindow pcb
+\i (00:02:04) zoom out 6554.16 17067.71
+\i (00:02:04) trapsize 1224
+\i (00:02:04) zoom in 1 
+\i (00:02:04) setwindow pcb
+\i (00:02:04) zoom in 5474.44 17197.47
+\i (00:02:04) trapsize 612
+\i (00:02:11) setwindow form.upd_element
+\i (00:02:11) FORM upd_element tree 'MULTISEL YES' 'Shape and flash symbols' 
+\i (00:02:11) FORM upd_element tree  'Shape and flash symbols' 
+\i (00:02:11) FORM upd_element tree 'MULTISEL YES' 'Mechanical symbols' 
+\i (00:02:11) FORM upd_element tree  'Mechanical symbols' 
+\i (00:02:12) FORM upd_element tree 'MULTISEL YES' 'Other symbols' 
+\i (00:02:12) FORM upd_element tree  'Other symbols' 
+\i (00:02:13) FORM upd_element tree 'MULTISEL YES' 'Mechanical symbols' 
+\i (00:02:13) FORM upd_element tree  'Mechanical symbols' 
+\i (00:02:14) FORM upd_element tree 'MULTISEL YES' 'Place replicate modules' 
+\i (00:02:14) FORM upd_element tree  'Place replicate modules' 
+\i (00:02:15) FORM upd_element tree 'MULTISEL YES' Modules 
+\i (00:02:15) FORM upd_element tree  Modules 
+\i (00:02:18) FORM upd_element refresh  
+\t (00:02:18) Starting Refresh Symbol...
+\w (00:02:24) WARNING(SPMHGE-269): refresh_symbol had warnings, use Viewlog to review the log file.
+\t (00:02:24) Opening existing design...
+\i (00:02:24) setwindow pcb
+\i (00:02:24) trapsize 612
+\i (00:02:25) setwindow form.upd_element
+\i (00:02:25) FORM upd_element close  
+\i (00:02:25) setwindow pcb
+\i (00:02:25) placementedit 
+\i (00:02:30) setwindow text
+\i (00:02:30) close 
+\i (00:02:31) setwindow pcb
+\i (00:02:31) zoom out 1 
+\i (00:02:31) setwindow pcb
+\i (00:02:31) zoom out 5916.36 17294.18
+\i (00:02:31) trapsize 1224
+\i (00:02:31) zoom out 1 
+\i (00:02:31) setwindow pcb
+\i (00:02:31) zoom out 5913.92 17294.18
+\t (00:02:31) Grids are drawn 40.00, 40.00 apart for enhanced viewability.
+\i (00:02:31) trapsize 2448
+\i (00:02:31) zoom in 1 
+\i (00:02:31) setwindow pcb
+\i (00:02:31) zoom in 6148.95 17308.87
+\i (00:02:31) trapsize 1224
+\i (00:02:32) zoom in 1 
+\i (00:02:32) setwindow pcb
+\i (00:02:32) zoom in 6148.95 17308.88
+\i (00:02:32) trapsize 612
+\i (00:02:33) prepopup 6387.66 17019.98
+\i (00:02:36) pop dyn_option_select '@:@Refresh symbol instance' 
+\i (00:02:36) refresh syminst 
+\t (00:02:36) Performing DRC...
+\t (00:02:36) Multithreaded DRC update (8 threads).
+\t (00:02:37) No DRC errors detected.
+\i (00:02:37) placementedit 
+\i (00:02:38) prepopup 6404.80 17008.96
+\i (00:02:41) pop dyn_option_select '@:@Unplace component' 
+\i (00:02:41) unplace component 
+\i (00:02:41) placementedit 
+\i (00:02:45) place manual 
+\i (00:02:47) setwindow form.plc_manual
+\i (00:02:47) FORM plc_manual tree 'MULTISEL YES' D5 'Components by refdes' 
+\t (00:02:47) Placing D5 / LED_0_RES_0805_LED / RES_0805 on Top.
+\i (00:02:47) FORM plc_manual tree  D5 'Components by refdes' 
+\i (00:02:51) setwindow pcb
+\i (00:02:51) pick grid 6435.40 17013.86
+\t (00:02:51) last pick:  6440.00  17010.00
+\i (00:02:52) zoom in 1 
+\i (00:02:52) setwindow pcb
+\i (00:02:52) zoom in 6773.27 17017.53
+\i (00:02:52) trapsize 306
+\i (00:02:52) zoom in 1 
+\i (00:02:52) setwindow pcb
+\i (00:02:52) zoom in 6657.59 17031.61
+\i (00:02:52) trapsize 153
+\i (00:02:53) pick grid 6523.54 17137.19
+\t (00:02:53) last pick:  6520.00  17140.00
+\i (00:02:53) zoom out 1 
+\i (00:02:53) setwindow pcb
+\i (00:02:53) zoom out 6480.70 17138.42
+\i (00:02:53) trapsize 306
+\i (00:02:55) zoom out 1 
+\i (00:02:55) setwindow pcb
+\i (00:02:55) zoom out 6705.33 16826.86
+\i (00:02:55) trapsize 612
+\i (00:02:55) zoom in 1 
+\i (00:02:55) setwindow pcb
+\i (00:02:55) zoom in 6680.84 16983.56
+\i (00:02:55) trapsize 306
+\i (00:03:06) refdes D2 
+\i (00:03:06) trapsize 77
+\t (00:03:06) Moving D2 / LED_0_RES_0805_LED / RES_0805.
+\t (00:03:06) last pick:  6864.40  17010.00
+\i (00:03:06) xname_flush 
+\i (00:03:12) refdes D3 
+\i (00:03:12) xname_flush 
+\i (00:03:18) refdes D2 
+\i (00:03:18) refdes D3 
+\i (00:03:18) refdes D4 
+\i (00:03:18) refdes D5 
+\i (00:03:18) xname_flush 
+\i (00:03:28) refdes D2 
+\i (00:03:28) xname_flush 
+\i (00:03:29) refdes D3 
+\i (00:03:29) xname_flush 
+\i (00:03:30) refdes D4 
+\i (00:03:30) xname_flush 
+\i (00:03:31) refdes D5 
+\i (00:03:31) xname_flush 
+\i (00:03:39) setwindow form.plc_manual
+\i (00:03:39) FORM plc_manual cancel  
+\i (00:03:39) setwindow pcb
+\i (00:03:39) placementedit 
+\i (00:03:39) prepopup 6829.82 17032.04
+\i (00:03:41) exit 
+\e (00:03:41) Do you want to save the changes you made to C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd?
+\i (00:03:43) fillin no 
+\t (00:03:44)     Journal end - Sun Nov 03 23:25:39 2013

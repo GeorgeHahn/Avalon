@@ -4,7 +4,7 @@
 (                                                                     )
 (    Drawing          : AVALON.brd                                    )
 (    Software Version : 16.6P004                                      )
-(    Date/Time        : Sun Nov 03 16:54:03 2013                      )
+(    Date/Time        : Sun Nov 03 23:26:20 2013                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -26,18 +26,14 @@ CmdLine: netrev.exe -y 1 -i C:\USERS\GEORGE\DOCUMENTS\GITHUB\AVALON\HARDWARE\net
 ------ Preparing to read pst files ------
 
 Starting to read C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/netlist/pstchip.dat 
-   Finished reading C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/netlist/pstchip.dat (00:00:00.04)
+   Finished reading C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/netlist/pstchip.dat (00:00:00.05)
 Starting to read C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/netlist/pstxprt.dat 
    Finished reading C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/netlist/pstxprt.dat (00:00:00.00)
 Starting to read C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/netlist/pstxnet.dat 
-   Finished reading C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/netlist/pstxnet.dat (00:00:00.00)
+   Finished reading C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/netlist/pstxnet.dat (00:00:00.01)
 
 ------ Oversights/Warnings/Errors ------
 
-
-#1   WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
-
-WARNING(SPMHNI-194): Symbol 'TI_D_R_PDSO_G8' for device 'LM63_TI_D_R_PDSO_G8_LM63' not found in PSMPATH or must be "dbdoctor"ed.
 
 ------ Library Paths ------
 MODULEPATH =  . 
@@ -67,7 +63,7 @@ PADPATH =  .
 ------ Summary Statistics ------
 
 
-netrev run on Nov 3 16:54:03 2013
+netrev run on Nov 3 23:26:20 2013
    DESIGN NAME : 'AVALON'
    PACKAGING ON Sep 10 2012 04:46:09
 
@@ -90,8 +86,8 @@ netrev run on Nov 3 16:54:03 2013
 
  No error detected
  No oversight detected
-  1 warnings detected
+ No warning detected
 
-cpu time      0:00:35
+cpu time      0:00:38
 elapsed time  0:00:00
 

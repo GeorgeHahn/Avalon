@@ -1,5 +1,5 @@
 FILE_TYPE=LIBRARY_PARTS;
-{ Using PSTWRITER 16.6.0 d001Nov-03-2013 at 16:52:21}
+{ Using PSTWRITER 16.6.0 d001Nov-03-2013 at 23:21:54}
 primitive 'CAPACITOR_CAP_2917_330UF';
   pin
     '1':
@@ -210,7 +210,7 @@ primitive 'DIODE SCHOTTKY_SOD323_CMDSH-3';
     VALUE='CMDSH-3';
   end_body;
 end_primitive;
-primitive 'LED_RES_0805_LED';
+primitive 'LED_0_RES_0805_LED';
   pin
     'ANODE':
       PIN_NUMBER='(2)';
@@ -220,7 +220,7 @@ primitive 'LED_RES_0805_LED';
       PINUSE='UNSPEC';
   end_pin;
   body
-    PART_NAME='LED';
+    PART_NAME='LED_0';
     JEDEC_TYPE='res_0805';
     VALUE='LED';
   end_body;
