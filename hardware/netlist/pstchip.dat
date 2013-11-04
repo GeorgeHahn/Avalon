@@ -1,5 +1,5 @@
 FILE_TYPE=LIBRARY_PARTS;
-{ Using PSTWRITER 16.6.0 d001Nov-03-2013 at 03:03:55}
+{ Using PSTWRITER 16.6.0 d001Nov-03-2013 at 16:54:02}
 primitive 'CAPACITOR_CAP_2917_330UF';
   pin
     '1':
@@ -225,11 +225,8 @@ primitive 'LED_RES_0805_LED';
     VALUE='LED';
   end_body;
 end_primitive;
-primitive 'CONN JACK PWR_CUI_PJ_037BH_CUI';
+primitive 'CONN JACK PWR_0_CUI_PJ_037BH_CU';
   pin
-    '3':
-      PIN_NUMBER='(3)';
-      PINUSE='UNSPEC';
     '2':
       PIN_NUMBER='(2)';
       PINUSE='UNSPEC';
@@ -238,7 +235,7 @@ primitive 'CONN JACK PWR_CUI_PJ_037BH_CUI';
       PINUSE='UNSPEC';
   end_pin;
   body
-    PART_NAME='CONN JACK PWR';
+    PART_NAME='CONN JACK PWR_0';
     JEDEC_TYPE='CUI_PJ_037BH';
     VALUE='CUI PJ-037BH';
   end_body;

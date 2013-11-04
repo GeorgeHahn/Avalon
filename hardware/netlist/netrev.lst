@@ -4,7 +4,7 @@
 (                                                                     )
 (    Drawing          : AVALON.brd                                    )
 (    Software Version : 16.6P004                                      )
-(    Date/Time        : Sun Nov 03 03:03:56 2013                      )
+(    Date/Time        : Sun Nov 03 16:54:03 2013                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -37,11 +37,7 @@ Starting to read C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/netlist/pstxne
 
 #1   WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
 
-WARNING(SPMHNI-194): Symbol 'CUI_PJ_037BH' for device 'CONN JACK PWR_CUI_PJ_037BH_CUI' not found in PSMPATH or must be "dbdoctor"ed.
-
-#2   WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
-
-WARNING(SPMHNI-194): Symbol 'MOLEX_0473460001' for device 'MOLEX 0473460001_MOLEX_04734600' not found in PSMPATH or must be "dbdoctor"ed.
+WARNING(SPMHNI-194): Symbol 'TI_D_R_PDSO_G8' for device 'LM63_TI_D_R_PDSO_G8_LM63' not found in PSMPATH or must be "dbdoctor"ed.
 
 ------ Library Paths ------
 MODULEPATH =  . 
@@ -71,7 +67,7 @@ PADPATH =  .
 ------ Summary Statistics ------
 
 
-netrev run on Nov 3 3:03:56 2013
+netrev run on Nov 3 16:54:03 2013
    DESIGN NAME : 'AVALON'
    PACKAGING ON Sep 10 2012 04:46:09
 
@@ -94,8 +90,8 @@ netrev run on Nov 3 3:03:56 2013
 
  No error detected
  No oversight detected
-  2 warnings detected
+  1 warnings detected
 
-cpu time      0:00:36
+cpu time      0:00:35
 elapsed time  0:00:00
 

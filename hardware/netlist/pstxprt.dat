@@ -1,5 +1,5 @@
 FILE_TYPE = EXPANDEDPARTLIST;
-{ Using PSTWRITER 16.6.0 d001Nov-03-2013 at 03:03:55 }
+{ Using PSTWRITER 16.6.0 d001Nov-03-2013 at 16:54:02 }
 DIRECTIVES
  PST_VERSION='PST_HDL_CENTRIC_VERSION_0';
  ROOT_DRAWING='AVALON';
@@ -1748,12 +1748,12 @@ SECTION_NUMBER 1
  SECTION='';
 
 PART_NAME
- J1 'CONN JACK PWR_CUI_PJ_037BH_CUI':;
+ J1 'CONN JACK PWR_0_CUI_PJ_037BH_CU':;
 
 SECTION_NUMBER 1
- '@AVALON.SCHEMATIC1(SCH_1):INS17519@CONNECTOR.CONN JACK PWR.NORMAL(CHIPS)':
- C_PATH='@avalon.schematic1(sch_1):ins17519@connector.\conn jack pwr.normal\(chips)',
- P_PATH='@avalon.schematic1(sch_1):page1_ins17519@connector.\conn jack pwr.normal\(chips)',
+ '@AVALON.SCHEMATIC1(SCH_1):INS17519@AVALON.CONN JACK PWR_0.NORMAL(CHIPS)':
+ C_PATH='@avalon.schematic1(sch_1):ins17519@avalon.\conn jack pwr_0.normal\(chips)',
+ P_PATH='@avalon.schematic1(sch_1):page1_ins17519@avalon.\conn jack pwr_0.normal\(chips)',
  PRIM_FILE='.\pstchip.dat',
  SECTION='';
 

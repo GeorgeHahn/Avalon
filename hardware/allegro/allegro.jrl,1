@@ -1,30 +1,175 @@
 \t (00:00:00) allegro 16.6 P004 (v16-6-112G) Windows 32
-\t (00:00:00)     Journal start - Sun Nov 03 02:08:10 2013
-\t (00:00:00)         Host=GEORGEPC User=George Pid=2044 CPUs=8
+\t (00:00:00)     Journal start - Sun Nov 03 16:52:24 2013
+\t (00:00:00)         Host=GEORGEPC User=George Pid=12500 CPUs=8
 \t (00:00:00) 
 \t (00:00:02) Opening existing design...
 \d (00:00:02) Database opened: C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd
-\i (00:00:02) trapsize 1877
-\i (00:00:03) trapsize 1852
-\i (00:00:03) trapsize 1881
-\i (00:00:03) trapsize 1893
-\i (00:00:03) trapsize 1893
-\i (00:00:04) placementedit 
-\i (00:00:09) place manual 
-\i (00:00:11) setwindow form.plc_manual
-\i (00:00:11) FORM plc_manual tree 'MULTISEL YES' U2 'Components by refdes' 
-\t (00:00:11) Placing U2 / CSD86350Q5D_8SON_POWERBLOCK_CSD / 8SON_POWERBLOCK on Top.
-\i (00:00:11) FORM plc_manual tree  U2 'Components by refdes' 
+\i (00:00:03) trapsize 515
+\i (00:00:03) trapsize 508
+\i (00:00:03) trapsize 516
+\i (00:00:03) trapsize 520
+\i (00:00:03) trapsize 520
+\i (00:00:03) generaledit 
+\i (00:00:05) pick grid 4881.63 18341.66
+\t (00:00:05) last pick:  4880.00  18340.00
+\i (00:00:05) zoom in 1 
+\i (00:00:05) setwindow pcb
+\i (00:00:05) zoom in 4036.68 18716.85
+\i (00:00:05) trapsize 260
+\i (00:00:06) zoom out 1 
+\i (00:00:06) setwindow pcb
+\i (00:00:06) zoom out 4024.21 18523.54
+\i (00:00:06) trapsize 520
+\i (00:00:06) zoom in 1 
+\i (00:00:06) setwindow pcb
+\i (00:00:06) zoom in 4021.10 18507.96
+\i (00:00:06) trapsize 260
+\i (00:00:07) zoom in 1 
+\i (00:00:07) setwindow pcb
+\i (00:00:07) zoom in 4025.78 18499.13
+\i (00:00:07) trapsize 130
+\i (00:00:08) zoom in 1 
+\i (00:00:08) setwindow pcb
+\i (00:00:08) zoom in 4222.21 18591.89
+\i (00:00:08) trapsize 65
+\i (00:00:09) zoom out 1 
+\i (00:00:09) setwindow pcb
+\i (00:00:09) zoom out 4168.94 18612.03
+\i (00:00:09) trapsize 130
+\i (00:00:10) add connect 
+\t (00:00:10) Pick first element.
+\i (00:00:11) pick grid 4162.97 18649.18
+\t (00:00:11) last pick:  4160.00  18650.00
+\t (00:00:11) last pick:  4164.17  18649.21
+\t (00:00:11) Target Symbol Pin is defined on TOP.
+\t (00:00:11) last pick:  4164.17  18649.21
+\i (00:00:12) zoom out 1 
+\i (00:00:12) setwindow pcb
+\i (00:00:12) zoom out 4162.97 18649.18
+\i (00:00:12) trapsize 260
+\i (00:00:12) mouse_pos 4161.93 18665.29
+\i (00:00:12) zoom in 1 
+\i (00:00:12) setwindow pcb
+\i (00:00:12) zoom in 4174.92 18714.66
+\i (00:00:12) trapsize 130
+\i (00:00:13) zoom in 1 
 \i (00:00:13) setwindow pcb
-\i (00:00:13) pick grid 5992.29 14841.53
-\t (00:00:13) last pick:  6000.00  14800.00
-\e (00:00:13) ERROR(SPMHGE-82): Pin numbers do not match between symbol and component. Run dev_check on device file for more information.
-\t (00:00:13) Placing U2 / CSD86350Q5D_8SON_POWERBLOCK_CSD / 8SON_POWERBLOCK on Top.
-\i (00:00:32) setwindow form.plc_manual
-\i (00:00:32) FORM plc_manual cancel  
+\i (00:00:13) zoom in 4175.96 18713.62
+\i (00:00:13) trapsize 65
+\i (00:00:14) Esc 
+\i (00:00:14) mouse_pos 4170.38 18703.10
+\i (00:00:14) mouse_pos 4146.47 18674.78
+\i (00:00:14) mouse_pos 4144.91 18672.44
+\i (00:00:15) mouse_pos 4144.91 18660.88
+\i (00:00:15) zoom out 1 
+\i (00:00:15) setwindow pcb
+\i (00:00:15) zoom out 4139.85 18645.55
+\i (00:00:15) trapsize 130
+\i (00:00:16) Esc 
+\i (00:00:16) mouse_pos 4162.19 18665.82
+\i (00:00:17) mouse_pos 4175.18 18692.58
+\i (00:00:17) prepopup 4148.16 18703.23
+\i (00:00:18) cancel 
+\i (00:00:18) generaledit 
+\i (00:00:19) zoom in 1 
+\i (00:00:19) setwindow pcb
+\i (00:00:19) zoom in 4309.51 18741.16
+\i (00:00:19) trapsize 65
+\i (00:00:19) zoom out 1 
+\i (00:00:19) setwindow pcb
+\i (00:00:19) zoom out 4280.41 18743.51
+\i (00:00:19) trapsize 130
+\i (00:00:22) zoom out 1 
+\i (00:00:22) setwindow pcb
+\i (00:00:22) zoom out 4165.57 18654.90
+\i (00:00:22) trapsize 260
+\i (00:00:22) zoom in 1 
+\i (00:00:22) setwindow pcb
+\i (00:00:22) zoom in 4153.09 18613.86
+\i (00:00:22) trapsize 130
+\i (00:00:23) zoom in 1 
+\i (00:00:23) setwindow pcb
+\i (00:00:23) zoom in 4152.83 18612.30
+\i (00:00:23) trapsize 65
+\i (00:00:23) zoom in 1 
+\i (00:00:23) setwindow pcb
+\i (00:00:23) zoom in 4152.83 18612.30
+\i (00:00:23) trapsize 32
+\i (00:00:24) zoom out 1 
+\i (00:00:24) setwindow pcb
+\i (00:00:24) zoom out 4151.33 18611.53
+\i (00:00:24) trapsize 65
+\i (00:00:25) zoom out 1 
+\i (00:00:25) setwindow pcb
+\i (00:00:25) zoom out 4151.34 18611.52
+\i (00:00:25) trapsize 130
+\i (00:00:30) pick grid 4119.62 18725.59
+\t (00:00:30) last pick:  4120.00  18730.00
+\i (00:00:31) zoom out 1 
+\i (00:00:31) setwindow pcb
+\i (00:00:31) zoom out 4119.62 18725.59
+\i (00:00:31) trapsize 260
+\i (00:00:32) zoom in 1 
 \i (00:00:32) setwindow pcb
-\i (00:00:32) placementedit 
-\i (00:00:33) exit 
-\e (00:00:33) Do you want to save the changes you made to AVALON.brd?
-\i (00:00:34) fillin yes 
-\t (00:00:34)     Journal end - Sun Nov 03 02:08:44 2013
+\i (00:00:32) zoom in 4119.62 18725.60
+\i (00:00:32) trapsize 130
+\i (00:00:32) zoom out 1 
+\i (00:00:32) setwindow pcb
+\i (00:00:32) zoom out 4119.62 18725.60
+\i (00:00:32) trapsize 260
+\i (00:00:33) zoom in 1 
+\i (00:00:33) setwindow pcb
+\i (00:00:33) zoom in 4119.62 18725.61
+\i (00:00:33) trapsize 130
+\i (00:00:33) zoom in 1 
+\i (00:00:33) setwindow pcb
+\i (00:00:33) zoom in 4140.41 18576.20
+\i (00:00:33) trapsize 65
+\i (00:00:34) zoom in 1 
+\i (00:00:34) setwindow pcb
+\i (00:00:34) zoom in 4140.41 18576.20
+\i (00:00:34) trapsize 32
+\i (00:00:34) zoom out 1 
+\i (00:00:34) setwindow pcb
+\i (00:00:34) zoom out 4169.06 18601.34
+\i (00:00:34) trapsize 65
+\i (00:00:34) zoom out 1 
+\i (00:00:34) setwindow pcb
+\i (00:00:34) zoom out 4169.45 18602.12
+\i (00:00:34) trapsize 130
+\i (00:00:35) zoom in 1 
+\i (00:00:35) setwindow pcb
+\i (00:00:35) zoom in 4126.05 18549.89
+\i (00:00:35) trapsize 65
+\i (00:00:35) zoom in 1 
+\i (00:00:35) setwindow pcb
+\i (00:00:35) zoom in 4125.41 18547.04
+\i (00:00:35) trapsize 32
+\i (00:00:36) zoom out 1 
+\i (00:00:36) setwindow pcb
+\i (00:00:36) zoom out 4125.41 18547.04
+\i (00:00:36) trapsize 65
+\i (00:00:36) zoom out 1 
+\i (00:00:36) setwindow pcb
+\i (00:00:36) zoom out 4125.42 18547.05
+\i (00:00:36) trapsize 130
+\i (00:00:37) zoom in 1 
+\i (00:00:37) setwindow pcb
+\i (00:00:37) zoom in 4246.49 18452.21
+\i (00:00:37) trapsize 65
+\i (00:00:37) zoom in 1 
+\i (00:00:37) setwindow pcb
+\i (00:00:37) zoom in 4249.09 18452.47
+\i (00:00:37) trapsize 32
+\i (00:00:47) xNet 1V0 
+\i (00:00:47) xname_flush 
+\i (00:00:57) xNet 1V0 
+\i (00:00:57) xname_flush 
+\i (00:01:10) xNet 1V0 
+\i (00:01:10) xname_flush 
+\i (00:01:15) xNet 1V0 
+\i (00:01:15) xname_flush 
+\i (00:01:33) exit 
+\e (00:01:33) Do you want to save the changes you made to AVALON.brd?
+\i (00:01:34) fillin no 
+\t (00:01:34)     Journal end - Sun Nov 03 16:53:58 2013

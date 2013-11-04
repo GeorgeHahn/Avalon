@@ -1,5 +1,5 @@
 FILE_TYPE=LIBRARY_PARTS;
-{ Using PSTWRITER 16.6.0 d001Nov-03-2013 at 02:58:46}
+{ Using PSTWRITER 16.6.0 d001Nov-03-2013 at 15:11:55}
 primitive 'CAPACITOR_CAP_2917_330UF';
   pin
     '1':
@@ -225,11 +225,8 @@ primitive 'LED_RES_0805_LED';
     VALUE='LED';
   end_body;
 end_primitive;
-primitive 'CONN JACK PWR_CUI_PJ_037BH_CUI';
+primitive 'CONN JACK PWR_0_CUI_PJ_037BH_CU';
   pin
-    '3':
-      PIN_NUMBER='(3)';
-      PINUSE='UNSPEC';
     '2':
       PIN_NUMBER='(2)';
       PINUSE='UNSPEC';
@@ -238,7 +235,7 @@ primitive 'CONN JACK PWR_CUI_PJ_037BH_CUI';
       PINUSE='UNSPEC';
   end_pin;
   body
-    PART_NAME='CONN JACK PWR';
+    PART_NAME='CONN JACK PWR_0';
     JEDEC_TYPE='CUI_PJ_037BH';
     VALUE='CUI PJ-037BH';
   end_body;
@@ -984,7 +981,7 @@ primitive 'LM63_TI_D_R_PDSO_G8_LM63';
     VALUE='LM63';
   end_body;
 end_primitive;
-primitive 'CSD86350Q5D_8SON_POWERBLOCK_CSD';
+primitive 'CSD86350Q5D_QFN127P600X500X150-';
   pin
     'VIN':
       PIN_NUMBER='(1)';
@@ -1011,12 +1008,12 @@ primitive 'CSD86350Q5D_8SON_POWERBLOCK_CSD';
       PIN_NUMBER='(2)';
       PINUSE='UNSPEC';
     'PGND':
-      PIN_NUMBER='(11)';
+      PIN_NUMBER='(9)';
       PINUSE='UNSPEC';
   end_pin;
   body
     PART_NAME='CSD86350Q5D';
-    JEDEC_TYPE='8SON_PowerBlock';
+    JEDEC_TYPE='QFN127P600X500X150-9N';
     VALUE='CSD86350Q5D';
   end_body;
 end_primitive;
