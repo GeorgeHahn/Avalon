@@ -7,3 +7,6 @@ firmware/Klondike.X/dist
 shapes3D
 *.log*
 *lck
+*.obk
+*.dbk
+signoise.run/
