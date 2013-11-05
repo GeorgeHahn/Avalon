@@ -1,0 +1,859 @@
+\t (15:35:55) allegro 16.6 P004 (v16-6-112G) Windows 32
+\t (15:35:55)     Journal start - Sun Nov 03 13:49:03 2013
+\t (15:35:55)         Host=GEORGEPC User=George Pid=5864 CPUs=8
+\t (15:35:55) 
+\t (15:35:55) Starting new design...
+\i (15:35:55) trapsize 4978
+\i (15:35:55) trapsize 4978
+\i (15:35:56) etchedit 
+\i (15:35:57) zoom in 1 
+\i (15:35:57) setwindow pcb
+\i (15:35:57) zoom in 2.9184 0.5267
+\i (15:35:57) trapsize 2489
+\i (15:35:57) zoom in 1 
+\i (15:35:57) setwindow pcb
+\i (15:35:57) zoom in -23.5650 0.5268
+\i (15:35:57) trapsize 1245
+\i (15:35:57) zoom in 1 
+\i (15:35:57) setwindow pcb
+\i (15:35:57) zoom in -23.5650 0.5268
+\i (15:35:57) trapsize 622
+\i (15:35:57) zoom in 1 
+\i (15:35:57) setwindow pcb
+\i (15:35:57) zoom in -23.5650 0.5268
+\i (15:35:57) trapsize 311
+\i (15:35:57) zoom out 1 
+\i (15:35:57) setwindow pcb
+\i (15:35:57) zoom out -21.0448 0.5579
+\i (15:35:57) trapsize 622
+\i (15:35:57) zoom out 1 
+\i (15:35:57) setwindow pcb
+\i (15:35:57) zoom out -21.0448 0.5580
+\i (15:35:57) trapsize 1245
+\i (15:35:57) zoom out 1 
+\i (15:35:57) setwindow pcb
+\i (15:35:57) zoom out -21.0448 0.5580
+\i (15:35:57) trapsize 2489
+\i (15:35:58) zoom in 1 
+\i (15:35:58) setwindow pcb
+\i (15:35:58) zoom in 1.7239 0.2593
+\i (15:35:58) trapsize 1245
+\i (15:35:58) zoom in 1 
+\i (15:35:58) setwindow pcb
+\i (15:35:58) zoom in 1.7239 0.2593
+\i (15:35:58) trapsize 622
+\i (15:35:58) zoom in 1 
+\i (15:35:58) setwindow pcb
+\i (15:35:58) zoom in 1.7239 0.2593
+\i (15:35:58) trapsize 311
+\i (15:35:58) zoom in 1 
+\i (15:35:58) setwindow pcb
+\i (15:35:58) zoom in 1.7240 0.2593
+\i (15:35:58) trapsize 156
+\i (15:35:59) zoom in 1 
+\i (15:35:59) setwindow pcb
+\i (15:35:59) zoom in 1.7240 0.2593
+\i (15:35:59) trapsize 78
+\i (15:35:59) zoom out 1 
+\i (15:35:59) setwindow pcb
+\i (15:35:59) zoom out 0.6164 -0.0953
+\i (15:35:59) trapsize 156
+\i (15:35:59) zoom out 1 
+\i (15:35:59) setwindow pcb
+\i (15:35:59) zoom out -0.1801 -0.1638
+\i (15:35:59) trapsize 311
+\i (15:36:03) trapsize 491
+\i (15:36:03) color192 
+\i (15:36:04) setwindow cvf.dialog
+\i (15:36:04) cvf layer_mode
+\i (15:36:04) setwindow pcb
+\i (15:36:04) etchedit 
+\i (15:36:06) setwindow cvf.dialog
+\i (15:36:06) cvf layer_tree_item 'Drawing Format'
+\i (15:36:08) cvf select_color_cell 81
+\i (15:36:09) cvf layers_color drawing_format/drawing_origin 82
+\i (15:36:10) cvf okay
+\i (15:36:12) setwindow pcb
+\i (15:36:12) trapsize 311
+\i (15:36:13) zoom out 1 
+\i (15:36:13) setwindow pcb
+\i (15:36:13) zoom out -0.6032 -0.4189
+\i (15:36:13) trapsize 622
+\i (15:41:41) add pin 
+\i (15:41:43) trapsize 700
+\i (15:41:48) trapsize 690
+\i (15:41:52) setwindow form.mini
+\i (15:41:52) FORM mini pintype_mechanical YES 
+\i (15:41:53) FORM mini pad_browse  
+\t (15:42:00) No valid name selected.
+\i (15:42:03) fillin "menu_cancel"
+\i (15:42:17) FORM mini pad_browse  
+\t (15:42:20) No valid name selected.
+\t (15:42:26) No valid name selected.
+\t (15:42:30) No valid name selected.
+\i (15:42:42) fillin "Smd_19000_11750Mm"
+\t (15:42:42) Using 'SMD_19000_11750MM.pad'.
+\i (15:42:52) setwindow pcb
+\i (15:42:52) pick 1.425 0 
+\t (15:42:52) last pick:  1.4250  0.0000
+\t (15:42:52) Using 'SMD_19000_11750MM.pad'.
+\i (15:42:54) undo 
+\t (15:42:54) Exiting from Add Pin.
+\i (15:42:54) etchedit 
+\i (15:42:55) prepopup 1.5127 0.6202
+\i (15:42:56) pick grid 5.1308 2.2911
+\t (15:42:56) last pick:  5.0800  2.5400
+\i (15:42:56) undo 
+\i (15:42:56) etchedit 
+\i (15:42:59) undo 
+\i (15:42:59) etchedit 
+\i (15:43:01) undo 
+\i (15:43:01) etchedit 
+\i (15:43:02) delete 
+\i (15:43:03) pick grid 1.5956 -0.0150
+\t (15:43:03) last pick:  2.5400  0.0000
+\t (15:43:03) Mechanical Pin "Smd_19000_11750Mm"
+\i (15:43:04) pick grid 1.6922 0.1921
+\t (15:43:04) last pick:  2.5400  0.0000
+\i (15:43:04) pick grid dbl 1.6922 0.1921
+\t (15:43:04) last pick:  2.5400  0.0000
+\i (15:43:07) add pin 
+\t (15:43:07) Using 'SMD_19000_11750MM.pad'.
+\i (15:43:16) setwindow form.mini
+\i (15:43:16) FORM mini pintype_mechanical YES 
+\i (15:43:17) FORM mini pintype_connect YES 
+\i (15:43:18) FORM mini pintype_mechanical YES 
+\i (15:43:26) setwindow pcb
+\i (15:43:26) pick 0 1.425 
+\t (15:43:26) last pick:  0.0000  1.4250
+\t (15:43:26) Using 'SMD_19000_11750MM.pad'.
+\i (15:43:30) roam y -96 
+\i (15:43:30) roam y -96
+\i (15:43:30) roam y 96 
+\i (15:43:30) roam y 96
+\i (15:43:31) roam y 96 
+\i (15:43:31) roam y 96
+\i (15:43:31) roam y 96 
+\i (15:43:31) roam y 96
+\i (15:43:32) roam y 96 
+\i (15:43:32) roam y 96
+\i (15:43:32) roam y 96 
+\i (15:43:32) roam y 96
+\i (15:43:37) pick 0 -1.425 
+\t (15:43:37) last pick:  0.0000  -1.4250
+\t (15:43:37) Using 'SMD_19000_11750MM.pad'.
+\i (15:43:51) define grid 
+\t (15:43:51) Spacing fields allow simple equations to aid calculations; prefix with =
+\i (15:43:57) setwindow form.grid
+\i (15:43:57) FORM grid non_etch non_etch_x_grids 0.127 
+\i (15:44:00) FORM grid non_etch non_etch_y_grids 0.127 
+\i (15:44:03) FORM grid all_etch all_etch_x_grids 0.127 
+\i (15:44:09) FORM grid all_etch all_etch_y_grids 0.127 
+\i (15:44:09) FORM grid done  
+\i (15:44:42) setwindow pcb
+\i (15:44:42) file_property 
+\t (15:44:42) Exiting from Add Pin.
+\i (15:44:44) setwindow form.fileprop
+\i (15:44:44) FORM fileprop cancel  
+\i (15:44:44) setwindow pcb
+\i (15:44:44) etchedit 
+\i (15:45:12) add pin 
+\t (15:45:13) Using 'SMD_19000_11750MM.pad'.
+\i (15:45:14) setwindow form.mini
+\i (15:45:14) FORM mini pad_browse  
+\t (15:45:19) No valid name selected.
+\i (15:45:20) fillin "Smd_19000_23750Mm"
+\t (15:45:20) Using 'SMD_19000_23750MM.pad'.
+\i (15:45:24) setwindow pcb
+\i (15:45:24) roam y 96 
+\i (15:45:24) roam y 96
+\i (15:45:29) pick l 4.1 0 
+\t (15:45:29) last pick:  0.0000  0.0000
+\t (15:45:29) Using 'SMD_19000_23750MM.pad'.
+\i (15:45:37) roam start
+\i (15:45:37) roam y 80
+\i (15:45:37) roam x 16
+\i (15:45:37) roam y 64
+\i (15:45:38) roam x 16
+\i (15:45:38) roam y 64
+\i (15:45:38) roam y 48
+\i (15:45:38) roam x 16
+\i (15:45:38) roam y 48
+\i (15:45:38) roam y 32
+\i (15:45:38) roam y 16
+\i (15:45:38) roam y 32
+\i (15:45:38) roam y -80
+\i (15:45:38) roam x -16
+\i (15:45:38) roam y -80
+\i (15:45:38) roam x -16
+\i (15:45:38) roam y -64
+\i (15:45:38) roam y -48
+\i (15:45:38) roam x -16
+\i (15:45:38) roam y -32
+\i (15:45:38) roam y -32
+\i (15:45:38) roam x -16
+\i (15:45:38) roam y -16
+\i (15:45:38) roam y -32
+\i (15:45:38) roam y -16
+\i (15:45:38) roam x 16
+\i (15:45:38) roam y -48
+\i (15:45:38) roam x 16
+\i (15:45:38) roam y -48
+\i (15:45:38) roam x 16
+\i (15:45:38) roam y -32
+\i (15:45:38) roam y -16
+\i (15:45:39) roam y -16
+\i (15:45:39) roam x 16
+\i (15:45:39) roam y -16
+\i (15:45:39) roam y -16
+\i (15:45:39) roam y -16
+\i (15:45:39) roam y -16
+\i (15:45:39) roam y -16
+\i (15:45:39) roam x 16
+\i (15:45:39) roam y -16
+\i (15:45:39) roam y -16
+\i (15:45:39) roam end
+\i (15:45:40) prepopup -1.0212 7.9796
+\i (15:45:41) oops 
+\t (15:45:41) Using 'SMD_19000_23750MM.pad'.
+\i (15:45:46) pick 4.1 0 
+\t (15:45:46) last pick:  4.1000  0.0000
+\t (15:45:46) Using 'SMD_19000_23750MM.pad'.
+\i (15:45:47) prepopup 3.7706 -3.4132
+\i (15:45:48) oops 
+\t (15:45:48) Using 'SMD_19000_23750MM.pad'.
+\i (15:45:50) setwindow form.mini
+\i (15:45:50) FORM mini pintype_mechanical YES 
+\i (15:45:56) setwindow pcb
+\i (15:45:56) pick l 4.1 0 
+\t (15:45:56) last pick:  4.1000  0.0000
+\t (15:45:56) Using 'SMD_19000_23750MM.pad'.
+\i (15:45:58) prepopup 12.4981 2.4006
+\i (15:45:59) oops 
+\t (15:45:59) Using 'SMD_19000_23750MM.pad'.
+\i (15:46:03) pick 4.1 0 
+\t (15:46:03) last pick:  4.1000  0.0000
+\t (15:46:03) Using 'SMD_19000_23750MM.pad'.
+\i (15:46:05) prepopup -1.4631 -4.8769
+\i (15:46:06) oops 
+\t (15:46:06) Using 'SMD_19000_23750MM.pad'.
+\i (15:46:13) pick 0 4.1 
+\t (15:46:13) last pick:  0.0000  4.1000
+\t (15:46:13) Using 'SMD_19000_23750MM.pad'.
+\i (15:46:22) pick 0 -4.1 
+\t (15:46:22) last pick:  0.0000  -4.1000
+\t (15:46:22) Using 'SMD_19000_23750MM.pad'.
+\i (15:46:26) etchedit 
+\t (15:46:26) Exiting from Add Pin.
+\i (15:46:27) generaledit 
+\i (15:46:48) show measure 
+\i (15:46:51) pick grid 0.0145 0.8401
+\t (15:46:51) last pick:  0.0000  0.8890
+\i (15:46:53) pick grid 0.0283 -0.0437
+\t (15:46:53) last pick:  0.0000  0.0000
+\i (15:47:01) pick grid -0.1512 -2.1565
+\t (15:47:01) last pick:  -0.1270  -2.1590
+\i (15:47:02) prepopup 0.5392 -1.9079
+\i (15:47:05) pop dyn_option_select 'Snap pick to@:@Segment Vertex' 
+\i (15:47:06) pick grid -0.9107 -1.9908
+\t (15:47:06) last pick:  -0.8890  -2.0320
+\i (15:47:07) pick grid -1.0074 -1.9908
+\t (15:47:07) last pick:  -1.0160  -2.0320
+\i (15:47:08) prepopup -1.0074 -1.9908
+\i (15:47:13) pop dyn_option_select 'Snap pick to@:@Grid Point' 
+\t (15:47:13) last pick:  -1.0160  -2.0320
+\i (15:47:14) pick grid -0.9245 -2.1151
+\t (15:47:14) last pick:  -0.8890  -2.1590
+\i (15:47:15) pick grid -0.9384 -2.0184
+\t (15:47:15) last pick:  -0.8890  -2.0320
+\i (15:47:15) pick grid dbl -0.9384 -2.0184
+\t (15:47:15) last pick:  -0.8890  -2.0320
+\i (15:47:16) pick grid -1.0074 -2.0875
+\t (15:47:16) last pick:  -1.0160  -2.0320
+\i (15:47:17) pick grid -1.0488 -1.9356
+\t (15:47:17) last pick:  -1.0160  -1.9050
+\i (15:47:18) pick grid -1.0903 -1.9908
+\t (15:47:18) last pick:  -1.1430  -2.0320
+\i (15:47:21) pick grid -1.3250 0.0254
+\t (15:47:21) last pick:  -1.2700  0.0000
+\i (15:47:22) pick grid 0.0421 -0.0299
+\t (15:47:22) last pick:  0.0000  0.0000
+\i (15:47:28) pick grid -0.0269 -2.0322
+\t (15:47:28) last pick:  0.0000  -2.0320
+\i (15:47:29) pick grid -0.0407 -2.1841
+\t (15:47:29) last pick:  0.0000  -2.1590
+\i (15:47:31) pick grid -1.0074 -2.0046
+\t (15:47:31) last pick:  -1.0160  -2.0320
+\i (15:47:32) pick grid -1.0350 -1.9908
+\t (15:47:32) last pick:  -1.0160  -2.0320
+\i (15:47:34) pick grid -0.0269 0.0116
+\t (15:47:34) last pick:  0.0000  0.0000
+\i (15:47:48) pick grid -1.0350 2.0692
+\t (15:47:48) last pick:  -1.0160  2.0320
+\i (15:47:50) pick grid -1.0903 -2.0046
+\t (15:47:50) last pick:  -1.1430  -2.0320
+\i (15:48:04) prmed 
+\i (15:48:31) setwindow form.prmedit
+\i (15:48:31) FORM prmedit text  
+\i (15:48:31) FORM prmedit shapes  
+\i (15:48:32) FORM prmedit flow_planning  
+\i (15:48:32) FORM prmedit route  
+\i (15:48:34) FORM prmedit done  
+\i (15:48:34) setwindow pcb
+\i (15:48:34) generaledit 
+\i (15:55:48) pick grid 3.2597 -0.9413
+\t (15:55:48) last pick:  3.3020  -0.8890
+\i (15:55:48) prepopup 5.4968 5.8805
+\i (15:55:49) pick grid 4.4611 7.3305
+\t (15:55:49) last pick:  4.4450  7.3660
+\i (15:55:52) add pin 
+\t (15:55:52) Using 'SMD_19000_23750MM.pad'.
+\i (15:55:55) pick 0 0 
+\t (15:55:55) last pick:  0.0000  0.0000
+\t (15:55:55) Using 'SMD_19000_23750MM.pad'.
+\i (15:55:57) prepopup 6.0216 3.1187
+\i (15:55:58) oops 
+\t (15:55:58) Using 'SMD_19000_23750MM.pad'.
+\i (15:56:14) setwindow form.mini
+\i (15:56:14) FORM mini offsetx 0.0000 
+\i (15:56:16) FORM mini pad_browse  
+\t (15:56:20) No valid name selected.
+\i (15:56:22) fillin "Smd_19000_11750Mm"
+\t (15:56:22) Using 'SMD_19000_11750MM.pad'.
+\i (15:57:15) setwindow pcb
+\i (15:57:15) pick .25 0 
+\t (15:57:15) last pick:  0.2500  0.0000
+\t (15:57:15) Using 'SMD_19000_11750MM.pad'.
+\i (15:57:16) Esc 
+\w (15:57:16) WARNING(SPMHA1-314): Illegal event.
+\i (15:57:17) prepopup 9.1839 -3.4270
+\i (15:57:19) oops 
+\t (15:57:19) Using 'SMD_19000_11750MM.pad'.
+\i (15:57:20) prepopup 2.5830 -3.5098
+\i (15:57:21) oops 
+\t (15:57:21) Using 'SMD_19000_11750MM.pad'.
+\i (15:57:21) prepopup 2.4173 -2.8193
+\i (15:57:26) pick 0 .25 
+\t (15:57:26) last pick:  0.0000  0.2500
+\t (15:57:26) Using 'SMD_19000_11750MM.pad'.
+\i (15:57:28) prepopup 3.2045 0.0254
+\i (15:57:29) oops 
+\t (15:57:29) Using 'SMD_19000_11750MM.pad'.
+\i (15:57:30) Esc 
+\w (15:57:30) WARNING(SPMHA1-314): Illegal event.
+\i (15:57:30) prepopup 2.0997 0.2878
+\i (15:57:31) cancel 
+\t (15:57:31) Exiting from Add Pin.
+\i (15:57:31) generaledit 
+\i (15:57:34) delete 
+\i (15:57:34) drag_start grid 4.1021 7.3720
+\i (15:57:35) drag_stop -1.6426 -7.0174
+\i (15:57:35) prepopup -1.6841 6.0601
+\i (15:57:36) done 
+\i (15:57:36) generaledit 
+\i (15:57:39) add pin 
+\t (15:57:39) Using 'SMD_19000_23750MM.pad'.
+\i (15:58:21) pick 0 2.9125 
+\t (15:58:21) last pick:  0.0000  2.9125
+\t (15:58:21) Using 'SMD_19000_23750MM.pad'.
+\i (15:58:25) pick 0 -2.9125 
+\t (15:58:25) last pick:  0.0000  -2.9125
+\t (15:58:25) Using 'SMD_19000_23750MM.pad'.
+\i (15:58:29) prepopup 5.7730 2.9806
+\i (15:58:30) oops 
+\t (15:58:30) last pick:  0.0000  2.9125
+\t (15:58:30) Using 'SMD_19000_23750MM.pad'.
+\i (15:58:30) prepopup 4.7373 3.0220
+\i (15:58:31) oops 
+\t (15:58:31) Using 'SMD_19000_23750MM.pad'.
+\i (15:58:33) setwindow form.mini
+\i (15:58:33) FORM mini pintype_mechanical YES 
+\i (15:58:37) setwindow pcb
+\i (15:58:37) pick 0 2.9125 
+\t (15:58:37) last pick:  0.0000  2.9125
+\t (15:58:37) Using 'SMD_19000_23750MM.pad'.
+\i (15:58:39) pick 0 -2.9125 
+\t (15:58:39) last pick:  0.0000  -2.9125
+\t (15:58:39) Using 'SMD_19000_23750MM.pad'.
+\i (15:58:41) setwindow form.mini
+\i (15:58:41) FORM mini pad_browse  
+\t (15:58:44) No valid name selected.
+\i (15:58:46) fillin "Smd_19000_11750Mm"
+\t (15:58:46) Using 'SMD_19000_11750MM.pad'.
+\i (15:59:11) setwindow pcb
+\i (15:59:11) pick 0 0.8375 
+\t (15:59:11) last pick:  0.0000  0.8375
+\t (15:59:11) Using 'SMD_19000_11750MM.pad'.
+\i (15:59:14) pick 0 -0.8375 
+\t (15:59:14) last pick:  0.0000  -0.8375
+\t (15:59:14) Using 'SMD_19000_11750MM.pad'.
+\i (15:59:21) setwindow form.mini
+\i (15:59:21) FORM mini pad_browse  
+\t (15:59:23) No valid name selected.
+\i (16:00:26) fillin "Smd_21000_14750Mm"
+\t (16:00:26) Using 'SMD_21000_14750MM.pad'.
+\i (16:00:39) setwindow pcb
+\i (16:00:39) pick 2.4625 2.3 
+\t (16:00:39) last pick:  2.4625  2.3000
+\t (16:00:39) Using 'SMD_21000_14750MM.pad'.
+\i (16:00:50) pick 2.4625 -2.3 
+\t (16:00:50) last pick:  2.4625  -2.3000
+\t (16:00:50) Using 'SMD_21000_14750MM.pad'.
+\i (16:01:04) setwindow form.mini
+\i (16:01:04) FORM mini pad_browse  
+\t (16:01:06) No valid name selected.
+\i (16:01:10) fillin "Smd_13800_04500Mm"
+\t (16:01:10) Using 'SMD_13800_04500MM.pad'.
+\i (16:01:26) FORM mini y_count 5 
+\i (16:02:22) FORM mini x_spacing 0.6500 
+\i (16:02:26) FORM mini y_spacing 0.6500 
+\i (16:02:27) FORM mini y_direction Up 
+\i (16:03:04) FORM mini y_direction Down 
+\i (16:03:06) setwindow pcb
+\i (16:03:06) pick grid 6.1044 1.6549
+\t (16:03:06) last pick:  6.0960  1.6510
+\t (16:03:06) Using 'SMD_13800_04500MM.pad'.
+\i (16:03:08) undo 
+\t (16:03:08) Exiting from Add Pin.
+\i (16:03:08) generaledit 
+\i (16:03:09) prepopup 5.7454 3.3672
+\i (16:03:10) pick grid 5.0963 6.1153
+\t (16:03:10) last pick:  5.0800  6.0960
+\i (16:03:10) undo 
+\i (16:03:10) generaledit 
+\i (16:03:11) delete 
+\i (16:03:11) drag_start grid 10.8410 2.6630
+\i (16:03:12) drag_stop 5.3449 -1.7975
+\i (16:03:13) prepopup 5.6073 2.1382
+\i (16:03:15) done 
+\i (16:03:15) generaledit 
+\i (16:03:17) add pin 
+\t (16:03:17) Using 'SMD_13800_04500MM.pad'.
+\i (16:03:23) setwindow form.mini
+\i (16:03:23) FORM mini next_pin_number 1 
+\i (16:03:30) FORM mini offsetx 0.0000 
+\i (16:04:45) setwindow pcb
+\i (16:04:45) pick 2.66 1.3 
+\t (16:04:45) last pick:  2.6600  1.3000
+\t (16:04:45) Using 'SMD_13800_04500MM.pad'.
+\i (16:04:48) prepopup 4.8340 0.6606
+\i (16:04:49) done 
+\t (16:04:49) Exiting from Add Pin.
+\i (16:04:49) generaledit 
+\i (16:04:50) zoom in 1 
+\i (16:04:50) setwindow pcb
+\i (16:04:50) zoom in 0.7878 0.2739
+\i (16:04:50) trapsize 345
+\i (16:04:51) zoom out 1 
+\i (16:04:51) setwindow pcb
+\i (16:04:51) zoom out 3.6118 3.5813
+\i (16:04:51) trapsize 690
+\i (16:04:51) zoom in 1 
+\i (16:04:51) setwindow pcb
+\i (16:04:51) zoom in 0.6704 1.9241
+\i (16:04:51) trapsize 345
+\i (16:05:01) show measure 
+\i (16:05:02) pick grid 3.5359 1.3648
+\t (16:05:02) last pick:  3.5560  1.3970
+\i (16:05:04) pick grid 3.4806 -1.2728
+\t (16:05:04) last pick:  3.4290  -1.2700
+\i (16:05:10) pick grid 3.4116 1.3510
+\t (16:05:10) last pick:  3.4290  1.3970
+\i (16:05:11) pick grid 3.4116 1.3096
+\t (16:05:11) last pick:  3.4290  1.2700
+\i (16:05:11) pick grid 3.4116 1.3096
+\t (16:05:11) last pick:  3.4290  1.2700
+\i (16:05:13) pick grid 3.4668 -1.2590
+\t (16:05:13) last pick:  3.4290  -1.2700
+\i (16:05:18) pick grid 3.7430 3.0841
+\t (16:05:18) last pick:  3.6830  3.0480
+\i (16:05:19) pick grid 3.6532 -2.9989
+\t (16:05:19) last pick:  3.6830  -3.0480
+\i (16:05:26) Esc 
+\i (16:05:26) Esc 
+\i (16:05:27) pick grid 2.3897 2.5248
+\t (16:05:27) last pick:  2.4130  2.5400
+\i (16:05:27) Esc 
+\i (16:05:28) Esc 
+\i (16:05:28) Esc 
+\i (16:05:29) prepopup 1.9409 4.1267
+\i (16:05:30) done 
+\i (16:05:30) generaledit 
+\i (16:05:30) pick grid 2.0928 2.6215
+\t (16:05:30) last pick:  2.0320  2.6670
+\i (16:05:33) delete 
+\i (16:05:33) generaledit 
+\i (16:05:34) pick grid 2.1273 -1.9356
+\t (16:05:34) last pick:  2.1590  -1.9050
+\i (16:05:34) prepopup 3.2459 -2.3706
+\i (16:05:36) pick grid -1.9534 3.9472
+\t (16:05:36) last pick:  -1.9050  3.9370
+\i (16:05:37) delete 
+\i (16:05:37) pick grid 1.9754 -1.9494
+\t (16:05:37) last pick:  2.0320  -1.9050
+\t (16:05:37) Mechanical Pin "Smd_21000_14750Mm"
+\i (16:05:37) prepopup 2.2378 -2.2463
+\i (16:05:38) done 
+\i (16:05:38) generaledit 
+\i (16:05:39) pick grid 4.2885 -1.7975
+\t (16:05:39) last pick:  4.3180  -1.7780
+\i (16:05:43) add pin 
+\t (16:05:43) Using 'SMD_13800_04500MM.pad'.
+\i (16:05:45) setwindow form.mini
+\i (16:05:45) FORM mini pad_browse  
+\t (16:05:47) No valid name selected.
+\i (16:05:52) fillin "Smd_21000_14750Mm"
+\t (16:05:52) Using 'SMD_21000_14750MM.pad'.
+\i (16:07:01) setwindow pcb
+\i (16:07:01) pick 2.3 2.4625 
+\t (16:07:01) last pick:  2.3000  2.4625
+\t (16:07:01) Using 'SMD_21000_14750MM.pad'.
+\i (16:07:03) undo 
+\t (16:07:03) Exiting from Add Pin.
+\i (16:07:03) generaledit 
+\i (16:07:03) prepopup 2.9766 2.7872
+\i (16:07:04) pick grid -0.3031 4.0438
+\t (16:07:04) last pick:  -0.2540  4.0640
+\i (16:07:05) slide 
+\t (16:07:05) Selected item not valid for current operation, ignored: Mechanical Pin "Smd_19000_23750Mm"
+\t (16:07:05) No valid items selected for the current operation, exiting.
+\i (16:07:05) generaledit 
+\i (16:07:05) pick grid -2.4781 3.8988
+\t (16:07:05) last pick:  -2.5400  3.9370
+\i (16:07:07) undo 
+\i (16:07:07) trapsize 345
+\i (16:07:07) generaledit 
+\i (16:07:08) pick grid -1.3596 2.9253
+\t (16:07:08) last pick:  -1.3970  2.9210
+\i (16:07:10) delete 
+\i (16:07:11) drag_start grid 1.3747 3.6710
+\i (16:07:12) drag_stop 1.7130 -0.9206
+\i (16:07:13) prepopup 1.6026 2.5455
+\i (16:07:14) done 
+\i (16:07:14) generaledit 
+\i (16:07:16) add pin 
+\t (16:07:16) Using 'SMD_21000_14750MM.pad'.
+\i (16:07:17) setwindow form.mini
+\i (16:07:17) FORM mini pintype_mechanical YES 
+\i (16:07:29) FORM mini y_count 1 
+\i (16:07:34) setwindow pcb
+\i (16:07:34) pick 2.3 2.4625 
+\t (16:07:34) last pick:  2.3000  2.4625
+\t (16:07:34) Using 'SMD_21000_14750MM.pad'.
+\i (16:07:44) pick 2.3 -2.4624 
+\t (16:07:44) last pick:  2.3000  -2.4624
+\t (16:07:44) Using 'SMD_21000_14750MM.pad'.
+\i (16:07:46) prepopup 4.5232 1.3372
+\i (16:07:46) done 
+\t (16:07:46) Exiting from Add Pin.
+\i (16:07:46) generaledit 
+\i (16:07:47) pick grid -2.2434 3.5122
+\t (16:07:47) last pick:  -2.2860  3.5560
+\i (16:07:48) zoom out 1 
+\i (16:07:48) setwindow pcb
+\i (16:07:48) zoom out 4.0675 0.1082
+\i (16:07:48) trapsize 690
+\i (16:07:48) zoom in 1 
+\i (16:07:48) setwindow pcb
+\i (16:07:48) zoom in 0.6981 0.3015
+\i (16:07:48) trapsize 345
+\i (16:07:50) zoom out 1 
+\i (16:07:50) setwindow pcb
+\i (16:07:50) zoom out -1.6012 0.5915
+\i (16:07:50) trapsize 690
+\i (16:07:50) zoom in 1 
+\i (16:07:50) setwindow pcb
+\i (16:07:50) zoom in -5.0811 0.6192
+\i (16:07:50) trapsize 345
+\i (16:07:51) zoom out 1 
+\i (16:07:51) setwindow pcb
+\i (16:07:51) zoom out 0.1872 0.1152
+\i (16:07:51) trapsize 690
+\i (16:07:53) pick grid -6.4274 5.9013
+\t (16:07:53) last pick:  -6.4770  5.8420
+\i (16:14:32) add rect 
+\i (16:15:02) setwindow form.mini
+\i (16:15:02) FORM mini class PACKAGE GEOMETRY 
+\i (16:15:52) setwindow pcb
+\i (16:15:52) pick 3.75 2.5 
+\t (16:15:52) last pick:  3.7500  2.5000
+\i (16:15:55) Esc 
+\i (16:15:56) prepopup -4.2041 -3.2819
+\i (16:15:57) oops 
+\i (16:15:58) pick grid -5.3365 -5.3395
+\t (16:15:58) last pick:  -5.3340  -5.3340
+\i (16:15:58) prepopup -3.2375 -1.2105
+\i (16:15:59) oops 
+\i (16:16:06) pick 2.5 3.75 
+\t (16:16:06) last pick:  2.5000  3.7500
+\i (16:16:12) Esc 
+\i (16:16:13) prepopup -5.7646 -5.3395
+\i (16:16:14) oops 
+\i (16:16:50) pick -1.45 4.1 
+\t (16:16:50) last pick:  -1.4500  4.1000
+\i (16:16:59) Esc 
+\i (16:17:00) prepopup -3.9280 -2.2600
+\i (16:17:01) oops 
+\i (16:17:10) setwindow form.mini
+\i (16:17:10) FORM mini subclass SILKSCREEN_TOP 
+\i (16:17:13) FORM mini rec_place YES 
+\i (16:17:14) FORM mini rec_draw YES 
+\i (16:17:22) setwindow pcb
+\i (16:17:22) pick -1.45 4.1 
+\t (16:17:22) last pick:  -1.4500  4.1000
+\i (16:17:42) setwindow form.mini
+\i (16:17:42) FORM mini line_font_id Hidden 
+\i (16:17:43) FORM mini line_font_id Phantom 
+\i (16:17:44) FORM mini line_font_id Dotted 
+\i (16:17:45) FORM mini line_font_id Solid 
+\i (16:18:00) setwindow pcb
+\i (16:18:00) prepopup -2.3399 7.5308
+\i (16:18:01) cancel 
+\i (16:18:01) generaledit 
+\i (16:18:02) add line 
+\i (16:18:06) setwindow form.mini
+\i (16:18:06) FORM mini lock_direction 90 
+\i (16:18:15) FORM mini line_width 0.2000 
+\i (16:18:27) setwindow pcb
+\i (16:18:27) pick -1.45 -4.1 
+\t (16:18:27) last pick:  -1.4500  -4.1000
+\i (16:18:39) ipick 8.2 
+\t (16:18:39) last pick:  6.7500  -4.1000
+\i (16:18:42) prepopup -8.0570 -5.7123
+\i (16:18:43) oops 
+\t (16:18:43) last pick:  -1.4500  -4.1000
+\i (16:18:47) ipick 0 8.2 
+\t (16:18:47) last pick:  -1.4500  4.1000
+\i (16:19:07) ipick 4.8 
+\t (16:19:07) last pick:  3.3500  4.1000
+\i (16:19:12) ipick 0 -8.2 
+\t (16:19:12) last pick:  3.3500  -4.1000
+\i (16:19:18) ipick -4.8 
+\t (16:19:18) last pick:  -1.4500  -4.1000
+\i (16:19:19) prepopup -8.1674 -4.2900
+\i (16:19:20) done 
+\i (16:19:20) generaledit 
+\i (16:19:25) add rect 
+\i (16:19:33) setwindow form.mini
+\i (16:19:33) FORM mini subclass ASSEMBLY_TOP 
+\i (16:19:58) setwindow pcb
+\i (16:19:58) pick -1.45 -4.100 
+\t (16:19:58) last pick:  -1.4500  -4.1000
+\i (16:20:15) pick 3.35 8.2 
+\t (16:20:15) last pick:  3.3500  8.2000
+\i (16:20:17) prepopup 8.6662 4.4099
+\i (16:20:18) oops 
+\t (16:20:18) last pick:  -1.4500  -4.1000
+\i (16:20:49) pick 3.35 8.2 
+\t (16:20:49) last pick:  3.3500  8.2000
+\i (16:20:52) prepopup -4.9637 0.5433
+\i (16:20:54) oops 
+\t (16:20:54) last pick:  -1.4500  -4.1000
+\i (16:21:02) pick 2.35 8.2 
+\t (16:21:02) last pick:  2.3500  8.2000
+\i (16:21:03) prepopup -12.3240 -8.0185
+\i (16:21:04) oops 
+\t (16:21:04) last pick:  -1.4500  -4.1000
+\i (16:21:13) pick 3.35 4.1 
+\t (16:21:13) last pick:  3.3500  4.1000
+\i (16:21:15) prepopup -9.9765 -4.7595
+\i (16:21:15) done 
+\i (16:21:16) generaledit 
+\i (16:21:25) add text 
+\t (16:21:26) Pick text location.
+\i (16:21:46) add circle 
+\t (16:21:46) Pick center point of the circle.
+\t (16:21:46) Pick center point of the circle.
+\i (16:21:47) pick grid 4.0539 1.2890
+\t (16:21:47) last pick:  4.0640  1.2700
+\t (16:21:47) Pick a perimeter point on the circle.
+\i (16:21:50) pick grid 4.2472 1.0819
+\t (16:21:50) last pick:  4.1910  1.1430
+\t (16:21:50) Pick center point of the circle.
+\i (16:21:53) prepopup 5.6695 5.0866
+\i (16:21:54) cancel 
+\i (16:21:54) generaledit 
+\i (16:22:01) setwindow form.mini
+\i (16:22:01) FORM mini subclass SILKSCREEN_TOP 
+\i (16:22:02) setwindow pcb
+\i (16:22:02) pick grid 4.2058 2.4352
+\t (16:22:02) last pick:  4.1910  2.4130
+\i (16:22:03) pick grid 3.8743 1.3166
+\t (16:22:03) last pick:  3.9370  1.2700
+\i (16:22:04) prepopup 3.9296 1.2200
+\i (16:22:07) add circle 
+\t (16:22:07) Pick center point of the circle.
+\t (16:22:07) Pick center point of the circle.
+\i (16:22:09) pick grid 3.8329 1.3304
+\t (16:22:09) last pick:  3.8100  1.2700
+\t (16:22:09) Pick a perimeter point on the circle.
+\i (16:22:13) pick grid 3.9020 1.2200
+\t (16:22:13) last pick:  3.9370  1.2700
+\t (16:22:13) Pick center point of the circle.
+\i (16:22:15) prepopup -10.7222 8.2075
+\i (16:22:15) done 
+\i (16:22:15) generaledit 
+\i (16:22:16) pick grid -5.4332 6.0532
+\t (16:22:16) last pick:  -5.4610  6.0960
+\i (16:40:21) add rect 
+\i (16:40:24) setwindow form.mini
+\i (16:40:24) FORM mini subclass PLACE_BOUND_TOP 
+\i (16:40:26) setwindow pcb
+\i (16:40:26) prepopup -1.4423 -4.1243
+\i (16:40:29) pop dyn_option_select 'Snap pick to@:@Intersection' 
+\t (16:40:29) last pick:  -1.4500  -4.1000
+\i (16:40:31) prepopup 3.3634 4.1475
+\i (16:40:33) pop dyn_option_select 'Snap pick to@:@Intersection' 
+\t (16:40:33) last pick:  3.3500  4.1000
+\i (16:40:34) prepopup -2.8508 6.1637
+\i (16:40:35) done 
+\i (16:40:35) generaledit 
+\i (16:40:45) package_height 
+\i (16:41:11) pick grid 2.1758 4.0233
+\t (16:41:11) last pick:  2.1590  4.0640
+\i (16:41:27) setwindow form.mini
+\i (16:41:27) FORM mini height_max 2.45 
+\i (16:41:55) setwindow pcb
+\i (16:41:55) 3d_viewer 
+\i (16:41:55) setwindow pcb3D
+\i (16:41:55) trapsize 690
+\i (16:41:55) setwindow pcb
+\i (16:41:55) generaledit 
+\i (16:42:02) pick grid 5.9734 4.5756
+\t (16:42:02) last pick:  5.9690  4.5720
+\i (16:42:02) pick grid 2.2448 3.3052
+\t (16:42:02) last pick:  2.2860  3.3020
+\i (16:42:03) pick grid -7.7531 7.2408
+\t (16:42:03) last pick:  -7.7470  7.2390
+\i (16:42:07) package_height 
+\i (16:42:08) pick grid 1.3748 3.6918
+\t (16:42:08) last pick:  1.3970  3.6830
+\i (16:42:12) setwindow form.mini
+\i (16:42:12) FORM mini height_min 2.40 
+\i (16:42:13) setwindow pcb
+\i (16:42:13) pick grid 13.3337 5.2109
+\t (16:42:13) last pick:  13.3350  5.2070
+\i (16:42:15) 3d_viewer 
+\i (16:42:15) setwindow pcb3D
+\i (16:42:15) trapsize 690
+\i (16:42:15) setwindow pcb
+\i (16:42:15) generaledit 
+\i (16:42:21) pick grid 8.4314 5.4594
+\t (16:42:21) last pick:  8.3820  5.4610
+\i (16:42:26) package_height 
+\i (16:42:27) pick grid 2.9077 3.4985
+\t (16:42:27) last pick:  2.9210  3.5560
+\i (16:42:33) setwindow form.mini
+\i (16:42:33) FORM mini height_min 0.1 
+\i (16:42:34) setwindow pcb
+\i (16:42:34) 3d_viewer 
+\i (16:42:35) setwindow pcb3D
+\i (16:42:35) trapsize 690
+\i (16:42:35) setwindow pcb
+\i (16:42:35) generaledit 
+\i (16:43:06) label refdes 
+\t (16:43:06) Pick text location.
+\i (16:43:22) pick grid 0.0077 0.0047
+\t (16:43:22) last pick:  0.0000  0.0000
+\t (16:43:22) Enter text string.
+\i (16:43:27) setwindow pcb
+\i (16:43:27) pick 0.0000 0.0000
+\i (16:43:33) setwindow form.mini
+\i (16:43:33) FORM mini subclass SILKSCREEN_TOP 
+\i (16:43:35) setwindow pcb
+\i (16:43:35) pick grid -0.2823 4.5066
+\t (16:43:35) last pick:  -0.2540  4.4450
+\t (16:43:35) Enter text string.
+\i (16:43:37) setwindow pcb
+\i (16:43:37) pick -0.2540 4.4450
+\i (16:43:40) prepopup -4.4113 5.0728
+\i (16:43:41) done 
+\i (16:43:41) generaledit 
+\i (16:43:46) setwindow form.mini
+\i (16:43:46) FORM mini subclass ASSEMBLY_TOP 
+\i (16:43:47) setwindow pcb
+\i (16:43:47) prepopup -9.7141 7.7794
+\i (16:43:49) pick grid -1.9256 8.0142
+\t (16:43:49) last pick:  -1.9050  8.0010
+\i (16:43:50) pick grid -6.5103 5.7909
+\t (16:43:50) last pick:  -6.4770  5.8420
+\i (16:43:52) save 
+\t (16:43:53) Symbol 'molex_0473460001.psm' created.
+\i (16:43:53) generaledit 
+\i (16:43:54) pick grid -8.6093 -0.9067
+\t (16:43:54) last pick:  -8.6360  -0.8890
+\i (16:45:11) pick grid 2.4658 2.2971
+\t (16:45:11) last pick:  2.4130  2.2860
+\i (16:45:11) prepopup 2.4658 2.2971
+\i (16:45:13) pick grid 2.3967 2.6423
+\t (16:45:13) last pick:  2.4130  2.6670
+\i (16:45:13) prepopup 2.3967 2.6423
+\i (16:45:19) pick grid -5.0189 4.0509
+\t (16:45:19) last pick:  -5.0800  4.0640
+\i (16:45:22) add pin 
+\t (16:45:22) Using 'SMD_21000_14750MM.pad'.
+\i (16:45:28) setwindow form.mini
+\i (16:45:28) FORM mini next_pin_number 6 
+\i (16:45:32) setwindow pcb
+\i (16:45:32) prepopup 2.4520 2.4904
+\i (16:45:37) prepopup 8.0033 3.4985
+\i (16:45:38) zoom in 1 
+\i (16:45:38) setwindow pcb
+\i (16:45:38) zoom in 12.0219 2.1314
+\i (16:45:39) trapsize 345
+\i (16:45:39) zoom out 1 
+\i (16:45:39) setwindow pcb
+\i (16:45:39) zoom out 9.0391 2.2004
+\i (16:45:39) trapsize 690
+\i (16:45:39) Esc 
+\w (16:45:39) WARNING(SPMHA1-314): Illegal event.
+\i (16:45:40) prepopup 5.8906 3.0981
+\i (16:45:41) cancel 
+\t (16:45:41) Exiting from Add Pin.
+\i (16:45:41) generaledit 
+\i (16:45:42) pick grid 2.5763 2.5595
+\t (16:45:42) last pick:  2.5400  2.5400
+\i (16:45:45) prepopup 1.9549 2.9324
+\i (16:45:46) pop dyn_option_select '@:@Show element' 
+\i (16:45:46) show element 
+\i (16:45:47) generaledit 
+\i (16:45:57) pick grid 1.8444 2.5043
+\t (16:45:57) last pick:  1.9050  2.5400
+\i (16:45:58) delete 
+\i (16:45:58) generaledit 
+\i (16:46:03) add pin 
+\t (16:46:03) Using 'SMD_21000_14750MM.pad'.
+\i (16:46:19) setwindow form.mini
+\i (16:46:19) FORM mini next_pin_number 6 
+\i (16:46:20) setwindow pcb
+\i (16:46:20) pick 2.3 2.4625 
+\t (16:46:20) last pick:  2.3000  2.4625
+\t (16:46:20) Using 'SMD_21000_14750MM.pad'.
+\i (16:46:21) prepopup -4.6598 5.2247
+\i (16:46:22) done 
+\t (16:46:22) Exiting from Add Pin.
+\i (16:46:22) generaledit 
+\i (16:46:23) pick grid -4.6736 5.0590
+\t (16:46:23) last pick:  -4.6990  5.0800
+\i (16:46:23) save 
+\i (16:46:25) fillin yes 
+\t (16:46:25) Symbol 'molex_0473460001.psm' created.
+\i (16:46:25) generaledit 
+\i (16:46:28) setwindow text
+\i (16:46:28) close 
+\e (16:46:40) Command not found: xhilite
+\i (16:46:40) setwindow pcb
+\i (16:46:40) xname_flush 
+\i (16:46:40) done 
+\i (16:46:40) generaledit 
+\e (16:46:42) Command not found: xdehilite
+\i (16:46:42) xname_flush 
+\i (16:46:42) done 
+\i (16:46:42) generaledit 
+\e (16:48:09) Command not found: xhilite
+\i (16:48:09) xname_flush 
+\i (16:48:09) done 
+\i (16:48:09) generaledit 
+\i (16:48:13) new 
+\i (16:48:26) newdrawfillin "CUI_PJ_037BH.dra" "Package Symbol"
+\t (16:48:26)     Journal end - Sun Nov 03 15:01:34 2013

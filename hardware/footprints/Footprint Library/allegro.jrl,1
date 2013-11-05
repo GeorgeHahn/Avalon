@@ -1,123 +1,348 @@
-\t (00:00:01) allegro 16.6 P004 (v16-6-112G) Windows 32
-\t (00:00:01)     Journal start - Sat Nov 02 22:27:33 2013
-\t (00:00:01)         Host=GEORGEPC User=George Pid=13448 CPUs=8
-\t (00:00:01) 
-\t (00:00:03) Opening existing design...
-\d (00:00:03) Database opened: C:/Users/George/Documents/GitHub/Avalon/hardware/footprints/Footprint Library/QFN48.dra
-\i (00:00:03) trapsize 233
-\i (00:00:03) trapsize 230
-\i (00:00:04) trapsize 234
-\i (00:00:04) trapsize 211
-\i (00:00:04) trapsize 331
-\i (00:00:04) generaledit 
-\i (00:00:17) pick grid -0.7451 1.5732
-\t (00:00:17) last pick:  0.0000  2.5400
-\i (00:00:18) prepopup -0.7451 1.5732
-\i (00:00:20) pop dyn_option_select '@:@Show element' 
-\i (00:00:20) show element 
-\i (00:00:20) generaledit 
-\i (00:00:25) pick grid -3.3304 2.7039
-\t (00:00:25) last pick:  -2.5400  2.5400
-\i (00:00:26) prepopup -3.7933 2.7965
-\i (00:00:36) pop dyn_option_select '@:@Show element' 
-\i (00:00:36) show element 
-\i (00:00:36) generaledit 
-\i (00:00:41) pick grid -2.1336 1.9766
-\t (00:00:41) last pick:  -2.5400  2.5400
-\i (00:00:41) prepopup -2.1336 1.9766
-\i (00:00:45) setwindow text
-\i (00:00:45) close 
-\i (00:00:48) setwindow pcb
-\i (00:00:48) add pin 
-\t (00:00:48) Using 'THERMAL540X540.pad'.
-\i (00:00:50) pick grid 6.3563 -0.0269
-\t (00:00:50) last pick:  7.6200  0.0000
-\t (00:00:50) Using 'THERMAL540X540.pad'.
-\i (00:00:50) Esc 
-\w (00:00:50) WARNING(SPMHA1-314): Illegal event.
-\i (00:00:51) Esc 
-\w (00:00:51) WARNING(SPMHA1-314): Illegal event.
-\i (00:00:51) prepopup 4.9148 3.7089
-\i (00:00:53) done 
-\t (00:00:53) Exiting from Add Pin.
-\i (00:00:53) generaledit 
-\i (00:00:53) pick grid 6.4158 1.5997
-\t (00:00:53) last pick:  7.6200  2.5400
-\i (00:00:54) prepopup 6.4158 1.5997
-\i (00:00:55) pop dyn_option_select '@:@Show element' 
-\i (00:00:55) show element 
-\i (00:00:55) generaledit 
-\i (00:01:01) pick grid -3.7536 2.7898
-\t (00:01:01) last pick:  -2.5400  2.5400
-\i (00:01:02) prepopup -3.7536 2.7898
-\i (00:01:03) pop dyn_option_select '@:@Show element' 
-\i (00:01:03) show element 
-\i (00:01:03) generaledit 
-\i (00:01:04) prepopup -2.0675 2.4394
-\i (00:01:06) pop dyn_option_select '@:@Show element' 
-\i (00:01:06) show element 
-\i (00:01:06) generaledit 
-\i (00:01:08) pick grid -1.3931 2.1154
-\t (00:01:08) last pick:  -2.5400  2.5400
-\i (00:01:09) pick grid 3.6585 1.6922
-\t (00:01:09) last pick:  2.5400  2.5400
-\i (00:01:09) prepopup 6.9778 1.8575
-\i (00:01:10) pick grid 6.5348 1.7385
-\t (00:01:10) last pick:  7.6200  2.5400
-\i (00:01:10) prepopup 6.5348 1.7385
-\i (00:01:11) pop dyn_option_select '@:@Show element' 
-\i (00:01:11) show element 
-\i (00:01:11) generaledit 
-\i (00:01:12) pick grid 0.4914 2.2146
-\t (00:01:12) last pick:  0.0000  2.5400
-\e (00:01:13) Command not found: Del
-\i (00:01:14) prepopup 1.3113 1.8642
-\i (00:01:15) pop dyn_option_select @:@Delete 
-\i (00:01:15) delete 
-\i (00:01:15) generaledit 
-\i (00:01:15) drag_start grid 6.9448 1.3352
-\i (00:01:16) drag_stop 6.8522 1.4211
-\i (00:01:16) pick grid 8.1680 1.3616
-\t (00:01:16) last pick:  7.6200  2.5400
-\i (00:01:17) drag_start grid 7.3150 1.3947
-\i (00:01:18) drag_stop 7.0439 1.3550
-\i (00:01:18) prepopup 7.0439 1.3550
-\i (00:01:18) pop dyn_option_select @:@Move 
-\i (00:01:18) move 
-\t (00:01:19) last pick:  7.6200  2.5400
-\t (00:01:19) last pick:  7.6200  0.0000
-\t (00:01:19) Pick new location for the element(s).
-\i (00:01:20) pick grid 0.7029 1.2558
-\t (00:01:20) last pick:  0.0000  0.0000
-\i (00:01:20) generaledit 
-\i (00:01:21) setwindow text
-\i (00:01:21) close 
-\i (00:01:22) setwindow pcb
-\i (00:01:22) save 
-\i (00:01:24) fillin yes 
-\t (00:01:25) Symbol 'qfn48.psm' created.
-\i (00:01:25) generaledit 
-\i (00:03:57) open 
-\i (00:04:00) fillin "CAP_2917.dra"
-\t (00:04:00) Opening existing design...
-\i (00:04:00) trapsize 31
-\d (00:04:00) Database opened: C:/Users/George/Documents/GitHub/Avalon/hardware/footprints/Footprint Library/CAP_2917.dra
-\i (00:04:00) generaledit 
-\i (00:04:01) pick grid -3.156 1.278
-\t (00:04:01) last pick:  -3.175  1.270
-\i (00:06:48) pick grid -3.454 0.645
-\t (00:06:48) last pick:  -3.175  0.635
-\i (00:06:50) pick grid -4.217 3.182
-\t (00:06:50) last pick:  -4.445  3.175
-\i (00:06:52) pick grid -5.017 3.293
-\t (00:06:52) last pick:  -5.080  3.175
-\i (00:09:32) save 
-\i (00:09:33) fillin yes 
-\t (00:09:33) Symbol 'cap_2917.psm' created.
-\i (00:09:33) generaledit 
-\i (00:09:34) save 
-\i (00:09:35) fillin yes 
-\t (00:09:36) Symbol 'cap_2917.psm' created.
-\i (00:09:36) generaledit 
-\i (00:14:19) exit 
-\t (00:14:19)     Journal end - Sat Nov 02 22:41:50 2013
+\t (16:48:26) allegro 16.6 P004 (v16-6-112G) Windows 32
+\t (16:48:26)     Journal start - Sun Nov 03 15:01:34 2013
+\t (16:48:26)         Host=GEORGEPC User=George Pid=5864 CPUs=8
+\t (16:48:26) 
+\t (16:48:26) Starting new design...
+\i (16:48:26) trapsize 4978
+\i (16:48:26) trapsize 4978
+\i (16:48:27) generaledit 
+\i (16:48:28) zoom in 1 
+\i (16:48:28) setwindow pcb
+\i (16:48:28) zoom in 1.5245 1.0245
+\i (16:48:28) trapsize 2489
+\i (16:48:28) zoom in 1 
+\i (16:48:28) setwindow pcb
+\i (16:48:28) zoom in -12.4639 -0.1204
+\i (16:48:28) trapsize 1245
+\i (16:48:28) zoom in 1 
+\i (16:48:28) setwindow pcb
+\i (16:48:28) zoom in 3.8394 0.2530
+\i (16:48:28) trapsize 622
+\i (16:48:28) zoom in 1 
+\i (16:48:28) setwindow pcb
+\i (16:48:28) zoom in 3.8145 0.2032
+\i (16:48:28) trapsize 311
+\i (16:48:31) color192 
+\i (16:48:31) setwindow cvf.dialog
+\i (16:48:31) cvf layer_mode
+\i (16:48:31) setwindow pcb
+\i (16:48:31) generaledit 
+\i (16:48:33) setwindow cvf.dialog
+\i (16:48:33) cvf layer_tree_item 'Manufacturing'
+\i (16:48:34) cvf layer_tree_item 'Drawing Format'
+\i (16:48:36) cvf select_color_cell 81
+\i (16:48:37) cvf layers_color drawing_format/drawing_origin 82
+\i (16:48:38) cvf okay
+\i (16:50:19) setwindow pcb
+\i (16:50:19) add pin 
+\i (16:50:20) setwindow form.mini
+\i (16:50:20) FORM mini pad_browse  
+\t (16:50:28) No valid name selected.
+\i (16:50:32) fillin "Smd_10000_30000"
+\t (16:50:32) Using 'SMD_10000_30000.pad'.
+\i (16:50:35) setwindow pcb
+\i (16:50:35) pick grid 1.2508 0.0913
+\t (16:50:35) last pick:  0.0000  0.0000
+\t (16:50:35) Using 'SMD_10000_30000.pad'.
+\i (16:50:40) undo 
+\t (16:50:40) Exiting from Add Pin.
+\i (16:50:40) generaledit 
+\i (16:50:40) prepopup -1.7236 3.0781
+\i (16:50:41) pick grid -2.8001 3.6506
+\t (16:50:41) last pick:  -2.5400  2.5400
+\i (16:50:42) delete 
+\i (16:50:43) pick grid -0.2178 0.3713
+\t (16:50:43) last pick:  0.0000  0.0000
+\t (16:50:43) Pin "Smd_10000_30000, 1"
+\i (16:50:43) pick grid -0.1929 1.0433
+\t (16:50:43) last pick:  0.0000  0.0000
+\i (16:50:45) add pin 
+\t (16:50:46) Using 'SMD_10000_30000.pad'.
+\i (16:50:50) pick grid 1.2321 0.4957
+\t (16:50:50) last pick:  0.0000  0.0000
+\t (16:50:50) Using 'SMD_10000_30000.pad'.
+\i (16:50:52) setwindow form.mini
+\i (16:50:52) FORM mini next_pin_number 1 
+\i (16:50:52) FORM mini pad_browse  
+\i (16:50:55) fillin "smd_10000_3.pad"
+\e (16:50:55) ERROR(SPMHAP-7): Illegal pad name.
+\i (16:50:58) FORM mini pad_browse  
+\t (16:51:02) No valid name selected.
+\i (16:51:06) fillin "Smd_10000_35000"
+\t (16:51:06) Using 'SMD_10000_35000.pad'.
+\i (16:51:12) setwindow pcb
+\i (16:51:12) pick 6 
+\t (16:51:12) last pick:  6.0000  0.0000
+\t (16:51:12) Using 'SMD_10000_35000.pad'.
+\i (16:51:14) prepopup -0.6285 1.0122
+\i (16:51:15) done 
+\t (16:51:15) Exiting from Add Pin.
+\i (16:51:15) generaledit 
+\i (16:51:16) zoom out 1 
+\i (16:51:16) setwindow pcb
+\i (16:51:16) zoom out 2.2402 0.4833
+\i (16:51:16) trapsize 622
+\i (16:51:16) zoom out 1 
+\i (16:51:16) setwindow pcb
+\i (16:51:16) zoom out 2.2401 0.4832
+\i (16:51:16) trapsize 1245
+\i (16:51:17) zoom in 1 
+\i (16:51:17) setwindow pcb
+\i (16:51:17) zoom in -2.0907 -0.2385
+\i (16:51:17) trapsize 622
+\i (16:51:23) add line 
+\i (16:51:35) setwindow form.mini
+\i (16:51:35) FORM mini subclass SILKSCREEN_TOP 
+\i (16:51:39) FORM mini line_width 0.2000 
+\i (16:51:41) setwindow pcb
+\i (16:51:41) pick grid -0.0124 0.0602
+\t (16:51:41) last pick:  0.0000  0.0000
+\i (16:51:41) pick grid -6.3719 -0.2260
+\t (16:51:41) last pick:  -7.6200  0.0000
+\i (16:51:42) Esc 
+\i (16:51:42) prepopup -9.1472 1.1554
+\i (16:51:43) cancel 
+\i (16:51:43) generaledit 
+\i (16:52:09) pick -7.7 -4.5 
+\t (16:52:09) last pick:  -7.7000  -4.5000
+\i (16:52:12) prepopup -6.9568 0.1847
+\i (16:52:13) pick grid -11.1135 4.8392
+\t (16:52:13) last pick:  -10.1600  5.0800
+\i (16:52:16) add line 
+\i (16:52:17) zoom out 1 
+\i (16:52:17) setwindow pcb
+\i (16:52:17) zoom out 0.3236 4.9263
+\i (16:52:17) trapsize 1245
+\i (16:52:24) pick -7.7 -4.5 
+\t (16:52:24) last pick:  -7.7000  -4.5000
+\i (16:52:33) ipick 9 
+\t (16:52:33) last pick:  1.3000  -4.5000
+\i (16:52:34) prepopup -13.8389 -11.1031
+\i (16:52:35) oops 
+\t (16:52:35) last pick:  -7.7000  -4.5000
+\i (16:52:38) ipick 0 9 
+\t (16:52:38) last pick:  -7.7000  4.5000
+\i (16:52:40) prepopup -2.4889 -5.7268
+\i (16:52:41) done 
+\i (16:52:41) generaledit 
+\i (16:52:41) zoom out 1 
+\i (16:52:41) setwindow pcb
+\i (16:52:41) zoom out -18.4437 -6.9215
+\i (16:52:41) trapsize 2489
+\i (16:52:42) zoom in 1 
+\i (16:52:42) setwindow pcb
+\i (16:52:42) zoom in 1.0267 1.7403
+\i (16:52:42) trapsize 1245
+\i (16:52:42) zoom in 1 
+\i (16:52:42) setwindow pcb
+\i (16:52:42) zoom in 1.9975 0.1971
+\i (16:52:42) trapsize 622
+\i (16:52:43) zoom out 1 
+\i (16:52:43) setwindow pcb
+\i (16:52:43) zoom out -8.2698 -2.3043
+\i (16:52:43) trapsize 1245
+\i (16:52:49) prepopup -7.7471 4.6152
+\i (16:52:51) add line 
+\i (16:52:52) prepopup -7.6974 4.4907
+\i (16:52:55) pop dyn_option_select 'Snap pick to@:@Segment Vertex' 
+\t (16:52:55) last pick:  -7.7000  4.5000
+\i (16:53:05) ipick 14.5 
+\t (16:53:05) last pick:  6.8000  4.5000
+\i (16:53:11) ipick 0 -9 
+\t (16:53:11) last pick:  6.8000  -4.5000
+\i (16:53:16) ipick 14.5 
+\t (16:53:16) last pick:  21.3000  -4.5000
+\i (16:53:18) prepopup -7.3738 -6.8842
+\i (16:53:19) oops 
+\t (16:53:19) last pick:  6.8000  -4.5000
+\i (16:53:24) ipick -14.5 
+\t (16:53:24) last pick:  -7.7000  -4.5000
+\i (16:53:26) prepopup -8.4441 -10.2444
+\i (16:53:27) done 
+\i (16:53:27) generaledit 
+\i (16:56:07) pick grid 0.0436 0.8069
+\t (16:56:07) last pick:  0.0000  0.0000
+\i (16:56:12) replace padstack 
+\i (16:56:15) setwindow form.mini
+\i (16:56:15) FORM mini oldname_browse  
+\i (16:56:18) fillin "Smd_10000_30000"
+\i (16:56:19) FORM mini newname_browse  
+\t (16:56:23) No valid name selected.
+\i (16:56:27) fillin "Cui_1X3"
+\i (16:56:29) FORM mini replace  
+\i (16:56:31) FORM mini oldname_browse  
+\i (16:56:34) fillin "Smd_10000_35000"
+\i (16:56:35) FORM mini newname_browse  
+\t (16:56:39) No valid name selected.
+\i (16:56:42) fillin "Cui_1X4"
+\i (16:56:43) FORM mini replace  
+\i (16:56:45) setwindow pcb
+\i (16:56:45) pick grid 10.8460 3.5698
+\t (16:56:45) last pick:  10.1600  2.5400
+\i (16:56:46) roam start
+\i (16:56:46) roam y -48
+\i (16:56:46) roam x 16
+\i (16:56:46) roam y -32
+\i (16:56:46) roam y -32
+\i (16:56:46) roam x 16
+\i (16:56:46) roam y -32
+\i (16:56:46) roam x 16
+\i (16:56:46) roam y -16
+\i (16:56:46) roam x 32
+\i (16:56:46) roam x -16
+\i (16:56:46) roam y 16
+\i (16:56:46) roam x -80
+\i (16:56:46) roam y 32
+\i (16:56:46) roam x -64
+\i (16:56:46) roam y 16
+\i (16:56:46) roam x -48
+\i (16:56:46) roam y 16
+\i (16:56:46) roam x -48
+\i (16:56:46) roam y 16
+\i (16:56:46) roam x -48
+\i (16:56:46) roam y 16
+\i (16:56:47) roam x -32
+\i (16:56:47) roam y 16
+\i (16:56:47) roam x -16
+\i (16:56:47) roam x -16
+\i (16:56:47) roam y -16
+\i (16:56:47) roam y -16
+\i (16:56:47) roam x -16
+\i (16:56:47) roam y -48
+\i (16:56:47) roam x -16
+\i (16:56:47) roam y -32
+\i (16:56:47) roam x -16
+\i (16:56:47) roam y -48
+\i (16:56:47) roam x -16
+\i (16:56:47) roam y -16
+\i (16:56:47) roam y -16
+\i (16:56:47) roam x -64
+\i (16:56:47) roam y 16
+\i (16:56:47) roam x -48
+\i (16:56:47) roam y 32
+\i (16:56:47) roam x -48
+\i (16:56:47) roam y 16
+\i (16:56:47) roam x -16
+\i (16:56:47) roam y 16
+\i (16:56:47) roam y 16
+\i (16:56:47) roam x -16
+\i (16:56:47) roam y 16
+\i (16:56:48) roam y 32
+\i (16:56:48) roam y 32
+\i (16:56:48) roam y 48
+\i (16:56:48) roam x 16
+\i (16:56:48) roam y 32
+\i (16:56:48) roam x 16
+\i (16:56:48) roam y 16
+\i (16:56:48) roam x 16
+\i (16:56:48) roam y 16
+\i (16:56:48) roam x 16
+\i (16:56:48) roam x 16
+\i (16:56:48) roam y 16
+\i (16:56:48) roam x 32
+\i (16:56:48) roam x 32
+\i (16:56:48) roam y 16
+\i (16:56:48) roam x 48
+\i (16:56:48) roam x 48
+\i (16:56:48) roam y 16
+\i (16:56:48) roam x 16
+\i (16:56:48) roam y -16
+\i (16:56:48) roam x 16
+\i (16:56:48) roam y -16
+\i (16:56:48) roam y -16
+\i (16:56:48) roam x -16
+\i (16:56:48) roam y -16
+\i (16:56:49) roam x -16
+\i (16:56:49) roam x -16
+\i (16:56:49) roam end
+\i (16:56:49) zoom in 1 
+\i (16:56:49) setwindow pcb
+\i (16:56:49) zoom in -2.0099 -2.9579
+\i (16:56:49) trapsize 622
+\i (16:56:50) roam start
+\i (16:56:50) roam y -32
+\i (16:56:50) roam y -32
+\i (16:56:51) roam y -32
+\i (16:56:51) roam x 32
+\i (16:56:51) roam y -32
+\i (16:56:51) roam x 16
+\i (16:56:51) roam x 16
+\i (16:56:51) roam y 16
+\i (16:56:51) roam x -16
+\i (16:56:51) roam y 16
+\i (16:56:52) roam end
+\i (16:57:01) label refdes 
+\t (16:57:01) Performing DRC...
+\t (16:57:01) No DRC errors detected.
+\t (16:57:01) Pick text location.
+\i (16:57:04) pick grid -0.0312 -0.0209
+\t (16:57:04) last pick:  0.0000  0.0000
+\t (16:57:04) Enter text string.
+\i (16:57:07) setwindow pcb
+\i (16:57:07) pick 0.0000 0.0000
+\i (16:57:10) setwindow form.mini
+\i (16:57:10) FORM mini subclass SILKSCREEN_TOP 
+\i (16:57:12) setwindow pcb
+\i (16:57:12) pick grid -0.7281 4.8327
+\t (16:57:12) last pick:  0.0000  5.0800
+\t (16:57:12) Enter text string.
+\i (16:57:14) setwindow pcb
+\i (16:57:14) pick 0.0000 5.0800
+\i (16:57:16) save 
+\t (16:57:16) Symbol 'cui_pj_037bh.psm' created.
+\i (16:57:16) generaledit 
+\i (16:57:16) prepopup 6.2537 6.2888
+\i (16:57:18) pick grid 4.4616 6.4630
+\t (16:57:18) last pick:  5.0800  7.6200
+\i (16:57:18) save 
+\i (16:57:21) fillin yes 
+\t (16:57:21) Symbol 'cui_pj_037bh.psm' created.
+\i (16:57:21) generaledit 
+\e (16:58:10) Command not found: xhilite
+\i (16:58:10) xname_flush 
+\i (16:58:10) done 
+\i (16:58:10) generaledit 
+\e (18:36:18) Command not found: xhilite
+\i (18:36:18) xname_flush 
+\i (18:36:18) done 
+\i (18:36:18) generaledit 
+\e (18:36:38) Command not found: xhilite
+\i (18:36:38) xname_flush 
+\i (18:36:38) done 
+\i (18:36:38) generaledit 
+\e (18:36:41) Command not found: xdehilite
+\i (18:36:41) xname_flush 
+\i (18:36:41) done 
+\i (18:36:41) generaledit 
+\e (18:36:47) Command not found: xhilite
+\i (18:36:47) xname_flush 
+\i (18:36:47) done 
+\i (18:36:47) generaledit 
+\e (18:36:48) Command not found: xdehilite
+\i (18:36:48) xname_flush 
+\i (18:36:48) done 
+\i (18:36:48) generaledit 
+\e (18:36:49) Command not found: xhilite
+\i (18:36:49) xname_flush 
+\i (18:36:49) done 
+\i (18:36:49) generaledit 
+\e (18:36:50) Command not found: xdehilite
+\i (18:36:50) xname_flush 
+\i (18:36:50) done 
+\i (18:36:50) generaledit 
+\e (18:36:53) Command not found: xhilite
+\i (18:36:53) xname_flush 
+\i (18:36:53) done 
+\i (18:36:53) generaledit 
+\e (18:36:54) Command not found: xdehilite
+\i (18:36:54) xname_flush 
+\i (18:36:54) done 
+\i (18:36:54) generaledit 
+\e (18:37:21) Command not found: xhilite
+\i (18:37:21) xname_flush 
+\i (18:37:21) done 
+\i (18:37:21) generaledit 
+\i (18:37:31) pick grid 8.7676 5.6665
+\t (18:37:31) last pick:  7.6200  5.0800
+\i (18:37:32) exit 
+\t (18:37:32)     Journal end - Sun Nov 03 16:50:40 2013

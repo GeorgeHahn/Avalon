@@ -1,0 +1,3475 @@
+\t (03:32:48) allegro 16.6 P004 (v16-6-112G) Windows 32
+\t (03:32:48)     Journal start - Sun Nov 03 01:45:56 2013
+\t (03:32:48)         Host=GEORGEPC User=George Pid=5864 CPUs=8
+\t (03:32:48) 
+\t (03:32:48) Starting new design...
+\i (03:32:48) trapsize 4978
+\i (03:32:48) trapsize 4978
+\i (03:32:49) setwindow Form.vf_vis 
+\i (03:32:49) FORM vf_vis 1 all_colorvisible YES 
+\i (03:32:49) FORM vf_vis 2 all_colorvisible YES 
+\i (03:32:49) setwindow pcb 
+\i (03:32:49) Color 
+\i (03:32:49) setwindow form.cvf_main
+\i (03:32:49) FORM cvf_main class_list Geometry
+\i (03:32:49) setwindow Form.cvf_main 
+\i (03:32:49) FORM cvf_main class_list Components 
+\i (03:32:49) FORM cvf_main all_visible1 YES 
+\i (03:32:49) FORM cvf_main all_visible2 YES 
+\i (03:32:49) FORM cvf_main all_visible3 YES 
+\i (03:32:49) FORM cvf_main class_list Geometry 
+\i (03:32:49) FORM cvf_main all_visible5 YES 
+\i (03:32:49) FORM cvf_main package_geometry/pin_number/visible NO 
+\i (03:32:49) FORM cvf_main class_list Stack-Up 
+\i (03:32:49) FORM cvf_main all_visible1 YES 
+\i (03:32:49) FORM cvf_main ok 
+\i (03:32:49) generaledit 
+\i (03:32:49) prmed 
+\i (03:32:49) setwindow Form.prmedit 
+\i (03:32:49) FORM prmedit design 
+\i (03:32:49) FORM prmedit lock_direction Off 
+\i (03:32:49) FORM prmedit units Millimeter 
+\i (03:32:49) FORM prmedit accuracy 4 
+\i (03:32:49) FORM prmedit size Other 
+\i (03:32:49) FORM prmedit x -65.5800 
+\i (03:32:49) FORM prmedit y -66.0800 
+\i (03:32:49) FORM prmedit width 131.7200 
+\i (03:32:49) FORM prmedit height 131.7200 
+\i (03:32:49) FORM prmedit done 
+\i (03:32:49) setwindow pcb 
+\i (03:32:49) add pin 
+\i (03:32:49) setwindow Form.mini 
+\i (03:32:49) FORM mini pad_name r107_45 
+\t (03:32:49) Using 'R107_45.pad'.
+\i (03:32:49) FORM mini next_pin_number 4 
+\i (03:32:49) rotate 
+\t (03:32:49) Spin the element(s).
+\i (03:32:49) iangle 0 
+\t (03:32:49) last angle:  +0.000 Degrees
+\t (03:32:49) Pin rotated by '0.000' degrees.
+\t (03:32:49) Using 'R107_45.pad'.
+\i (03:32:49) FORM mini pintype_mechanical NO 
+\i (03:32:49) FORM mini offsetx 0 
+\i (03:32:49) FORM mini offsety 0 
+\i (03:32:49) setwindow pcb 
+\i (03:32:49) pick -2.8330 1.9050 
+\t (03:32:49) last pick:  -2.8330  1.9050
+\t (03:32:49) Using 'R107_45.pad'.
+\i (03:32:49) done 
+\t (03:32:49) Exiting from Add Pin.
+\i (03:32:49) add pin 
+\t (03:32:49) Using 'R107_45.pad'.
+\i (03:32:49) setwindow Form.mini 
+\i (03:32:49) FORM mini pad_name r107_45 
+\t (03:32:49) Using 'R107_45.pad'.
+\i (03:32:49) FORM mini next_pin_number 3 
+\i (03:32:49) rotate 
+\t (03:32:49) Spin the element(s).
+\i (03:32:49) iangle 0 
+\t (03:32:49) last angle:  +0.000 Degrees
+\t (03:32:49) Pin rotated by '0.000' degrees.
+\t (03:32:49) Using 'R107_45.pad'.
+\i (03:32:49) FORM mini pintype_mechanical NO 
+\i (03:32:49) FORM mini offsetx 0 
+\i (03:32:49) FORM mini offsety 0 
+\i (03:32:49) setwindow pcb 
+\i (03:32:49) pick -2.8330 0.6350 
+\t (03:32:49) last pick:  -2.8330  0.6350
+\t (03:32:49) Using 'R107_45.pad'.
+\i (03:32:49) done 
+\t (03:32:49) Exiting from Add Pin.
+\i (03:32:49) add pin 
+\t (03:32:50) Using 'R107_45.pad'.
+\i (03:32:50) setwindow Form.mini 
+\i (03:32:50) FORM mini pad_name r107_45 
+\t (03:32:50) Using 'R107_45.pad'.
+\i (03:32:50) FORM mini next_pin_number 2 
+\i (03:32:50) rotate 
+\t (03:32:50) Spin the element(s).
+\i (03:32:50) iangle 0 
+\t (03:32:50) last angle:  +0.000 Degrees
+\t (03:32:50) Pin rotated by '0.000' degrees.
+\t (03:32:50) Using 'R107_45.pad'.
+\i (03:32:50) FORM mini pintype_mechanical NO 
+\i (03:32:50) FORM mini offsetx 0 
+\i (03:32:50) FORM mini offsety 0 
+\i (03:32:50) setwindow pcb 
+\i (03:32:50) pick -2.8330 -0.6350 
+\t (03:32:50) last pick:  -2.8330  -0.6350
+\t (03:32:50) Using 'R107_45.pad'.
+\i (03:32:50) done 
+\t (03:32:50) Exiting from Add Pin.
+\i (03:32:50) add pin 
+\t (03:32:50) Using 'R107_45.pad'.
+\i (03:32:50) setwindow Form.mini 
+\i (03:32:50) FORM mini pad_name r107_45 
+\t (03:32:50) Using 'R107_45.pad'.
+\i (03:32:50) FORM mini next_pin_number 1 
+\i (03:32:50) rotate 
+\t (03:32:50) Spin the element(s).
+\i (03:32:50) iangle 0 
+\t (03:32:50) last angle:  +0.000 Degrees
+\t (03:32:50) Pin rotated by '0.000' degrees.
+\t (03:32:50) Using 'R107_45.pad'.
+\i (03:32:50) FORM mini pintype_mechanical NO 
+\i (03:32:50) FORM mini offsetx 0 
+\i (03:32:50) FORM mini offsety 0 
+\i (03:32:50) setwindow pcb 
+\i (03:32:50) pick -2.8330 -1.9050 
+\t (03:32:50) last pick:  -2.8330  -1.9050
+\t (03:32:50) Using 'R107_45.pad'.
+\i (03:32:50) done 
+\t (03:32:50) Exiting from Add Pin.
+\i (03:32:50) add pin 
+\t (03:32:50) Using 'R107_45.pad'.
+\i (03:32:50) setwindow Form.mini 
+\i (03:32:50) FORM mini pad_name r107_45 
+\t (03:32:50) Using 'R107_45.pad'.
+\i (03:32:50) FORM mini next_pin_number 8 
+\i (03:32:50) rotate 
+\t (03:32:50) Spin the element(s).
+\i (03:32:50) iangle 180 
+\t (03:32:50) last angle:  +180.000 Degrees
+\t (03:32:50) Pin rotated by '180.000' degrees.
+\t (03:32:50) Using 'R107_45.pad'.
+\i (03:32:50) FORM mini pintype_mechanical NO 
+\i (03:32:50) FORM mini offsetx 0 
+\i (03:32:50) FORM mini offsety 0 
+\i (03:32:50) setwindow pcb 
+\i (03:32:50) pick 2.8330 -1.9050 
+\t (03:32:50) last pick:  2.8330  -1.9050
+\t (03:32:50) Using 'R107_45.pad'.
+\i (03:32:50) done 
+\t (03:32:50) Exiting from Add Pin.
+\i (03:32:50) add pin 
+\t (03:32:50) Using 'R107_45.pad'.
+\i (03:32:50) setwindow Form.mini 
+\i (03:32:50) FORM mini pad_name r107_45 
+\t (03:32:50) Using 'R107_45.pad'.
+\i (03:32:50) FORM mini next_pin_number 7 
+\i (03:32:50) rotate 
+\t (03:32:50) Spin the element(s).
+\i (03:32:50) iangle 180 
+\t (03:32:50) last angle:  +180.000 Degrees
+\t (03:32:50) Pin rotated by '180.000' degrees.
+\t (03:32:50) Using 'R107_45.pad'.
+\i (03:32:50) FORM mini pintype_mechanical NO 
+\i (03:32:50) FORM mini offsetx 0 
+\i (03:32:50) FORM mini offsety 0 
+\i (03:32:50) setwindow pcb 
+\i (03:32:50) pick 2.8330 -0.6350 
+\t (03:32:50) last pick:  2.8330  -0.6350
+\t (03:32:50) Using 'R107_45.pad'.
+\i (03:32:50) done 
+\t (03:32:50) Exiting from Add Pin.
+\i (03:32:50) add pin 
+\t (03:32:50) Using 'R107_45.pad'.
+\i (03:32:50) setwindow Form.mini 
+\i (03:32:50) FORM mini pad_name r107_45 
+\t (03:32:50) Using 'R107_45.pad'.
+\i (03:32:50) FORM mini next_pin_number 6 
+\i (03:32:50) rotate 
+\t (03:32:50) Spin the element(s).
+\i (03:32:50) iangle 180 
+\t (03:32:50) last angle:  +180.000 Degrees
+\t (03:32:50) Pin rotated by '180.000' degrees.
+\t (03:32:50) Using 'R107_45.pad'.
+\i (03:32:50) FORM mini pintype_mechanical NO 
+\i (03:32:50) FORM mini offsetx 0 
+\i (03:32:50) FORM mini offsety 0 
+\i (03:32:50) setwindow pcb 
+\i (03:32:50) pick 2.8330 0.6350 
+\t (03:32:50) last pick:  2.8330  0.6350
+\t (03:32:50) Using 'R107_45.pad'.
+\i (03:32:50) done 
+\t (03:32:50) Exiting from Add Pin.
+\i (03:32:50) add pin 
+\t (03:32:50) Using 'R107_45.pad'.
+\i (03:32:50) setwindow Form.mini 
+\i (03:32:50) FORM mini pad_name r107_45 
+\t (03:32:50) Using 'R107_45.pad'.
+\i (03:32:50) FORM mini next_pin_number 5 
+\i (03:32:50) rotate 
+\t (03:32:50) Spin the element(s).
+\i (03:32:50) iangle 180 
+\t (03:32:50) last angle:  +180.000 Degrees
+\t (03:32:50) Pin rotated by '180.000' degrees.
+\t (03:32:50) Using 'R107_45.pad'.
+\i (03:32:50) FORM mini pintype_mechanical NO 
+\i (03:32:50) FORM mini offsetx 0 
+\i (03:32:50) FORM mini offsety 0 
+\i (03:32:50) setwindow pcb 
+\i (03:32:50) pick 2.8330 1.9050 
+\t (03:32:50) last pick:  2.8330  1.9050
+\t (03:32:50) Using 'R107_45.pad'.
+\i (03:32:50) done 
+\t (03:32:50) Exiting from Add Pin.
+\i (03:32:50) add pin 
+\t (03:32:50) Using 'R107_45.pad'.
+\i (03:32:50) setwindow Form.mini 
+\i (03:32:50) FORM mini pad_name thermal320X510 
+\t (03:32:50) Using 'THERMAL320X510.pad'.
+\i (03:32:50) FORM mini next_pin_number 9 
+\i (03:32:50) rotate 
+\t (03:32:50) Spin the element(s).
+\i (03:32:50) iangle 0 
+\t (03:32:50) last angle:  +0.000 Degrees
+\t (03:32:50) Pin rotated by '0.000' degrees.
+\t (03:32:50) Using 'THERMAL320X510.pad'.
+\i (03:32:50) FORM mini pintype_mechanical YES 
+\i (03:32:50) FORM mini offsetx 0 
+\e (03:32:50) Field is currently invisible or disabled.
+\i (03:32:50) FORM mini offsety 0 
+\e (03:32:50) Field is currently invisible or disabled.
+\i (03:32:50) setwindow pcb 
+\i (03:32:50) pick 0.0000 0.0000 
+\t (03:32:50) last pick:  0.0000  0.0000
+\t (03:32:50) Using 'THERMAL320X510.pad'.
+\i (03:32:50) done 
+\t (03:32:50) Exiting from Add Pin.
+\i (03:32:50) add line 
+\i (03:32:51) setwindow Form.mini 
+\i (03:32:51) FORM mini class PACKAGE GEOMETRY 
+\i (03:32:51) FORM mini subclass DISPLAY_TOP 
+\i (03:32:51) setwindow pcb 
+\i (03:32:51) pick -3.6200 -2.7500 
+\t (03:32:51) last pick:  -3.6200  -2.7500
+\i (03:32:51) pick -3.6200 2.7500 
+\t (03:32:51) last pick:  -3.6200  2.7500
+\i (03:32:51) pick 3.6200 2.7500 
+\t (03:32:51) last pick:  3.6200  2.7500
+\i (03:32:51) pick 3.6200 -2.7500 
+\t (03:32:51) last pick:  3.6200  -2.7500
+\i (03:32:51) pick -3.6200 -2.7500 
+\t (03:32:51) last pick:  -3.6200  -2.7500
+\i (03:32:51) done 
+\i (03:32:51) shape add 
+\i (03:32:51) setwindow Form.mini 
+\i (03:32:51) FORM mini class PACKAGE GEOMETRY 
+\i (03:32:51) FORM mini subclass PLACE_BOUND_TOP 
+\i (03:32:51) FORM mini dyns_fill_type Static solid 
+\i (03:32:51) FORM mini dyns_grid None 
+\i (03:32:51) FORM mini dyns_lock_mode Line 
+\i (03:32:51) setwindow pcb 
+\i (03:32:51) pick -3.6200 -2.7500 
+\t (03:32:51) last pick:  -3.6200  -2.7500
+\i (03:32:51) pick -3.6200 2.7500 
+\t (03:32:51) last pick:  -3.6200  2.7500
+\i (03:32:51) pick 3.6200 2.7500 
+\t (03:32:51) last pick:  3.6200  2.7500
+\i (03:32:51) pick 3.6200 -2.7500 
+\t (03:32:51) last pick:  3.6200  -2.7500
+\i (03:32:51) pick -3.6200 -2.7500 
+\t (03:32:51) last pick:  -3.6200  -2.7500
+\i (03:32:51) done 
+\i (03:32:51) setwindow pcb 
+\i (03:32:51) package_height 
+\i (03:32:51) pick grid 0 0 
+\t (03:32:51) last pick:  0.0000  0.0000
+\i (03:32:51) setwindow Form.mini 
+\i (03:32:51) FORM mini height_max 1.5000mm 
+\i (03:32:51) done 
+\e (03:32:51) Form field label not found
+\i (03:32:51) shape add 
+\i (03:32:51) setwindow Form.mini 
+\i (03:32:51) FORM mini class PACKAGE GEOMETRY 
+\i (03:32:51) FORM mini subclass DFA_BOUND_TOP 
+\i (03:32:51) FORM mini dyns_fill_type Static solid 
+\i (03:32:51) FORM mini dyns_grid None 
+\i (03:32:51) FORM mini dyns_lock_mode Line 
+\i (03:32:51) setwindow pcb 
+\i (03:32:51) pick -3.6200 -2.7500 
+\t (03:32:51) last pick:  -3.6200  -2.7500
+\i (03:32:51) pick -3.6200 2.7500 
+\t (03:32:51) last pick:  -3.6200  2.7500
+\i (03:32:51) pick 3.6200 2.7500 
+\t (03:32:51) last pick:  3.6200  2.7500
+\i (03:32:51) pick 3.6200 -2.7500 
+\t (03:32:51) last pick:  3.6200  -2.7500
+\i (03:32:51) pick -3.6200 -2.7500 
+\t (03:32:51) last pick:  -3.6200  -2.7500
+\i (03:32:51) done 
+\i (03:32:51) shape add 
+\i (03:32:51) setwindow Form.mini 
+\i (03:32:51) FORM mini class MANUFACTURING 
+\i (03:32:51) FORM mini subclass NO_PROBE_TOP 
+\i (03:32:51) FORM mini dyns_fill_type Static solid 
+\i (03:32:51) FORM mini dyns_grid None 
+\i (03:32:51) FORM mini dyns_lock_mode Line 
+\i (03:32:51) setwindow pcb 
+\i (03:32:51) pick -3.6200 -2.7500 
+\t (03:32:51) last pick:  -3.6200  -2.7500
+\i (03:32:51) pick -3.6200 2.7500 
+\t (03:32:51) last pick:  -3.6200  2.7500
+\i (03:32:51) pick 3.6200 2.7500 
+\t (03:32:51) last pick:  3.6200  2.7500
+\i (03:32:51) pick 3.6200 -2.7500 
+\t (03:32:51) last pick:  3.6200  -2.7500
+\i (03:32:51) pick -3.6200 -2.7500 
+\t (03:32:51) last pick:  -3.6200  -2.7500
+\i (03:32:51) done 
+\i (03:32:51) add line 
+\i (03:32:51) setwindow Form.mini 
+\i (03:32:51) FORM mini class PACKAGE GEOMETRY 
+\i (03:32:51) FORM mini subclass ASSEMBLY_TOP 
+\i (03:32:51) FORM mini line_width 0.1000 
+\i (03:32:51) setwindow pcb 
+\i (03:32:51) pick 3.0000 2.5000 
+\t (03:32:51) last pick:  3.0000  2.5000
+\i (03:32:51) pick 3.0000 -2.5000 
+\t (03:32:51) last pick:  3.0000  -2.5000
+\i (03:32:51) pick -3.0000 -2.5000 
+\t (03:32:51) last pick:  -3.0000  -2.5000
+\i (03:32:52) pick -3.0000 2.5000 
+\t (03:32:52) last pick:  -3.0000  2.5000
+\i (03:32:52) pick 3.0000 2.5000 
+\t (03:32:52) last pick:  3.0000  2.5000
+\i (03:32:52) done 
+\i (03:32:52) add line 
+\i (03:32:52) setwindow Form.mini 
+\i (03:32:52) FORM mini class PACKAGE GEOMETRY 
+\i (03:32:52) FORM mini subclass ASSEMBLY_TOP 
+\i (03:32:52) FORM mini line_width 0.1000 
+\i (03:32:52) setwindow pcb 
+\i (03:32:52) pick -3.0000 2.4000 
+\t (03:32:52) last pick:  -3.0000  2.4000
+\i (03:32:52) pick -2.9000 2.5000 
+\t (03:32:52) last pick:  -2.9000  2.5000
+\i (03:32:52) done 
+\i (03:32:52) add line 
+\i (03:32:52) setwindow Form.mini 
+\i (03:32:52) FORM mini class PACKAGE GEOMETRY 
+\i (03:32:52) FORM mini subclass ASSEMBLY_TOP 
+\i (03:32:52) FORM mini line_width 0.1000 
+\i (03:32:52) setwindow pcb 
+\i (03:32:52) pick -3.0000 2.3000 
+\t (03:32:52) last pick:  -3.0000  2.3000
+\i (03:32:52) pick -2.8000 2.5000 
+\t (03:32:52) last pick:  -2.8000  2.5000
+\i (03:32:52) done 
+\i (03:32:52) add line 
+\i (03:32:52) setwindow Form.mini 
+\i (03:32:52) FORM mini class PACKAGE GEOMETRY 
+\i (03:32:52) FORM mini subclass ASSEMBLY_TOP 
+\i (03:32:52) FORM mini line_width 0.1000 
+\i (03:32:52) setwindow pcb 
+\i (03:32:52) pick -3.0000 2.2000 
+\t (03:32:52) last pick:  -3.0000  2.2000
+\i (03:32:52) pick -2.7000 2.5000 
+\t (03:32:52) last pick:  -2.7000  2.5000
+\i (03:32:52) done 
+\i (03:32:52) add line 
+\i (03:32:52) setwindow Form.mini 
+\i (03:32:52) FORM mini class PACKAGE GEOMETRY 
+\i (03:32:52) FORM mini subclass ASSEMBLY_TOP 
+\i (03:32:52) FORM mini line_width 0.1000 
+\i (03:32:52) setwindow pcb 
+\i (03:32:52) pick -3.0000 2.1000 
+\t (03:32:52) last pick:  -3.0000  2.1000
+\i (03:32:52) pick -2.6000 2.5000 
+\t (03:32:52) last pick:  -2.6000  2.5000
+\i (03:32:52) done 
+\i (03:32:52) add line 
+\i (03:32:52) setwindow Form.mini 
+\i (03:32:52) FORM mini class PACKAGE GEOMETRY 
+\i (03:32:52) FORM mini subclass SILKSCREEN_TOP 
+\i (03:32:52) FORM mini line_width 0.2000 
+\i (03:32:52) setwindow pcb 
+\i (03:32:52) pick -2.9800 -2.5000 
+\t (03:32:52) last pick:  -2.9800  -2.5000
+\i (03:32:52) pick -3.0000 -2.5000 
+\t (03:32:52) last pick:  -3.0000  -2.5000
+\i (03:32:52) pick -3.0000 -2.4800 
+\t (03:32:52) last pick:  -3.0000  -2.4800
+\i (03:32:52) done 
+\i (03:32:52) add line 
+\i (03:32:52) setwindow Form.mini 
+\i (03:32:52) FORM mini class PACKAGE GEOMETRY 
+\i (03:32:52) FORM mini subclass SILKSCREEN_TOP 
+\i (03:32:52) FORM mini line_width 0.2000 
+\i (03:32:52) setwindow pcb 
+\i (03:32:52) pick -3.0000 2.4800 
+\t (03:32:52) last pick:  -3.0000  2.4800
+\i (03:32:52) pick -3.0000 2.4830 
+\t (03:32:52) last pick:  -3.0000  2.4830
+\i (03:32:52) pick -2.9830 2.5000 
+\t (03:32:52) last pick:  -2.9830  2.5000
+\i (03:32:52) pick -2.9800 2.5000 
+\t (03:32:52) last pick:  -2.9800  2.5000
+\i (03:32:52) done 
+\i (03:32:53) add line 
+\i (03:32:53) setwindow Form.mini 
+\i (03:32:53) FORM mini class PACKAGE GEOMETRY 
+\i (03:32:53) FORM mini subclass SILKSCREEN_TOP 
+\i (03:32:53) FORM mini line_width 0.2000 
+\i (03:32:53) setwindow pcb 
+\i (03:32:53) pick 2.9800 2.5000 
+\t (03:32:53) last pick:  2.9800  2.5000
+\i (03:32:53) pick 3.0000 2.5000 
+\t (03:32:53) last pick:  3.0000  2.5000
+\i (03:32:53) pick 3.0000 2.4800 
+\t (03:32:53) last pick:  3.0000  2.4800
+\i (03:32:53) done 
+\i (03:32:53) add line 
+\i (03:32:53) setwindow Form.mini 
+\i (03:32:53) FORM mini class PACKAGE GEOMETRY 
+\i (03:32:53) FORM mini subclass SILKSCREEN_TOP 
+\i (03:32:53) FORM mini line_width 0.2000 
+\i (03:32:53) setwindow pcb 
+\i (03:32:53) pick 3.0000 -2.4800 
+\t (03:32:53) last pick:  3.0000  -2.4800
+\i (03:32:53) pick 3.0000 -2.5000 
+\t (03:32:53) last pick:  3.0000  -2.5000
+\i (03:32:53) pick 2.9800 -2.5000 
+\t (03:32:53) last pick:  2.9800  -2.5000
+\i (03:32:53) done 
+\i (03:32:53) add circle 
+\t (03:32:53) Pick center point of the circle.
+\t (03:32:53) Pick center point of the circle.
+\i (03:32:53) setwindow Form.mini 
+\i (03:32:53) FORM mini class PACKAGE GEOMETRY 
+\i (03:32:53) FORM mini subclass SILKSCREEN_TOP 
+\i (03:32:53) FORM mini line_width 0.0000 
+\i (03:32:53) setwindow pcb 
+\i (03:32:53) pick -3.9200 1.9050 
+\t (03:32:53) last pick:  -3.9200  1.9050
+\t (03:32:53) Pick a perimeter point on the circle.
+\i (03:32:53) pick -3.7200 1.9050 
+\t (03:32:53) last pick:  -3.7200  1.9050
+\t (03:32:53) Pick center point of the circle.
+\i (03:32:53) done 
+\i (03:32:53) Label refdes 
+\t (03:32:53) Pick text location.
+\i (03:32:53) setwindow Form.mini 
+\i (03:32:53) FORM mini text_block 3 
+\i (03:32:53) FORM mini angle 0 
+\i (03:32:53) FORM mini mirror NO 
+\i (03:32:53) FORM mini text_justification Center 
+\i (03:32:53) FORM mini class REF DES 
+\i (03:32:53) FORM mini subclass ASSEMBLY_TOP 
+\i (03:32:53) setwindow pcb 
+\i (03:32:53) pick 0.0000 -0.6750 
+\t (03:32:53) last pick:  0.0000  -0.6750
+\t (03:32:53) Enter text string.
+\i (03:32:53) Text Ref 
+\i (03:32:53) done 
+\i (03:32:53) setwindow pcb 
+\i (03:32:53) Label refdes 
+\t (03:32:53) Pick text location.
+\i (03:32:53) setwindow Form.mini 
+\i (03:32:53) FORM mini text_block 3 
+\i (03:32:53) FORM mini angle 0 
+\i (03:32:53) FORM mini mirror NO 
+\i (03:32:53) FORM mini text_justification Center 
+\i (03:32:53) FORM mini class REF DES 
+\i (03:32:53) FORM mini subclass SILKSCREEN_TOP 
+\i (03:32:53) setwindow pcb 
+\i (03:32:53) pick 0.0000 2.3250 
+\t (03:32:53) last pick:  0.0000  2.3250
+\t (03:32:53) Enter text string.
+\i (03:32:53) Text Ref 
+\i (03:32:53) done 
+\i (03:32:53) setwindow pcb 
+\i (03:32:53) Label device 
+\t (03:32:53) Pick text location.
+\i (03:32:53) setwindow Form.mini 
+\i (03:32:53) FORM mini text_block 3 
+\i (03:32:53) FORM mini angle 0 
+\i (03:32:53) FORM mini mirror NO 
+\i (03:32:53) FORM mini text_justification Center 
+\i (03:32:53) FORM mini class DEVICE TYPE 
+\i (03:32:53) FORM mini subclass SILKSCREEN_TOP 
+\i (03:32:53) setwindow pcb 
+\i (03:32:53) pick 0.0000 2.3250 
+\t (03:32:53) last pick:  0.0000  2.3250
+\t (03:32:53) Enter text string.
+\i (03:32:53) Text Dev 
+\t (03:32:53) Enter text string.
+\i (03:32:53) done 
+\i (03:32:53) setwindow pcb 
+\i (03:32:53) generaledit 
+\i (03:32:53) zoom fit 
+\i (03:32:53) trapsize 241
+\i (03:32:53) save_as 
+\i (03:32:53) fillin QFN127P600X500X150-9N 
+\t (03:32:54) Symbol 'qfn127p600x500x150-9n.psm' created.
+\i (03:32:54) setwindow pcb
+\i (03:32:54) trapsize 241
+\i (03:32:54) generaledit 
+\i (03:32:58) pick grid -3.6760 3.0786
+\t (03:32:58) last pick:  -2.5400  2.5400
+\i (03:33:00) save 
+\i (03:33:02) fillin yes 
+\t (03:33:02) Symbol 'qfn127p600x500x150-9n.psm' created.
+\i (03:33:02) generaledit 
+\i (03:34:20) pick grid -2.3733 1.8386
+\t (03:34:20) last pick:  -2.5400  2.5400
+\i (03:34:20) pick grid dbl -2.3733 1.8386
+\t (03:34:20) last pick:  -2.5400  2.5400
+\i (03:34:36) pick grid -2.0066 1.5057
+\t (03:34:36) last pick:  -2.5400  2.5400
+\i (03:34:52) roam y -96 
+\i (03:34:52) roam y -96
+\i (03:34:52) roam y 96 
+\i (03:34:52) roam y 96
+\i (03:34:59) replay 'C:/Users/George/Dropbox/PCBs/Footprint Library/QFN127P600X500X150-9N_Allegro/QFN127P600X500X150-9N.scr.txt' 
+\i (03:34:59) cd 'C:/Users/George/Dropbox/PCBs/Footprint Library/QFN127P600X500X150-9N_Allegro' 
+\i (03:34:59) version 16.5 
+\t (03:34:59) Script version: 16.5
+\i (03:34:59) scriptmode +i +n 
+\i (03:34:59) padeditlib 
+\i (03:34:59) fillin r107_45 
+\i (03:35:00) setwindow form.padedit 
+\i (03:35:00) pse_new 
+\i (03:35:00) fillin r107_45 
+\i (03:35:00) FORM padedit units Millimeter 
+\e (03:35:00) Window is disabled, command may not be allowed: fillin yes
+\i (03:35:00) FORM padedit decimal_places 4 
+\i (03:35:00) FORM padedit inner_layer_opt YES 
+\e (03:35:00) Form field label not found
+\i (03:35:00) FORM padedit single YES 
+\i (03:35:00) setwindow Form.padedit 
+\i (03:35:00) FORM padedit layers 
+\i (03:35:00) FORM padedit grid row begin_layer 
+\e (03:35:00) Row,Column value is not valid for field.
+\i (03:35:00) FORM padedit grid change begin_layer,begin_layer TOP 
+\e (03:35:00) Row,Column value is not valid for field.
+\i (03:35:00) FORM padedit geometry Rectangle 
+\i (03:35:00) FORM padedit width 1.0750 
+\i (03:35:00) FORM padedit height 0.4500 
+\i (03:35:00) FORM padedit grid row SOLDERMASK_TOP 
+\i (03:35:00) FORM padedit geometry Rectangle 
+\i (03:35:00) FORM padedit width 1.0750 
+\i (03:35:00) FORM padedit height 0.4500 
+\i (03:35:00) FORM padedit grid row PASTEMASK_TOP 
+\i (03:35:00) FORM padedit geometry Rectangle 
+\i (03:35:00) FORM padedit width 1.0750 
+\i (03:35:00) FORM padedit height 0.4500 
+\i (03:35:00) pse_check 
+\i (03:35:00) pse_save 
+\i (03:35:00) fillin yes 
+\i (03:35:00) pse_exit 
+\i (03:35:00) fillin menu_cancel 
+\i (03:35:00) fillin yes 
+\i (03:35:00) setwindow pcb 
+\i (03:35:00) generaledit 
+\i (03:35:00) padeditlib 
+\i (03:35:00) fillin thermal320X510 
+\i (03:35:01) setwindow form.padedit 
+\i (03:35:01) pse_new 
+\i (03:35:01) fillin thermal320X510 
+\i (03:35:01) FORM padedit units Millimeter 
+\e (03:35:01) Window is disabled, command may not be allowed: fillin yes
+\i (03:35:01) FORM padedit decimal_places 4 
+\i (03:35:01) FORM padedit inner_layer_opt YES 
+\e (03:35:01) Form field label not found
+\i (03:35:01) FORM padedit single YES 
+\i (03:35:01) setwindow Form.padedit 
+\i (03:35:01) FORM padedit layers 
+\i (03:35:01) FORM padedit grid row begin_layer 
+\e (03:35:01) Row,Column value is not valid for field.
+\i (03:35:01) FORM padedit grid change begin_layer,begin_layer TOP 
+\e (03:35:01) Row,Column value is not valid for field.
+\i (03:35:01) FORM padedit geometry Rectangle 
+\i (03:35:01) FORM padedit width 3.2060 
+\i (03:35:01) FORM padedit height 5.1000 
+\i (03:35:01) FORM padedit grid row SOLDERMASK_TOP 
+\i (03:35:01) FORM padedit geometry Rectangle 
+\i (03:35:01) FORM padedit width 3.2060 
+\i (03:35:01) FORM padedit height 5.1000 
+\i (03:35:01) FORM padedit grid row PASTEMASK_TOP 
+\i (03:35:01) FORM padedit geometry Rectangle 
+\i (03:35:01) FORM padedit width 3.2060 
+\i (03:35:01) FORM padedit height 5.1000 
+\i (03:35:01) pse_check 
+\i (03:35:01) pse_save 
+\i (03:35:01) fillin yes 
+\i (03:35:01) pse_exit 
+\i (03:35:01) fillin menu_cancel 
+\i (03:35:01) fillin yes 
+\i (03:35:01) setwindow pcb 
+\i (03:35:01) generaledit 
+\i (03:35:01) setwindow pcb 
+\i (03:35:01) new QFN127P600X500X150-9N.dra 'Package Symbol' 
+\t (03:35:02) Starting new design...
+\i (03:35:02) trapsize 4978
+\i (03:35:02) trapsize 4978
+\i (03:35:02) setwindow Form.vf_vis 
+\i (03:35:02) FORM vf_vis 1 all_colorvisible YES 
+\i (03:35:02) FORM vf_vis 2 all_colorvisible YES 
+\i (03:35:02) setwindow pcb 
+\i (03:35:02) Color 
+\i (03:35:02) setwindow form.cvf_main
+\i (03:35:02) FORM cvf_main class_list Geometry
+\i (03:35:02) setwindow Form.cvf_main 
+\i (03:35:02) FORM cvf_main class_list Components 
+\i (03:35:02) FORM cvf_main all_visible1 YES 
+\i (03:35:02) FORM cvf_main all_visible2 YES 
+\i (03:35:02) FORM cvf_main all_visible3 YES 
+\i (03:35:02) FORM cvf_main class_list Geometry 
+\i (03:35:02) FORM cvf_main all_visible5 YES 
+\i (03:35:02) FORM cvf_main package_geometry/pin_number/visible NO 
+\i (03:35:02) FORM cvf_main class_list Stack-Up 
+\i (03:35:02) FORM cvf_main all_visible1 YES 
+\i (03:35:02) FORM cvf_main ok 
+\i (03:35:02) generaledit 
+\i (03:35:02) prmed 
+\i (03:35:02) setwindow Form.prmedit 
+\i (03:35:02) FORM prmedit design 
+\i (03:35:02) FORM prmedit lock_direction Off 
+\i (03:35:02) FORM prmedit units Millimeter 
+\i (03:35:02) FORM prmedit accuracy 4 
+\i (03:35:02) FORM prmedit size Other 
+\i (03:35:02) FORM prmedit x -65.5800 
+\i (03:35:02) FORM prmedit y -66.0800 
+\i (03:35:02) FORM prmedit width 131.7200 
+\i (03:35:02) FORM prmedit height 131.7200 
+\i (03:35:02) FORM prmedit done 
+\i (03:35:02) setwindow pcb 
+\i (03:35:02) add pin 
+\i (03:35:02) setwindow Form.mini 
+\i (03:35:02) FORM mini pad_name r107_45 
+\t (03:35:02) Using 'R107_45.pad'.
+\i (03:35:02) FORM mini next_pin_number 4 
+\i (03:35:02) rotate 
+\t (03:35:02) Spin the element(s).
+\i (03:35:02) iangle 0 
+\t (03:35:02) last angle:  +0.000 Degrees
+\t (03:35:02) Pin rotated by '0.000' degrees.
+\t (03:35:02) Using 'R107_45.pad'.
+\i (03:35:02) FORM mini pintype_mechanical NO 
+\i (03:35:02) FORM mini offsetx 0 
+\i (03:35:02) FORM mini offsety 0 
+\i (03:35:02) setwindow pcb 
+\i (03:35:02) pick -2.8330 1.9050 
+\t (03:35:02) last pick:  -2.8330  1.9050
+\t (03:35:02) Using 'R107_45.pad'.
+\i (03:35:02) done 
+\t (03:35:02) Exiting from Add Pin.
+\i (03:35:02) add pin 
+\t (03:35:02) Using 'R107_45.pad'.
+\i (03:35:02) setwindow Form.mini 
+\i (03:35:03) FORM mini pad_name r107_45 
+\t (03:35:03) Using 'R107_45.pad'.
+\i (03:35:03) FORM mini next_pin_number 3 
+\i (03:35:03) rotate 
+\t (03:35:03) Spin the element(s).
+\i (03:35:03) iangle 0 
+\t (03:35:03) last angle:  +0.000 Degrees
+\t (03:35:03) Pin rotated by '0.000' degrees.
+\t (03:35:03) Using 'R107_45.pad'.
+\i (03:35:03) FORM mini pintype_mechanical NO 
+\i (03:35:03) FORM mini offsetx 0 
+\i (03:35:03) FORM mini offsety 0 
+\i (03:35:03) setwindow pcb 
+\i (03:35:03) pick -2.8330 0.6350 
+\t (03:35:03) last pick:  -2.8330  0.6350
+\t (03:35:03) Using 'R107_45.pad'.
+\i (03:35:03) done 
+\t (03:35:03) Exiting from Add Pin.
+\i (03:35:03) add pin 
+\t (03:35:03) Using 'R107_45.pad'.
+\i (03:35:03) setwindow Form.mini 
+\i (03:35:03) FORM mini pad_name r107_45 
+\t (03:35:03) Using 'R107_45.pad'.
+\i (03:35:03) FORM mini next_pin_number 2 
+\i (03:35:03) rotate 
+\t (03:35:03) Spin the element(s).
+\i (03:35:03) iangle 0 
+\t (03:35:03) last angle:  +0.000 Degrees
+\t (03:35:03) Pin rotated by '0.000' degrees.
+\t (03:35:03) Using 'R107_45.pad'.
+\i (03:35:03) FORM mini pintype_mechanical NO 
+\i (03:35:03) FORM mini offsetx 0 
+\i (03:35:03) FORM mini offsety 0 
+\i (03:35:03) setwindow pcb 
+\i (03:35:03) pick -2.8330 -0.6350 
+\t (03:35:03) last pick:  -2.8330  -0.6350
+\t (03:35:03) Using 'R107_45.pad'.
+\i (03:35:03) done 
+\t (03:35:03) Exiting from Add Pin.
+\i (03:35:03) add pin 
+\t (03:35:03) Using 'R107_45.pad'.
+\i (03:35:03) setwindow Form.mini 
+\i (03:35:03) FORM mini pad_name r107_45 
+\t (03:35:03) Using 'R107_45.pad'.
+\i (03:35:03) FORM mini next_pin_number 1 
+\i (03:35:03) rotate 
+\t (03:35:03) Spin the element(s).
+\i (03:35:03) iangle 0 
+\t (03:35:03) last angle:  +0.000 Degrees
+\t (03:35:03) Pin rotated by '0.000' degrees.
+\t (03:35:03) Using 'R107_45.pad'.
+\i (03:35:03) FORM mini pintype_mechanical NO 
+\i (03:35:03) FORM mini offsetx 0 
+\i (03:35:03) FORM mini offsety 0 
+\i (03:35:03) setwindow pcb 
+\i (03:35:03) pick -2.8330 -1.9050 
+\t (03:35:03) last pick:  -2.8330  -1.9050
+\t (03:35:03) Using 'R107_45.pad'.
+\i (03:35:03) done 
+\t (03:35:03) Exiting from Add Pin.
+\i (03:35:03) add pin 
+\t (03:35:03) Using 'R107_45.pad'.
+\i (03:35:03) setwindow Form.mini 
+\i (03:35:03) FORM mini pad_name r107_45 
+\t (03:35:03) Using 'R107_45.pad'.
+\i (03:35:03) FORM mini next_pin_number 8 
+\i (03:35:03) rotate 
+\t (03:35:03) Spin the element(s).
+\i (03:35:03) iangle 180 
+\t (03:35:03) last angle:  +180.000 Degrees
+\t (03:35:03) Pin rotated by '180.000' degrees.
+\t (03:35:03) Using 'R107_45.pad'.
+\i (03:35:03) FORM mini pintype_mechanical NO 
+\i (03:35:03) FORM mini offsetx 0 
+\i (03:35:03) FORM mini offsety 0 
+\i (03:35:03) setwindow pcb 
+\i (03:35:03) pick 2.8330 -1.9050 
+\t (03:35:03) last pick:  2.8330  -1.9050
+\t (03:35:03) Using 'R107_45.pad'.
+\i (03:35:03) done 
+\t (03:35:03) Exiting from Add Pin.
+\i (03:35:03) add pin 
+\t (03:35:03) Using 'R107_45.pad'.
+\i (03:35:03) setwindow Form.mini 
+\i (03:35:03) FORM mini pad_name r107_45 
+\t (03:35:03) Using 'R107_45.pad'.
+\i (03:35:03) FORM mini next_pin_number 7 
+\i (03:35:03) rotate 
+\t (03:35:03) Spin the element(s).
+\i (03:35:03) iangle 180 
+\t (03:35:03) last angle:  +180.000 Degrees
+\t (03:35:03) Pin rotated by '180.000' degrees.
+\t (03:35:03) Using 'R107_45.pad'.
+\i (03:35:03) FORM mini pintype_mechanical NO 
+\i (03:35:03) FORM mini offsetx 0 
+\i (03:35:03) FORM mini offsety 0 
+\i (03:35:03) setwindow pcb 
+\i (03:35:03) pick 2.8330 -0.6350 
+\t (03:35:03) last pick:  2.8330  -0.6350
+\t (03:35:03) Using 'R107_45.pad'.
+\i (03:35:03) done 
+\t (03:35:03) Exiting from Add Pin.
+\i (03:35:03) add pin 
+\t (03:35:03) Using 'R107_45.pad'.
+\i (03:35:03) setwindow Form.mini 
+\i (03:35:03) FORM mini pad_name r107_45 
+\t (03:35:03) Using 'R107_45.pad'.
+\i (03:35:03) FORM mini next_pin_number 6 
+\i (03:35:03) rotate 
+\t (03:35:03) Spin the element(s).
+\i (03:35:03) iangle 180 
+\t (03:35:03) last angle:  +180.000 Degrees
+\t (03:35:03) Pin rotated by '180.000' degrees.
+\t (03:35:03) Using 'R107_45.pad'.
+\i (03:35:03) FORM mini pintype_mechanical NO 
+\i (03:35:03) FORM mini offsetx 0 
+\i (03:35:03) FORM mini offsety 0 
+\i (03:35:03) setwindow pcb 
+\i (03:35:03) pick 2.8330 0.6350 
+\t (03:35:03) last pick:  2.8330  0.6350
+\t (03:35:03) Using 'R107_45.pad'.
+\i (03:35:03) done 
+\t (03:35:03) Exiting from Add Pin.
+\i (03:35:03) add pin 
+\t (03:35:03) Using 'R107_45.pad'.
+\i (03:35:03) setwindow Form.mini 
+\i (03:35:03) FORM mini pad_name r107_45 
+\t (03:35:03) Using 'R107_45.pad'.
+\i (03:35:03) FORM mini next_pin_number 5 
+\i (03:35:03) rotate 
+\t (03:35:03) Spin the element(s).
+\i (03:35:03) iangle 180 
+\t (03:35:03) last angle:  +180.000 Degrees
+\t (03:35:03) Pin rotated by '180.000' degrees.
+\t (03:35:03) Using 'R107_45.pad'.
+\i (03:35:03) FORM mini pintype_mechanical NO 
+\i (03:35:03) FORM mini offsetx 0 
+\i (03:35:03) FORM mini offsety 0 
+\i (03:35:03) setwindow pcb 
+\i (03:35:03) pick 2.8330 1.9050 
+\t (03:35:03) last pick:  2.8330  1.9050
+\t (03:35:03) Using 'R107_45.pad'.
+\i (03:35:03) done 
+\t (03:35:03) Exiting from Add Pin.
+\i (03:35:04) add pin 
+\t (03:35:04) Using 'R107_45.pad'.
+\i (03:35:04) setwindow Form.mini 
+\i (03:35:04) FORM mini pad_name thermal320X510 
+\t (03:35:04) Using 'THERMAL320X510.pad'.
+\i (03:35:04) FORM mini next_pin_number 9 
+\i (03:35:04) rotate 
+\t (03:35:04) Spin the element(s).
+\i (03:35:04) iangle 0 
+\t (03:35:04) last angle:  +0.000 Degrees
+\t (03:35:04) Pin rotated by '0.000' degrees.
+\t (03:35:04) Using 'THERMAL320X510.pad'.
+\i (03:35:04) FORM mini pintype_mechanical NO 
+\i (03:35:04) FORM mini offsetx 0 
+\i (03:35:04) FORM mini offsety 0 
+\i (03:35:04) setwindow pcb 
+\i (03:35:04) pick 0.0000 0.0000 
+\t (03:35:04) last pick:  0.0000  0.0000
+\t (03:35:04) Using 'THERMAL320X510.pad'.
+\i (03:35:04) done 
+\t (03:35:04) Exiting from Add Pin.
+\i (03:35:04) add line 
+\i (03:35:04) setwindow Form.mini 
+\i (03:35:04) FORM mini class PACKAGE GEOMETRY 
+\i (03:35:04) FORM mini subclass DISPLAY_TOP 
+\i (03:35:04) setwindow pcb 
+\i (03:35:04) pick -3.6200 -2.7500 
+\t (03:35:04) last pick:  -3.6200  -2.7500
+\i (03:35:04) pick -3.6200 2.7500 
+\t (03:35:04) last pick:  -3.6200  2.7500
+\i (03:35:04) pick 3.6200 2.7500 
+\t (03:35:04) last pick:  3.6200  2.7500
+\i (03:35:04) pick 3.6200 -2.7500 
+\t (03:35:04) last pick:  3.6200  -2.7500
+\i (03:35:04) pick -3.6200 -2.7500 
+\t (03:35:04) last pick:  -3.6200  -2.7500
+\i (03:35:04) done 
+\i (03:35:04) shape add 
+\i (03:35:04) setwindow Form.mini 
+\i (03:35:04) FORM mini class PACKAGE GEOMETRY 
+\i (03:35:04) FORM mini subclass PLACE_BOUND_TOP 
+\i (03:35:04) FORM mini dyns_fill_type Static solid 
+\i (03:35:04) FORM mini dyns_grid None 
+\i (03:35:04) FORM mini dyns_lock_mode Line 
+\i (03:35:04) setwindow pcb 
+\i (03:35:04) pick -3.6200 -2.7500 
+\t (03:35:04) last pick:  -3.6200  -2.7500
+\i (03:35:04) pick -3.6200 2.7500 
+\t (03:35:04) last pick:  -3.6200  2.7500
+\i (03:35:04) pick 3.6200 2.7500 
+\t (03:35:04) last pick:  3.6200  2.7500
+\i (03:35:04) pick 3.6200 -2.7500 
+\t (03:35:04) last pick:  3.6200  -2.7500
+\i (03:35:04) pick -3.6200 -2.7500 
+\t (03:35:04) last pick:  -3.6200  -2.7500
+\i (03:35:04) done 
+\i (03:35:04) setwindow pcb 
+\i (03:35:04) package_height 
+\i (03:35:04) pick grid 0 0 
+\t (03:35:04) last pick:  0.0000  0.0000
+\i (03:35:04) setwindow Form.mini 
+\i (03:35:04) FORM mini height_max 1.5000mm 
+\i (03:35:04) done 
+\e (03:35:04) Form field label not found
+\i (03:35:04) shape add 
+\i (03:35:04) setwindow Form.mini 
+\i (03:35:04) FORM mini class PACKAGE GEOMETRY 
+\i (03:35:04) FORM mini subclass DFA_BOUND_TOP 
+\i (03:35:04) FORM mini dyns_fill_type Static solid 
+\i (03:35:04) FORM mini dyns_grid None 
+\i (03:35:04) FORM mini dyns_lock_mode Line 
+\i (03:35:04) setwindow pcb 
+\i (03:35:04) pick -3.6200 -2.7500 
+\t (03:35:04) last pick:  -3.6200  -2.7500
+\i (03:35:04) pick -3.6200 2.7500 
+\t (03:35:04) last pick:  -3.6200  2.7500
+\i (03:35:04) pick 3.6200 2.7500 
+\t (03:35:04) last pick:  3.6200  2.7500
+\i (03:35:04) pick 3.6200 -2.7500 
+\t (03:35:04) last pick:  3.6200  -2.7500
+\i (03:35:04) pick -3.6200 -2.7500 
+\t (03:35:04) last pick:  -3.6200  -2.7500
+\i (03:35:04) done 
+\i (03:35:04) shape add 
+\i (03:35:04) setwindow Form.mini 
+\i (03:35:04) FORM mini class MANUFACTURING 
+\i (03:35:04) FORM mini subclass NO_PROBE_TOP 
+\i (03:35:04) FORM mini dyns_fill_type Static solid 
+\i (03:35:04) FORM mini dyns_grid None 
+\i (03:35:04) FORM mini dyns_lock_mode Line 
+\i (03:35:04) setwindow pcb 
+\i (03:35:04) pick -3.6200 -2.7500 
+\t (03:35:04) last pick:  -3.6200  -2.7500
+\i (03:35:04) pick -3.6200 2.7500 
+\t (03:35:04) last pick:  -3.6200  2.7500
+\i (03:35:04) pick 3.6200 2.7500 
+\t (03:35:04) last pick:  3.6200  2.7500
+\i (03:35:04) pick 3.6200 -2.7500 
+\t (03:35:04) last pick:  3.6200  -2.7500
+\i (03:35:05) pick -3.6200 -2.7500 
+\t (03:35:05) last pick:  -3.6200  -2.7500
+\i (03:35:05) done 
+\i (03:35:05) add line 
+\i (03:35:05) setwindow Form.mini 
+\i (03:35:05) FORM mini class PACKAGE GEOMETRY 
+\i (03:35:05) FORM mini subclass ASSEMBLY_TOP 
+\i (03:35:05) FORM mini line_width 0.1000 
+\i (03:35:05) setwindow pcb 
+\i (03:35:05) pick 3.0000 2.5000 
+\t (03:35:05) last pick:  3.0000  2.5000
+\i (03:35:05) pick 3.0000 -2.5000 
+\t (03:35:05) last pick:  3.0000  -2.5000
+\i (03:35:05) pick -3.0000 -2.5000 
+\t (03:35:05) last pick:  -3.0000  -2.5000
+\i (03:35:05) pick -3.0000 2.5000 
+\t (03:35:05) last pick:  -3.0000  2.5000
+\i (03:35:05) pick 3.0000 2.5000 
+\t (03:35:05) last pick:  3.0000  2.5000
+\i (03:35:05) done 
+\i (03:35:05) add line 
+\i (03:35:05) setwindow Form.mini 
+\i (03:35:05) FORM mini class PACKAGE GEOMETRY 
+\i (03:35:05) FORM mini subclass ASSEMBLY_TOP 
+\i (03:35:05) FORM mini line_width 0.1000 
+\i (03:35:05) setwindow pcb 
+\i (03:35:05) pick -3.0000 2.4000 
+\t (03:35:05) last pick:  -3.0000  2.4000
+\i (03:35:05) pick -2.9000 2.5000 
+\t (03:35:05) last pick:  -2.9000  2.5000
+\i (03:35:05) done 
+\i (03:35:05) add line 
+\i (03:35:05) setwindow Form.mini 
+\i (03:35:05) FORM mini class PACKAGE GEOMETRY 
+\i (03:35:05) FORM mini subclass ASSEMBLY_TOP 
+\i (03:35:05) FORM mini line_width 0.1000 
+\i (03:35:05) setwindow pcb 
+\i (03:35:05) pick -3.0000 2.3000 
+\t (03:35:05) last pick:  -3.0000  2.3000
+\i (03:35:05) pick -2.8000 2.5000 
+\t (03:35:05) last pick:  -2.8000  2.5000
+\i (03:35:05) done 
+\i (03:35:05) add line 
+\i (03:35:05) setwindow Form.mini 
+\i (03:35:05) FORM mini class PACKAGE GEOMETRY 
+\i (03:35:05) FORM mini subclass ASSEMBLY_TOP 
+\i (03:35:05) FORM mini line_width 0.1000 
+\i (03:35:05) setwindow pcb 
+\i (03:35:05) pick -3.0000 2.2000 
+\t (03:35:05) last pick:  -3.0000  2.2000
+\i (03:35:05) pick -2.7000 2.5000 
+\t (03:35:05) last pick:  -2.7000  2.5000
+\i (03:35:05) done 
+\i (03:35:05) add line 
+\i (03:35:05) setwindow Form.mini 
+\i (03:35:05) FORM mini class PACKAGE GEOMETRY 
+\i (03:35:05) FORM mini subclass ASSEMBLY_TOP 
+\i (03:35:05) FORM mini line_width 0.1000 
+\i (03:35:05) setwindow pcb 
+\i (03:35:05) pick -3.0000 2.1000 
+\t (03:35:05) last pick:  -3.0000  2.1000
+\i (03:35:05) pick -2.6000 2.5000 
+\t (03:35:05) last pick:  -2.6000  2.5000
+\i (03:35:05) done 
+\i (03:35:05) add line 
+\i (03:35:05) setwindow Form.mini 
+\i (03:35:05) FORM mini class PACKAGE GEOMETRY 
+\i (03:35:05) FORM mini subclass SILKSCREEN_TOP 
+\i (03:35:05) FORM mini line_width 0.2000 
+\i (03:35:05) setwindow pcb 
+\i (03:35:05) pick -2.9800 -2.5000 
+\t (03:35:05) last pick:  -2.9800  -2.5000
+\i (03:35:05) pick -3.0000 -2.5000 
+\t (03:35:05) last pick:  -3.0000  -2.5000
+\i (03:35:05) pick -3.0000 -2.4800 
+\t (03:35:05) last pick:  -3.0000  -2.4800
+\i (03:35:05) done 
+\i (03:35:05) add line 
+\i (03:35:05) setwindow Form.mini 
+\i (03:35:05) FORM mini class PACKAGE GEOMETRY 
+\i (03:35:05) FORM mini subclass SILKSCREEN_TOP 
+\i (03:35:05) FORM mini line_width 0.2000 
+\i (03:35:05) setwindow pcb 
+\i (03:35:05) pick -3.0000 2.4800 
+\t (03:35:05) last pick:  -3.0000  2.4800
+\i (03:35:05) pick -3.0000 2.4830 
+\t (03:35:05) last pick:  -3.0000  2.4830
+\i (03:35:05) pick -2.9830 2.5000 
+\t (03:35:05) last pick:  -2.9830  2.5000
+\i (03:35:05) pick -2.9800 2.5000 
+\t (03:35:05) last pick:  -2.9800  2.5000
+\i (03:35:05) done 
+\i (03:35:06) add line 
+\i (03:35:06) setwindow Form.mini 
+\i (03:35:06) FORM mini class PACKAGE GEOMETRY 
+\i (03:35:06) FORM mini subclass SILKSCREEN_TOP 
+\i (03:35:06) FORM mini line_width 0.2000 
+\i (03:35:06) setwindow pcb 
+\i (03:35:06) pick 2.9800 2.5000 
+\t (03:35:06) last pick:  2.9800  2.5000
+\i (03:35:06) pick 3.0000 2.5000 
+\t (03:35:06) last pick:  3.0000  2.5000
+\i (03:35:06) pick 3.0000 2.4800 
+\t (03:35:06) last pick:  3.0000  2.4800
+\i (03:35:06) done 
+\i (03:35:06) add line 
+\i (03:35:06) setwindow Form.mini 
+\i (03:35:06) FORM mini class PACKAGE GEOMETRY 
+\i (03:35:06) FORM mini subclass SILKSCREEN_TOP 
+\i (03:35:06) FORM mini line_width 0.2000 
+\i (03:35:06) setwindow pcb 
+\i (03:35:06) pick 3.0000 -2.4800 
+\t (03:35:06) last pick:  3.0000  -2.4800
+\i (03:35:06) pick 3.0000 -2.5000 
+\t (03:35:06) last pick:  3.0000  -2.5000
+\i (03:35:06) pick 2.9800 -2.5000 
+\t (03:35:06) last pick:  2.9800  -2.5000
+\i (03:35:06) done 
+\i (03:35:06) add circle 
+\t (03:35:06) Pick center point of the circle.
+\t (03:35:06) Pick center point of the circle.
+\i (03:35:06) setwindow Form.mini 
+\i (03:35:06) FORM mini class PACKAGE GEOMETRY 
+\i (03:35:06) FORM mini subclass SILKSCREEN_TOP 
+\i (03:35:06) FORM mini line_width 0.0000 
+\i (03:35:06) setwindow pcb 
+\i (03:35:06) pick -3.9200 1.9050 
+\t (03:35:06) last pick:  -3.9200  1.9050
+\t (03:35:06) Pick a perimeter point on the circle.
+\i (03:35:06) pick -3.7200 1.9050 
+\t (03:35:06) last pick:  -3.7200  1.9050
+\t (03:35:06) Pick center point of the circle.
+\i (03:35:06) done 
+\i (03:35:06) Label refdes 
+\t (03:35:06) Pick text location.
+\i (03:35:06) setwindow Form.mini 
+\i (03:35:06) FORM mini text_block 3 
+\i (03:35:06) FORM mini angle 0 
+\i (03:35:06) FORM mini mirror NO 
+\i (03:35:06) FORM mini text_justification Center 
+\i (03:35:06) FORM mini class REF DES 
+\i (03:35:06) FORM mini subclass ASSEMBLY_TOP 
+\i (03:35:06) setwindow pcb 
+\i (03:35:06) pick 0.0000 -0.6750 
+\t (03:35:06) last pick:  0.0000  -0.6750
+\t (03:35:06) Enter text string.
+\i (03:35:06) Text Ref 
+\i (03:35:06) done 
+\i (03:35:06) setwindow pcb 
+\i (03:35:06) Label refdes 
+\t (03:35:06) Pick text location.
+\i (03:35:06) setwindow Form.mini 
+\i (03:35:06) FORM mini text_block 3 
+\i (03:35:06) FORM mini angle 0 
+\i (03:35:06) FORM mini mirror NO 
+\i (03:35:06) FORM mini text_justification Center 
+\i (03:35:06) FORM mini class REF DES 
+\i (03:35:06) FORM mini subclass SILKSCREEN_TOP 
+\i (03:35:06) setwindow pcb 
+\i (03:35:06) pick 0.0000 2.3250 
+\t (03:35:06) last pick:  0.0000  2.3250
+\t (03:35:06) Enter text string.
+\i (03:35:06) Text Ref 
+\i (03:35:06) done 
+\i (03:35:06) setwindow pcb 
+\i (03:35:06) Label device 
+\t (03:35:06) Pick text location.
+\i (03:35:06) setwindow Form.mini 
+\i (03:35:06) FORM mini text_block 3 
+\i (03:35:06) FORM mini angle 0 
+\i (03:35:06) FORM mini mirror NO 
+\i (03:35:06) FORM mini text_justification Center 
+\i (03:35:06) FORM mini class DEVICE TYPE 
+\i (03:35:06) FORM mini subclass SILKSCREEN_TOP 
+\i (03:35:06) setwindow pcb 
+\i (03:35:06) pick 0.0000 2.3250 
+\t (03:35:06) last pick:  0.0000  2.3250
+\t (03:35:06) Enter text string.
+\i (03:35:06) Text Dev 
+\t (03:35:06) Enter text string.
+\i (03:35:06) done 
+\i (03:35:06) setwindow pcb 
+\i (03:35:06) generaledit 
+\i (03:35:06) zoom fit 
+\i (03:35:06) trapsize 241
+\i (03:35:06) save_as 
+\i (03:35:06) fillin QFN127P600X500X150-9N 
+\t (03:35:07) Symbol 'qfn127p600x500x150-9n.psm' created.
+\i (03:35:07) setwindow pcb
+\i (03:35:07) trapsize 241
+\i (03:35:07) save 
+\i (03:35:08) fillin yes 
+\t (03:35:08) Symbol 'qfn127p600x500x150-9n.psm' created.
+\i (03:35:08) generaledit 
+\i (03:36:07) new 
+\i (03:36:13) newdrawfillin "asdf.dra" "Package Symbol"
+\t (03:36:13) Starting new design...
+\i (03:36:13) trapsize 4978
+\i (03:36:13) trapsize 4978
+\i (03:36:13) generaledit 
+\i (03:36:55) replay 'C:/Users/George/Dropbox/PCBs/Footprint Library/QFN127P600X500X150-9N_Allegro/QFN127P600X500X150-9N.scr.txt' 
+\e (03:36:55) Cannot open script file; 'C:/Users/George/Dropbox/PCBs/Footprint Library/QFN127P600X500X150-9N_Allegro/QFN127P600X500X150-9N.scr.txt' does not exist.
+\i (03:37:17) roam y -96 
+\i (03:37:23) replay 'C:/Users/George/Dropbox/PCBs/Footprint Library/QFN127P600X500X150-9N_Allegro/QFN127P600X500X150-9N.scr.txt' 
+\i (03:37:23) cd 'C:/Users/George/Dropbox/PCBs/Footprint Library/QFN127P600X500X150-9N_Allegro' 
+\i (03:37:23) version 16.5 
+\t (03:37:23) Script version: 16.5
+\i (03:37:23) scriptmode +i +n 
+\i (03:37:23) padeditlib 
+\i (03:37:23) fillin r107_45 
+\i (03:37:24) setwindow form.padedit 
+\i (03:37:24) pse_new 
+\i (03:37:24) fillin r107_45 
+\i (03:37:24) FORM padedit units Millimeter 
+\i (03:37:24) fillin yes 
+\w (03:37:24) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\i (03:37:24) FORM padedit decimal_places 4 
+\i (03:37:24) FORM padedit inner_layer_opt YES 
+\e (03:37:24) Form field label not found
+\i (03:37:24) FORM padedit single YES 
+\i (03:37:24) setwindow Form.padedit 
+\i (03:37:24) FORM padedit layers 
+\i (03:37:24) FORM padedit grid row begin_layer 
+\i (03:37:24) FORM padedit grid change begin_layer,begin_layer TOP 
+\e (03:37:24) Row,Column value is not valid for field.
+\i (03:37:24) FORM padedit geometry Rectangle 
+\i (03:37:24) FORM padedit width 1.0750 
+\i (03:37:24) FORM padedit height 0.4500 
+\i (03:37:24) FORM padedit grid row SOLDERMASK_TOP 
+\i (03:37:24) FORM padedit geometry Rectangle 
+\i (03:37:24) FORM padedit width 1.0750 
+\i (03:37:24) FORM padedit height 0.4500 
+\i (03:37:24) FORM padedit grid row PASTEMASK_TOP 
+\i (03:37:24) FORM padedit geometry Rectangle 
+\i (03:37:24) FORM padedit width 1.0750 
+\i (03:37:24) FORM padedit height 0.4500 
+\i (03:37:24) pse_check 
+\i (03:37:24) pse_save 
+\e (03:37:24) Window is disabled, command may not be allowed: fillin yes
+\i (03:37:24) pse_exit 
+\i (03:37:24) fillin menu_cancel 
+\i (03:37:24) fillin yes 
+\i (03:37:24) setwindow pcb 
+\i (03:37:24) generaledit 
+\i (03:37:24) padeditlib 
+\i (03:37:24) fillin thermal320X510 
+\i (03:37:25) setwindow form.padedit 
+\i (03:37:25) pse_new 
+\i (03:37:25) fillin thermal320X510 
+\i (03:37:25) FORM padedit units Millimeter 
+\i (03:37:25) fillin yes 
+\w (03:37:25) WARNING(SPMHUT-48): Scaled value has been rounded off.
+\i (03:37:25) FORM padedit decimal_places 4 
+\i (03:37:25) FORM padedit inner_layer_opt YES 
+\e (03:37:25) Form field label not found
+\i (03:37:25) FORM padedit single YES 
+\i (03:37:25) setwindow Form.padedit 
+\i (03:37:25) FORM padedit layers 
+\i (03:37:25) FORM padedit grid row begin_layer 
+\i (03:37:25) FORM padedit grid change begin_layer,begin_layer TOP 
+\e (03:37:25) Row,Column value is not valid for field.
+\i (03:37:25) FORM padedit geometry Rectangle 
+\i (03:37:25) FORM padedit width 3.2060 
+\i (03:37:25) FORM padedit height 5.1000 
+\i (03:37:25) FORM padedit grid row SOLDERMASK_TOP 
+\i (03:37:25) FORM padedit geometry Rectangle 
+\i (03:37:25) FORM padedit width 3.2060 
+\i (03:37:25) FORM padedit height 5.1000 
+\i (03:37:25) FORM padedit grid row PASTEMASK_TOP 
+\i (03:37:25) FORM padedit geometry Rectangle 
+\i (03:37:25) FORM padedit width 3.2060 
+\i (03:37:25) FORM padedit height 5.1000 
+\i (03:37:25) pse_check 
+\i (03:37:25) pse_save 
+\e (03:37:25) Window is disabled, command may not be allowed: fillin yes
+\i (03:37:25) pse_exit 
+\i (03:37:25) fillin menu_cancel 
+\i (03:37:25) fillin yes 
+\i (03:37:25) setwindow pcb 
+\i (03:37:25) generaledit 
+\i (03:37:25) setwindow pcb 
+\i (03:37:25) new QFN127P600X500X150-9N.dra 'Package Symbol' 
+\e (03:37:25) Do you want to save the changes you made to asdf.dra?
+\i (03:37:26) fillin no 
+\t (03:37:26) Starting new design...
+\i (03:37:26) trapsize 4978
+\i (03:37:27) trapsize 4978
+\i (03:37:27) setwindow Form.vf_vis 
+\i (03:37:27) FORM vf_vis 1 all_colorvisible YES 
+\i (03:37:27) FORM vf_vis 2 all_colorvisible YES 
+\i (03:37:27) setwindow pcb 
+\i (03:37:27) Color 
+\i (03:37:27) setwindow form.cvf_main
+\i (03:37:27) FORM cvf_main class_list Geometry
+\i (03:37:27) setwindow Form.cvf_main 
+\i (03:37:27) FORM cvf_main class_list Components 
+\i (03:37:27) FORM cvf_main all_visible1 YES 
+\i (03:37:27) FORM cvf_main all_visible2 YES 
+\i (03:37:27) FORM cvf_main all_visible3 YES 
+\i (03:37:27) FORM cvf_main class_list Geometry 
+\i (03:37:27) FORM cvf_main all_visible5 YES 
+\i (03:37:27) FORM cvf_main package_geometry/pin_number/visible NO 
+\i (03:37:27) FORM cvf_main class_list Stack-Up 
+\i (03:37:27) FORM cvf_main all_visible1 YES 
+\i (03:37:27) FORM cvf_main ok 
+\i (03:37:27) generaledit 
+\i (03:37:27) prmed 
+\i (03:37:27) setwindow Form.prmedit 
+\i (03:37:27) FORM prmedit design 
+\i (03:37:27) FORM prmedit lock_direction Off 
+\i (03:37:27) FORM prmedit units Millimeter 
+\i (03:37:27) FORM prmedit accuracy 4 
+\i (03:37:27) FORM prmedit size Other 
+\i (03:37:27) FORM prmedit x -65.5800 
+\i (03:37:27) FORM prmedit y -66.0800 
+\i (03:37:27) FORM prmedit width 131.7200 
+\i (03:37:27) FORM prmedit height 131.7200 
+\i (03:37:27) FORM prmedit done 
+\i (03:37:27) setwindow pcb 
+\i (03:37:27) add pin 
+\i (03:37:27) setwindow Form.mini 
+\i (03:37:27) FORM mini pad_name r107_45 
+\t (03:37:27) Using 'R107_45.pad'.
+\i (03:37:27) FORM mini next_pin_number 4 
+\i (03:37:27) rotate 
+\t (03:37:27) Spin the element(s).
+\i (03:37:27) iangle 0 
+\t (03:37:27) last angle:  +0.000 Degrees
+\t (03:37:27) Pin rotated by '0.000' degrees.
+\t (03:37:27) Using 'R107_45.pad'.
+\i (03:37:27) FORM mini pintype_mechanical NO 
+\i (03:37:27) FORM mini offsetx 0 
+\i (03:37:27) FORM mini offsety 0 
+\i (03:37:27) setwindow pcb 
+\i (03:37:27) pick -2.8330 1.9050 
+\t (03:37:27) last pick:  -2.8330  1.9050
+\t (03:37:27) Using 'R107_45.pad'.
+\i (03:37:27) done 
+\t (03:37:27) Exiting from Add Pin.
+\i (03:37:27) add pin 
+\t (03:37:27) Using 'R107_45.pad'.
+\i (03:37:27) setwindow Form.mini 
+\i (03:37:27) FORM mini pad_name r107_45 
+\t (03:37:27) Using 'R107_45.pad'.
+\i (03:37:27) FORM mini next_pin_number 3 
+\i (03:37:27) rotate 
+\t (03:37:27) Spin the element(s).
+\i (03:37:27) iangle 0 
+\t (03:37:27) last angle:  +0.000 Degrees
+\t (03:37:27) Pin rotated by '0.000' degrees.
+\t (03:37:27) Using 'R107_45.pad'.
+\i (03:37:27) FORM mini pintype_mechanical NO 
+\i (03:37:27) FORM mini offsetx 0 
+\i (03:37:27) FORM mini offsety 0 
+\i (03:37:27) setwindow pcb 
+\i (03:37:27) pick -2.8330 0.6350 
+\t (03:37:27) last pick:  -2.8330  0.6350
+\t (03:37:27) Using 'R107_45.pad'.
+\i (03:37:27) done 
+\t (03:37:27) Exiting from Add Pin.
+\i (03:37:27) add pin 
+\t (03:37:28) Using 'R107_45.pad'.
+\i (03:37:28) setwindow Form.mini 
+\i (03:37:28) FORM mini pad_name r107_45 
+\t (03:37:28) Using 'R107_45.pad'.
+\i (03:37:28) FORM mini next_pin_number 2 
+\i (03:37:28) rotate 
+\t (03:37:28) Spin the element(s).
+\i (03:37:28) iangle 0 
+\t (03:37:28) last angle:  +0.000 Degrees
+\t (03:37:28) Pin rotated by '0.000' degrees.
+\t (03:37:28) Using 'R107_45.pad'.
+\i (03:37:28) FORM mini pintype_mechanical NO 
+\i (03:37:28) FORM mini offsetx 0 
+\i (03:37:28) FORM mini offsety 0 
+\i (03:37:28) setwindow pcb 
+\i (03:37:28) pick -2.8330 -0.6350 
+\t (03:37:28) last pick:  -2.8330  -0.6350
+\t (03:37:28) Using 'R107_45.pad'.
+\i (03:37:28) done 
+\t (03:37:28) Exiting from Add Pin.
+\i (03:37:28) add pin 
+\t (03:37:28) Using 'R107_45.pad'.
+\i (03:37:28) setwindow Form.mini 
+\i (03:37:28) FORM mini pad_name r107_45 
+\t (03:37:28) Using 'R107_45.pad'.
+\i (03:37:28) FORM mini next_pin_number 1 
+\i (03:37:28) rotate 
+\t (03:37:28) Spin the element(s).
+\i (03:37:28) iangle 0 
+\t (03:37:28) last angle:  +0.000 Degrees
+\t (03:37:28) Pin rotated by '0.000' degrees.
+\t (03:37:28) Using 'R107_45.pad'.
+\i (03:37:28) FORM mini pintype_mechanical NO 
+\i (03:37:28) FORM mini offsetx 0 
+\i (03:37:28) FORM mini offsety 0 
+\i (03:37:28) setwindow pcb 
+\i (03:37:28) pick -2.8330 -1.9050 
+\t (03:37:28) last pick:  -2.8330  -1.9050
+\t (03:37:28) Using 'R107_45.pad'.
+\i (03:37:28) done 
+\t (03:37:28) Exiting from Add Pin.
+\i (03:37:28) add pin 
+\t (03:37:28) Using 'R107_45.pad'.
+\i (03:37:28) setwindow Form.mini 
+\i (03:37:28) FORM mini pad_name r107_45 
+\t (03:37:28) Using 'R107_45.pad'.
+\i (03:37:28) FORM mini next_pin_number 8 
+\i (03:37:28) rotate 
+\t (03:37:28) Spin the element(s).
+\i (03:37:28) iangle 180 
+\t (03:37:28) last angle:  +180.000 Degrees
+\t (03:37:28) Pin rotated by '180.000' degrees.
+\t (03:37:28) Using 'R107_45.pad'.
+\i (03:37:28) FORM mini pintype_mechanical NO 
+\i (03:37:28) FORM mini offsetx 0 
+\i (03:37:28) FORM mini offsety 0 
+\i (03:37:28) setwindow pcb 
+\i (03:37:28) pick 2.8330 -1.9050 
+\t (03:37:28) last pick:  2.8330  -1.9050
+\t (03:37:28) Using 'R107_45.pad'.
+\i (03:37:28) done 
+\t (03:37:28) Exiting from Add Pin.
+\i (03:37:28) add pin 
+\t (03:37:28) Using 'R107_45.pad'.
+\i (03:37:28) setwindow Form.mini 
+\i (03:37:28) FORM mini pad_name r107_45 
+\t (03:37:28) Using 'R107_45.pad'.
+\i (03:37:28) FORM mini next_pin_number 7 
+\i (03:37:28) rotate 
+\t (03:37:28) Spin the element(s).
+\i (03:37:28) iangle 180 
+\t (03:37:28) last angle:  +180.000 Degrees
+\t (03:37:28) Pin rotated by '180.000' degrees.
+\t (03:37:28) Using 'R107_45.pad'.
+\i (03:37:28) FORM mini pintype_mechanical NO 
+\i (03:37:28) FORM mini offsetx 0 
+\i (03:37:28) FORM mini offsety 0 
+\i (03:37:28) setwindow pcb 
+\i (03:37:28) pick 2.8330 -0.6350 
+\t (03:37:28) last pick:  2.8330  -0.6350
+\t (03:37:28) Using 'R107_45.pad'.
+\i (03:37:28) done 
+\t (03:37:28) Exiting from Add Pin.
+\i (03:37:28) add pin 
+\t (03:37:28) Using 'R107_45.pad'.
+\i (03:37:28) setwindow Form.mini 
+\i (03:37:28) FORM mini pad_name r107_45 
+\t (03:37:28) Using 'R107_45.pad'.
+\i (03:37:28) FORM mini next_pin_number 6 
+\i (03:37:28) rotate 
+\t (03:37:28) Spin the element(s).
+\i (03:37:28) iangle 180 
+\t (03:37:28) last angle:  +180.000 Degrees
+\t (03:37:28) Pin rotated by '180.000' degrees.
+\t (03:37:28) Using 'R107_45.pad'.
+\i (03:37:28) FORM mini pintype_mechanical NO 
+\i (03:37:28) FORM mini offsetx 0 
+\i (03:37:28) FORM mini offsety 0 
+\i (03:37:28) setwindow pcb 
+\i (03:37:28) pick 2.8330 0.6350 
+\t (03:37:28) last pick:  2.8330  0.6350
+\t (03:37:28) Using 'R107_45.pad'.
+\i (03:37:28) done 
+\t (03:37:28) Exiting from Add Pin.
+\i (03:37:28) add pin 
+\t (03:37:28) Using 'R107_45.pad'.
+\i (03:37:28) setwindow Form.mini 
+\i (03:37:28) FORM mini pad_name r107_45 
+\t (03:37:28) Using 'R107_45.pad'.
+\i (03:37:28) FORM mini next_pin_number 5 
+\i (03:37:28) rotate 
+\t (03:37:28) Spin the element(s).
+\i (03:37:28) iangle 180 
+\t (03:37:28) last angle:  +180.000 Degrees
+\t (03:37:28) Pin rotated by '180.000' degrees.
+\t (03:37:28) Using 'R107_45.pad'.
+\i (03:37:28) FORM mini pintype_mechanical NO 
+\i (03:37:28) FORM mini offsetx 0 
+\i (03:37:28) FORM mini offsety 0 
+\i (03:37:28) setwindow pcb 
+\i (03:37:28) pick 2.8330 1.9050 
+\t (03:37:28) last pick:  2.8330  1.9050
+\t (03:37:28) Using 'R107_45.pad'.
+\i (03:37:28) done 
+\t (03:37:28) Exiting from Add Pin.
+\i (03:37:28) add pin 
+\t (03:37:28) Using 'R107_45.pad'.
+\i (03:37:28) setwindow Form.mini 
+\i (03:37:28) FORM mini pad_name thermal320X510 
+\t (03:37:28) Using 'THERMAL320X510.pad'.
+\i (03:37:28) FORM mini next_pin_number 9 
+\i (03:37:28) rotate 
+\t (03:37:28) Spin the element(s).
+\i (03:37:28) iangle 0 
+\t (03:37:28) last angle:  +0.000 Degrees
+\t (03:37:28) Pin rotated by '0.000' degrees.
+\t (03:37:28) Using 'THERMAL320X510.pad'.
+\i (03:37:28) FORM mini pintype_mechanical NO 
+\i (03:37:28) FORM mini offsetx 0 
+\i (03:37:28) FORM mini offsety 0 
+\i (03:37:28) setwindow pcb 
+\i (03:37:28) pick 0.0000 0.0000 
+\t (03:37:28) last pick:  0.0000  0.0000
+\t (03:37:28) Using 'THERMAL320X510.pad'.
+\i (03:37:28) done 
+\t (03:37:28) Exiting from Add Pin.
+\i (03:37:28) add line 
+\i (03:37:28) setwindow Form.mini 
+\i (03:37:28) FORM mini class PACKAGE GEOMETRY 
+\i (03:37:29) FORM mini subclass DISPLAY_TOP 
+\i (03:37:29) setwindow pcb 
+\i (03:37:29) pick -3.6200 -2.7500 
+\t (03:37:29) last pick:  -3.6200  -2.7500
+\i (03:37:29) pick -3.6200 2.7500 
+\t (03:37:29) last pick:  -3.6200  2.7500
+\i (03:37:29) pick 3.6200 2.7500 
+\t (03:37:29) last pick:  3.6200  2.7500
+\i (03:37:29) pick 3.6200 -2.7500 
+\t (03:37:29) last pick:  3.6200  -2.7500
+\i (03:37:29) pick -3.6200 -2.7500 
+\t (03:37:29) last pick:  -3.6200  -2.7500
+\i (03:37:29) done 
+\i (03:37:29) shape add 
+\i (03:37:29) setwindow Form.mini 
+\i (03:37:29) FORM mini class PACKAGE GEOMETRY 
+\i (03:37:29) FORM mini subclass PLACE_BOUND_TOP 
+\i (03:37:29) FORM mini dyns_fill_type Static solid 
+\i (03:37:29) FORM mini dyns_grid None 
+\i (03:37:29) FORM mini dyns_lock_mode Line 
+\i (03:37:29) setwindow pcb 
+\i (03:37:29) pick -3.6200 -2.7500 
+\t (03:37:29) last pick:  -3.6200  -2.7500
+\i (03:37:29) pick -3.6200 2.7500 
+\t (03:37:29) last pick:  -3.6200  2.7500
+\i (03:37:29) pick 3.6200 2.7500 
+\t (03:37:29) last pick:  3.6200  2.7500
+\i (03:37:29) pick 3.6200 -2.7500 
+\t (03:37:29) last pick:  3.6200  -2.7500
+\i (03:37:29) pick -3.6200 -2.7500 
+\t (03:37:29) last pick:  -3.6200  -2.7500
+\i (03:37:29) done 
+\i (03:37:29) setwindow pcb 
+\i (03:37:29) package_height 
+\i (03:37:29) pick grid 0 0 
+\t (03:37:29) last pick:  0.0000  0.0000
+\i (03:37:29) setwindow Form.mini 
+\i (03:37:29) FORM mini height_max 1.5000mm 
+\i (03:37:29) done 
+\e (03:37:29) Form field label not found
+\i (03:37:29) shape add 
+\i (03:37:29) setwindow Form.mini 
+\i (03:37:29) FORM mini class PACKAGE GEOMETRY 
+\i (03:37:29) FORM mini subclass DFA_BOUND_TOP 
+\i (03:37:29) FORM mini dyns_fill_type Static solid 
+\i (03:37:29) FORM mini dyns_grid None 
+\i (03:37:29) FORM mini dyns_lock_mode Line 
+\i (03:37:29) setwindow pcb 
+\i (03:37:29) pick -3.6200 -2.7500 
+\t (03:37:29) last pick:  -3.6200  -2.7500
+\i (03:37:29) pick -3.6200 2.7500 
+\t (03:37:29) last pick:  -3.6200  2.7500
+\i (03:37:29) pick 3.6200 2.7500 
+\t (03:37:29) last pick:  3.6200  2.7500
+\i (03:37:29) pick 3.6200 -2.7500 
+\t (03:37:29) last pick:  3.6200  -2.7500
+\i (03:37:29) pick -3.6200 -2.7500 
+\t (03:37:29) last pick:  -3.6200  -2.7500
+\i (03:37:29) done 
+\i (03:37:29) shape add 
+\i (03:37:29) setwindow Form.mini 
+\i (03:37:29) FORM mini class MANUFACTURING 
+\i (03:37:29) FORM mini subclass NO_PROBE_TOP 
+\i (03:37:29) FORM mini dyns_fill_type Static solid 
+\i (03:37:29) FORM mini dyns_grid None 
+\i (03:37:29) FORM mini dyns_lock_mode Line 
+\i (03:37:29) setwindow pcb 
+\i (03:37:29) pick -3.6200 -2.7500 
+\t (03:37:29) last pick:  -3.6200  -2.7500
+\i (03:37:29) pick -3.6200 2.7500 
+\t (03:37:29) last pick:  -3.6200  2.7500
+\i (03:37:29) pick 3.6200 2.7500 
+\t (03:37:29) last pick:  3.6200  2.7500
+\i (03:37:29) pick 3.6200 -2.7500 
+\t (03:37:29) last pick:  3.6200  -2.7500
+\i (03:37:29) pick -3.6200 -2.7500 
+\t (03:37:29) last pick:  -3.6200  -2.7500
+\i (03:37:29) done 
+\i (03:37:29) add line 
+\i (03:37:29) setwindow Form.mini 
+\i (03:37:29) FORM mini class PACKAGE GEOMETRY 
+\i (03:37:29) FORM mini subclass ASSEMBLY_TOP 
+\i (03:37:29) FORM mini line_width 0.1000 
+\i (03:37:29) setwindow pcb 
+\i (03:37:29) pick 3.0000 2.5000 
+\t (03:37:29) last pick:  3.0000  2.5000
+\i (03:37:29) pick 3.0000 -2.5000 
+\t (03:37:29) last pick:  3.0000  -2.5000
+\i (03:37:29) pick -3.0000 -2.5000 
+\t (03:37:29) last pick:  -3.0000  -2.5000
+\i (03:37:29) pick -3.0000 2.5000 
+\t (03:37:29) last pick:  -3.0000  2.5000
+\i (03:37:29) pick 3.0000 2.5000 
+\t (03:37:29) last pick:  3.0000  2.5000
+\i (03:37:29) done 
+\i (03:37:30) add line 
+\i (03:37:30) setwindow Form.mini 
+\i (03:37:30) FORM mini class PACKAGE GEOMETRY 
+\i (03:37:30) FORM mini subclass ASSEMBLY_TOP 
+\i (03:37:30) FORM mini line_width 0.1000 
+\i (03:37:30) setwindow pcb 
+\i (03:37:30) pick -3.0000 2.4000 
+\t (03:37:30) last pick:  -3.0000  2.4000
+\i (03:37:30) pick -2.9000 2.5000 
+\t (03:37:30) last pick:  -2.9000  2.5000
+\i (03:37:30) done 
+\i (03:37:30) add line 
+\i (03:37:30) setwindow Form.mini 
+\i (03:37:30) FORM mini class PACKAGE GEOMETRY 
+\i (03:37:30) FORM mini subclass ASSEMBLY_TOP 
+\i (03:37:30) FORM mini line_width 0.1000 
+\i (03:37:30) setwindow pcb 
+\i (03:37:30) pick -3.0000 2.3000 
+\t (03:37:30) last pick:  -3.0000  2.3000
+\i (03:37:30) pick -2.8000 2.5000 
+\t (03:37:30) last pick:  -2.8000  2.5000
+\i (03:37:30) done 
+\i (03:37:30) add line 
+\i (03:37:30) setwindow Form.mini 
+\i (03:37:30) FORM mini class PACKAGE GEOMETRY 
+\i (03:37:30) FORM mini subclass ASSEMBLY_TOP 
+\i (03:37:30) FORM mini line_width 0.1000 
+\i (03:37:30) setwindow pcb 
+\i (03:37:30) pick -3.0000 2.2000 
+\t (03:37:30) last pick:  -3.0000  2.2000
+\i (03:37:30) pick -2.7000 2.5000 
+\t (03:37:30) last pick:  -2.7000  2.5000
+\i (03:37:30) done 
+\i (03:37:30) add line 
+\i (03:37:30) setwindow Form.mini 
+\i (03:37:30) FORM mini class PACKAGE GEOMETRY 
+\i (03:37:30) FORM mini subclass ASSEMBLY_TOP 
+\i (03:37:30) FORM mini line_width 0.1000 
+\i (03:37:30) setwindow pcb 
+\i (03:37:30) pick -3.0000 2.1000 
+\t (03:37:30) last pick:  -3.0000  2.1000
+\i (03:37:30) pick -2.6000 2.5000 
+\t (03:37:30) last pick:  -2.6000  2.5000
+\i (03:37:30) done 
+\i (03:37:30) add line 
+\i (03:37:30) setwindow Form.mini 
+\i (03:37:30) FORM mini class PACKAGE GEOMETRY 
+\i (03:37:30) FORM mini subclass SILKSCREEN_TOP 
+\i (03:37:30) FORM mini line_width 0.2000 
+\i (03:37:30) setwindow pcb 
+\i (03:37:30) pick -2.9800 -2.5000 
+\t (03:37:30) last pick:  -2.9800  -2.5000
+\i (03:37:30) pick -3.0000 -2.5000 
+\t (03:37:30) last pick:  -3.0000  -2.5000
+\i (03:37:30) pick -3.0000 -2.4800 
+\t (03:37:30) last pick:  -3.0000  -2.4800
+\i (03:37:30) done 
+\i (03:37:30) add line 
+\i (03:37:30) setwindow Form.mini 
+\i (03:37:30) FORM mini class PACKAGE GEOMETRY 
+\i (03:37:30) FORM mini subclass SILKSCREEN_TOP 
+\i (03:37:30) FORM mini line_width 0.2000 
+\i (03:37:30) setwindow pcb 
+\i (03:37:30) pick -3.0000 2.4800 
+\t (03:37:30) last pick:  -3.0000  2.4800
+\i (03:37:30) pick -3.0000 2.4830 
+\t (03:37:30) last pick:  -3.0000  2.4830
+\i (03:37:30) pick -2.9830 2.5000 
+\t (03:37:30) last pick:  -2.9830  2.5000
+\i (03:37:30) pick -2.9800 2.5000 
+\t (03:37:30) last pick:  -2.9800  2.5000
+\i (03:37:30) done 
+\i (03:37:30) add line 
+\i (03:37:30) setwindow Form.mini 
+\i (03:37:30) FORM mini class PACKAGE GEOMETRY 
+\i (03:37:30) FORM mini subclass SILKSCREEN_TOP 
+\i (03:37:30) FORM mini line_width 0.2000 
+\i (03:37:30) setwindow pcb 
+\i (03:37:30) pick 2.9800 2.5000 
+\t (03:37:30) last pick:  2.9800  2.5000
+\i (03:37:30) pick 3.0000 2.5000 
+\t (03:37:30) last pick:  3.0000  2.5000
+\i (03:37:30) pick 3.0000 2.4800 
+\t (03:37:30) last pick:  3.0000  2.4800
+\i (03:37:30) done 
+\i (03:37:30) add line 
+\i (03:37:30) setwindow Form.mini 
+\i (03:37:30) FORM mini class PACKAGE GEOMETRY 
+\i (03:37:30) FORM mini subclass SILKSCREEN_TOP 
+\i (03:37:30) FORM mini line_width 0.2000 
+\i (03:37:30) setwindow pcb 
+\i (03:37:30) pick 3.0000 -2.4800 
+\t (03:37:30) last pick:  3.0000  -2.4800
+\i (03:37:30) pick 3.0000 -2.5000 
+\t (03:37:30) last pick:  3.0000  -2.5000
+\i (03:37:30) pick 2.9800 -2.5000 
+\t (03:37:30) last pick:  2.9800  -2.5000
+\i (03:37:30) done 
+\i (03:37:31) add circle 
+\t (03:37:31) Pick center point of the circle.
+\t (03:37:31) Pick center point of the circle.
+\i (03:37:31) setwindow Form.mini 
+\i (03:37:31) FORM mini class PACKAGE GEOMETRY 
+\i (03:37:31) FORM mini subclass SILKSCREEN_TOP 
+\i (03:37:31) FORM mini line_width 0.0000 
+\i (03:37:31) setwindow pcb 
+\i (03:37:31) pick -3.9200 1.9050 
+\t (03:37:31) last pick:  -3.9200  1.9050
+\t (03:37:31) Pick a perimeter point on the circle.
+\i (03:37:31) pick -3.7200 1.9050 
+\t (03:37:31) last pick:  -3.7200  1.9050
+\t (03:37:31) Pick center point of the circle.
+\i (03:37:31) done 
+\i (03:37:31) Label refdes 
+\t (03:37:31) Pick text location.
+\i (03:37:31) setwindow Form.mini 
+\i (03:37:31) FORM mini text_block 3 
+\i (03:37:31) FORM mini angle 0 
+\i (03:37:31) FORM mini mirror NO 
+\i (03:37:31) FORM mini text_justification Center 
+\i (03:37:31) FORM mini class REF DES 
+\i (03:37:31) FORM mini subclass ASSEMBLY_TOP 
+\i (03:37:31) setwindow pcb 
+\i (03:37:31) pick 0.0000 -0.6750 
+\t (03:37:31) last pick:  0.0000  -0.6750
+\t (03:37:31) Enter text string.
+\i (03:37:31) Text Ref 
+\i (03:37:31) done 
+\i (03:37:31) setwindow pcb 
+\i (03:37:31) Label refdes 
+\t (03:37:31) Pick text location.
+\i (03:37:31) setwindow Form.mini 
+\i (03:37:31) FORM mini text_block 3 
+\i (03:37:31) FORM mini angle 0 
+\i (03:37:31) FORM mini mirror NO 
+\i (03:37:31) FORM mini text_justification Center 
+\i (03:37:31) FORM mini class REF DES 
+\i (03:37:31) FORM mini subclass SILKSCREEN_TOP 
+\i (03:37:31) setwindow pcb 
+\i (03:37:31) pick 0.0000 2.3250 
+\t (03:37:31) last pick:  0.0000  2.3250
+\t (03:37:31) Enter text string.
+\i (03:37:31) Text Ref 
+\i (03:37:31) done 
+\i (03:37:31) setwindow pcb 
+\i (03:37:31) Label device 
+\t (03:37:31) Pick text location.
+\i (03:37:31) setwindow Form.mini 
+\i (03:37:31) FORM mini text_block 3 
+\i (03:37:31) FORM mini angle 0 
+\i (03:37:31) FORM mini mirror NO 
+\i (03:37:31) FORM mini text_justification Center 
+\i (03:37:31) FORM mini class DEVICE TYPE 
+\i (03:37:31) FORM mini subclass SILKSCREEN_TOP 
+\i (03:37:31) setwindow pcb 
+\i (03:37:31) pick 0.0000 2.3250 
+\t (03:37:31) last pick:  0.0000  2.3250
+\t (03:37:31) Enter text string.
+\i (03:37:31) Text Dev 
+\t (03:37:31) Enter text string.
+\i (03:37:31) done 
+\i (03:37:31) setwindow pcb 
+\i (03:37:31) generaledit 
+\i (03:37:31) zoom fit 
+\i (03:37:31) trapsize 241
+\i (03:37:31) save_as 
+\i (03:37:31) fillin QFN127P600X500X150-9N 
+\t (03:37:31) Symbol 'qfn127p600x500x150-9n.psm' created.
+\i (03:37:31) setwindow pcb
+\i (03:37:31) trapsize 241
+\i (03:37:31) generaledit 
+\i (03:37:37) pick grid -3.2128 3.0690
+\t (03:37:37) last pick:  -2.5400  2.5400
+\i (03:40:37) pick grid -3.9221 -0.0865
+\t (03:40:37) last pick:  -5.0800  0.0000
+\i (03:40:55) pick grid -0.4771 0.6469
+\t (03:40:55) last pick:  0.0000  0.0000
+\i (03:41:02) pick grid -3.9028 -0.3471
+\t (03:41:02) last pick:  -5.0800  0.0000
+\e (03:43:34) Command not found: xdehilite
+\i (03:43:34) xname_flush 
+\i (03:43:34) done 
+\i (03:43:34) generaledit 
+\e (03:43:34) Command not found: xhilite
+\i (03:43:34) xname_flush 
+\i (03:43:34) done 
+\i (03:43:34) generaledit 
+\e (03:43:35) Command not found: xdehilite
+\i (03:43:35) xname_flush 
+\i (03:43:35) done 
+\i (03:43:35) generaledit 
+\e (03:43:35) Command not found: xhilite
+\i (03:43:35) xname_flush 
+\i (03:43:35) done 
+\i (03:43:35) generaledit 
+\e (03:43:36) Command not found: xdehilite
+\i (03:43:36) xname_flush 
+\i (03:43:36) done 
+\i (03:43:36) generaledit 
+\e (03:43:36) Command not found: xhilite
+\i (03:43:36) xname_flush 
+\i (03:43:36) done 
+\i (03:43:36) generaledit 
+\e (03:43:37) Command not found: xdehilite
+\i (03:43:37) xname_flush 
+\i (03:43:37) done 
+\i (03:43:37) generaledit 
+\e (03:43:37) Command not found: xhilite
+\i (03:43:37) xname_flush 
+\i (03:43:37) done 
+\i (03:43:37) generaledit 
+\e (03:43:38) Command not found: xdehilite
+\i (03:43:38) xname_flush 
+\i (03:43:38) done 
+\i (03:43:39) generaledit 
+\e (03:43:39) Command not found: xhilite
+\i (03:43:39) xname_flush 
+\i (03:43:39) done 
+\i (03:43:39) generaledit 
+\e (03:43:40) Command not found: xdehilite
+\i (03:43:40) xname_flush 
+\i (03:43:40) done 
+\i (03:43:40) generaledit 
+\e (03:43:40) Command not found: xhilite
+\i (03:43:40) xname_flush 
+\i (03:43:40) done 
+\i (03:43:40) generaledit 
+\e (03:43:40) Command not found: xdehilite
+\i (03:43:40) xname_flush 
+\i (03:43:40) done 
+\i (03:43:40) generaledit 
+\e (03:43:41) Command not found: xhilite
+\i (03:43:41) xname_flush 
+\i (03:43:41) done 
+\i (03:43:41) generaledit 
+\e (03:45:15) Command not found: xdehilite
+\i (03:45:15) xname_flush 
+\i (03:45:15) done 
+\i (03:45:15) generaledit 
+\e (03:46:23) Command not found: xhilite
+\i (03:46:23) xname_flush 
+\i (03:46:23) done 
+\i (03:46:23) generaledit 
+\e (03:46:26) Command not found: xdehilite
+\i (03:46:26) xname_flush 
+\i (03:46:26) done 
+\i (03:46:26) generaledit 
+\e (03:46:26) Command not found: xhilite
+\i (03:46:26) xname_flush 
+\i (03:46:26) done 
+\i (03:46:26) generaledit 
+\e (03:46:42) Command not found: xdehilite
+\i (03:46:42) xname_flush 
+\i (03:46:42) done 
+\e (03:46:42) Command not found: xhilite
+\i (03:46:42) xname_flush 
+\e (03:46:42) No command active
+\i (03:46:42) done 
+\e (03:46:42) No command active
+\i (03:46:42) generaledit 
+\e (03:46:59) Command not found: xdehilite
+\i (03:46:59) xname_flush 
+\i (03:46:59) done 
+\i (03:46:59) generaledit 
+\e (03:47:03) Command not found: xhilite
+\i (03:47:03) xname_flush 
+\i (03:47:03) done 
+\i (03:47:03) generaledit 
+\e (03:47:11) Command not found: xdehilite
+\i (03:47:11) xname_flush 
+\i (03:47:11) done 
+\i (03:47:11) generaledit 
+\e (03:47:12) Command not found: xhilite
+\i (03:47:12) xname_flush 
+\i (03:47:12) done 
+\i (03:47:12) generaledit 
+\e (03:55:00) Command not found: xhilite
+\i (03:55:00) xname_flush 
+\i (03:55:00) done 
+\i (03:55:00) generaledit 
+\e (03:55:35) Command not found: xhilite
+\i (03:55:35) xname_flush 
+\i (03:55:35) done 
+\i (03:55:35) generaledit 
+\i (03:58:30) prepopup -2.8123 3.4598
+\i (03:58:38) toolswap 
+\i (03:58:40) fillin menu_cancel
+\i (03:58:41) generaledit 
+\e (04:01:10) Command not found: xhilite
+\i (04:01:10) xname_flush 
+\i (04:01:10) done 
+\i (04:01:10) generaledit 
+\e (04:01:14) Command not found: xdehilite
+\i (04:01:14) xname_flush 
+\i (04:01:14) done 
+\i (04:01:14) generaledit 
+\i (04:02:59) pick grid -0.8148 -1.0177
+\t (04:02:59) last pick:  0.0000  0.0000
+\i (04:04:15) pick grid -0.4288 0.7675
+\t (04:04:15) last pick:  0.0000  0.0000
+\i (04:04:16) prepopup -0.5350 1.0329
+\i (04:04:26) pop dyn_option_select 'Application Mode@:@General Edit' 
+\i (04:04:26) generaledit 
+\i (04:04:27) pick grid -0.2985 0.8302
+\t (04:04:27) last pick:  0.0000  0.0000
+\i (04:04:28) prepopup -0.2985 0.8302
+\i (04:04:29) pick grid -2.0500 1.3802
+\t (04:04:29) last pick:  -2.5400  2.5400
+\i (04:04:41) property edit 
+\t (04:04:41) Adjust find filter then select an element or group of elements.
+\i (04:04:42) pick grid -0.3854 1.9206
+\t (04:04:42) last pick:  0.0000  2.5400
+\i (04:04:54) pick grid -3.8352 2.0606
+\t (04:04:54) last pick:  -5.0800  2.5400
+\i (04:04:56) prepopup -3.8111 2.1281
+\i (04:04:58) cancel 
+\i (04:04:58) generaledit 
+\i (04:04:59) pick grid -3.8931 2.0799
+\t (04:04:59) last pick:  -5.0800  2.5400
+\i (04:04:59) prepopup -3.8738 2.0992
+\i (04:05:04) pick grid -3.9317 2.1136
+\t (04:05:04) last pick:  -5.0800  2.5400
+\i (04:05:05) drag_start grid -3.8352 2.0702
+\i (04:05:05) slide 
+\t (04:05:05) Selected item not valid for current operation, ignored: Arc Segment "Package Geometry/Silkscreen_Top"
+\t (04:05:05) No valid items selected for the current operation, exiting.
+\i (04:05:05) generaledit 
+\i (04:05:05) drag_stop grid -3.6374 0.1885
+\i (04:05:06) prepopup -3.8835 1.7373
+\i (04:05:07) pick grid -3.9173 1.9882
+\t (04:05:07) last pick:  -5.0800  2.5400
+\i (04:05:08) prepopup -3.9173 1.9882
+\i (04:05:10) pop dyn_option_select 'Application Mode@:@General Edit' 
+\i (04:05:10) generaledit 
+\i (04:05:11) pick grid -3.9366 2.1329
+\t (04:05:11) last pick:  -5.0800  2.5400
+\i (04:05:11) pick grid -3.8931 2.1040
+\t (04:05:11) last pick:  -5.0800  2.5400
+\i (04:05:11) prepopup -3.8931 2.1040
+\i (04:05:15) pop dyn_option_select '@:@Change Arc/Circle' 
+\i (04:05:15) change radius 
+\i (04:05:16) prepopup -3.6953 0.8640
+\i (04:05:18) cancel 
+\i (04:05:18) generaledit 
+\i (04:05:19) prepopup -3.9366 1.7469
+\i (04:05:25) pick grid -3.8401 1.8000
+\t (04:05:25) last pick:  -5.0800  2.5400
+\i (04:05:26) drag_start grid -3.9945 1.7228
+\i (04:05:26) slide 
+\t (04:05:26) Selected item not valid for current operation, ignored: Arc Segment "Package Geometry/Silkscreen_Top"
+\t (04:05:26) No valid items selected for the current operation, exiting.
+\i (04:05:26) generaledit 
+\i (04:05:26) drag_stop grid -3.7870 0.0968
+\i (04:05:27) pick grid -3.8594 1.9158
+\t (04:05:27) last pick:  -5.0800  2.5400
+\i (04:05:27) pick grid dbl -3.8594 1.9158
+\t (04:05:27) last pick:  -5.0800  2.5400
+\i (04:05:28) pick grid -3.8545 1.7132
+\t (04:05:28) last pick:  -5.0800  2.5400
+\i (04:05:29) prepopup -3.9559 1.7180
+\i (04:05:34) pop dyn_option_select Line@:@Move 
+\i (04:05:34) move 
+\t (04:05:34) last pick:  -5.0800  2.5400
+\t (04:05:34) last pick:  -5.0800  2.5400
+\t (04:05:34) Element has no origin, using pick.
+\t (04:05:34) Pick new location for the element(s).
+\i (04:05:36) zoom out 1 
+\i (04:05:36) setwindow pcb
+\i (04:05:36) zoom out -3.5747 -0.5642
+\i (04:05:36) trapsize 482
+\i (04:05:36) zoom out 1 
+\i (04:05:36) setwindow pcb
+\i (04:05:36) zoom out -3.6133 -0.5353
+\i (04:05:36) trapsize 965
+\i (04:05:36) zoom out 1 
+\i (04:05:36) setwindow pcb
+\i (04:05:36) zoom out -3.6132 -0.5352
+\i (04:05:36) trapsize 1930
+\i (04:05:36) zoom out 1 
+\i (04:05:36) setwindow pcb
+\i (04:05:36) zoom out -25.6111 -0.5352
+\i (04:05:36) trapsize 3860
+\i (04:05:36) zoom out 1 
+\i (04:05:36) setwindow pcb
+\i (04:05:36) zoom out -56.8565 -0.9828
+\i (04:05:36) trapsize 4978
+\i (04:05:36) zoom in 1 
+\i (04:05:36) setwindow pcb
+\i (04:05:36) zoom in -54.4291 -20.1821
+\i (04:05:36) trapsize 2489
+\i (04:05:36) zoom in 1 
+\i (04:05:36) setwindow pcb
+\i (04:05:36) zoom in -54.4291 -20.1820
+\i (04:05:36) trapsize 1245
+\i (04:05:37) zoom out 1 
+\i (04:05:37) setwindow pcb
+\i (04:05:37) zoom out -39.6940 -15.6520
+\i (04:05:37) trapsize 2489
+\i (04:05:37) zoom out 1 
+\i (04:05:37) setwindow pcb
+\i (04:05:37) zoom out -32.0277 -16.4982
+\i (04:05:37) trapsize 4978
+\i (04:05:37) zoom in 1 
+\i (04:05:37) setwindow pcb
+\i (04:05:37) zoom in 0.1307 2.0201
+\i (04:05:38) trapsize 2489
+\i (04:05:38) zoom in 1 
+\i (04:05:38) setwindow pcb
+\i (04:05:38) zoom in 5.1585 -0.8173
+\i (04:05:38) trapsize 1245
+\i (04:05:39) zoom in 1 
+\i (04:05:39) setwindow pcb
+\i (04:05:39) zoom in -0.4418 -2.0121
+\i (04:05:39) trapsize 622
+\i (04:05:39) zoom in 1 
+\i (04:05:39) setwindow pcb
+\i (04:05:39) zoom in -0.4418 -2.0120
+\i (04:05:39) trapsize 311
+\i (04:05:42) pick grid -4.1691 -1.2715
+\t (04:05:42) last pick:  -5.0800  -2.5400
+\i (04:05:42) generaledit 
+\i (04:05:42) zoom out 1 
+\i (04:05:42) setwindow pcb
+\i (04:05:42) zoom out -5.0652 -1.7258
+\i (04:05:42) trapsize 622
+\i (04:05:43) pick grid -4.7540 -0.6928
+\t (04:05:43) last pick:  -5.0800  0.0000
+\i (04:05:46) zoom in 1 
+\i (04:05:46) setwindow pcb
+\i (04:05:46) zoom in -2.1654 0.5642
+\i (04:05:46) trapsize 311
+\i (04:05:50) save_as 
+\i (04:05:57) fillin "C:\Users\George\Dropbox\PCBs\Footprint Library\8SON_POWERBLOCK.dra"
+\i (04:05:57) cd "C:\Users\George\Dropbox\PCBs\Footprint Library"
+\t (04:05:57) Symbol '8son_powerblock.psm' created.
+\i (04:05:57) generaledit 
+\i (04:05:59) pick grid 5.3577 -0.9479
+\t (04:05:59) last pick:  5.0800  0.0000
+\i (04:06:19) pick grid -0.8213 1.6407
+\t (04:06:19) last pick:  0.0000  2.5400
+\i (04:06:19) prepopup -0.8213 1.6407
+\i (04:06:27) generaledit 
+\i (04:06:34) text edit 
+\t (04:06:34) Selected item not valid for current operation, ignored: Pin "Thermal320x510, 9"
+\t (04:06:34) No valid items selected for the current operation, exiting.
+\i (04:06:34) generaledit 
+\i (04:06:34) pick grid -0.4666 1.0247
+\t (04:06:34) last pick:  0.0000  0.0000
+\i (04:06:35) pick grid -0.6222 1.4354
+\t (04:06:35) last pick:  0.0000  2.5400
+\i (04:06:35) pick grid dbl -0.6222 1.4354
+\t (04:06:35) last pick:  0.0000  2.5400
+\i (04:06:35) prepopup -0.6222 1.4354
+\i (04:06:54) pop dyn_option_select 'Selection set@:@Select@:@Pin Thermal320x510, 9' 
+\i (04:07:20) 3d_viewer 
+\i (04:07:20) setwindow pcb3D
+\i (04:07:20) trapsize 311
+\i (04:07:20) setwindow pcb
+\i (04:07:20) generaledit 
+\i (04:07:44) change 
+\i (04:07:45) pick grid -0.8524 1.6718
+\t (04:07:45) last pick:  0.0000  2.5400
+\e (04:07:45) ERROR(SPMHGE-537): Shape already matches option panel settings.
+\i (04:07:47) prepopup -0.9396 1.6407
+\i (04:07:52) cancel 
+\i (04:07:52) generaledit 
+\i (04:07:52) pick grid -0.9645 1.7838
+\t (04:07:52) last pick:  0.0000  2.5400
+\i (04:08:00) dbdoctor 
+\i (04:08:03) setwindow form.dbdoctor_allegro
+\i (04:08:03) FORM dbdoctor_allegro execute  
+\t (04:08:03) Dbdoctor in progress - please wait.
+\t (04:08:03) Checking db records
+\t (04:08:03)     checking for orphans...
+\t (04:08:03)     Checked 100 percent
+\t (04:08:03) Done dbdoctor.
+\t (04:08:03) Dbdoctor completed.
+\i (04:08:04) FORM dbdoctor_allegro close  
+\i (04:08:04) setwindow pcb
+\i (04:08:04) generaledit 
+\i (04:08:23) show element 
+\i (04:08:23) generaledit 
+\i (04:08:31) pick grid -2.8437 1.8896
+\t (04:08:31) last pick:  -2.5400  2.5400
+\i (04:08:43) show element 
+\i (04:08:43) generaledit 
+\i (04:08:46) zoom out 1 
+\i (04:08:46) setwindow pcb
+\i (04:08:46) zoom out 2.2838 -0.3568
+\i (04:08:46) trapsize 622
+\i (04:08:46) zoom out 1 
+\i (04:08:46) setwindow pcb
+\i (04:08:46) zoom out 2.2837 -0.3567
+\i (04:08:46) trapsize 1245
+\i (04:08:46) zoom out 1 
+\i (04:08:46) setwindow pcb
+\i (04:08:46) zoom out 2.2837 -0.3567
+\i (04:08:46) trapsize 2489
+\i (04:08:46) zoom out 1 
+\i (04:08:46) setwindow pcb
+\i (04:08:46) zoom out 2.2836 -0.3567
+\i (04:08:46) trapsize 4978
+\i (04:08:46) zoom out 1 
+\i (04:08:46) setwindow pcb
+\i (04:08:46) zoom out 58.3742 -0.2698
+\i (04:08:46) trapsize 4978
+\i (04:08:46) zoom in 1 
+\i (04:08:46) setwindow pcb
+\i (04:08:46) zoom in 58.3742 -0.2698
+\i (04:08:46) trapsize 2489
+\i (04:08:46) zoom in 1 
+\i (04:08:46) setwindow pcb
+\i (04:08:46) zoom in 4.1629 -0.2698
+\i (04:08:46) trapsize 1245
+\i (04:08:46) zoom in 1 
+\i (04:08:46) setwindow pcb
+\i (04:08:46) zoom in 4.1630 -0.2697
+\i (04:08:46) trapsize 622
+\i (04:08:46) zoom in 1 
+\i (04:08:46) setwindow pcb
+\i (04:08:46) zoom in 4.1630 -0.2697
+\i (04:08:46) trapsize 311
+\i (04:08:48) pick grid -0.1741 1.6469
+\t (04:08:48) last pick:  0.0000  2.5400
+\i (04:08:48) prepopup -0.1741 1.6469
+\i (04:08:51) pop dyn_option_select '@:@Show element' 
+\i (04:08:51) show element 
+\i (04:08:51) generaledit 
+\i (04:08:53) zoom out 1 
+\i (04:08:53) setwindow pcb
+\i (04:08:53) zoom out 3.4661 1.4353
+\i (04:08:53) trapsize 622
+\i (04:08:53) zoom in 1 
+\i (04:08:53) setwindow pcb
+\i (04:08:53) zoom in -2.0471 1.1243
+\i (04:08:53) trapsize 311
+\i (04:13:20) pick grid -0.2239 -1.1532
+\t (04:13:20) last pick:  0.0000  0.0000
+\i (04:13:33) pick grid -2.8125 0.6514
+\t (04:13:33) last pick:  -2.5400  0.0000
+\i (04:13:33) pick grid dbl -2.8125 0.6514
+\t (04:13:33) last pick:  -2.5400  0.0000
+\i (04:13:34) prepopup -2.8125 0.6514
+\i (04:13:37) pop dyn_option_select '@:@Show element' 
+\i (04:13:37) show element 
+\i (04:13:37) generaledit 
+\i (04:13:40) setwindow text
+\i (04:13:40) close 
+\i (04:19:04) setwindow pcb
+\i (04:19:04) xname_flush 
+\i (04:19:08) xname_flush 
+\i (04:20:40) xname_flush 
+\i (04:20:42) xname_flush 
+\i (04:20:43) xname_flush 
+\i (04:21:12) xname_flush 
+\i (04:21:45) xname_flush 
+\i (04:21:47) xname_flush 
+\i (04:22:11) xname_flush 
+\i (04:22:41) xname_flush 
+\i (04:23:22) xname_flush 
+\i (04:24:06) pick grid 0.7780 1.1429
+\t (04:24:06) last pick:  0.0000  0.0000
+\i (04:24:12) prepopup 0.7655 1.5972
+\i (04:24:14) pick grid -3.7396 3.0408
+\t (04:24:14) last pick:  -2.5400  2.5400
+\i (04:24:21) cmgr 
+\i (04:24:21) generaledit 
+\i (04:24:24) cmgr 
+\i (04:24:24) generaledit 
+\i (04:24:31) setwindow cmgr
+\i (04:24:31) cm newView ( worksheet 53:Electrical 66:Net 25:Routing 26:Wiring )
+\i (04:24:32) cm select ( worksheet 53:Electrical 66:Net 25:Routing 26:Wiring )
+\i (04:24:33) cm newView ( worksheet 53:Electrical 66:Net 22:Timing "23:Switch/Settle Delays" )
+\i (04:24:34) cm newView ( worksheet 53:Electrical 66:Net "15:Signal Integrity" "16:Electrical Properties" )
+\i (04:24:35) cm select tab 17:Reflection
+\i (04:24:36) cm select tab "18:Edge Distortions"
+\i (04:24:36) cm select tab "19:Estimated Xtalk"
+\i (04:24:37) cm select tab 21:SSN
+\i (04:24:37) cm select ( frame ( workbook 53:Electrical 66:Net 22:Timing ) )
+\i (04:24:38) cm select tab "24:Setup/Hold (Common Clock)"
+\i (04:24:38) cm select ( frame ( workbook 53:Electrical 66:Net 25:Routing ) )
+\i (04:24:38) cm select tab 27:Impedance
+\i (04:24:39) cm select tab "29:Total Etch Length"
+\i (04:24:41) cm select ( worksheet 53:Electrical 66:Net 25:Routing "29:Total Etch Length" )
+\i (04:24:41) cm select ( worksheet 53:Electrical 66:Net 25:Routing "29:Total Etch Length" )
+\i (04:24:41) cm select ( worksheet 53:Electrical 66:Net 25:Routing "29:Total Etch Length" )
+\i (04:24:42) cm select ( worksheet 53:Electrical 66:Net 25:Routing "29:Total Etch Length" )
+\i (04:24:42) cm select ( worksheet 53:Electrical 66:Net 25:Routing "29:Total Etch Length" )
+\i (04:24:42) cm select ( worksheet 53:Electrical 66:Net 25:Routing "29:Total Etch Length" )
+\i (04:24:44) cm newView ( worksheet "171:Same Net Spacing" 204:Region "205:All Layers" 206:Line )
+\i (04:24:45) cm newView ( worksheet "171:Same Net Spacing" 189:Net "190:All Layers" 191:Line )
+\i (04:24:46) cm select ( worksheet "171:Same Net Spacing" 189:Net "190:All Layers" 191:Line )
+\i (04:24:46) cm select ( worksheet "171:Same Net Spacing" 189:Net "190:All Layers" 191:Line )
+\i (04:24:47) cm select ( worksheet "171:Same Net Spacing" 189:Net "190:All Layers" 191:Line )
+\i (04:24:49) cm newView ( worksheet 145:DRC 43:DRC 51:Design 52:Design )
+\i (04:24:50) cm newView ( worksheet 145:DRC 43:DRC 44:Electrical 45:Electrical )
+\i (04:24:51) cm select ( worksheet 145:DRC 43:DRC 44:Electrical 45:Electrical )
+\i (04:24:51) cm select ( worksheet 145:DRC 43:DRC 44:Electrical 45:Electrical )
+\i (04:24:52) cm newView ( worksheet 144:Properties 14:Net "67:Electrical Properties" "73:Electrical Properties" )
+\i (04:24:52) cm newView ( worksheet 144:Properties 14:Net "36:General Properties" "37:General Properties" )
+\i (04:24:53) cm select ( worksheet 144:Properties 14:Net "36:General Properties" "37:General Properties" )
+\i (04:24:53) cm select ( worksheet 144:Properties 14:Net "36:General Properties" "37:General Properties" )
+\i (04:24:53) cm select ( worksheet 144:Properties 14:Net "36:General Properties" "37:General Properties" )
+\i (04:24:53) cm select ( worksheet 144:Properties 14:Net "36:General Properties" "37:General Properties" )
+\i (04:24:54) cm select ( worksheet 144:Properties 14:Net "36:General Properties" "37:General Properties" )
+\i (04:24:54) cm select ( worksheet 144:Properties 14:Net "36:General Properties" "37:General Properties" )
+\i (04:24:54) cm select ( worksheet 144:Properties 14:Net "36:General Properties" "37:General Properties" )
+\i (04:24:54) cm select ( worksheet 144:Properties 14:Net "36:General Properties" "37:General Properties" )
+\i (04:24:54) cm select ( worksheet 144:Properties 14:Net "36:General Properties" "37:General Properties" )
+\i (04:24:55) cm newView ( worksheet 53:Electrical "1:Electrical Constraint Set" "2:Signal Integrity" "3:Reflection/Edge Distortions" )
+\i (04:24:56) cm select tab 4:Xtalk/SSN
+\i (04:24:56) cm newView ( worksheet 53:Electrical "1:Electrical Constraint Set" 7:Routing 8:Wiring )
+\i (04:24:57) cm newView ( worksheet 53:Electrical "1:Electrical Constraint Set" "12:All Constraints" "13:Signal Integrity/Timing/Routing" )
+\i (04:24:58) cm select tab 33:User-Defined
+\i (04:25:00) cm exit
+\i (04:25:06) setwindow pcb
+\i (04:25:06) add pin 
+\t (04:25:06) Using 'THERMAL320X510.pad'.
+\i (04:25:08) pick grid 3.8270 -0.2696
+\t (04:25:08) last pick:  5.0800  0.0000
+\t (04:25:08) Using 'THERMAL320X510.pad'.
+\i (04:25:10) Esc 
+\w (04:25:10) WARNING(SPMHA1-314): Illegal event.
+\i (04:25:11) Esc 
+\w (04:25:11) WARNING(SPMHA1-314): Illegal event.
+\i (04:25:12) prepopup -2.6694 2.1261
+\i (04:25:12) done 
+\t (04:25:12) Exiting from Add Pin.
+\i (04:25:13) generaledit 
+\i (04:25:13) pick grid 0.5104 0.9127
+\t (04:25:13) last pick:  0.0000  0.0000
+\i (04:25:14) prepopup 0.5104 0.9127
+\i (04:25:15) pop dyn_option_select @:@Delete 
+\i (04:25:15) delete 
+\i (04:25:15) generaledit 
+\i (04:25:16) drag_start grid 4.9347 1.2052
+\i (04:25:17) drag_stop 5.4387 1.0247
+\i (04:25:17) prepopup 5.2396 1.0434
+\i (04:25:18) pop dyn_option_select @:@Move 
+\i (04:25:18) move 
+\t (04:25:18) last pick:  5.0800  0.0000
+\t (04:25:18) last pick:  5.0800  0.0000
+\t (04:25:18) Pick new location for the element(s).
+\i (04:25:19) pick grid 1.2696 1.1741
+\t (04:25:19) last pick:  0.0000  0.0000
+\i (04:25:19) generaledit 
+\i (04:25:20) prepopup -0.2114 1.3047
+\i (04:25:23) pop dyn_option_select '@:@Show element' 
+\i (04:25:23) show element 
+\i (04:25:23) generaledit 
+\i (04:25:25) setwindow text
+\i (04:25:25) close 
+\i (04:25:26) setwindow pcb
+\i (04:25:26) pick grid -4.5610 2.3003
+\t (04:25:26) last pick:  -5.0800  2.5400
+\i (04:25:27) save 
+\i (04:25:29) fillin yes 
+\t (04:25:29) Symbol '8son_powerblock.psm' created.
+\i (04:25:29) generaledit 
+\i (04:25:31) pick grid -5.0837 0.8754
+\t (04:25:31) last pick:  -5.0800  0.0000
+\e (04:25:31) Command not found: xhilite
+\i (04:25:31) xname_flush 
+\i (04:25:31) done 
+\i (04:25:31) generaledit 
+\e (04:25:49) Command not found: xhilite
+\i (04:25:49) xname_flush 
+\i (04:25:49) done 
+\i (04:25:49) generaledit 
+\e (04:25:50) Command not found: xdehilite
+\i (04:25:50) xname_flush 
+\i (04:25:50) done 
+\i (04:25:50) generaledit 
+\e (04:25:51) Command not found: xhilite
+\i (04:25:51) xname_flush 
+\i (04:25:51) done 
+\i (04:25:51) generaledit 
+\e (04:25:51) Command not found: xdehilite
+\i (04:25:51) xname_flush 
+\i (04:25:51) done 
+\i (04:25:51) generaledit 
+\e (04:25:53) Command not found: xhilite
+\i (04:25:53) xname_flush 
+\i (04:25:53) done 
+\i (04:25:53) generaledit 
+\e (04:25:53) Command not found: xdehilite
+\i (04:25:53) xname_flush 
+\i (04:25:53) done 
+\i (04:25:53) generaledit 
+\e (04:26:00) Command not found: xhilite
+\i (04:26:00) xname_flush 
+\i (04:26:00) done 
+\i (04:26:00) generaledit 
+\e (04:26:04) Command not found: xdehilite
+\i (04:26:04) xname_flush 
+\i (04:26:04) done 
+\i (04:26:04) generaledit 
+\i (04:26:23) pick grid 4.8413 -0.3816
+\t (04:26:23) last pick:  5.0800  0.0000
+\i (04:26:23) pick grid -0.3110 1.3110
+\t (04:26:23) last pick:  0.0000  2.5400
+\i (04:26:24) prepopup -0.3172 1.3110
+\i (04:26:26) pop dyn_option_select '@:@Show element' 
+\i (04:26:26) show element 
+\i (04:26:26) generaledit 
+\i (04:26:34) setwindow text
+\i (04:26:34) close 
+\i (04:26:36) setwindow pcb
+\i (04:26:36) pick grid 2.7754 -1.8004
+\t (04:26:36) last pick:  2.5400  -2.5400
+\i (04:26:36) prepopup 2.7754 -1.8004
+\i (04:26:38) pick grid 2.6759 -1.8004
+\t (04:26:38) last pick:  2.5400  -2.5400
+\i (04:26:44) add pin 
+\t (04:26:44) Using 'THERMAL320X510.pad'.
+\i (04:26:45) prepopup 5.4014 0.6949
+\i (04:26:49) prepopup 5.1898 0.3962
+\i (04:26:50) oops 
+\t (04:26:50) Using 'THERMAL320X510.pad'.
+\i (04:26:52) prepopup 4.6111 0.4647
+\i (04:27:59) prepopup -4.3806 1.9892
+\i (04:28:07) replace padstack 
+\t (04:28:07) Exiting from Add Pin.
+\i (04:28:09) pick grid 0.2553 1.5847
+\t (04:28:09) last pick:  0.0000  2.5400
+\i (04:28:10) prepopup 0.0561 1.5661
+\i (04:28:11) done 
+\i (04:28:11) generaledit 
+\i (04:28:12) pick grid -0.3359 1.2301
+\t (04:28:12) last pick:  0.0000  0.0000
+\i (04:28:12) prepopup -0.3359 1.2301
+\i (04:28:20) replace padstack 
+\i (04:28:21) pick grid -1.0204 1.9332
+\t (04:28:21) last pick:  0.0000  2.5400
+\i (04:28:28) padeditdb 
+\i (04:28:30) pick grid -0.7404 1.3918
+\t (04:28:30) last pick:  0.0000  2.5400
+\i (04:28:30) prepopup -0.7404 1.3918
+\i (04:28:32) done 
+\i (04:28:32) generaledit 
+\i (04:28:33) prepopup -1.0577 1.7279
+\i (04:28:39) pop dyn_option_select 'Application Mode@:@Etch Edit' 
+\i (04:28:39) etchedit 
+\i (04:28:39) pick grid -1.4248 2.0888
+\t (04:28:39) last pick:  -1.2700  1.9050
+\i (04:28:40) prepopup -1.4746 2.2319
+\i (04:28:42) pop dyn_option_select 'Quick Utilities@:@Grids...' 
+\i (04:28:42) define grid 
+\t (04:28:43) Spacing fields allow simple equations to aid calculations; prefix with =
+\i (04:28:43) etchedit 
+\i (04:28:44) setwindow form.grid
+\i (04:28:44) FORM grid done  
+\i (04:28:44) setwindow pcb
+\i (04:28:44) prepopup -0.8337 1.0869
+\i (04:28:51) pop dyn_option_select @:@Delete 
+\i (04:28:51) delete 
+\i (04:28:51) etchedit 
+\i (04:28:52) save 
+\i (04:28:54) fillin yes 
+\t (04:28:54) Symbol '8son_powerblock.psm' created.
+\i (04:28:54) etchedit 
+\e (04:28:56) Command not found: xhilite
+\i (04:28:56) xname_flush 
+\i (04:28:56) done 
+\i (04:28:56) etchedit 
+\e (04:30:25) Command not found: xhilite
+\i (04:30:25) xname_flush 
+\i (04:30:25) done 
+\i (04:30:25) etchedit 
+\e (04:30:27) Command not found: xdehilite
+\i (04:30:27) xname_flush 
+\i (04:30:27) done 
+\i (04:30:28) etchedit 
+\e (04:31:01) Command not found: xhilite
+\i (04:31:01) xname_flush 
+\i (04:31:01) done 
+\i (04:31:01) etchedit 
+\e (04:31:04) Command not found: xdehilite
+\i (04:31:04) xname_flush 
+\i (04:31:04) done 
+\i (04:31:04) etchedit 
+\e (04:31:06) Command not found: xdehilite
+\i (04:31:06) xname_flush 
+\i (04:31:06) done 
+\i (04:31:06) etchedit 
+\e (04:31:06) Command not found: xhilite
+\i (04:31:06) xname_flush 
+\i (04:31:06) done 
+\i (04:31:06) etchedit 
+\e (04:31:08) Command not found: xhilite
+\i (04:31:08) xname_flush 
+\i (04:31:08) done 
+\i (04:31:08) etchedit 
+\e (04:31:10) Command not found: xdehilite
+\i (04:31:10) xname_flush 
+\i (04:31:10) done 
+\i (04:31:10) etchedit 
+\e (04:31:10) Command not found: xhilite
+\i (04:31:10) xname_flush 
+\i (04:31:10) done 
+\i (04:31:10) etchedit 
+\e (04:31:13) Command not found: xdehilite
+\i (04:31:13) xname_flush 
+\i (04:31:13) done 
+\i (04:31:13) etchedit 
+\e (04:31:13) Command not found: xhilite
+\i (04:31:13) xname_flush 
+\i (04:31:13) done 
+\i (04:31:13) etchedit 
+\e (04:31:17) Command not found: xdehilite
+\i (04:31:17) xname_flush 
+\i (04:31:17) done 
+\i (04:31:17) etchedit 
+\e (04:33:05) Command not found: xhilite
+\i (04:33:05) xname_flush 
+\i (04:33:05) done 
+\i (04:33:05) etchedit 
+\e (04:33:07) Command not found: xdehilite
+\i (04:33:07) xname_flush 
+\i (04:33:07) done 
+\i (04:33:07) etchedit 
+\i (04:37:25) pick grid 1.4127 0.6514
+\t (04:37:25) last pick:  1.2700  0.6350
+\i (04:37:33) add pin 
+\t (04:37:34) Using 'THERMAL320X510.pad'.
+\i (04:37:35) pick grid 0.0188 0.3153
+\t (04:37:35) last pick:  0.0000  0.0000
+\t (04:37:35) Using 'THERMAL320X510.pad'.
+\i (04:37:37) prepopup -2.9369 3.1653
+\i (04:37:38) done 
+\t (04:37:38) Exiting from Add Pin.
+\i (04:37:38) etchedit 
+\i (04:37:52) save 
+\i (04:37:54) fillin yes 
+\t (04:37:55) Symbol '8son_powerblock.psm' created.
+\i (04:37:55) etchedit 
+\i (04:37:58) create symbol 
+\i (04:38:02) fillin "8son_powerblock.psm"
+\t (04:38:02) Creating package symbol 'C:/Users/George/Dropbox/PCBs/Footprint Library/8son_powerblock.psm'.
+\t (04:38:02) Starting Create symbol...
+\i (04:38:03) etchedit 
+\i (04:38:23) pick grid 1.7238 2.9288
+\t (04:38:23) last pick:  1.9050  3.1750
+\i (04:38:25) prepopup 0.4295 1.3358
+\i (04:38:28) pick grid -4.5797 0.9314
+\t (04:38:28) last pick:  -4.4450  0.6350
+\e (04:38:30) Command not found: xhilite
+\i (04:38:30) xname_flush 
+\i (04:38:30) done 
+\i (04:38:30) etchedit 
+\i (04:39:10) create device 
+\i (04:39:13) setwindow form.crdevice
+\i (04:39:13) FORM crdevice done  
+\t (04:39:13) Device file "8SON_POWERBLOCK.txt" created.
+
+   (04:39:13) Loading signal.cxt 
+\i (04:39:13) setwindow pcb
+\i (04:39:13) etchedit 
+\i (04:39:17) create symbol 
+\i (04:39:21) fillin "8son_powerblock.psm"
+\t (04:39:21) Creating package symbol 'C:/Users/George/Dropbox/PCBs/Footprint Library/8son_powerblock.psm'.
+\t (04:39:21) Starting Create symbol...
+\i (04:39:21) etchedit 
+\i (04:39:23) create symbol 
+\i (04:39:29) fillin "8son_powerblock.psm"
+\t (04:39:29) Creating package symbol 'C:/Users/George/Dropbox/PCBs/Footprint Library/8son_powerblock.psm'.
+\t (04:39:29) Starting Create symbol...
+\i (04:39:29) etchedit 
+\i (04:39:33) save_as 
+\i (04:39:45) fillin "8SON_POWERBLOCK.dra"
+\t (04:39:45) Symbol '8son_powerblock.psm' created.
+\i (04:39:45) etchedit 
+\i (04:39:46) pick grid -4.5050 2.5057
+\t (04:39:46) last pick:  -4.4450  2.5400
+\i (04:42:47) pick grid 1.9416 -0.4314
+\t (04:42:47) last pick:  1.9050  -0.6350
+\i (04:42:50) prepopup -0.7964 0.7260
+\i (04:42:52) pick grid -0.9644 0.9065
+\t (04:42:52) last pick:  -1.2700  0.6350
+\i (04:42:52) pick grid dbl -0.9644 0.9065
+\t (04:42:52) last pick:  -1.2700  0.6350
+\i (04:42:52) pick grid -0.9644 0.9065
+\t (04:42:52) last pick:  -1.2700  0.6350
+\i (04:42:53) prepopup -0.9644 0.9065
+\i (04:43:02) find_by_name 
+\i (04:43:03) pick grid -0.9084 1.1989
+\t (04:43:03) last pick:  -0.6350  1.2700
+\i (04:43:06) setwindow form.findname
+\i (04:43:06) FORM findname cancel  
+\i (04:43:07) setwindow pcb
+\i (04:43:07) prepopup 0.6411 -1.7506
+\i (04:43:10) pop dyn_option_select '@:@Show element' 
+\i (04:43:10) show element 
+\i (04:43:10) etchedit 
+\i (04:43:15) pick grid -2.7067 -0.5558
+\t (04:43:15) last pick:  -2.5400  -0.6350
+\i (04:43:15) prepopup -2.7067 -0.5558
+\i (04:43:18) pop dyn_option_select '@:@Show element' 
+\i (04:43:18) show element 
+\i (04:43:18) etchedit 
+\i (04:43:22) setwindow text
+\i (04:43:22) close 
+\i (04:43:23) setwindow pcb
+\i (04:43:23) pick grid -0.7901 1.9332
+\t (04:43:23) last pick:  -0.6350  1.9050
+\i (04:43:31) artwork 
+\i (04:43:34) setwindow form.film_control
+\i (04:43:34) FORM film_control filmtree  PIN/TOP TOP 
+\i (04:43:35) FORM film_control filmtree  ETCH/TOP TOP 
+\i (04:43:35) FORM film_control filmtree  PIN/TOP TOP 
+\i (04:43:40) FORM film_control cancel  
+\i (04:43:40) setwindow pcb
+\i (04:43:40) etchedit 
+\i (04:43:45) reports 
+\i (04:43:47) etchedit 
+\i (04:44:05) show property 
+\i (04:44:05) etchedit 
+\i (04:44:06) drag_start grid -4.9842 2.1323
+\i (04:44:06) drag_stop -5.0402 1.8959
+\i (04:44:07) pick grid -0.4292 0.6825
+\t (04:44:07) last pick:  -0.6350  0.6350
+\i (04:44:08) zoom out 1 
+\i (04:44:08) setwindow pcb
+\i (04:44:08) zoom out -5.4571 -0.3940
+\i (04:44:08) trapsize 622
+\i (04:44:08) zoom out 1 
+\i (04:44:08) setwindow pcb
+\i (04:44:08) zoom out -5.4571 -0.3941
+\i (04:44:08) trapsize 1245
+\i (04:44:08) zoom out 1 
+\i (04:44:08) setwindow pcb
+\i (04:44:08) zoom out -5.4572 -0.3940
+\i (04:44:09) trapsize 2489
+\i (04:44:09) zoom out 1 
+\i (04:44:09) setwindow pcb
+\i (04:44:09) zoom out -50.7457 -0.3941
+\i (04:44:09) trapsize 4978
+\i (04:44:09) zoom out 1 
+\i (04:44:09) setwindow pcb
+\i (04:44:09) zoom out -51.4423 0.2280
+\i (04:44:09) trapsize 4978
+\i (04:44:09) zoom out 1 
+\i (04:44:09) setwindow pcb
+\i (04:44:09) zoom out -51.4423 0.2280
+\i (04:44:09) trapsize 4978
+\i (04:44:09) zoom out 1 
+\i (04:44:09) setwindow pcb
+\i (04:44:09) zoom out -51.4423 0.2280
+\i (04:44:09) trapsize 4978
+\i (04:44:09) zoom out 1 
+\i (04:44:09) setwindow pcb
+\i (04:44:09) zoom out -51.4423 0.2280
+\i (04:44:09) trapsize 4978
+\i (04:44:09) zoom out 1 
+\i (04:44:09) setwindow pcb
+\i (04:44:09) zoom out -51.4423 0.2280
+\i (04:44:09) trapsize 4978
+\i (04:44:09) zoom out 1 
+\i (04:44:09) setwindow pcb
+\i (04:44:09) zoom out -51.4423 0.2280
+\i (04:44:09) trapsize 4978
+\i (04:44:09) zoom in 1 
+\i (04:44:09) setwindow pcb
+\i (04:44:09) zoom in -46.7629 2.0201
+\i (04:44:09) trapsize 2489
+\i (04:44:09) zoom in 1 
+\i (04:44:09) setwindow pcb
+\i (04:44:09) zoom in -48.4056 2.0202
+\i (04:44:09) trapsize 1245
+\i (04:44:10) zoom in 1 
+\i (04:44:10) setwindow pcb
+\i (04:44:10) zoom in 5.4821 0.3526
+\i (04:44:10) trapsize 622
+\i (04:44:11) zoom in 1 
+\i (04:44:11) setwindow pcb
+\i (04:44:11) zoom in 5.4945 0.3526
+\i (04:44:11) trapsize 311
+\i (04:44:23) setwindow form.show_prop
+\i (04:44:23) FORM show_prop done  
+\i (04:44:25) setwindow pcb
+\i (04:44:25) auto_pin_renumber 
+\i (04:44:30) setwindow form.pinRenumber
+\i (04:44:30) FORM pinRenumber done  
+\i (04:44:30) setwindow pcb
+\i (04:44:30) etchedit 
+\i (04:44:39) pick grid -3.8456 3.9867
+\t (04:44:39) last pick:  -3.8100  3.8100
+\i (04:44:56) auto_pin_renumber 
+\i (04:44:58) setwindow form.pinRenumber
+\i (04:44:58) FORM pinRenumber sequence_vertical YES 
+\i (04:45:00) FORM pinRenumber done  
+\i (04:45:00) setwindow pcb
+\i (04:45:00) etchedit 
+\i (04:45:11) pick grid -2.9869 -0.0892
+\t (04:45:11) last pick:  -3.1750  0.0000
+\i (04:45:41) pick grid -0.7281 -0.1514
+\t (04:45:41) last pick:  -0.6350  0.0000
+\i (04:45:49) save 
+\i (04:45:50) fillin yes 
+\t (04:45:51) Symbol '8son_powerblock.psm' created.
+\i (04:45:51) etchedit 
+\i (04:46:08) pick grid -7.1685 3.5760
+\t (04:46:08) last pick:  -6.9850  3.8100
+\i (04:46:11) create symbol 
+\i (04:46:22) fillin "8son_powerblock.psm"
+\t (04:46:22) Creating package symbol 'C:/Users/George/Dropbox/PCBs/Footprint Library/8son_powerblock.psm'.
+\t (04:46:22) Starting Create symbol...
+\i (04:46:22) etchedit 
+\i (04:46:44) pick grid -4.3372 3.2586
+\t (04:46:44) last pick:  -4.4450  3.1750
+\i (04:46:48) pick grid -4.8288 1.0994
+\t (04:46:48) last pick:  -5.0800  1.2700
+\i (04:46:56) pick grid -6.5026 1.9830
+\t (04:46:56) last pick:  -6.3500  1.9050
+\i (04:47:01) pick grid -5.1772 1.8772
+\t (04:47:01) last pick:  -5.0800  1.9050
+\i (04:47:08) add pin 
+\t (04:47:08) Using 'THERMAL320X510.pad'.
+\i (04:47:10) prepopup -5.7373 0.6513
+\i (04:47:12) prepopup -3.1238 -1.8253
+\i (04:47:14) prepopup -6.0671 2.9288
+\i (04:47:24) multpadedit 
+\t (04:47:24) Exiting from Add Pin.
+\w (04:47:24) User units conversion failed.
+\i (04:47:28) multpadedit 
+\w (04:47:28) WARNING(SPMHFN-43): No pins or vias found
+\i (04:47:29) pick grid -2.5637 1.8025
+\t (04:47:29) last pick:  -2.5400  1.9050
+\w (04:47:29) WARNING(SPMHFN-43): No pins or vias found
+\i (04:47:30) pick grid -2.5202 0.5269
+\t (04:47:30) last pick:  -2.5400  0.6350
+\w (04:47:30) WARNING(SPMHFN-43): No pins or vias found
+\i (04:47:30) prepopup -2.5202 0.5393
+\i (04:47:32) pick grid -2.7193 -0.6430
+\t (04:47:32) last pick:  -2.5400  -0.6350
+\w (04:47:32) WARNING(SPMHFN-43): No pins or vias found
+\i (04:47:32) prepopup -2.6882 -0.5559
+\i (04:47:35) pop lasso 
+\i (04:47:36) drag_start grid -2.8189 3.4080
+\i (04:47:36) mouse_pos -5.3950 1.3234
+\i (04:47:36) mouse_pos -5.4012 1.2674
+\i (04:47:36) mouse_pos -5.4137 1.0434
+\i (04:47:36) mouse_pos -5.4137 0.8753
+\i (04:47:36) mouse_pos -5.3826 0.6887
+\i (04:47:36) mouse_pos -5.3452 0.4149
+\i (04:47:36) mouse_pos -5.2457 0.1784
+\i (04:47:36) mouse_pos -5.0963 -0.1265
+\i (04:47:36) mouse_pos -4.8848 -0.4625
+\i (04:47:36) mouse_pos -4.6421 -0.7052
+\i (04:47:36) mouse_pos -4.3745 -0.9168
+\i (04:47:36) mouse_pos -4.0634 -1.1159
+\i (04:47:36) mouse_pos -3.8083 -1.2528
+\i (04:47:36) mouse_pos -3.5842 -1.3710
+\i (04:47:36) mouse_pos -3.3976 -1.4644
+\i (04:47:36) mouse_pos -3.2856 -1.5452
+\i (04:47:36) mouse_pos -3.1922 -1.6199
+\i (04:47:36) mouse_pos -3.0740 -1.7381
+\i (04:47:36) mouse_pos -2.9744 -1.8315
+\i (04:47:36) mouse_pos -2.8749 -1.9373
+\i (04:47:36) mouse_pos -2.7691 -2.0493
+\i (04:47:36) mouse_pos -2.6944 -2.1488
+\i (04:47:36) mouse_pos -2.6322 -2.2360
+\i (04:47:36) mouse_pos -2.5575 -2.3480
+\i (04:47:36) mouse_pos -2.4828 -2.4537
+\i (04:47:36) mouse_pos -2.4082 -2.5720
+\i (04:47:36) mouse_pos -2.3397 -2.6653
+\i (04:47:36) mouse_pos -2.3086 -2.7151
+\i (04:47:36) mouse_pos -2.2775 -2.7587
+\i (04:47:36) mouse_pos -2.2588 -2.7960
+\i (04:47:36) mouse_pos -2.2526 -2.8333
+\i (04:47:36) mouse_pos -2.2526 -2.8769
+\i (04:47:36) mouse_pos -2.2650 -2.9267
+\i (04:47:36) mouse_pos -2.3397 -2.9889
+\i (04:47:36) mouse_pos -2.4517 -3.0573
+\i (04:47:36) mouse_pos -2.5326 -3.1071
+\i (04:47:36) mouse_pos -2.5824 -3.1445
+\i (04:47:36) mouse_pos -2.6073 -3.1693
+\i (04:47:36) mouse_pos -2.6135 -3.2005
+\i (04:47:37) mouse_pos -2.5700 -3.2316
+\i (04:47:37) mouse_pos -2.5202 -3.2502
+\i (04:47:37) mouse_pos -2.4268 -3.2627
+\i (04:47:37) mouse_pos -2.3273 -3.2627
+\i (04:47:37) mouse_pos -2.2090 -3.2689
+\i (04:47:37) mouse_pos -2.0286 -3.2751
+\i (04:47:37) mouse_pos -1.8170 -3.2627
+\i (04:47:37) mouse_pos -1.6117 -3.2565
+\i (04:47:37) mouse_pos -1.3565 -3.2502
+\i (04:47:37) mouse_pos -1.0828 -3.2440
+\i (04:47:37) mouse_pos -0.8027 -3.2378
+\i (04:47:37) mouse_pos -0.5476 -3.2316
+\i (04:47:37) mouse_pos -0.2987 -3.2254
+\i (04:47:37) mouse_pos -0.0249 -3.2129
+\i (04:47:37) mouse_pos 0.1804 -3.2067
+\i (04:47:37) mouse_pos 0.4045 -3.2067
+\i (04:47:37) mouse_pos 0.6160 -3.1942
+\i (04:47:37) mouse_pos 0.8027 -3.1942
+\i (04:47:37) mouse_pos 1.0205 -3.1693
+\i (04:47:37) mouse_pos 1.2258 -3.1693
+\i (04:47:37) mouse_pos 1.4187 -3.1507
+\i (04:47:37) mouse_pos 1.5805 -3.1382
+\i (04:47:37) mouse_pos 1.7610 -3.1258
+\i (04:47:37) mouse_pos 1.9477 -3.1133
+\i (04:47:37) mouse_pos 2.1219 -3.0947
+\i (04:47:37) mouse_pos 2.3210 -3.0511
+\i (04:47:37) mouse_pos 2.5015 -3.0013
+\i (04:47:37) mouse_pos 2.7068 -2.9391
+\i (04:47:37) mouse_pos 2.9433 -2.8707
+\i (04:47:37) mouse_pos 3.1175 -2.8209
+\i (04:47:37) mouse_pos 3.2669 -2.7773
+\i (04:47:37) mouse_pos 3.3975 -2.7400
+\i (04:47:37) mouse_pos 3.4909 -2.6902
+\i (04:47:37) mouse_pos 3.5842 -2.6404
+\i (04:47:37) mouse_pos 3.7149 -2.5844
+\i (04:47:37) mouse_pos 3.8580 -2.5160
+\i (04:47:37) mouse_pos 3.9949 -2.4724
+\i (04:47:37) mouse_pos 4.0945 -2.4413
+\i (04:47:37) mouse_pos 4.1567 -2.4289
+\i (04:47:37) mouse_pos 4.2127 -2.4102
+\i (04:47:37) mouse_pos 4.2438 -2.3853
+\i (04:47:37) mouse_pos 4.2874 -2.2982
+\i (04:47:37) mouse_pos 4.3371 -2.0991
+\i (04:47:37) mouse_pos 4.4118 -1.8066
+\i (04:47:37) mouse_pos 4.4740 -1.5577
+\i (04:47:37) mouse_pos 4.4927 -1.3772
+\i (04:47:37) mouse_pos 4.5176 -1.2030
+\i (04:47:37) mouse_pos 4.5487 -0.9977
+\i (04:47:37) mouse_pos 4.5487 -0.7612
+\i (04:47:37) mouse_pos 4.5300 -0.4065
+\i (04:47:37) mouse_pos 4.5176 -0.0767
+\i (04:47:37) mouse_pos 4.5052 0.1909
+\i (04:47:37) mouse_pos 4.5052 0.4149
+\i (04:47:37) mouse_pos 4.4803 0.5642
+\i (04:47:37) mouse_pos 4.4554 0.7011
+\i (04:47:37) mouse_pos 4.4118 0.8629
+\i (04:47:37) mouse_pos 4.3745 1.0122
+\i (04:47:37) mouse_pos 4.3371 1.1554
+\i (04:47:37) mouse_pos 4.3309 1.2736
+\i (04:47:38) mouse_pos 4.3247 1.3483
+\i (04:47:38) mouse_pos 4.3185 1.4167
+\i (04:47:38) mouse_pos 4.2998 1.5101
+\i (04:47:38) mouse_pos 4.2811 1.5847
+\i (04:47:38) mouse_pos 4.2625 1.6532
+\i (04:47:38) mouse_pos 4.2500 1.7403
+\i (04:47:38) mouse_pos 4.2251 1.8274
+\i (04:47:38) mouse_pos 4.2002 1.9394
+\i (04:47:38) mouse_pos 4.1878 2.0763
+\i (04:47:38) mouse_pos 4.1629 2.1945
+\i (04:47:38) mouse_pos 4.1505 2.2817
+\i (04:47:38) mouse_pos 4.1256 2.3626
+\i (04:47:38) mouse_pos 4.1069 2.4123
+\i (04:47:38) mouse_pos 4.0820 2.4683
+\i (04:47:38) mouse_pos 4.0385 2.5430
+\i (04:47:38) mouse_pos 3.9762 2.6239
+\i (04:47:38) mouse_pos 3.9016 2.6986
+\i (04:47:38) mouse_pos 3.8580 2.7546
+\i (04:47:38) mouse_pos 3.8331 2.7919
+\i (04:47:38) mouse_pos 3.8082 2.8355
+\i (04:47:38) mouse_pos 3.7833 2.8915
+\i (04:47:38) mouse_pos 3.7647 2.9288
+\i (04:47:38) mouse_pos 3.7460 2.9661
+\i (04:47:38) mouse_pos 3.7149 3.0159
+\i (04:47:38) mouse_pos 3.6775 3.0657
+\i (04:47:38) mouse_pos 3.6340 3.1155
+\i (04:47:38) mouse_pos 3.5904 3.1715
+\i (04:47:38) mouse_pos 3.5469 3.2088
+\i (04:47:38) mouse_pos 3.4784 3.2524
+\i (04:47:38) mouse_pos 3.3664 3.2959
+\i (04:47:38) mouse_pos 3.2420 3.3271
+\i (04:47:38) mouse_pos 3.0864 3.3457
+\i (04:47:38) mouse_pos 2.8811 3.3582
+\i (04:47:38) mouse_pos 2.7006 3.3706
+\i (04:47:38) mouse_pos 2.5077 3.3893
+\i (04:47:38) mouse_pos 2.3148 3.4142
+\i (04:47:38) mouse_pos 2.0970 3.4266
+\i (04:47:38) mouse_pos 1.8792 3.4453
+\i (04:47:38) mouse_pos 1.5805 3.4515
+\i (04:47:38) mouse_pos 1.3067 3.4640
+\i (04:47:38) mouse_pos 1.0205 3.4702
+\i (04:47:38) mouse_pos 0.7156 3.4702
+\i (04:47:38) mouse_pos 0.4169 3.4764
+\i (04:47:38) mouse_pos 0.1120 3.4764
+\i (04:47:38) mouse_pos -0.2551 3.4764
+\i (04:47:38) mouse_pos -0.5849 3.4764
+\i (04:47:38) mouse_pos -0.9210 3.4764
+\i (04:47:38) mouse_pos -1.1512 3.4764
+\i (04:47:38) mouse_pos -1.3317 3.4764
+\i (04:47:38) mouse_pos -1.4872 3.4826
+\i (04:47:38) mouse_pos -1.6801 3.4826
+\i (04:47:38) mouse_pos -1.8544 3.4826
+\i (04:47:38) mouse_pos -2.0597 3.4826
+\i (04:47:38) mouse_pos -2.2028 3.4640
+\i (04:47:38) mouse_pos -2.2962 3.4328
+\i (04:47:38) mouse_pos -2.3335 3.4204
+\i (04:47:38) mouse_pos -2.3584 3.3893
+\i (04:47:39) drag_stop grid -2.3771 3.3706
+\w (04:47:39) WARNING(SPMHFN-43): No pins or vias found
+\i (04:47:40) drag_start grid -2.4642 3.4702
+\i (04:47:41) drag_stop -5.5568 -2.7773
+\w (04:47:41) WARNING(SPMHFN-43): No pins or vias found
+\i (04:47:41) drag_start grid -4.4118 3.7315
+\i (04:47:42) roam y 16
+\i (04:47:42) drag_stop 5.2145 -3.5552
+\w (04:47:42) WARNING(SPMHFN-43): No pins or vias found
+\i (04:47:43) prepopup 3.0179 -1.9000
+\i (04:47:43) done 
+\i (04:47:44) etchedit 
+\i (04:47:45) pick grid 2.9806 -1.9435
+\t (04:47:45) last pick:  3.1750  -1.9050
+\i (04:47:46) prepopup 2.5761 -1.9000
+\i (04:47:53) pick grid 1.8294 -3.1632
+\t (04:47:53) last pick:  1.9050  -3.1750
+\i (04:48:19) replay 'C:/Users/George/Dropbox/PCBs/Footprint Library/QFN127P600X500X150-9N_Allegro/QFN127P600X500X150-9N.scr.txt' 
+\i (04:48:19) cd 'C:/Users/George/Dropbox/PCBs/Footprint Library/QFN127P600X500X150-9N_Allegro' 
+\i (04:48:19) version 16.5 
+\t (04:48:19) Script version: 16.5
+\i (04:48:19) scriptmode +i +n 
+\i (04:48:19) padeditlib 
+\i (04:48:19) fillin r107_45 
+\i (04:48:20) setwindow form.padedit 
+\i (04:48:20) pse_new 
+\i (04:48:20) fillin r107_45 
+\i (04:48:20) FORM padedit units Millimeter 
+\e (04:48:20) Window is disabled, command may not be allowed: fillin yes
+\i (04:48:20) FORM padedit decimal_places 4 
+\i (04:48:20) FORM padedit inner_layer_opt YES 
+\e (04:48:20) Form field label not found
+\i (04:48:20) FORM padedit single YES 
+\i (04:48:20) setwindow Form.padedit 
+\i (04:48:20) FORM padedit layers 
+\i (04:48:20) FORM padedit grid row begin_layer 
+\e (04:48:20) Row,Column value is not valid for field.
+\i (04:48:20) FORM padedit grid change begin_layer,begin_layer TOP 
+\e (04:48:20) Row,Column value is not valid for field.
+\i (04:48:20) FORM padedit geometry Rectangle 
+\i (04:48:20) FORM padedit width 1.0750 
+\i (04:48:20) FORM padedit height 0.4500 
+\i (04:48:20) FORM padedit grid row SOLDERMASK_TOP 
+\i (04:48:20) FORM padedit geometry Rectangle 
+\i (04:48:20) FORM padedit width 1.0750 
+\i (04:48:20) FORM padedit height 0.4500 
+\i (04:48:20) FORM padedit grid row PASTEMASK_TOP 
+\i (04:48:20) FORM padedit geometry Rectangle 
+\i (04:48:20) FORM padedit width 1.0750 
+\i (04:48:20) FORM padedit height 0.4500 
+\i (04:48:20) pse_check 
+\i (04:48:20) pse_save 
+\i (04:48:20) fillin yes 
+\i (04:48:20) pse_exit 
+\i (04:48:20) fillin menu_cancel 
+\i (04:48:20) fillin yes 
+\i (04:48:20) setwindow pcb 
+\i (04:48:20) generaledit 
+\i (04:48:20) padeditlib 
+\i (04:48:20) fillin thermal320X510 
+\i (04:48:21) setwindow form.padedit 
+\i (04:48:21) pse_new 
+\i (04:48:21) fillin thermal320X510 
+\i (04:48:21) FORM padedit units Millimeter 
+\e (04:48:21) Window is disabled, command may not be allowed: fillin yes
+\i (04:48:21) FORM padedit decimal_places 4 
+\i (04:48:21) FORM padedit inner_layer_opt YES 
+\e (04:48:21) Form field label not found
+\i (04:48:21) FORM padedit single YES 
+\i (04:48:21) setwindow Form.padedit 
+\i (04:48:21) FORM padedit layers 
+\i (04:48:21) FORM padedit grid row begin_layer 
+\e (04:48:21) Row,Column value is not valid for field.
+\i (04:48:21) FORM padedit grid change begin_layer,begin_layer TOP 
+\e (04:48:21) Row,Column value is not valid for field.
+\i (04:48:21) FORM padedit geometry Rectangle 
+\i (04:48:21) FORM padedit width 3.2060 
+\i (04:48:21) FORM padedit height 5.1000 
+\i (04:48:21) FORM padedit grid row SOLDERMASK_TOP 
+\i (04:48:21) FORM padedit geometry Rectangle 
+\i (04:48:21) FORM padedit width 3.2060 
+\i (04:48:21) FORM padedit height 5.1000 
+\i (04:48:21) FORM padedit grid row PASTEMASK_TOP 
+\i (04:48:21) FORM padedit geometry Rectangle 
+\i (04:48:21) FORM padedit width 3.2060 
+\i (04:48:21) FORM padedit height 5.1000 
+\i (04:48:21) pse_check 
+\i (04:48:21) pse_save 
+\i (04:48:21) fillin yes 
+\i (04:48:21) pse_exit 
+\i (04:48:21) fillin menu_cancel 
+\i (04:48:21) fillin yes 
+\i (04:48:21) setwindow pcb 
+\i (04:48:21) generaledit 
+\i (04:48:21) setwindow pcb 
+\i (04:48:21) new QFN127P600X500X150-9N.dra 'Package Symbol' 
+\e (04:48:21) Do you want to save the changes you made to C:/Users/George/Dropbox/PCBs/Footprint Library/8SON_POWERBLOCK.dra?
+\i (04:48:24) fillin yes 
+\t (04:48:24) Symbol '8son_powerblock.psm' created.
+\t (04:48:24) Starting new design...
+\i (04:48:24) trapsize 4978
+\i (04:48:24) trapsize 4978
+\i (04:48:24) setwindow Form.vf_vis 
+\i (04:48:24) FORM vf_vis 1 all_colorvisible YES 
+\i (04:48:24) FORM vf_vis 2 all_colorvisible YES 
+\i (04:48:24) setwindow pcb 
+\i (04:48:24) Color 
+\i (04:48:24) setwindow form.cvf_main
+\i (04:48:24) FORM cvf_main class_list Geometry
+\i (04:48:24) setwindow Form.cvf_main 
+\i (04:48:24) FORM cvf_main class_list Components 
+\i (04:48:24) FORM cvf_main all_visible1 YES 
+\i (04:48:24) FORM cvf_main all_visible2 YES 
+\i (04:48:24) FORM cvf_main all_visible3 YES 
+\i (04:48:24) FORM cvf_main class_list Geometry 
+\i (04:48:24) FORM cvf_main all_visible5 YES 
+\i (04:48:24) FORM cvf_main package_geometry/pin_number/visible NO 
+\i (04:48:24) FORM cvf_main class_list Stack-Up 
+\i (04:48:24) FORM cvf_main all_visible1 YES 
+\i (04:48:24) FORM cvf_main ok 
+\i (04:48:24) generaledit 
+\i (04:48:24) prmed 
+\i (04:48:24) setwindow Form.prmedit 
+\i (04:48:24) FORM prmedit design 
+\i (04:48:24) FORM prmedit lock_direction Off 
+\i (04:48:24) FORM prmedit units Millimeter 
+\i (04:48:24) FORM prmedit accuracy 4 
+\i (04:48:24) FORM prmedit size Other 
+\i (04:48:24) FORM prmedit x -65.5800 
+\i (04:48:24) FORM prmedit y -66.0800 
+\i (04:48:24) FORM prmedit width 131.7200 
+\i (04:48:24) FORM prmedit height 131.7200 
+\i (04:48:24) FORM prmedit done 
+\i (04:48:25) setwindow pcb 
+\i (04:48:25) add pin 
+\i (04:48:25) setwindow Form.mini 
+\i (04:48:25) FORM mini pad_name r107_45 
+\t (04:48:25) Using 'R107_45.pad'.
+\i (04:48:25) FORM mini next_pin_number 4 
+\i (04:48:25) rotate 
+\t (04:48:25) Spin the element(s).
+\i (04:48:25) iangle 0 
+\t (04:48:25) last angle:  +0.000 Degrees
+\t (04:48:25) Pin rotated by '0.000' degrees.
+\t (04:48:25) Using 'R107_45.pad'.
+\i (04:48:25) FORM mini pintype_mechanical NO 
+\i (04:48:25) FORM mini offsetx 0 
+\i (04:48:25) FORM mini offsety 0 
+\i (04:48:25) setwindow pcb 
+\i (04:48:25) pick -2.8330 1.9050 
+\t (04:48:25) last pick:  -2.8330  1.9050
+\t (04:48:25) Using 'R107_45.pad'.
+\i (04:48:25) done 
+\t (04:48:25) Exiting from Add Pin.
+\i (04:48:25) add pin 
+\t (04:48:25) Using 'R107_45.pad'.
+\i (04:48:25) setwindow Form.mini 
+\i (04:48:25) FORM mini pad_name r107_45 
+\t (04:48:25) Using 'R107_45.pad'.
+\i (04:48:25) FORM mini next_pin_number 3 
+\i (04:48:25) rotate 
+\t (04:48:25) Spin the element(s).
+\i (04:48:25) iangle 0 
+\t (04:48:25) last angle:  +0.000 Degrees
+\t (04:48:25) Pin rotated by '0.000' degrees.
+\t (04:48:25) Using 'R107_45.pad'.
+\i (04:48:25) FORM mini pintype_mechanical NO 
+\i (04:48:25) FORM mini offsetx 0 
+\i (04:48:25) FORM mini offsety 0 
+\i (04:48:25) setwindow pcb 
+\i (04:48:25) pick -2.8330 0.6350 
+\t (04:48:25) last pick:  -2.8330  0.6350
+\t (04:48:25) Using 'R107_45.pad'.
+\i (04:48:25) done 
+\t (04:48:25) Exiting from Add Pin.
+\i (04:48:25) add pin 
+\t (04:48:25) Using 'R107_45.pad'.
+\i (04:48:25) setwindow Form.mini 
+\i (04:48:25) FORM mini pad_name r107_45 
+\t (04:48:25) Using 'R107_45.pad'.
+\i (04:48:25) FORM mini next_pin_number 2 
+\i (04:48:25) rotate 
+\t (04:48:25) Spin the element(s).
+\i (04:48:25) iangle 0 
+\t (04:48:25) last angle:  +0.000 Degrees
+\t (04:48:25) Pin rotated by '0.000' degrees.
+\t (04:48:25) Using 'R107_45.pad'.
+\i (04:48:25) FORM mini pintype_mechanical NO 
+\i (04:48:25) FORM mini offsetx 0 
+\i (04:48:25) FORM mini offsety 0 
+\i (04:48:25) setwindow pcb 
+\i (04:48:25) pick -2.8330 -0.6350 
+\t (04:48:25) last pick:  -2.8330  -0.6350
+\t (04:48:25) Using 'R107_45.pad'.
+\i (04:48:25) done 
+\t (04:48:25) Exiting from Add Pin.
+\i (04:48:25) add pin 
+\t (04:48:25) Using 'R107_45.pad'.
+\i (04:48:25) setwindow Form.mini 
+\i (04:48:25) FORM mini pad_name r107_45 
+\t (04:48:25) Using 'R107_45.pad'.
+\i (04:48:25) FORM mini next_pin_number 1 
+\i (04:48:25) rotate 
+\t (04:48:25) Spin the element(s).
+\i (04:48:25) iangle 0 
+\t (04:48:25) last angle:  +0.000 Degrees
+\t (04:48:25) Pin rotated by '0.000' degrees.
+\t (04:48:25) Using 'R107_45.pad'.
+\i (04:48:25) FORM mini pintype_mechanical NO 
+\i (04:48:25) FORM mini offsetx 0 
+\i (04:48:25) FORM mini offsety 0 
+\i (04:48:25) setwindow pcb 
+\i (04:48:25) pick -2.8330 -1.9050 
+\t (04:48:25) last pick:  -2.8330  -1.9050
+\t (04:48:25) Using 'R107_45.pad'.
+\i (04:48:25) done 
+\t (04:48:25) Exiting from Add Pin.
+\i (04:48:25) add pin 
+\t (04:48:25) Using 'R107_45.pad'.
+\i (04:48:25) setwindow Form.mini 
+\i (04:48:25) FORM mini pad_name r107_45 
+\t (04:48:25) Using 'R107_45.pad'.
+\i (04:48:25) FORM mini next_pin_number 8 
+\i (04:48:25) rotate 
+\t (04:48:25) Spin the element(s).
+\i (04:48:25) iangle 180 
+\t (04:48:25) last angle:  +180.000 Degrees
+\t (04:48:25) Pin rotated by '180.000' degrees.
+\t (04:48:25) Using 'R107_45.pad'.
+\i (04:48:25) FORM mini pintype_mechanical NO 
+\i (04:48:25) FORM mini offsetx 0 
+\i (04:48:25) FORM mini offsety 0 
+\i (04:48:25) setwindow pcb 
+\i (04:48:25) pick 2.8330 -1.9050 
+\t (04:48:25) last pick:  2.8330  -1.9050
+\t (04:48:25) Using 'R107_45.pad'.
+\i (04:48:25) done 
+\t (04:48:25) Exiting from Add Pin.
+\i (04:48:25) add pin 
+\t (04:48:25) Using 'R107_45.pad'.
+\i (04:48:25) setwindow Form.mini 
+\i (04:48:25) FORM mini pad_name r107_45 
+\t (04:48:25) Using 'R107_45.pad'.
+\i (04:48:25) FORM mini next_pin_number 7 
+\i (04:48:25) rotate 
+\t (04:48:25) Spin the element(s).
+\i (04:48:25) iangle 180 
+\t (04:48:25) last angle:  +180.000 Degrees
+\t (04:48:25) Pin rotated by '180.000' degrees.
+\t (04:48:25) Using 'R107_45.pad'.
+\i (04:48:25) FORM mini pintype_mechanical NO 
+\i (04:48:25) FORM mini offsetx 0 
+\i (04:48:25) FORM mini offsety 0 
+\i (04:48:25) setwindow pcb 
+\i (04:48:25) pick 2.8330 -0.6350 
+\t (04:48:25) last pick:  2.8330  -0.6350
+\t (04:48:25) Using 'R107_45.pad'.
+\i (04:48:25) done 
+\t (04:48:25) Exiting from Add Pin.
+\i (04:48:25) add pin 
+\t (04:48:26) Using 'R107_45.pad'.
+\i (04:48:26) setwindow Form.mini 
+\i (04:48:26) FORM mini pad_name r107_45 
+\t (04:48:26) Using 'R107_45.pad'.
+\i (04:48:26) FORM mini next_pin_number 6 
+\i (04:48:26) rotate 
+\t (04:48:26) Spin the element(s).
+\i (04:48:26) iangle 180 
+\t (04:48:26) last angle:  +180.000 Degrees
+\t (04:48:26) Pin rotated by '180.000' degrees.
+\t (04:48:26) Using 'R107_45.pad'.
+\i (04:48:26) FORM mini pintype_mechanical NO 
+\i (04:48:26) FORM mini offsetx 0 
+\i (04:48:26) FORM mini offsety 0 
+\i (04:48:26) setwindow pcb 
+\i (04:48:26) pick 2.8330 0.6350 
+\t (04:48:26) last pick:  2.8330  0.6350
+\t (04:48:26) Using 'R107_45.pad'.
+\i (04:48:26) done 
+\t (04:48:26) Exiting from Add Pin.
+\i (04:48:26) add pin 
+\t (04:48:26) Using 'R107_45.pad'.
+\i (04:48:26) setwindow Form.mini 
+\i (04:48:26) FORM mini pad_name r107_45 
+\t (04:48:26) Using 'R107_45.pad'.
+\i (04:48:26) FORM mini next_pin_number 5 
+\i (04:48:26) rotate 
+\t (04:48:26) Spin the element(s).
+\i (04:48:26) iangle 180 
+\t (04:48:26) last angle:  +180.000 Degrees
+\t (04:48:26) Pin rotated by '180.000' degrees.
+\t (04:48:26) Using 'R107_45.pad'.
+\i (04:48:26) FORM mini pintype_mechanical NO 
+\i (04:48:26) FORM mini offsetx 0 
+\i (04:48:26) FORM mini offsety 0 
+\i (04:48:26) setwindow pcb 
+\i (04:48:26) pick 2.8330 1.9050 
+\t (04:48:26) last pick:  2.8330  1.9050
+\t (04:48:26) Using 'R107_45.pad'.
+\i (04:48:26) done 
+\t (04:48:26) Exiting from Add Pin.
+\i (04:48:26) add pin 
+\t (04:48:26) Using 'R107_45.pad'.
+\i (04:48:26) setwindow Form.mini 
+\i (04:48:26) FORM mini pad_name thermal320X510 
+\t (04:48:26) Using 'THERMAL320X510.pad'.
+\i (04:48:26) FORM mini next_pin_number 9 
+\i (04:48:26) rotate 
+\t (04:48:26) Spin the element(s).
+\i (04:48:26) iangle 0 
+\t (04:48:26) last angle:  +0.000 Degrees
+\t (04:48:26) Pin rotated by '0.000' degrees.
+\t (04:48:26) Using 'THERMAL320X510.pad'.
+\i (04:48:26) FORM mini pintype_mechanical NO 
+\i (04:48:26) FORM mini offsetx 0 
+\i (04:48:26) FORM mini offsety 0 
+\i (04:48:26) setwindow pcb 
+\i (04:48:26) pick 0.0000 0.0000 
+\t (04:48:26) last pick:  0.0000  0.0000
+\t (04:48:26) Using 'THERMAL320X510.pad'.
+\i (04:48:26) done 
+\t (04:48:26) Exiting from Add Pin.
+\i (04:48:26) add line 
+\i (04:48:26) setwindow Form.mini 
+\i (04:48:26) FORM mini class PACKAGE GEOMETRY 
+\i (04:48:26) FORM mini subclass DISPLAY_TOP 
+\i (04:48:26) setwindow pcb 
+\i (04:48:26) pick -3.6200 -2.7500 
+\t (04:48:26) last pick:  -3.6200  -2.7500
+\i (04:48:26) pick -3.6200 2.7500 
+\t (04:48:26) last pick:  -3.6200  2.7500
+\i (04:48:26) pick 3.6200 2.7500 
+\t (04:48:26) last pick:  3.6200  2.7500
+\i (04:48:26) pick 3.6200 -2.7500 
+\t (04:48:26) last pick:  3.6200  -2.7500
+\i (04:48:26) pick -3.6200 -2.7500 
+\t (04:48:26) last pick:  -3.6200  -2.7500
+\i (04:48:26) done 
+\i (04:48:26) shape add 
+\i (04:48:26) setwindow Form.mini 
+\i (04:48:26) FORM mini class PACKAGE GEOMETRY 
+\i (04:48:26) FORM mini subclass PLACE_BOUND_TOP 
+\i (04:48:26) FORM mini dyns_fill_type Static solid 
+\i (04:48:26) FORM mini dyns_grid None 
+\i (04:48:26) FORM mini dyns_lock_mode Line 
+\i (04:48:26) setwindow pcb 
+\i (04:48:26) pick -3.6200 -2.7500 
+\t (04:48:26) last pick:  -3.6200  -2.7500
+\i (04:48:26) pick -3.6200 2.7500 
+\t (04:48:26) last pick:  -3.6200  2.7500
+\i (04:48:26) pick 3.6200 2.7500 
+\t (04:48:26) last pick:  3.6200  2.7500
+\i (04:48:26) pick 3.6200 -2.7500 
+\t (04:48:26) last pick:  3.6200  -2.7500
+\i (04:48:26) pick -3.6200 -2.7500 
+\t (04:48:26) last pick:  -3.6200  -2.7500
+\i (04:48:26) done 
+\i (04:48:26) setwindow pcb 
+\i (04:48:26) package_height 
+\i (04:48:26) pick grid 0 0 
+\t (04:48:26) last pick:  0.0000  0.0000
+\i (04:48:26) setwindow Form.mini 
+\i (04:48:26) FORM mini height_max 1.5000mm 
+\i (04:48:26) done 
+\e (04:48:26) Form field label not found
+\i (04:48:26) shape add 
+\i (04:48:27) setwindow Form.mini 
+\i (04:48:27) FORM mini class PACKAGE GEOMETRY 
+\i (04:48:27) FORM mini subclass DFA_BOUND_TOP 
+\i (04:48:27) FORM mini dyns_fill_type Static solid 
+\i (04:48:27) FORM mini dyns_grid None 
+\i (04:48:27) FORM mini dyns_lock_mode Line 
+\i (04:48:27) setwindow pcb 
+\i (04:48:27) pick -3.6200 -2.7500 
+\t (04:48:27) last pick:  -3.6200  -2.7500
+\i (04:48:27) pick -3.6200 2.7500 
+\t (04:48:27) last pick:  -3.6200  2.7500
+\i (04:48:27) pick 3.6200 2.7500 
+\t (04:48:27) last pick:  3.6200  2.7500
+\i (04:48:27) pick 3.6200 -2.7500 
+\t (04:48:27) last pick:  3.6200  -2.7500
+\i (04:48:27) pick -3.6200 -2.7500 
+\t (04:48:27) last pick:  -3.6200  -2.7500
+\i (04:48:27) done 
+\i (04:48:27) shape add 
+\i (04:48:27) setwindow Form.mini 
+\i (04:48:27) FORM mini class MANUFACTURING 
+\i (04:48:27) FORM mini subclass NO_PROBE_TOP 
+\i (04:48:27) FORM mini dyns_fill_type Static solid 
+\i (04:48:27) FORM mini dyns_grid None 
+\i (04:48:27) FORM mini dyns_lock_mode Line 
+\i (04:48:27) setwindow pcb 
+\i (04:48:27) pick -3.6200 -2.7500 
+\t (04:48:27) last pick:  -3.6200  -2.7500
+\i (04:48:27) pick -3.6200 2.7500 
+\t (04:48:27) last pick:  -3.6200  2.7500
+\i (04:48:27) pick 3.6200 2.7500 
+\t (04:48:27) last pick:  3.6200  2.7500
+\i (04:48:27) pick 3.6200 -2.7500 
+\t (04:48:27) last pick:  3.6200  -2.7500
+\i (04:48:27) pick -3.6200 -2.7500 
+\t (04:48:27) last pick:  -3.6200  -2.7500
+\i (04:48:27) done 
+\i (04:48:27) add line 
+\i (04:48:27) setwindow Form.mini 
+\i (04:48:27) FORM mini class PACKAGE GEOMETRY 
+\i (04:48:27) FORM mini subclass ASSEMBLY_TOP 
+\i (04:48:27) FORM mini line_width 0.1000 
+\i (04:48:27) setwindow pcb 
+\i (04:48:27) pick 3.0000 2.5000 
+\t (04:48:27) last pick:  3.0000  2.5000
+\i (04:48:27) pick 3.0000 -2.5000 
+\t (04:48:27) last pick:  3.0000  -2.5000
+\i (04:48:27) pick -3.0000 -2.5000 
+\t (04:48:27) last pick:  -3.0000  -2.5000
+\i (04:48:27) pick -3.0000 2.5000 
+\t (04:48:27) last pick:  -3.0000  2.5000
+\i (04:48:27) pick 3.0000 2.5000 
+\t (04:48:27) last pick:  3.0000  2.5000
+\i (04:48:27) done 
+\i (04:48:27) add line 
+\i (04:48:27) setwindow Form.mini 
+\i (04:48:27) FORM mini class PACKAGE GEOMETRY 
+\i (04:48:27) FORM mini subclass ASSEMBLY_TOP 
+\i (04:48:27) FORM mini line_width 0.1000 
+\i (04:48:27) setwindow pcb 
+\i (04:48:27) pick -3.0000 2.4000 
+\t (04:48:27) last pick:  -3.0000  2.4000
+\i (04:48:27) pick -2.9000 2.5000 
+\t (04:48:27) last pick:  -2.9000  2.5000
+\i (04:48:27) done 
+\i (04:48:27) add line 
+\i (04:48:27) setwindow Form.mini 
+\i (04:48:27) FORM mini class PACKAGE GEOMETRY 
+\i (04:48:27) FORM mini subclass ASSEMBLY_TOP 
+\i (04:48:27) FORM mini line_width 0.1000 
+\i (04:48:27) setwindow pcb 
+\i (04:48:27) pick -3.0000 2.3000 
+\t (04:48:27) last pick:  -3.0000  2.3000
+\i (04:48:27) pick -2.8000 2.5000 
+\t (04:48:27) last pick:  -2.8000  2.5000
+\i (04:48:27) done 
+\i (04:48:27) add line 
+\i (04:48:27) setwindow Form.mini 
+\i (04:48:27) FORM mini class PACKAGE GEOMETRY 
+\i (04:48:27) FORM mini subclass ASSEMBLY_TOP 
+\i (04:48:27) FORM mini line_width 0.1000 
+\i (04:48:27) setwindow pcb 
+\i (04:48:27) pick -3.0000 2.2000 
+\t (04:48:27) last pick:  -3.0000  2.2000
+\i (04:48:27) pick -2.7000 2.5000 
+\t (04:48:27) last pick:  -2.7000  2.5000
+\i (04:48:27) done 
+\i (04:48:27) add line 
+\i (04:48:28) setwindow Form.mini 
+\i (04:48:28) FORM mini class PACKAGE GEOMETRY 
+\i (04:48:28) FORM mini subclass ASSEMBLY_TOP 
+\i (04:48:28) FORM mini line_width 0.1000 
+\i (04:48:28) setwindow pcb 
+\i (04:48:28) pick -3.0000 2.1000 
+\t (04:48:28) last pick:  -3.0000  2.1000
+\i (04:48:28) pick -2.6000 2.5000 
+\t (04:48:28) last pick:  -2.6000  2.5000
+\i (04:48:28) done 
+\i (04:48:28) add line 
+\i (04:48:28) setwindow Form.mini 
+\i (04:48:28) FORM mini class PACKAGE GEOMETRY 
+\i (04:48:28) FORM mini subclass SILKSCREEN_TOP 
+\i (04:48:28) FORM mini line_width 0.2000 
+\i (04:48:28) setwindow pcb 
+\i (04:48:28) pick -2.9800 -2.5000 
+\t (04:48:28) last pick:  -2.9800  -2.5000
+\i (04:48:28) pick -3.0000 -2.5000 
+\t (04:48:28) last pick:  -3.0000  -2.5000
+\i (04:48:28) pick -3.0000 -2.4800 
+\t (04:48:28) last pick:  -3.0000  -2.4800
+\i (04:48:28) done 
+\i (04:48:28) add line 
+\i (04:48:28) setwindow Form.mini 
+\i (04:48:28) FORM mini class PACKAGE GEOMETRY 
+\i (04:48:28) FORM mini subclass SILKSCREEN_TOP 
+\i (04:48:28) FORM mini line_width 0.2000 
+\i (04:48:28) setwindow pcb 
+\i (04:48:28) pick -3.0000 2.4800 
+\t (04:48:28) last pick:  -3.0000  2.4800
+\i (04:48:28) pick -3.0000 2.4830 
+\t (04:48:28) last pick:  -3.0000  2.4830
+\i (04:48:28) pick -2.9830 2.5000 
+\t (04:48:28) last pick:  -2.9830  2.5000
+\i (04:48:28) pick -2.9800 2.5000 
+\t (04:48:28) last pick:  -2.9800  2.5000
+\i (04:48:28) done 
+\i (04:48:28) add line 
+\i (04:48:28) setwindow Form.mini 
+\i (04:48:28) FORM mini class PACKAGE GEOMETRY 
+\i (04:48:28) FORM mini subclass SILKSCREEN_TOP 
+\i (04:48:28) FORM mini line_width 0.2000 
+\i (04:48:28) setwindow pcb 
+\i (04:48:28) pick 2.9800 2.5000 
+\t (04:48:28) last pick:  2.9800  2.5000
+\i (04:48:28) pick 3.0000 2.5000 
+\t (04:48:28) last pick:  3.0000  2.5000
+\i (04:48:28) pick 3.0000 2.4800 
+\t (04:48:28) last pick:  3.0000  2.4800
+\i (04:48:28) done 
+\i (04:48:28) add line 
+\i (04:48:28) setwindow Form.mini 
+\i (04:48:28) FORM mini class PACKAGE GEOMETRY 
+\i (04:48:28) FORM mini subclass SILKSCREEN_TOP 
+\i (04:48:28) FORM mini line_width 0.2000 
+\i (04:48:28) setwindow pcb 
+\i (04:48:28) pick 3.0000 -2.4800 
+\t (04:48:28) last pick:  3.0000  -2.4800
+\i (04:48:28) pick 3.0000 -2.5000 
+\t (04:48:28) last pick:  3.0000  -2.5000
+\i (04:48:28) pick 2.9800 -2.5000 
+\t (04:48:28) last pick:  2.9800  -2.5000
+\i (04:48:28) done 
+\i (04:48:28) add circle 
+\t (04:48:28) Pick center point of the circle.
+\t (04:48:28) Pick center point of the circle.
+\i (04:48:28) setwindow Form.mini 
+\i (04:48:28) FORM mini class PACKAGE GEOMETRY 
+\i (04:48:28) FORM mini subclass SILKSCREEN_TOP 
+\i (04:48:28) FORM mini line_width 0.0000 
+\i (04:48:28) setwindow pcb 
+\i (04:48:28) pick -3.9200 1.9050 
+\t (04:48:28) last pick:  -3.9200  1.9050
+\t (04:48:28) Pick a perimeter point on the circle.
+\i (04:48:28) pick -3.7200 1.9050 
+\t (04:48:28) last pick:  -3.7200  1.9050
+\t (04:48:28) Pick center point of the circle.
+\i (04:48:28) done 
+\i (04:48:28) Label refdes 
+\t (04:48:28) Pick text location.
+\i (04:48:28) setwindow Form.mini 
+\i (04:48:28) FORM mini text_block 3 
+\i (04:48:28) FORM mini angle 0 
+\i (04:48:28) FORM mini mirror NO 
+\i (04:48:28) FORM mini text_justification Center 
+\i (04:48:28) FORM mini class REF DES 
+\i (04:48:28) FORM mini subclass ASSEMBLY_TOP 
+\i (04:48:28) setwindow pcb 
+\i (04:48:28) pick 0.0000 -0.6750 
+\t (04:48:28) last pick:  0.0000  -0.6750
+\t (04:48:28) Enter text string.
+\i (04:48:28) Text Ref 
+\i (04:48:28) done 
+\i (04:48:28) setwindow pcb 
+\i (04:48:28) Label refdes 
+\t (04:48:29) Pick text location.
+\i (04:48:29) setwindow Form.mini 
+\i (04:48:29) FORM mini text_block 3 
+\i (04:48:29) FORM mini angle 0 
+\i (04:48:29) FORM mini mirror NO 
+\i (04:48:29) FORM mini text_justification Center 
+\i (04:48:29) FORM mini class REF DES 
+\i (04:48:29) FORM mini subclass SILKSCREEN_TOP 
+\i (04:48:29) setwindow pcb 
+\i (04:48:29) pick 0.0000 2.3250 
+\t (04:48:29) last pick:  0.0000  2.3250
+\t (04:48:29) Enter text string.
+\i (04:48:29) Text Ref 
+\i (04:48:29) done 
+\i (04:48:29) setwindow pcb 
+\i (04:48:29) Label device 
+\t (04:48:29) Pick text location.
+\i (04:48:29) setwindow Form.mini 
+\i (04:48:29) FORM mini text_block 3 
+\i (04:48:29) FORM mini angle 0 
+\i (04:48:29) FORM mini mirror NO 
+\i (04:48:29) FORM mini text_justification Center 
+\i (04:48:29) FORM mini class DEVICE TYPE 
+\i (04:48:29) FORM mini subclass SILKSCREEN_TOP 
+\i (04:48:29) setwindow pcb 
+\i (04:48:29) pick 0.0000 2.3250 
+\t (04:48:29) last pick:  0.0000  2.3250
+\t (04:48:29) Enter text string.
+\i (04:48:29) Text Dev 
+\t (04:48:29) Enter text string.
+\i (04:48:29) done 
+\i (04:48:29) setwindow pcb 
+\i (04:48:29) generaledit 
+\i (04:48:29) zoom fit 
+\i (04:48:29) trapsize 241
+\i (04:48:29) save_as 
+\i (04:48:29) fillin QFN127P600X500X150-9N 
+\t (04:48:29) Symbol 'qfn127p600x500x150-9n.psm' created.
+\i (04:48:29) setwindow pcb
+\i (04:48:29) trapsize 241
+\i (04:48:30) pick grid -2.7158 1.9351
+\t (04:48:30) last pick:  -2.5400  1.9050
+\i (04:50:22) xname_flush 
+\i (15:31:50) new 
+\i (15:32:15) newdrawfillin "MOLEX_0473460001.dra" "Package Symbol"
+\t (15:32:15) Starting new design...
+\i (15:32:16) trapsize 4978
+\i (15:32:16) trapsize 4978
+\i (15:32:16) etchedit 
+\i (15:32:29) zoom out 1 
+\i (15:32:29) setwindow pcb
+\i (15:32:29) zoom out 6.0048 -1.7632
+\i (15:32:29) trapsize 4978
+\i (15:32:29) zoom out 1 
+\i (15:32:29) setwindow pcb
+\i (15:32:29) zoom out 5.9052 -1.8628
+\i (15:32:29) trapsize 4978
+\i (15:32:29) zoom out 1 
+\i (15:32:29) setwindow pcb
+\i (15:32:29) zoom out 5.8057 -1.8628
+\i (15:32:29) trapsize 4978
+\i (15:32:29) zoom out 1 
+\i (15:32:29) setwindow pcb
+\i (15:32:29) zoom out 5.8057 -1.8628
+\i (15:32:29) trapsize 4978
+\i (15:32:29) zoom out 1 
+\i (15:32:29) setwindow pcb
+\i (15:32:29) zoom out 5.8057 -1.8628
+\i (15:32:29) trapsize 4978
+\i (15:32:29) zoom out 1 
+\i (15:32:29) setwindow pcb
+\i (15:32:29) zoom out 5.8057 -1.8628
+\i (15:32:29) trapsize 4978
+\i (15:32:29) zoom out 1 
+\i (15:32:29) setwindow pcb
+\i (15:32:29) zoom out 5.8057 -1.8628
+\i (15:32:29) trapsize 4978
+\i (15:32:29) zoom out 1 
+\i (15:32:29) setwindow pcb
+\i (15:32:29) zoom out 5.8057 -1.8628
+\i (15:32:29) trapsize 4978
+\i (15:32:29) zoom out 1 
+\i (15:32:29) setwindow pcb
+\i (15:32:29) zoom out 5.8057 -1.8628
+\i (15:32:29) trapsize 4978
+\i (15:32:30) zoom out 1 
+\i (15:32:30) setwindow pcb
+\i (15:32:30) zoom out 5.8057 -1.8628
+\i (15:32:30) trapsize 4978
+\i (15:32:30) zoom in 1 
+\i (15:32:30) setwindow pcb
+\i (15:32:30) zoom in 5.8057 -1.8628
+\i (15:32:30) trapsize 2489
+\i (15:32:30) zoom in 1 
+\i (15:32:30) setwindow pcb
+\i (15:32:30) zoom in -22.1711 -1.8628
+\i (15:32:30) trapsize 1245
+\i (15:32:30) zoom in 1 
+\i (15:32:30) setwindow pcb
+\i (15:32:30) zoom in -22.1711 -1.8628
+\i (15:32:30) trapsize 622
+\i (15:32:30) zoom in 1 
+\i (15:32:30) setwindow pcb
+\i (15:32:30) zoom in -22.1711 -1.8628
+\i (15:32:30) trapsize 311
+\i (15:32:30) zoom in 1 
+\i (15:32:30) setwindow pcb
+\i (15:32:30) zoom in -22.1710 -1.8627
+\i (15:32:30) trapsize 156
+\i (15:32:30) zoom in 1 
+\i (15:32:30) setwindow pcb
+\i (15:32:30) zoom in -22.1710 -1.8627
+\i (15:32:30) trapsize 78
+\i (15:32:30) zoom in 1 
+\i (15:32:30) setwindow pcb
+\i (15:32:30) zoom in -22.1710 -1.8627
+\i (15:32:30) trapsize 39
+\i (15:32:30) zoom in 1 
+\i (15:32:30) setwindow pcb
+\i (15:32:30) zoom in -22.1710 -1.8627
+\i (15:32:30) trapsize 19
+\i (15:32:30) zoom out 1 
+\i (15:32:30) setwindow pcb
+\i (15:32:30) zoom out -22.1710 -1.8627
+\i (15:32:30) trapsize 39
+\i (15:32:30) zoom out 1 
+\i (15:32:30) setwindow pcb
+\i (15:32:30) zoom out -22.1709 -1.8626
+\i (15:32:30) trapsize 78
+\i (15:32:30) zoom out 1 
+\i (15:32:30) setwindow pcb
+\i (15:32:30) zoom out -22.1709 -1.8626
+\i (15:32:30) trapsize 156
+\i (15:32:30) zoom out 1 
+\i (15:32:30) setwindow pcb
+\i (15:32:30) zoom out -22.1710 -1.8627
+\i (15:32:30) trapsize 311
+\i (15:32:31) zoom out 1 
+\i (15:32:31) setwindow pcb
+\i (15:32:31) zoom out -22.1710 -1.8626
+\i (15:32:31) trapsize 622
+\i (15:32:31) zoom out 1 
+\i (15:32:31) setwindow pcb
+\i (15:32:31) zoom out -22.1709 -1.8627
+\i (15:32:31) trapsize 1244
+\i (15:32:31) zoom out 1 
+\i (15:32:31) setwindow pcb
+\i (15:32:31) zoom out -22.1709 -1.8627
+\i (15:32:31) trapsize 2489
+\i (15:32:31) zoom out 1 
+\i (15:32:31) setwindow pcb
+\i (15:32:31) zoom out -22.1709 -1.8627
+\i (15:32:31) trapsize 4978
+\i (15:32:31) zoom out 1 
+\i (15:32:31) setwindow pcb
+\i (15:32:31) zoom out 5.7061 -1.8628
+\i (15:32:31) trapsize 4978
+\i (15:32:31) zoom out 1 
+\i (15:32:31) setwindow pcb
+\i (15:32:31) zoom out 5.7061 -1.8628
+\i (15:32:31) trapsize 4978
+\i (15:32:31) zoom in 1 
+\i (15:32:31) setwindow pcb
+\i (15:32:31) zoom in -1.6614 0.3276
+\i (15:32:31) trapsize 2489
+\i (15:32:32) zoom in 1 
+\i (15:32:32) setwindow pcb
+\i (15:32:32) zoom in -0.5663 -0.4689
+\i (15:32:32) trapsize 1245
+\i (15:32:33) zoom in 1 
+\i (15:32:33) setwindow pcb
+\i (15:32:33) zoom in 1.2757 0.1036
+\i (15:32:33) trapsize 622
+\i (15:32:33) zoom in 1 
+\i (15:32:33) setwindow pcb
+\i (15:32:33) zoom in 1.2757 0.1037
+\i (15:32:33) trapsize 311
+\i (15:32:33) zoom in 1 
+\i (15:32:33) setwindow pcb
+\i (15:32:33) zoom in 1.2758 0.1037
+\i (15:32:33) trapsize 156
+\i (15:32:33) zoom in 1 
+\i (15:32:33) setwindow pcb
+\i (15:32:33) zoom in 0.8869 0.0788
+\i (15:32:33) trapsize 78
+\i (15:32:34) zoom out 1 
+\i (15:32:34) setwindow pcb
+\i (15:32:34) zoom out -0.0216 0.0120
+\i (15:32:34) trapsize 156
+\i (15:32:35) zoom out 1 
+\i (15:32:35) setwindow pcb
+\i (15:32:35) zoom out -0.0215 0.0119
+\i (15:32:35) trapsize 311
+\i (15:32:35) zoom out 1 
+\i (15:32:35) setwindow pcb
+\i (15:32:35) zoom out -0.0215 0.0119
+\i (15:32:35) trapsize 622
+\i (15:32:42) color192 
+\i (15:32:50) setwindow cvf.dialog
+\i (15:32:50) cvf layer_mode
+\i (15:32:52) setwindow pcb
+\i (15:32:52) etchedit 
+\i (15:32:59) setwindow cvf.dialog
+\i (15:32:59) cvf layer_tree_item 'Display'
+\i (15:33:00) cvf layer_tree_item 'My Favorites'
+\i (15:33:00) cvf layer_tree_item 'Stack-Up'
+\i (15:33:03) cvf layer_tree_item 'Conductor' 'Stack-Up'
+\i (15:33:03) cvf layer_tree_item 'Non-Conductor' 'Stack-Up'
+\i (15:33:04) cvf layer_tree_item 'Areas'
+\i (15:33:04) cvf layer_tree_item 'Board Geometry'
+\i (15:33:06) cvf layer_tree_item 'Package Geometry'
+\i (15:33:08) cvf layer_tree_item 'Embedded Geomerty'
+\i (15:33:09) cvf layer_tree_item 'Components'
+\i (15:33:09) cvf layer_tree_item 'Package Geometry'
+\i (15:33:10) cvf layer_tree_item 'Embedded Geomerty'
+\i (15:33:12) cvf layer_tree_item 'Drawing Format'
+\i (15:33:13) cvf layer_tree_item 'Analysis'
+\i (15:33:14) cvf layer_tree_item 'Embedded Geomerty'
+\i (15:33:36) cvf layer_tree_item 'Manufacturing'
+\i (15:33:37) cvf layer_tree_item 'Drawing Format'
+\i (15:33:38) cvf layers_color drawing_format/drawing_origin 1
+\i (15:33:39) cvf layers_color drawing_format/drawing_origin 1
+\i (15:33:41) cvf select_color_cell 81
+\i (15:33:42) cvf layers_color drawing_format/drawing_origin 82
+\i (15:33:43) cvf apply
+\i (15:33:44) cvf okay
+\i (15:35:25) setwindow pcb
+\i (15:35:25) new 
+\e (15:35:25) Do you want to save the changes you made to MOLEX_0473460001.dra?
+\i (15:35:26) fillin no 
+\i (15:35:55) newdrawfillin "MOLEX_0473460001.dra" "Package Symbol"
+\t (15:35:55)     Journal end - Sun Nov 03 13:49:03 2013
