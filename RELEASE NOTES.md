@@ -1,6 +1,13 @@
-Release Notes
+# Release Notes
 
-July 23, 2013 - K1 Board Revised - v0.3.0 - Final Beta
+### November 4, 2013 - Avalon Board Original Release - Alpha
+
+ - Designed on Upverter, copied to Cadence OrCAD + Allegro for initial design. The entire design will be backported to Upverter once their module system has stabilized.
+ - Four layer board, approximately 3.25x3.25in
+
+# Klondike Release Notes
+
+### July 23, 2013 - K1 Board Revised - v0.3.0 - Final Beta
 
 The "Final Beta" Revision of K1 has been pushed up to GitHub.
 
@@ -14,7 +21,7 @@ The "Final Beta" Revision of K1 has been pushed up to GitHub.
 - I2C chain conn. now non-thru hole pads - fits 3 pin header.
 - **Added ferrite beads to ASIC power and USB signals.**
 
-July 15, 2013 - K16 Board Revised - v0.3.0 - Final testing
+### July 15, 2013 - K16 Board Revised - v0.3.0 - Final testing
 
 - **Dual NOR gate replaces Single NOR gate**
 - **Inverters added before PIC on result data, clk**
@@ -33,7 +40,7 @@ July 15, 2013 - K16 Board Revised - v0.3.0 - Final testing
 - repositioned a few parts
 - footprints verified and updated against data sheets
 
-June 14, 2013 - Original Release - 0.1.0
+### June 14, 2013 - Original Release - 0.1.0
 
 The kicad files originated from Eagle CAD files through a conversion. This has caused some weird side effects that make the schematic a nuisance to work with. The parts co-ordinates were placed on a 1 mil grid during conversion making them both very small and very difficult to edit. You must always choose the 1 mil grid option if you hope to do any editing of the wires and parts and even then it's difficult. 
 
