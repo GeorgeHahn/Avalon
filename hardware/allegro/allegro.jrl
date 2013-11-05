@@ -8131,4 +8131,670 @@
 \i (00:32:42) roam y 32
 \i (00:32:42) roam y 48
 \i (00:32:43) roam y 32
-\i (00:32:43
+\i (00:32:43) roam y 16
+\i (00:32:43) roam y 32
+\i (00:32:43) roam y 16
+\i (00:32:43) roam y 16
+\i (00:32:43) roam y 48
+\i (00:32:43) roam y 32
+\i (00:32:43) roam y 16
+\i (00:32:43) roam y 16
+\i (00:32:43) roam y 16
+\i (00:32:43) roam end
+\i (00:32:55) prepopup 4922.10 14959.60
+\i (00:32:56) pick grid 4953.28 15231.89
+\t (00:32:56) last pick:  4950.00  15230.00
+\i (00:32:57) save 
+\i (00:32:59) fillin yes 
+\i (00:32:59) etchedit 
+\i (00:33:00) pick grid 8584.57 15152.91
+\t (00:33:00) last pick:  8580.00  15150.00
+\i (00:33:01) zoom out 1 
+\i (00:33:01) setwindow pcb
+\i (00:33:01) zoom out 6104.81 14410.85
+\i (00:33:01) trapsize 2079
+\i (00:33:02) zoom in 1 
+\i (00:33:02) setwindow pcb
+\i (00:33:02) zoom in 6084.03 14398.38
+\i (00:33:02) trapsize 1039
+\i (00:33:02) roam start
+\i (00:33:02) roam y -96
+\i (00:33:02) roam x 16
+\i (00:33:02) roam y -64
+\i (00:33:03) roam y -80
+\i (00:33:03) roam end
+\i (00:33:03) prepopup 6081.94 15630.97
+\i (00:33:04) pick grid 4974.06 16169.33
+\t (00:33:04) last pick:  4970.00  16170.00
+\i (00:33:06) 3d_viewer 
+\i (00:33:07) setwindow pcb3D
+\i (00:33:07) trapsize 1039
+\i (00:33:07) setwindow pcb
+\i (00:33:07) etchedit 
+\i (00:33:07) setwindow pcb3D
+\i (00:33:07) trapsize 1039
+\i (00:33:08) trapsize 1039
+\i (00:34:17) setwindow pcb
+\i (00:34:17) pick grid 4897.15 16217.14
+\t (00:34:17) last pick:  4900.00  16220.00
+\i (00:34:17) zoom out 1 
+\i (00:34:17) setwindow pcb
+\i (00:34:17) zoom out 5044.73 16148.54
+\i (00:34:17) trapsize 2079
+\i (00:34:18) zoom in 1 
+\i (00:34:18) setwindow pcb
+\i (00:34:18) zoom in 5036.42 15820.13
+\i (00:34:18) trapsize 1039
+\i (00:34:19) save 
+\i (00:34:20) fillin yes 
+\i (00:34:20) etchedit 
+\i (00:34:21) pick grid 5011.48 15142.52
+\t (00:34:21) last pick:  5010.00  15140.00
+\i (00:59:04) zoom out 1 
+\i (00:59:04) setwindow pcb
+\i (00:59:04) zoom out 6616.15 14851.51
+\i (00:59:04) trapsize 2079
+\i (00:59:05) zoom in 1 
+\i (00:59:05) setwindow pcb
+\i (00:59:05) zoom in 6616.15 14851.52
+\i (00:59:05) trapsize 1039
+\i (00:59:06) zoom out 1 
+\i (00:59:06) setwindow pcb
+\i (00:59:06) zoom out 6597.44 14863.99
+\i (00:59:06) trapsize 2079
+\i (00:59:07) zoom in 1 
+\i (00:59:07) setwindow pcb
+\i (00:59:07) zoom in 6705.53 14381.77
+\i (00:59:07) trapsize 1039
+\i (00:59:08) zoom out 1 
+\i (00:59:09) setwindow pcb
+\i (00:59:09) zoom out 5165.30 15013.66
+\i (00:59:09) trapsize 2079
+\i (00:59:11) zoom points 
+\t (00:59:11) Pick 1st corner of the new window.
+\i (00:59:12) drag_start 5019.80 17399.88
+\i (00:59:13) drag_stop 8524.30 13729.09
+\i (00:59:13) trapsize 1387
+\i (00:59:14) etchedit 
+\i (00:59:16) pick grid 9509.10 16223.45
+\t (00:59:16) last pick:  9510.00  16220.00
+\i (00:59:18) zoom out 1 
+\i (00:59:18) setwindow pcb
+\i (00:59:18) zoom out 9509.10 16001.48
+\i (00:59:18) trapsize 2775
+\i (00:59:18) zoom out 1 
+\i (00:59:18) setwindow pcb
+\i (00:59:18) zoom out 9509.09 16001.49
+\t (00:59:18) Grids are drawn 160.00, 160.00 apart for enhanced viewability.
+\i (00:59:18) trapsize 5549
+\i (00:59:19) zoom in 1 
+\i (00:59:19) setwindow pcb
+\i (00:59:19) zoom in 6670.13 16023.68
+\t (00:59:19) Grids are drawn 40.00, 40.00 apart for enhanced viewability.
+\i (00:59:19) trapsize 2775
+\i (00:59:19) zoom in 1 
+\i (00:59:19) setwindow pcb
+\i (00:59:19) zoom in 6625.74 16001.49
+\i (00:59:19) trapsize 1387
+\i (00:59:20) zoom out 1 
+\i (00:59:20) setwindow pcb
+\i (00:59:20) zoom out 6747.83 15973.75
+\i (00:59:20) trapsize 2775
+\i (00:59:20) zoom in 1 
+\i (00:59:20) setwindow pcb
+\i (00:59:20) zoom in 6747.83 15973.75
+\i (00:59:20) trapsize 1387
+\i (00:59:20) zoom out 1 
+\i (00:59:20) setwindow pcb
+\i (00:59:20) zoom out 6747.83 15973.75
+\i (00:59:20) trapsize 2775
+\i (00:59:21) zoom in 1 
+\i (00:59:21) setwindow pcb
+\i (00:59:21) zoom in 6747.83 15973.75
+\i (00:59:21) trapsize 1387
+\i (00:59:21) zoom in 1 
+\i (00:59:21) setwindow pcb
+\i (00:59:21) zoom in 6747.83 15973.75
+\i (00:59:21) trapsize 694
+\i (00:59:21) zoom out 1 
+\i (00:59:21) setwindow pcb
+\i (00:59:21) zoom out 6747.83 15973.75
+\i (00:59:21) trapsize 1387
+\i (00:59:21) zoom out 1 
+\i (00:59:21) setwindow pcb
+\i (00:59:21) zoom out 6747.82 15973.75
+\i (00:59:21) trapsize 2775
+\i (00:59:22) zoom in 1 
+\i (00:59:22) setwindow pcb
+\i (00:59:22) zoom in 6747.82 15973.75
+\i (00:59:22) trapsize 1387
+\i (00:59:23) roam start
+\i (00:59:23) roam x -64
+\i (00:59:23) roam y 32
+\i (00:59:23) roam x -16
+\i (00:59:23) roam x -32
+\i (00:59:23) roam y 16
+\i (00:59:23) roam x -48
+\i (00:59:23) roam x -32
+\i (00:59:23) roam x -32
+\i (00:59:24) roam x -16
+\i (00:59:24) roam y -16
+\i (00:59:24) roam x -16
+\i (00:59:24) roam y -32
+\i (00:59:24) roam x -32
+\i (00:59:24) roam y -16
+\i (00:59:24) roam x -16
+\i (00:59:24) roam x -16
+\i (00:59:24) roam x -16
+\i (00:59:25) roam x -32
+\i (00:59:25) roam x -16
+\i (00:59:25) roam y 16
+\i (00:59:25) roam x 16
+\i (00:59:26) roam y 16
+\i (00:59:26) roam x 16
+\i (00:59:27) roam end
+\i (01:02:54) setwindow form.find
+\i (01:02:54) FORM find all_off  
+\i (01:02:55) FORM find vias YES 
+\i (01:02:57) setwindow pcb
+\i (01:02:57) placementedit 
+\i (01:03:01) etchedit 
+\i (01:03:03) drag_start grid 5341.10 15801.33
+\i (01:03:04) drag_stop 5596.36 15551.61
+\i (01:03:05) zoom in 1 
+\i (01:03:05) setwindow pcb
+\i (01:03:05) zoom in 5582.49 15548.84
+\i (01:03:05) trapsize 694
+\i (01:03:06) pick grid 4938.78 15497.51
+\t (01:03:06) last pick:  4940.00  15500.00
+\i (01:03:07) roam start
+\i (01:03:07) roam x 16
+\i (01:03:07) roam y 64
+\i (01:03:07) roam x 32
+\i (01:03:07) roam y 112
+\i (01:03:07) roam x 32
+\i (01:03:07) roam y 80
+\i (01:03:07) roam x 16
+\i (01:03:07) roam y 64
+\i (01:03:07) roam x 16
+\i (01:03:07) roam y 64
+\i (01:03:07) roam x 16
+\i (01:03:07) roam y 64
+\i (01:03:07) roam x -16
+\i (01:03:07) roam y 32
+\i (01:03:07) roam x -32
+\i (01:03:07) roam y 32
+\i (01:03:07) roam x -32
+\i (01:03:07) roam y 32
+\i (01:03:07) roam end
+\i (01:03:09) drag_start grid 5373.00 15005.00
+\i (01:03:10) drag_stop 5579.70 14791.35
+\i (01:03:10) prepopup 5578.32 14808.00
+\i (01:03:11) pop dyn_option_select @:@Move 
+\i (01:03:11) move 
+\t (01:03:11) last pick:  5580.00  14810.00
+\t (01:03:11) Pick new location for the element(s).
+\i (01:03:14) pick grid 5583.87 14816.33
+\t (01:03:14) last pick:  5580.00  14820.00
+\i (01:03:14) etchedit 
+\i (01:03:15) roam start
+\i (01:03:15) roam y 48
+\i (01:03:15) roam y 16
+\i (01:03:15) roam end
+\i (01:03:16) prepopup 5531.15 14808.00
+\i (01:03:17) pop dyn_option_select @:@Move 
+\i (01:03:17) move 
+\t (01:03:18) last pick:  5530.00  14810.00
+\t (01:03:18) Pick new location for the element(s).
+\i (01:03:20) pick grid 5538.09 14801.06
+\t (01:03:20) last pick:  5540.00  14800.00
+\i (01:03:21) etchedit 
+\i (01:03:22) prepopup 5500.63 14849.62
+\i (01:03:23) pop dyn_option_select @:@Move 
+\i (01:03:23) move 
+\t (01:03:23) last pick:  5500.00  14850.00
+\t (01:03:23) Pick new location for the element(s).
+\i (01:03:28) pick grid 5496.47 14856.55
+\t (01:03:28) last pick:  5500.00  14860.00
+\i (01:03:28) etchedit 
+\i (01:03:29) prepopup 5468.72 14862.10
+\i (01:03:31) pop dyn_option_select @:@Move 
+\i (01:03:31) move 
+\t (01:03:31) last pick:  5470.00  14860.00
+\t (01:03:31) Pick new location for the element(s).
+\i (01:03:33) pick grid 5463.17 14853.78
+\t (01:03:33) last pick:  5460.00  14850.00
+\i (01:03:33) etchedit 
+\i (01:03:34) prepopup 5463.17 14853.78
+\i (01:03:40) pop dyn_option_select @:@Move 
+\i (01:03:40) move 
+\t (01:03:40) last pick:  5460.00  14850.00
+\t (01:03:40) Pick new location for the element(s).
+\i (01:03:50) setwindow form.mini
+\i (01:03:50) FORM mini rotate_point Body Center 
+\i (01:03:53) setwindow pcb
+\i (01:03:53) pick grid 5459.01 14856.55
+\t (01:03:53) last pick:  5460.00  14860.00
+\t (01:03:53) Pick new location for the element(s).
+\i (01:03:55) pick grid 5464.56 14862.10
+\t (01:03:55) last pick:  5460.00  14860.00
+\i (01:03:55) etchedit 
+\i (01:03:56) prepopup 5490.92 14875.98
+\i (01:03:57) pop dyn_option_select @:@Move 
+\i (01:03:57) move 
+\t (01:03:57) last pick:  5490.00  14880.00
+\t (01:03:57) Pick new location for the element(s).
+\i (01:03:59) pick grid 5493.69 14887.07
+\t (01:03:59) last pick:  5490.00  14890.00
+\i (01:04:00) etchedit 
+\i (01:04:02) zoom out 1 
+\i (01:04:02) setwindow pcb
+\i (01:04:02) zoom out 5446.52 14824.65
+\i (01:04:02) trapsize 1387
+\i (01:04:02) zoom in 1 
+\i (01:04:02) setwindow pcb
+\i (01:04:02) zoom in 5424.32 14824.64
+\i (01:04:02) trapsize 694
+\i (01:04:03) roam start
+\i (01:04:03) roam x 16
+\i (01:04:03) roam y -64
+\i (01:04:03) roam x 16
+\i (01:04:03) roam y -128
+\i (01:04:04) roam y -16
+\i (01:04:04) roam x 16
+\i (01:04:04) roam y 16
+\i (01:04:04) roam y 16
+\i (01:04:04) roam y 16
+\i (01:04:04) roam y 32
+\i (01:04:04) roam y 16
+\i (01:04:04) roam y 32
+\i (01:04:05) roam y 16
+\i (01:04:05) roam y 16
+\i (01:04:05) roam x 16
+\i (01:04:05) roam y 16
+\i (01:04:05) roam y 16
+\i (01:04:05) roam x 16
+\i (01:04:06) roam end
+\i (01:04:07) drag_start grid 5614.39 14297.48
+\i (01:04:09) drag_stop 5391.03 14082.45
+\i (01:04:09) prepopup 5454.85 14132.39
+\i (01:04:10) pop dyn_option_select @:@Move 
+\i (01:04:10) move 
+\t (01:04:11) last pick:  5450.00  14130.00
+\t (01:04:11) Pick new location for the element(s).
+\i (01:04:12) pick grid 5457.62 14132.39
+\t (01:04:12) last pick:  5460.00  14130.00
+\i (01:04:12) etchedit 
+\i (01:04:16) undo 
+\i (01:04:16) trapsize 694
+\i (01:04:16) etchedit 
+\i (01:04:17) undo 
+\i (01:04:17) trapsize 694
+\i (01:04:17) etchedit 
+\i (01:04:18) pick grid 4949.87 14726.15
+\t (01:04:18) last pick:  4950.00  14730.00
+\i (01:04:20) define grid 
+\t (01:04:20) Spacing fields allow simple equations to aid calculations; prefix with =
+\i (01:04:21) etchedit 
+\i (01:04:23) setwindow form.grid
+\i (01:04:23) FORM grid non_etch non_etch_x_grids 1 
+\i (01:04:23) FORM grid non_etch non_etch_y_grids 1 
+\i (01:04:26) FORM grid top subclass_x_grids 1 
+\i (01:04:27) FORM grid top subclass_y_grids 10.00 
+\i (01:04:27) FORM grid top subclass_x_grids 1.00 
+\i (01:04:29) FORM grid all_etch all_etch_y_grids 1 
+\i (01:04:31) FORM grid all_etch all_etch_x_grids 1 
+\i (01:04:33) FORM grid done  
+\t (01:04:33) Grids are drawn 16.00, 16.00 apart for enhanced viewability.
+\i (01:04:35) setwindow pcb
+\i (01:04:35) drag_start grid 5373.00 15003.61
+\i (01:04:36) drag_stop 5576.93 14801.06
+\i (01:04:36) prepopup 5568.61 14805.22
+\i (01:04:37) pop dyn_option_select @:@Move 
+\i (01:04:37) move 
+\t (01:04:37) last pick:  5569.00  14805.00
+\t (01:04:37) Pick new location for the element(s).
+\i (01:04:42) pick grid 5571.38 14809.39
+\t (01:04:42) last pick:  5571.00  14809.00
+\i (01:04:42) etchedit 
+\i (01:04:43) drag_start grid 5392.42 14291.92
+\i (01:04:44) drag_stop 5601.90 14086.60
+\i (01:04:45) prepopup 5590.80 14092.15
+\i (01:04:46) pop dyn_option_select @:@Slide 
+\i (01:04:46) slide 
+\t (01:04:46) Waiting for the destination pick.
+\i (01:04:58) prepopup 5059.47 14393.20
+\i (01:04:59) cancel 
+\i (01:04:59) etchedit 
+\i (01:05:00) prepopup 5472.88 14201.75
+\i (01:05:01) pop dyn_option_select @:@Move 
+\i (01:05:01) move 
+\t (01:05:01) last pick:  5473.00  14202.00
+\t (01:05:01) Pick new location for the element(s).
+\i (01:05:04) pick grid 5475.66 14204.52
+\t (01:05:04) last pick:  5476.00  14205.00
+\i (01:05:04) etchedit 
+\i (01:05:05) roam start
+\i (01:05:05) roam x 64
+\i (01:05:05) roam x 32
+\i (01:05:05) roam y 16
+\i (01:05:05) roam x 32
+\i (01:05:05) roam x 48
+\i (01:05:05) roam x 80
+\i (01:05:05) roam y -16
+\i (01:05:05) roam x 32
+\i (01:05:06) roam end
+\i (01:05:07) zoom in 1 
+\i (01:05:07) setwindow pcb
+\i (01:05:07) zoom in 5399.35 14207.30
+\t (01:05:07) Grids are drawn 4.00, 4.00 apart for enhanced viewability.
+\i (01:05:07) trapsize 347
+\i (01:05:08) zoom out 1 
+\i (01:05:08) setwindow pcb
+\i (01:05:08) zoom out 5766.99 14218.40
+\t (01:05:08) Grids are drawn 16.00, 16.00 apart for enhanced viewability.
+\i (01:05:08) trapsize 694
+\i (01:05:09) zoom in 1 
+\i (01:05:09) setwindow pcb
+\i (01:05:09) zoom in 5381.31 14239.22
+\t (01:05:09) Grids are drawn 4.00, 4.00 apart for enhanced viewability.
+\i (01:05:09) trapsize 347
+\i (01:05:09) zoom in 1 
+\i (01:05:09) setwindow pcb
+\i (01:05:09) zoom in 5411.14 14247.54
+\i (01:05:09) trapsize 173
+\i (01:05:11) zoom out 1 
+\i (01:05:11) setwindow pcb
+\i (01:05:11) zoom out 5398.31 14278.06
+\i (01:05:11) trapsize 347
+\i (01:05:12) roam start
+\i (01:05:12) roam x 48
+\i (01:05:12) roam y 16
+\i (01:05:12) roam x 80
+\i (01:05:12) roam x 80
+\i (01:05:12) roam y 16
+\i (01:05:12) roam x 16
+\i (01:05:12) roam x 32
+\i (01:05:12) roam x 16
+\i (01:05:12) roam x 64
+\i (01:05:12) roam x 96
+\i (01:05:12) roam y 16
+\i (01:05:13) roam x 112
+\i (01:05:13) roam y 16
+\i (01:05:13) roam x 96
+\i (01:05:13) roam y 16
+\i (01:05:13) roam x 16
+\i (01:05:13) roam x 48
+\i (01:05:13) roam x 32
+\i (01:05:13) roam y 16
+\i (01:05:13) roam x 80
+\i (01:05:13) roam y 16
+\i (01:05:13) roam x 48
+\i (01:05:13) roam y 16
+\i (01:05:13) roam x 32
+\i (01:05:13) roam x 32
+\i (01:05:13) roam x 16
+\i (01:05:13) roam y -16
+\i (01:05:13) roam x 16
+\i (01:05:13) roam y -16
+\i (01:05:13) roam end
+\i (01:05:14) drag_start grid 6367.63 14266.12
+\i (01:05:14) slide 
+\t (01:05:14) Waiting for the destination pick.
+\i (01:05:16) drag_stop grid 6349.59 14254.33
+\t (01:05:16) No DRC errors detected.
+\i (01:05:16) etchedit 
+\i (01:05:16) prepopup 6356.53 14236.29
+\i (01:05:18) pick grid 6314.22 14268.20
+\t (01:05:18) last pick:  6314.00  14268.00
+\i (01:05:19) undo 
+\i (01:05:19) trapsize 347
+\i (01:05:19) etchedit 
+\i (01:05:20) drag_start grid 6372.48 14265.42
+\i (01:05:20) drag_stop 6176.88 14079.53
+\i (01:05:21) prepopup 6176.88 14079.53
+\i (01:05:22) pop dyn_option_select @:@Move 
+\i (01:05:22) move 
+\t (01:05:22) last pick:  6177.00  14080.00
+\t (01:05:22) Pick new location for the element(s).
+\i (01:05:25) pick grid 6181.04 14085.08
+\t (01:05:25) last pick:  6181.00  14085.00
+\i (01:05:25) etchedit 
+\i (01:05:26) roam start
+\i (01:05:26) roam y -48
+\i (01:05:26) roam y -48
+\i (01:05:26) roam y -16
+\i (01:05:26) roam x 16
+\i (01:05:26) roam y -48
+\i (01:05:26) roam y -32
+\i (01:05:26) roam x 32
+\i (01:05:26) roam y -64
+\i (01:05:26) roam y -48
+\i (01:05:26) roam x 32
+\i (01:05:26) roam y -80
+\i (01:05:26) roam y -64
+\i (01:05:26) roam x -16
+\i (01:05:26) roam y -64
+\i (01:05:26) roam x -16
+\i (01:05:26) roam y -80
+\i (01:05:26) roam x -16
+\i (01:05:26) roam y -48
+\i (01:05:26) roam y -16
+\i (01:05:26) roam y -32
+\i (01:05:26) roam y -16
+\i (01:05:27) roam y -16
+\i (01:05:27) roam end
+\i (01:05:28) drag_start grid 6377.33 14797.44
+\i (01:05:29) drag_stop 6187.97 15003.46
+\i (01:05:29) prepopup 6189.36 14995.83
+\i (01:05:30) pop dyn_option_select @:@Move 
+\i (01:05:30) move 
+\t (01:05:30) last pick:  6189.00  14996.00
+\t (01:05:30) Pick new location for the element(s).
+\i (01:05:33) pick grid 6192.83 14991.66
+\t (01:05:33) last pick:  6193.00  14992.00
+\i (01:05:34) etchedit 
+\i (01:05:34) roam start
+\i (01:05:34) roam x 64
+\i (01:05:34) roam y 32
+\i (01:05:34) roam x 208
+\i (01:05:34) roam y 80
+\i (01:05:34) roam x 128
+\i (01:05:34) roam y 48
+\i (01:05:34) roam x 80
+\i (01:05:34) roam y 48
+\i (01:05:34) roam x 48
+\i (01:05:34) roam y 16
+\i (01:05:34) roam x 48
+\i (01:05:34) roam y 16
+\i (01:05:34) roam x 32
+\i (01:05:34) roam y 16
+\i (01:05:34) roam x 144
+\i (01:05:34) roam y 80
+\i (01:05:34) roam x 128
+\i (01:05:34) roam y 64
+\i (01:05:34) roam x 192
+\i (01:05:34) roam y 112
+\i (01:05:35) roam x 80
+\i (01:05:35) roam y 96
+\i (01:05:35) roam x 16
+\i (01:05:35) roam y 48
+\i (01:05:35) roam y 48
+\i (01:05:35) roam y 32
+\i (01:05:35) roam x 16
+\i (01:05:35) roam y 32
+\i (01:05:35) roam x 16
+\i (01:05:35) roam y 16
+\i (01:05:35) roam x 32
+\i (01:05:35) roam x 48
+\i (01:05:35) roam y -16
+\i (01:05:35) roam x 32
+\i (01:05:36) roam x 112
+\i (01:05:36) roam x 128
+\i (01:05:36) roam x 32
+\i (01:05:36) roam x 32
+\i (01:05:36) roam y 16
+\i (01:05:36) roam x 32
+\i (01:05:36) roam y 16
+\i (01:05:36) roam x 48
+\i (01:05:36) roam end
+\i (01:05:37) drag_start grid 7440.69 14273.05
+\i (01:05:38) drag_stop 7244.39 14086.47
+\i (01:05:39) prepopup 7287.40 14232.13
+\i (01:05:40) pop dyn_option_select @:@Move 
+\i (01:05:40) move 
+\t (01:05:40) last pick:  7287.00  14232.00
+\t (01:05:40) Pick new location for the element(s).
+\i (01:05:43) pick grid 7290.17 14239.07
+\t (01:05:43) last pick:  7290.00  14239.00
+\i (01:05:43) etchedit 
+\i (01:05:44) roam start
+\i (01:05:44) roam x 64
+\i (01:05:44) roam y 16
+\i (01:05:44) roam x 160
+\i (01:05:44) roam y 16
+\i (01:05:44) roam x 80
+\i (01:05:44) roam x 80
+\i (01:05:44) roam x 48
+\i (01:05:44) roam x -64
+\i (01:05:44) roam y -32
+\i (01:05:44) roam x -176
+\i (01:05:44) roam y -16
+\i (01:05:44) roam x -16
+\i (01:05:44) roam y -16
+\i (01:05:44) roam end
+\i (01:05:46) drag_start grid 8225.20 14288.32
+\i (01:05:47) drag_stop 8017.11 14092.02
+\i (01:05:47) prepopup 8025.43 14096.87
+\i (01:05:48) pop dyn_option_select @:@Move 
+\i (01:05:48) move 
+\t (01:05:48) last pick:  8025.00  14097.00
+\t (01:05:48) Pick new location for the element(s).
+\i (01:05:52) pick grid 8029.59 14102.42
+\t (01:05:52) last pick:  8030.00  14102.00
+\i (01:05:52) etchedit 
+\i (01:05:52) roam start
+\i (01:05:52) roam y -48
+\i (01:05:52) roam x -32
+\i (01:05:52) roam y -80
+\i (01:05:52) roam y -16
+\i (01:05:52) roam y -32
+\i (01:05:52) roam x -16
+\i (01:05:52) roam y -48
+\i (01:05:52) roam x -16
+\i (01:05:52) roam y -48
+\i (01:05:53) roam y -48
+\i (01:05:53) roam y -32
+\i (01:05:53) roam y -48
+\i (01:05:53) roam y -64
+\i (01:05:53) roam y -64
+\i (01:05:53) roam x -16
+\i (01:05:53) roam y -32
+\i (01:05:53) roam x -16
+\i (01:05:53) roam y -64
+\i (01:05:53) roam y -48
+\i (01:05:53) roam x -16
+\i (01:05:53) roam y -48
+\i (01:05:53) roam y -16
+\i (01:05:53) roam end
+\i (01:05:55) drag_start grid 7453.87 15001.38
+\i (01:05:56) drag_stop 7258.95 14804.39
+\i (01:05:56) prepopup 7258.95 14804.39
+\i (01:05:57) pop dyn_option_select @:@Move 
+\i (01:05:57) move 
+\t (01:05:57) last pick:  7259.00  14804.00
+\t (01:05:57) Pick new location for the element(s).
+\i (01:06:05) pick grid 7263.81 14807.86
+\t (01:06:05) last pick:  7264.00  14808.00
+\i (01:06:05) etchedit 
+\i (01:06:06) roam start
+\i (01:06:06) roam x 64
+\i (01:06:06) roam x 80
+\i (01:06:06) roam x 32
+\i (01:06:06) roam y -16
+\i (01:06:06) roam x 32
+\i (01:06:06) roam y -16
+\i (01:06:06) roam y -16
+\i (01:06:06) roam y -16
+\i (01:06:06) roam y -32
+\i (01:06:06) roam x -16
+\i (01:06:06) roam y -48
+\i (01:06:06) roam x -64
+\i (01:06:06) roam y -48
+\i (01:06:06) roam x -48
+\i (01:06:06) roam y -16
+\i (01:06:06) roam x -64
+\i (01:06:06) roam y -32
+\i (01:06:06) roam x -48
+\i (01:06:06) roam y -48
+\i (01:06:06) roam y -16
+\i (01:06:07) roam x 80
+\i (01:06:07) roam y 32
+\i (01:06:07) roam x 128
+\i (01:06:07) roam x 128
+\i (01:06:07) roam x 48
+\i (01:06:07) roam y -16
+\i (01:06:07) roam x 16
+\i (01:06:07) roam y -16
+\i (01:06:07) roam x 32
+\i (01:06:07) roam x 80
+\i (01:06:07) roam y 16
+\i (01:06:07) roam x 96
+\i (01:06:07) roam y 16
+\i (01:06:07) roam x 96
+\i (01:06:07) roam x 16
+\i (01:06:07) roam y 16
+\i (01:06:07) roam x 16
+\i (01:06:07) roam end
+\i (01:06:08) drag_start grid 8218.27 14808.55
+\i (01:06:09) slide 
+\t (01:06:09) Waiting for the destination pick.
+\i (01:06:10) drag_stop grid 8042.77 14981.96
+\t (01:06:10) No DRC errors detected.
+\i (01:06:10) etchedit 
+\i (01:06:11) undo 
+\i (01:06:11) trapsize 347
+\i (01:06:11) etchedit 
+\i (01:06:12) drag_start grid 8217.57 14800.22
+\i (01:06:13) drag_stop 8030.98 14993.06
+\i (01:06:14) prepopup 8030.98 14988.20
+\i (01:06:15) pop dyn_option_select @:@Move 
+\i (01:06:15) move 
+\t (01:06:15) last pick:  8031.00  14988.00
+\t (01:06:15) Pick new location for the element(s).
+\i (01:06:21) pick grid 8034.45 14982.65
+\t (01:06:21) last pick:  8034.00  14983.00
+\i (01:06:21) etchedit 
+\i (01:06:22) roam start
+\i (01:06:22) roam x 16
+\i (01:06:22) roam y -48
+\i (01:06:22) roam x 48
+\i (01:06:22) roam y -112
+\i (01:06:22) roam x 16
+\i (01:06:22) roam y -48
+\i (01:06:22) roam x 16
+\i (01:06:22) roam y -48
+\i (01:06:22) roam x 16
+\i (01:06:22) roam y -48
+\i (01:06:22) roam y -32
+\i (01:06:22) roam x 16
+\i (01:06:22) roam y -48
+\i (01:06:22) roam y -32
+\i (01:06:22) roam y -32
+\i (01:06:22) roam y -48
+\i (01:06:22) roam x -48
+\i (01:06:22) roam y -80
+\i (01:06:22) roam x -48
+\i (01:06:22) roam y -80
+\i (01:06:22) roam x -16
+\i (01:06:22) roam y -32
+\i (01:06:22) roam x -16
+\i (01:06:22) roam y -32
+\i (01:06:22) roam y -32
+\i (01:06:22) roam x -16
+\i (01:06:22) roam y -32
+\i (01:06:22) roam y -48
+\i (01:06:23) roam y -16
+\i (01:06:23) roam y -16
+\i (01:06:23) roam end
+\i (01:06:24
