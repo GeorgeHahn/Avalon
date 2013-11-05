@@ -12,7 +12,7 @@ Firmware and driver based on Klondike Project
   
   Each board has a barrel jack power connector. A 10 chip board should be capable of 15000 MH/s and consume about 30W power. Alternatively, the switching power supply onboard can be turned to a lower voltage, trading hashrate for power efficiency. The supply is variable from 0.700V to 1.708V. Each board can be easily powered by a low cost power adapter. In production quantities, this board should cost under $150 (price of Avalon ASICs included). This gives it a price to performance ration of $10/GH.
   
-  The design is currently being done in Cadence OrCAD + Allegro, but will be completely backported to Upverter in the near future.
+  The design is currently being done in Cadence OrCAD + Allegro, but will be completely backported to [Upverter](https://upverter.com/GeorgeHahn/0bb015271a32ca8e/Avalon/) in the near future.
   
 ## STATUS
 
@@ -22,7 +22,7 @@ Firmware and driver based on Klondike Project
 
  - **MOUNTING HOLES for heatsink**
  - **Remove soldermask from thermal via arrays**
- - **Add ferrite beads near hashing ICs**
+ - **Add ferrite beads near hashing ICs & on USB**
  - Pick VBoot voltage to power SMPS at initially (0.80v seems like the most reasonable option)
  - Port Klondike firmware to PIC18F45K50
  - Testing with a Raspberry Pi
