@@ -4,7 +4,7 @@
 (                                                                     )
 (    Drawing          : AVALON.brd                                    )
 (    Software Version : 16.6P004                                      )
-(    Date/Time        : Mon Nov 04 20:00:14 2013                      )
+(    Date/Time        : Tue Nov 05 16:07:50 2013                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -26,7 +26,7 @@ CmdLine: netrev.exe -y 1 -i C:\USERS\GEORGE\DOCUMENTS\GITHUB\AVALON\HARDWARE\net
 ------ Preparing to read pst files ------
 
 Starting to read C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/netlist/pstchip.dat 
-   Finished reading C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/netlist/pstchip.dat (00:00:00.06)
+   Finished reading C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/netlist/pstchip.dat (00:00:00.04)
 Starting to read C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/netlist/pstxprt.dat 
    Finished reading C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/netlist/pstxprt.dat (00:00:00.00)
 Starting to read C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/netlist/pstxnet.dat 
@@ -63,7 +63,7 @@ PADPATH =  .
 ------ Summary Statistics ------
 
 
-netrev run on Nov 4 20:00:14 2013
+netrev run on Nov 5 16:07:50 2013
    DESIGN NAME : 'AVALON'
    PACKAGING ON Sep 10 2012 04:46:09
 
@@ -88,6 +88,6 @@ netrev run on Nov 4 20:00:14 2013
  No oversight detected
  No warning detected
 
-cpu time      0:01:35
-elapsed time  0:00:01
+cpu time      0:00:36
+elapsed time  0:00:00
 

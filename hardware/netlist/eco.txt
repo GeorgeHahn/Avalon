@@ -3,47 +3,43 @@
 |                                                                    Page   1  |
 |------------------------------------------------------------------------------|
 |  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
-|                                                    Mon Nov 04 20:00:14 2013  |
+|                                                    Tue Nov 05 16:07:50 2013  |
 |------------------------------------------------------------------------------|
-| NET CHANGES                                                                  |
+| COMPONENT DEFINITION added to board drawing                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
+|    device type                                                               |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-  CLK2         pins MOVED FROM this net (to net name listed on right)
-                                 U5.5            7933.66 16312.8
-                                                                          CLK10
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  CLK3         pins MOVED FROM this net (to net name listed on right)
-                                 U5.7            7933.66 16261.6
-                                                                           CLK9
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  CLK4         pins MOVED FROM this net (to net name listed on right)
-                                 U5.9            7933.66 16210.4
-                                                                           CLK8
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  CLK5         pins MOVED FROM this net (to net name listed on right)
-                                 U5.11           8206.34 16184.8
-                                                                           CLK6
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  CLK6         pins MOVED FROM this net (to net name listed on right)
-                                 U5.12           8206.34 16210.4
-                                                                           CLK7
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  CLK7         pins MOVED FROM this net (to net name listed on right)
-                                 U5.14           8206.34 16261.6
-                                                                           CLK5
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  CLK8         pins MOVED FROM this net (to net name listed on right)
-                                 U5.16           8206.34 16312.8
-                                                                           CLK2
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  CLK9         pins MOVED FROM this net (to net name listed on right)
-                                 U5.18           8206.34 16363.9
-                                                                           CLK3
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  CLK10        pins MOVED FROM this net (to net name listed on right)
-                                 U5.19           8206.34 16389.5
-                                                                           CLK4
+ DRILL - UNPLATED M3_PART_DRILL_
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   2  |
+|------------------------------------------------------------------------------|
+|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
+|                                                    Tue Nov 05 16:07:50 2013  |
+|------------------------------------------------------------------------------|
+| COMPONENTS CHANGED from one device type to another in board drawing          |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|    ref des        | new device type     |   x   |   y   |  old  device type  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ H1                  DRILL - UNPLATED M3_PART_DRILL_                 DRILL - UNPLATED M3_DRILL_M3_33
+ H2                  DRILL - UNPLATED M3_PART_DRILL_                 DRILL - UNPLATED M3_DRILL_M3_33
+ H3                  DRILL - UNPLATED M3_PART_DRILL_                 DRILL - UNPLATED M3_DRILL_M3_33
+ H4                  DRILL - UNPLATED M3_PART_DRILL_                 DRILL - UNPLATED M3_DRILL_M3_33
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   3  |
+|------------------------------------------------------------------------------|
+|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
+|                                                    Tue Nov 05 16:07:50 2013  |
+|------------------------------------------------------------------------------|
+| SLOT PROPERTIES added to board drawing                                       |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   slot_id    |   x   |   y   |   property   |             value              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ H1.1                           PRIM_FILE      .\pstchip.dat
+ H2.1                           PRIM_FILE      .\pstchip.dat
+ H3.1                           PRIM_FILE      .\pstchip.dat
+ H4.1                           PRIM_FILE      .\pstchip.dat
 |------------------------------------------------------------------------------|
 |   total ECO changes reported  9                                              |
 |------------------------------------------------------------------------------|

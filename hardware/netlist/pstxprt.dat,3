@@ -1,5 +1,5 @@
 FILE_TYPE = EXPANDEDPARTLIST;
-{ Using PSTWRITER 16.6.0 d001Nov-03-2013 at 23:26:19 }
+{ Using PSTWRITER 16.6.0 d001Nov-05-2013 at 15:15:57 }
 DIRECTIVES
  PST_VERSION='PST_HDL_CENTRIC_VERSION_0';
  ROOT_DRAWING='AVALON';
@@ -1744,6 +1744,46 @@ SECTION_NUMBER 1
  '@AVALON.SCHEMATIC1(SCH_1):INS18391@AVALON.LED_0.NORMAL(CHIPS)':
  C_PATH='@avalon.schematic1(sch_1):ins18391@avalon.\led_0.normal\(chips)',
  P_PATH='@avalon.schematic1(sch_1):page1_ins18391@avalon.\led_0.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ H1 'DRILL - UNPLATED M3_DRILL_M3_33':;
+
+SECTION_NUMBER 1
+ '@AVALON.SCHEMATIC1(SCH_1):INS258987@PARTS.DRILL - UNPLATED M3.NORMAL(CHIPS)':
+ C_PATH='@avalon.schematic1(sch_1):ins258987@parts.\drill - unplated m3.normal\(chips)',
+ P_PATH='@avalon.schematic1(sch_1):page1_ins258987@parts.\drill - unplated m3.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ H2 'DRILL - UNPLATED M3_DRILL_M3_33':;
+
+SECTION_NUMBER 1
+ '@AVALON.SCHEMATIC1(SCH_1):INS258999@PARTS.DRILL - UNPLATED M3.NORMAL(CHIPS)':
+ C_PATH='@avalon.schematic1(sch_1):ins258999@parts.\drill - unplated m3.normal\(chips)',
+ P_PATH='@avalon.schematic1(sch_1):page1_ins258999@parts.\drill - unplated m3.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ H3 'DRILL - UNPLATED M3_DRILL_M3_33':;
+
+SECTION_NUMBER 1
+ '@AVALON.SCHEMATIC1(SCH_1):INS259023@PARTS.DRILL - UNPLATED M3.NORMAL(CHIPS)':
+ C_PATH='@avalon.schematic1(sch_1):ins259023@parts.\drill - unplated m3.normal\(chips)',
+ P_PATH='@avalon.schematic1(sch_1):page1_ins259023@parts.\drill - unplated m3.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ H4 'DRILL - UNPLATED M3_DRILL_M3_33':;
+
+SECTION_NUMBER 1
+ '@AVALON.SCHEMATIC1(SCH_1):INS259035@PARTS.DRILL - UNPLATED M3.NORMAL(CHIPS)':
+ C_PATH='@avalon.schematic1(sch_1):ins259035@parts.\drill - unplated m3.normal\(chips)',
+ P_PATH='@avalon.schematic1(sch_1):page1_ins259035@parts.\drill - unplated m3.normal\(chips)',
  PRIM_FILE='.\pstchip.dat',
  SECTION='';
 
