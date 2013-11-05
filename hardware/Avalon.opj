@@ -152,8 +152,8 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 2 3 -1 -1 -4 -27 104 1600 104 933")
-        (Scroll "2688 609")
-        (Zoom "212")
+        (Scroll "821 0")
+        (Zoom "456")
         (Occurrence "/"))
       (Path "C:\USERS\GEORGE\DOCUMENTS\GITHUB\AVALON\HARDWARE\AVALON.DSN")
       (Schematic "SCHEMATIC1")

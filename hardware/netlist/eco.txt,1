@@ -3,34 +3,34 @@
 |                                                                    Page   1  |
 |------------------------------------------------------------------------------|
 |  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
-|                                                    Sun Nov 03 23:21:55 2013  |
+|                                                    Sun Nov 03 23:26:20 2013  |
 |------------------------------------------------------------------------------|
 | COMPONENT DEFINITION added to board drawing                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
 |    device type                                                               |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- LED_0_RES_0805_LED
+ LED_0_APA3010SRCPRV-GX_LED
 |------------------------------------------------------------------------------|
 |                                 ECO   REPORT                                 |
 |                                                                    Page   2  |
 |------------------------------------------------------------------------------|
 |  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
-|                                                    Sun Nov 03 23:21:55 2013  |
+|                                                    Sun Nov 03 23:26:20 2013  |
 |------------------------------------------------------------------------------|
 | COMPONENTS CHANGED from one device type to another in board drawing          |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
 |    ref des        | new device type     |   x   |   y   |  old  device type  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- D2                  LED_0_RES_0805_LED    6864.40 17010.0 LED_RES_0805_LED
- D3                  LED_0_RES_0805_LED    6722.20 17010.0 LED_RES_0805_LED
- D4                  LED_0_RES_0805_LED    6580.00 17010.0 LED_RES_0805_LED
- D5                  LED_0_RES_0805_LED    6437.80 17010.0 LED_RES_0805_LED
+ D2                  LED_0_APA3010SRCPRV-GX_LED 6864.40 17010.0 LED_0_RES_0805_LED
+ D3                  LED_0_APA3010SRCPRV-GX_LED 6722.20 17010.0 LED_0_RES_0805_LED
+ D4                  LED_0_APA3010SRCPRV-GX_LED 6580.00 17010.0 LED_0_RES_0805_LED
+ D5                  LED_0_APA3010SRCPRV-GX_LED 6437.80 17010.0 LED_0_RES_0805_LED
 |------------------------------------------------------------------------------|
 |                                 ECO   REPORT                                 |
 |                                                                    Page   3  |
 |------------------------------------------------------------------------------|
 |  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
-|                                                    Sun Nov 03 23:21:55 2013  |
+|                                                    Sun Nov 03 23:26:20 2013  |
 |------------------------------------------------------------------------------|
 | SLOT PROPERTIES added to board drawing                                       |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
