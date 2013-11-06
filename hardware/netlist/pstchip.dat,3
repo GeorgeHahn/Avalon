@@ -1,5 +1,5 @@
 FILE_TYPE=LIBRARY_PARTS;
-{ Using PSTWRITER 16.6.0 d001Nov-05-2013 at 15:15:57}
+{ Using PSTWRITER 16.6.0 d001Nov-05-2013 at 16:07:50}
 primitive 'CAPACITOR_CAP_2917_330UF';
   pin
     '1':
@@ -225,7 +225,7 @@ primitive 'LED_0_APA3010SRCPRV-GX_LED';
     VALUE='LED';
   end_body;
 end_primitive;
-primitive 'DRILL - UNPLATED M3_DRILL_M3_33';
+primitive 'DRILL - UNPLATED M3_PART_DRILL_';
   pin
     'H':
       PIN_NUMBER='(1)';
@@ -233,7 +233,7 @@ primitive 'DRILL - UNPLATED M3_DRILL_M3_33';
   end_pin;
   body
     PART_NAME='Drill - Unplated M3';
-    JEDEC_TYPE='drill_m3_33000mm';
+    JEDEC_TYPE='Part_drill_m3_33000mm';
     VALUE='Drill - Unplated M3';
   end_body;
 end_primitive;

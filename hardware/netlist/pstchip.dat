@@ -1,5 +1,5 @@
 FILE_TYPE=LIBRARY_PARTS;
-{ Using PSTWRITER 16.6.0 d001Nov-05-2013 at 16:07:50}
+{ Using PSTWRITER 16.6.0 d001Nov-05-2013 at 16:48:05}
 primitive 'CAPACITOR_CAP_2917_330UF';
   pin
     '1':
@@ -334,6 +334,21 @@ primitive 'INDUCTOR_ETQ-P4L_560NH';
     PART_NAME='INDUCTOR';
     JEDEC_TYPE='ETQ-P4L';
     VALUE='560nH';
+  end_body;
+end_primitive;
+primitive 'INDUCTOR_1_IND_0603_BLM18HE102S';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='INDUCTOR_1';
+    JEDEC_TYPE='ind_0603';
+    VALUE='BLM18HE102SN1D';
   end_body;
 end_primitive;
 primitive 'NPN BCE_SOT23_BC817-25-7-F';
