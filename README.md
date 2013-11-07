@@ -20,6 +20,7 @@ Firmware and driver based on Klondike Project
   
 ## TODO
 
+ - Fix ferrite bead silk
  - Pick VBoot voltage to power SMPS at initially (0.80v seems like the most reasonable option)
  - Port Klondike firmware to PIC18F45K50
  - Testing with a Raspberry Pi

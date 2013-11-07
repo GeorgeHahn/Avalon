@@ -1,3661 +1,625 @@
 \t (00:00:00) allegro 16.6 P004 (v16-6-112G) Windows 32
-\t (00:00:00)     Journal start - Tue Nov 05 16:07:51 2013
-\t (00:00:00)         Host=GEORGEPC User=George Pid=15676 CPUs=8
+\t (00:00:00)     Journal start - Wed Nov 06 10:04:50 2013
+\t (00:00:00)         Host=GEORGEPC User=George Pid=14700 CPUs=8
 \t (00:00:00) 
-\t (00:00:00) Opening existing design...
-\d (00:00:00) Database opened: C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd
-\t (00:00:01) Grids are drawn 64.00, 64.00 apart for enhanced viewability.
-\i (00:00:01) trapsize 2061
-\i (00:00:01) trapsize 2034
-\i (00:00:01) trapsize 2066
-\i (00:00:01) trapsize 2079
-\i (00:00:01) trapsize 2079
-\i (00:00:02) generaledit 
-\i (00:00:03) pick grid 4394.18 14857.90
-\t (00:00:03) last pick:  4394.00  14858.00
-\i (00:00:05) place manual 
-\i (00:00:07) setwindow form.plc_manual
-\i (00:00:07) FORM plc_manual tree 'MULTISEL YES' 'Components by refdes' 
-\t (00:00:07) Placing H1 / DRILL - UNPLATED M3_PART_DRILL_ / PART_DRILL_M3_33000MM on Top.
-\i (00:00:07) FORM plc_manual tree  'Components by refdes' 
-\i (00:00:08) setwindow pcb
-\i (00:00:08) pick grid 4805.74 15423.29
-\t (00:00:08) last pick:  4806.00  15423.00
-\t (00:00:08) Placing H2 / DRILL - UNPLATED M3_PART_DRILL_ / PART_DRILL_M3_33000MM on Top.
-\i (00:00:10) pick grid 4780.80 14753.97
-\t (00:00:10) last pick:  4781.00  14754.00
-\t (00:00:10) Placing H3 / DRILL - UNPLATED M3_PART_DRILL_ / PART_DRILL_M3_33000MM on Top.
-\i (00:00:11) pick grid 4772.49 14076.35
-\t (00:00:11) last pick:  4772.00  14076.00
-\t (00:00:11) Placing H4 / DRILL - UNPLATED M3_PART_DRILL_ / PART_DRILL_M3_33000MM on Top.
-\i (00:00:12) pick grid 4789.12 13311.42
-\t (00:00:12) last pick:  4789.00  13311.00
-\i (00:00:15) setwindow form.plc_manual
-\i (00:00:15) FORM plc_manual done  
-\i (00:00:15) setwindow pcb
-\i (00:00:15) generaledit 
-\i (00:00:16) pick grid 4269.46 14953.52
-\t (00:00:16) last pick:  4269.00  14954.00
-\i (00:00:17) drag_start grid 4768.33 15410.81
-\i (00:00:17) move 
-\t (00:00:17) last pick:  4748.00  15431.33
-\t (00:00:17) Pick new location for the element(s).
-\i (00:00:17) drag_stop grid 4689.34 16005.30
-\i (00:00:17) generaledit 
-\i (00:00:18) zoom in 1 
-\i (00:00:18) setwindow pcb
-\i (00:00:18) zoom in 4822.37 15369.24
-\t (00:00:18) Grids are drawn 16.00, 16.00 apart for enhanced viewability.
-\i (00:00:18) trapsize 1039
-\i (00:00:18) zoom in 1 
-\i (00:00:18) setwindow pcb
-\i (00:00:18) zoom in 4805.75 15354.70
-\i (00:00:18) trapsize 520
-\i (00:00:18) zoom in 1 
-\i (00:00:18) setwindow pcb
-\i (00:00:18) zoom in 4803.67 15353.66
-\t (00:00:18) Grids are drawn 4.00, 4.00 apart for enhanced viewability.
-\i (00:00:18) trapsize 260
-\i (00:00:19) zoom in 1 
-\i (00:00:19) setwindow pcb
-\i (00:00:19) zoom in 4803.67 15353.66
-\i (00:00:19) trapsize 130
-\i (00:00:19) zoom out 1 
-\i (00:00:19) setwindow pcb
-\i (00:00:19) zoom out 4789.90 15356.00
-\i (00:00:19) trapsize 260
-\i (00:00:19) zoom out 1 
-\i (00:00:19) setwindow pcb
-\i (00:00:19) zoom out 4789.38 15356.53
-\t (00:00:19) Grids are drawn 16.00, 16.00 apart for enhanced viewability.
-\i (00:00:19) trapsize 520
-\i (00:00:20) zoom out 1 
-\i (00:00:20) setwindow pcb
-\i (00:00:20) zoom out 4781.07 15399.14
-\i (00:00:20) trapsize 1039
-\i (00:00:21) zoom in 1 
-\i (00:00:21) setwindow pcb
-\i (00:00:21) zoom in 4627.26 15943.73
-\i (00:00:21) trapsize 520
-\i (00:00:21) zoom in 1 
-\i (00:00:21) setwindow pcb
-\i (00:00:21) zoom in 4618.95 15951.01
-\t (00:00:21) Grids are drawn 4.00, 4.00 apart for enhanced viewability.
-\i (00:00:21) trapsize 260
-\i (00:00:22) zoom out 1 
-\i (00:00:22) setwindow pcb
-\i (00:00:22) zoom out 4618.95 15951.01
-\t (00:00:22) Grids are drawn 16.00, 16.00 apart for enhanced viewability.
-\i (00:00:22) trapsize 520
-\i (00:00:24) undo 
-\t (00:00:24) Grids are drawn 64.00, 64.00 apart for enhanced viewability.
-\i (00:00:24) trapsize 2079
-\i (00:00:24) generaledit 
-\i (00:00:26) prepopup 4202.95 17023.82
-\i (00:00:27) pick grid 4427.44 17506.05
-\t (00:00:27) last pick:  4427.00  17506.00
-\i (00:00:28) pick grid 4839.00 15398.34
-\t (00:00:28) last pick:  4839.00  15398.00
-\i (00:00:30) placementedit 
-\i (00:00:32) pick grid 4751.70 15410.81
-\t (00:00:32) last pick:  4752.00  15411.00
-\i (00:00:32) move aledit 
-\e (00:44:29) Command not found: xdehilite
-\i (00:44:29) xname_flush 
-\i (00:44:29) done 
-\i (00:44:29) generaledit 
-\e (00:44:32) Command not found: xhilite
-\i (00:44:32) xname_flush 
-\i (00:44:32) done 
-\i (00:44:32) generaledit 
-\e (00:44:33) Command not found: xdehilite
-\i (00:44:33) xname_flush 
-\i (00:44:33) done 
-\i (00:44:33) generaledit 
-\e (00:44:34) Command not found: xhilite
-\i (00:44:34) xname_flush 
-\i (00:44:34) done 
-\i (00:44:34) generaledit 
-\e (00:44:34) Command not found: xdehilite
-\i (00:44:34) xname_flush 
-\i (00:44:34) done 
-\i (00:44:35) generaledit 
-\i (00:45:27) zoom in 1 
-\i (00:45:27) setwindow pcb
-\i (00:45:27) zoom in 18.01 -21.84
-\i (00:45:27) trapsize 260
-\i (00:45:28) pick grid -7.45 -43.66
-\t (00:45:28) last pick:  0.00  0.00
-\i (00:45:29) prepopup -16.28 -35.87
-\i (00:45:32) pop dyn_option_select '@:@Show element' 
-\i (00:45:32) show element 
-\i (00:45:33) generaledit 
-\i (00:45:37) setwindow text
-\i (00:45:37) close 
-\i (00:45:38) setwindow pcb
-\i (00:45:38) xname_flush 
-\i (00:45:58) pick grid -288.06 118.99
-\t (00:45:58) last pick:  -300.00  100.00
-\i (00:45:58) prepopup -230.38 244.22
-\i (00:45:59) pick grid -297.94 239.55
-\t (00:45:59) last pick:  -300.00  200.00
-\i (00:59:17) pick grid -166.46 87.29
-\t (00:59:17) last pick:  -200.00  100.00
-\i (00:59:19) pick grid -15.76 47.79
-\t (00:59:19) last pick:  0.00  0.00
-\i (00:59:20) pick grid -226.74 64.42
-\t (00:59:20) last pick:  -200.00  100.00
-\i (00:59:24) add pin 
-\t (00:59:24) Using 'DRILL_M3_33000MM.pad'.
-\i (00:59:35) prepopup -238.18 3.62
-\i (00:59:36) cancel 
-\t (00:59:36) Exiting from Add Pin.
-\i (00:59:36) generaledit 
-\i (00:59:38) prepopup 5.02 44.16
-\i (00:59:40) pop dyn_option_select @:@Delete 
-\i (00:59:40) delete 
-\i (00:59:40) generaledit 
-\i (00:59:42) add pin 
-\t (00:59:42) Using 'DRILL_M3_33000MM.pad'.
-\i (00:59:48) setwindow form.mini
-\i (00:59:48) FORM mini pad_browse  
-\i (00:59:50) fillin "menu_cancel"
-\i (00:59:55) FORM mini next_pin_number 1 
-\i (00:59:57) setwindow pcb
-\i (00:59:57) pick grid 49.19 -16.12
-\t (00:59:57) last pick:  0.00  0.00
-\t (00:59:57) Using 'DRILL_M3_33000MM.pad'.
-\i (00:59:58) prepopup -309.37 -11.45
-\i (00:59:59) done 
-\t (00:59:59) Exiting from Add Pin.
-\i (00:59:59) generaledit 
-\i (01:00:01) save 
-\i (01:00:02) fillin yes 
-\t (01:00:02) Symbol 'drill_m3_33000mm.psm' created.
-\i (01:00:02) generaledit 
-\e (01:00:04) Command not found: xhilite
-\i (01:00:04) xname_flush 
-\i (01:00:04) done 
-\i (01:00:04) generaledit 
-\e (01:00:11) Command not found: xhilite
-\i (01:00:11) xname_flush 
-\i (01:00:11) done 
-\i (01:00:11) generaledit 
-\i (01:00:32) save_as 
-\i (01:00:44) fillin "Part_drill_m3_33000mm.dra"
-\t (01:00:44) Symbol 'part_drill_m3_33000mm.psm' created.
-\i (01:00:44) generaledit 
-\e (01:00:55) Command not found: xdehilite
-\i (01:00:55) xname_flush 
-\i (01:00:55) done 
-\i (01:00:55) generaledit 
-\e (01:00:56) Command not found: xhilite
-\i (01:00:56) xname_flush 
-\i (01:00:56) done 
-\i (01:00:56) generaledit 
-\e (01:00:57) Command not found: xdehilite
-\i (01:00:57) xname_flush 
-\i (01:00:57) done 
-\i (01:00:57) generaledit 
-\e (01:00:58) Command not found: xhilite
-\i (01:00:58) xname_flush 
-\i (01:00:58) done 
-\i (01:00:58) generaledit 
-\e (01:00:59) Command not found: xhilite
-\i (01:00:59) xname_flush 
-\i (01:00:59) done 
-\i (01:00:59) generaledit 
-\e (01:01:00) Command not found: xhilite
-\i (01:01:00) xname_flush 
-\i (01:01:00) done 
-\i (01:01:00) generaledit 
-\e (01:01:00) Command not found: xhilite
-\i (01:01:00) xname_flush 
-\i (01:01:00) done 
-\i (01:01:00) generaledit 
-\e (01:01:18) Command not found: xdehilite
-\i (01:01:18) xname_flush 
-\i (01:01:18) done 
-\i (01:01:18) generaledit 
-\e (01:20:10) Command not found: xhilite
-\i (01:20:10) xname_flush 
-\i (01:20:10) done 
-\i (01:20:10) generaledit 
-\e (01:20:13) Command not found: xdehilite
-\i (01:20:13) xname_flush 
-\i (01:20:13) done 
-\i (01:20:13) generaledit 
-\e (01:20:17) Command not found: xhilite
-\i (01:20:17) xname_flush 
-\i (01:20:17) done 
-\i (01:20:17) generaledit 
-\e (01:20:52) Command not found: xhilite
-\i (01:20:52) xname_flush 
-\i (01:20:52) done 
-\i (01:20:52) generaledit 
-\e (01:20:53) Command not found: xdehilite
-\i (01:20:53) xname_flush 
-\i (01:20:53) done 
-\i (01:20:53) generaledit 
-\e (01:20:55) Command not found: xhilite
-\i (01:20:55) xname_flush 
-\i (01:20:55) done 
-\i (01:20:56) generaledit 
-\e (01:21:50) Command not found: xhilite
-\i (01:21:50) xname_flush 
-\i (01:21:50) done 
-\i (01:21:51) generaledit 
-\e (01:21:52) Command not found: xdehilite
-\i (01:21:52) xname_flush 
-\i (01:21:52) done 
-\i (01:21:52) generaledit 
-\e (01:22:26) Command not found: xhilite
-\i (01:22:26) xname_flush 
-\i (01:22:26) done 
-\i (01:22:26) generaledit 
-\e (01:22:26) Command not found: xdehilite
-\i (01:22:26) xname_flush 
-\i (01:22:26) done 
-\i (01:22:27) generaledit 
-\e (01:22:28) Command not found: xhilite
-\i (01:22:28) xname_flush 
-\i (01:22:28) done 
-\i (01:22:28) generaledit 
-\e (01:22:56) Command not found: xdehilite
-\i (01:22:56) xname_flush 
-\i (01:22:56) done 
-\i (01:22:56) generaledit 
-\e (01:23:06) Command not found: xhilite
-\i (01:23:06) xname_flush 
-\i (01:23:06) done 
-\i (01:23:07) generaledit 
-\e (01:23:21) Command not found: xdehilite
-\i (01:23:21) xname_flush 
-\i (01:23:21) done 
-\i (01:23:21) generaledit 
-\e (01:23:27) Command not found: xhilite
-\i (01:23:27) xname_flush 
-\i (01:23:27) done 
-\i (01:23:27) generaledit 
-\e (01:23:36) Command not found: xdehilite
-\i (01:23:36) xname_flush 
-\i (01:23:36) done 
-\i (01:23:36) generaledit 
-\e (01:23:37) Command not found: xhilite
-\i (01:23:37) xname_flush 
-\i (01:23:37) done 
-\i (01:23:37) generaledit 
-\e (01:23:40) Command not found: xdehilite
-\i (01:23:40) xname_flush 
-\i (01:23:40) done 
-\i (01:23:40) generaledit 
-\e (01:23:50) Command not found: xhilite
-\i (01:23:50) xname_flush 
-\i (01:23:50) done 
-\i (01:23:50) generaledit 
-\e (01:23:52) Command not found: xdehilite
-\i (01:23:52) xname_flush 
-\i (01:23:52) done 
-\i (01:23:52) generaledit 
-\e (01:23:55) Command not found: xhilite
-\i (01:23:55) xname_flush 
-\i (01:23:55) done 
-\i (01:23:55) generaledit 
-\e (01:23:57) Command not found: xdehilite
-\i (01:23:57) xname_flush 
-\i (01:23:57) done 
-\i (01:23:57) generaledit 
-\e (01:23:59) Command not found: xhilite
-\i (01:23:59) xname_flush 
-\i (01:23:59) done 
-\i (01:23:59) generaledit 
-\e (01:24:00) Command not found: xdehilite
-\i (01:24:00) xname_flush 
-\i (01:24:00) done 
-\i (01:24:01) generaledit 
-\e (01:24:02) Command not found: xhilite
-\i (01:24:02) xname_flush 
-\i (01:24:02) done 
-\i (01:24:02) generaledit 
-\e (01:24:02) Command not found: xdehilite
-\i (01:24:02) xname_flush 
-\i (01:24:02) done 
-\i (01:24:02) generaledit 
-\e (01:24:07) Command not found: xhilite
-\i (01:24:07) xname_flush 
-\i (01:24:07) done 
-\i (01:24:07) generaledit 
-\e (01:24:10) Command not found: xhilite
-\i (01:24:10) xname_flush 
-\i (01:24:10) done 
-\i (01:24:10) generaledit 
-\e (01:24:12) Command not found: xdehilite
-\i (01:24:12) xname_flush 
-\i (01:24:12) done 
-\i (01:24:12) generaledit 
-\e (01:24:14) Command not found: xhilite
-\i (01:24:14) xname_flush 
-\i (01:24:14) done 
-\e (01:24:14) Command not found: xhilite
-\i (01:24:14) xname_flush 
-\e (01:24:14) No command active
-\i (01:24:14) done 
-\e (01:24:14) No command active
-\i (01:24:14) generaledit 
-\e (01:24:14) Command not found: xdehilite
-\i (01:24:14) xname_flush 
-\i (01:24:14) done 
-\i (01:24:15) generaledit 
-\e (01:24:15) Command not found: xhilite
-\i (01:24:15) xname_flush 
-\i (01:24:15) done 
-\i (01:24:15) generaledit 
-\e (01:24:20) Command not found: xdehilite
-\i (01:24:20) xname_flush 
-\i (01:24:20) done 
-\i (01:24:20) generaledit 
-\e (01:24:24) Command not found: xdehilite
-\i (01:24:24) xname_flush 
-\i (01:24:24) done 
-\i (01:24:24) generaledit 
-\e (01:24:25) Command not found: xhilite
-\i (01:24:25) xname_flush 
-\i (01:24:25) done 
-\i (01:24:25) generaledit 
-\e (01:24:27) Command not found: xdehilite
-\i (01:24:27) xname_flush 
-\i (01:24:27) done 
-\e (01:24:27) Command not found: xhilite
-\i (01:24:27) xname_flush 
-\e (01:24:27) No command active
-\i (01:24:27) done 
-\e (01:24:27) No command active
-\i (01:24:27) generaledit 
-\e (01:24:28) Command not found: xdehilite
-\i (01:24:28) xname_flush 
-\i (01:24:28) done 
-\i (01:24:28) generaledit 
-\e (01:24:31) Command not found: xhilite
-\i (01:24:31) xname_flush 
-\i (01:24:31) done 
-\i (01:24:31) generaledit 
-\e (01:24:32) Command not found: xdehilite
-\i (01:24:32) xname_flush 
-\i (01:24:32) done 
-\i (01:24:32) generaledit 
-\e (01:24:32) Command not found: xhilite
-\i (01:24:32) xname_flush 
-\i (01:24:32) done 
-\i (01:24:32) generaledit 
-\e (01:24:34) Command not found: xdehilite
-\i (01:24:34) xname_flush 
-\i (01:24:34) done 
-\i (01:24:34) generaledit 
-\e (01:24:35) Command not found: xhilite
-\i (01:24:35) xname_flush 
-\i (01:24:35) done 
-\i (01:24:35) generaledit 
-\e (01:24:39) Command not found: xdehilite
-\i (01:24:39) xname_flush 
-\i (01:24:39) done 
-\i (01:24:39) generaledit 
-\e (01:24:40) Command not found: xhilite
-\i (01:24:40) xname_flush 
-\i (01:24:40) done 
-\i (01:24:40) generaledit 
-\e (01:24:43) Command not found: xdehilite
-\i (01:24:43) xname_flush 
-\i (01:24:43) done 
-\i (01:24:43) generaledit 
-\e (01:24:48) Command not found: xhilite
-\i (01:24:48) xname_flush 
-\i (01:24:48) done 
-\i (01:24:48) generaledit 
-\e (01:24:50) Command not found: xdehilite
-\i (01:24:50) xname_flush 
-\i (01:24:50) done 
-\i (01:24:50) generaledit 
-\e (01:24:52) Command not found: xhilite
-\i (01:24:52) xname_flush 
-\i (01:24:52) done 
-\i (01:24:52) generaledit 
-\e (01:24:54) Command not found: xdehilite
-\i (01:24:54) xname_flush 
-\i (01:24:54) done 
-\i (01:24:54) generaledit 
-\e (01:24:56) Command not found: xhilite
-\i (01:24:56) xname_flush 
-\i (01:24:56) done 
-\i (01:24:56) generaledit 
-\e (01:24:57) Command not found: xdehilite
-\i (01:24:57) xname_flush 
-\i (01:24:57) done 
-\i (01:24:58) generaledit 
-\e (01:25:04) Command not found: xhilite
-\i (01:25:04) xname_flush 
-\i (01:25:04) done 
-\i (01:25:04) generaledit 
-\e (01:25:05) Command not found: xdehilite
-\i (01:25:05) xname_flush 
-\i (01:25:05) done 
-\e (01:25:05) Command not found: xhilite
-\i (01:25:05) xname_flush 
-\e (01:25:05) No command active
-\i (01:25:05) done 
-\e (01:25:05) No command active
-\i (01:25:05) generaledit 
-\e (01:25:07) Command not found: xdehilite
-\i (01:25:07) xname_flush 
-\i (01:25:07) done 
-\i (01:25:07) generaledit 
-\e (01:25:08) Command not found: xhilite
-\i (01:25:08) xname_flush 
-\i (01:25:08) done 
-\i (01:25:08) generaledit 
-\e (01:25:21) Command not found: xhilite
-\i (01:25:21) xname_flush 
-\i (01:25:21) done 
-\i (01:25:21) generaledit 
-\e (01:26:03) Command not found: xdehilite
-\i (01:26:03) xname_flush 
-\i (01:26:03) done 
-\e (01:26:03) Command not found: xhilite
-\i (01:26:03) xname_flush 
-\e (01:26:03) No command active
-\i (01:26:03) done 
-\e (01:26:03) No command active
-\i (01:26:03) generaledit 
-\e (01:26:16) Command not found: xdehilite
-\i (01:26:16) xname_flush 
-\i (01:26:16) done 
-\i (01:26:16) generaledit 
-\e (01:28:40) Command not found: xhilite
-\i (01:28:40) xname_flush 
-\i (01:28:40) done 
-\i (01:28:40) generaledit 
-\e (01:28:41) Command not found: xdehilite
-\i (01:28:41) xname_flush 
-\i (01:28:41) done 
-\i (01:28:41) generaledit 
-\e (01:28:42) Command not found: xhilite
-\i (01:28:42) xname_flush 
-\i (01:28:42) done 
-\i (01:28:42) generaledit 
-\e (01:28:44) Command not found: xdehilite
-\i (01:28:44) xname_flush 
-\i (01:28:44) done 
-\i (01:28:45) generaledit 
-\e (01:28:47) Command not found: xhilite
-\i (01:28:47) xname_flush 
-\i (01:28:47) done 
-\i (01:28:47) generaledit 
-\e (01:28:48) Command not found: xdehilite
-\i (01:28:48) xname_flush 
-\i (01:28:48) done 
-\i (01:28:49) generaledit 
-\e (01:28:51) Command not found: xhilite
-\i (01:28:51) xname_flush 
-\i (01:28:51) done 
-\i (01:28:51) generaledit 
-\e (01:28:54) Command not found: xdehilite
-\i (01:28:54) xname_flush 
-\i (01:28:54) done 
-\i (01:28:54) generaledit 
-\e (01:29:53) Command not found: xhilite
-\i (01:29:53) xname_flush 
-\i (01:29:53) done 
-\i (01:29:54) generaledit 
-\e (01:29:56) Command not found: xdehilite
-\i (01:29:56) xname_flush 
-\i (01:29:56) done 
-\e (01:29:56) Command not found: xhilite
-\i (01:29:56) xname_flush 
-\e (01:29:56) No command active
-\i (01:29:56) done 
-\e (01:29:56) No command active
-\i (01:29:56) generaledit 
-\e (01:29:59) Command not found: xdehilite
-\i (01:29:59) xname_flush 
-\i (01:29:59) done 
-\i (01:29:59) generaledit 
-\e (01:30:03) Command not found: xdehilite
-\i (01:30:03) xname_flush 
-\i (01:30:03) done 
-\i (01:30:03) generaledit 
-\e (01:30:04) Command not found: xhilite
-\i (01:30:04) xname_flush 
-\i (01:30:04) done 
-\i (01:30:04) generaledit 
-\e (01:30:09) Command not found: xdehilite
-\i (01:30:09) xname_flush 
-\i (01:30:09) done 
-\i (01:30:09) generaledit 
-\e (01:30:10) Command not found: xhilite
-\i (01:30:10) xname_flush 
-\i (01:30:10) done 
-\i (01:30:11) generaledit 
-\e (01:30:13) Command not found: xdehilite
-\i (01:30:13) xname_flush 
-\i (01:30:13) done 
-\e (01:30:13) Command not found: xhilite
-\i (01:30:13) xname_flush 
-\e (01:30:13) No command active
-\i (01:30:13) done 
-\e (01:30:13) No command active
-\i (01:30:13) generaledit 
-\e (01:30:14) Command not found: xdehilite
-\i (01:30:14) xname_flush 
-\i (01:30:14) done 
-\e (01:30:15) Command not found: xhilite
-\i (01:30:15) xname_flush 
-\e (01:30:15) No command active
-\i (01:30:15) done 
-\e (01:30:15) No command active
-\i (01:30:15) generaledit 
-\e (01:30:16) Command not found: xdehilite
-\i (01:30:16) xname_flush 
-\i (01:30:16) done 
-\i (01:30:16) generaledit 
-\e (01:30:27) Command not found: xhilite
-\i (01:30:27) xname_flush 
-\i (01:30:27) done 
-\i (01:30:27) generaledit 
-\e (01:30:28) Command not found: xdehilite
-\i (01:30:28) xname_flush 
-\i (01:30:28) done 
-\i (01:30:28) generaledit 
-\e (01:30:29) Command not found: xhilite
-\i (01:30:29) xname_flush 
-\i (01:30:29) done 
-\i (01:30:29) generaledit 
-\e (01:30:30) Command not found: xdehilite
-\i (01:30:30) xname_flush 
-\i (01:30:30) done 
-\i (01:30:30) generaledit 
-\e (01:31:48) Command not found: xhilite
-\i (01:31:48) xname_flush 
-\i (01:31:48) done 
-\i (01:31:48) generaledit 
-\e (01:31:58) Command not found: xdehilite
-\i (01:31:58) xname_flush 
-\i (01:31:58) done 
-\i (01:31:58) generaledit 
-\e (01:32:03) Command not found: xhilite
-\i (01:32:03) xname_flush 
-\i (01:32:03) done 
-\i (01:32:03) generaledit 
-\e (01:32:09) Command not found: xdehilite
-\i (01:32:09) xname_flush 
-\i (01:32:09) done 
-\i (01:32:09) generaledit 
-\e (01:32:27) Command not found: xdehilite
-\i (01:32:27) xname_flush 
-\i (01:32:27) done 
-\i (01:32:27) generaledit 
-\e (01:32:30) Command not found: xdehilite
-\i (01:32:30) xname_flush 
-\i (01:32:30) done 
-\i (01:32:30) generaledit 
-\e (01:32:33) Command not found: xdehilite
-\i (01:32:33) xname_flush 
-\i (01:32:33) done 
-\i (01:32:33) generaledit 
-\e (01:32:37) Command not found: xdehilite
-\i (01:32:37) xname_flush 
-\i (01:32:37) done 
-\i (01:32:37) generaledit 
-\e (01:32:39) Command not found: xdehilite
-\i (01:32:39) xname_flush 
-\i (01:32:39) done 
-\i (01:32:39) generaledit 
-\e (01:32:52) Command not found: xhilite
-\i (01:32:52) xname_flush 
-\i (01:32:52) done 
-\i (01:32:52) generaledit 
-\e (01:32:54) Command not found: xhilite
-\i (01:32:54) xname_flush 
-\i (01:32:54) done 
-\i (01:32:54) generaledit 
-\e (01:32:56) Command not found: xdehilite
-\i (01:32:56) xname_flush 
-\i (01:32:56) done 
-\i (01:32:56) generaledit 
-\e (01:33:00) Command not found: xhilite
-\i (01:33:00) xname_flush 
-\i (01:33:00) done 
-\i (01:33:00) generaledit 
-\e (01:33:02) Command not found: xhilite
-\i (01:33:02) xname_flush 
-\i (01:33:02) done 
-\i (01:33:02) generaledit 
-\e (01:33:03) Command not found: xdehilite
-\i (01:33:03) xname_flush 
-\i (01:33:03) done 
-\i (01:33:03) generaledit 
-\e (01:33:08) Command not found: xhilite
-\i (01:33:08) xname_flush 
-\i (01:33:08) done 
-\i (01:33:09) generaledit 
-\e (01:33:09) Command not found: xdehilite
-\i (01:33:09) xname_flush 
-\i (01:33:09) done 
-\i (01:33:09) generaledit 
-\e (01:33:10) Command not found: xhilite
-\i (01:33:10) xname_flush 
-\i (01:33:10) done 
-\i (01:33:10) generaledit 
-\e (01:33:11) Command not found: xdehilite
-\i (01:33:11) xname_flush 
-\i (01:33:11) done 
-\i (01:33:11) generaledit 
-\e (01:33:11) Command not found: xhilite
-\i (01:33:11) xname_flush 
-\i (01:33:11) done 
-\i (01:33:11) generaledit 
-\e (01:33:12) Command not found: xdehilite
-\i (01:33:12) xname_flush 
-\i (01:33:12) done 
-\e (01:33:12) Command not found: xhilite
-\i (01:33:12) xname_flush 
-\e (01:33:12) No command active
-\i (01:33:12) done 
-\e (01:33:12) No command active
-\i (01:33:12) generaledit 
-\e (01:33:13) Command not found: xdehilite
-\i (01:33:13) xname_flush 
-\i (01:33:13) done 
-\i (01:33:13) generaledit 
-\e (01:33:15) Command not found: xhilite
-\i (01:33:15) xname_flush 
-\i (01:33:15) done 
-\i (01:33:15) generaledit 
-\e (01:33:15) Command not found: xdehilite
-\i (01:33:15) xname_flush 
-\i (01:33:15) done 
-\i (01:33:15) generaledit 
-\e (01:33:17) Command not found: xhilite
-\i (01:33:17) xname_flush 
-\i (01:33:17) done 
-\i (01:33:18) generaledit 
-\e (01:33:18) Command not found: xdehilite
-\i (01:33:18) xname_flush 
-\i (01:33:18) done 
-\e (01:33:18) Command not found: xhilite
-\i (01:33:18) xname_flush 
-\e (01:33:18) No command active
-\i (01:33:18) done 
-\e (01:33:18) No command active
-\i (01:33:18) generaledit 
-\e (01:33:20) Command not found: xdehilite
-\i (01:33:20) xname_flush 
-\i (01:33:20) done 
-\i (01:33:20) generaledit 
-\e (01:33:20) Command not found: xhilite
-\i (01:33:20) xname_flush 
-\i (01:33:20) done 
-\i (01:33:20) generaledit 
-\e (01:33:27) Command not found: xhilite
-\i (01:33:27) xname_flush 
-\i (01:33:27) done 
-\i (01:33:27) generaledit 
-\e (01:33:27) Command not found: xdehilite
-\i (01:33:27) xname_flush 
-\i (01:33:27) done 
-\i (01:33:27) generaledit 
-\e (01:33:30) Command not found: xhilite
-\i (01:33:30) xname_flush 
-\i (01:33:30) done 
-\i (01:33:30) generaledit 
-\e (01:33:35) Command not found: xhilite
-\i (01:33:35) xname_flush 
-\i (01:33:35) done 
-\i (01:33:35) generaledit 
-\e (01:33:36) Command not found: xdehilite
-\i (01:33:36) xname_flush 
-\i (01:33:36) done 
-\i (01:33:36) generaledit 
-\e (01:33:37) Command not found: xhilite
-\i (01:33:37) xname_flush 
-\i (01:33:37) done 
-\i (01:33:37) generaledit 
-\e (01:33:39) Command not found: xdehilite
-\i (01:33:39) xname_flush 
-\i (01:33:39) done 
-\i (01:33:39) generaledit 
-\e (01:33:49) Command not found: xhilite
-\i (01:33:49) xname_flush 
-\i (01:33:49) done 
-\i (01:33:49) generaledit 
-\e (01:33:59) Command not found: xhilite
-\i (01:33:59) xname_flush 
-\i (01:33:59) done 
-\i (01:33:59) generaledit 
-\e (01:34:04) Command not found: xhilite
-\i (01:34:04) xname_flush 
-\i (01:34:04) done 
-\i (01:34:04) generaledit 
-\e (01:34:06) Command not found: xhilite
-\i (01:34:06) xname_flush 
-\i (01:34:06) done 
-\i (01:34:06) generaledit 
-\e (01:34:07) Command not found: xdehilite
-\i (01:34:07) xname_flush 
-\i (01:34:07) done 
-\i (01:34:07) generaledit 
-\e (01:34:11) Command not found: xhilite
-\i (01:34:11) xname_flush 
-\i (01:34:11) done 
-\i (01:34:11) generaledit 
-\e (01:34:12) Command not found: xdehilite
-\i (01:34:12) xname_flush 
-\i (01:34:12) done 
-\i (01:34:13) generaledit 
-\e (01:34:15) Command not found: xhilite
-\i (01:34:15) xname_flush 
-\i (01:34:15) done 
-\i (01:34:15) generaledit 
-\e (01:34:17) Command not found: xdehilite
-\i (01:34:17) xname_flush 
-\i (01:34:17) done 
-\e (01:34:17) Command not found: xhilite
-\i (01:34:17) xname_flush 
-\e (01:34:17) No command active
-\i (01:34:17) done 
-\e (01:34:17) No command active
-\i (01:34:17) generaledit 
-\e (01:34:23) Command not found: xhilite
-\i (01:34:23) xname_flush 
-\i (01:34:23) done 
-\i (01:34:23) generaledit 
-\e (01:34:26) Command not found: xdehilite
-\i (01:34:26) xname_flush 
-\i (01:34:26) done 
-\i (01:34:26) generaledit 
-\e (01:34:35) Command not found: xhilite
-\i (01:34:35) xname_flush 
-\i (01:34:35) done 
-\i (01:34:35) generaledit 
-\e (01:34:41) Command not found: xdehilite
-\i (01:34:41) xname_flush 
-\i (01:34:41) done 
-\i (01:34:41) generaledit 
-\e (01:34:45) Command not found: xhilite
-\i (01:34:45) xname_flush 
-\i (01:34:45) done 
-\i (01:34:45) generaledit 
-\e (01:34:50) Command not found: xdehilite
-\i (01:34:50) xname_flush 
-\i (01:34:50) done 
-\i (01:34:50) generaledit 
-\e (01:35:07) Command not found: xhilite
-\i (01:35:07) xname_flush 
-\i (01:35:07) done 
-\i (01:35:07) generaledit 
-\e (01:35:08) Command not found: xdehilite
-\i (01:35:08) xname_flush 
-\i (01:35:08) done 
-\i (01:35:08) generaledit 
-\e (01:35:12) Command not found: xdehilite
-\i (01:35:12) xname_flush 
-\i (01:35:12) done 
-\i (01:35:13) generaledit 
-\e (01:35:14) Command not found: xhilite
-\i (01:35:14) xname_flush 
-\i (01:35:14) done 
-\i (01:35:14) generaledit 
-\e (01:35:17) Command not found: xhilite
-\i (01:35:17) xname_flush 
-\i (01:35:17) done 
-\i (01:35:17) generaledit 
-\e (01:35:22) Command not found: xdehilite
-\i (01:35:22) xname_flush 
-\i (01:35:22) done 
-\i (01:35:22) generaledit 
-\e (01:35:24) Command not found: xhilite
-\i (01:35:24) xname_flush 
-\i (01:35:24) done 
-\i (01:35:25) generaledit 
-\e (01:35:26) Command not found: xdehilite
-\i (01:35:26) xname_flush 
-\i (01:35:26) done 
-\i (01:35:26) generaledit 
-\e (01:35:30) Command not found: xhilite
-\i (01:35:30) xname_flush 
-\i (01:35:30) done 
-\i (01:35:30) generaledit 
-\e (01:35:35) Command not found: xdehilite
-\i (01:35:35) xname_flush 
-\i (01:35:35) done 
-\i (01:35:35) generaledit 
-\e (01:35:41) Command not found: xdehilite
-\i (01:35:41) xname_flush 
-\i (01:35:41) done 
-\i (01:35:41) generaledit 
-\e (01:35:43) Command not found: xdehilite
-\i (01:35:43) xname_flush 
-\i (01:35:43) done 
-\i (01:35:43) generaledit 
-\e (01:35:47) Command not found: xdehilite
-\i (01:35:47) xname_flush 
-\i (01:35:47) done 
-\i (01:35:47) generaledit 
-\e (01:35:50) Command not found: xdehilite
-\i (01:35:50) xname_flush 
-\i (01:35:50) done 
-\i (01:35:50) generaledit 
-\e (01:35:54) Command not found: xhilite
-\i (01:35:54) xname_flush 
-\i (01:35:54) done 
-\i (01:35:54) generaledit 
-\e (01:35:55) Command not found: xdehilite
-\i (01:35:55) xname_flush 
-\i (01:35:55) done 
-\i (01:35:55) generaledit 
-\e (01:35:55) Command not found: xhilite
-\i (01:35:55) xname_flush 
-\i (01:35:55) done 
-\i (01:35:55) generaledit 
-\e (01:35:56) Command not found: xdehilite
-\i (01:35:56) xname_flush 
-\i (01:35:56) done 
-\i (01:35:56) generaledit 
-\e (01:36:00) Command not found: xhilite
-\i (01:36:00) xname_flush 
-\i (01:36:00) done 
-\i (01:36:00) generaledit 
-\e (01:36:01) Command not found: xdehilite
-\i (01:36:01) xname_flush 
-\i (01:36:01) done 
-\i (01:36:01) generaledit 
-\e (01:36:01) Command not found: xhilite
-\i (01:36:01) xname_flush 
-\i (01:36:01) done 
-\i (01:36:02) generaledit 
-\e (01:36:04) Command not found: xdehilite
-\i (01:36:04) xname_flush 
-\i (01:36:04) done 
-\i (01:36:04) generaledit 
-\e (01:36:05) Command not found: xhilite
-\i (01:36:05) xname_flush 
-\i (01:36:05) done 
-\i (01:36:05) generaledit 
-\e (01:36:05) Command not found: xdehilite
-\i (01:36:05) xname_flush 
-\i (01:36:05) done 
-\i (01:36:06) generaledit 
-\e (01:36:06) Command not found: xhilite
-\i (01:36:06) xname_flush 
-\i (01:36:06) done 
-\i (01:36:06) generaledit 
-\e (01:36:09) Command not found: xdehilite
-\i (01:36:09) xname_flush 
-\i (01:36:09) done 
-\i (01:36:09) generaledit 
-\e (01:36:09) Command not found: xhilite
-\i (01:36:09) xname_flush 
-\i (01:36:09) done 
-\i (01:36:09) generaledit 
-\e (01:36:10) Command not found: xdehilite
-\i (01:36:10) xname_flush 
-\i (01:36:10) done 
-\i (01:36:10) generaledit 
-\e (01:36:11) Command not found: xhilite
-\i (01:36:11) xname_flush 
-\i (01:36:11) done 
-\i (01:36:11) generaledit 
-\e (01:36:13) Command not found: xdehilite
-\i (01:36:13) xname_flush 
-\i (01:36:13) done 
-\i (01:36:13) generaledit 
-\e (01:36:14) Command not found: xhilite
-\i (01:36:14) xname_flush 
-\i (01:36:14) done 
-\i (01:36:14) generaledit 
-\e (01:36:15) Command not found: xdehilite
-\i (01:36:15) xname_flush 
-\i (01:36:15) done 
-\i (01:36:15) generaledit 
-\e (01:36:15) Command not found: xhilite
-\i (01:36:15) xname_flush 
-\i (01:36:15) done 
-\i (01:36:15) generaledit 
-\e (01:36:16) Command not found: xdehilite
-\i (01:36:16) xname_flush 
-\i (01:36:16) done 
-\i (01:36:16) generaledit 
-\e (01:36:23) Command not found: xhilite
-\i (01:36:23) xname_flush 
-\i (01:36:23) done 
-\i (01:36:23) generaledit 
-\e (01:36:27) Command not found: xdehilite
-\i (01:36:27) xname_flush 
-\i (01:36:27) done 
-\i (01:36:27) generaledit 
-\e (01:36:40) Command not found: xhilite
-\i (01:36:40) xname_flush 
-\i (01:36:40) done 
-\i (01:36:40) generaledit 
-\e (01:36:41) Command not found: xdehilite
-\i (01:36:41) xname_flush 
-\i (01:36:41) done 
-\i (01:36:42) generaledit 
-\e (01:36:46) Command not found: xhilite
-\i (01:36:46) xname_flush 
-\i (01:36:46) done 
-\i (01:36:46) generaledit 
-\e (01:36:56) Command not found: xdehilite
-\i (01:36:56) xname_flush 
-\i (01:36:56) done 
-\i (01:36:56) generaledit 
-\e (01:37:12) Command not found: xhilite
-\i (01:37:12) xname_flush 
-\i (01:37:12) done 
-\i (01:37:12) generaledit 
-\e (01:37:13) Command not found: xdehilite
-\i (01:37:13) xname_flush 
-\i (01:37:13) done 
-\i (01:37:13) generaledit 
-\e (01:37:22) Command not found: xhilite
-\i (01:37:22) xname_flush 
-\i (01:37:22) done 
-\i (01:37:22) generaledit 
-\e (01:37:23) Command not found: xdehilite
-\i (01:37:23) xname_flush 
-\i (01:37:23) done 
-\i (01:37:24) generaledit 
-\e (01:37:26) Command not found: xhilite
-\i (01:37:26) xname_flush 
-\i (01:37:26) done 
-\i (01:37:26) generaledit 
-\e (01:37:32) Command not found: xdehilite
-\i (01:37:32) xname_flush 
-\i (01:37:32) done 
-\i (01:37:32) generaledit 
-\e (01:41:25) Command not found: xhilite
-\i (01:41:25) xname_flush 
-\i (01:41:25) done 
-\i (01:41:25) generaledit 
-\i (01:41:30) exit 
-\t (01:41:30)     Journal end - Tue Nov 05 16:47:53 2013
-
-\i (00:23:54) done 
-\i (00:23:54) etchedit 
-\i (00:24:35) xdehilite 
-\i (00:24:35) xname_flush 
-\i (00:24:35) done 
-\i (00:24:35) xhilite 
-\i (00:24:35) xname_flush 
-\i (00:24:35) done 
-\i (00:24:35) etchedit 
-\i (00:24:48) xdehilite 
-\i (00:24:48) xname_flush 
-\i (00:24:48) done 
-\i (00:24:48) etchedit 
-\i (00:27:12) xhilite 
-\i (00:27:12) xname_flush 
-\i (00:27:12) done 
-\i (00:27:12) etchedit 
-\i (00:27:13) xdehilite 
-\i (00:27:13) xname_flush 
-\i (00:27:13) done 
-\i (00:27:13) etchedit 
-\i (00:27:14) xhilite 
-\i (00:27:15) xNet D- 
-\i (00:27:15) xname_flush 
-\i (00:27:15) trapsize 143
-\t (00:27:15) Net "D-" highlighted.
-\i (00:27:15) done 
-\i (00:27:15) etchedit 
-\i (00:27:16) xdehilite 
-\i (00:27:17) xNet D- 
-\i (00:27:17) xname_flush 
-\t (00:27:17) Net "D-" dehighlighted.
-\i (00:27:17) done 
-\i (00:27:17) etchedit 
-\i (00:27:19) xhilite 
-\i (00:27:19) xNet Gnd 
-\i (00:27:19) xname_flush 
-\t (00:27:19) Grids are drawn 16.00, 16.00 apart for enhanced viewability.
-\i (00:27:19) trapsize 1228
-\t (00:27:19) Net "Gnd" highlighted.
-\i (00:27:19) done 
-\i (00:27:19) etchedit 
-\i (00:27:20) xdehilite 
-\i (00:27:21) xNet Gnd 
-\i (00:27:21) xname_flush 
-\t (00:27:21) Net "Gnd" dehighlighted.
-\i (00:27:21) done 
-\i (00:27:21) etchedit 
-\i (00:27:23) xhilite 
-\i (00:27:23) xNet Gnd 
-\i (00:27:23) xname_flush 
-\i (00:27:23) trapsize 1228
-\t (00:27:23) Net "Gnd" highlighted.
-\i (00:27:23) done 
-\i (00:27:23) etchedit 
-\i (00:27:26) xdehilite 
-\i (00:27:26) xNet Gnd 
-\i (00:27:26) xname_flush 
-\t (00:27:26) Net "Gnd" dehighlighted.
-\i (00:27:26) done 
-\i (00:27:26) etchedit 
-\i (00:28:25) xhilite 
-\i (00:28:26) xname_flush 
-\i (00:28:26) done 
-\i (00:28:26) etchedit 
-\i (00:28:28) xdehilite 
-\i (00:28:28) xname_flush 
-\i (00:28:28) done 
-\i (00:28:28) xhilite 
-\i (00:28:28) xname_flush 
-\i (00:28:28) done 
-\i (00:28:28) etchedit 
-\i (00:28:31) xdehilite 
-\i (00:28:31) xname_flush 
-\i (00:28:31) done 
-\i (00:28:31) etchedit 
-\i (00:28:35) xdehilite 
-\i (00:28:35) xname_flush 
-\i (00:28:35) done 
-\i (00:28:35) etchedit 
-\i (00:28:36) xhilite 
-\i (00:28:36) xname_flush 
-\i (00:28:36) done 
-\i (00:28:36) etchedit 
-\i (00:28:41) xdehilite 
-\i (00:28:41) xname_flush 
-\i (00:28:41) done 
-\i (00:28:41) etchedit 
-\i (00:28:42) xhilite 
-\i (00:28:43) xname_flush 
-\i (00:28:43) done 
-\i (00:28:43) etchedit 
-\i (00:28:45) xdehilite 
-\i (00:28:45) xname_flush 
-\i (00:28:45) done 
-\i (00:28:45) xhilite 
-\i (00:28:45) xname_flush 
-\i (00:28:45) done 
-\i (00:28:45) etchedit 
-\i (00:28:46) xdehilite 
-\i (00:28:47) xname_flush 
-\i (00:28:47) done 
-\i (00:28:47) xhilite 
-\i (00:28:47) xname_flush 
-\i (00:28:47) done 
-\i (00:28:47) etchedit 
-\i (00:28:48) xdehilite 
-\i (00:28:48) xname_flush 
-\i (00:28:48) done 
-\i (00:28:48) etchedit 
-\i (00:28:59) xhilite 
-\i (00:28:59) xname_flush 
-\i (00:28:59) done 
-\i (00:28:59) etchedit 
-\i (00:29:00) xdehilite 
-\i (00:29:00) xname_flush 
-\i (00:29:00) done 
-\i (00:29:00) etchedit 
-\i (00:29:01) xhilite 
-\i (00:29:01) xNet Gnd 
-\i (00:29:01) xname_flush 
-\i (00:29:01) trapsize 1228
-\t (00:29:01) Net "Gnd" highlighted.
-\i (00:29:01) done 
-\i (00:29:01) etchedit 
-\i (00:29:02) xdehilite 
-\i (00:29:02) xNet Gnd 
-\i (00:29:02) xname_flush 
-\t (00:29:02) Net "Gnd" dehighlighted.
-\i (00:29:02) done 
-\i (00:29:02) etchedit 
-\i (00:30:20) xhilite 
-\i (00:30:20) xNet Gnd 
-\i (00:30:20) xrefdes C71 
-\i (00:30:20) xNet Vcore 
-\i (00:30:20) xrefdes C72 
-\i (00:30:20) xrefdes C73 
-\i (00:30:20) xrefdes C74 
-\i (00:30:20) xrefdes C75 
-\i (00:30:20) xrefdes C76 
-\i (00:30:20) xNet 3V3 
-\i (00:30:20) xrefdes C107 
-\i (00:30:20) xrefdes C108 
-\i (00:30:20) xrefdes C51 
-\i (00:30:20) xrefdes C52 
-\i (00:30:20) xrefdes C109 
-\i (00:30:20) xrefdes C110 
-\i (00:30:20) xrefdes C53 
-\i (00:30:20) xrefdes C111 
-\i (00:30:20) xrefdes C54 
-\i (00:30:20) xrefdes C112 
-\i (00:30:20) xrefdes C78 
-\i (00:30:20) xrefdes C79 
-\i (00:30:20) xrefdes C80 
-\i (00:30:20) xrefdes R22 
-\i (00:30:20) xrefdes C113 
-\i (00:30:20) xrefdes C81 
-\i (00:30:20) xrefdes C114 
-\i (00:30:20) xrefdes C82 
-\i (00:30:20) xrefdes C115 
-\i (00:30:20) xNet N79431 
-\i (00:30:20) xNet Rep_N 
-\i (00:30:20) xNet Clk3 
-\i (00:30:20) xNet Rep_P 
-\i (00:30:20) xrefdes C116 
-\i (00:30:20) xrefdes C117 
-\i (00:30:20) xrefdes C55 
-\i (00:30:20) xrefdes C56 
-\i (00:30:20) xrefdes U13 
-\i (00:30:20) xrefdes C118 
-\i (00:30:20) xrefdes C119 
-\i (00:30:20) xrefdes C120 
-\i (00:30:20) xrefdes C121 
-\i (00:30:20) xrefdes C122 
-\i (00:30:20) xrefdes C123 
-\i (00:30:20) xrefdes C124 
-\i (00:30:20) xrefdes C125 
-\i (00:30:20) xrefdes C126 
-\i (00:30:20) xrefdes C127 
-\i (00:30:20) xrefdes C128 
-\i (00:30:20) xrefdes C129 
-\i (00:30:20) xrefdes C130 
-\i (00:30:20) xrefdes R23 
-\i (00:30:20) xrefdes C131 
-\i (00:30:20) xNet N80361 
-\i (00:30:20) xNet Clk4 
-\i (00:30:20) xrefdes U14 
-\i (00:30:20) xrefdes C132 
-\i (00:30:20) xrefdes C133 
-\i (00:30:20) xrefdes C134 
-\i (00:30:20) xrefdes C135 
-\i (00:30:20) xrefdes C136 
-\i (00:30:20) xrefdes C83 
-\i (00:30:20) xrefdes C137 
-\i (00:30:20) xrefdes C138 
-\i (00:30:20) xrefdes C84 
-\i (00:30:20) xrefdes C85 
-\i (00:30:20) xrefdes C139 
-\i (00:30:20) xrefdes C86 
-\i (00:30:20) xrefdes C140 
-\i (00:30:20) xrefdes C87 
-\i (00:30:20) xrefdes C88 
-\i (00:30:20) xrefdes C141 
-\i (00:30:20) xrefdes C142 
-\i (00:30:20) xrefdes R24 
-\i (00:30:20) xrefdes C143 
-\i (00:30:20) xNet N81231 
-\i (00:30:20) xNet Clk5 
-\i (00:30:20) xrefdes U15 
-\i (00:30:20) xrefdes C90 
-\i (00:30:20) xrefdes C144 
-\i (00:30:20) xrefdes C91 
-\i (00:30:20) xrefdes C145 
-\i (00:30:20) xrefdes C92 
-\i (00:30:20) xrefdes C146 
-\i (00:30:20) xrefdes C147 
-\i (00:30:20) xrefdes C93 
-\i (00:30:20) xrefdes C94 
-\i (00:30:20) xrefdes C148 
-\i (00:30:20) xrefdes R25 
-\i (00:30:20) xrefdes C149 
-\i (00:30:20) xNet N81631 
-\i (00:30:20) xNet Clk1 
-\i (00:30:20) xNet Ic1_Po 
-\i (00:30:20) xNet Uc_Po 
-\i (00:30:20) xNet Uc_No 
-\i (00:30:20) xNet Ic1_No 
-\i (00:30:20) xrefdes U16 
-\i (00:30:20) xrefdes C150 
-\i (00:30:20) xrefdes C151 
-\i (00:30:20) xrefdes C152 
-\i (00:30:20) xrefdes C153 
-\i (00:30:20) xrefdes C154 
-\i (00:30:20) xrefdes C155 
-\i (00:30:20) xrefdes C156 
-\i (00:30:20) xrefdes C157 
-\i (00:30:20) xrefdes C158 
-\i (00:30:20) xrefdes R26 
-\i (00:30:20) xrefdes C159 
-\i (00:30:20) xNet N82307 
-\i (00:30:20) xNet Ic2_No 
-\i (00:30:20) xNet Clk2 
-\i (00:30:20) xNet Ic2_Po 
-\i (00:30:20) xrefdes U17 
-\i (00:30:20) xrefdes C160 
-\i (00:30:20) xrefdes C161 
-\i (00:30:20) xrefdes C162 
-\i (00:30:20) xrefdes C163 
-\i (00:30:20) xrefdes C164 
-\i (00:30:20) xrefdes C165 
-\i (00:30:20) xrefdes C166 
-\i (00:30:20) xrefdes C95 
-\i (00:30:20) xrefdes C96 
-\i (00:30:20) xrefdes C97 
-\i (00:30:20) xrefdes C98 
-\i (00:30:20) xrefdes C99 
-\i (00:30:20) xrefdes C100 
-\i (00:30:20) xrefdes C102 
-\i (00:30:20) xrefdes C103 
-\i (00:30:20) xrefdes C104 
-\i (00:30:20) xrefdes C105 
-\i (00:30:20) xrefdes C106 
-\i (00:30:20) xNet Ic3_Po 
-\i (00:30:20) xNet Ic3_No 
-\i (00:30:20) xNet Ic4_Po 
-\i (00:30:20) xNet Ic4_No 
-\i (00:30:20) xNet Ic5_Po 
-\i (00:30:20) xNet Ic5_No 
-\i (00:30:20) xrefdes C58 
-\i (00:30:20) xrefdes C47 
-\i (00:30:20) xrefdes C48 
-\i (00:30:20) xrefdes C59 
-\i (00:30:20) xrefdes C60 
-\i (00:30:20) xrefdes C61 
-\i (00:30:20) xrefdes C62 
-\i (00:30:20) xrefdes C63 
-\i (00:30:20) xrefdes C64 
-\i (00:30:20) xrefdes C66 
-\i (00:30:20) xrefdes C67 
-\i (00:30:20) xrefdes C68 
-\i (00:30:20) xrefdes C69 
-\i (00:30:20) xrefdes C49 
-\i (00:30:20) xrefdes C70 
-\i (00:30:20) xrefdes C50 
-\i (00:30:20) xname_flush 
-\t (00:30:20) 27 Net(s) highlighted.
-\t (00:30:20) 125 Component(s) highlighted.
-\i (00:30:20) done 
-\i (00:30:20) etchedit 
-\i (00:30:30) xdehilite 
-\i (00:30:30) xNet Gnd 
-\i (00:30:30) xrefdes C71 
-\i (00:30:30) xNet Vcore 
-\i (00:30:30) xrefdes C72 
-\i (00:30:30) xrefdes C73 
-\i (00:30:30) xrefdes C74 
-\i (00:30:30) xrefdes C75 
-\i (00:30:30) xrefdes C76 
-\i (00:30:30) xNet 3V3 
-\i (00:30:30) xrefdes C107 
-\i (00:30:30) xrefdes C108 
-\i (00:30:30) xrefdes C51 
-\i (00:30:30) xrefdes C52 
-\i (00:30:30) xrefdes C109 
-\i (00:30:30) xrefdes C110 
-\i (00:30:30) xrefdes C53 
-\i (00:30:30) xrefdes C111 
-\i (00:30:30) xrefdes C54 
-\i (00:30:30) xrefdes C112 
-\i (00:30:30) xrefdes C78 
-\i (00:30:30) xrefdes C79 
-\i (00:30:30) xrefdes C80 
-\i (00:30:30) xrefdes R22 
-\i (00:30:30) xrefdes C113 
-\i (00:30:30) xrefdes C81 
-\i (00:30:30) xrefdes C114 
-\i (00:30:30) xrefdes C82 
-\i (00:30:30) xrefdes C115 
-\i (00:30:30) xNet N79431 
-\i (00:30:30) xNet Rep_N 
-\i (00:30:30) xNet Clk3 
-\i (00:30:30) xNet Rep_P 
-\i (00:30:30) xrefdes C116 
-\i (00:30:30) xrefdes C117 
-\i (00:30:30) xrefdes C55 
-\i (00:30:30) xrefdes C56 
-\i (00:30:30) xrefdes U13 
-\i (00:30:30) xrefdes C118 
-\i (00:30:30) xrefdes C119 
-\i (00:30:30) xrefdes C120 
-\i (00:30:30) xrefdes C121 
-\i (00:30:30) xrefdes C122 
-\i (00:30:30) xrefdes C123 
-\i (00:30:30) xrefdes C124 
-\i (00:30:30) xrefdes C125 
-\i (00:30:30) xrefdes C126 
-\i (00:30:30) xrefdes C127 
-\i (00:30:30) xrefdes C128 
-\i (00:30:30) xrefdes C129 
-\i (00:30:30) xrefdes C130 
-\i (00:30:30) xrefdes R23 
-\i (00:30:30) xrefdes C131 
-\i (00:30:30) xNet N80361 
-\i (00:30:30) xNet Clk4 
-\i (00:30:30) xrefdes U14 
-\i (00:30:30) xrefdes C132 
-\i (00:30:30) xrefdes C133 
-\i (00:30:30) xrefdes C134 
-\i (00:30:30) xrefdes C135 
-\i (00:30:30) xrefdes C136 
-\i (00:30:30) xrefdes C83 
-\i (00:30:30) xrefdes C137 
-\i (00:30:30) xrefdes C138 
-\i (00:30:30) xrefdes C84 
-\i (00:30:30) xrefdes C85 
-\i (00:30:30) xrefdes C139 
-\i (00:30:30) xrefdes C86 
-\i (00:30:30) xrefdes C140 
-\i (00:30:30) xrefdes C87 
-\i (00:30:30) xrefdes C88 
-\i (00:30:30) xrefdes C141 
-\i (00:30:30) xrefdes C142 
-\i (00:30:30) xrefdes R24 
-\i (00:30:30) xrefdes C143 
-\i (00:30:30) xNet N81231 
-\i (00:30:30) xNet Clk5 
-\i (00:30:30) xrefdes U15 
-\i (00:30:30) xrefdes C90 
-\i (00:30:30) xrefdes C144 
-\i (00:30:30) xrefdes C91 
-\i (00:30:30) xrefdes C145 
-\i (00:30:30) xrefdes C92 
-\i (00:30:30) xrefdes C146 
-\i (00:30:30) xrefdes C147 
-\i (00:30:30) xrefdes C93 
-\i (00:30:30) xrefdes C94 
-\i (00:30:30) xrefdes C148 
-\i (00:30:30) xrefdes R25 
-\i (00:30:30) xrefdes C149 
-\i (00:30:30) xNet N81631 
-\i (00:30:30) xNet Clk1 
-\i (00:30:30) xNet Ic1_Po 
-\i (00:30:30) xNet Uc_Po 
-\i (00:30:30) xNet Uc_No 
-\i (00:30:30) xNet Ic1_No 
-\i (00:30:30) xrefdes U16 
-\i (00:30:30) xrefdes C150 
-\i (00:30:30) xrefdes C151 
-\i (00:30:30) xrefdes C152 
-\i (00:30:30) xrefdes C153 
-\i (00:30:30) xrefdes C154 
-\i (00:30:30) xrefdes C155 
-\i (00:30:30) xrefdes C156 
-\i (00:30:30) xrefdes C157 
-\i (00:30:30) xrefdes C158 
-\i (00:30:30) xrefdes R26 
-\i (00:30:30) xrefdes C159 
-\i (00:30:30) xNet N82307 
-\i (00:30:30) xNet Ic2_No 
-\i (00:30:30) xNet Clk2 
-\i (00:30:30) xNet Ic2_Po 
-\i (00:30:30) xrefdes U17 
-\i (00:30:30) xrefdes C160 
-\i (00:30:30) xrefdes C161 
-\i (00:30:30) xrefdes C162 
-\i (00:30:30) xrefdes C163 
-\i (00:30:30) xrefdes C164 
-\i (00:30:30) xrefdes C165 
-\i (00:30:30) xrefdes C166 
-\i (00:30:30) xrefdes C95 
-\i (00:30:30) xrefdes C96 
-\i (00:30:30) xrefdes C97 
-\i (00:30:30) xrefdes C98 
-\i (00:30:30) xrefdes C99 
-\i (00:30:30) xrefdes C100 
-\i (00:30:30) xrefdes C102 
-\i (00:30:30) xrefdes C103 
-\i (00:30:30) xrefdes C104 
-\i (00:30:30) xrefdes C105 
-\i (00:30:30) xrefdes C106 
-\i (00:30:30) xNet Ic3_Po 
-\i (00:30:30) xNet Ic3_No 
-\i (00:30:30) xNet Ic4_Po 
-\i (00:30:30) xNet Ic4_No 
-\i (00:30:30) xNet Ic5_Po 
-\i (00:30:30) xNet Ic5_No 
-\i (00:30:30) xrefdes C58 
-\i (00:30:30) xrefdes C47 
-\i (00:30:30) xrefdes C48 
-\i (00:30:30) xrefdes C59 
-\i (00:30:30) xrefdes C60 
-\i (00:30:30) xrefdes C61 
-\i (00:30:30) xrefdes C62 
-\i (00:30:30) xrefdes C63 
-\i (00:30:30) xrefdes C64 
-\i (00:30:30) xrefdes C66 
-\i (00:30:30) xrefdes C67 
-\i (00:30:30) xrefdes C68 
-\i (00:30:30) xrefdes C69 
-\i (00:30:30) xrefdes C49 
-\i (00:30:30) xrefdes C70 
-\i (00:30:30) xrefdes C50 
-\i (00:30:30) xname_flush 
-\t (00:30:30) 27 Net(s) dehighlighted.
-\t (00:30:30) 125 Component(s) dehighlighted.
-\i (00:30:30) done 
-\i (00:30:30) etchedit 
-\i (00:30:35) xhilite 
-\i (00:30:35) xNet Gnd 
-\i (00:30:35) xrefdes C71 
-\i (00:30:35) xNet Vcore 
-\i (00:30:35) xrefdes C72 
-\i (00:30:35) xrefdes C73 
-\i (00:30:35) xrefdes C74 
-\i (00:30:35) xrefdes C75 
-\i (00:30:35) xrefdes C76 
-\i (00:30:35) xNet 3V3 
-\i (00:30:35) xrefdes C107 
-\i (00:30:35) xrefdes C108 
-\i (00:30:35) xrefdes C51 
-\i (00:30:35) xrefdes C52 
-\i (00:30:35) xrefdes C109 
-\i (00:30:35) xrefdes C110 
-\i (00:30:35) xrefdes C53 
-\i (00:30:35) xrefdes C111 
-\i (00:30:35) xrefdes C54 
-\i (00:30:35) xrefdes C112 
-\i (00:30:35) xrefdes C78 
-\i (00:30:35) xrefdes C79 
-\i (00:30:35) xrefdes C80 
-\i (00:30:35) xrefdes R22 
-\i (00:30:35) xrefdes C113 
-\i (00:30:35) xrefdes C81 
-\i (00:30:35) xrefdes C114 
-\i (00:30:35) xrefdes C82 
-\i (00:30:35) xrefdes C115 
-\i (00:30:35) xNet N79431 
-\i (00:30:35) xNet Rep_N 
-\i (00:30:35) xNet Clk3 
-\i (00:30:35) xNet Rep_P 
-\i (00:30:35) xrefdes C116 
-\i (00:30:35) xrefdes C117 
-\i (00:30:35) xrefdes C55 
-\i (00:30:35) xrefdes C56 
-\i (00:30:35) xrefdes U13 
-\i (00:30:35) xrefdes C118 
-\i (00:30:35) xrefdes C119 
-\i (00:30:35) xrefdes C120 
-\i (00:30:35) xrefdes C121 
-\i (00:30:35) xrefdes C122 
-\i (00:30:35) xrefdes C123 
-\i (00:30:35) xrefdes C124 
-\i (00:30:35) xrefdes C125 
-\i (00:30:35) xrefdes C126 
-\i (00:30:35) xrefdes C127 
-\i (00:30:35) xrefdes C128 
-\i (00:30:35) xrefdes C129 
-\i (00:30:35) xrefdes C130 
-\i (00:30:35) xrefdes R23 
-\i (00:30:35) xrefdes C131 
-\i (00:30:35) xNet N80361 
-\i (00:30:35) xNet Clk4 
-\i (00:30:35) xrefdes U14 
-\i (00:30:35) xrefdes C132 
-\i (00:30:35) xrefdes C133 
-\i (00:30:35) xrefdes C134 
-\i (00:30:35) xrefdes C135 
-\i (00:30:35) xrefdes C136 
-\i (00:30:35) xrefdes C83 
-\i (00:30:35) xrefdes C137 
-\i (00:30:35) xrefdes C138 
-\i (00:30:35) xrefdes C84 
-\i (00:30:35) xrefdes C85 
-\i (00:30:35) xrefdes C139 
-\i (00:30:35) xrefdes C86 
-\i (00:30:35) xrefdes C140 
-\i (00:30:35) xrefdes C87 
-\i (00:30:35) xrefdes C141 
-\i (00:30:35) xrefdes C88 
-\i (00:30:35) xrefdes C142 
-\i (00:30:35) xrefdes R24 
-\i (00:30:35) xrefdes C143 
-\i (00:30:35) xNet N81231 
-\i (00:30:35) xNet Clk5 
-\i (00:30:35) xrefdes C90 
-\i (00:30:35) xrefdes U15 
-\i (00:30:35) xrefdes C144 
-\i (00:30:35) xrefdes C91 
-\i (00:30:35) xrefdes C145 
-\i (00:30:35) xrefdes C92 
-\i (00:30:35) xrefdes C146 
-\i (00:30:35) xrefdes C147 
-\i (00:30:35) xrefdes C93 
-\i (00:30:35) xrefdes C94 
-\i (00:30:35) xrefdes C148 
-\i (00:30:35) xrefdes R25 
-\i (00:30:35) xrefdes C149 
-\i (00:30:35) xNet N81631 
-\i (00:30:35) xNet Clk1 
-\i (00:30:35) xNet Ic1_Po 
-\i (00:30:35) xNet Uc_Po 
-\i (00:30:35) xNet Uc_No 
-\i (00:30:35) xNet Ic1_No 
-\i (00:30:35) xrefdes U16 
-\i (00:30:35) xrefdes C150 
-\i (00:30:35) xrefdes C151 
-\i (00:30:35) xrefdes C152 
-\i (00:30:35) xrefdes C153 
-\i (00:30:35) xrefdes C154 
-\i (00:30:35) xrefdes C155 
-\i (00:30:35) xrefdes C156 
-\i (00:30:35) xrefdes C157 
-\i (00:30:35) xrefdes C158 
-\i (00:30:35) xrefdes R26 
-\i (00:30:35) xrefdes C159 
-\i (00:30:35) xNet N82307 
-\i (00:30:35) xNet Ic2_No 
-\i (00:30:35) xNet Clk2 
-\i (00:30:35) xNet Ic2_Po 
-\i (00:30:35) xrefdes U17 
-\i (00:30:35) xrefdes C160 
-\i (00:30:35) xrefdes C161 
-\i (00:30:35) xrefdes C162 
-\i (00:30:35) xrefdes C163 
-\i (00:30:35) xrefdes C164 
-\i (00:30:35) xrefdes C165 
-\i (00:30:35) xrefdes C166 
-\i (00:30:35) xrefdes C95 
-\i (00:30:35) xrefdes C96 
-\i (00:30:35) xrefdes C97 
-\i (00:30:35) xrefdes C98 
-\i (00:30:35) xrefdes C99 
-\i (00:30:35) xrefdes C100 
-\i (00:30:35) xrefdes C102 
-\i (00:30:35) xrefdes C103 
-\i (00:30:35) xrefdes C104 
-\i (00:30:35) xrefdes C105 
-\i (00:30:35) xrefdes C106 
-\i (00:30:35) xNet Ic3_Po 
-\i (00:30:35) xNet Ic3_No 
-\i (00:30:35) xNet Ic4_Po 
-\i (00:30:35) xNet Ic4_No 
-\i (00:30:35) xNet Ic5_Po 
-\i (00:30:35) xNet Ic5_No 
-\i (00:30:35) xrefdes C58 
-\i (00:30:35) xrefdes C47 
-\i (00:30:35) xrefdes C48 
-\i (00:30:35) xrefdes C59 
-\i (00:30:35) xrefdes C60 
-\i (00:30:35) xrefdes C61 
-\i (00:30:35) xrefdes C62 
-\i (00:30:35) xrefdes C63 
-\i (00:30:35) xrefdes C64 
-\i (00:30:35) xrefdes C66 
-\i (00:30:35) xrefdes C67 
-\i (00:30:35) xrefdes C68 
-\i (00:30:35) xrefdes C69 
-\i (00:30:35) xrefdes C49 
-\i (00:30:35) xrefdes C70 
-\i (00:30:35) xrefdes C50 
-\i (00:30:35) xname_flush 
-\t (00:30:35) 27 Net(s) highlighted.
-\t (00:30:35) 125 Component(s) highlighted.
-\i (00:30:35) done 
-\i (00:30:35) etchedit 
-\i (00:30:41) xdehilite 
-\i (00:30:41) xNet Gnd 
-\i (00:30:41) xrefdes C71 
-\i (00:30:41) xNet Vcore 
-\i (00:30:41) xrefdes C72 
-\i (00:30:41) xrefdes C73 
-\i (00:30:41) xrefdes C74 
-\i (00:30:41) xrefdes C75 
-\i (00:30:41) xrefdes C76 
-\i (00:30:41) xNet 3V3 
-\i (00:30:41) xrefdes C107 
-\i (00:30:41) xrefdes C108 
-\i (00:30:41) xrefdes C51 
-\i (00:30:41) xrefdes C52 
-\i (00:30:41) xrefdes C109 
-\i (00:30:41) xrefdes C110 
-\i (00:30:41) xrefdes C53 
-\i (00:30:41) xrefdes C111 
-\i (00:30:41) xrefdes C54 
-\i (00:30:41) xrefdes C112 
-\i (00:30:41) xrefdes C78 
-\i (00:30:41) xrefdes C79 
-\i (00:30:41) xrefdes C80 
-\i (00:30:41) xrefdes R22 
-\i (00:30:41) xrefdes C113 
-\i (00:30:41) xrefdes C81 
-\i (00:30:41) xrefdes C114 
-\i (00:30:41) xrefdes C82 
-\i (00:30:41) xrefdes C115 
-\i (00:30:41) xNet N79431 
-\i (00:30:41) xNet Rep_N 
-\i (00:30:41) xNet Clk3 
-\i (00:30:41) xNet Rep_P 
-\i (00:30:41) xrefdes C116 
-\i (00:30:41) xrefdes C117 
-\i (00:30:41) xrefdes C55 
-\i (00:30:41) xrefdes C56 
-\i (00:30:41) xrefdes U13 
-\i (00:30:41) xrefdes C118 
-\i (00:30:41) xrefdes C119 
-\i (00:30:41) xrefdes C120 
-\i (00:30:41) xrefdes C121 
-\i (00:30:41) xrefdes C122 
-\i (00:30:41) xrefdes C123 
-\i (00:30:41) xrefdes C124 
-\i (00:30:41) xrefdes C125 
-\i (00:30:41) xrefdes C126 
-\i (00:30:41) xrefdes C127 
-\i (00:30:41) xrefdes C128 
-\i (00:30:41) xrefdes C129 
-\i (00:30:41) xrefdes C130 
-\i (00:30:41) xrefdes R23 
-\i (00:30:41) xrefdes C131 
-\i (00:30:41) xNet N80361 
-\i (00:30:41) xNet Clk4 
-\i (00:30:41) xrefdes U14 
-\i (00:30:41) xrefdes C132 
-\i (00:30:41) xrefdes C133 
-\i (00:30:41) xrefdes C134 
-\i (00:30:41) xrefdes C135 
-\i (00:30:41) xrefdes C136 
-\i (00:30:41) xrefdes C83 
-\i (00:30:41) xrefdes C137 
-\i (00:30:41) xrefdes C138 
-\i (00:30:41) xrefdes C84 
-\i (00:30:41) xrefdes C85 
-\i (00:30:41) xrefdes C139 
-\i (00:30:41) xrefdes C86 
-\i (00:30:41) xrefdes C140 
-\i (00:30:41) xrefdes C87 
-\i (00:30:41) xrefdes C141 
-\i (00:30:41) xrefdes C88 
-\i (00:30:41) xrefdes C142 
-\i (00:30:41) xrefdes R24 
-\i (00:30:41) xrefdes C143 
-\i (00:30:41) xNet N81231 
-\i (00:30:41) xNet Clk5 
-\i (00:30:41) xrefdes C90 
-\i (00:30:41) xrefdes U15 
-\i (00:30:41) xrefdes C144 
-\i (00:30:41) xrefdes C91 
-\i (00:30:41) xrefdes C145 
-\i (00:30:41) xrefdes C92 
-\i (00:30:41) xrefdes C146 
-\i (00:30:41) xrefdes C147 
-\i (00:30:41) xrefdes C93 
-\i (00:30:41) xrefdes C94 
-\i (00:30:41) xrefdes C148 
-\i (00:30:41) xrefdes R25 
-\i (00:30:41) xrefdes C149 
-\i (00:30:41) xNet N81631 
-\i (00:30:41) xNet Clk1 
-\i (00:30:41) xNet Ic1_Po 
-\i (00:30:41) xNet Uc_Po 
-\i (00:30:41) xNet Uc_No 
-\i (00:30:41) xNet Ic1_No 
-\i (00:30:41) xrefdes U16 
-\i (00:30:41) xrefdes C150 
-\i (00:30:41) xrefdes C151 
-\i (00:30:41) xrefdes C152 
-\i (00:30:41) xrefdes C153 
-\i (00:30:41) xrefdes C154 
-\i (00:30:41) xrefdes C155 
-\i (00:30:41) xrefdes C156 
-\i (00:30:41) xrefdes C157 
-\i (00:30:41) xrefdes C158 
-\i (00:30:41) xrefdes R26 
-\i (00:30:41) xrefdes C159 
-\i (00:30:41) xNet N82307 
-\i (00:30:41) xNet Ic2_No 
-\i (00:30:41) xNet Clk2 
-\i (00:30:41) xNet Ic2_Po 
-\i (00:30:41) xrefdes U17 
-\i (00:30:41) xrefdes C160 
-\i (00:30:41) xrefdes C161 
-\i (00:30:41) xrefdes C162 
-\i (00:30:41) xrefdes C163 
-\i (00:30:41) xrefdes C164 
-\i (00:30:41) xrefdes C165 
-\i (00:30:41) xrefdes C166 
-\i (00:30:41) xrefdes C95 
-\i (00:30:41) xrefdes C96 
-\i (00:30:41) xrefdes C97 
-\i (00:30:41) xrefdes C98 
-\i (00:30:41) xrefdes C99 
-\i (00:30:41) xrefdes C100 
-\i (00:30:41) xrefdes C102 
-\i (00:30:41) xrefdes C103 
-\i (00:30:41) xrefdes C104 
-\i (00:30:41) xrefdes C105 
-\i (00:30:41) xrefdes C106 
-\i (00:30:41) xNet Ic3_Po 
-\i (00:30:41) xNet Ic3_No 
-\i (00:30:41) xNet Ic4_Po 
-\i (00:30:41) xNet Ic4_No 
-\i (00:30:41) xNet Ic5_Po 
-\i (00:30:41) xNet Ic5_No 
-\i (00:30:41) xrefdes C58 
-\i (00:30:41) xrefdes C47 
-\i (00:30:41) xrefdes C48 
-\i (00:30:41) xrefdes C59 
-\i (00:30:41) xrefdes C60 
-\i (00:30:41) xrefdes C61 
-\i (00:30:41) xrefdes C62 
-\i (00:30:41) xrefdes C63 
-\i (00:30:41) xrefdes C64 
-\i (00:30:41) xrefdes C66 
-\i (00:30:41) xrefdes C67 
-\i (00:30:41) xrefdes C68 
-\i (00:30:41) xrefdes C69 
-\i (00:30:41) xrefdes C49 
-\i (00:30:41) xrefdes C70 
-\i (00:30:41) xrefdes C50 
-\i (00:30:41) xname_flush 
-\t (00:30:41) 27 Net(s) dehighlighted.
-\t (00:30:41) 125 Component(s) dehighlighted.
-\i (00:30:41) done 
-\i (00:30:41) etchedit 
-\i (00:30:59) xdehilite 
-\i (00:30:59) xname_flush 
-\i (00:30:59) done 
-\i (00:30:59) etchedit 
-\i (00:31:02) xdehilite 
-\i (00:31:02) xname_flush 
-\i (00:31:02) done 
-\i (00:31:02) etchedit 
-\i (00:31:05) xdehilite 
-\i (00:31:05) xname_flush 
-\i (00:31:05) done 
-\i (00:31:05) etchedit 
-\i (00:31:09) xdehilite 
-\i (00:31:09) xname_flush 
-\i (00:31:09) done 
-\i (00:31:09) etchedit 
-\i (00:31:11) xdehilite 
-\i (00:31:11) xname_flush 
-\i (00:31:11) done 
-\i (00:31:11) etchedit 
-\i (00:31:24) xhilite 
-\i (00:31:24) xname_flush 
-\i (00:31:24) done 
-\i (00:31:24) etchedit 
-\i (00:31:26) xhilite 
-\i (00:31:26) xname_flush 
-\i (00:31:26) done 
-\i (00:31:26) etchedit 
-\i (00:31:28) xdehilite 
-\i (00:31:28) xname_flush 
-\i (00:31:28) done 
-\i (00:31:28) etchedit 
-\i (00:31:32) xhilite 
-\i (00:31:32) xname_flush 
-\i (00:31:32) done 
-\i (00:31:32) etchedit 
-\i (00:31:34) xhilite 
-\i (00:31:34) xname_flush 
-\i (00:31:34) done 
-\i (00:31:34) etchedit 
-\i (00:31:35) xdehilite 
-\i (00:31:35) xname_flush 
-\i (00:31:35) done 
-\i (00:31:36) etchedit 
-\i (00:31:40) xhilite 
-\i (00:31:41) xname_flush 
-\i (00:31:41) done 
-\i (00:31:41) etchedit 
-\i (00:31:41) xdehilite 
-\i (00:31:41) xname_flush 
-\i (00:31:41) done 
-\i (00:31:42) etchedit 
-\i (00:31:42) xhilite 
-\i (00:31:42) xNet Vcore 
-\i (00:31:42) xname_flush 
-\i (00:31:42) trapsize 1228
-\t (00:31:42) Net "Vcore" highlighted.
-\i (00:31:42) done 
-\i (00:31:42) etchedit 
-\i (00:31:43) xdehilite 
-\i (00:31:43) xNet Vcore 
-\i (00:31:43) xname_flush 
-\t (00:31:43) Net "Vcore" dehighlighted.
-\i (00:31:43) done 
-\i (00:31:43) xhilite 
-\i (00:31:43) xNet Vcore 
-\i (00:31:43) xname_flush 
-\i (00:31:43) trapsize 1228
-\t (00:31:44) Net "Vcore" highlighted.
-\i (00:31:44) done 
-\i (00:31:44) etchedit 
-\i (00:31:44) xdehilite 
-\i (00:31:44) xNet Vcore 
-\i (00:31:44) xname_flush 
-\t (00:31:44) Net "Vcore" dehighlighted.
-\i (00:31:44) done 
-\i (00:31:44) xhilite 
-\i (00:31:44) xNet Vcore 
-\i (00:31:44) xname_flush 
-\i (00:31:44) trapsize 1228
-\t (00:31:44) Net "Vcore" highlighted.
-\i (00:31:44) done 
-\i (00:31:44) etchedit 
-\i (00:31:45) xdehilite 
-\i (00:31:45) xNet Vcore 
-\i (00:31:45) xname_flush 
-\t (00:31:45) Net "Vcore" dehighlighted.
-\i (00:31:45) done 
-\i (00:31:45) etchedit 
-\i (00:31:47) xhilite 
-\i (00:31:47) xNet Vcore 
-\i (00:31:47) xname_flush 
-\i (00:31:47) trapsize 1228
-\t (00:31:47) Net "Vcore" highlighted.
-\i (00:31:47) done 
-\i (00:31:47) etchedit 
-\i (00:31:47) xdehilite 
-\i (00:31:47) xNet Vcore 
-\i (00:31:47) xname_flush 
-\t (00:31:47) Net "Vcore" dehighlighted.
-\i (00:31:48) done 
-\i (00:31:48) etchedit 
-\i (00:31:49) xhilite 
-\i (00:31:50) xNet Vcore 
-\i (00:31:50) xname_flush 
-\i (00:31:50) trapsize 1228
-\t (00:31:50) Net "Vcore" highlighted.
-\i (00:31:50) done 
-\i (00:31:50) etchedit 
-\i (00:31:50) xdehilite 
-\i (00:31:50) xNet Vcore 
-\i (00:31:50) xname_flush 
-\t (00:31:50) Net "Vcore" dehighlighted.
-\i (00:31:50) done 
-\i (00:31:51) xhilite 
-\i (00:31:51) xNet Vcore 
-\i (00:31:51) xname_flush 
-\i (00:31:51) trapsize 1228
-\t (00:31:51) Net "Vcore" highlighted.
-\i (00:31:51) done 
-\i (00:31:51) etchedit 
-\i (00:31:52) xdehilite 
-\i (00:31:52) xNet Vcore 
-\i (00:31:52) xname_flush 
-\t (00:31:52) Net "Vcore" dehighlighted.
-\i (00:31:52) done 
-\i (00:31:52) etchedit 
-\i (00:31:52) xhilite 
-\i (00:31:52) xNet Vcore 
-\i (00:31:52) xname_flush 
-\i (00:31:52) trapsize 1228
-\t (00:31:53) Net "Vcore" highlighted.
-\i (00:31:53) done 
-\i (00:31:53) etchedit 
-\i (00:31:59) xhilite 
-\i (00:31:59) xname_flush 
-\i (00:31:59) done 
-\i (00:31:59) etchedit 
-\i (00:31:59) xdehilite 
-\i (00:31:59) xname_flush 
-\i (00:32:00) done 
-\i (00:32:00) etchedit 
-\i (00:32:02) xhilite 
-\i (00:32:02) xname_flush 
-\i (00:32:02) done 
-\i (00:32:02) etchedit 
-\i (00:32:07) xhilite 
-\i (00:32:07) xNet Vcore 
-\i (00:32:07) xname_flush 
-\i (00:32:07) trapsize 1228
-\t (00:32:07) Net "Vcore" highlighted.
-\i (00:32:07) done 
-\i (00:32:07) etchedit 
-\i (00:32:08) xdehilite 
-\i (00:32:08) xNet Vcore 
-\i (00:32:08) xname_flush 
-\t (00:32:08) Net "Vcore" dehighlighted.
-\i (00:32:08) done 
-\i (00:32:08) etchedit 
-\i (00:32:09) xhilite 
-\i (00:32:09) xNet Vcore 
-\i (00:32:09) xname_flush 
-\i (00:32:09) trapsize 1228
-\t (00:32:09) Net "Vcore" highlighted.
-\i (00:32:09) done 
-\i (00:32:09) etchedit 
-\i (00:32:11) xdehilite 
-\i (00:32:11) xNet Vcore 
-\i (00:32:11) xname_flush 
-\t (00:32:11) Net "Vcore" dehighlighted.
-\i (00:32:11) done 
-\i (00:32:11) etchedit 
-\i (00:32:21) xhilite 
-\i (00:32:21) xNet Vcore 
-\i (00:32:21) xname_flush 
-\i (00:32:21) trapsize 1228
-\t (00:32:21) Net "Vcore" highlighted.
-\i (00:32:21) done 
-\i (00:32:21) etchedit 
-\i (00:32:31) xhilite 
-\i (00:32:31) xNet Vcore 
-\i (00:32:31) xname_flush 
-\i (00:32:31) trapsize 1228
-\t (00:32:31) Net "Vcore" highlighted.
-\i (00:32:31) done 
-\i (00:32:31) etchedit 
-\i (00:32:36) xhilite 
-\i (00:32:36) xNet Vcore 
-\i (00:32:36) xname_flush 
-\i (00:32:36) trapsize 1228
-\t (00:32:36) Net "Vcore" highlighted.
-\i (00:32:36) done 
-\i (00:32:36) etchedit 
-\i (00:32:38) xhilite 
-\i (00:32:38) xNet Vcore 
-\i (00:32:38) xname_flush 
-\i (00:32:38) trapsize 1228
-\t (00:32:38) Net "Vcore" highlighted.
-\i (00:32:38) done 
-\i (00:32:38) etchedit 
-\i (00:32:39) xdehilite 
-\i (00:32:39) xNet Vcore 
-\i (00:32:39) xname_flush 
-\t (00:32:39) Net "Vcore" dehighlighted.
-\i (00:32:40) done 
-\i (00:32:40) etchedit 
-\i (00:32:43) xhilite 
-\i (00:32:44) xNet Vcore 
-\i (00:32:44) xname_flush 
-\i (00:32:44) trapsize 1228
-\t (00:32:44) Net "Vcore" highlighted.
-\i (00:32:44) done 
-\i (00:32:44) etchedit 
-\i (00:32:44) xdehilite 
-\i (00:32:45) xNet Vcore 
-\i (00:32:45) xname_flush 
-\t (00:32:45) Net "Vcore" dehighlighted.
-\i (00:32:45) done 
-\i (00:32:45) etchedit 
-\i (00:32:47) xhilite 
-\i (00:32:47) xNet Vcore 
-\i (00:32:47) xname_flush 
-\i (00:32:47) trapsize 1228
-\t (00:32:47) Net "Vcore" highlighted.
-\i (00:32:47) done 
-\i (00:32:47) etchedit 
-\i (00:32:49) xdehilite 
-\i (00:32:49) xNet Vcore 
-\i (00:32:49) xname_flush 
-\t (00:32:49) Net "Vcore" dehighlighted.
-\i (00:32:49) done 
-\i (00:32:49) xhilite 
-\i (00:32:49) xNet Vcore 
-\i (00:32:49) xname_flush 
-\i (00:32:49) trapsize 1228
-\t (00:32:49) Net "Vcore" highlighted.
-\i (00:32:49) done 
-\i (00:32:49) etchedit 
-\i (00:32:55) xhilite 
-\i (00:32:55) xNet Vcore 
-\i (00:32:55) xname_flush 
-\i (00:32:55) trapsize 1228
-\t (00:32:55) Net "Vcore" highlighted.
-\i (00:32:55) done 
-\i (00:32:55) etchedit 
-\i (00:32:58) xdehilite 
-\i (00:32:58) xNet Vcore 
-\i (00:32:58) xname_flush 
-\t (00:32:58) Net "Vcore" dehighlighted.
-\i (00:32:58) done 
-\i (00:32:58) etchedit 
-\i (00:33:07) xhilite 
-\i (00:33:07) xNet Gnd 
-\i (00:33:07) xrefdes C71 
-\i (00:33:07) xNet Vcore 
-\i (00:33:07) xrefdes C72 
-\i (00:33:07) xrefdes C73 
-\i (00:33:07) xrefdes C74 
-\i (00:33:07) xrefdes C75 
-\i (00:33:07) xrefdes C76 
-\i (00:33:07) xNet 3V3 
-\i (00:33:07) xrefdes C107 
-\i (00:33:07) xrefdes C108 
-\i (00:33:07) xrefdes C51 
-\i (00:33:07) xrefdes C52 
-\i (00:33:07) xrefdes C109 
-\i (00:33:07) xrefdes C110 
-\i (00:33:07) xrefdes C53 
-\i (00:33:07) xrefdes C111 
-\i (00:33:07) xrefdes C54 
-\i (00:33:07) xrefdes C112 
-\i (00:33:07) xrefdes C78 
-\i (00:33:07) xrefdes C79 
-\i (00:33:07) xrefdes C80 
-\i (00:33:07) xrefdes R22 
-\i (00:33:07) xrefdes C113 
-\i (00:33:07) xrefdes C81 
-\i (00:33:07) xrefdes C114 
-\i (00:33:07) xrefdes C82 
-\i (00:33:07) xrefdes C115 
-\i (00:33:07) xNet N79431 
-\i (00:33:07) xNet Rep_N 
-\i (00:33:07) xNet Clk3 
-\i (00:33:07) xNet Rep_P 
-\i (00:33:07) xrefdes C116 
-\i (00:33:07) xrefdes C117 
-\i (00:33:07) xrefdes C55 
-\i (00:33:07) xrefdes C56 
-\i (00:33:07) xrefdes U13 
-\i (00:33:07) xrefdes C118 
-\i (00:33:07) xrefdes C119 
-\i (00:33:07) xrefdes C120 
-\i (00:33:07) xrefdes C121 
-\i (00:33:07) xrefdes C122 
-\i (00:33:07) xrefdes C123 
-\i (00:33:07) xrefdes C124 
-\i (00:33:07) xrefdes C125 
-\i (00:33:07) xrefdes C126 
-\i (00:33:07) xrefdes C127 
-\i (00:33:07) xrefdes C128 
-\i (00:33:07) xrefdes C129 
-\i (00:33:07) xrefdes C130 
-\i (00:33:07) xrefdes R23 
-\i (00:33:07) xrefdes C131 
-\i (00:33:07) xNet N80361 
-\i (00:33:07) xNet Clk4 
-\i (00:33:07) xrefdes U14 
-\i (00:33:07) xrefdes C132 
-\i (00:33:07) xrefdes C133 
-\i (00:33:07) xrefdes C134 
-\i (00:33:07) xrefdes C135 
-\i (00:33:07) xrefdes C136 
-\i (00:33:07) xrefdes C83 
-\i (00:33:07) xrefdes C137 
-\i (00:33:07) xrefdes C138 
-\i (00:33:07) xrefdes C84 
-\i (00:33:07) xrefdes C85 
-\i (00:33:07) xrefdes C139 
-\i (00:33:07) xrefdes C86 
-\i (00:33:07) xrefdes C140 
-\i (00:33:07) xrefdes C87 
-\i (00:33:07) xrefdes C88 
-\i (00:33:07) xrefdes C141 
-\i (00:33:07) xrefdes C142 
-\i (00:33:07) xrefdes R24 
-\i (00:33:07) xrefdes C143 
-\i (00:33:07) xNet N81231 
-\i (00:33:07) xNet Clk5 
-\i (00:33:07) xrefdes U15 
-\i (00:33:07) xrefdes C90 
-\i (00:33:07) xrefdes C144 
-\i (00:33:07) xrefdes C91 
-\i (00:33:07) xrefdes C145 
-\i (00:33:07) xrefdes C92 
-\i (00:33:07) xrefdes C146 
-\i (00:33:07) xrefdes C147 
-\i (00:33:07) xrefdes C93 
-\i (00:33:07) xrefdes C94 
-\i (00:33:07) xrefdes C148 
-\i (00:33:07) xrefdes R25 
-\i (00:33:07) xrefdes C149 
-\i (00:33:07) xNet N81631 
-\i (00:33:07) xNet Clk1 
-\i (00:33:07) xNet Ic1_Po 
-\i (00:33:07) xNet Uc_Po 
-\i (00:33:07) xNet Uc_No 
-\i (00:33:07) xNet Ic1_No 
-\i (00:33:07) xrefdes U16 
-\i (00:33:07) xrefdes C150 
-\i (00:33:07) xrefdes C151 
-\i (00:33:07) xrefdes C152 
-\i (00:33:07) xrefdes C153 
-\i (00:33:07) xrefdes C154 
-\i (00:33:07) xrefdes C155 
-\i (00:33:07) xrefdes C156 
-\i (00:33:07) xrefdes C157 
-\i (00:33:07) xrefdes C158 
-\i (00:33:07) xrefdes R26 
-\i (00:33:07) xrefdes C159 
-\i (00:33:07) xNet N82307 
-\i (00:33:07) xNet Ic2_No 
-\i (00:33:07) xNet Clk2 
-\i (00:33:07) xNet Ic2_Po 
-\i (00:33:07) xrefdes U17 
-\i (00:33:07) xrefdes C160 
-\i (00:33:07) xrefdes C161 
-\i (00:33:07) xrefdes C162 
-\i (00:33:07) xrefdes C163 
-\i (00:33:07) xrefdes C164 
-\i (00:33:07) xrefdes C165 
-\i (00:33:07) xrefdes C166 
-\i (00:33:07) xrefdes C95 
-\i (00:33:07) xrefdes C96 
-\i (00:33:07) xrefdes C97 
-\i (00:33:07) xrefdes C98 
-\i (00:33:07) xrefdes C99 
-\i (00:33:07) xrefdes C100 
-\i (00:33:07) xrefdes C102 
-\i (00:33:07) xrefdes C103 
-\i (00:33:07) xrefdes C104 
-\i (00:33:07) xrefdes C105 
-\i (00:33:07) xrefdes C106 
-\i (00:33:07) xNet Ic3_Po 
-\i (00:33:07) xNet Ic3_No 
-\i (00:33:07) xNet Ic4_Po 
-\i (00:33:07) xNet Ic4_No 
-\i (00:33:07) xNet Ic5_Po 
-\i (00:33:07) xNet Ic5_No 
-\i (00:33:07) xrefdes C58 
-\i (00:33:07) xrefdes C47 
-\i (00:33:07) xrefdes C48 
-\i (00:33:07) xrefdes C59 
-\i (00:33:07) xrefdes C60 
-\i (00:33:07) xrefdes C61 
-\i (00:33:07) xrefdes C62 
-\i (00:33:07) xrefdes C63 
-\i (00:33:07) xrefdes C64 
-\i (00:33:07) xrefdes C66 
-\i (00:33:07) xrefdes C67 
-\i (00:33:07) xrefdes C68 
-\i (00:33:07) xrefdes C69 
-\i (00:33:07) xrefdes C49 
-\i (00:33:07) xrefdes C70 
-\i (00:33:07) xrefdes C50 
-\i (00:33:07) xname_flush 
-\t (00:33:07) 27 Net(s) highlighted.
-\t (00:33:07) 125 Component(s) highlighted.
-\i (00:33:07) done 
-\i (00:33:07) etchedit 
-\i (00:33:13) xdehilite 
-\i (00:33:13) xNet Gnd 
-\i (00:33:13) xrefdes C71 
-\i (00:33:13) xNet Vcore 
-\i (00:33:13) xrefdes C72 
-\i (00:33:13) xrefdes C73 
-\i (00:33:13) xrefdes C74 
-\i (00:33:13) xrefdes C75 
-\i (00:33:13) xrefdes C76 
-\i (00:33:13) xNet 3V3 
-\i (00:33:13) xrefdes C107 
-\i (00:33:13) xrefdes C108 
-\i (00:33:13) xrefdes C51 
-\i (00:33:13) xrefdes C52 
-\i (00:33:13) xrefdes C109 
-\i (00:33:13) xrefdes C110 
-\i (00:33:13) xrefdes C53 
-\i (00:33:13) xrefdes C111 
-\i (00:33:13) xrefdes C54 
-\i (00:33:13) xrefdes C112 
-\i (00:33:13) xrefdes C78 
-\i (00:33:13) xrefdes C79 
-\i (00:33:13) xrefdes C80 
-\i (00:33:13) xrefdes R22 
-\i (00:33:13) xrefdes C113 
-\i (00:33:13) xrefdes C81 
-\i (00:33:13) xrefdes C114 
-\i (00:33:13) xrefdes C82 
-\i (00:33:13) xrefdes C115 
-\i (00:33:13) xNet N79431 
-\i (00:33:13) xNet Rep_N 
-\i (00:33:13) xNet Clk3 
-\i (00:33:13) xNet Rep_P 
-\i (00:33:13) xrefdes C116 
-\i (00:33:13) xrefdes C117 
-\i (00:33:13) xrefdes C55 
-\i (00:33:13) xrefdes C56 
-\i (00:33:13) xrefdes U13 
-\i (00:33:13) xrefdes C118 
-\i (00:33:13) xrefdes C119 
-\i (00:33:13) xrefdes C120 
-\i (00:33:13) xrefdes C121 
-\i (00:33:13) xrefdes C122 
-\i (00:33:13) xrefdes C123 
-\i (00:33:13) xrefdes C124 
-\i (00:33:13) xrefdes C125 
-\i (00:33:13) xrefdes C126 
-\i (00:33:13) xrefdes C127 
-\i (00:33:13) xrefdes C128 
-\i (00:33:13) xrefdes C129 
-\i (00:33:13) xrefdes C130 
-\i (00:33:13) xrefdes R23 
-\i (00:33:13) xrefdes C131 
-\i (00:33:13) xNet N80361 
-\i (00:33:13) xNet Clk4 
-\i (00:33:13) xrefdes U14 
-\i (00:33:13) xrefdes C132 
-\i (00:33:13) xrefdes C133 
-\i (00:33:13) xrefdes C134 
-\i (00:33:13) xrefdes C135 
-\i (00:33:13) xrefdes C136 
-\i (00:33:13) xrefdes C83 
-\i (00:33:13) xrefdes C137 
-\i (00:33:13) xrefdes C138 
-\i (00:33:13) xrefdes C84 
-\i (00:33:13) xrefdes C85 
-\i (00:33:13) xrefdes C139 
-\i (00:33:13) xrefdes C86 
-\i (00:33:13) xrefdes C140 
-\i (00:33:13) xrefdes C87 
-\i (00:33:13) xrefdes C88 
-\i (00:33:13) xrefdes C141 
-\i (00:33:13) xrefdes C142 
-\i (00:33:13) xrefdes R24 
-\i (00:33:13) xrefdes C143 
-\i (00:33:13) xNet N81231 
-\i (00:33:13) xNet Clk5 
-\i (00:33:13) xrefdes U15 
-\i (00:33:13) xrefdes C90 
-\i (00:33:13) xrefdes C144 
-\i (00:33:13) xrefdes C91 
-\i (00:33:13) xrefdes C145 
-\i (00:33:13) xrefdes C92 
-\i (00:33:13) xrefdes C146 
-\i (00:33:13) xrefdes C147 
-\i (00:33:13) xrefdes C93 
-\i (00:33:13) xrefdes C94 
-\i (00:33:13) xrefdes C148 
-\i (00:33:13) xrefdes R25 
-\i (00:33:13) xrefdes C149 
-\i (00:33:13) xNet N81631 
-\i (00:33:13) xNet Clk1 
-\i (00:33:13) xNet Ic1_Po 
-\i (00:33:13) xNet Uc_Po 
-\i (00:33:13) xNet Uc_No 
-\i (00:33:13) xNet Ic1_No 
-\i (00:33:13) xrefdes U16 
-\i (00:33:13) xrefdes C150 
-\i (00:33:13) xrefdes C151 
-\i (00:33:13) xrefdes C152 
-\i (00:33:13) xrefdes C153 
-\i (00:33:13) xrefdes C154 
-\i (00:33:13) xrefdes C155 
-\i (00:33:13) xrefdes C156 
-\i (00:33:13) xrefdes C157 
-\i (00:33:13) xrefdes C158 
-\i (00:33:13) xrefdes R26 
-\i (00:33:13) xrefdes C159 
-\i (00:33:13) xNet N82307 
-\i (00:33:13) xNet Ic2_No 
-\i (00:33:13) xNet Clk2 
-\i (00:33:13) xNet Ic2_Po 
-\i (00:33:13) xrefdes U17 
-\i (00:33:13) xrefdes C160 
-\i (00:33:13) xrefdes C161 
-\i (00:33:13) xrefdes C162 
-\i (00:33:13) xrefdes C163 
-\i (00:33:13) xrefdes C164 
-\i (00:33:13) xrefdes C165 
-\i (00:33:13) xrefdes C166 
-\i (00:33:13) xrefdes C95 
-\i (00:33:13) xrefdes C96 
-\i (00:33:13) xrefdes C97 
-\i (00:33:13) xrefdes C98 
-\i (00:33:13) xrefdes C99 
-\i (00:33:13) xrefdes C100 
-\i (00:33:13) xrefdes C102 
-\i (00:33:13) xrefdes C103 
-\i (00:33:13) xrefdes C104 
-\i (00:33:13) xrefdes C105 
-\i (00:33:13) xrefdes C106 
-\i (00:33:13) xNet Ic3_Po 
-\i (00:33:13) xNet Ic3_No 
-\i (00:33:13) xNet Ic4_Po 
-\i (00:33:13) xNet Ic4_No 
-\i (00:33:13) xNet Ic5_Po 
-\i (00:33:13) xNet Ic5_No 
-\i (00:33:13) xrefdes C58 
-\i (00:33:13) xrefdes C47 
-\i (00:33:13) xrefdes C48 
-\i (00:33:13) xrefdes C59 
-\i (00:33:13) xrefdes C60 
-\i (00:33:13) xrefdes C61 
-\i (00:33:13) xrefdes C62 
-\i (00:33:13) xrefdes C63 
-\i (00:33:13) xrefdes C64 
-\i (00:33:13) xrefdes C66 
-\i (00:33:13) xrefdes C67 
-\i (00:33:13) xrefdes C68 
-\i (00:33:13) xrefdes C69 
-\i (00:33:13) xrefdes C49 
-\i (00:33:13) xrefdes C70 
-\i (00:33:13) xrefdes C50 
-\i (00:33:13) xname_flush 
-\t (00:33:13) 27 Net(s) dehighlighted.
-\t (00:33:13) 125 Component(s) dehighlighted.
-\i (00:33:14) done 
-\i (00:33:14) etchedit 
-\i (00:33:17) xhilite 
-\i (00:33:17) xNet Gnd 
-\i (00:33:17) xrefdes C107 
-\i (00:33:17) xNet Vcore 
-\i (00:33:17) xrefdes C108 
-\i (00:33:17) xrefdes C109 
-\i (00:33:17) xrefdes C110 
-\i (00:33:17) xrefdes C111 
-\i (00:33:17) xrefdes C112 
-\i (00:33:17) xNet 3V3 
-\i (00:33:17) xrefdes C114 
-\i (00:33:17) xrefdes C115 
-\i (00:33:17) xrefdes C116 
-\i (00:33:17) xrefdes C117 
-\i (00:33:18) xrefdes C118 
-\i (00:33:18) xrefdes C119 
-\i (00:33:18) xrefdes C120 
-\i (00:33:18) xrefdes C121 
-\i (00:33:18) xrefdes C122 
-\i (00:33:18) xrefdes C123 
-\i (00:33:18) xrefdes C124 
-\i (00:33:18) xrefdes C125 
-\i (00:33:18) xrefdes C126 
-\i (00:33:18) xrefdes C127 
-\i (00:33:18) xrefdes C128 
-\i (00:33:18) xrefdes C129 
-\i (00:33:18) xrefdes C130 
-\i (00:33:18) xrefdes C132 
-\i (00:33:18) xrefdes C133 
-\i (00:33:18) xrefdes C134 
-\i (00:33:18) xrefdes C135 
-\i (00:33:18) xrefdes C136 
-\i (00:33:18) xrefdes C137 
-\i (00:33:18) xrefdes C138 
-\i (00:33:18) xrefdes C139 
-\i (00:33:18) xrefdes C140 
-\i (00:33:18) xrefdes C141 
-\i (00:33:18) xrefdes C142 
-\i (00:33:18) xrefdes C144 
-\i (00:33:18) xrefdes C145 
-\i (00:33:18) xrefdes C146 
-\i (00:33:18) xrefdes C147 
-\i (00:33:18) xrefdes C148 
-\i (00:33:18) xrefdes C150 
-\i (00:33:18) xrefdes C151 
-\i (00:33:18) xrefdes C152 
-\i (00:33:18) xrefdes C153 
-\i (00:33:18) xrefdes C154 
-\i (00:33:18) xrefdes C155 
-\i (00:33:18) xrefdes C156 
-\i (00:33:18) xrefdes C157 
-\i (00:33:18) xrefdes C158 
-\i (00:33:18) xrefdes C160 
-\i (00:33:18) xrefdes C161 
-\i (00:33:18) xrefdes C162 
-\i (00:33:18) xrefdes C163 
-\i (00:33:18) xrefdes C164 
-\i (00:33:18) xrefdes C165 
-\i (00:33:18) xrefdes C166 
-\i (00:33:18) xname_flush 
-\t (00:33:18) 3 Net(s) highlighted.
-\t (00:33:18) 55 Component(s) highlighted.
-\i (00:33:18) done 
-\i (00:33:18) etchedit 
-\i (00:33:22) xdehilite 
-\i (00:33:22) xNet Gnd 
-\i (00:33:22) xrefdes C107 
-\i (00:33:22) xNet Vcore 
-\i (00:33:22) xrefdes C108 
-\i (00:33:22) xrefdes C109 
-\i (00:33:22) xrefdes C110 
-\i (00:33:22) xrefdes C111 
-\i (00:33:22) xrefdes C112 
-\i (00:33:22) xNet 3V3 
-\i (00:33:22) xrefdes C114 
-\i (00:33:22) xrefdes C115 
-\i (00:33:22) xrefdes C116 
-\i (00:33:22) xrefdes C117 
-\i (00:33:22) xrefdes C118 
-\i (00:33:22) xrefdes C119 
-\i (00:33:22) xrefdes C120 
-\i (00:33:22) xrefdes C121 
-\i (00:33:22) xrefdes C122 
-\i (00:33:22) xrefdes C123 
-\i (00:33:22) xrefdes C124 
-\i (00:33:22) xrefdes C125 
-\i (00:33:22) xrefdes C126 
-\i (00:33:23) xrefdes C127 
-\i (00:33:23) xrefdes C128 
-\i (00:33:23) xrefdes C129 
-\i (00:33:23) xrefdes C130 
-\i (00:33:23) xrefdes C132 
-\i (00:33:23) xrefdes C133 
-\i (00:33:23) xrefdes C134 
-\i (00:33:23) xrefdes C135 
-\i (00:33:23) xrefdes C136 
-\i (00:33:23) xrefdes C137 
-\i (00:33:23) xrefdes C138 
-\i (00:33:23) xrefdes C139 
-\i (00:33:23) xrefdes C140 
-\i (00:33:23) xrefdes C141 
-\i (00:33:23) xrefdes C142 
-\i (00:33:23) xrefdes C144 
-\i (00:33:23) xrefdes C145 
-\i (00:33:23) xrefdes C146 
-\i (00:33:23) xrefdes C147 
-\i (00:33:23) xrefdes C148 
-\i (00:33:23) xrefdes C150 
-\i (00:33:23) xrefdes C151 
-\i (00:33:23) xrefdes C152 
-\i (00:33:23) xrefdes C153 
-\i (00:33:23) xrefdes C154 
-\i (00:33:23) xrefdes C155 
-\i (00:33:23) xrefdes C156 
-\i (00:33:23) xrefdes C157 
-\i (00:33:23) xrefdes C158 
-\i (00:33:23) xrefdes C160 
-\i (00:33:23) xrefdes C161 
-\i (00:33:23) xrefdes C162 
-\i (00:33:23) xrefdes C163 
-\i (00:33:23) xrefdes C164 
-\i (00:33:23) xrefdes C165 
-\i (00:33:23) xrefdes C166 
-\i (00:33:23) xname_flush 
-\t (00:33:23) 3 Net(s) dehighlighted.
-\t (00:33:23) 55 Component(s) dehighlighted.
-\i (00:33:23) done 
-\i (00:33:23) etchedit 
-\i (00:33:39) xhilite 
-\i (00:33:39) xname_flush 
-\i (00:33:39) done 
-\i (00:33:39) etchedit 
-\i (00:33:40) xdehilite 
-\i (00:33:40) xname_flush 
-\i (00:33:40) done 
-\i (00:33:40) etchedit 
-\i (00:33:44) xdehilite 
-\i (00:33:45) xname_flush 
-\i (00:33:45) done 
-\i (00:33:45) etchedit 
-\i (00:33:46) xhilite 
-\i (00:33:46) xNet Vcore 
-\i (00:33:46) xname_flush 
-\i (00:33:46) trapsize 1228
-\t (00:33:46) Net "Vcore" highlighted.
-\i (00:33:46) done 
-\i (00:33:46) etchedit 
-\i (00:33:49) xhilite 
-\i (00:33:49) xname_flush 
-\i (00:33:49) done 
-\i (00:33:49) etchedit 
-\i (00:33:54) xdehilite 
-\i (00:33:54) xname_flush 
-\i (00:33:54) done 
-\i (00:33:54) etchedit 
-\i (00:33:56) xhilite 
-\i (00:33:57) xNet Vcore 
-\i (00:33:57) xname_flush 
-\i (00:33:57) trapsize 1228
-\t (00:33:57) Net "Vcore" highlighted.
-\i (00:33:57) done 
-\i (00:33:57) etchedit 
-\i (00:33:58) xdehilite 
-\i (00:33:58) xNet Vcore 
-\i (00:33:58) xname_flush 
-\t (00:33:58) Net "Vcore" dehighlighted.
-\i (00:33:58) done 
-\i (00:33:58) etchedit 
-\i (00:34:02) xhilite 
-\i (00:34:02) xNet Vcore 
-\i (00:34:02) xname_flush 
-\i (00:34:02) trapsize 1228
-\t (00:34:02) Net "Vcore" highlighted.
-\i (00:34:02) done 
-\i (00:34:02) etchedit 
-\i (00:34:07) xdehilite 
-\i (00:34:07) xNet Vcore 
-\i (00:34:07) xname_flush 
-\t (00:34:07) Net "Vcore" dehighlighted.
-\i (00:34:07) done 
-\i (00:34:07) etchedit 
-\i (00:34:13) xdehilite 
-\i (00:34:13) xNet 3V3 
-\i (00:34:13) xname_flush 
-\i (00:34:13) done 
-\i (00:34:13) etchedit 
-\i (00:34:15) xdehilite 
-\i (00:34:15) xNet 3V3 
-\i (00:34:15) xname_flush 
-\i (00:34:15) done 
-\i (00:34:15) etchedit 
-\i (00:34:19) xdehilite 
-\i (00:34:19) xNet 3V3 
-\i (00:34:19) xname_flush 
-\i (00:34:19) done 
-\i (00:34:19) etchedit 
-\i (00:34:22) xdehilite 
-\i (00:34:22) xNet 3V3 
-\i (00:34:22) xname_flush 
-\i (00:34:22) done 
-\i (00:34:22) etchedit 
-\i (00:34:26) xhilite 
-\i (00:34:26) xname_flush 
-\i (00:34:26) done 
-\i (00:34:26) etchedit 
-\i (00:34:27) xdehilite 
-\i (00:34:27) xname_flush 
-\i (00:34:27) done 
-\i (00:34:27) xhilite 
-\i (00:34:27) xNet Vcore 
-\i (00:34:27) xname_flush 
-\i (00:34:27) trapsize 1228
-\t (00:34:27) Net "Vcore" highlighted.
-\i (00:34:27) done 
-\i (00:34:28) etchedit 
-\i (00:34:28) xdehilite 
-\i (00:34:28) xNet Vcore 
-\i (00:34:28) xname_flush 
-\t (00:34:28) Net "Vcore" dehighlighted.
-\i (00:34:28) done 
-\i (00:34:28) etchedit 
-\i (00:34:32) xhilite 
-\i (00:34:32) xname_flush 
-\i (00:34:32) done 
-\i (00:34:32) etchedit 
-\i (00:34:33) xdehilite 
-\i (00:34:33) xname_flush 
-\i (00:34:33) done 
-\i (00:34:33) etchedit 
-\i (00:34:33) xhilite 
-\i (00:34:34) xNet Vcore 
-\i (00:34:34) xname_flush 
-\i (00:34:34) trapsize 1228
-\t (00:34:34) Net "Vcore" highlighted.
-\i (00:34:34) done 
-\i (00:34:34) etchedit 
-\i (00:34:36) xdehilite 
-\i (00:34:36) xNet Vcore 
-\i (00:34:36) xname_flush 
-\t (00:34:37) Net "Vcore" dehighlighted.
-\i (00:34:37) done 
-\i (00:34:37) etchedit 
-\i (00:34:37) xhilite 
-\i (00:34:37) xNet Vcore 
-\i (00:34:37) xname_flush 
-\i (00:34:37) trapsize 1228
-\t (00:34:37) Net "Vcore" highlighted.
-\i (00:34:37) done 
-\i (00:34:37) etchedit 
-\i (00:34:37) xdehilite 
-\i (00:34:38) xNet Vcore 
-\i (00:34:38) xname_flush 
-\t (00:34:38) Net "Vcore" dehighlighted.
-\i (00:34:38) done 
-\i (00:34:38) etchedit 
-\i (00:34:38) xhilite 
-\i (00:34:39) xname_flush 
-\i (00:34:39) done 
-\i (00:34:39) etchedit 
-\i (00:34:41) xdehilite 
-\i (00:34:41) xname_flush 
-\i (00:34:41) done 
-\i (00:34:41) etchedit 
-\i (00:34:41) xhilite 
-\i (00:34:41) xname_flush 
-\i (00:34:41) done 
-\i (00:34:42) etchedit 
-\i (00:34:42) xdehilite 
-\i (00:34:42) xname_flush 
-\i (00:34:42) done 
-\i (00:34:42) etchedit 
-\i (00:34:43) xhilite 
-\i (00:34:43) xNet Vcore 
-\i (00:34:43) xname_flush 
-\i (00:34:43) trapsize 1228
-\t (00:34:43) Net "Vcore" highlighted.
-\i (00:34:43) done 
-\i (00:34:43) etchedit 
-\i (00:34:45) xdehilite 
-\i (00:34:45) xNet Vcore 
-\i (00:34:45) xname_flush 
-\t (00:34:45) Net "Vcore" dehighlighted.
-\i (00:34:45) done 
-\i (00:34:45) etchedit 
-\i (00:34:46) xhilite 
-\i (00:34:46) xNet Vcore 
-\i (00:34:46) xname_flush 
-\i (00:34:46) trapsize 1228
-\t (00:34:46) Net "Vcore" highlighted.
-\i (00:34:46) done 
-\i (00:34:46) etchedit 
-\i (00:34:47) xdehilite 
-\i (00:34:47) xNet Vcore 
-\i (00:34:47) xname_flush 
-\t (00:34:47) Net "Vcore" dehighlighted.
-\i (00:34:47) done 
-\i (00:34:47) etchedit 
-\i (00:34:47) xhilite 
-\i (00:34:47) xname_flush 
-\i (00:34:47) done 
-\i (00:34:47) etchedit 
-\i (00:34:48) xdehilite 
-\i (00:34:48) xname_flush 
-\i (00:34:48) done 
-\i (00:34:48) etchedit 
-\i (00:34:55) xhilite 
-\i (00:34:55) xNet 3V3 
-\i (00:34:55) xNet Vcore 
-\i (00:34:55) xNet Gnd 
-\i (00:34:55) xrefdes R22 
-\i (00:34:55) xrefdes C113 
-\i (00:34:55) xNet N79431 
-\i (00:34:55) xNet Rep_N 
-\i (00:34:55) xNet Clk3 
-\i (00:34:55) xNet Rep_P 
-\i (00:34:55) xrefdes U13 
-\i (00:34:55) xrefdes R23 
-\i (00:34:55) xrefdes C131 
-\i (00:34:55) xNet N80361 
-\i (00:34:55) xNet Clk4 
-\i (00:34:55) xrefdes U14 
-\i (00:34:55) xrefdes R24 
-\i (00:34:55) xrefdes C143 
-\i (00:34:55) xNet N81231 
-\i (00:34:55) xNet Clk5 
-\i (00:34:55) xrefdes U15 
-\i (00:34:55) xrefdes R25 
-\i (00:34:55) xrefdes C149 
-\i (00:34:55) xNet N81631 
-\i (00:34:55) xNet Clk1 
-\i (00:34:55) xNet Ic1_Po 
-\i (00:34:55) xNet Uc_Po 
-\i (00:34:55) xNet Uc_No 
-\i (00:34:55) xNet Ic1_No 
-\i (00:34:55) xrefdes U16 
-\i (00:34:55) xrefdes R26 
-\i (00:34:55) xrefdes C159 
-\i (00:34:55) xNet N82307 
-\i (00:34:55) xNet Ic2_No 
-\i (00:34:55) xNet Clk2 
-\i (00:34:55) xNet Ic2_Po 
-\i (00:34:55) xrefdes U17 
-\i (00:34:55) xNet Ic3_Po 
-\i (00:34:55) xNet Ic3_No 
-\i (00:34:55) xNet Ic4_Po 
-\i (00:34:55) xNet Ic4_No 
-\i (00:34:55) xNet Ic5_Po 
-\i (00:34:55) xNet Ic5_No 
-\i (00:34:55) xname_flush 
-\t (00:34:55) 27 Net(s) highlighted.
-\t (00:34:55) 15 Component(s) highlighted.
-\i (00:34:55) done 
-\i (00:34:55) etchedit 
-\i (00:34:59) xdehilite 
-\i (00:34:59) xNet 3V3 
-\i (00:34:59) xNet Vcore 
-\i (00:34:59) xNet Gnd 
-\i (00:34:59) xrefdes R22 
-\i (00:34:59) xrefdes C113 
-\i (00:34:59) xNet N79431 
-\i (00:34:59) xNet Rep_N 
-\i (00:34:59) xNet Clk3 
-\i (00:34:59) xNet Rep_P 
-\i (00:34:59) xrefdes U13 
-\i (00:34:59) xrefdes R23 
-\i (00:34:59) xrefdes C131 
-\i (00:34:59) xNet N80361 
-\i (00:34:59) xNet Clk4 
-\i (00:34:59) xrefdes U14 
-\i (00:34:59) xrefdes R24 
-\i (00:34:59) xrefdes C143 
-\i (00:34:59) xNet N81231 
-\i (00:34:59) xNet Clk5 
-\i (00:34:59) xrefdes U15 
-\i (00:34:59) xrefdes R25 
-\i (00:34:59) xrefdes C149 
-\i (00:34:59) xNet N81631 
-\i (00:34:59) xNet Clk1 
-\i (00:34:59) xNet Ic1_Po 
-\i (00:34:59) xNet Uc_Po 
-\i (00:34:59) xNet Uc_No 
-\i (00:34:59) xNet Ic1_No 
-\i (00:34:59) xrefdes U16 
-\i (00:34:59) xrefdes R26 
-\i (00:34:59) xrefdes C159 
-\i (00:34:59) xNet N82307 
-\i (00:34:59) xNet Ic2_No 
-\i (00:34:59) xNet Clk2 
-\i (00:34:59) xNet Ic2_Po 
-\i (00:34:59) xrefdes U17 
-\i (00:34:59) xNet Ic3_Po 
-\i (00:34:59) xNet Ic3_No 
-\i (00:34:59) xNet Ic4_Po 
-\i (00:34:59) xNet Ic4_No 
-\i (00:34:59) xNet Ic5_Po 
-\i (00:34:59) xNet Ic5_No 
-\i (00:34:59) xname_flush 
-\t (00:34:59) 27 Net(s) dehighlighted.
-\t (00:34:59) 15 Component(s) dehighlighted.
-\i (00:34:59) done 
-\i (00:34:59) etchedit 
-\i (00:35:12) xhilite 
-\i (00:35:12) xNet Vcore 
-\i (00:35:12) xNet Ic9_Po 
-\i (00:35:12) xNet Ic9_No 
-\i (00:35:12) xNet Ic8_No 
-\i (00:35:12) xNet Ic8_Po 
-\i (00:35:12) xNet Ic7_No 
-\i (00:35:12) xNet Ic7_Po 
-\i (00:35:12) xNet Gnd 
-\i (00:35:12) xrefdes C71 
-\i (00:35:12) xrefdes C72 
-\i (00:35:12) xrefdes C73 
-\i (00:35:12) xrefdes C74 
-\i (00:35:12) xrefdes C75 
-\i (00:35:12) xrefdes C76 
-\i (00:35:12) xNet 3V3 
-\i (00:35:12) xrefdes C107 
-\i (00:35:12) xrefdes R19 
-\i (00:35:12) xrefdes C108 
-\i (00:35:12) xrefdes C77 
-\i (00:35:12) xrefdes C51 
-\i (00:35:12) xrefdes C52 
-\i (00:35:12) xrefdes C109 
-\i (00:35:12) xNet N66132 
-\i (00:35:12) xrefdes C110 
-\i (00:35:12) xNet Rep_N 
-\i (00:35:12) xNet Rep_P 
-\i (00:35:12) xNet Clk8 
-\i (00:35:12) xrefdes C53 
-\i (00:35:12) xrefdes C111 
-\i (00:35:12) xrefdes C54 
-\i (00:35:12) xrefdes C112 
-\i (00:35:12) xrefdes U10 
-\i (00:35:12) xrefdes C78 
-\i (00:35:12) xrefdes C79 
-\i (00:35:12) xrefdes C80 
-\i (00:35:12) xrefdes R22 
-\i (00:35:12) xrefdes C113 
-\i (00:35:12) xrefdes C81 
-\i (00:35:12) xrefdes C114 
-\i (00:35:12) xrefdes C82 
-\i (00:35:12) xrefdes C115 
-\i (00:35:12) xNet N79431 
-\i (00:35:12) xNet Clk3 
-\i (00:35:12) xrefdes C116 
-\i (00:35:12) xrefdes C117 
-\i (00:35:12) xrefdes C55 
-\i (00:35:12) xrefdes C56 
-\i (00:35:12) xrefdes U13 
-\i (00:35:12) xrefdes C118 
-\i (00:35:12) xrefdes C119 
-\i (00:35:12) xrefdes C120 
-\i (00:35:12) xrefdes C121 
-\i (00:35:12) xrefdes C122 
-\i (00:35:12) xrefdes C123 
-\i (00:35:12) xrefdes C124 
-\i (00:35:12) xrefdes C125 
-\i (00:35:12) xrefdes C126 
-\i (00:35:12) xrefdes C127 
-\i (00:35:12) xrefdes C128 
-\i (00:35:12) xrefdes C129 
-\i (00:35:12) xrefdes C130 
-\i (00:35:12) xrefdes R23 
-\i (00:35:12) xrefdes C131 
-\i (00:35:12) xNet N80361 
-\i (00:35:12) xNet Clk4 
-\i (00:35:12) xrefdes U14 
-\i (00:35:12) xrefdes C132 
-\i (00:35:12) xrefdes C133 
-\i (00:35:12) xrefdes C134 
-\i (00:35:12) xrefdes C135 
-\i (00:35:12) xrefdes C136 
-\i (00:35:12) xrefdes C83 
-\i (00:35:12) xrefdes C137 
-\i (00:35:12) xrefdes C138 
-\i (00:35:12) xrefdes C84 
-\i (00:35:12) xrefdes C85 
-\i (00:35:12) xrefdes C139 
-\i (00:35:12) xrefdes C86 
-\i (00:35:12) xrefdes C140 
-\i (00:35:12) xrefdes C87 
-\i (00:35:12) xrefdes C141 
-\i (00:35:12) xrefdes C88 
-\i (00:35:12) xrefdes C142 
-\i (00:35:12) xrefdes R20 
-\i (00:35:12) xrefdes R24 
-\i (00:35:12) xrefdes C89 
-\i (00:35:12) xrefdes C143 
-\i (00:35:12) xNet N81231 
-\i (00:35:12) xNet Clk9 
-\i (00:35:12) xNet N68274 
-\i (00:35:12) xNet Clk5 
-\i (00:35:12) xrefdes U11 
-\i (00:35:12) xrefdes C90 
-\i (00:35:12) xrefdes U15 
-\i (00:35:12) xrefdes C144 
-\i (00:35:12) xrefdes C91 
-\i (00:35:12) xrefdes C145 
-\i (00:35:12) xrefdes C92 
-\i (00:35:12) xrefdes C146 
-\i (00:35:12) xrefdes C147 
-\i (00:35:12) xrefdes C93 
-\i (00:35:12) xrefdes C94 
-\i (00:35:12) xrefdes C148 
-\i (00:35:12) xrefdes R25 
-\i (00:35:12) xrefdes C149 
-\i (00:35:12) xNet N81631 
-\i (00:35:12) xNet Clk1 
-\i (00:35:12) xNet Ic1_Po 
-\i (00:35:12) xNet Uc_Po 
-\i (00:35:12) xNet Uc_No 
-\i (00:35:12) xNet Ic1_No 
-\i (00:35:12) xrefdes U16 
-\i (00:35:12) xrefdes C150 
-\i (00:35:12) xrefdes C151 
-\i (00:35:12) xrefdes C152 
-\i (00:35:12) xrefdes C153 
-\i (00:35:12) xrefdes C154 
-\i (00:35:12) xrefdes C155 
-\i (00:35:12) xrefdes C156 
-\i (00:35:12) xrefdes C157 
-\i (00:35:12) xrefdes C158 
-\i (00:35:12) xrefdes R26 
-\i (00:35:12) xrefdes C159 
-\i (00:35:12) xNet N82307 
-\i (00:35:12) xNet Ic2_No 
-\i (00:35:12) xNet Clk2 
-\i (00:35:12) xNet Ic2_Po 
-\i (00:35:12) xrefdes U17 
-\i (00:35:12) xrefdes C160 
-\i (00:35:12) xrefdes C161 
-\i (00:35:12) xrefdes C162 
-\i (00:35:12) xrefdes C163 
-\i (00:35:12) xrefdes C164 
-\i (00:35:12) xrefdes C165 
-\i (00:35:12) xrefdes C166 
-\i (00:35:12) xrefdes C95 
-\i (00:35:12) xrefdes C96 
-\i (00:35:12) xrefdes C97 
-\i (00:35:12) xrefdes C98 
-\i (00:35:12) xrefdes C99 
-\i (00:35:12) xrefdes C100 
-\i (00:35:12) xrefdes R21 
-\i (00:35:12) xrefdes C101 
-\i (00:35:12) xNet N71327 
-\i (00:35:12) xNet Clk10 
-\i (00:35:12) xrefdes U12 
-\i (00:35:12) xrefdes C102 
-\i (00:35:12) xrefdes C103 
-\i (00:35:12) xrefdes C104 
-\i (00:35:12) xrefdes C105 
-\i (00:35:12) xrefdes C106 
-\i (00:35:12) xrefdes R17 
-\i (00:35:12) xrefdes C57 
-\i (00:35:12) xNet N59408 
-\i (00:35:12) xNet Clk6 
-\i (00:35:12) xNet Ic3_Po 
-\i (00:35:12) xNet Ic3_No 
-\i (00:35:12) xrefdes U8 
-\i (00:35:12) xNet Ic4_Po 
-\i (00:35:12) xNet Ic4_No 
-\i (00:35:12) xNet Ic5_Po 
-\i (00:35:12) xNet Ic5_No 
-\i (00:35:12) xNet Ic6_No 
-\i (00:35:12) xNet Ic6_Po 
-\i (00:35:12) xrefdes C58 
-\i (00:35:12) xrefdes C47 
-\i (00:35:12) xrefdes C48 
-\i (00:35:12) xrefdes C59 
-\i (00:35:12) xrefdes C60 
-\i (00:35:12) xrefdes C61 
-\i (00:35:12) xrefdes C62 
-\i (00:35:12) xrefdes C63 
-\i (00:35:12) xrefdes C64 
-\i (00:35:12) xrefdes R18 
-\i (00:35:12) xrefdes C65 
-\i (00:35:12) xNet N64105 
-\i (00:35:12) xNet Clk7 
-\i (00:35:12) xrefdes U9 
-\i (00:35:12) xrefdes C66 
-\i (00:35:12) xrefdes C67 
-\i (00:35:12) xrefdes C68 
-\i (00:35:12) xrefdes C69 
-\i (00:35:12) xrefdes C49 
-\i (00:35:12) xrefdes C70 
-\i (00:35:12) xrefdes C50 
-\i (00:35:12) xname_flush 
-\t (00:35:12) 45 Net(s) highlighted.
-\t (00:35:12) 140 Component(s) highlighted.
-\i (00:35:13) done 
-\i (00:35:13) etchedit 
-\i (00:35:13) xdehilite 
-\i (00:35:14) xNet Vcore 
-\i (00:35:14) xNet Ic9_Po 
-\i (00:35:14) xNet Ic9_No 
-\i (00:35:14) xNet Ic8_No 
-\i (00:35:14) xNet Ic8_Po 
-\i (00:35:14) xNet Ic7_No 
-\i (00:35:14) xNet Ic7_Po 
-\i (00:35:14) xNet Gnd 
-\i (00:35:14) xrefdes C71 
-\i (00:35:14) xrefdes C72 
-\i (00:35:14) xrefdes C73 
-\i (00:35:14) xrefdes C74 
-\i (00:35:14) xrefdes C75 
-\i (00:35:14) xrefdes C76 
-\i (00:35:14) xNet 3V3 
-\i (00:35:14) xrefdes C107 
-\i (00:35:14) xrefdes R19 
-\i (00:35:14) xrefdes C108 
-\i (00:35:14) xrefdes C77 
-\i (00:35:14) xrefdes C51 
-\i (00:35:14) xrefdes C52 
-\i (00:35:14) xrefdes C109 
-\i (00:35:14) xNet N66132 
-\i (00:35:14) xrefdes C110 
-\i (00:35:14) xNet Rep_N 
-\i (00:35:14) xNet Rep_P 
-\i (00:35:14) xNet Clk8 
-\i (00:35:14) xrefdes C53 
-\i (00:35:14) xrefdes C111 
-\i (00:35:14) xrefdes C54 
-\i (00:35:14) xrefdes C112 
-\i (00:35:14) xrefdes U10 
-\i (00:35:14) xrefdes C78 
-\i (00:35:14) xrefdes C79 
-\i (00:35:14) xrefdes C80 
-\i (00:35:14) xrefdes R22 
-\i (00:35:14) xrefdes C113 
-\i (00:35:14) xrefdes C81 
-\i (00:35:14) xrefdes C114 
-\i (00:35:14) xrefdes C82 
-\i (00:35:14) xrefdes C115 
-\i (00:35:14) xNet N79431 
-\i (00:35:14) xNet Clk3 
-\i (00:35:14) xrefdes C116 
-\i (00:35:14) xrefdes C117 
-\i (00:35:14) xrefdes C55 
-\i (00:35:14) xrefdes C56 
-\i (00:35:14) xrefdes U13 
-\i (00:35:14) xrefdes C118 
-\i (00:35:14) xrefdes C119 
-\i (00:35:14) xrefdes C120 
-\i (00:35:14) xrefdes C121 
-\i (00:35:14) xrefdes C122 
-\i (00:35:14) xrefdes C123 
-\i (00:35:14) xrefdes C124 
-\i (00:35:14) xrefdes C125 
-\i (00:35:14) xrefdes C126 
-\i (00:35:14) xrefdes C127 
-\i (00:35:14) xrefdes C128 
-\i (00:35:14) xrefdes C129 
-\i (00:35:14) xrefdes C130 
-\i (00:35:14) xrefdes R23 
-\i (00:35:14) xrefdes C131 
-\i (00:35:14) xNet N80361 
-\i (00:35:14) xNet Clk4 
-\i (00:35:14) xrefdes U14 
-\i (00:35:14) xrefdes C132 
-\i (00:35:14) xrefdes C133 
-\i (00:35:14) xrefdes C134 
-\i (00:35:14) xrefdes C135 
-\i (00:35:14) xrefdes C136 
-\i (00:35:14) xrefdes C83 
-\i (00:35:14) xrefdes C137 
-\i (00:35:14) xrefdes C138 
-\i (00:35:14) xrefdes C84 
-\i (00:35:14) xrefdes C85 
-\i (00:35:14) xrefdes C139 
-\i (00:35:14) xrefdes C86 
-\i (00:35:14) xrefdes C140 
-\i (00:35:14) xrefdes C87 
-\i (00:35:14) xrefdes C141 
-\i (00:35:14) xrefdes C88 
-\i (00:35:14) xrefdes C142 
-\i (00:35:14) xrefdes R20 
-\i (00:35:14) xrefdes R24 
-\i (00:35:14) xrefdes C89 
-\i (00:35:14) xrefdes C143 
-\i (00:35:14) xNet N81231 
-\i (00:35:14) xNet Clk9 
-\i (00:35:14) xNet N68274 
-\i (00:35:14) xNet Clk5 
-\i (00:35:14) xrefdes U11 
-\i (00:35:14) xrefdes C90 
-\i (00:35:14) xrefdes U15 
-\i (00:35:14) xrefdes C144 
-\i (00:35:14) xrefdes C91 
-\i (00:35:14) xrefdes C145 
-\i (00:35:14) xrefdes C92 
-\i (00:35:14) xrefdes C146 
-\i (00:35:14) xrefdes C147 
-\i (00:35:14) xrefdes C93 
-\i (00:35:14) xrefdes C94 
-\i (00:35:14) xrefdes C148 
-\i (00:35:14) xrefdes R25 
-\i (00:35:14) xrefdes C149 
-\i (00:35:14) xNet N81631 
-\i (00:35:14) xNet Clk1 
-\i (00:35:14) xNet Ic1_Po 
-\i (00:35:14) xNet Uc_Po 
-\i (00:35:14) xNet Uc_No 
-\i (00:35:14) xNet Ic1_No 
-\i (00:35:14) xrefdes U16 
-\i (00:35:14) xrefdes C150 
-\i (00:35:14) xrefdes C151 
-\i (00:35:14) xrefdes C152 
-\i (00:35:14) xrefdes C153 
-\i (00:35:14) xrefdes C154 
-\i (00:35:14) xrefdes C155 
-\i (00:35:14) xrefdes C156 
-\i (00:35:14) xrefdes C157 
-\i (00:35:14) xrefdes C158 
-\i (00:35:14) xrefdes R26 
-\i (00:35:14) xrefdes C159 
-\i (00:35:14) xNet N82307 
-\i (00:35:14) xNet Ic2_No 
-\i (00:35:14) xNet Clk2 
-\i (00:35:14) xNet Ic2_Po 
-\i (00:35:14) xrefdes U17 
-\i (00:35:14) xrefdes C160 
-\i (00:35:14) xrefdes C161 
-\i (00:35:14) xrefdes C162 
-\i (00:35:14) xrefdes C163 
-\i (00:35:14) xrefdes C164 
-\i (00:35:14) xrefdes C165 
-\i (00:35:14) xrefdes C166 
-\i (00:35:14) xrefdes C95 
-\i (00:35:14) xrefdes C96 
-\i (00:35:14) xrefdes C97 
-\i (00:35:14) xrefdes C98 
-\i (00:35:14) xrefdes C99 
-\i (00:35:14) xrefdes C100 
-\i (00:35:14) xrefdes R21 
-\i (00:35:14) xrefdes C101 
-\i (00:35:14) xNet N71327 
-\i (00:35:14) xNet Clk10 
-\i (00:35:14) xrefdes U12 
-\i (00:35:14) xrefdes C102 
-\i (00:35:14) xrefdes C103 
-\i (00:35:14) xrefdes C104 
-\i (00:35:14) xrefdes C105 
-\i (00:35:14) xrefdes C106 
-\i (00:35:14) xrefdes R17 
-\i (00:35:14) xrefdes C57 
-\i (00:35:14) xNet N59408 
-\i (00:35:14) xNet Clk6 
-\i (00:35:14) xNet Ic3_Po 
-\i (00:35:14) xNet Ic3_No 
-\i (00:35:14) xrefdes U8 
-\i (00:35:14) xNet Ic4_Po 
-\i (00:35:14) xNet Ic4_No 
-\i (00:35:14) xNet Ic5_Po 
-\i (00:35:14) xNet Ic5_No 
-\i (00:35:14) xNet Ic6_No 
-\i (00:35:14) xNet Ic6_Po 
-\i (00:35:14) xrefdes C58 
-\i (00:35:14) xrefdes C47 
-\i (00:35:14) xrefdes C48 
-\i (00:35:14) xrefdes C59 
-\i (00:35:14) xrefdes C60 
-\i (00:35:14) xrefdes C61 
-\i (00:35:14) xrefdes C62 
-\i (00:35:14) xrefdes C63 
-\i (00:35:14) xrefdes C64 
-\i (00:35:14) xrefdes R18 
-\i (00:35:14) xrefdes C65 
-\i (00:35:14) xNet N64105 
-\i (00:35:14) xNet Clk7 
-\i (00:35:14) xrefdes U9 
-\i (00:35:14) xrefdes C66 
-\i (00:35:14) xrefdes C67 
-\i (00:35:14) xrefdes C68 
-\i (00:35:14) xrefdes C69 
-\i (00:35:14) xrefdes C49 
-\i (00:35:14) xrefdes C70 
-\i (00:35:14) xrefdes C50 
-\i (00:35:14) xname_flush 
-\t (00:35:14) 45 Net(s) dehighlighted.
-\t (00:35:14) 140 Component(s) dehighlighted.
-\i (00:35:14) done 
-\i (00:35:14) etchedit 
-\i (00:35:18) xhilite 
-\i (00:35:18) xNet Vcore 
-\i (00:35:18) xNet Ic9_Po 
-\i (00:35:18) xNet Ic9_No 
-\i (00:35:18) xNet Ic8_No 
-\i (00:35:18) xNet Ic8_Po 
-\i (00:35:18) xNet Ic7_No 
-\i (00:35:18) xNet Ic7_Po 
-\i (00:35:18) xNet Gnd 
-\i (00:35:18) xrefdes C71 
-\i (00:35:18) xrefdes C72 
-\i (00:35:18) xrefdes C73 
-\i (00:35:18) xrefdes C74 
-\i (00:35:18) xrefdes C75 
-\i (00:35:18) xrefdes C76 
-\i (00:35:18) xNet 3V3 
-\i (00:35:18) xrefdes C107 
-\i (00:35:18) xrefdes R19 
-\i (00:35:18) xrefdes C108 
-\i (00:35:18) xrefdes C77 
-\i (00:35:18) xrefdes C51 
-\i (00:35:18) xrefdes C52 
-\i (00:35:18) xrefdes C109 
-\i (00:35:18) xNet N66132 
-\i (00:35:18) xrefdes C110 
-\i (00:35:18) xNet Rep_N 
-\i (00:35:18) xNet Rep_P 
-\i (00:35:18) xNet Clk8 
-\i (00:35:18) xrefdes C53 
-\i (00:35:18) xrefdes C111 
-\i (00:35:18) xrefdes C54 
-\i (00:35:18) xrefdes C112 
-\i (00:35:18) xrefdes U10 
-\i (00:35:18) xrefdes C78 
-\i (00:35:18) xrefdes C79 
-\i (00:35:18) xrefdes C80 
-\i (00:35:18) xrefdes R22 
-\i (00:35:18) xrefdes C113 
-\i (00:35:18) xrefdes C81 
-\i (00:35:18) xrefdes C114 
-\i (00:35:18) xrefdes C82 
-\i (00:35:18) xrefdes C115 
-\i (00:35:18) xNet N79431 
-\i (00:35:18) xNet Clk3 
-\i (00:35:18) xrefdes C116 
-\i (00:35:18) xrefdes C117 
-\i (00:35:18) xrefdes C55 
-\i (00:35:18) xrefdes C56 
-\i (00:35:18) xrefdes U13 
-\i (00:35:18) xrefdes C118 
-\i (00:35:18) xrefdes C119 
-\i (00:35:18) xrefdes C120 
-\i (00:35:18) xrefdes C121 
-\i (00:35:18) xrefdes C122 
-\i (00:35:18) xrefdes C123 
-\i (00:35:18) xrefdes C124 
-\i (00:35:18) xrefdes C125 
-\i (00:35:18) xrefdes C126 
-\i (00:35:18) xrefdes C127 
-\i (00:35:18) xrefdes C128 
-\i (00:35:18) xrefdes C129 
-\i (00:35:18) xrefdes C130 
-\i (00:35:18) xrefdes R23 
-\i (00:35:18) xrefdes C131 
-\i (00:35:18) xNet N80361 
-\i (00:35:18) xNet Clk4 
-\i (00:35:18) xrefdes U14 
-\i (00:35:18) xrefdes C132 
-\i (00:35:18) xrefdes C133 
-\i (00:35:18) xrefdes C134 
-\i (00:35:18) xrefdes C135 
-\i (00:35:18) xrefdes C136 
-\i (00:35:18) xrefdes C83 
-\i (00:35:18) xrefdes C137 
-\i (00:35:18) xrefdes C138 
-\i (00:35:18) xrefdes C84 
-\i (00:35:18) xrefdes C85 
-\i (00:35:18) xrefdes C139 
-\i (00:35:18) xrefdes C86 
-\i (00:35:18) xrefdes C140 
-\i (00:35:18) xrefdes C87 
-\i (00:35:18) xrefdes C141 
-\i (00:35:18) xrefdes C88 
-\i (00:35:18) xrefdes C142 
-\i (00:35:18) xrefdes R20 
-\i (00:35:18) xrefdes R24 
-\i (00:35:18) xrefdes C89 
-\i (00:35:18) xrefdes C143 
-\i (00:35:18) xNet N81231 
-\i (00:35:18) xNet Clk9 
-\i (00:35:18) xNet N68274 
-\i (00:35:18) xNet Clk5 
-\i (00:35:18) xrefdes U11 
-\i (00:35:18) xrefdes C90 
-\i (00:35:18) xrefdes U15 
-\i (00:35:18) xrefdes C144 
-\i (00:35:18) xrefdes C91 
-\i (00:35:18) xrefdes C145 
-\i (00:35:18) xrefdes C92 
-\i (00:35:18) xrefdes C146 
-\i (00:35:18) xrefdes C147 
-\i (00:35:18) xrefdes C93 
-\i (00:35:18) xrefdes C94 
-\i (00:35:18) xrefdes C148 
-\i (00:35:18) xrefdes R25 
-\i (00:35:18) xrefdes C149 
-\i (00:35:18) xNet N81631 
-\i (00:35:18) xNet Clk1 
-\i (00:35:18) xNet Ic1_Po 
-\i (00:35:18) xNet Uc_Po 
-\i (00:35:18) xNet Uc_No 
-\i (00:35:18) xNet Ic1_No 
-\i (00:35:18) xrefdes U16 
-\i (00:35:18) xrefdes C150 
-\i (00:35:18) xrefdes C151 
-\i (00:35:18) xrefdes C152 
-\i (00:35:18) xrefdes C153 
-\i (00:35:18) xrefdes C154 
-\i (00:35:18) xrefdes C155 
-\i (00:35:18) xrefdes C156 
-\i (00:35:19) xrefdes C157 
-\i (00:35:19) xrefdes C158 
-\i (00:35:19) xrefdes R26 
-\i (00:35:19) xrefdes C159 
-\i (00:35:19) xNet N82307 
-\i (00:35:19) xNet Ic2_No 
-\i (00:35:19) xNet Clk2 
-\i (00:35:19) xNet Ic2_Po 
-\i (00:35:19) xrefdes U17 
-\i (00:35:19) xrefdes C160 
-\i (00:35:19) xrefdes C161 
-\i (00:35:19) xrefdes C162 
-\i (00:35:19) xrefdes C163 
-\i (00:35:19) xrefdes C164 
-\i (00:35:19) xrefdes C165 
-\i (00:35:19) xrefdes C166 
-\i (00:35:19) xrefdes C95 
-\i (00:35:19) xrefdes C96 
-\i (00:35:19) xrefdes C97 
-\i (00:35:19) xrefdes C98 
-\i (00:35:19) xrefdes C99 
-\i (00:35:19) xrefdes C100 
-\i (00:35:19) xrefdes R21 
-\i (00:35:19) xrefdes C101 
-\i (00:35:19) xNet N71327 
-\i (00:35:19) xNet Clk10 
-\i (00:35:19) xrefdes U12 
-\i (00:35:19) xrefdes C102 
-\i (00:35:19) xrefdes C103 
-\i (00:35:19) xrefdes C104 
-\i (00:35:19) xrefdes C105 
-\i (00:35:19) xrefdes C106 
-\i (00:35:19) xrefdes R17 
-\i (00:35:19) xrefdes C57 
-\i (00:35:19) xNet N59408 
-\i (00:35:19) xNet Clk6 
-\i (00:35:19) xNet Ic3_Po 
-\i (00:35:19) xNet Ic3_No 
-\i (00:35:19) xrefdes U8 
-\i (00:35:19) xNet Ic4_Po 
-\i (00:35:19) xNet Ic4_No 
-\i (00:35:19) xNet Ic5_Po 
-\i (00:35:19) xNet Ic5_No 
-\i (00:35:19) xNet Ic6_No 
-\i (00:35:19) xNet Ic6_Po 
-\i (00:35:19) xrefdes C58 
-\i (00:35:19) xrefdes C47 
-\i (00:35:19) xrefdes C48 
-\i (00:35:19) xrefdes C59 
-\i (00:35:19) xrefdes C60 
-\i (00:35:19) xrefdes C61 
-\i (00:35:19) xrefdes C62 
-\i (00:35:19) xrefdes C63 
-\i (00:35:19) xrefdes C64 
-\i (00:35:19) xrefdes R18 
-\i (00:35:19) xrefdes C65 
-\i (00:35:19) xNet N64105 
-\i (00:35:19) xNet Clk7 
-\i (00:35:19) xrefdes U9 
-\i (00:35:19) xrefdes C66 
-\i (00:35:19) xrefdes C67 
-\i (00:35:19) xrefdes C68 
-\i (00:35:19) xrefdes C69 
-\i (00:35:19) xrefdes C49 
-\i (00:35:19) xrefdes C70 
-\i (00:35:19) xrefdes C50 
-\i (00:35:19) xname_flush 
-\t (00:35:19) 45 Net(s) highlighted.
-\t (00:35:19) 140 Component(s) highlighted.
-\i (00:35:19) done 
-\i (00:35:19) etchedit 
-\i (00:35:28) xdehilite 
-\i (00:35:28) xNet Vcore 
-\i (00:35:28) xNet Ic9_Po 
-\i (00:35:28) xNet Ic9_No 
-\i (00:35:28) xNet Ic8_No 
-\i (00:35:28) xNet Ic8_Po 
-\i (00:35:28) xNet Ic7_No 
-\i (00:35:28) xNet Ic7_Po 
-\i (00:35:28) xNet Gnd 
-\i (00:35:28) xrefdes C71 
-\i (00:35:28) xrefdes C72 
-\i (00:35:28) xrefdes C73 
-\i (00:35:28) xrefdes C74 
-\i (00:35:28) xrefdes C75 
-\i (00:35:28) xrefdes C76 
-\i (00:35:28) xNet 3V3 
-\i (00:35:28) xrefdes C107 
-\i (00:35:28) xrefdes R19 
-\i (00:35:28) xrefdes C108 
-\i (00:35:28) xrefdes C77 
-\i (00:35:28) xrefdes C51 
-\i (00:35:28) xrefdes C52 
-\i (00:35:28) xrefdes C109 
-\i (00:35:28) xNet N66132 
-\i (00:35:28) xrefdes C110 
-\i (00:35:28) xNet Rep_N 
-\i (00:35:28) xNet Rep_P 
-\i (00:35:28) xNet Clk8 
-\i (00:35:28) xrefdes C53 
-\i (00:35:28) xrefdes C111 
-\i (00:35:28) xrefdes C54 
-\i (00:35:28) xrefdes C112 
-\i (00:35:28) xrefdes U10 
-\i (00:35:28) xrefdes C78 
-\i (00:35:28) xrefdes C79 
-\i (00:35:28) xrefdes C80 
-\i (00:35:28) xrefdes R22 
-\i (00:35:28) xrefdes C113 
-\i (00:35:28) xrefdes C81 
-\i (00:35:28) xrefdes C114 
-\i (00:35:28) xrefdes C82 
-\i (00:35:28) xrefdes C115 
-\i (00:35:28) xNet N79431 
-\i (00:35:28) xNet Clk3 
-\i (00:35:28) xrefdes C116 
-\i (00:35:28) xrefdes C117 
-\i (00:35:28) xrefdes C55 
-\i (00:35:28) xrefdes C56 
-\i (00:35:28) xrefdes U13 
-\i (00:35:28) xrefdes C118 
-\i (00:35:28) xrefdes C119 
-\i (00:35:28) xrefdes C120 
-\i (00:35:28) xrefdes C121 
-\i (00:35:28) xrefdes C122 
-\i (00:35:28) xrefdes C123 
-\i (00:35:28) xrefdes C124 
-\i (00:35:28) xrefdes C125 
-\i (00:35:28) xrefdes C126 
-\i (00:35:28) xrefdes C127 
-\i (00:35:28) xrefdes C128 
-\i (00:35:28) xrefdes C129 
-\i (00:35:28) xrefdes C130 
-\i (00:35:28) xrefdes R23 
-\i (00:35:28) xrefdes C131 
-\i (00:35:28) xNet N80361 
-\i (00:35:28) xNet Clk4 
-\i (00:35:28) xrefdes U14 
-\i (00:35:28) xrefdes C132 
-\i (00:35:28) xrefdes C133 
-\i (00:35:28) xrefdes C134 
-\i (00:35:28) xrefdes C135 
-\i (00:35:28) xrefdes C136 
-\i (00:35:28) xrefdes C83 
-\i (00:35:28) xrefdes C137 
-\i (00:35:28) xrefdes C138 
-\i (00:35:28) xrefdes C84 
-\i (00:35:28) xrefdes C85 
-\i (00:35:28) xrefdes C139 
-\i (00:35:28) xrefdes C86 
-\i (00:35:28) xrefdes C140 
-\i (00:35:28) xrefdes C87 
-\i (00:35:28) xrefdes C141 
-\i (00:35:28) xrefdes C88 
-\i (00:35:28) xrefdes C142 
-\i (00:35:28) xrefdes R20 
-\i (00:35:28) xrefdes R24 
-\i (00:35:28) xrefdes C89 
-\i (00:35:28) xrefdes C143 
-\i (00:35:28) xNet N81231 
-\i (00:35:28) xNet Clk9 
-\i (00:35:28) xNet N68274 
-\i (00:35:28) xNet Clk5 
-\i (00:35:28) xrefdes U11 
-\i (00:35:28) xrefdes C90 
-\i (00:35:28) xrefdes U15 
-\i (00:35:28) xrefdes C144 
-\i (00:35:28) xrefdes C91 
-\i (00:35:28) xrefdes C145 
-\i (00:35:28) xrefdes C92 
-\i (00:35:28) xrefdes C146 
-\i (00:35:28) xrefdes C147 
-\i (00:35:28) xrefdes C93 
-\i (00:35:28) xrefdes C94 
-\i (00:35:28) xrefdes C148 
-\i (00:35:28) xrefdes R25 
-\i (00:35:28) xrefdes C149 
-\i (00:35:28) xNet N81631 
-\i (00:35:28) xNet Clk1 
-\i (00:35:28) xNet Ic1_Po 
-\i (00:35:28) xNet Uc_Po 
-\i (00:35:28) xNet Uc_No 
-\i (00:35:28) xNet Ic1_No 
-\i (00:35:28) xrefdes U16 
-\i (00:35:28) xrefdes C150 
-\i (00:35:28) xrefdes C151 
-\i (00:35:28) xrefdes C152 
-\i (00:35:28) xrefdes C153 
-\i (00:35:28) xrefdes C154 
-\i (00:35:28) xrefdes C155 
-\i (00:35:28) xrefdes C156 
-\i (00:35:28) xrefdes C157 
-\i (00:35:28) xrefdes C158 
-\i (00:35:28) xrefdes R26 
-\i (00:35:28) xrefdes C159 
-\i (00:35:28) xNet N82307 
-\i (00:35:28) xNet Ic2_No 
-\i (00:35:28) xNet Clk2 
-\i (00:35:28) xNet Ic2_Po 
-\i (00:35:28) xrefdes U17 
-\i (00:35:28) xrefdes C160 
-\i (00:35:28) xrefdes C161 
-\i (00:35:28) xrefdes C162 
-\i (00:35:28) xrefdes C163 
-\i (00:35:28) xrefdes C164 
-\i (00:35:28) xrefdes C165 
-\i (00:35:28) xrefdes C166 
-\i (00:35:28) xrefdes C95 
-\i (00:35:28) xrefdes C96 
-\i (00:35:28) xrefdes C97 
-\i (00:35:28) xrefdes C98 
-\i (00:35:28) xrefdes C99 
-\i (00:35:28) xrefdes C100 
-\i (00:35:28) xrefdes R21 
-\i (00:35:28) xrefdes C101 
-\i (00:35:28) xNet N71327 
-\i (00:35:28) xNet Clk10 
-\i (00:35:28) xrefdes U12 
-\i (00:35:28) xrefdes C102 
-\i (00:35:28) xrefdes C103 
-\i (00:35:28) xrefdes C104 
-\i (00:35:28) xrefdes C105 
-\i (00:35:28) xrefdes C106 
-\i (00:35:28) xrefdes R17 
-\i (00:35:28) xrefdes C57 
-\i (00:35:28) xNet N59408 
-\i (00:35:28) xNet Clk6 
-\i (00:35:28) xNet Ic3_Po 
-\i (00:35:28) xNet Ic3_No 
-\i (00:35:28) xrefdes U8 
-\i (00:35:28) xNet Ic4_Po 
-\i (00:35:28) xNet Ic4_No 
-\i (00:35:28) xNet Ic5_Po 
-\i (00:35:28) xNet Ic5_No 
-\i (00:35:28) xNet Ic6_No 
-\i (00:35:28) xNet Ic6_Po 
-\i (00:35:28) xrefdes C58 
-\i (00:35:28) xrefdes C47 
-\i (00:35:28) xrefdes C48 
-\i (00:35:28) xrefdes C59 
-\i (00:35:28) xrefdes C60 
-\i (00:35:28) xrefdes C61 
-\i (00:35:28) xrefdes C62 
-\i (00:35:28) xrefdes C63 
-\i (00:35:28) xrefdes C64 
-\i (00:35:28) xrefdes R18 
-\i (00:35:28) xrefdes C65 
-\i (00:35:28) xNet N64105 
-\i (00:35:28) xNet Clk7 
-\i (00:35:28) xrefdes U9 
-\i (00:35:28) xrefdes C66 
-\i (00:35:28) xrefdes C67 
-\i (00:35:28) xrefdes C68 
-\i (00:35:28) xrefdes C69 
-\i (00:35:28) xrefdes C49 
-\i (00:35:28) xrefdes C70 
-\i (00:35:28) xrefdes C50 
-\i (00:35:28) xname_flush 
-\t (00:35:28) 45 Net(s) dehighlighted.
-\t (00:35:28) 140 Component(s) dehighlighted.
-\i (00:35:28) done 
-\i (00:35:28) etchedit 
-\i (00:35:44) xhilite 
-\i (00:35:44) xrefdes C14 
-\i (00:35:44) xrefdes C15 
-\i (00:35:44) xrefdes C16 
-\i (00:35:44) xNet Vcore 
-\i (00:35:44) xNet Gnd 
-\i (00:35:44) xrefdes C17 
-\i (00:35:44) xrefdes C18 
-\i (00:35:44) xrefdes C19 
-\i (00:35:44) xrefdes C20 
-\i (00:35:44) xrefdes C21 
-\i (00:35:44) xrefdes C22 
-\i (00:35:44) xrefdes C23 
-\i (00:35:44) xrefdes C24 
-\i (00:35:44) xrefdes C25 
-\i (00:35:44) xrefdes C26 
-\i (00:35:44) xrefdes C27 
-\i (00:35:44) xrefdes C28 
-\i (00:35:44) xrefdes C29 
-\i (00:35:44) xrefdes C30 
-\i (00:35:44) xrefdes C31 
-\i (00:35:44) xrefdes C32 
-\i (00:35:44) xrefdes C33 
-\i (00:35:44) xrefdes C34 
-\i (00:35:44) xrefdes C35 
-\i (00:35:44) xname_flush 
-\t (00:35:44) 2 Net(s) highlighted.
-\t (00:35:44) 22 Component(s) highlighted.
-\i (00:35:44) done 
-\i (00:35:44) etchedit 
-\i (00:35:45) xdehilite 
-\i (00:35:45) xrefdes C14 
-\i (00:35:45) xrefdes C15 
-\i (00:35:45) xrefdes C16 
-\i (00:35:45) xNet Vcore 
-\i (00:35:45) xNet Gnd 
-\i (00:35:45) xrefdes C17 
-\i (00:35:45) xrefdes C18 
-\i (00:35:45) xrefdes C19 
-\i (00:35:45) xrefdes C20 
-\i (00:35:45) xrefdes C21 
-\i (00:35:45) xrefdes C22 
-\i (00:35:45) xrefdes C23 
-\i (00:35:45) xrefdes C24 
-\i (00:35:45) xrefdes C25 
-\i (00:35:45) xrefdes C26 
-\i (00:35:45) xrefdes C27 
-\i (00:35:45) xrefdes C28 
-\i (00:35:45) xrefdes C29 
-\i (00:35:45) xrefdes C30 
-\i (00:35:45) xrefdes C31 
-\i (00:35:45) xrefdes C32 
-\i (00:35:45) xrefdes C33 
-\i (00:35:45) xrefdes C34 
-\i (00:35:45) xrefdes C35 
-\i (00:35:45) xname_flush 
-\t (00:35:45) 2 Net(s) dehighlighted.
-\t (00:35:45) 22 Component(s) dehighlighted.
-\i (00:35:45) done 
-\i (00:35:45) etchedit 
-\i (00:35:54) xhilite 
-\i (00:35:54) xrefdes C14 
-\i (00:35:54) xrefdes C15 
-\i (00:35:54) xrefdes C16 
-\i (00:35:54) xNet Vcore 
-\i (00:35:54) xNet Gnd 
-\i (00:35:54) xrefdes C17 
-\i (00:35:54) xrefdes C18 
-\i (00:35:54) xrefdes C19 
-\i (00:35:54) xrefdes C20 
-\i (00:35:54) xrefdes C21 
-\i (00:35:54) xrefdes C22 
-\i (00:35:54) xrefdes C23 
-\i (00:35:54) xrefdes C24 
-\i (00:35:54) xrefdes C25 
-\i (00:35:54) xrefdes C26 
-\i (00:35:54) xrefdes C27 
-\i (00:35:54) xrefdes C28 
-\i (00:35:54) xrefdes C29 
-\i (00:35:54) xrefdes C30 
-\i (00:35:54) xrefdes C31 
-\i (00:35:54) xrefdes C32 
-\i (00:35:54) xrefdes C33 
-\i (00:35:54) xrefdes C34 
-\i (00:35:54) xrefdes C35 
-\i (00:35:54) xname_flush 
-\t (00:35:54) 2 Net(s) highlighted.
-\t (00:35:54) 22 Component(s) highlighted.
-\i (00:35:54) done 
-\i (00:35:54) etchedit 
-\i (00:35:55) xdehilite 
-\i (00:35:56) xrefdes C14 
-\i (00:35:56) xrefdes C15 
-\i (00:35:56) xrefdes C16 
-\i (00:35:56) xNet Vcore 
-\i (00:35:56) xNet Gnd 
-\i (00:35:56) xrefdes C17 
-\i (00:35:56) xrefdes C18 
-\i (00:35:56) xrefdes C19 
-\i (00:35:56) xrefdes C20 
-\i (00:35:56) xrefdes C21 
-\i (00:35:56) xrefdes C22 
-\i (00:35:56) xrefdes C23 
-\i (00:35:56) xrefdes C24 
-\i (00:35:56) xrefdes C25 
-\i (00:35:56) xrefdes C26 
-\i (00:35:56) xrefdes C27 
-\i (00:35:56) xrefdes C28 
-\i (00:35:56) xrefdes C29 
-\i (00:35:56) xrefdes C30 
-\i (00:35:56) xrefdes C31 
-\i (00:35:56) xrefdes C32 
-\i (00:35:56) xrefdes C33 
-\i (00:35:56) xrefdes C34 
-\i (00:35:56) xrefdes C35 
-\i (00:35:56) xname_flush 
-\t (00:35:56) 2 Net(s) dehighlighted.
-\t (00:35:56) 22 Component(s) dehighlighted.
-\i (00:35:56) done 
-\i (00:35:56) etchedit 
-\i (00:35:58) xhilite 
-\i (00:35:58) xrefdes C14 
-\i (00:35:58) xrefdes C15 
-\i (00:35:58) xrefdes C16 
-\i (00:35:58) xNet Vcore 
-\i (00:35:58) xNet Gnd 
-\i (00:35:58) xrefdes C17 
-\i (00:35:58) xrefdes C18 
-\i (00:35:58) xrefdes C19 
-\i (00:35:58) xrefdes C20 
-\i (00:35:58) xrefdes C21 
-\i (00:35:58) xrefdes C22 
-\i (00:35:58) xrefdes C23 
-\i (00:35:58) xrefdes C24 
-\i (00:35:58) xrefdes C25 
-\i (00:35:58) xrefdes C26 
-\i (00:35:58) xrefdes C27 
-\i (00:35:58) xrefdes C28 
-\i (00:35:58) xrefdes C29 
-\i (00:35:58) xrefdes C30 
-\i (00:35:58) xrefdes C31 
-\i (00:35:58) xrefdes C32 
-\i (00:35:58) xrefdes C33 
-\i (00:35:58) xrefdes C34 
-\i (00:35:58) xrefdes C35 
-\i (00:35:58) xname_flush 
-\t (00:35:58) 2 Net(s) highlighted.
-\t (00:35:58) 22 Component(s) highlighted.
-\i (00:35:58) done 
-\i (00:35:58) etchedit 
-\i (00:36:04) xdehilite 
-\i (00:36:04) xrefdes C14 
-\i (00:36:04) xrefdes C15 
-\i (00:36:04) xrefdes C16 
-\i (00:36:04) xNet Vcore 
-\i (00:36:04) xNet Gnd 
-\i (00:36:04) xrefdes C17 
-\i (00:36:04) xrefdes C18 
-\i (00:36:04) xrefdes C19 
-\i (00:36:04) xrefdes C20 
-\i (00:36:04) xrefdes C21 
-\i (00:36:04) xrefdes C22 
-\i (00:36:04) xrefdes C23 
-\i (00:36:04) xrefdes C24 
-\i (00:36:04) xrefdes C25 
-\i (00:36:04) xrefdes C26 
-\i (00:36:04) xrefdes C27 
-\i (00:36:04) xrefdes C28 
-\i (00:36:04) xrefdes C29 
-\i (00:36:04) xrefdes C30 
-\i (00:36:04) xrefdes C31 
-\i (00:36:04) xrefdes C32 
-\i (00:36:04) xrefdes C33 
-\i (00:36:04) xrefdes C34 
-\i (00:36:04) xrefdes C35 
-\i (00:36:04) xname_flush 
-\t (00:36:04) 2 Net(s) dehighlighted.
-\t (00:36:04) 22 Component(s) dehighlighted.
-\i (00:36:04) done 
-\i (00:36:04) etchedit 
-\i (00:39:56) pick grid 4362.66 16199.75
-\t (00:39:56) last pick:  4363.00  16200.00
-\i (00:39:57) exit 
-\e (00:39:57) Do you want to save the changes you made to C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd?
-\i (00:40:00) fillin yes 
-\t (00:40:00)     Journal end - Tue Nov 05 16:47:51 2013
+\t (00:00:01) Opening existing design...
+\d (00:00:01) Database opened: C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd
+\t (00:00:02) Grids are drawn 16.00, 16.00 apart for enhanced viewability.
+\i (00:00:02) trapsize 1340
+\i (00:00:02) trapsize 1322
+\i (00:00:02) trapsize 1343
+\i (00:00:02) trapsize 1351
+\i (00:00:02) trapsize 1351
+\i (00:00:03) etchedit 
+\i (00:01:23) prepopup 5986.09 15309.80
+\i (00:06:22) artwork 
+\i (00:06:34) setwindow form.film_control
+\i (00:06:34) FORM film_control general_parameters  
+\i (00:06:34) FORM film_control film_control  
+\i (00:06:35) FORM film_control missing_films  
+\i (00:06:37) FORM film_control filmtree  BOTTOM 
+\i (00:06:47) FORM film_control filmtree  ETCH/BOTTOM BOTTOM 
+\i (00:06:49) FORM film_control filmtree  PIN/BOTTOM BOTTOM 
+\i (00:06:50) FORM film_control filmtree  'VIA CLASS/BOTTOM' BOTTOM 
+\i (00:06:51) FORM film_control filmtree  ETCH/SIGNAL2 SIGNAL2 
+\i (00:06:52) FORM film_control filmtree  PIN/SIGNAL2 SIGNAL2 
+\i (00:06:52) FORM film_control filmtree  'VIA CLASS/SIGNAL2' SIGNAL2 
+\i (00:06:53) FORM film_control filmtree  SIGNAL3 
+\i (00:06:53) FORM film_control filmtree  ETCH/SIGNAL3 SIGNAL3 
+\i (00:06:54) FORM film_control filmtree  PIN/SIGNAL3 SIGNAL3 
+\i (00:06:54) FORM film_control filmtree  'VIA CLASS/SIGNAL3' SIGNAL3 
+\i (00:06:55) FORM film_control filmtree  PIN/TOP TOP 
+\i (00:06:56) FORM film_control filmtree  ETCH/TOP TOP 
+\i (00:06:56) FORM film_control filmtree  'VIA CLASS/TOP' TOP 
+\i (00:06:59) FORM film_control filmtree  ETCH/BOTTOM BOTTOM 
+\i (00:07:14) FORM film_control general_parameters  
+\i (00:08:09) FORM film_control film_control  
+\i (00:08:11) FORM film_control filmtree  BOTTOM 
+\i (00:08:16) FORM film_control select_all  
+\i (00:08:18) FORM film_control create  
+\t (00:08:18) Checking db records
+\t (00:08:18)     checking for orphans...
+\t (00:08:18)     Checked  38 percent
+\t (00:08:18)     Checked  76 percent
+\t (00:08:18)     Checked 100 percent
+\t (00:08:19) Done dbdoctor.
+\t (00:08:19) Starting Create artwork films...
+\t (00:08:22) Plot generated.
+\i (00:08:30) FORM film_control apertures  
+\i (00:08:32) setwindow form.apt_wheels
+\i (00:08:32) FORM apt_wheels cancel  
+\i (00:09:07) setwindow form.film_control
+\i (00:09:07) FORM film_control general_parameters  
+\i (00:09:12) FORM film_control film_control  
+\i (00:22:30) setwindow pcb
+\i (00:22:30) pick grid 4161.89 15661.13
+\t (00:22:30) last pick:  4162.00  15661.00
+\i (00:22:33) color192 
+\i (00:22:33) setwindow cvf.dialog
+\i (00:22:33) cvf layer_mode
+\i (00:23:30) cvf layers_visible stack-up stack-up/soldermask_top TRUE
+\i (00:23:33) cvf layers_visible stack-up stack-up/soldermask_bottom TRUE
+\i (00:23:40) cvf apply
+\i (00:23:57) cvf layer_tree_item 'Package Geometry'
+\i (00:23:58) cvf layer_tree_item 'Board Geometry'
+\i (00:24:18) setwindow form.film_control
+\i (00:24:18) FORM film_control load  
+\i (00:24:21) fillin "menu_cancel"
+\i (00:24:29) FORM film_control load  
+\i (00:24:35) fillin "art_param.txt"
+   (00:24:35) Loading cmds.cxt 
+   (00:24:35) Loading signal.cxt 
+   (00:24:35) *Error* eval: unbound variable - DEVICE
+   (00:24:35) *Error* load: error while loading file - "C:/Users/George/Documents/GitHub/Avalon/hardware/allegro/art_param.txt" at line 1
+   (00:24:35) ERROR
+\i (00:24:36) FORM film_control filmtree  BOTTOM 
+\i (00:24:38) FORM film_control filmtree  TOP 
+\i (00:25:14) setwindow cvf.dialog
+\i (00:25:14) cvf cancel
+\i (00:25:18) setwindow pcb
+\i (00:25:18) color 
+\i (00:25:18) setwindow form.cvf_main
+\i (00:25:18) FORM cvf_main class_list Stack-Up
+\i (00:25:36) FORM cvf_main class_list Geometry 
+\i (00:25:38) FORM cvf_main class_list Stack-Up 
+\i (00:25:40) FORM cvf_main class_list Geometry 
+\i (00:25:41) FORM cvf_main class_list Components 
+\i (00:25:41) FORM cvf_main class_list Manufacturing 
+\i (00:25:41) FORM cvf_main class_list Components 
+\i (00:25:43) FORM cvf_main class_list Manufacturing 
+\i (00:25:44) FORM cvf_main class_list Areas 
+\i (00:25:45) FORM cvf_main class_list Analysis 
+\i (00:25:45) FORM cvf_main class_list Display 
+\i (00:25:46) FORM cvf_main class_list Analysis 
+\i (00:25:46) FORM cvf_main class_list Areas 
+\i (00:25:46) FORM cvf_main class_list Manufacturing 
+\i (00:25:46) FORM cvf_main class_list Components 
+\i (00:25:46) FORM cvf_main class_list Geometry 
+\i (00:25:46) FORM cvf_main class_list Stack-Up 
+\i (00:25:54) setwindow pcb
+\i (00:25:54) film param 
+\e (00:25:56) Command not found: film
+\e (00:25:58) Command not found: filmparam
+\e (00:26:01) Command not found: film_param
+\i (00:26:03) film param 
+\i (00:26:05) setwindow form.film_control
+\i (00:26:05) FORM film_control filmtree  BOTTOM 
+\i (00:26:05) FORM film_control ok  
+\i (00:26:05) setwindow pcb
+\i (00:26:05) etchedit 
+\i (00:26:09) film param 
+\i (00:26:35) setwindow form.film_control
+\i (00:26:35) FORM film_control filmtree popup Add TOP 
+\i (00:26:45) fillin "SILK/TOP"
+\e (00:26:45) No directory component in name.
+\i (00:26:49) FORM film_control filmtree popup Add TOP 
+\i (00:26:51) fillin "SILK"
+\i (00:27:09) FORM film_control filmtree RENAME= SILK_TOP 
+\i (00:27:13) FORM film_control filmtree popup Add SILK_TOP 
+\i (00:27:17) fillin "SILK_BOTTOM"
+\i (00:27:20) FORM film_control filmtree popup Add SILK_BOTTOM 
+\i (00:27:24) fillin "MASK_TOP"
+\i (00:27:27) FORM film_control filmtree popup Add SILK_BOTTOM 
+\i (00:27:30) fillin "MASK_BOTTOM"
+\i (00:27:52) FORM film_control filmtree  'VIA KEEPOUT/ALL' SILK_TOP 
+\i (00:27:53) FORM film_control filmtree  'VIA KEEPOUT/TOP' SILK_TOP 
+\i (00:27:54) FORM film_control filmtree  'VIA KEEPOUT/ALL' SILK_TOP 
+\i (00:27:56) FORM film_control filmtree popup Cut 'VIA KEEPOUT/ALL' SILK_TOP 
+\i (00:27:57) FORM film_control filmtree  'VIA KEEPOUT/BOTTOM' SILK_TOP 
+\i (00:27:59) FORM film_control filmtree popup Cut 'VIA KEEPOUT/BOTTOM' SILK_TOP 
+\i (00:28:00) FORM film_control filmtree popup Cut 'VIA KEEPOUT/SIGNAL3' SILK_TOP 
+\i (00:28:01) FORM film_control filmtree popup Cut 'VIA KEEPOUT/SIGNAL2' SILK_TOP 
+\i (00:28:03) FORM film_control filmtree popup Cut 'VIA KEEPOUT/TOP' SILK_TOP 
+\i (00:28:06) FORM film_control filmtree  'VIA CLASS/SOLDERMASK_BOTTOM' SILK_TOP 
+\i (00:28:07) FORM film_control filmtree  'VIA CLASS/SOLDERMASK_TOP' SILK_TOP 
+\i (00:28:14) FORM film_control filmtree popup Cut 'VIA CLASS/PASTEMASK_TOP' SILK_TOP 
+\i (00:28:15) FORM film_control filmtree popup Cut 'VIA CLASS/PASTEMASK_BOTTOM' SILK_TOP 
+\i (00:28:17) FORM film_control filmtree popup Cut 'VIA CLASS/FILMMASKTOP' SILK_TOP 
+\i (00:28:19) FORM film_control filmtree popup Cut 'VIA CLASS/FILMMASKBOTTOM' SILK_TOP 
+\i (00:28:37) FORM film_control filmtree popup Cut TOLERANCE/SILKSCREEN_TOP SILK_TOP 
+\i (00:28:38) FORM film_control filmtree popup Cut TOLERANCE/SILKSCREEN_BOTTOM SILK_TOP 
+\i (00:28:40) FORM film_control filmtree popup Cut TOLERANCE/DISPLAY_TOP SILK_TOP 
+\i (00:28:42) FORM film_control filmtree popup Cut TOLERANCE/DISPLAY_BOTTOM SILK_TOP 
+\i (00:28:43) FORM film_control filmtree popup Cut 'ROUTE KEEPOUT/ALL' SILK_TOP 
+\i (00:28:44) FORM film_control filmtree popup Cut 'ROUTE KEEPOUT/BOTTOM' SILK_TOP 
+\i (00:28:46) FORM film_control filmtree popup Cut 'ROUTE KEEPOUT/SIGNAL3' SILK_TOP 
+\i (00:28:47) FORM film_control filmtree popup Cut 'ROUTE KEEPOUT/SIGNAL2' SILK_TOP 
+\i (00:28:48) FORM film_control filmtree popup Cut 'ROUTE KEEPOUT/TOP' SILK_TOP 
+\i (00:28:49) FORM film_control filmtree popup Cut 'ROUTE KEEPIN/ALL' SILK_TOP 
+\i (00:29:09) FORM film_control filmtree  SILK_TOP 
+\i (00:29:22) FORM film_control create  
+\w (00:29:22) No film records selected.
+\i (00:29:24) FORM film_control select_all  
+\i (00:29:25) FORM film_control create  
+\t (00:29:25) Checking db records
+\t (00:29:25)     checking for orphans...
+\t (00:29:25)     Checked  37 percent
+\t (00:29:25)     Checked  74 percent
+\t (00:29:25)     Checked 100 percent
+\t (00:29:25) Done dbdoctor.
+\t (00:29:25) Starting Create artwork films...
+\t (00:29:28) Plot generated.
+\i (00:30:11) FORM film_control load  
+\i (00:30:14) fillin "menu_cancel"
+\i (00:30:18) FORM film_control filmtree popup 'Add Manual' MASK_TOP 
+\i (00:30:21) FORM film_control filmtree  BOTTOM 
+\i (00:30:21) fillin "OUTLINE"
+\i (00:30:50) setwindow form.scl_browser
+\i (00:30:50) FORM scl_browser treelist 'MULTISEL YES' OUTLINE 'BOARD GEOMETRY' 
+\i (00:30:50) FORM scl_browser treelist  OUTLINE 'BOARD GEOMETRY' 
+\i (00:30:51) FORM scl_browser done  
+\i (00:30:56) setwindow form.film_control
+\i (00:30:56) FORM film_control select_all  
+\i (00:30:57) FORM film_control select_all  
+\i (00:30:57) FORM film_control filmtree 'MULTISEL NO' MASK_TOP 
+\i (00:30:57) FORM film_control filmtree  OUTLINE 
+\i (00:30:58) FORM film_control filmtree 'MULTISEL NO' OUTLINE 
+\i (00:30:59) FORM film_control filmtree 'MULTISEL NO' MASK_BOTTOM 
+\i (00:30:59) FORM film_control filmtree  MASK_BOTTOM 
+\i (00:30:59) FORM film_control filmtree 'MULTISEL NO' SILK_BOTTOM 
+\i (00:30:59) FORM film_control filmtree  SILK_BOTTOM 
+\i (00:31:00) FORM film_control filmtree 'MULTISEL NO' SILK_TOP 
+\i (00:31:00) FORM film_control filmtree  SILK_TOP 
+\i (00:31:00) FORM film_control filmtree 'MULTISEL NO' TOP 
+\i (00:31:00) FORM film_control filmtree  TOP 
+\i (00:31:01) FORM film_control filmtree 'MULTISEL NO' SIGNAL3 
+\i (00:31:01) FORM film_control filmtree  SIGNAL3 
+\i (00:31:01) FORM film_control filmtree 'MULTISEL NO' SIGNAL2 
+\i (00:31:01) FORM film_control filmtree  SIGNAL2 
+\i (00:31:01) FORM film_control filmtree 'MULTISEL NO' BOTTOM 
+\i (00:31:01) FORM film_control filmtree  BOTTOM 
+\i (00:31:02) FORM film_control filmtree  SILK_TOP 
+\i (00:31:06) FORM film_control filmtree popup Cut SILK_TOP 
+\i (00:31:08) FORM film_control filmtree popup Cut SILK_BOTTOM 
+\i (00:31:09) FORM film_control filmtree popup Cut MASK_BOTTOM 
+\i (00:31:12) FORM film_control filmtree popup Cut MASK_TOP 
+\i (00:31:13) FORM film_control load  
+\i (00:31:15) fillin "menu_cancel"
+\i (00:31:19) FORM film_control filmtree popup 'Add Manual' OUTLINE 
+\i (00:31:23) fillin "SILK_TOP"
+\i (00:31:25) setwindow form.scl_browser
+\i (00:31:25) FORM scl_browser treelist  'BOARD GEOMETRY' 
+\i (00:31:27) FORM scl_browser treelist  'COMPONENT VALUE' 
+\i (00:31:27) FORM scl_browser treelist  'DEVICE TYPE' 
+\i (00:31:27) FORM scl_browser treelist  'DRAWING FORMAT' 
+\i (00:31:27) FORM scl_browser treelist  'DRC ERROR CLASS' 
+\i (00:31:27) FORM scl_browser treelist  ETCH 
+\i (00:31:27) FORM scl_browser treelist  MANUFACTURING 
+\i (00:31:27) FORM scl_browser treelist  ANALYSIS 
+\i (00:31:27) FORM scl_browser treelist  'PACKAGE GEOMETRY' 
+\i (00:31:27) FORM scl_browser treelist  'PACKAGE KEEPIN' 
+\i (00:31:27) FORM scl_browser treelist  'PACKAGE KEEPOUT' 
+\i (00:31:27) FORM scl_browser treelist  PIN 
+\i (00:31:27) FORM scl_browser treelist  'REF DES' 
+\i (00:31:27) FORM scl_browser treelist  'ROUTE KEEPIN' 
+\i (00:31:27) FORM scl_browser treelist  'ROUTE KEEPOUT' 
+\i (00:31:27) FORM scl_browser treelist  TOLERANCE 
+\i (00:31:27) FORM scl_browser treelist  'USER PART NUMBER' 
+\i (00:31:28) FORM scl_browser treelist  'VIA CLASS' 
+\i (00:31:28) FORM scl_browser treelist  'VIA KEEPOUT' 
+\i (00:31:28) FORM scl_browser treelist  'ANTI ETCH' 
+\i (00:31:28) FORM scl_browser treelist  BOUNDARY 
+\i (00:31:28) FORM scl_browser treelist  'CONSTRAINT REGION' 
+\i (00:31:28) FORM scl_browser treelist  PLAN 
+\i (00:31:28) FORM scl_browser treelist  CAVITY 
+\i (00:31:28) FORM scl_browser treelist  'EMBEDDED GEOMETRY' 
+\i (00:31:29) FORM scl_browser treelist  CAVITY 
+\i (00:31:29) FORM scl_browser treelist  PLAN 
+\i (00:31:29) FORM scl_browser treelist  'CONSTRAINT REGION' 
+\i (00:31:30) FORM scl_browser treelist  BOUNDARY 
+\i (00:31:30) FORM scl_browser treelist  'ANTI ETCH' 
+\i (00:31:30) FORM scl_browser treelist  'VIA KEEPOUT' 
+\i (00:31:31) FORM scl_browser treelist  'VIA CLASS' 
+\i (00:31:31) FORM scl_browser treelist  'USER PART NUMBER' 
+\i (00:31:31) FORM scl_browser treelist  TOLERANCE 
+\i (00:31:32) FORM scl_browser treelist  'ROUTE KEEPOUT' 
+\i (00:31:32) FORM scl_browser treelist  'ROUTE KEEPIN' 
+\i (00:31:32) FORM scl_browser treelist  'REF DES' 
+\i (00:31:33) FORM scl_browser treelist  PIN 
+\i (00:31:33) FORM scl_browser treelist  'PACKAGE KEEPOUT' 
+\i (00:31:33) FORM scl_browser treelist  'PACKAGE KEEPIN' 
+\i (00:31:34) FORM scl_browser treelist  'PACKAGE GEOMETRY' 
+\i (00:31:34) FORM scl_browser treelist  ANALYSIS 
+\i (00:31:34) FORM scl_browser treelist  MANUFACTURING 
+\i (00:31:35) FORM scl_browser treelist  ETCH 
+\i (00:31:35) FORM scl_browser treelist  'DRC ERROR CLASS' 
+\i (00:31:35) FORM scl_browser treelist  'DRAWING FORMAT' 
+\i (00:31:36) FORM scl_browser treelist  'DEVICE TYPE' 
+\i (00:31:36) FORM scl_browser treelist  'COMPONENT VALUE' 
+\i (00:31:36) FORM scl_browser treelist  'BOARD GEOMETRY' 
+\i (00:32:47) FORM scl_browser treelist  'COMPONENT VALUE' 
+\i (00:32:48) FORM scl_browser treelist  ASSEMBLY_EMBEDDED 'COMPONENT VALUE' 
+\i (00:32:48) FORM scl_browser treelist  DISPLAY_EMBEDDED 'COMPONENT VALUE' 
+\i (00:32:49) FORM scl_browser treelist  DISPLAY_BOTTOM 'COMPONENT VALUE' 
+\i (00:32:49) FORM scl_browser treelist  DISPLAY_TOP 'COMPONENT VALUE' 
+\i (00:32:49) FORM scl_browser treelist  SILKSCREEN_BOTTOM 'COMPONENT VALUE' 
+\i (00:32:50) FORM scl_browser treelist  SILKSCREEN_TOP 'COMPONENT VALUE' 
+\i (00:32:51) FORM scl_browser treelist  'COMPONENT VALUE' 
+\i (00:32:53) FORM scl_browser treelist 'MULTISEL YES' SILKSCREEN_TOP 'COMPONENT VALUE' 
+\i (00:32:53) FORM scl_browser treelist  SILKSCREEN_TOP 'COMPONENT VALUE' 
+\i (00:32:54) FORM scl_browser treelist  'COMPONENT VALUE' 
+\i (00:32:58) FORM scl_browser treelist 'MULTISEL YES' SILKSCREEN_TOP 'DEVICE TYPE' 
+\i (00:32:58) FORM scl_browser treelist  SILKSCREEN_TOP 'DEVICE TYPE' 
+\i (00:33:12) FORM scl_browser treelist 'MULTISEL YES' SILKSCREEN_TOP 'PACKAGE GEOMETRY' 
+\i (00:33:12) FORM scl_browser treelist  SILKSCREEN_TOP 'PACKAGE GEOMETRY' 
+\i (00:33:29) FORM scl_browser treelist 'MULTISEL YES' SILKSCREEN_TOP 'REF DES' 
+\i (00:33:29) FORM scl_browser treelist  SILKSCREEN_TOP 'REF DES' 
+\i (00:33:35) FORM scl_browser treelist 'MULTISEL YES' SILKSCREEN_TOP 'USER PART NUMBER' 
+\i (00:33:35) FORM scl_browser treelist  SILKSCREEN_TOP 'USER PART NUMBER' 
+\i (00:33:47) FORM scl_browser done  
+\i (00:33:52) setwindow form.film_control
+\i (00:33:52) FORM film_control filmtree  'USER PART NUMBER/SILKSCREEN_TOP' 
+\i (00:33:52) FORM film_control filmtree  'PACKAGE GEOMETRY/SILKSCREEN_TOP' 
+\i (00:33:53) FORM film_control general_parameters  
+\i (00:33:53) FORM film_control film_control  
+\i (00:33:54) FORM film_control filmtree  'DEVICE TYPE/SILKSCREEN_TOP' 
+\i (00:33:56) FORM film_control filmtree 'MULTISEL YES' SILK_TOP 
+\i (00:33:56) FORM film_control filmtree  SILK_TOP 
+\i (00:33:56) FORM film_control filmtree 'MULTISEL NO' SILK_TOP 
+\i (00:33:59) FORM film_control ok  
+\i (00:33:59) setwindow pcb
+\i (00:33:59) etchedit 
+\i (00:34:07) film param 
+\i (00:34:14) setwindow form.film_control
+\i (00:34:14) FORM film_control filmtree popup 'Add Manual' SILK_TOP 
+\i (00:34:18) fillin "SILK_BOT"
+\i (00:34:20) setwindow form.scl_browser
+\i (00:34:20) FORM scl_browser treelist  'EMBEDDED GEOMETRY' 
+\i (00:34:21) FORM scl_browser treelist  CAVITY_OUTLINE 'EMBEDDED GEOMETRY' 
+\i (00:34:22) FORM scl_browser treelist  'EMBEDDED GEOMETRY' 
+\i (00:34:22) FORM scl_browser treelist  CAVITY 
+\i (00:34:23) FORM scl_browser treelist  PLAN 
+\i (00:34:25) FORM scl_browser treelist  'CONSTRAINT REGION' 
+\i (00:34:26) FORM scl_browser treelist  BOUNDARY 
+\i (00:34:27) FORM scl_browser treelist  'ANTI ETCH' 
+\i (00:34:28) FORM scl_browser treelist  'VIA KEEPOUT' 
+\i (00:34:29) FORM scl_browser treelist  'VIA CLASS' 
+\i (00:34:32) FORM scl_browser treelist  'VIA KEEPOUT' 
+\i (00:34:32) FORM scl_browser treelist  'VIA CLASS' 
+\i (00:34:34) FORM scl_browser treelist  TOP 'VIA CLASS' 
+\i (00:34:34) FORM scl_browser treelist  SIGNAL2 'VIA CLASS' 
+\i (00:34:34) FORM scl_browser treelist  SIGNAL3 'VIA CLASS' 
+\i (00:34:34) FORM scl_browser treelist  BOTTOM 'VIA CLASS' 
+\i (00:34:34) FORM scl_browser treelist  FILMMASKBOTTOM 'VIA CLASS' 
+\i (00:34:34) FORM scl_browser treelist  FILMMASKTOP 'VIA CLASS' 
+\i (00:34:35) FORM scl_browser treelist  PASTEMASK_BOTTOM 'VIA CLASS' 
+\i (00:34:35) FORM scl_browser treelist  PASTEMASK_TOP 'VIA CLASS' 
+\i (00:34:35) FORM scl_browser treelist  SOLDERMASK_BOTTOM 'VIA CLASS' 
+\i (00:34:35) FORM scl_browser treelist  'VIA CLASS' 
+\i (00:34:36) FORM scl_browser treelist  'USER PART NUMBER' 
+\i (00:34:37) FORM scl_browser treelist  ASSEMBLY_EMBEDDED 'USER PART NUMBER' 
+\i (00:34:38) FORM scl_browser treelist  DISPLAY_EMBEDDED 'USER PART NUMBER' 
+\i (00:34:38) FORM scl_browser treelist  DISPLAY_BOTTOM 'USER PART NUMBER' 
+\i (00:34:38) FORM scl_browser treelist  DISPLAY_TOP 'USER PART NUMBER' 
+\i (00:34:38) FORM scl_browser treelist  SILKSCREEN_BOTTOM 'USER PART NUMBER' 
+\i (00:34:42) FORM scl_browser treelist 'MULTISEL YES' SILKSCREEN_BOTTOM 'USER PART NUMBER' 
+\i (00:34:43) FORM scl_browser treelist  'USER PART NUMBER' 
+\i (00:34:46) FORM scl_browser treelist 'MULTISEL YES' SILKSCREEN_BOTTOM TOLERANCE 
+\i (00:34:46) FORM scl_browser treelist  SILKSCREEN_BOTTOM TOLERANCE 
+\i (00:34:47) FORM scl_browser treelist  TOLERANCE 
+\i (00:34:51) FORM scl_browser treelist 'MULTISEL YES' SILKSCREEN_BOTTOM 'REF DES' 
+\i (00:34:51) FORM scl_browser treelist  SILKSCREEN_BOTTOM 'REF DES' 
+\i (00:34:53) FORM scl_browser treelist  'REF DES' 
+\i (00:35:03) FORM scl_browser treelist 'MULTISEL YES' SILKSCREEN_BOTTOM 'PACKAGE GEOMETRY' 
+\i (00:35:03) FORM scl_browser treelist  SILKSCREEN_BOTTOM 'PACKAGE GEOMETRY' 
+\i (00:35:21) FORM scl_browser treelist 'MULTISEL YES' SILKSCREEN_BOTTOM 'DEVICE TYPE' 
+\i (00:35:21) FORM scl_browser treelist  SILKSCREEN_BOTTOM 'DEVICE TYPE' 
+\i (00:35:25) FORM scl_browser treelist 'MULTISEL YES' SILKSCREEN_BOTTOM 'COMPONENT VALUE' 
+\i (00:35:25) FORM scl_browser treelist  SILKSCREEN_BOTTOM 'COMPONENT VALUE' 
+\i (00:35:29) FORM scl_browser treelist 'MULTISEL YES' SILKSCREEN_BOTTOM 'BOARD GEOMETRY' 
+\i (00:35:29) FORM scl_browser treelist  SILKSCREEN_BOTTOM 'BOARD GEOMETRY' 
+\i (00:35:30) FORM scl_browser done  
+\i (00:35:35) setwindow form.film_control
+\i (00:35:35) FORM film_control load  
+\i (00:35:38) fillin "menu_cancel"
+\i (00:35:40) FORM film_control filmtree popup 'Add Manual' TOP 
+\i (00:35:44) fillin "MASK_TOP"
+\i (00:35:46) setwindow form.scl_browser
+\i (00:35:46) FORM scl_browser treelist  'EMBEDDED GEOMETRY' 
+\i (00:35:47) FORM scl_browser treelist  'BOARD GEOMETRY' 
+\i (00:35:48) FORM scl_browser treelist  NCROUTE_PATH 'BOARD GEOMETRY' 
+\i (00:35:49) FORM scl_browser treelist  WB_GUIDE_LINE 'BOARD GEOMETRY' 
+\i (00:35:49) FORM scl_browser treelist  OFF_GRID_AREA 'BOARD GEOMETRY' 
+\i (00:35:49) FORM scl_browser treelist  SOLDERMASK_BOTTOM 'BOARD GEOMETRY' 
+\i (00:35:49) FORM scl_browser treelist  SOLDERMASK_TOP 'BOARD GEOMETRY' 
+\i (00:35:49) FORM scl_browser treelist  ASSEMBLY_DETAIL 'BOARD GEOMETRY' 
+\i (00:35:50) FORM scl_browser treelist  SOLDERMASK_TOP 'BOARD GEOMETRY' 
+\i (00:35:50) FORM scl_browser treelist  SOLDERMASK_BOTTOM 'BOARD GEOMETRY' 
+\i (00:35:50) FORM scl_browser treelist  SOLDERMASK_TOP 'BOARD GEOMETRY' 
+\i (00:35:52) FORM scl_browser done  
+\i (00:35:54) setwindow form.film_control
+\i (00:35:54) FORM film_control filmtree  MASK_TOP 
+\i (00:35:55) FORM film_control filmtree popup 'Add Manual' MASK_TOP 
+\i (00:35:57) fillin "menu_cancel"
+\i (00:35:58) FORM film_control replace  
+\i (00:36:00) fillin "menu_cancel"
+\i (00:36:03) FORM film_control filmtree popup Cut MASK_TOP 
+\i (00:36:06) FORM film_control filmtree popup 'Add Manual' TOP 
+\i (00:36:10) FORM film_control filmtree  BOTTOM 
+\i (00:36:10) fillin "MASK_TOP"
+\i (00:37:00) setwindow form.scl_browser
+\i (00:37:00) FORM scl_browser treelist  'BOARD GEOMETRY' 
+\i (00:37:08) FORM scl_browser treelist 'MULTISEL YES' SOLDERMASK_TOP 'BOARD GEOMETRY' 
+\i (00:37:08) FORM scl_browser treelist  SOLDERMASK_TOP 'BOARD GEOMETRY' 
+\i (00:37:13) FORM scl_browser treelist  'EMBEDDED GEOMETRY' 
+\i (00:37:14) FORM scl_browser treelist  CAVITY 
+\i (00:37:14) FORM scl_browser treelist  PLAN 
+\i (00:37:15) FORM scl_browser treelist  'CONSTRAINT REGION' 
+\i (00:37:15) FORM scl_browser treelist  BOUNDARY 
+\i (00:37:15) FORM scl_browser treelist  'ANTI ETCH' 
+\i (00:37:16) FORM scl_browser treelist  'VIA KEEPOUT' 
+\i (00:37:16) FORM scl_browser treelist  'VIA CLASS' 
+\i (00:37:16) FORM scl_browser treelist  'USER PART NUMBER' 
+\i (00:37:17) FORM scl_browser treelist  TOLERANCE 
+\i (00:37:17) FORM scl_browser treelist  'ROUTE KEEPOUT' 
+\i (00:37:17) FORM scl_browser treelist  'ROUTE KEEPIN' 
+\i (00:37:18) FORM scl_browser treelist  'REF DES' 
+\i (00:37:18) FORM scl_browser treelist  PIN 
+\i (00:37:18) FORM scl_browser treelist  'PACKAGE KEEPOUT' 
+\i (00:37:19) FORM scl_browser treelist  'PACKAGE KEEPIN' 
+\i (00:37:19) FORM scl_browser treelist  'PACKAGE GEOMETRY' 
+\i (00:37:19) FORM scl_browser treelist  ANALYSIS 
+\i (00:37:20) FORM scl_browser treelist  MANUFACTURING 
+\i (00:37:20) FORM scl_browser treelist  ETCH 
+\i (00:37:20) FORM scl_browser treelist  'DRC ERROR CLASS' 
+\i (00:37:21) FORM scl_browser treelist  ETCH 
+\i (00:37:21) FORM scl_browser treelist  TOP ETCH 
+\i (00:37:21) FORM scl_browser treelist  SIGNAL2 ETCH 
+\i (00:37:21) FORM scl_browser treelist  SIGNAL3 ETCH 
+\i (00:37:21) FORM scl_browser treelist  BOTTOM ETCH 
+\i (00:37:22) FORM scl_browser treelist  MANUFACTURING 
+\i (00:37:22) FORM scl_browser treelist  BOTTOM ETCH 
+\i (00:37:23) FORM scl_browser treelist  SIGNAL3 ETCH 
+\i (00:37:23) FORM scl_browser treelist  SIGNAL2 ETCH 
+\i (00:37:23) FORM scl_browser treelist  TOP ETCH 
+\i (00:37:23) FORM scl_browser treelist  ETCH 
+\i (00:37:23) FORM scl_browser treelist  'DRC ERROR CLASS' 
+\i (00:37:24) FORM scl_browser treelist  'DRAWING FORMAT' 
+\i (00:37:24) FORM scl_browser treelist  'DEVICE TYPE' 
+\i (00:37:28) FORM scl_browser treelist  SOLDERMASK_TOP 'BOARD GEOMETRY' 
+\i (00:37:34) FORM scl_browser treelist 'MULTISEL YES' SOLDERMASK_TOP 'DRC ERROR CLASS' 
+\i (00:37:34) FORM scl_browser treelist  SOLDERMASK_TOP 'DRC ERROR CLASS' 
+\i (00:37:40) FORM scl_browser treelist 'MULTISEL YES' SOLDERMASK_TOP 'PACKAGE GEOMETRY' 
+\i (00:37:40) FORM scl_browser treelist  SOLDERMASK_TOP 'PACKAGE GEOMETRY' 
+\i (00:37:43) FORM scl_browser treelist 'MULTISEL YES' SOLDERMASK_TOP PIN 
+\i (00:37:43) FORM scl_browser treelist  SOLDERMASK_TOP PIN 
+\i (00:37:53) FORM scl_browser treelist 'MULTISEL YES' SOLDERMASK_TOP 'VIA CLASS' 
+\i (00:37:53) FORM scl_browser treelist  SOLDERMASK_TOP 'VIA CLASS' 
+\i (00:38:02) FORM scl_browser done  
+\i (00:38:06) setwindow form.film_control
+\i (00:38:06) FORM film_control ok  
+\i (00:38:06) setwindow pcb
+\i (00:38:06) etchedit 
+\i (00:38:10) film param 
+\i (00:38:15) setwindow form.film_control
+\i (00:38:15) FORM film_control filmtree popup 'Add Manual' TOP 
+\i (00:38:18) fillin "MASK_BOT"
+\i (00:38:21) setwindow form.scl_browser
+\i (00:38:21) FORM scl_browser treelist  'EMBEDDED GEOMETRY' 
+\i (00:38:23) FORM scl_browser treelist  CAVITY 
+\i (00:38:23) FORM scl_browser treelist  PLAN 
+\i (00:38:23) FORM scl_browser treelist  'CONSTRAINT REGION' 
+\i (00:38:24) FORM scl_browser treelist  BOUNDARY 
+\i (00:38:24) FORM scl_browser treelist  'ANTI ETCH' 
+\i (00:38:24) FORM scl_browser treelist  'VIA KEEPOUT' 
+\i (00:38:25) FORM scl_browser treelist  'VIA CLASS' 
+\i (00:38:25) FORM scl_browser treelist  'USER PART NUMBER' 
+\i (00:38:25) FORM scl_browser treelist  TOLERANCE 
+\i (00:38:25) FORM scl_browser treelist  'ROUTE KEEPOUT' 
+\i (00:38:26) FORM scl_browser treelist  'ROUTE KEEPIN' 
+\i (00:38:26) FORM scl_browser treelist  'REF DES' 
+\i (00:38:26) FORM scl_browser treelist  PIN 
+\i (00:38:27) FORM scl_browser treelist  'PACKAGE KEEPOUT' 
+\i (00:38:28) FORM scl_browser treelist  'PACKAGE KEEPIN' 
+\i (00:38:28) FORM scl_browser treelist  'PACKAGE GEOMETRY' 
+\i (00:38:28) FORM scl_browser treelist  ANALYSIS 
+\i (00:38:28) FORM scl_browser treelist  MANUFACTURING 
+\i (00:38:29) FORM scl_browser treelist  ETCH 
+\i (00:38:29) FORM scl_browser treelist  'DRC ERROR CLASS' 
+\i (00:38:29) FORM scl_browser treelist  'DRAWING FORMAT' 
+\i (00:38:30) FORM scl_browser treelist  'DEVICE TYPE' 
+\i (00:38:30) FORM scl_browser treelist  'COMPONENT VALUE' 
+\i (00:38:30) FORM scl_browser treelist  'BOARD GEOMETRY' 
+\i (00:38:40) FORM scl_browser treelist 'MULTISEL YES' SOLDERMASK_BOTTOM 'BOARD GEOMETRY' 
+\i (00:38:40) FORM scl_browser treelist  SOLDERMASK_BOTTOM 'BOARD GEOMETRY' 
+\i (00:38:46) FORM scl_browser treelist 'MULTISEL YES' SOLDERMASK_BOTTOM 'DRC ERROR CLASS' 
+\i (00:38:46) FORM scl_browser treelist  SOLDERMASK_BOTTOM 'DRC ERROR CLASS' 
+\i (00:38:54) FORM scl_browser treelist 'MULTISEL YES' SOLDERMASK_BOTTOM 'PACKAGE GEOMETRY' 
+\i (00:38:54) FORM scl_browser treelist  SOLDERMASK_BOTTOM 'PACKAGE GEOMETRY' 
+\i (00:39:00) FORM scl_browser treelist 'MULTISEL YES' SOLDERMASK_BOTTOM PIN 
+\i (00:39:00) FORM scl_browser treelist  SOLDERMASK_BOTTOM PIN 
+\i (00:39:12) FORM scl_browser treelist 'MULTISEL YES' SOLDERMASK_BOTTOM 'VIA CLASS' 
+\i (00:39:12) FORM scl_browser treelist  SOLDERMASK_BOTTOM 'VIA CLASS' 
+\i (00:39:23) FORM scl_browser done  
+\i (00:39:25) setwindow form.film_control
+\i (00:39:25) FORM film_control select_all  
+\i (00:39:26) FORM film_control domain_setting  
+\i (00:39:35) setwindow form.film_domain
+\i (00:39:35) FORM film_domain close  
+\i (00:39:38) setwindow form.film_control
+\i (00:39:38) FORM film_control select_all  
+\i (00:39:39) FORM film_control create  
+\t (00:39:39) Checking db records
+\t (00:39:39)     checking for orphans...
+\t (00:39:39)     Checked  37 percent
+\t (00:39:39)     Checked  74 percent
+\t (00:39:39)     Checked 100 percent
+\t (00:39:39) Done dbdoctor.
+\t (00:39:39) Starting Create artwork films...
+\t (00:39:41) Plot generated.
+\i (00:42:22) setwindow pcb
+\i (00:42:22) zoom in 1 
+\i (00:42:22) setwindow pcb
+\i (00:42:22) zoom in 7156.28 15471.95
+\i (00:42:22) trapsize 676
+\i (00:42:23) zoom in 1 
+\i (00:42:23) setwindow pcb
+\i (00:42:23) zoom in 7156.28 15471.95
+\t (00:42:23) Grids are drawn 4.00, 4.00 apart for enhanced viewability.
+\i (00:42:23) trapsize 338
+\i (00:42:24) zoom out 1 
+\i (00:42:24) setwindow pcb
+\i (00:42:24) zoom out 7203.58 15373.99
+\t (00:42:24) Grids are drawn 16.00, 16.00 apart for enhanced viewability.
+\i (00:42:24) trapsize 676
+\i (00:42:24) zoom out 1 
+\i (00:42:24) setwindow pcb
+\i (00:42:24) zoom out 7091.43 15361.83
+\i (00:42:24) trapsize 1351
+\i (00:42:25) zoom in 1 
+\i (00:42:25) setwindow pcb
+\i (00:42:25) zoom in 7007.64 15248.32
+\i (00:42:25) trapsize 676
+\i (00:42:25) zoom out 1 
+\i (00:42:25) setwindow pcb
+\i (00:42:25) zoom out 7002.23 15255.08
+\i (00:42:25) trapsize 1351
+\i (00:42:27) zoom in 1 
+\i (00:42:27) setwindow pcb
+\i (00:42:27) zoom in 6980.61 15228.06
+\i (00:42:27) trapsize 676
+\i (00:42:27) zoom in 1 
+\i (00:42:27) setwindow pcb
+\i (00:42:27) zoom in 6980.61 15283.46
+\t (00:42:27) Grids are drawn 4.00, 4.00 apart for enhanced viewability.
+\i (00:42:27) trapsize 338
+\i (00:42:27) zoom in 1 
+\i (00:42:27) setwindow pcb
+\i (00:42:27) zoom in 6980.61 15283.46
+\i (00:42:27) trapsize 169
+\i (00:42:27) zoom in 1 
+\i (00:42:27) setwindow pcb
+\i (00:42:27) zoom in 6980.62 15283.46
+\i (00:42:27) trapsize 84
+\i (00:42:27) zoom in 1 
+\i (00:42:27) setwindow pcb
+\i (00:42:27) zoom in 6980.62 15283.46
+\i (00:42:27) trapsize 42
+\i (00:42:28) zoom out 1 
+\i (00:42:28) setwindow pcb
+\i (00:42:28) zoom out 6980.63 15283.47
+\i (00:42:28) trapsize 84
+\i (00:42:28) zoom out 1 
+\i (00:42:28) setwindow pcb
+\i (00:42:28) zoom out 6968.80 15282.28
+\i (00:42:28) trapsize 169
+\i (00:42:29) pick grid tgl 6918.46 15310.65
+\t (00:42:29) last pick:  6918.00  15311.00
+\i (00:42:31) prepopup 6896.50 15403.55
+\i (00:42:35) etchedit 
+\i (00:42:36) pick grid 6914.41 15305.92
+\t (00:42:36) last pick:  6914.00  15306.00
+\i (00:42:36) add connect 
+\t (00:42:36) Pick first element.
+\t (00:42:36) Target Symbol Pin is defined on TOP.
+\t (00:42:36) last pick:  6916.18  15309.87
+\i (00:42:37) mouse_pos 6914.41 15305.92
+\i (00:42:37) mouse_pos 6937.72 15304.91
+\i (00:42:37) mouse_pos 6939.40 15333.62
+\i (00:42:38) prepopup 6932.31 15362.67
+\i (00:42:39) cancel 
+\i (00:42:39) etchedit 
+\i (00:42:40) pick grid tgl 6945.82 15315.38
+\t (00:42:40) last pick:  6946.00  15315.00
+\i (00:42:43) pick grid tgl 6981.29 15319.77
+\t (00:42:43) last pick:  6981.00  15320.00
+\i (00:42:44) pick grid tgl 7004.60 15316.73
+\t (00:42:44) last pick:  7005.00  15317.00
+\i (00:42:45) pick grid tgl 6998.86 15279.57
+\t (00:42:45) last pick:  6999.00  15280.00
+\i (00:42:46) pick grid tgl 6970.15 15277.88
+\t (00:42:46) last pick:  6970.00  15278.00
+\i (00:42:47) pick grid tgl 6946.16 15277.88
+\t (00:42:47) last pick:  6946.00  15278.00
+\i (00:42:48) pick grid tgl 6906.97 15280.25
+\t (00:42:48) last pick:  6907.00  15280.00
+\i (00:42:48) prepopup 6915.08 15281.60
+\i (00:42:50) pop dyn_option_select @:@Delete 
+\i (00:42:50) delete 
+\i (00:42:50) etchedit 
+\i (00:42:51) pick grid tgl 6955.62 15289.03
+\t (00:42:51) last pick:  6956.00  15289.00
+\i (00:42:51) pick grid tgl 6938.73 15306.26
+\t (00:42:51) last pick:  6939.00  15306.00
+\i (00:42:52) pick grid tgl 6934.68 15312.00
+\t (00:42:52) last pick:  6935.00  15312.00
+\i (00:42:53) pick grid tgl 6962.38 15282.28
+\t (00:42:53) last pick:  6962.00  15282.00
+\i (00:42:53) prepopup 6957.98 15285.65
+\i (00:42:54) pop dyn_option_select @:@Delete 
+\i (00:42:54) delete 
+\i (00:42:54) etchedit 
+\i (00:42:54) zoom out 1 
+\i (00:42:54) setwindow pcb
+\i (00:42:54) zoom out 6929.61 15394.77
+\i (00:42:54) trapsize 338
+\i (00:42:55) save 
+\i (00:42:57) fillin yes 
+\i (00:42:57) etchedit 
+\i (00:43:00) roam y 96 
+\i (00:43:00) roam y 96
+\i (00:43:00) roam x -96 
+\i (00:43:00) roam x -96
+\i (00:43:00) roam y 96 
+\i (00:43:00) roam y 96
+\i (00:43:01) Esc 
+\i (00:43:05) film param 
+\i (00:43:08) setwindow form.film_control
+\i (00:43:08) FORM film_control select_all  
+\i (00:43:08) FORM film_control create  
+\t (00:43:08) Checking db records
+\t (00:43:08)     checking for orphans...
+\t (00:43:08)     Checked  37 percent
+\t (00:43:08)     Checked  74 percent
+\t (00:43:08)     Checked 100 percent
+\t (00:43:08) Done dbdoctor.
+\t (00:43:08) Starting Create artwork films...
+\t (00:43:10) Plot generated.
+\i (00:50:12) setwindow pcb
+\i (00:50:12) nctape_full 
+\w (00:50:12) WARNING(SPMHMF-272): NC Parameters file 'nc_param.txt' not found ... loading defaults.
+\i (00:50:36) setwindow form.nc_drill
+\i (00:50:36) FORM nc_drill tape_name drills.drl 
+\i (00:50:37) FORM nc_drill execute  
+\w (00:50:37) WARNING(SPMHMF-269): Design contains slot holes that can not be drilled. They can be processed by NC Route instead.
+\t (00:50:37) Starting NC Drill...
+\i (00:51:16) FORM nc_drill parameters  
+\i (00:51:24) setwindow form.nc_parameters
+\i (00:51:24) FORM nc_parameters done  
+\i (00:51:32) setwindow pcb
+\i (00:51:32) ncdrill customization 
+\i (00:52:02) setwindow form.nc_drillcustomization
+\i (00:52:02) FORM nc_drillcustomization done  
+\i (00:52:08) setwindow pcb
+\i (00:52:08) nctape_full 
+\i (00:53:35) ncdrill param 
+\i (00:53:42) setwindow form.nc_parameters
+\i (00:53:42) FORM nc_parameters done  
+\i (00:53:47) setwindow pcb
+\i (00:53:47) nctape_full 
+\i (00:53:49) setwindow form.nc_drill
+\i (00:53:49) FORM nc_drill auto_tool_select YES 
+\e (00:53:49) Program has encountered a problem and must exit. The design will be saved as a .SAV file that can be recovered using dbdoctor (if applicable). To resolve problem, first obtain the latest software update from Cadence and if the problem persists contact Cadence Customer Support. In addition to the data Cadence support requests; please provide the MiniDump files found in folder "C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro".
+\i (00:53:59) fillin confirm
+\e (00:54:00) Saving database as 'C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.SAV'.
+\t (00:54:00)     Journal end - Wed Nov 06 10:58:49 2013
