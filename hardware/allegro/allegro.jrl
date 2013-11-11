@@ -6652,4 +6652,250 @@
 \i (123:32:52) roam y -16
 \i (123:32:52) roam x -16
 \i (123:32:53) roam end
-\i (123:32:54) roam 
+\i (123:32:54) roam start
+\i (123:32:54) roam x -64
+\i (123:32:54) roam y -16
+\i (123:32:54) roam x -80
+\i (123:32:54) roam y -48
+\i (123:32:54) roam x -16
+\i (123:32:54) roam x -32
+\i (123:32:54) roam y -16
+\i (123:32:54) roam x -16
+\i (123:32:54) roam x -16
+\i (123:32:54) roam y -16
+\i (123:32:55) roam x 48
+\i (123:32:55) roam y 16
+\i (123:32:55) roam x 16
+\i (123:32:55) roam y 16
+\i (123:32:55) roam x 16
+\i (123:32:55) roam x 16
+\i (123:32:55) roam y 16
+\i (123:32:55) roam x 16
+\i (123:32:55) roam x 16
+\i (123:32:55) roam y 16
+\i (123:32:56) roam end
+\i (123:32:57) prepopup 6202.22 16421.70
+\i (123:32:59) setwindow form.find
+\i (123:32:59) FORM find all_on  
+\i (123:33:01) setwindow pcb
+\i (123:33:01) roam start
+\i (123:33:01) roam x -32
+\i (123:33:01) roam y 64
+\i (123:33:01) roam x -32
+\i (123:33:01) roam y 48
+\i (123:33:01) roam y 32
+\i (123:33:01) roam x 16
+\i (123:33:01) roam y 48
+\i (123:33:01) roam x 112
+\i (123:33:01) roam y 32
+\i (123:33:01) roam x 160
+\i (123:33:01) roam x 112
+\i (123:33:01) roam y -48
+\i (123:33:01) roam x 48
+\i (123:33:01) roam y -48
+\i (123:33:01) roam x 16
+\i (123:33:01) roam y -48
+\i (123:33:01) roam x 16
+\i (123:33:01) roam y -32
+\i (123:33:01) roam x 16
+\i (123:33:01) roam y -32
+\i (123:33:02) roam y -32
+\i (123:33:02) roam x -80
+\i (123:33:02) roam y -16
+\i (123:33:02) roam x -64
+\i (123:33:02) roam x -32
+\i (123:33:02) roam y 16
+\i (123:33:02) roam x -32
+\i (123:33:02) roam x -80
+\i (123:33:02) roam y 16
+\i (123:33:02) roam x -48
+\i (123:33:02) roam x -48
+\i (123:33:02) roam x -16
+\i (123:33:02) roam x -16
+\i (123:33:02) roam end
+\i (123:33:05) save 
+\i (123:33:06) fillin yes 
+\i (123:33:06) etchedit 
+\i (123:33:28) artwork 
+\i (123:33:31) setwindow form.film_control
+\i (123:33:31) FORM film_control select_all  
+\i (123:33:33) FORM film_control create  
+\t (123:33:33) Checking db records
+\t (123:33:33)     checking for orphans...
+\t (123:33:33)     Checked  27 percent
+\t (123:33:33)     Checked  54 percent
+\t (123:33:33)     Checked  81 percent
+\t (123:33:33)     Checked 100 percent
+\w (123:33:33) Run batch DRC to correctly regenerate DRC errs.
+
+\t (123:33:33) Done dbdoctor.
+\t (123:33:33) Starting Create artwork films...
+\w (123:33:33) WARNING(SPMHGE-269): artwork had warnings, use Viewlog to review the log file.
+\w (123:33:34) Artwork generated with warnings.
+\i (123:33:58) setwindow text
+\i (123:33:58) close 
+\i (123:34:00) setwindow form.film_control
+\i (123:34:00) FORM film_control viewlog  
+\i (123:34:05) setwindow text
+\i (123:34:05) close 
+\i (123:34:07) setwindow form.film_control
+\i (123:34:07) FORM film_control ok  
+\i (123:34:07) setwindow pcb
+\i (123:34:07) etchedit 
+\i (123:34:11) nctape_full 
+\i (123:34:13) setwindow form.nc_drill
+\i (123:34:13) FORM nc_drill execute  
+\w (123:34:13) WARNING(SPMHMF-269): Design contains slot holes that can not be drilled. They can be processed by NC Route instead.
+\t (123:34:13) Starting NC Drill...
+\i (123:34:16) FORM nc_drill close  
+\i (123:34:16) setwindow pcb
+\i (123:34:16) etchedit 
+\i (123:42:15) roam start
+\i (123:42:15) roam y -64
+\i (123:42:15) roam y -64
+\i (123:42:15) roam x -16
+\i (123:42:15) roam x -16
+\i (123:42:15) roam y -48
+\i (123:42:15) roam x -32
+\i (123:42:15) roam y -32
+\i (123:42:16) roam x -16
+\i (123:42:16) roam y 16
+\i (123:42:16) roam y 16
+\i (123:42:16) roam y 16
+\i (123:42:16) roam y 16
+\i (123:42:16) roam y 16
+\i (123:42:17) roam y 16
+\i (123:42:17) roam x 16
+\i (123:42:23) roam x 48
+\i (123:42:24) roam x 16
+\i (123:42:24) roam y 32
+\i (123:42:24) roam y 16
+\i (123:42:24) roam y 16
+\i (123:42:24) roam y 16
+\i (123:42:24) roam x -16
+\i (123:42:24) roam y 32
+\i (123:42:25) roam x -16
+\i (123:42:25) roam y 16
+\i (123:42:25) roam x -16
+\i (123:42:25) roam y 16
+\i (123:42:25) roam y 16
+\i (123:42:25) roam y 16
+\i (123:42:25) roam x -16
+\i (123:42:25) roam x -16
+\i (123:42:25) roam y 16
+\i (123:42:25) roam y 16
+\i (123:42:26) roam x -16
+\i (123:42:26) roam y 16
+\i (123:42:26) roam x -16
+\i (123:42:26) roam x -16
+\i (123:42:26) roam y 16
+\i (123:42:26) roam x -16
+\i (123:42:26) roam x -16
+\i (123:42:26) roam x -32
+\i (123:42:26) roam y 16
+\i (123:42:26) roam x -32
+\i (123:42:26) roam y 16
+\i (123:42:27) zoom in 1 
+\i (123:42:27) setwindow pcb
+\i (123:42:27) zoom in 5429.31 15840.67
+\t (123:42:27) Grids are drawn 4.00, 4.00 apart for enhanced viewability.
+\i (123:42:27) trapsize 338
+\i (123:42:28) roam y 16
+\i (123:42:28) roam y 16
+\i (123:42:28) roam y 16
+\i (123:42:28) roam y 16
+\i (123:42:28) roam y 16
+\i (123:42:29) roam y 16
+\i (123:42:29) roam end
+\i (123:42:30) zoom in 1 
+\i (123:42:30) setwindow pcb
+\i (123:42:30) zoom in 5363.77 15898.77
+\i (123:42:30) trapsize 169
+\i (123:42:31) pick grid 5339.12 15906.21
+\t (123:42:31) last pick:  5339.00  15906.00
+\i (123:42:31) add connect 
+\t (123:42:31) Pick first element.
+\t (123:42:31) Target Symbol Pin is defined from TOP to BOTTOM.
+\t (123:42:31) last pick:  5340.00  15910.00
+\i (123:42:32) prepopup 5336.08 15887.63
+\i (123:42:33) cancel 
+\i (123:42:33) etchedit 
+\i (123:42:34) prepopup 5338.10 15901.81
+\i (123:42:35) pick grid 5331.35 15897.76
+\t (123:42:35) last pick:  5331.00  15898.00
+\i (123:42:35) add connect 
+\t (123:42:36) Pick first element.
+\t (123:42:36) Target Symbol Pin is defined from TOP to BOTTOM.
+\t (123:42:36) last pick:  5340.00  15910.00
+\i (123:42:36) prepopup 5338.44 15899.79
+\i (123:42:38) cancel 
+\i (123:42:38) etchedit 
+\i (123:42:47) zoom out 1 
+\i (123:42:47) setwindow pcb
+\i (123:42:47) zoom out 5481.34 15837.97
+\i (123:42:47) trapsize 338
+\i (123:42:48) zoom in 1 
+\i (123:42:48) setwindow pcb
+\i (123:42:48) zoom in 5367.15 15878.50
+\i (123:42:48) trapsize 169
+\i (123:43:02) prepopup 5340.81 15907.56
+\i (123:43:05) pop dyn_option_select 'Modify design padstack@:@Single instance' 
+\i (123:43:05) mod padstack 
+\i (123:43:09) setwindow form.padedit
+\i (123:43:09) FORM padedit layers  
+\i (123:43:46) pse_exit
+\i (123:43:46) setwindow pcb
+\i (123:43:46) etchedit 
+\i (123:43:47) prepopup 5345.20 15909.59
+\i (123:43:49) pop dyn_option_select 'Modify design padstack@:@All instances' 
+\i (123:43:49) mod padstack 
+\i (123:43:55) setwindow form.padedit
+\i (123:43:55) FORM padedit parameters  
+\i (123:43:58) FORM padedit layers  
+\i (123:44:00) FORM padedit parameters  
+\i (123:44:22) FORM padedit layers  
+\i (123:44:34) FORM padedit grid row top 
+\i (123:44:38) FORM padedit width 23 
+\i (123:44:39) FORM padedit height 23 
+\i (123:44:42) FORM padedit grid row signal2 
+\i (123:44:43) FORM padedit width 23.00 
+\i (123:44:44) FORM padedit grid row signal3 
+\i (123:44:46) FORM padedit width 23.00 
+\i (123:44:46) FORM padedit grid row default_internal 
+\i (123:44:49) FORM padedit width 23.00 
+\i (123:44:49) FORM padedit grid row bottom 
+\i (123:44:52) FORM padedit width 23.00 
+\i (123:44:53) FORM padedit grid row soldermask_top 
+\i (123:45:04) FORM padedit width 23.00 
+\i (123:45:04) FORM padedit grid row soldermask_bottom 
+\i (123:45:06) FORM padedit width 23.00 
+\i (123:45:06) FORM padedit grid row pastemask_top 
+\i (123:45:09) FORM padedit width 23.00 
+\i (123:45:09) FORM padedit grid row pastemask_bottom 
+\i (123:45:09) FORM padedit grid row pastemask_top 
+\i (123:45:12) FORM padedit grid row pastemask_bottom 
+\i (123:45:14) FORM padedit width 23.00 
+\i (123:45:14) FORM padedit grid row filmmask_top 
+\i (123:45:16) FORM padedit width 23.00 
+\i (123:45:16) FORM padedit grid row filmmask_bottom 
+\i (123:45:19) FORM padedit width 23.00 
+\i (123:45:19) FORM padedit parameters  
+\i (123:45:24) pse_update_exit 
+\t (123:45:25) DRC Required please wait...
+\t (123:45:25) Performing DRC...
+\t (123:45:25) Multithreaded DRC update (8 threads).
+\t (123:45:26) No DRC errors detected.
+\i (123:45:26) setwindow pcb
+\i (123:45:26) etchedit 
+\i (123:46:53) prepopup 5391.82 15749.46
+\i (123:46:54) pick grid 5390.46 15748.11
+\t (123:46:54) last pick:  5390.00  15748.00
+\i (123:46:54) add connect 
+\t (123:46:54) Pick first element.
+\t (123:46:54) last pick:  5392.64  15748.69
+\i (123:46:55) prepopup 5391.82 15747.44
+\i (123:46:57) cancel 
+\i (123:46:57) etchedit 
+\i (123:46:58) prepopup 5392.49 15749.12
+\i (123:47:00) pop dyn_option_select 'Modify design padstack@:@All instances' 
+\i (123:47:00) mod pa
