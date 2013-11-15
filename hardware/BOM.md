@@ -12,20 +12,20 @@ Bill Of Materials       November 12,2013      23:07:57	Page1
 Item	Quantity	Reference	Part
 ______________________________________________
 
-1.	*330uF	cap_2917* **2x	C1,C2**
-2.	*22uF	cap_0603* **1x	C3**
-3.	*1200pF	cap_0603* **2x	C4,C5**
-4.	*0.1uF	cap_0603* **1x	C6**
-5.	*0.022uF	cap_0603* **1x	C7**
-6.	*1uF	cap_0603* **2x	C8,C9**
-7.	*4.7uF	cap_1206* **4x	C10,C11,C12,C13**
-8.	*22uF	cap_1206* **22x	C14,C15,C16,C17,C18,C19,
+1.	[*330uF	cap_2917* **2x	C1,C2**](http://www.digikey.com/product-search/en?pv7=2&k=Panasonic+2R5TPE330MI&mnonly=0&newproducts=0&ColumnSort=0&page=1&quantity=0&ptm=0&fid=0&pageSize=25)
+2.	[*22uF	cap_0603* **1x	C3**](http://www.digikey.com/product-detail/en/C1608X5R0J226M080AC/445-8028-1-ND/2792158)
+3.	[*1200pF	cap_0603* **2x	C4,C5**](http://www.digikey.com/product-detail/en/GRM188R72A122KA01D/490-1474-1-ND/587849)
+4.	[*0.1uF	cap_0603* **1x	C6**](http://www.digikey.com/product-detail/en/C1608X7R1H104K080AA/445-1314-1-ND/567687)
+5.	[*0.022uF	cap_0603* **1x	C7**](http://www.digikey.com/product-detail/en/C1608X7R1H223K080AA/445-1312-1-ND/567696)
+6.	[*1uF	cap_0603* **2x	C8,C9**](http://www.digikey.com/product-detail/en/TMK107BJ105KA-T/587-1248-1-ND/931025)
+7.	[*4.7uF	cap_1206* **4x	C10,C11,C12,C13**](http://www.digikey.com/product-detail/en/C3216X5R1E475K115AB/445-14683-1-ND/3956349)
+8.	[*22uF	cap_1206* **22x	C14,C15,C16,C17,C18,C19,
 			C20,C21,C22,C23,C24,C25,
 			C26,C27,C28,C29,C30,C31,
-			C32,C33,C34,C35**
-9.	*0.01uF	cap_0603* **6x	C36,C38,C40,C42,C44,C46**
-10.	*4.7uF	cap_0603* **5x	C37,C39,C41,C43,C45**
-11.	*0.47uF	cap_0603* **120x	C47,C48,C49,C50,C51,C52,
+			C32,C33,C34,C35**](http://www.digikey.com/product-search/en?pv7=2&k=avx+12066D226MAT&mnonly=0&newproducts=0&ColumnSort=0&page=1&quantity=0&ptm=0&fid=0&pageSize=25)
+9.	[*0.01uF	cap_0603* **6x	C36,C38,C40,C42,C44,C46**](http://www.digikey.com/product-detail/en/CL10B103KB8NCNC/1276-1921-1-ND/3890007)
+10.	[*4.7uF	cap_0603* **5x	C37,C39,C41,C43,C45**](http://www.digikey.com/product-detail/en/CL10B475KQ8NQNC/1276-2087-1-ND/3890173)
+11.	[*0.47uF	cap_0603* **120x	C47,C48,C49,C50,C51,C52,
 			C53,C54,C55,C56,C57,C58,
 			C59,C60,C61,C62,C63,C64,
 			C65,C66,C67,C68,C69,C70,
@@ -47,8 +47,8 @@ ______________________________________________
 			C151,C152,C153,C154,C155,
 			C156,C157,C158,C159,C160,
 			C161,C162,C163,C164,C165,
-			C166**
-12.	*30pF	cap_0603* **1x	C167**
+			C166**](http://www.digikey.com/product-detail/en/CC0603KRX7R8BB473/311-1373-1-ND/2103157)
+12.	[*30pF	cap_0603* **1x	C167**](http://www.digikey.com/product-detail/en/CL10C300JB8NNNC/1276-1021-1-ND/3889107)
 13.	*XuF	cap_0603* **2x	C168,C169**
 14.	[*CMDSH-3	SOD323* **1x	D1**](http://www.digikey.com/product-search/en?pv7=2&k=CMDSH-3&mnonly=0&newproducts=0&ColumnSort=0&page=1&quantity=0&ptm=0&fid=0&pageSize=25)
 15.	[*LED	apa3010srcprv-gx* **4x	D2,D3,D4,D5**](http://www.digikey.com/product-search/en?pv7=2&k=apa3010srcprv-gx&mnonly=0&newproducts=0&ColumnSort=0&page=1&quantity=0&ptm=0&fid=0&pageSize=25)
