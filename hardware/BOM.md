@@ -80,16 +80,16 @@ ______________________________________________
 39.	*10k	res_0603* **1x	R33**
 40.	*10	res_0603* **1x	R34**
 41.	*470	res_0603* **1x	R35**
-42.	*LM27213	DGG* **1x	U1**
-43.	*AP1117IE33G-13	sot224* **1x	U3**
-44.	*KA78L05AIDTF	8-soic* **1x	U4**
-45.	*IDT74FCT3807APYG	20-ssop* **1x	U5**
-46.	*ASDMB-25.000MHz	4-smd-dfnllc* **1x	U6**
-47.	*PIC18F45K50	40-ufqfn* **1x	U7**
+42.	[*LM27213	DGG* **1x	U1**](http://www.digikey.com/product-detail/en/LM27213MTD%2FNOPB/LM27213MTD%2FNOPB-ND/1871068)
+43.	[*AP1117IE33G-13	sot224* **1x	U3**](http://www.digikey.com/product-search/en?pv7=2&k=AP1117IE33G-13&mnonly=0&newproducts=0&ColumnSort=0&page=1&quantity=0&ptm=0&fid=0&pageSize=25)
+44.	[*KA78L05AIDTF	8-soic* **1x	U4**](http://www.digikey.com/product-search/en?pv7=2&k=KA78L05AIDTF&mnonly=0&newproducts=0&ColumnSort=0&page=1&quantity=0&ptm=0&fid=0&pageSize=25)
+45.	[*IDT74FCT3807APYG	20-ssop* **1x	U5**](http://www.digikey.com/product-search/en?pv252=3&FV=1c0002&k=IDT74FCT3807APYG&mnonly=0&newproducts=0&ColumnSort=0&page=1&quantity=0&ptm=0&fid=0&pageSize=25)
+46.	[*ASDMB-25.000MHz	4-smd-dfnllc* **1x	U6**](http://www.digikey.com/product-detail/en/ASDMB-25.000MHZ-LC-T/535-11730-1-ND/2809943)
+47.	[*PIC18F45K50	40-ufqfn* **1x	U7**](http://www.digikey.com/product-detail/en/PIC18F45K50-I%2FMV/PIC18F45K50-I%2FMV-ND/3671504)
 48.	*BitSyncom A3255Q48	QFN48* **10x	U8,U9,U10,U11,U12,U13,
 			U14,U15,U16,U17**
-49.	*74AUP2G02GF,115	8-xson* **1x	U18**
-50.	*NL27WZ14DFT2G	sc-88* **1x	U19**
-51.	*LM63	TI_D_R_PDSO_G8* **1x	U20**
-52.	*CSD86350Q5D	QFN127P600X500X150-9N* **1x	U21**
+49.	[*74AUP2G02GF,115	8-xson* **1x	U18**](http://www.digikey.com/product-search/en?pv7=2&k=74AUP2G02GF%2C115&mnonly=0&newproducts=0&ColumnSort=0&page=1&quantity=0&ptm=0&fid=0&pageSize=25)
+50.	[*NL27WZ14DFT2G	sc-88* **1x	U19**](http://www.digikey.com/product-search/en?pv7=2&k=NL27WZ14DFT2G&mnonly=0&newproducts=0&ColumnSort=0&page=1&quantity=0&ptm=0&fid=0&pageSize=25)
+51.	[*LM63	TI_D_R_PDSO_G8* **1x	U20**](http://www.digikey.com/product-detail/en/LM63CIMAX%2FNOPB/LM63CIMAX%2FNOPBCT-ND/3527023)
+52.	[*CSD86350Q5D	QFN127P600X500X150-9N* **1x	U21**](http://www.digikey.com/product-search/en?pv7=2&FV=fff40015%2Cfff80346&k=CSD86350Q5D&mnonly=0&newproducts=0&ColumnSort=0&page=1&quantity=0&ptm=0&fid=0&pageSize=25)
 53.	*CRYSTAL	hc49_us* **1x	Y1**
