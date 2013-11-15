@@ -92,4 +92,4 @@ ______________________________________________
 50.	[*NL27WZ14DFT2G	sc-88* **1x	U19**](http://www.digikey.com/product-search/en?pv7=2&k=NL27WZ14DFT2G&mnonly=0&newproducts=0&ColumnSort=0&page=1&quantity=0&ptm=0&fid=0&pageSize=25)
 51.	[*LM63	TI_D_R_PDSO_G8* **1x	U20**](http://www.digikey.com/product-detail/en/LM63CIMAX%2FNOPB/LM63CIMAX%2FNOPBCT-ND/3527023)
 52.	[*CSD86350Q5D	QFN127P600X500X150-9N* **1x	U21**](http://www.digikey.com/product-search/en?pv7=2&FV=fff40015%2Cfff80346&k=CSD86350Q5D&mnonly=0&newproducts=0&ColumnSort=0&page=1&quantity=0&ptm=0&fid=0&pageSize=25)
-53.	*CRYSTAL	hc49_us* **1x	Y1**
+53.	[*CRYSTAL	hc49_us* **1x	Y1**](http://www.digikey.com/product-search/en?pv16=319&FV=fff4000d%2Cfff8016d&mnonly=0&newproducts=0&ColumnSort=0&page=1&quantity=0&ptm=0&fid=0&pageSize=25)
