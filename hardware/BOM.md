@@ -62,24 +62,24 @@ ______________________________________________
 			L10,L11,L12,L13,L14**](http://www.digikey.com/product-search/en?pv7=2&k=BLM18HE102SN1D&mnonly=0&newproducts=0&ColumnSort=0&page=1&quantity=0&ptm=0&fid=0&pageSize=25)
 23.	[*BC817-25-7-F	sot23* **1x	Q1**](http://www.digikey.com/product-search/en?pv7=2&k=BC817-25-7-F&mnonly=0&newproducts=0&ColumnSort=0&page=1&quantity=0&ptm=0&fid=0&pageSize=25)
 24.	*10	res_0805* **1x	R1**
-25.	*0	res_0603* **1x	R2**
-26.	*5.11k	res_0603* **1x	R3**
+25.	[*0	res_0603* **1x	R2**](http://www.digikey.com/product-detail/en/RMCF0603ZT0R00/RMCF0603ZT0R00CT-ND/1943218)
+26.	[*5.11k	res_0603* **1x	R3**](http://www.digikey.com/product-detail/en/RMCF0603FT5K11/RMCF0603FT5K11CT-ND/1943038)
 27.	*RESISTOR	res_0603* **2x	R4,R5**
-28.	*1.21k	res_0603* **1x	R6**
-29.	*100k	res_0603* **11x	R7,R17,R18,R19,R20,R21,
-			R22,R23,R24,R25,R26**
+28.	[*1.21k	res_0603* **1x	R6**](http://www.digikey.com/product-detail/en/RMCF0603FT1K21/RMCF0603FT1K21CT-ND/1943000)
+29.	[*100k	res_0603* **11x	R7,R17,R18,R19,R20,R21,
+			R22,R23,R24,R25,R26**](http://www.digikey.com/product-detail/en/RMCF0603JT100K/RMCF0603JT100KCT-ND/1943203)
 30.	*0.003	res_1225* **1x	R9**
-31.	*182	res_0603* **1x	R10**
-32.	*100	res_0603* **2x	R11,R29**
-33.	*2.2	res_0805* **1x	R12**
-34.	*75-100	res_0603* **4x	R13,R14,R15,R16**
-35.	*1k	res_0603* **2x	R27,R28**
-36.	*40k	res_0603* **1x	R30**
+31.	[*182	res_0603* **1x	R10**](http://www.digikey.com/product-detail/en/RMCF0603FT182R/RMCF0603FT182RCT-ND/2417953)
+32.	[*100	res_0603* **2x	R11,R29**](http://www.digikey.com/product-detail/en/RMCF0603JT100R/RMCF0603JT100RCT-ND/1943156)
+33.	[*2.2	res_0805* **1x	R12**](http://www.digikey.com/product-detail/en/RMCF0603JT2R20/RMCF0603JT2R20CT-ND/2418194)
+34.	[*75-100	res_0603* **4x	R13,R14,R15,R16**](http://www.digikey.com/product-detail/en/RMCF0603JT100R/RMCF0603JT100RCT-ND/1943156)
+35.	[*1k	res_0603* **2x	R27,R28**](http://www.digikey.com/product-detail/en/RMCF0603JT1K00/RMCF0603JT1K00CT-ND/1943173)
+36.	[*40k	res_0603* **1x	R30**](http://www.digikey.com/product-search/en?pv1=2361&FV=fff40001%2Cfff800e9%2C1c0002%2C400005&mnonly=0&newproducts=0&ColumnSort=0&page=1&stock=1&quantity=0&ptm=0&fid=0&pageSize=25)
 37.	*1k, 1/4W	res_1206* **1x	R31**
-38.	*13k	res_0603* **1x	R32**
-39.	*10k	res_0603* **1x	R33**
-40.	*10	res_0603* **1x	R34**
-41.	*470	res_0603* **1x	R35**
+38.	[*13k	res_0603* **1x	R32**](http://www.digikey.com/product-detail/en/RMCF0603FT13K0/RMCF0603FT13K0CT-ND/1943065)
+39.	[*10k	res_0603* **1x	R33**](http://www.digikey.com/product-detail/en/RMCF0603JT10K0/RMCF0603JT10K0CT-ND/1943191)
+40.	[*10	res_0603* **1x	R34**](http://www.digikey.com/product-detail/en/RMCF0603JT10R0/RMCF0603JT10R0CT-ND/1943148)
+41.	[*470	res_0603* **1x	R35**](http://www.digikey.com/product-detail/en/RMCF0603JT470R/RMCF0603JT470RCT-ND/1943166)
 42.	[*LM27213	DGG* **1x	U1**](http://www.digikey.com/product-detail/en/LM27213MTD%2FNOPB/LM27213MTD%2FNOPB-ND/1871068)
 43.	[*AP1117IE33G-13	sot224* **1x	U3**](http://www.digikey.com/product-search/en?pv7=2&k=AP1117IE33G-13&mnonly=0&newproducts=0&ColumnSort=0&page=1&quantity=0&ptm=0&fid=0&pageSize=25)
 44.	[*KA78L05AIDTF	8-soic* **1x	U4**](http://www.digikey.com/product-search/en?pv7=2&k=KA78L05AIDTF&mnonly=0&newproducts=0&ColumnSort=0&page=1&quantity=0&ptm=0&fid=0&pageSize=25)
