@@ -74,7 +74,7 @@ ______________________________________________
 33.	[*2.2	res_0805* **1x	R12**](http://www.digikey.com/product-detail/en/RMCF0603JT2R20/RMCF0603JT2R20CT-ND/2418194)
 34.	[*75-100	res_0603* **4x	R13,R14,R15,R16**](http://www.digikey.com/product-detail/en/RMCF0603JT100R/RMCF0603JT100RCT-ND/1943156)
 35.	[*1k	res_0603* **2x	R27,R28**](http://www.digikey.com/product-detail/en/RMCF0603JT1K00/RMCF0603JT1K00CT-ND/1943173)
-36.	[*40k	res_0603* **1x	R30**](http://www.digikey.com/product-search/en?pv1=2361&FV=fff40001%2Cfff800e9%2C1c0002%2C400005&mnonly=0&newproducts=0&ColumnSort=0&page=1&stock=1&quantity=0&ptm=0&fid=0&pageSize=25)
+36.	[*40k	res_0603* **1x	R30**](http://www.digikey.com/product-detail/en/RMCF0603FT40K2/RMCF0603FT40K2CT-ND/1943095)
 37.	[*1k, 1/4W	res_1206* **1x	R31**](http://www.digikey.com/product-detail/en/RMCF1206JT1K00/RMCF1206JT1K00CT-ND/1942786)
 38.	[*13k	res_0603* **1x	R32**](http://www.digikey.com/product-detail/en/RMCF0603FT13K0/RMCF0603FT13K0CT-ND/1943065)
 39.	[*10k	res_0603* **1x	R33**](http://www.digikey.com/product-detail/en/RMCF0603JT10K0/RMCF0603JT10K0CT-ND/1943191)
