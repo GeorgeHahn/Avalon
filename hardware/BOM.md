@@ -50,17 +50,17 @@ ______________________________________________
 			C166**
 12.	*30pF	cap_0603* **1x	C167**
 13.	*XuF	cap_0603* **2x	C168,C169**
-14.	*CMDSH-3	SOD323* **1x	D1**
-15.	*LED	apa3010srcprv-gx* **4x	D2,D3,D4,D5**
+14.	[*CMDSH-3	SOD323* **1x	D1**](http://www.digikey.com/product-search/en?pv7=2&k=CMDSH-3&mnonly=0&newproducts=0&ColumnSort=0&page=1&quantity=0&ptm=0&fid=0&pageSize=25)
+15.	[*LED	apa3010srcprv-gx* **4x	D2,D3,D4,D5**](http://www.digikey.com/product-search/en?pv7=2&k=apa3010srcprv-gx&mnonly=0&newproducts=0&ColumnSort=0&page=1&quantity=0&ptm=0&fid=0&pageSize=25)
 16.	*Drill - Unplated M3	Part_drill_m3_33000mm* **4x	H1,H2,H3,H4**
-17.	*CUI PJ-037BH	CUI_PJ_037BH* **1x	J1**
+17.	[*CUI PJ-037BH	CUI_PJ_037BH* **1x	J1**](http://www.digikey.com/product-search/en?pv272=49&k=CUI+PJ-037BH&mnonly=0&newproducts=0&ColumnSort=0&page=1&quantity=0&ptm=0&fid=0&pageSize=25)
 18.	*ICSP	HEADER100_5* **1x	J2**
-19.	*Molex 0473460001	Molex_0473460001* **1x	J3**
+19.	[*Molex 0473460001	Molex_0473460001* **1x	J3**](http://www.digikey.com/product-search/en?pv7=2&FV=fff40016%2Cfff802e4&k=0473460001&mnonly=0&newproducts=0&ColumnSort=0&page=1&quantity=0&ptm=0&fid=0&pageSize=25)
 20.	*FAN	header100_3* **1x	J4**
-21.	*560nH	ETQ-P4L* **1x	L1**
-22.	*BLM18HE102SN1D	ind_0603* **13x	L2,L3,L4,L5,L6,L7,L8,L9,
-			L10,L11,L12,L13,L14**
-23.	*BC817-25-7-F	sot23* **1x	Q1**
+21.	[*560nH	ETQ-P4L* **1x	L1**](http://www.digikey.com/product-search/en?pv19=47&FV=1c0002&k=ETQ-P4L&mnonly=0&newproducts=0&ColumnSort=0&page=1&quantity=0&ptm=0&fid=0&pageSize=25)
+22.	[*BLM18HE102SN1D	ind_0603* **13x	L2,L3,L4,L5,L6,L7,L8,L9,
+			L10,L11,L12,L13,L14**](http://www.digikey.com/product-search/en?pv7=2&k=BLM18HE102SN1D&mnonly=0&newproducts=0&ColumnSort=0&page=1&quantity=0&ptm=0&fid=0&pageSize=25)
+23.	[*BC817-25-7-F	sot23* **1x	Q1**](http://www.digikey.com/product-search/en?pv7=2&k=BC817-25-7-F&mnonly=0&newproducts=0&ColumnSort=0&page=1&quantity=0&ptm=0&fid=0&pageSize=25)
 24.	*10	res_0805* **1x	R1**
 25.	*0	res_0603* **1x	R2**
 26.	*5.11k	res_0603* **1x	R3**
