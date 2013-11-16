@@ -29,7 +29,21 @@
     (Netlist_TAB "0")
     (DOCKED "TRUE")
     (DOCKING_POSITION "59420")
-    ("Allegro Netlist Input Board File" "allegro\AVALON.brd"))
+    ("Allegro Netlist Input Board File" "allegro\AVALON.brd")
+    (BOM_Scope "0")
+    (BOM_Mode "0")
+    (BOM_Report_File
+       "C:\USERS\GEORGE\DOCUMENTS\GITHUB\AVALON\HARDWARE\AVALON.BOM")
+    (BOM_Merge_Include "FALSE")
+    (BOM_Property_Combine_7.0
+       "{Item}.\t*{Value}\t{PCB Footprint}* **{Quantity}x\t{Reference}**")
+    (BOM_Header "Item\tQuantity\tReference\tPart")
+    (BOM_Include_File
+       "C:\USERS\GEORGE\DOCUMENTS\GITHUB\AVALON\HARDWARE\AVALON.INC")
+    (BOM_Include_File_Combine_7.0 "{Item}\t{Quantity}\t{Reference}\t{Value}")
+    (BOM_One_Part_Per_Line "FALSE")
+    (Open_BOM_in_Excel "FALSE")
+    (BOM_View_Output "TRUE"))
   (Folder "Outputs"
     (File ".\netlist\pstxnet.dat"
       (Type "Report")
@@ -39,7 +53,9 @@
       (DisplayName "pstxprt.dat"))
     (File ".\netlist\pstchip.dat"
       (Type "Report")
-      (DisplayName "pstchip.dat")))
+      (DisplayName "pstchip.dat"))
+    (File ".\avalon.bom"
+      (Type "Report")))
   (Folder "Referenced Projects")
   (PartMRUSelector
     (GND
@@ -145,7 +161,7 @@
       (Path "Design Resources" "Library")
       (Path "Design Resources" "Library" ".\parts.olb")
       (Path "Outputs")
-      (Select "Design Resources" ".\avalon.dsn" "SCHEMATIC1" "PAGE1"))
+      (Select "Design Resources" ".\avalon.dsn"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -156,8 +172,8 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 2 3 -1 -1 -4 -27 104 1600 104 933")
-        (Scroll "0 0")
-        (Zoom "92")
+        (Scroll "1009 0")
+        (Zoom "184")
         (Occurrence "/"))
       (Path "C:\USERS\GEORGE\DOCUMENTS\GITHUB\AVALON\HARDWARE\AVALON.DSN")
       (Schematic "SCHEMATIC1")

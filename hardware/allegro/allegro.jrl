@@ -1,23 +1,113 @@
-\t (00:00:00) allegro 16.6 P004 (v16-6-112G) Windows 32
-\t (00:00:00)     Journal start - Tue Nov 12 21:49:59 2013
-\t (00:00:00)         Host=GEORGEPC User=George Pid=12744 CPUs=8
-\t (00:00:00) 
-\t (00:00:01) Opening existing design...
-\i (00:09:57) fillin no 
-\e (00:09:57) Failed to open design since it is locked - C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd
-\t (00:09:57) Starting new design...
-\i (00:09:57) trapsize 467
-\i (00:09:57) trapsize 461
-\i (00:09:57) trapsize 468
-\i (00:09:57) trapsize 471
-\i (00:09:57) trapsize 642
-\i (00:09:58) etchedit 
-\i (00:10:08) open 
-\i (00:10:50) fillin "C:\Users\George\Dropbox\PCBs\Footprint Library\DGG.dra"
-\i (00:10:50) cd "C:\Users\George\Dropbox\PCBs\Footprint Library"
-\t (00:10:50) Opening existing design...
-\i (00:10:50) trapsize 69
-\i (00:10:50) trapsize 67
-\i (00:10:50) trapsize 68
-\i (00:10:50) trapsize 68
-\t (00:10:51)     Journal end - Tue Nov 12 22:00:50 2013
+\t (24:03:12) allegro 16.6 P004 (v16-6-112G) Windows 32
+\t (24:03:12)     Journal start - Tue Nov 12 21:46:35 2013
+\t (24:03:12)         Host=GEORGEPC User=George Pid=12960 CPUs=8
+\t (24:03:12) 
+\d (24:03:12) Database opened: C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd
+\i (24:03:13) generaledit 
+\i (24:03:17) refresh symbol 
+\i (24:03:21) setwindow form.upd_element
+\i (24:03:21) FORM upd_element tree 'MULTISEL YES' DGG 'Package symbols' 
+\i (24:03:21) FORM upd_element tree  DGG 'Package symbols' 
+\i (24:03:21) FORM upd_element padstacks YES 
+\i (24:03:22) FORM upd_element viewlog  
+\i (24:03:23) FORM upd_element refresh  
+\t (24:03:23) Starting Refresh Symbol...
+\e (24:03:25) ERROR(SPMHGE-268): refresh_symbol had errors, use Viewlog to review the log file.
+\i (24:11:26) FORM upd_element close  
+\i (24:11:26) setwindow pcb
+\i (24:11:26) generaledit 
+\i (24:11:27) setwindow text
+\i (24:11:27) close 
+\i (24:17:27) setwindow pcb
+\i (24:17:27) xhilite 
+\i (24:17:27) xname_flush 
+\i (24:17:27) done 
+\i (24:17:27) generaledit 
+\i (24:17:33) prepopup 7242.84 16004.60
+\i (24:17:35) prepopup 7447.06 16055.53
+\i (24:18:06) prepopup 7190.36 16029.03
+\i (24:18:08) pop dyn_option_select '@:@Unplace component' 
+\i (24:18:08) unplace component 
+\i (24:18:09) generaledit 
+\i (24:18:10) place manual 
+\i (24:18:12) setwindow form.plc_manual
+\i (24:18:12) FORM plc_manual tree 'MULTISEL YES' U1 'Components by refdes' 
+\w (24:18:12) WARNING(SPMHA1-230): Database has a non-recoverable corruption. Contact Cadence customer support.
+\w (24:18:12) WARNING(SPMHA1-230): Database has a non-recoverable corruption. Contact Cadence customer support.
+\w (24:18:12) WARNING(SPMHA1-230): Database has a non-recoverable corruption. Contact Cadence customer support.
+\e (24:18:12) Cannot load symbol 'DGG'
+\i (24:18:12) FORM plc_manual tree  U1 'Components by refdes' 
+\i (24:18:17) FORM plc_manual advanced_settings  
+\i (24:18:17) FORM plc_manual placement_list  
+\i (24:18:18) FORM plc_manual advanced_settings  
+\i (24:18:21) FORM plc_manual cancel  
+\i (24:18:21) setwindow pcb
+\i (24:18:21) generaledit 
+\i (24:18:23) undo 
+\i (24:18:23) trapsize 260
+\i (24:18:23) generaledit 
+\i (24:18:24) undo 
+\i (24:18:24) trapsize 260
+\i (24:18:24) generaledit 
+\i (24:18:26) pick grid 7084.87 16167.25
+\t (24:18:26) last pick:  7085.00  16167.00
+\i (24:19:00) xhilite 
+\i (24:19:00) xname_flush 
+\i (24:19:00) done 
+\i (24:19:00) generaledit 
+\i (24:52:43) roam start
+\i (24:52:43) roam y 48
+\i (24:52:43) roam x -16
+\i (24:52:43) roam y 32
+\i (24:52:43) roam x -32
+\i (24:52:43) roam y 16
+\i (24:52:43) roam x -16
+\i (24:52:43) roam y 16
+\i (24:52:43) roam x -16
+\i (24:52:43) roam x -32
+\i (24:52:43) roam y 16
+\i (24:52:43) roam x -16
+\i (24:52:43) roam y -32
+\i (24:52:43) roam y -32
+\i (24:52:43) roam y -32
+\i (24:52:43) roam x 16
+\i (24:52:43) roam y -32
+\i (24:52:43) roam end
+\i (24:58:22) save 
+\i (24:58:23) fillin yes 
+\i (24:58:23) generaledit 
+\i (25:00:23) pick grid 7580.59 15927.67
+\t (25:00:23) last pick:  7581.00  15928.00
+\i (25:00:23) zoom out 1 
+\i (25:00:23) setwindow pcb
+\i (25:00:23) zoom out 7580.59 15927.67
+\t (25:00:23) Grids are drawn 16.00, 16.00 apart for enhanced viewability.
+\i (25:00:23) trapsize 520
+\i (25:00:23) zoom out 1 
+\i (25:00:23) setwindow pcb
+\i (25:00:23) zoom out 7580.59 15927.66
+\i (25:00:23) trapsize 1039
+\i (25:00:23) zoom out 1 
+\i (25:00:23) setwindow pcb
+\i (25:00:23) zoom out 7580.59 15927.67
+\t (25:00:23) Grids are drawn 64.00, 64.00 apart for enhanced viewability.
+\i (25:00:23) trapsize 2079
+\i (25:00:24) zoom in 1 
+\i (25:00:24) setwindow pcb
+\i (25:00:24) zoom in 7580.58 15927.67
+\t (25:00:24) Grids are drawn 16.00, 16.00 apart for enhanced viewability.
+\i (25:00:24) trapsize 1039
+\i (25:00:24) roam start
+\i (25:00:24) roam y 48
+\i (25:00:24) roam y 32
+\i (25:00:25) roam x 32
+\i (25:00:25) roam y 16
+\i (25:00:25) roam x 16
+\i (25:00:25) roam y 32
+\i (25:00:25) roam x 32
+\i (25:00:25) roam x 48
+\i (25:00:25) roam x 16
+\i (25:00:25) roam x 48
+\i (25:00:25) roam y 16
+\i (25:00:25) roam x 16
+\i (25:00:25) roam 
