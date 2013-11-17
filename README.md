@@ -19,7 +19,7 @@ Firmware and driver based on Klondike Project
   
 ## STATUS
 
-  Layout is complete and prototypes have been ordered along with a paste stencil.
+  Layout is complete and prototypes have been ordered along with a paste stencil. Assembly will commence when PCBs arrive on Tuesday 11/19.
   
 ## TODO
 
