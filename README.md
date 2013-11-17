@@ -27,7 +27,7 @@ Firmware and driver based on Klondike Project
   
 ## WARNINGS
 
-  This project has an advanced switched mode power supply that can supply between 0.700V and 1.708V. NEVER turn the SMPS above the Avalon ASICs' rated maximum voltage.
+  This project has an advanced switched mode power supply that can supply between 0.700V and 1.708V. NEVER set the SMPS above the Avalon ASICs' rated maximum voltage.
 
   This project is incomplete and in progress. There may be errors, mistakes, incomplete portions at this time. Do NOT use these project files to order circuit boards until they have been finished and confirmed to work.
   
