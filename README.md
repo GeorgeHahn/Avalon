@@ -12,7 +12,10 @@ Firmware and driver based on Klondike Project
   
   Each board has a barrel jack power connector. A 10 chip board should be capable of 15000 MH/s and consume about 30W power. Alternatively, the switching power supply onboard can be turned to a lower voltage, trading hashrate for power efficiency. The supply is variable from 0.700V to 1.708V. Each board can be easily powered by a low cost power adapter.
   
-  The design is currently being done in Cadence OrCAD + Allegro, but will be completely backported to [Upverter](https://upverter.com/GeorgeHahn/0bb015271a32ca8e/Avalon/) in the near future.
+  
+  Power for this board is supplied via a barrel jack connector (2.5mm ID, 5.5mm OD). For future revisions, Molex PCI-e or 4 pin power connectors may be added. Another limit on the first revision design is the data connection - these boards are USB only for now. In the future, CAN may be added to make it possible to chain multiple miners together.
+  
+  The design is currently in Cadence OrCAD + Allegro format, but will be completely backported to [Upverter](https://upverter.com/GeorgeHahn/0bb015271a32ca8e/Avalon/) once tested.
   
 ## STATUS
 
@@ -34,3 +37,7 @@ Firmware and driver based on Klondike Project
   See LICENSE and COPYING files for terms and warranty disclaimer.
   
   See RELEASE NOTES for known problems, and issues.
+
+## THANKS
+
+Special thanks to [CUI Inc](http://www.cui.com/) for going the extra mile to get me a sample of their PJ-037BH connector. Additional thanks to TI for samples of ICs used in the SMPS module.
