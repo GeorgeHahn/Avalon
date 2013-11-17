@@ -110,4 +110,98 @@
 \i (25:00:25) roam x 48
 \i (25:00:25) roam y 16
 \i (25:00:25) roam x 16
-\i (25:00:25) roam 
+\i (25:00:25) roam x 16
+\i (25:00:25) roam y 16
+\i (25:00:25) roam x 16
+\i (25:00:26) roam y 16
+\i (25:00:26) roam x 16
+\i (25:00:26) roam y 32
+\i (25:00:26) roam y 16
+\i (25:00:26) roam x 16
+\i (25:00:26) roam y 32
+\i (25:00:26) roam x 16
+\i (25:00:26) roam y 32
+\i (25:00:26) roam x 16
+\i (25:00:26) roam y 16
+\i (25:00:26) roam y 16
+\i (25:00:27) roam y -16
+\i (25:00:27) zoom out 1 
+\i (25:00:27) setwindow pcb
+\i (25:00:27) zoom out 7956.83 14635.34
+\t (25:00:27) Grids are drawn 64.00, 64.00 apart for enhanced viewability.
+\i (25:00:27) trapsize 2079
+\i (25:00:28) roam x 16
+\i (25:00:28) roam y 16
+\i (25:00:28) roam x 80
+\i (25:00:28) roam y 32
+\i (25:00:28) roam x 16
+\i (25:00:28) roam x 48
+\i (25:00:28) roam x 32
+\i (25:00:28) roam y 16
+\i (25:00:28) roam x 16
+\i (25:00:28) roam x 16
+\i (25:00:28) zoom in 1 
+\i (25:00:28) setwindow pcb
+\i (25:00:28) zoom in 8892.19 14367.20
+\t (25:00:28) Grids are drawn 16.00, 16.00 apart for enhanced viewability.
+\i (25:00:28) trapsize 1039
+\i (25:00:29) roam x -48
+\i (25:00:29) roam x -208
+\i (25:00:29) roam x -160
+\i (25:00:29) roam y -32
+\i (25:00:29) roam x -16
+\i (25:00:29) roam x -48
+\i (25:00:29) roam y -32
+\i (25:00:29) roam x -16
+\i (25:00:29) roam y -16
+\i (25:00:30) roam x 16
+\i (25:00:30) roam x 16
+\i (25:00:30) roam x 16
+\i (25:00:30) roam y -16
+\i (25:00:30) roam y -16
+\i (25:00:30) roam y -16
+\i (25:00:30) roam end
+\i (25:00:31) roam start
+\i (25:00:31) roam y -96
+\i (25:00:31) roam y -80
+\i (25:00:31) roam y -32
+\i (25:00:32) roam y -16
+\i (25:00:32) roam y -16
+\i (25:00:32) roam x -16
+\i (25:00:32) roam y -16
+\i (25:00:33) roam y 16
+\i (25:00:33) roam x 16
+\i (25:00:33) roam y 16
+\i (25:00:33) roam y 32
+\i (25:00:34) roam end
+\i (25:19:13) xhilite 
+\i (25:19:13) xrefdes D2 
+\i (25:19:13) xname_flush 
+\t (25:19:13) Grids are drawn 4.00, 4.00 apart for enhanced viewability.
+\i (25:19:13) trapsize 133
+\t (25:19:13) Symbol "D2" highlighted.
+\i (25:19:13) done 
+\i (25:19:13) generaledit 
+\i (25:20:46) xhilite 
+\i (25:20:46) xrefdes D2 
+\i (25:20:46) xname_flush 
+\i (25:20:46) trapsize 133
+\t (25:20:46) Symbol "D2" highlighted.
+\i (25:20:46) done 
+\i (25:20:46) generaledit 
+\i (91:12:33) xhilite 
+\i (91:12:33) xname_flush 
+\i (91:12:33) done 
+\i (91:12:33) generaledit 
+\i (91:17:42) xhilite 
+\i (91:17:42) xname_flush 
+\i (91:17:42) done 
+\i (91:17:42) generaledit 
+\i (97:10:42) exit 
+\e (97:10:42) Do you want to save the changes you made to C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd?
+\i (97:10:43) fillin menu_cancel 
+\i (97:10:43) generaledit 
+\i (97:25:04) exit 
+\e (97:25:04) Do you want to save the changes you made to C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd?
+\i (97:25:06) fillin yes 
+\t (97:25:06)     Journal end - Fri Nov 15 23:08:29 2013

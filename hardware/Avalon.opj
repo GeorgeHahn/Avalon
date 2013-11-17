@@ -160,8 +160,7 @@
       (Path "Design Resources" ".\avalon.dsn" "Design Cache")
       (Path "Design Resources" "Library")
       (Path "Design Resources" "Library" ".\parts.olb")
-      (Path "Outputs")
-      (Select "Design Resources" ".\avalon.dsn"))
+      (Path "Outputs"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
