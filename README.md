@@ -19,14 +19,20 @@ Firmware and driver based on Klondike Project
   
 ## STATUS
 
-  Layout is complete and prototypes have been ordered along with a paste stencil. Assembly will commence when PCBs arrive on Tuesday 11/19.
+ - ☑ Layout
+ - ▢ Prototype
+  - ▢ PCB - Ordered, waiting on arrival
+  - ☑ Stencil
+  - ▢ Parts - Ordered, waiting on arrival
+  - ▢ Assembly  - Will commence when PCBs arrive on Tuesday 11/19.
   
-## TODO
+ - ▢ Initial firmware
+  - ▢ Port Klondike firmware to PIC18F45K50
+  - ▢ Testing with a Raspberry Pi
+  - ▢ Tune settings for unique SMPS
 
- - Port Klondike firmware to PIC18F45K50
- - Testing with a Raspberry Pi
- - Tune settings for unique SMPS
- - Try a prototype with metal substrate board (for better heat dissipation)
+ - ▢ Future
+  - ▢ Try a prototype with metal substrate board (for better heat dissipation)
   
 ## WARNINGS
 
