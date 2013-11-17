@@ -9,7 +9,7 @@
         <itemPath>../Include/GenericTypeDefs.h</itemPath>
       </logicalFolder>
       <logicalFolder name="f2" displayName="Hardware Profile" projectFiles="true">
-        <itemPath>../HardwareProfile - Klondike.h</itemPath>
+        <itemPath>../HardwareProfile - Avalon.h</itemPath>
       </logicalFolder>
       <logicalFolder name="f1" displayName="USB" projectFiles="true">
         <itemPath>../Include/USB/usb.h</itemPath>
@@ -75,13 +75,13 @@
     <conf name="K16" type="2">
       <toolsSet>
         <developmentServer>localhost</developmentServer>
-        <targetDevice>PIC16LF1459</targetDevice>
+        <targetDevice>PIC18F45K50</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
         <platformTool>PICkit3PlatformTool</platformTool>
         <languageToolchain>XC8</languageToolchain>
-        <languageToolchainVersion>1.12</languageToolchainVersion>
-        <platform>2</platform>
+        <languageToolchainVersion>1.21</languageToolchainVersion>
+        <platform>3</platform>
       </toolsSet>
       <compileType>
         <linkerTool>
@@ -159,6 +159,7 @@
         </XC8-config-global>
       </item>
       <HI-TECH-COMP>
+        <property key="asmlist" value="true"/>
         <property key="define-macros" value=""/>
         <property key="extra-include-directories" value="..;../Include"/>
         <property key="identifier-length" value="100"/>
@@ -174,11 +175,50 @@
         <property key="preprocess-assembler" value="false"/>
         <property key="undefine-macros" value=""/>
         <property key="use-cci" value="false"/>
+        <property key="use-iar" value="false"/>
         <property key="verbose" value="false"/>
         <property key="warning-level" value="9"/>
         <property key="what-to-do" value="require"/>
       </HI-TECH-COMP>
       <HI-TECH-LINK>
+        <property key="additional-options-checksum" value=""/>
+        <property key="additional-options-code-offset" value=""/>
+        <property key="additional-options-command-line" value=""/>
+        <property key="additional-options-errata" value=""/>
+        <property key="additional-options-extend-address" value="false"/>
+        <property key="additional-options-trace-type" value=""/>
+        <property key="additional-options-use-response-files" value="false"/>
+        <property key="backup-reset-condition-flags" value="false"/>
+        <property key="calibrate-oscillator" value="true"/>
+        <property key="calibrate-oscillator-value" value=""/>
+        <property key="clear-bss" value="true"/>
+        <property key="code-model-external" value="wordwrite"/>
+        <property key="code-model-rom" value=""/>
+        <property key="create-html-files" value="false"/>
+        <property key="data-model-ram" value=""/>
+        <property key="data-model-size-of-double" value="24"/>
+        <property key="data-model-size-of-float" value="24"/>
+        <property key="display-class-usage" value="false"/>
+        <property key="display-hex-usage" value="false"/>
+        <property key="display-overall-usage" value="true"/>
+        <property key="display-psect-usage" value="false"/>
+        <property key="fill-flash-options-addr" value=""/>
+        <property key="fill-flash-options-const" value=""/>
+        <property key="fill-flash-options-how" value="0"/>
+        <property key="fill-flash-options-inc-const" value="1"/>
+        <property key="fill-flash-options-increment" value=""/>
+        <property key="fill-flash-options-seq" value=""/>
+        <property key="fill-flash-options-what" value="0"/>
+        <property key="format-hex-file-for-download" value="false"/>
+        <property key="initialize-data" value="true"/>
+        <property key="keep-generated-startup.as" value="false"/>
+        <property key="link-in-c-library" value="true"/>
+        <property key="link-in-peripheral-library" value="true"/>
+        <property key="managed-stack" value="false"/>
+        <property key="opt-xc8-linker-file" value="false"/>
+        <property key="opt-xc8-linker-link_startup" value="false"/>
+        <property key="opt-xc8-linker-serial" value=""/>
+        <property key="program-the-device-with-default-config-words" value="true"/>
       </HI-TECH-LINK>
       <PICkit3PlatformTool>
         <property key="AutoSelectMemRanges" value="auto"/>
@@ -206,11 +246,13 @@
         <property key="programoptions.preserveprogramrange.end" value="0x1fff"/>
         <property key="programoptions.preserveprogramrange.start" value="0x0"/>
         <property key="programoptions.preserveuserid" value="false"/>
+        <property key="programoptions.testmodeentrymethod" value="VPPFirst"/>
         <property key="programoptions.usehighvoltageonmclr" value="false"/>
         <property key="programoptions.uselvpprogramming" value="false"/>
         <property key="voltagevalue" value="3.25"/>
       </PICkit3PlatformTool>
       <XC8-config-global>
+        <property key="output-file-format" value="-mcof,+elf"/>
       </XC8-config-global>
     </conf>
   </confs>
