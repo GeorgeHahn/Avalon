@@ -167,8 +167,10 @@ void InitI2CSlave(void)
     SSPCON2bits.GCEN = 1; // enable general call address 0
     SSPCON3bits.SBCDE = 1; // enable bus collision interrupts
     SSPSTATbits.SMP = 1;
-    SSP1EN = 1;
-    SSP1IF = 1;
+
+    SSPCON1bits.SSPEN1 = 1;
+    //SSP1EN = 1;
+    //SSP1IF = 1; //TODO: What is this?
 }
 
 void InitI2CMaster(void)
@@ -180,7 +182,9 @@ void InitI2CMaster(void)
     SSPADD = 0x77; // 100kHz @ 48MHz Fosc.
     SSPCON1bits.SSPM = 8; // master mode
     SSPSTATbits.SMP = 1;
-    SSP1EN = 1;
-    SSP1IF = 1;
+    
+    SSPCON1bits.SSPEN1 = 1;
+//    SSP1EN = 1;
+//    SSP1IF = 1;
     I2CDetect();
 }

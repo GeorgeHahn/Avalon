@@ -86,7 +86,7 @@
         #if defined(__18F4550)
             #include "HardwareProfile - PICDEM FSUSB.h"
         #elif defined(__18F45K50)
-            #include "HardwareProfile - PICDEM FSUSB K50.h"
+            #include "HardwareProfile - Avalon.h"
         #elif defined(__18F87J50)
             #include "HardwareProfile - PIC18F87J50 PIM.h"
         #elif defined(__18F97J94)

@@ -3,7 +3,7 @@
 ### November 4, 2013 - Avalon Board Original Release - Alpha
 
  - Designed on Upverter, copied to Cadence OrCAD + Allegro for initial design. The entire design will be backported to Upverter once their module system has stabilized.
- - Four layer board, approximately 3.25x3.25in
+ - Four layer board, 3.36x3.25in
 
 # Klondike Release Notes
 
