@@ -2,7 +2,8 @@
 [d version 1.1 ]
 [d edition pro ]
 [d chip 16LF1459 ]
-[e E3476 . `uc
+"282 C:\Users\george\Documents\GitHub\Avalon\firmware/USB/usb_device.c
+[e E3477 . `uc
 DETACHED_STATE 0
 ATTACHED_STATE 1
 POWERED_STATE 2
@@ -11,207 +12,13 @@ ADR_PENDING_STATE 8
 ADDRESS_STATE 16
 CONFIGURED_STATE 32
 ]
-[s S27 . 1 `uc 1 BC8 1 0 :1:0 
-`uc 1 BC9 1 0 :1:1 
-`uc 1 BSTALL 1 0 :1:2 
-`uc 1 DTSEN 1 0 :1:3 
-`uc 1 INCDIS 1 0 :1:4 
-`uc 1 KEN 1 0 :1:5 
-`uc 1 DTS 1 0 :1:6 
-`uc 1 UOWN 1 0 :1:7 
-]
-[s S36 . 1 `uc 1 . 1 0 :2:0 
-`uc 1 PID0 1 0 :1:2 
-`uc 1 PID1 1 0 :1:3 
-`uc 1 PID2 1 0 :1:4 
-`uc 1 PID3 1 0 :1:5 
-`uc 1 . 1 0 :1:6 
-]
-[s S43 . 1 `uc 1 . 1 0 :2:0 
-`uc 1 PID 1 0 :4:2 
-`uc 1 . 1 0 :2:6 
-]
-[u S47 _BD_STAT 1 `uc 1 Val 1 0 `S27 1 . 1 0 `S36 1 . 1 0 `S43 1 . 1 0 ]
-[s S52 . 4 `S47 1 STAT 1 0 `uc 1 CNT 1 1 `uc 1 ADRL 1 2 `uc 1 ADRH 1 3 ]
-[s S57 . 4 `uc 1 filler1 1 0 :8:0 
-`uc 1 filler2 1 1 :8:0 
-`us 1 ADR 2 2 ]
-[u S61 __BDT 4 `S52 1 . 4 0 `S57 1 . 4 0 `ul 1 Val 4 0 `[4]uc 1 v 4 0 ]
-[u S66 . 2 `*uc 1 bRam 2 0 `*DCCuc 1 bRom 2 0 `*us 1 wRam 2 0 `*DCCus 1 wRom 2 0 ]
-[s S71 . 1 `uc 1 ctrl_trf_mem 1 0 :1:0 
-`uc 1 reserved 1 0 :5:1 
-`uc 1 includeZero 1 0 :1:6 
-`uc 1 busy 1 0 :1:7 
-]
-[u S76 . 1 `S71 1 bits 1 0 `uc 1 Val 1 0 ]
-[s S79 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
-[s S82 . 2 `uc 1 b0 1 0 :1:0 
-`uc 1 b1 1 0 :1:1 
-`uc 1 b2 1 0 :1:2 
-`uc 1 b3 1 0 :1:3 
-`uc 1 b4 1 0 :1:4 
-`uc 1 b5 1 0 :1:5 
-`uc 1 b6 1 0 :1:6 
-`uc 1 b7 1 0 :1:7 
-`uc 1 b8 1 1 :1:0 
-`uc 1 b9 1 1 :1:1 
-`uc 1 b10 1 1 :1:2 
-`uc 1 b11 1 1 :1:3 
-`uc 1 b12 1 1 :1:4 
-`uc 1 b13 1 1 :1:5 
-`uc 1 b14 1 1 :1:6 
-`uc 1 b15 1 1 :1:7 
-]
-[u S99 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S79 1 byte 2 0 `S82 1 bits 2 0 ]
-[s S104 . 5 `S66 1 pSrc 2 0 `S76 1 info 1 2 `S99 1 wCount 2 3 ]
-[u S108 . 2 `*uc 1 bRam 2 0 `*us 1 wRam 2 0 ]
-[s S111 . 1 `uc 1 reserved 1 0 :7:0 
-`uc 1 busy 1 0 :1:7 
-]
-[u S114 . 1 `S111 1 bits 1 0 `uc 1 Val 1 0 ]
-"1970 ../Include/USB/usb_device.h
-[v F3615 `(v  1 t 0 ]
-[s S118 . 6 `S108 1 pDst 2 0 `S114 1 info 1 2 `S99 1 wCount 2 3 `*(v 1 pFunc 1 5 ]
+"294
 [e E5 _BOOL `uc
 FALSE 0
 TRUE 1
 ]
-[s S126 . 1 `uc 1 filler1 1 0 :1:0 
-`uc 1 ping_pong 1 0 :1:1 
-`uc 1 direction 1 0 :1:2 
-`uc 1 endpoint_number 1 0 :4:3 
-]
-[u S131 __USTAT 1 `S126 1 . 1 0 `uc 1 Val 1 0 ]
-[s S134 . 1 `uc 1 ping_pong_state 1 0 :1:0 
-`uc 1 transfer_terminated 1 0 :1:1 
-]
-[u S137 . 1 `S134 1 bits 1 0 `uc 1 Val 1 0 ]
-[s S140 . 8 `uc 1 bmRequestType 1 0 `uc 1 bRequest 1 1 `us 1 wValue 2 2 `us 1 wIndex 2 4 `us 1 wLength 2 6 ]
-[s S146 . 8 `uc 1 . 1 0 :8:0 
-`uc 1 . 1 1 :8:0 
-`S99 1 W_Value 2 2 `S99 1 W_Index 2 4 `S99 1 W_Length 2 6 ]
-[s S152 . 8 `uc 1 Recipient 1 0 :5:0 
-`uc 1 RequestType 1 0 :2:5 
-`uc 1 DataDir 1 0 :1:7 
-`uc 1 . 1 1 :8:0 
-`uc 1 bFeature 1 2 `uc 1 . 1 3 :8:0 
-`uc 1 . 1 4 :8:0 
-`uc 1 . 1 5 :8:0 
-`uc 1 . 1 6 :8:0 
-`uc 1 . 1 7 :8:0 
-]
-[s S163 . 1 `uc 1 recipient 1 0 :5:0 
-`uc 1 type 1 0 :2:5 
-`uc 1 direction 1 0 :1:7 
-]
-[u S167 . 1 `uc 1 bmRequestType 1 0 `S163 1 . 1 0 ]
-[s S170 . 1 `S167 1 requestInfo 1 0 ]
-[s S172 . 8 `uc 1 . 1 0 :8:0 
-`uc 1 . 1 1 :8:0 
-`uc 1 bDscIndex 1 2 `uc 1 bDescriptorType 1 3 `us 1 wLangID 2 4 `uc 1 . 1 6 :8:0 
-`uc 1 . 1 7 :8:0 
-]
-[s S180 . 1 `uc 1 b0 1 0 :1:0 
-`uc 1 b1 1 0 :1:1 
-`uc 1 b2 1 0 :1:2 
-`uc 1 b3 1 0 :1:3 
-`uc 1 b4 1 0 :1:4 
-`uc 1 b5 1 0 :1:5 
-`uc 1 b6 1 0 :1:6 
-`uc 1 b7 1 0 :1:7 
-]
-[u S189 . 1 `uc 1 Val 1 0 `S180 1 bits 1 0 ]
-[s S192 . 8 `uc 1 . 1 0 :8:0 
-`uc 1 . 1 1 :8:0 
-`S189 1 bDevADR 1 2 `uc 1 bDevADRH 1 3 `uc 1 . 1 4 :8:0 
-`uc 1 . 1 5 :8:0 
-`uc 1 . 1 6 :8:0 
-`uc 1 . 1 7 :8:0 
-]
-[s S201 . 8 `uc 1 . 1 0 :8:0 
-`uc 1 . 1 1 :8:0 
-`uc 1 bConfigurationValue 1 2 `uc 1 bCfgRSD 1 3 `uc 1 . 1 4 :8:0 
-`uc 1 . 1 5 :8:0 
-`uc 1 . 1 6 :8:0 
-`uc 1 . 1 7 :8:0 
-]
-[s S210 . 8 `uc 1 . 1 0 :8:0 
-`uc 1 . 1 1 :8:0 
-`uc 1 bAltID 1 2 `uc 1 bAltID_H 1 3 `uc 1 bIntfID 1 4 `uc 1 bIntfID_H 1 5 `uc 1 . 1 6 :8:0 
-`uc 1 . 1 7 :8:0 
-]
-[s S219 . 8 `uc 1 . 1 0 :8:0 
-`uc 1 . 1 1 :8:0 
-`uc 1 . 1 2 :8:0 
-`uc 1 . 1 3 :8:0 
-`uc 1 bEPID 1 4 `uc 1 bEPID_H 1 5 `uc 1 . 1 6 :8:0 
-`uc 1 . 1 7 :8:0 
-]
-[s S228 . 8 `uc 1 . 1 0 :8:0 
-`uc 1 . 1 1 :8:0 
-`uc 1 . 1 2 :8:0 
-`uc 1 . 1 3 :8:0 
-`uc 1 EPNum 1 4 :4:0 
-`uc 1 . 1 4 :3:4 
-`uc 1 EPDir 1 4 :1:7 
-`uc 1 . 1 5 :8:0 
-`uc 1 . 1 6 :8:0 
-`uc 1 . 1 7 :8:0 
-]
-[u S239 . 8 `S140 1 . 8 0 `S146 1 . 8 0 `S152 1 . 8 0 `S170 1 . 1 0 `S172 1 . 8 0 `S192 1 . 8 0 `S201 1 . 8 0 `S210 1 . 8 0 `S219 1 . 8 0 `S228 1 . 8 0 ]
-[s S250 . 1 `uc 1 . 1 0 :1:0 
-`uc 1 ACTIE 1 0 :1:1 
-`uc 1 USBIE 1 0 :1:2 
-`uc 1 BCL1IE 1 0 :1:3 
-`uc 1 . 1 0 :1:4 
-`uc 1 C1IE 1 0 :1:5 
-`uc 1 C2IE 1 0 :1:6 
-`uc 1 OSFIE 1 0 :1:7 
-]
-[u S259 . 1 `S250 1 . 1 0 ]
-"5070 /opt/microchip/xc8/v1.12/include/pic16lf1459.h
-[s S278 . 1 `uc 1 . 1 0 :1:0 
-`uc 1 SUSPND 1 0 :1:1 
-`uc 1 RESUME 1 0 :1:2 
-`uc 1 USBEN 1 0 :1:3 
-`uc 1 PKTDIS 1 0 :1:4 
-`uc 1 SE0 1 0 :1:5 
-`uc 1 PPBRST 1 0 :1:6 
-]
-[u S286 . 1 `S278 1 . 1 0 ]
-"5273
-[s S298 . 1 `uc 1 URSTIF 1 0 :1:0 
-`uc 1 UERRIF 1 0 :1:1 
-`uc 1 ACTVIF 1 0 :1:2 
-`uc 1 TRNIF 1 0 :1:3 
-`uc 1 IDLEIF 1 0 :1:4 
-`uc 1 STALLIF 1 0 :1:5 
-`uc 1 SOFIF 1 0 :1:6 
-]
-[u S306 . 1 `S298 1 . 1 0 ]
-"4853
-[s S318 . 1 `uc 1 . 1 0 :1:0 
-`uc 1 ACTIF 1 0 :1:1 
-`uc 1 USBIF 1 0 :1:2 
-`uc 1 BCL1IF 1 0 :1:3 
-`uc 1 . 1 0 :1:4 
-`uc 1 C1IF 1 0 :1:5 
-`uc 1 C2IF 1 0 :1:6 
-`uc 1 OSFIF 1 0 :1:7 
-]
-[u S327 . 1 `S318 1 . 1 0 ]
-"625
-[s S339 . 1 `uc 1 URSTIE 1 0 :1:0 
-`uc 1 UERRIE 1 0 :1:1 
-`uc 1 ACTVIE 1 0 :1:2 
-`uc 1 TRNIE 1 0 :1:3 
-`uc 1 IDLEIE 1 0 :1:4 
-`uc 1 STALLIE 1 0 :1:5 
-`uc 1 SOFIE 1 0 :1:6 
-]
-[u S347 . 1 `S339 1 . 1 0 ]
-"378 ../USB/usb_device.c
-[e E3248 . `ui
+"887
+[e E3249 . `ui
 EVENT_NONE 0
 EVENT_DEVICE_STACK_BASE 1
 EVENT_HOST_STACK_BASE 100
@@ -247,332 +54,16 @@ EVENT_AUDIO_BASE 1000
 EVENT_USER_BASE 10000
 EVENT_BUS_ERROR 32767
 ]
-"24 /opt/microchip/xc8/v1.12/include/string.h
-[e E3485 . `uc
+"2180
+[e E3486 . `uc
 EVENT_CONFIGURED 1
 EVENT_SET_DESCRIPTOR 2
 EVENT_EP0_REQUEST 3
 EVENT_ATTACH 4
 EVENT_TRANSFER_TERMINATED 5
 ]
-[s S444 _USB_DEVICE_DESCRIPTOR 18 `uc 1 bLength 1 0 `uc 1 bDescriptorType 1 1 `us 1 bcdUSB 2 2 `uc 1 bDeviceClass 1 4 `uc 1 bDeviceSubClass 1 5 `uc 1 bDeviceProtocol 1 6 `uc 1 bMaxPacketSize0 1 7 `us 1 idVendor 2 8 `us 1 idProduct 2 10 `us 1 bcdDevice 2 12 `uc 1 iManufacturer 1 14 `uc 1 iProduct 1 15 `uc 1 iSerialNumber 1 16 `uc 1 bNumConfigurations 1 17 ]
-"363 ../USB/usb_device.c
-[v F3743 `*DCCuc  1 t 2 ]
-"366
-[v F3746 `*DCCuc  1 t 2 ]
-[s S478 . 1 `uc 1 EPSTALL 1 0 :1:0 
-`uc 1 EPINEN 1 0 :1:1 
-`uc 1 EPOUTEN 1 0 :1:2 
-`uc 1 EPCONDIS 1 0 :1:3 
-`uc 1 EPHSHK 1 0 :1:4 
-]
-[u S484 . 1 `S478 1 . 1 0 ]
-"296 ../USB/usb_function_generic.c
-[s S1251 _USB_DEVICE_DESCRIPTOR 18 `uc 1 bLength 1 0 `uc 1 bDescriptorType 1 1 `us 1 bcdUSB 2 2 `uc 1 bDeviceClass 1 4 `uc 1 bDeviceSubClass 1 5 `uc 1 bDeviceProtocol 1 6 `uc 1 bMaxPacketSize0 1 7 `us 1 idVendor 2 8 `us 1 idProduct 2 10 `us 1 bcdDevice 2 12 `uc 1 iManufacturer 1 14 `uc 1 iProduct 1 15 `uc 1 iSerialNumber 1 16 `uc 1 bNumConfigurations 1 17 ]
-[s S1266 . 4 `uc 1 bLength 1 0 `uc 1 bDscType 1 1 `[1]us 1 string 2 2 ]
-[s S1270 . 52 `uc 1 bLength 1 0 `uc 1 bDscType 1 1 `[25]us 1 string 50 2 ]
-[s S1274 . 52 `uc 1 bLength 1 0 `uc 1 bDscType 1 1 `[25]us 1 string 50 2 ]
-"240 ../usb_descriptors.c
-[v F3735 `*DCCuc  1 t 2 ]
-"242
-[v F3736 `*DCCuc  1 t 2 ]
-"245
-[v F3740 `*DCCuc  1 t 2 ]
-"247
-[v F3741 `*DCCuc  1 t 2 ]
-"248
-[v usb_descriptors@F3743 `*DCCuc  1 t 2 ]
-"249
-[v F3745 `*DCCuc  1 t 2 ]
-[s S1300 _worktask 45 `uc 1 WorkID 1 0 `[8]ul 1 MidState 32 1 `[3]ul 1 Merkle 12 33 ]
-"357 asic.c
-[s S1340 _i2c 1 `uc 1 Next 1 0 :5:0 
-`uc 1 Slave 1 0 :1:5 
-`uc 1 Master 1 0 :1:6 
-]
-[s S1344 . 1 `uc 1 SEN 1 0 :1:0 
-`uc 1 RSEN 1 0 :1:1 
-`uc 1 PEN 1 0 :1:2 
-`uc 1 RCEN 1 0 :1:3 
-`uc 1 ACKEN 1 0 :1:4 
-`uc 1 ACKDT 1 0 :1:5 
-`uc 1 ACKSTAT 1 0 :1:6 
-`uc 1 GCEN 1 0 :1:7 
-]
-[u S1353 . 1 `S1344 1 . 1 0 ]
-"3625 /opt/microchip/xc8/v1.12/include/pic16lf1459.h
-[s S1365 . 1 `uc 1 BF 1 0 :1:0 
-`uc 1 UA 1 0 :1:1 
-`uc 1 R_nW 1 0 :1:2 
-`uc 1 S 1 0 :1:3 
-`uc 1 P 1 0 :1:4 
-`uc 1 D_nA 1 0 :1:5 
-`uc 1 CKE 1 0 :1:6 
-`uc 1 SMP 1 0 :1:7 
-]
-[u S1374 . 1 `S1365 1 . 1 0 ]
-"3079
-[s S1387 _id 12 `uc 1 version 1 0 `[7]uc 1 product 7 1 `ul 1 serial 4 8 ]
-[s S1391 _workcfg 6 `us 1 HashClock 2 0 `uc 1 TempTarget 1 2 `uc 1 TempCritical 1 3 `uc 1 FanTarget 1 4 `uc 1 pad 1 5 ]
-[s S1397 _workstatus 13 `uc 1 State 1 0 `uc 1 ChipCount 1 1 `uc 1 SlaveCount 1 2 `uc 1 WorkQC 1 3 `uc 1 WorkID 1 4 `uc 1 Temp 1 5 `uc 1 FanSpeed 1 6 `uc 1 ErrorCount 1 7 `us 1 HashCount 2 8 `us 1 MaxCount 2 10 `uc 1 Noise 1 12 ]
-"25 i2c.c
-[s S1426 . 1 `uc 1 SSP1M0 1 0 :1:0 
-`uc 1 SSP1M1 1 0 :1:1 
-`uc 1 SSP1M2 1 0 :1:2 
-`uc 1 SSP1M3 1 0 :1:3 
-`uc 1 CKP 1 0 :1:4 
-`uc 1 SSPEN 1 0 :1:5 
-`uc 1 SSPOV 1 0 :1:6 
-`uc 1 WCOL 1 0 :1:7 
-]
-[s S1435 . 1 `uc 1 SSPM 1 0 :4:0 
-`uc 1 . 1 0 :1:4 
-`uc 1 SSP1EN 1 0 :1:5 
-`uc 1 SSP1OV 1 0 :1:6 
-]
-[u S1440 . 1 `S1426 1 . 1 0 `S1435 1 . 1 0 ]
-"3116 /opt/microchip/xc8/v1.12/include/pic16lf1459.h
-[s S1461 . 1 `uc 1 . 1 0 :4:0 
-`uc 1 TRISB4 1 0 :1:4 
-`uc 1 TRISB5 1 0 :1:5 
-`uc 1 TRISB6 1 0 :1:6 
-`uc 1 TRISB7 1 0 :1:7 
-]
-[u S1467 . 1 `S1461 1 . 1 0 ]
-"1010
-[s S1476 . 1 `uc 1 DHEN 1 0 :1:0 
-`uc 1 AHEN 1 0 :1:1 
-`uc 1 SBCDE 1 0 :1:2 
-`uc 1 SDAHT 1 0 :1:3 
-`uc 1 BOEN 1 0 :1:4 
-`uc 1 SCIE 1 0 :1:5 
-`uc 1 PCIE 1 0 :1:6 
-`uc 1 ACKTIM 1 0 :1:7 
-]
-[u S1485 . 1 `S1476 1 . 1 0 ]
-"186 i2c.c
-[s S1561 _id 12 `uc 1 version 1 0 `[7]uc 1 product 7 1 `ul 1 serial 4 8 ]
-[s S1565 _workstatus 13 `uc 1 State 1 0 `uc 1 ChipCount 1 1 `uc 1 SlaveCount 1 2 `uc 1 WorkQC 1 3 `uc 1 WorkID 1 4 `uc 1 Temp 1 5 `uc 1 FanSpeed 1 6 `uc 1 ErrorCount 1 7 `us 1 HashCount 2 8 `us 1 MaxCount 2 10 `uc 1 Noise 1 12 ]
-[s S1577 _workcfg 6 `us 1 HashClock 2 0 `uc 1 TempTarget 1 2 `uc 1 TempCritical 1 3 `uc 1 FanTarget 1 4 `uc 1 pad 1 5 ]
-[s S1583 _worktask 45 `uc 1 WorkID 1 0 `[8]ul 1 MidState 32 1 `[3]ul 1 Merkle 12 33 ]
-"4243 /opt/microchip/xc8/v1.12/include/pic16lf1459.h
-[s S1600 . 1 `uc 1 . 1 0 :4:0 
-`uc 1 LATA4 1 0 :1:4 
-`uc 1 LATA5 1 0 :1:5 
-]
-[u S1604 . 1 `S1600 1 . 1 0 ]
-"6501
-[s S1614 . 1 `uc 1 LATC0 1 0 :1:0 
-`uc 1 LATC1 1 0 :1:1 
-`uc 1 LATC2 1 0 :1:2 
-`uc 1 LATC3 1 0 :1:3 
-`uc 1 LATC4 1 0 :1:4 
-`uc 1 LATC5 1 0 :1:5 
-`uc 1 LATC6 1 0 :1:6 
-`uc 1 LATC7 1 0 :1:7 
-]
-[u S1623 . 1 `S1614 1 . 1 0 ]
-"6343
-[s S1636 . 1 `uc 1 TMR1ON 1 0 :1:0 
-`uc 1 . 1 0 :1:1 
-`uc 1 nT1SYNC 1 0 :1:2 
-`uc 1 T1OSCEN 1 0 :1:3 
-`uc 1 T1CKPS 1 0 :2:4 
-`uc 1 TMR1CS 1 0 :2:6 
-]
-[s S1643 . 1 `uc 1 . 1 0 :4:0 
-`uc 1 T1CKPS0 1 0 :1:4 
-`uc 1 T1CKPS1 1 0 :1:5 
-`uc 1 TMR1CS0 1 0 :1:6 
-`uc 1 TMR1CS1 1 0 :1:7 
-]
-[u S1649 . 1 `S1636 1 . 1 0 `S1643 1 . 1 0 ]
-"6715
-[s S1667 . 1 `uc 1 T1GSS 1 0 :2:0 
-`uc 1 T1GVAL 1 0 :1:2 
-`uc 1 T1GGO_nDONE 1 0 :1:3 
-`uc 1 T1GSPM 1 0 :1:4 
-`uc 1 T1GTM 1 0 :1:5 
-`uc 1 T1GPOL 1 0 :1:6 
-`uc 1 TMR1GE 1 0 :1:7 
-]
-[s S1675 . 1 `uc 1 T1GSS0 1 0 :1:0 
-`uc 1 T1GSS1 1 0 :1:1 
-]
-[u S1678 . 1 `S1667 1 . 1 0 `S1675 1 . 1 0 ]
-"6707
-[s S1700 . 1 `uc 1 RX9D 1 0 :1:0 
-`uc 1 OERR 1 0 :1:1 
-`uc 1 FERR 1 0 :1:2 
-`uc 1 ADDEN 1 0 :1:3 
-`uc 1 CREN 1 0 :1:4 
-`uc 1 SREN 1 0 :1:5 
-`uc 1 RX9 1 0 :1:6 
-`uc 1 SPEN 1 0 :1:7 
-]
-[u S1709 . 1 `S1700 1 . 1 0 ]
-"1611
-[s S1722 . 1 `uc 1 ADON 1 0 :1:0 
-`uc 1 GO_nDONE 1 0 :1:1 
-`uc 1 CHS 1 0 :5:2 
-]
-[s S1726 . 1 `uc 1 . 1 0 :1:0 
-`uc 1 ADGO 1 0 :1:1 
-`uc 1 CHS0 1 0 :1:2 
-`uc 1 CHS1 1 0 :1:3 
-`uc 1 CHS2 1 0 :1:4 
-`uc 1 CHS3 1 0 :1:5 
-`uc 1 CHS4 1 0 :1:6 
-]
-[s S1734 . 1 `uc 1 . 1 0 :1:0 
-`uc 1 GO 1 0 :1:1 
-]
-[u S1737 . 1 `S1722 1 . 1 0 `S1726 1 . 1 0 `S1734 1 . 1 0 ]
-"6723
-[s S1762 . 1 `uc 1 TRISC0 1 0 :1:0 
-`uc 1 TRISC1 1 0 :1:1 
-`uc 1 TRISC2 1 0 :1:2 
-`uc 1 TRISC3 1 0 :1:3 
-`uc 1 TRISC4 1 0 :1:4 
-`uc 1 TRISC5 1 0 :1:5 
-`uc 1 TRISC6 1 0 :1:6 
-`uc 1 TRISC7 1 0 :1:7 
-]
-[u S1771 . 1 `S1762 1 . 1 0 ]
-"6729
-[s S1787 . 1 `uc 1 T2CKPS 1 0 :2:0 
-`uc 1 TMR2ON 1 0 :1:2 
-`uc 1 T2OUTPS 1 0 :4:3 
-]
-[s S1791 . 1 `uc 1 T2CKPS0 1 0 :1:0 
-`uc 1 T2CKPS1 1 0 :1:1 
-`uc 1 . 1 0 :1:2 
-`uc 1 T2OUTPS0 1 0 :1:3 
-`uc 1 T2OUTPS1 1 0 :1:4 
-`uc 1 T2OUTPS2 1 0 :1:5 
-`uc 1 T2OUTPS3 1 0 :1:6 
-]
-[u S1799 . 1 `S1787 1 . 1 0 `S1791 1 . 1 0 ]
-"6731
-[s S1816 . 1 `uc 1 ADPREF 1 0 :2:0 
-`uc 1 . 1 0 :2:2 
-`uc 1 ADCS 1 0 :3:4 
-`uc 1 ADFM 1 0 :1:7 
-]
-[s S1821 . 1 `uc 1 ADPREF0 1 0 :1:0 
-`uc 1 ADPREF1 1 0 :1:1 
-`uc 1 . 1 0 :2:2 
-`uc 1 ADCS0 1 0 :1:4 
-`uc 1 ADCS1 1 0 :1:5 
-`uc 1 ADCS2 1 0 :1:6 
-]
-[u S1828 . 1 `S1816 1 . 1 0 `S1821 1 . 1 0 ]
-"1730
-[s S1844 . 1 `uc 1 . 1 0 :4:0 
-`uc 1 TRIGSEL 1 0 :3:4 
-]
-[s S1847 . 1 `uc 1 . 1 0 :4:0 
-`uc 1 TRIGSEL0 1 0 :1:4 
-`uc 1 TRIGSEL1 1 0 :1:5 
-`uc 1 TRIGSEL2 1 0 :1:6 
-]
-[u S1852 . 1 `S1844 1 . 1 0 `S1847 1 . 1 0 ]
-"6703
-[s S1865 . 1 `uc 1 PS 1 0 :3:0 
-`uc 1 PSA 1 0 :1:3 
-`uc 1 TMR0SE 1 0 :1:4 
-`uc 1 TMR0CS 1 0 :1:5 
-`uc 1 INTEDG 1 0 :1:6 
-`uc 1 nWPUEN 1 0 :1:7 
-]
-[s S1872 . 1 `uc 1 PS0 1 0 :1:0 
-`uc 1 PS1 1 0 :1:1 
-`uc 1 PS2 1 0 :1:2 
-`uc 1 . 1 0 :1:3 
-`uc 1 T0SE 1 0 :1:4 
-`uc 1 T0CS 1 0 :1:5 
-]
-[u S1879 . 1 `S1865 1 . 1 0 `S1872 1 . 1 0 ]
-"1879
-[s S1898 . 1 `uc 1 . 1 0 :4:0 
-`uc 1 TRISA4 1 0 :1:4 
-`uc 1 TRISA5 1 0 :1:5 
-]
-[u S1902 . 1 `S1898 1 . 1 0 ]
-"982
-[s S1909 . 1 `uc 1 TX9D 1 0 :1:0 
-`uc 1 TRMT 1 0 :1:1 
-`uc 1 BRGH 1 0 :1:2 
-`uc 1 SENDB 1 0 :1:3 
-`uc 1 SYNC 1 0 :1:4 
-`uc 1 TXEN 1 0 :1:5 
-`uc 1 TX9 1 0 :1:6 
-`uc 1 CSRC 1 0 :1:7 
-]
-[u S1918 . 1 `S1909 1 . 1 0 ]
-"2892
-[s S1930 . 1 `uc 1 ABDEN 1 0 :1:0 
-`uc 1 WUE 1 0 :1:1 
-`uc 1 . 1 0 :1:2 
-`uc 1 BRG16 1 0 :1:3 
-`uc 1 SCKP 1 0 :1:4 
-`uc 1 . 1 0 :1:5 
-`uc 1 RCIDL 1 0 :1:6 
-`uc 1 ABDOVF 1 0 :1:7 
-]
-[u S1939 . 1 `S1930 1 . 1 0 ]
-"2953
-[s S1951 . 1 `uc 1 . 1 0 :4:0 
-`uc 1 ANSB4 1 0 :1:4 
-`uc 1 ANSB5 1 0 :1:5 
-]
-[s S1955 . 1 `uc 1 . 1 0 :4:0 
-`uc 1 ANSB 1 0 :4:4 
-]
-[u S1958 . 1 `S1951 1 . 1 0 `S1955 1 . 1 0 ]
-"2499
-[s S1969 . 1 `uc 1 . 1 0 :4:0 
-`uc 1 IOCBP4 1 0 :1:4 
-`uc 1 IOCBP5 1 0 :1:5 
-`uc 1 IOCBP6 1 0 :1:6 
-`uc 1 IOCBP7 1 0 :1:7 
-]
-[s S1975 . 1 `uc 1 . 1 0 :4:0 
-`uc 1 IOCBP 1 0 :4:4 
-]
-[u S1978 . 1 `S1969 1 . 1 0 `S1975 1 . 1 0 ]
-"3964
-[s S1991 . 1 `uc 1 IOCIF 1 0 :1:0 
-`uc 1 INTF 1 0 :1:1 
-`uc 1 TMR0IF 1 0 :1:2 
-`uc 1 IOCIE 1 0 :1:3 
-`uc 1 INTE 1 0 :1:4 
-`uc 1 TMR0IE 1 0 :1:5 
-`uc 1 PEIE 1 0 :1:6 
-`uc 1 GIE 1 0 :1:7 
-]
-[s S2000 . 1 `uc 1 . 1 0 :2:0 
-`uc 1 T0IF 1 0 :1:2 
-`uc 1 . 1 0 :2:3 
-`uc 1 T0IE 1 0 :1:5 
-]
-[u S2005 . 1 `S1991 1 . 1 0 `S2000 1 . 1 0 ]
-"114 klondike.h
-[s S2162 _workstatus 13 `uc 1 State 1 0 `uc 1 ChipCount 1 1 `uc 1 SlaveCount 1 2 `uc 1 WorkQC 1 3 `uc 1 WorkID 1 4 `uc 1 Temp 1 5 `uc 1 FanSpeed 1 6 `uc 1 ErrorCount 1 7 `us 1 HashCount 2 8 `us 1 MaxCount 2 10 `uc 1 Noise 1 12 ]
-"252 ../Include/USB/usb_device.h
-[s S2191 . 1 `uc 1 . 1 0 :4:0 
-`uc 1 TRISA4 1 0 :1:4 
-`uc 1 TRISA5 1 0 :1:5 
-]
-[u S2195 . 1 `S1898 1 . 1 0 ]
-"982 /opt/microchip/xc8/v1.12/include/pic16lf1459.h
-[s S2198 . 1 `uc 1 . 1 0 :4:0 
-`uc 1 LATA4 1 0 :1:4 
-`uc 1 LATA5 1 0 :1:5 
-]
-[u S2202 . 1 `S1600 1 . 1 0 ]
-"111 klondike.h
-[e E3476 . `uc
+"184 C:\Users\george\Documents\GitHub\Avalon\firmware\Klondike.X\main.c
+[e E3477 . `uc
 DETACHED_STATE 0
 ATTACHED_STATE 1
 POWERED_STATE 2
@@ -581,50 +72,13 @@ ADR_PENDING_STATE 8
 ADDRESS_STATE 16
 CONFIGURED_STATE 32
 ]
-"1983 ../Include/USB/usb_device.h
-[s S2219 . 1 `uc 1 . 1 0 :1:0 
-`uc 1 SUSPND 1 0 :1:1 
-`uc 1 RESUME 1 0 :1:2 
-`uc 1 USBEN 1 0 :1:3 
-`uc 1 PKTDIS 1 0 :1:4 
-`uc 1 SE0 1 0 :1:5 
-`uc 1 PPBRST 1 0 :1:6 
-]
-[u S2227 . 1 `S278 1 . 1 0 ]
-"4869 /opt/microchip/xc8/v1.12/include/pic16lf1459.h
-[s S2230 . 1 `uc 1 BC8 1 0 :1:0 
-`uc 1 BC9 1 0 :1:1 
-`uc 1 BSTALL 1 0 :1:2 
-`uc 1 DTSEN 1 0 :1:3 
-`uc 1 INCDIS 1 0 :1:4 
-`uc 1 KEN 1 0 :1:5 
-`uc 1 DTS 1 0 :1:6 
-`uc 1 UOWN 1 0 :1:7 
-]
-[s S2239 . 1 `uc 1 . 1 0 :2:0 
-`uc 1 PID0 1 0 :1:2 
-`uc 1 PID1 1 0 :1:3 
-`uc 1 PID2 1 0 :1:4 
-`uc 1 PID3 1 0 :1:5 
-`uc 1 . 1 0 :1:6 
-]
-[s S2246 . 1 `uc 1 . 1 0 :2:0 
-`uc 1 PID 1 0 :4:2 
-`uc 1 . 1 0 :2:6 
-]
-[u S2250 _BD_STAT 1 `uc 1 Val 1 0 `S27 1 . 1 0 `S36 1 . 1 0 `S43 1 . 1 0 ]
-[s S2255 . 4 `S47 1 STAT 1 0 `uc 1 CNT 1 1 `uc 1 ADRL 1 2 `uc 1 ADRH 1 3 ]
-[s S2260 . 4 `uc 1 filler1 1 0 :8:0 
-`uc 1 filler2 1 1 :8:0 
-`us 1 ADR 2 2 ]
-[u S2264 __BDT 4 `S52 1 . 4 0 `S57 1 . 4 0 `ul 1 Val 4 0 `[4]uc 1 v 4 0 ]
-"409 ../Include/USB/usb_device.h
+"567
 [e E5 _BOOL `uc
 FALSE 0
 TRUE 1
 ]
-"1982
-[e E3248 . `ui
+"631
+[e E3249 . `ui
 EVENT_NONE 0
 EVENT_DEVICE_STACK_BASE 1
 EVENT_HOST_STACK_BASE 100
@@ -660,227 +114,225 @@ EVENT_AUDIO_BASE 1000
 EVENT_USER_BASE 10000
 EVENT_BUS_ERROR 32767
 ]
-[e E3485 . `uc
+[e E3486 . `uc
 EVENT_CONFIGURED 1
 EVENT_SET_DESCRIPTOR 2
 EVENT_EP0_REQUEST 3
 EVENT_ATTACH 4
 EVENT_TRANSFER_TERMINATED 5
 ]
-"70 main.c
-[v F3828 `(v  1 t 0 ]
-"10 /opt/microchip/xc8/v1.12/sources/memset.c
-[v _memset `(*v  1 e 1 0 ]
-"467 ../USB/usb_device.c
-[v _USBDeviceInit `(v  1 e 0 0 ]
+"467 C:\Users\george\Documents\GitHub\Avalon\firmware/USB/usb_device.c
+[v _USBDeviceInit USBDeviceInit `(v  1 e 0 0 ]
 "669
-[v _USBDeviceTasks `(v  1 e 0 0 ]
+[v _USBDeviceTasks USBDeviceTasks `(v  1 e 0 0 ]
 "1056
-[v _USBEnableEndpoint `(v  1 e 0 0 ]
+[v _USBEnableEndpoint USBEnableEndpoint `(v  1 e 0 0 ]
 "1173
-[v _USBTransferOnePacket `(*v  1 e 1 0 ]
+[v _USBTransferOnePacket USBTransferOnePacket `(*.4v  1 e 1 0 ]
 "1250
-[v _USBStallEndpoint `(v  1 e 0 0 ]
+[v _USBStallEndpoint USBStallEndpoint `(v  1 e 0 0 ]
 "1303
-[v _USBCancelIO `(v  1 e 0 0 ]
+[v _USBCancelIO USBCancelIO `(v  1 e 0 0 ]
 "1590
-[v _USBCtrlEPAllowStatusStage `(v  1 e 0 0 ]
+[v _USBCtrlEPAllowStatusStage USBCtrlEPAllowStatusStage `(v  1 e 0 0 ]
 "1660
-[v _USBCtrlEPAllowDataStage `(v  1 e 0 0 ]
+[v _USBCtrlEPAllowDataStage USBCtrlEPAllowDataStage `(v  1 e 0 0 ]
 "1713
-[v _USBConfigureEndpoint `(v  1 s 0 USBConfigureEndpoint ]
+[v _USBConfigureEndpoint USBConfigureEndpoint `(v  1 s 0 USBConfigureEndpoint ]
 "1786
-[v _USBCtrlEPServiceComplete `(v  1 s 0 USBCtrlEPServiceComplete ]
+[v _USBCtrlEPServiceComplete USBCtrlEPServiceComplete `(v  1 s 0 USBCtrlEPServiceComplete ]
 "1938
-[v _USBCtrlTrfTxService `(v  1 s 0 USBCtrlTrfTxService ]
+[v _USBCtrlTrfTxService USBCtrlTrfTxService `(v  1 s 0 USBCtrlTrfTxService ]
 "2019
-[v _USBCtrlTrfRxService `(v  1 s 0 USBCtrlTrfRxService ]
+[v _USBCtrlTrfRxService USBCtrlTrfRxService `(v  1 s 0 USBCtrlTrfRxService ]
 "2132
-[v _USBStdSetCfgHandler `(v  1 s 0 USBStdSetCfgHandler ]
+[v _USBStdSetCfgHandler USBStdSetCfgHandler `(v  1 s 0 USBStdSetCfgHandler ]
 "2207
-[v _USBStdGetDscHandler `(v  1 s 0 USBStdGetDscHandler ]
+[v _USBStdGetDscHandler USBStdGetDscHandler `(v  1 s 0 USBStdGetDscHandler ]
 "2283
-[v _USBStdGetStatusHandler `(v  1 s 0 USBStdGetStatusHandler ]
+[v _USBStdGetStatusHandler USBStdGetStatusHandler `(v  1 s 0 USBStdGetStatusHandler ]
 "2356
-[v _USBStallHandler `(v  1 s 0 USBStallHandler ]
+[v _USBStallHandler USBStallHandler `(v  1 s 0 USBStallHandler ]
 "2399
-[v _USBSuspend `(v  1 s 0 USBSuspend ]
+[v _USBSuspend USBSuspend `(v  1 s 0 USBSuspend ]
 "2456
-[v _USBWakeFromSuspend `(v  1 s 0 USBWakeFromSuspend ]
+[v _USBWakeFromSuspend USBWakeFromSuspend `(v  1 s 0 USBWakeFromSuspend ]
 "2523
-[v _USBCtrlEPService `(v  1 s 0 USBCtrlEPService ]
+[v _USBCtrlEPService USBCtrlEPService `(v  1 s 0 USBCtrlEPService ]
 "2623
-[v _USBCtrlTrfSetupHandler `(v  1 s 0 USBCtrlTrfSetupHandler ]
+[v _USBCtrlTrfSetupHandler USBCtrlTrfSetupHandler `(v  1 s 0 USBCtrlTrfSetupHandler ]
 "2695
-[v _USBCtrlTrfOutHandler `(v  1 s 0 USBCtrlTrfOutHandler ]
+[v _USBCtrlTrfOutHandler USBCtrlTrfOutHandler `(v  1 s 0 USBCtrlTrfOutHandler ]
 "2748
-[v _USBCtrlTrfInHandler `(v  1 s 0 USBCtrlTrfInHandler ]
+[v _USBCtrlTrfInHandler USBCtrlTrfInHandler `(v  1 s 0 USBCtrlTrfInHandler ]
 "2839
-[v _USBCheckStdRequest `(v  1 s 0 USBCheckStdRequest ]
+[v _USBCheckStdRequest USBCheckStdRequest `(v  1 s 0 USBCheckStdRequest ]
 "2907
-[v _USBStdFeatureReqHandler `(v  1 s 0 USBStdFeatureReqHandler ]
-"248 ../USB/usb_function_generic.c
-[v _USBCheckVendorRequest `(v  1 e 0 0 ]
-"5 /opt/microchip/xc8/v1.12/sources/abdiv.c
-[v ___abdiv `(c  1 e 1 0 ]
-"5 /opt/microchip/xc8/v1.12/sources/abmod.c
-[v ___abmod `(c  1 e 1 0 ]
-"34 /opt/microchip/xc8/v1.12/sources/abtoft.c
-[v ___abtoft `(f  1 e 3 0 ]
-"5 /opt/microchip/xc8/v1.12/sources/aldiv.c
-[v ___aldiv `(l  1 e 4 0 ]
-"5 /opt/microchip/xc8/v1.12/sources/almod.c
-[v ___almod `(l  1 e 4 0 ]
-"43 /opt/microchip/xc8/v1.12/sources/altoft.c
-[v ___altoft `(f  1 e 3 0 ]
-"5 /opt/microchip/xc8/v1.12/sources/atdiv.c
-[v ___atdiv `(m  1 e 3 0 ]
-"5 /opt/microchip/xc8/v1.12/sources/atmod.c
-[v ___atmod `(m  1 e 3 0 ]
-"38 /opt/microchip/xc8/v1.12/sources/attoft.c
-[v ___attoft `(f  1 e 3 0 ]
-"5 /opt/microchip/xc8/v1.12/sources/awdiv.c
-[v ___awdiv `(i  1 e 2 0 ]
-"5 /opt/microchip/xc8/v1.12/sources/awmod.c
-[v ___awmod `(i  1 e 2 0 ]
-"33 /opt/microchip/xc8/v1.12/sources/awtoft.c
-[v ___awtoft `(f  1 e 3 0 ]
-"3 /opt/microchip/xc8/v1.12/sources/bmul.c
-[v ___bmul `(uc  1 e 1 0 ]
-[v i1___bmul `(uc  1 e 1 0 ]
-[v i1___bmul `(uc  1 e 1 0 ]
-"63 /opt/microchip/xc8/v1.12/sources/float.c
-[v ___ftpack `(f  1 e 3 0 ]
-"87 /opt/microchip/xc8/v1.12/sources/ftadd.c
-[v ___ftadd `(f  1 e 3 0 ]
-"50 /opt/microchip/xc8/v1.12/sources/ftdiv.c
-[v ___ftdiv `(f  1 e 3 0 ]
-"5 /opt/microchip/xc8/v1.12/sources/ftge.c
-[v ___ftge `(b  1 e 0 0 ]
-"52 /opt/microchip/xc8/v1.12/sources/ftmul.c
-[v ___ftmul `(f  1 e 3 0 ]
-"16 /opt/microchip/xc8/v1.12/sources/ftneg.c
-[v ___ftneg `(f  1 e 3 0 ]
-"17 /opt/microchip/xc8/v1.12/sources/ftsub.c
-[v ___ftsub `(f  1 e 3 0 ]
-"45 /opt/microchip/xc8/v1.12/sources/fttol.c
-[v ___fttol `(l  1 e 4 0 ]
-"5 /opt/microchip/xc8/v1.12/sources/lbdiv.c
-[v ___lbdiv `(uc  1 e 1 0 ]
-"5 /opt/microchip/xc8/v1.12/sources/lbmod.c
-[v ___lbmod `(uc  1 e 1 0 ]
-"28 /opt/microchip/xc8/v1.12/sources/lbtoft.c
-[v ___lbtoft `(f  1 e 3 0 ]
-"5 /opt/microchip/xc8/v1.12/sources/lldiv.c
-[v ___lldiv `(ul  1 e 4 0 ]
-"5 /opt/microchip/xc8/v1.12/sources/llmod.c
-[v ___llmod `(ul  1 e 4 0 ]
-"36 /opt/microchip/xc8/v1.12/sources/lltoft.c
-[v ___lltoft `(f  1 e 3 0 ]
-"3 /opt/microchip/xc8/v1.12/sources/lmul.c
-[v ___lmul `(ul  1 e 4 0 ]
-"5 /opt/microchip/xc8/v1.12/sources/ltdiv.c
-[v ___ltdiv `(um  1 e 3 0 ]
-"5 /opt/microchip/xc8/v1.12/sources/ltmod.c
-[v ___ltmod `(um  1 e 3 0 ]
-"31 /opt/microchip/xc8/v1.12/sources/lttoft.c
-[v ___lttoft `(f  1 e 3 0 ]
-"5 /opt/microchip/xc8/v1.12/sources/lwdiv.c
-[v ___lwdiv `(ui  1 e 2 0 ]
-"5 /opt/microchip/xc8/v1.12/sources/lwmod.c
-[v ___lwmod `(ui  1 e 2 0 ]
-"29 /opt/microchip/xc8/v1.12/sources/lwtoft.c
-[v ___lwtoft `(f  1 e 3 0 ]
-"3 /opt/microchip/xc8/v1.12/sources/tmul.c
-[v ___tmul `(um  1 e 3 0 ]
-"3 /opt/microchip/xc8/v1.12/sources/wmul.c
-[v ___wmul `(ui  1 e 2 0 ]
-[v i1___wmul `(ui  1 e 2 0 ]
-[v i1___wmul `(ui  1 e 2 0 ]
-"36 asic.c
-[v _SendAsicData `(v  1 e 0 0 ]
+[v _USBStdFeatureReqHandler USBStdFeatureReqHandler `(v  1 s 0 USBStdFeatureReqHandler ]
+"248 C:\Users\george\Documents\GitHub\Avalon\firmware/USB/usb_function_generic.c
+[v _USBCheckVendorRequest USBCheckVendorRequest `(v  1 e 0 0 ]
+"36 C:\Users\george\Documents\GitHub\Avalon\firmware\Klondike.X\asic.c
+[v _SendAsicData SendAsicData `(v  1 e 0 0 ]
 "59
-[v _Send32 `(v  1 e 0 0 ]
+[v _Send32 Send32 `(v  1 e 0 0 ]
 "314
-[v _rotate `(ul  1 e 4 0 ]
+[v _rotate rotate `(ul  1 e 4 0 ]
 "319
-[v _AsicPreCalc `(v  1 e 0 0 ]
-"37 i2c.c
-[v _I2CRelay `(v  1 e 0 0 ]
+[v _AsicPreCalc AsicPreCalc `(v  1 e 0 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\memset.c
+[v _memset memset `(*.4v  1 e 1 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic\abdiv.c
+[v ___abdiv __abdiv `(c  1 e 1 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic\abmod.c
+[v ___abmod __abmod `(c  1 e 1 0 ]
+"34 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic\abtoft.c
+[v ___abtoft __abtoft `(f  1 e 3 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic\almod.c
+[v ___almod __almod `(l  1 e 4 0 ]
+"43 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic\altoft.c
+[v ___altoft __altoft `(f  1 e 3 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic\atdiv.c
+[v ___atdiv __atdiv `(m  1 e 3 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic\atmod.c
+[v ___atmod __atmod `(m  1 e 3 0 ]
+"38 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic\attoft.c
+[v ___attoft __attoft `(f  1 e 3 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"33 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+"3 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic\bmul.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+[v i1___bmul __bmul `(uc  1 e 1 0 ]
+[v i1___bmul __bmul `(uc  1 e 1 0 ]
+"63 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"87 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"50 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+"52 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"16 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic\ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+"17 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"45 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic\lbdiv.c
+[v ___lbdiv __lbdiv `(uc  1 e 1 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic\lbmod.c
+[v ___lbmod __lbmod `(uc  1 e 1 0 ]
+"28 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic\lbtoft.c
+[v ___lbtoft __lbtoft `(f  1 e 3 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+"36 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic\lltoft.c
+[v ___lltoft __lltoft `(f  1 e 3 0 ]
+"3 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic\lmul.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic\ltdiv.c
+[v ___ltdiv __ltdiv `(um  1 e 3 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic\ltmod.c
+[v ___ltmod __ltmod `(um  1 e 3 0 ]
+"31 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic\lttoft.c
+[v ___lttoft __lttoft `(f  1 e 3 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"29 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic\lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+"3 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic\tmul.c
+[v ___tmul __tmul `(um  1 e 3 0 ]
+"3 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic\wmul.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+[v i1___wmul __wmul `(ui  1 e 2 0 ]
+[v i1___wmul __wmul `(ui  1 e 2 0 ]
+"37 C:\Users\george\Documents\GitHub\Avalon\firmware\Klondike.X\i2c.c
+[v _I2CRelay I2CRelay `(v  1 e 0 0 ]
 "47
-[v _I2CPoll `(v  1 e 0 0 ]
+[v _I2CPoll I2CPoll `(v  1 e 0 0 ]
 "57
-[v _I2CDetect `(v  1 e 0 0 ]
+[v _I2CDetect I2CDetect `(v  1 e 0 0 ]
 "65
-[v _I2CRead `(v  1 e 0 0 ]
+[v _I2CRead I2CRead `(v  1 e 0 0 ]
 "109
-[v _I2CWrite `(v  1 e 0 0 ]
+[v _I2CWrite I2CWrite `(v  1 e 0 0 ]
 "130
-[v _I2CSlave `(v  1 e 0 0 ]
+[v _I2CSlave I2CSlave `(v  1 e 0 0 ]
 "161
-[v _InitI2CSlave `(v  1 e 0 0 ]
+[v _InitI2CSlave InitI2CSlave `(v  1 e 0 0 ]
 "175
-[v _InitI2CMaster `(v  1 e 0 0 ]
-"44 klondike.c
-[v _ProcessCmd `(v  1 e 0 0 ]
+[v _InitI2CMaster InitI2CMaster `(v  1 e 0 0 ]
+"44 C:\Users\george\Documents\GitHub\Avalon\firmware\Klondike.X\klondike.c
+[v _ProcessCmd ProcessCmd `(v  1 e 0 0 ]
 "106
-[v _AsicPushWork `(v  1 e 0 0 ]
+[v _AsicPushWork AsicPushWork `(v  1 e 0 0 ]
 "120
-[v _CheckFanSpeed `(v  1 e 0 0 ]
+[v _CheckFanSpeed CheckFanSpeed `(v  1 e 0 0 ]
 "144
-[v _DetectAsics `(v  1 e 0 0 ]
+[v _DetectAsics DetectAsics `(v  1 e 0 0 ]
 "174
-[v _WorkTick `(v  1 e 0 0 ]
+[v _WorkTick WorkTick `(v  1 e 0 0 ]
 "202
-[v _ResultRx `(v  1 e 0 0 ]
+[v _ResultRx ResultRx `(v  1 e 0 0 ]
 "235
-[v _UpdateFanSpeed `(v  1 e 0 0 ]
+[v _UpdateFanSpeed UpdateFanSpeed `(v  1 e 0 0 ]
 "247
-[v _InitFAN `(v  1 e 0 0 ]
+[v _InitFAN InitFAN `(v  1 e 0 0 ]
 "267
-[v _InitTempSensor `(v  1 e 0 0 ]
+[v _InitTempSensor InitTempSensor `(v  1 e 0 0 ]
 "280
-[v _InitWorkTick `(v  1 e 0 0 ]
+[v _InitWorkTick InitWorkTick `(v  1 e 0 0 ]
 "297
-[v _InitResultRx `(v  1 e 0 0 ]
-"70 main.c
-[v _ISRCode `II(v  1 e 0 0 ]
+[v _InitResultRx InitResultRx `(v  1 e 0 0 ]
+"70 C:\Users\george\Documents\GitHub\Avalon\firmware\Klondike.X\main.c
+[v _ISRCode ISRCode `II(v  1 e 0 0 ]
 "98
-[v _main `(i  1 e 2 0 ]
+[v _main main `(i  1 e 2 0 ]
 "146
-[v _InitializeSystem `(v  1 s 0 InitializeSystem ]
+[v _InitializeSystem InitializeSystem `(v  1 s 0 InitializeSystem ]
 "170
-[v _UserInit `(v  1 e 0 0 ]
+[v _UserInit UserInit `(v  1 e 0 0 ]
 "182
-[v _ProcessIO `(v  1 e 0 0 ]
+[v _ProcessIO ProcessIO `(v  1 e 0 0 ]
 "208
-[v _SendCmdReply `(v  1 e 0 0 ]
-[v i1_SendCmdReply `(v  1 e 0 0 ]
-[v i1_SendCmdReply `(v  1 e 0 0 ]
+[v _SendCmdReply SendCmdReply `(v  1 e 0 0 ]
+[v i1_SendCmdReply SendCmdReply `(v  1 e 0 0 ]
+[v i1_SendCmdReply SendCmdReply `(v  1 e 0 0 ]
 "264
-[v _USBCBSuspend `(v  1 e 0 0 ]
+[v _USBCBSuspend USBCBSuspend `(v  1 e 0 0 ]
 "305
-[v _USBCBWakeFromSuspend `(v  1 e 0 0 ]
+[v _USBCBWakeFromSuspend USBCBWakeFromSuspend `(v  1 e 0 0 ]
 "335
-[v _USBCB_SOF_Handler `(v  1 e 0 0 ]
+[v _USBCB_SOF_Handler USBCB_SOF_Handler `(v  1 e 0 0 ]
 "358
-[v _USBCBErrorHandler `(v  1 e 0 0 ]
+[v _USBCBErrorHandler USBCBErrorHandler `(v  1 e 0 0 ]
 "409
-[v _USBCBCheckOtherReq `(v  1 e 0 0 ]
+[v _USBCBCheckOtherReq USBCBCheckOtherReq `(v  1 e 0 0 ]
 "434
-[v _USBCBStdSetDscHandler `(v  1 e 0 0 ]
+[v _USBCBStdSetDscHandler USBCBStdSetDscHandler `(v  1 e 0 0 ]
 "460
-[v _USBCBInitEP `(v  1 e 0 0 ]
+[v _USBCBInitEP USBCBInitEP `(v  1 e 0 0 ]
 "555
-[v _USBCBSendResume `(v  1 e 0 0 ]
+[v _USBCBSendResume USBCBSendResume `(v  1 e 0 0 ]
 "630
-[v _USER_USB_CALLBACK_EVENT_HANDLER `(E5  1 e 1 0 ]
-"282 ../USB/usb_device.c
-[v _USBDeviceState `E3476  1 e 1 0 ]
+[v _USER_USB_CALLBACK_EVENT_HANDLER USER_USB_CALLBACK_EVENT_HANDLER `(E5  1 e 1 0 ]
+"282 C:\Users\george\Documents\GitHub\Avalon\firmware/USB/usb_device.c
+[v _USBDeviceState USBDeviceState `E3477  1 e 1 0 ]
 "283
-[v _USBActiveConfiguration `uc  1 e 1 0 ]
+[v _USBActiveConfiguration USBActiveConfiguration `uc  1 e 1 0 ]
 "284
-[v _USBAlternateInterface `[1]uc  1 e 1 0 ]
+[v _USBAlternateInterface USBAlternateInterface `[1]uc  1 e 1 0 ]
 [s S27 . 1 `uc 1 BC8 1 0 :1:0 
 `uc 1 BC9 1 0 :1:1 
 `uc 1 BSTALL 1 0 :1:2 
@@ -908,57 +360,25 @@ EVENT_TRANSFER_TERMINATED 5
 `uc 1 filler2 1 1 :8:0 
 `us 1 ADR 2 2 ]
 [u S61 __BDT 4 `S52 1 . 4 0 `S57 1 . 4 0 `ul 1 Val 4 0 `[4]uc 1 v 4 0 ]
-[v _pBDTEntryEP0OutCurrent `*.0VES61  1 e 1 0 ]
+[v _pBDTEntryEP0OutCurrent pBDTEntryEP0OutCurrent `*.4VES61  1 e 1 0 ]
 "286
-[v _pBDTEntryEP0OutNext `*.0VES61  1 e 1 0 ]
+[v _pBDTEntryEP0OutNext pBDTEntryEP0OutNext `*.4VES61  1 e 1 0 ]
 "287
-[v _pBDTEntryOut `[2]*VES61  1 e 2 0 ]
+[v _pBDTEntryOut pBDTEntryOut `[2]*.4VES61  1 e 2 0 ]
 "288
-[v _pBDTEntryIn `[2]*VES61  1 e 2 0 ]
+[v _pBDTEntryIn pBDTEntryIn `[2]*.4VES61  1 e 2 0 ]
 "289
-[v _shortPacketStatus `uc  1 e 1 0 ]
+[v _shortPacketStatus shortPacketStatus `uc  1 e 1 0 ]
 "290
-[v _controlTransferState `uc  1 e 1 0 ]
+[v _controlTransferState controlTransferState `uc  1 e 1 0 ]
+[u S66 . 2 `*.1uc 1 bRam 2 0 `*.1DCCuc 1 bRom 2 0 `*.1us 1 wRam 2 0 `*.1DCCus 1 wRom 2 0 ]
 "291
-[v _inPipes `[1]S104  1 e 5 0 ]
-"292
-[v _outPipes `[1]S118  1 e 6 0 ]
-"293
-[v _pDst `*.0uc  1 e 1 0 ]
-"294
-[v _RemoteWakeup `E5  1 e 1 0 ]
-[s S126 . 1 `uc 1 filler1 1 0 :1:0 
-`uc 1 ping_pong 1 0 :1:1 
-`uc 1 direction 1 0 :1:2 
-`uc 1 endpoint_number 1 0 :4:3 
+[s S71 . 1 `uc 1 ctrl_trf_mem 1 0 :1:0 
+`uc 1 reserved 1 0 :5:1 
+`uc 1 includeZero 1 0 :1:6 
+`uc 1 busy 1 0 :1:7 
 ]
-"296
-[u S131 __USTAT 1 `S126 1 . 1 0 `uc 1 Val 1 0 ]
-[v _USTATcopy `S131  1 e 1 0 ]
-"297
-[v _endpoint_number `uc  1 e 1 0 ]
-"298
-[v _BothEP0OutUOWNsSet `E5  1 e 1 0 ]
-"299
-[v _ep_data_in `[2]S137  1 e 2 0 ]
-"300
-[v _ep_data_out `[2]S137  1 e 2 0 ]
-"301
-[v _USBStatusStageTimeoutCounter `uc  1 e 1 0 ]
-"302
-[v _USBDeferStatusStagePacket `VEE5  1 e 1 0 ]
-"303
-[v _USBStatusStageEnabledFlag1 `VEE5  1 e 1 0 ]
-"304
-[v _USBStatusStageEnabledFlag2 `VEE5  1 e 1 0 ]
-"305
-[v _USBDeferINDataStagePackets `VEE5  1 e 1 0 ]
-"306
-[v _USBDeferOUTDataStagePackets `VEE5  1 e 1 0 ]
-"326
-[v _BDT `VE[8]S61  1 e 32 @32 ]
-[s S140 . 8 `uc 1 bmRequestType 1 0 `uc 1 bRequest 1 1 `us 1 wValue 2 2 `us 1 wIndex 2 4 `us 1 wLength 2 6 ]
-"331
+[u S76 . 1 `S71 1 bits 1 0 `uc 1 Val 1 0 ]
 [s S79 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
 [s S82 . 2 `uc 1 b0 1 0 :1:0 
 `uc 1 b1 1 0 :1:1 
@@ -978,6 +398,56 @@ EVENT_TRANSFER_TERMINATED 5
 `uc 1 b15 1 1 :1:7 
 ]
 [u S99 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S79 1 byte 2 0 `S82 1 bits 2 0 ]
+[s S104 . 5 `S66 1 pSrc 2 0 `S76 1 info 1 2 `S99 1 wCount 2 3 ]
+[v _inPipes inPipes `[1]S104  1 e 5 0 ]
+[u S108 . 2 `*.1uc 1 bRam 2 0 `*.1us 1 wRam 2 0 ]
+"292
+[s S111 . 1 `uc 1 reserved 1 0 :7:0 
+`uc 1 busy 1 0 :1:7 
+]
+[u S114 . 1 `S111 1 bits 1 0 `uc 1 Val 1 0 ]
+[s S118 . 6 `S108 1 pDst 2 0 `S114 1 info 1 2 `S99 1 wCount 2 3 `*.27(v 1 pFunc 1 5 ]
+[v _outPipes outPipes `[1]S118  1 e 6 0 ]
+"293
+[v _pDst pDst `*.4uc  1 e 1 0 ]
+"294
+[v _RemoteWakeup RemoteWakeup `E5  1 e 1 0 ]
+[s S126 . 1 `uc 1 filler1 1 0 :1:0 
+`uc 1 ping_pong 1 0 :1:1 
+`uc 1 direction 1 0 :1:2 
+`uc 1 endpoint_number 1 0 :4:3 
+]
+"296
+[u S131 __USTAT 1 `S126 1 . 1 0 `uc 1 Val 1 0 ]
+[v _USTATcopy USTATcopy `S131  1 e 1 0 ]
+"297
+[v _endpoint_number endpoint_number `uc  1 e 1 0 ]
+"298
+[v _BothEP0OutUOWNsSet BothEP0OutUOWNsSet `E5  1 e 1 0 ]
+[s S134 . 1 `uc 1 ping_pong_state 1 0 :1:0 
+`uc 1 transfer_terminated 1 0 :1:1 
+]
+"299
+[u S137 . 1 `S134 1 bits 1 0 `uc 1 Val 1 0 ]
+[v _ep_data_in ep_data_in `[2]S137  1 e 2 0 ]
+"300
+[v _ep_data_out ep_data_out `[2]S137  1 e 2 0 ]
+"301
+[v _USBStatusStageTimeoutCounter USBStatusStageTimeoutCounter `uc  1 e 1 0 ]
+"302
+[v _USBDeferStatusStagePacket USBDeferStatusStagePacket `VEE5  1 e 1 0 ]
+"303
+[v _USBStatusStageEnabledFlag1 USBStatusStageEnabledFlag1 `VEE5  1 e 1 0 ]
+"304
+[v _USBStatusStageEnabledFlag2 USBStatusStageEnabledFlag2 `VEE5  1 e 1 0 ]
+"305
+[v _USBDeferINDataStagePackets USBDeferINDataStagePackets `VEE5  1 e 1 0 ]
+"306
+[v _USBDeferOUTDataStagePackets USBDeferOUTDataStagePackets `VEE5  1 e 1 0 ]
+"326
+[v _BDT BDT `VE[8]S61  1 e 32 @32 ]
+[s S140 . 8 `uc 1 bmRequestType 1 0 `uc 1 bRequest 1 1 `us 1 wValue 2 2 `us 1 wIndex 2 4 `us 1 wLength 2 6 ]
+"331
 [s S146 . 8 `uc 1 . 1 0 :8:0 
 `uc 1 . 1 1 :8:0 
 `S99 1 W_Value 2 2 `S99 1 W_Index 2 4 `S99 1 W_Length 2 6 ]
@@ -1050,26 +520,35 @@ EVENT_TRANSFER_TERMINATED 5
 `uc 1 . 1 7 :8:0 
 ]
 [u S239 . 8 `S140 1 . 8 0 `S146 1 . 8 0 `S152 1 . 8 0 `S170 1 . 1 0 `S172 1 . 8 0 `S192 1 . 8 0 `S201 1 . 8 0 `S210 1 . 8 0 `S219 1 . 8 0 `S228 1 . 8 0 ]
-[v _SetupPkt `VES239  1 e 8 @64 ]
+[v _SetupPkt SetupPkt `VES239  1 e 8 @64 ]
 "332
-[v _CtrlTrfData `VE[8]uc  1 e 8 @72 ]
+[v _CtrlTrfData CtrlTrfData `VE[8]uc  1 e 8 @72 ]
 [s S444 _USB_DEVICE_DESCRIPTOR 18 `uc 1 bLength 1 0 `uc 1 bDescriptorType 1 1 `us 1 bcdUSB 2 2 `uc 1 bDeviceClass 1 4 `uc 1 bDeviceSubClass 1 5 `uc 1 bDeviceProtocol 1 6 `uc 1 bMaxPacketSize0 1 7 `us 1 idVendor 2 8 `us 1 idProduct 2 10 `us 1 bcdDevice 2 12 `uc 1 iManufacturer 1 14 `uc 1 iProduct 1 15 `uc 1 iSerialNumber 1 16 `uc 1 bNumConfigurations 1 17 ]
-"165 ../usb_descriptors.c
-[v _device_dsc `DCCS444  1 e 18 0 ]
+"165 C:\Users\george\Documents\GitHub\Avalon\firmware/usb_descriptors.c
+[v _device_dsc device_dsc `DCCS444  1 e 18 0 ]
 "184
-[v _configDescriptor1 `DCC[32]uc  1 e 32 0 ]
+[v _configDescriptor1 configDescriptor1 `DCC[32]uc  1 e 32 0 ]
 [s S1266 . 4 `uc 1 bLength 1 0 `uc 1 bDscType 1 1 `[1]us 1 string 2 2 ]
 "224
-[v _sd000 `DCCS1266  1 e 4 0 ]
+[v _sd000 sd000 `DCCS1266  1 e 4 0 ]
 [s S1270 . 52 `uc 1 bLength 1 0 `uc 1 bDscType 1 1 `[25]us 1 string 50 2 ]
 "228
-[v _sd001 `DCCS1270  1 e 52 0 ]
+[v _sd001 sd001 `DCCS1270  1 e 52 0 ]
 "234
-[v _sd002 `DCCS1270  1 e 52 0 ]
+[v _sd002 sd002 `DCCS1270  1 e 52 0 ]
 "240
-[v _USB_CD_Ptr `DCC[1]*DCCuc  1 e 1 0 ]
+[v _USB_CD_Ptr USB_CD_Ptr `DCC[1]*.24DCCuc  1 e 1 0 ]
 "245
-[v _USB_SD_Ptr `DCC[3]*DCCuc  1 e 3 0 ]
+[v _USB_SD_Ptr USB_SD_Ptr `DCC[3]*.24DCCuc  1 e 3 0 ]
+"29 C:\Users\george\Documents\GitHub\Avalon\firmware\Klondike.X\asic.c
+[v _PrecalcHashes PrecalcHashes `[6]ul  1 e 24 0 ]
+"31
+[v _send32_data send32_data `Yus  1 e 2 0 ]
+"32
+[v _send32_count send32_count `Yuc  1 e 1 0 ]
+"33
+[v _last_bit0 last_bit0 `Yuc  1 e 1 0 ]
+[v _last_bit1 last_bit1 `Yuc  1 e 1 0 ]
 [s S1991 . 1 `uc 1 IOCIF 1 0 :1:0 
 `uc 1 INTF 1 0 :1:1 
 `uc 1 TMR0IF 1 0 :1:2 
@@ -1079,14 +558,14 @@ EVENT_TRANSFER_TERMINATED 5
 `uc 1 PEIE 1 0 :1:6 
 `uc 1 GIE 1 0 :1:7 
 ]
-"355 /opt/microchip/xc8/v1.12/include/pic16lf1459.h
+"355 C:\Program Files (x86)\Microchip\xc8\v1.21\include\pic16lf1459.h
 [s S2000 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 T0IF 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 T0IE 1 0 :1:5 
 ]
 [u S2005 . 1 `S1991 1 . 1 0 `S2000 1 . 1 0 ]
-[v _INTCONbits `VES2005  1 e 1 @11 ]
+[v _INTCONbits INTCONbits `VES2005  1 e 1 @11 ]
 [s S250 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 ACTIE 1 0 :1:1 
 `uc 1 USBIE 1 0 :1:2 
@@ -1098,13 +577,13 @@ EVENT_TRANSFER_TERMINATED 5
 ]
 "625
 [u S259 . 1 `S250 1 . 1 0 ]
-[v _PIR2bits `VES259  1 e 1 @18 ]
+[v _PIR2bits PIR2bits `VES259  1 e 1 @18 ]
 "659
-[v _TMR0 `VEuc  1 e 1 @21 ]
+[v _TMR0 TMR0 `VEuc  1 e 1 @21 ]
 "684
-[v _TMR1L `VEuc  1 e 1 @22 ]
+[v _TMR1L TMR1L `VEuc  1 e 1 @22 ]
 "703
-[v _TMR1H `VEuc  1 e 1 @23 ]
+[v _TMR1H TMR1H `VEuc  1 e 1 @23 ]
 [s S1636 . 1 `uc 1 TMR1ON 1 0 :1:0 
 `uc 1 . 1 0 :1:1 
 `uc 1 nT1SYNC 1 0 :1:2 
@@ -1120,7 +599,7 @@ EVENT_TRANSFER_TERMINATED 5
 `uc 1 TMR1CS1 1 0 :1:7 
 ]
 [u S1649 . 1 `S1636 1 . 1 0 `S1643 1 . 1 0 ]
-[v _T1CONbits `VES1649  1 e 1 @24 ]
+[v _T1CONbits T1CONbits `VES1649  1 e 1 @24 ]
 [s S1667 . 1 `uc 1 T1GSS 1 0 :2:0 
 `uc 1 T1GVAL 1 0 :1:2 
 `uc 1 T1GGO_nDONE 1 0 :1:3 
@@ -1134,9 +613,9 @@ EVENT_TRANSFER_TERMINATED 5
 `uc 1 T1GSS1 1 0 :1:1 
 ]
 [u S1678 . 1 `S1667 1 . 1 0 `S1675 1 . 1 0 ]
-[v _T1GCONbits `VES1678  1 e 1 @25 ]
+[v _T1GCONbits T1GCONbits `VES1678  1 e 1 @25 ]
 "881
-[v _PR2 `VEuc  1 e 1 @27 ]
+[v _PR2 PR2 `VEuc  1 e 1 @27 ]
 [s S1787 . 1 `uc 1 T2CKPS 1 0 :2:0 
 `uc 1 TMR2ON 1 0 :1:2 
 `uc 1 T2OUTPS 1 0 :4:3 
@@ -1151,14 +630,14 @@ EVENT_TRANSFER_TERMINATED 5
 `uc 1 T2OUTPS3 1 0 :1:6 
 ]
 [u S1799 . 1 `S1787 1 . 1 0 `S1791 1 . 1 0 ]
-[v _T2CONbits `VES1799  1 e 1 @28 ]
+[v _T2CONbits T2CONbits `VES1799  1 e 1 @28 ]
 [s S1600 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 LATA4 1 0 :1:4 
 `uc 1 LATA5 1 0 :1:5 
 ]
 "982
 [u S1604 . 1 `S1600 1 . 1 0 ]
-[v _TRISAbits `VES1604  1 e 1 @140 ]
+[v _TRISAbits TRISAbits `VES1604  1 e 1 @140 ]
 [s S1461 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 TRISB4 1 0 :1:4 
 `uc 1 TRISB5 1 0 :1:5 
@@ -1167,11 +646,11 @@ EVENT_TRANSFER_TERMINATED 5
 ]
 "1010
 [u S1467 . 1 `S1461 1 . 1 0 ]
-[v _TRISBbits `VES1467  1 e 1 @141 ]
+[v _TRISBbits TRISBbits `VES1467  1 e 1 @141 ]
 "1051
-[v _TRISCbits `VES259  1 e 1 @142 ]
+[v _TRISCbits TRISCbits `VES259  1 e 1 @142 ]
 "1168
-[v _PIE2bits `VES259  1 e 1 @146 ]
+[v _PIE2bits PIE2bits `VES259  1 e 1 @146 ]
 [s S1865 . 1 `uc 1 PS 1 0 :3:0 
 `uc 1 PSA 1 0 :1:3 
 `uc 1 TMR0SE 1 0 :1:4 
@@ -1188,13 +667,13 @@ EVENT_TRANSFER_TERMINATED 5
 `uc 1 T0CS 1 0 :1:5 
 ]
 [u S1879 . 1 `S1865 1 . 1 0 `S1872 1 . 1 0 ]
-[v _OPTION_REGbits `VES1879  1 e 1 @149 ]
+[v _OPTION_REGbits OPTION_REGbits `VES1879  1 e 1 @149 ]
 "1398
-[v _OSCTUNE `VEuc  1 e 1 @152 ]
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @152 ]
 "1461
-[v _OSCCON `VEuc  1 e 1 @153 ]
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
 "1611
-[v _ADRESH `VEuc  1 e 1 @156 ]
+[v _ADRESH ADRESH `VEuc  1 e 1 @156 ]
 [s S1722 . 1 `uc 1 ADON 1 0 :1:0 
 `uc 1 GO_nDONE 1 0 :1:1 
 `uc 1 CHS 1 0 :5:2 
@@ -1212,7 +691,7 @@ EVENT_TRANSFER_TERMINATED 5
 `uc 1 GO 1 0 :1:1 
 ]
 [u S1737 . 1 `S1722 1 . 1 0 `S1726 1 . 1 0 `S1734 1 . 1 0 ]
-[v _ADCON0bits `VES1737  1 e 1 @157 ]
+[v _ADCON0bits ADCON0bits `VES1737  1 e 1 @157 ]
 [s S1816 . 1 `uc 1 ADPREF 1 0 :2:0 
 `uc 1 . 1 0 :2:2 
 `uc 1 ADCS 1 0 :3:4 
@@ -1227,7 +706,7 @@ EVENT_TRANSFER_TERMINATED 5
 `uc 1 ADCS2 1 0 :1:6 
 ]
 [u S1828 . 1 `S1816 1 . 1 0 `S1821 1 . 1 0 ]
-[v _ADCON1bits `VES1828  1 e 1 @158 ]
+[v _ADCON1bits ADCON1bits `VES1828  1 e 1 @158 ]
 [s S1844 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 TRIGSEL 1 0 :3:4 
 ]
@@ -1238,17 +717,17 @@ EVENT_TRANSFER_TERMINATED 5
 `uc 1 TRIGSEL2 1 0 :1:6 
 ]
 [u S1852 . 1 `S1844 1 . 1 0 `S1847 1 . 1 0 ]
-[v _ADCON2bits `VES1852  1 e 1 @159 ]
+[v _ADCON2bits ADCON2bits `VES1852  1 e 1 @159 ]
 "1827
-[v _LATAbits `VES1604  1 e 1 @268 ]
+[v _LATAbits LATAbits `VES1604  1 e 1 @268 ]
 "1879
-[v _LATC `VEuc  1 e 1 @270 ]
+[v _LATC LATC `VEuc  1 e 1 @270 ]
 "1896
-[v _LATCbits `VES259  1 e 1 @270 ]
+[v _LATCbits LATCbits `VES259  1 e 1 @270 ]
 "2455
-[v _ANSELA `VEuc  1 e 1 @396 ]
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
 "2483
-[v _ANSELB `VEuc  1 e 1 @397 ]
+[v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
 [s S1951 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 ANSB4 1 0 :1:4 
 `uc 1 ANSB5 1 0 :1:5 
@@ -1258,23 +737,23 @@ EVENT_TRANSFER_TERMINATED 5
 `uc 1 ANSB 1 0 :4:4 
 ]
 [u S1958 . 1 `S1951 1 . 1 0 `S1955 1 . 1 0 ]
-[v _ANSELBbits `VES1958  1 e 1 @397 ]
+[v _ANSELBbits ANSELBbits `VES1958  1 e 1 @397 ]
 "2518
-[v _ANSELC `VEuc  1 e 1 @398 ]
+[v _ANSELC ANSELC `VEuc  1 e 1 @398 ]
 "2738
-[v _RCREG `VEuc  1 e 1 @409 ]
-"2831
-[v _RCSTAbits `VES259  1 e 1 @413 ]
-"2892
-[v _TXSTAbits `VES259  1 e 1 @414 ]
-"2953
-[v _BAUDCONbits `VES259  1 e 1 @415 ]
-"3079
-[v _SSPBUF `VEuc  1 e 1 @529 ]
-"3116
-[v _SSPADD `VEuc  1 e 1 @530 ]
-"3262
-[v _SSPSTATbits `VES259  1 e 1 @532 ]
+[v _RCREG RCREG `VEuc  1 e 1 @409 ]
+"2837
+[v _RCSTAbits RCSTAbits `VES259  1 e 1 @413 ]
+"2898
+[v _TXSTAbits TXSTAbits `VES259  1 e 1 @414 ]
+"2959
+[v _BAUDCONbits BAUDCONbits `VES259  1 e 1 @415 ]
+"3085
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @529 ]
+"3122
+[v _SSPADD SSPADD `VEuc  1 e 1 @530 ]
+"3268
+[v _SSPSTATbits SSPSTATbits `VES259  1 e 1 @532 ]
 [s S1426 . 1 `uc 1 SSP1M0 1 0 :1:0 
 `uc 1 SSP1M1 1 0 :1:1 
 `uc 1 SSP1M2 1 0 :1:2 
@@ -1284,42 +763,42 @@ EVENT_TRANSFER_TERMINATED 5
 `uc 1 SSPOV 1 0 :1:6 
 `uc 1 WCOL 1 0 :1:7 
 ]
-"3489
+"3495
 [s S1435 . 1 `uc 1 SSPM 1 0 :4:0 
 `uc 1 . 1 0 :1:4 
 `uc 1 SSP1EN 1 0 :1:5 
 `uc 1 SSP1OV 1 0 :1:6 
 ]
 [u S1440 . 1 `S1426 1 . 1 0 `S1435 1 . 1 0 ]
-[v _SSPCON1bits `VES1440  1 e 1 @533 ]
-"3625
-[v _SSPCON2bits `VES259  1 e 1 @534 ]
-"3746
-[v _SSPCON3bits `VES259  1 e 1 @535 ]
+[v _SSPCON1bits SSPCON1bits `VES1440  1 e 1 @533 ]
+"3631
+[v _SSPCON2bits SSPCON2bits `VES259  1 e 1 @534 ]
+"3752
+[v _SSPCON3bits SSPCON3bits `VES259  1 e 1 @535 ]
 [s S1969 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 IOCBP4 1 0 :1:4 
 `uc 1 IOCBP5 1 0 :1:5 
 `uc 1 IOCBP6 1 0 :1:6 
 `uc 1 IOCBP7 1 0 :1:7 
 ]
-"3964
+"3970
 [s S1975 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 IOCBP 1 0 :4:4 
 ]
 [u S1978 . 1 `S1969 1 . 1 0 `S1975 1 . 1 0 ]
-[v _IOCBPbits `VES1978  1 e 1 @916 ]
-"4040
-[v _IOCBF `VEuc  1 e 1 @918 ]
-"4162
-[v _ACTCON `VEuc  1 e 1 @923 ]
-"4208
-[v _PWM1DCL `VEuc  1 e 1 @1553 ]
-"4243
-[v _PWM1DCH `VEuc  1 e 1 @1554 ]
-"4312
-[v _PWM1CON `VEuc  1 e 1 @1555 ]
-"4853
-[v _UCON `VEuc  1 e 1 @3726 ]
+[v _IOCBPbits IOCBPbits `VES1978  1 e 1 @916 ]
+"4046
+[v _IOCBF IOCBF `VEuc  1 e 1 @918 ]
+"4168
+[v _ACTCON ACTCON `VEuc  1 e 1 @923 ]
+"4214
+[v _PWM1DCL PWM1DCL `VEuc  1 e 1 @1553 ]
+"4249
+[v _PWM1DCH PWM1DCH `VEuc  1 e 1 @1554 ]
+"4318
+[v _PWM1CON PWM1CON `VEuc  1 e 1 @1555 ]
+"4859
+[v _UCON UCON `VEuc  1 e 1 @3726 ]
 [s S278 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 SUSPND 1 0 :1:1 
 `uc 1 RESUME 1 0 :1:2 
@@ -1328,541 +807,638 @@ EVENT_TRANSFER_TERMINATED 5
 `uc 1 SE0 1 0 :1:5 
 `uc 1 PPBRST 1 0 :1:6 
 ]
-"4869
+"4875
 [u S286 . 1 `S278 1 . 1 0 ]
-[v _UCONbits `VES286  1 e 1 @3726 ]
-"4903
-[v _USTAT `VEuc  1 e 1 @3727 ]
-"4962
-[v _UIR `VEuc  1 e 1 @3728 ]
-"4978
-[v _UIRbits `VES286  1 e 1 @3728 ]
-"5017
-[v _UCFG `VEuc  1 e 1 @3729 ]
-"5070
-[v _UIE `VEuc  1 e 1 @3730 ]
-"5086
-[v _UIEbits `VES286  1 e 1 @3730 ]
-"5125
-[v _UEIR `VEuc  1 e 1 @3731 ]
-"5273
-[v _UADDR `VEuc  1 e 1 @3734 ]
-"5328
-[v _UEIE `VEuc  1 e 1 @3735 ]
-"5378
-[v _UEP0 `VEuc  1 e 1 @3736 ]
+[v _UCONbits UCONbits `VES286  1 e 1 @3726 ]
+"4909
+[v _USTAT USTAT `VEuc  1 e 1 @3727 ]
+"4968
+[v _UIR UIR `VEuc  1 e 1 @3728 ]
+"4984
+[v _UIRbits UIRbits `VES286  1 e 1 @3728 ]
+"5023
+[v _UCFG UCFG `VEuc  1 e 1 @3729 ]
+"5076
+[v _UIE UIE `VEuc  1 e 1 @3730 ]
+"5092
+[v _UIEbits UIEbits `VES286  1 e 1 @3730 ]
+"5131
+[v _UEIR UEIR `VEuc  1 e 1 @3731 ]
+"5279
+[v _UADDR UADDR `VEuc  1 e 1 @3734 ]
+"5334
+[v _UEIE UEIE `VEuc  1 e 1 @3735 ]
+"5384
+[v _UEP0 UEP0 `VEuc  1 e 1 @3736 ]
 [s S478 . 1 `uc 1 EPSTALL 1 0 :1:0 
 `uc 1 EPINEN 1 0 :1:1 
 `uc 1 EPOUTEN 1 0 :1:2 
 `uc 1 EPCONDIS 1 0 :1:3 
 `uc 1 EPHSHK 1 0 :1:4 
 ]
-"5392
+"5398
 [u S484 . 1 `S478 1 . 1 0 ]
-[v _UEP0bits `VES484  1 e 1 @3736 ]
-"5421
-[v _UEP1 `VEuc  1 e 1 @3737 ]
-"6319
-[v _GIE `VEb  1 e 0 @95 ]
-"6343
-[v _IOCAF3 `VEb  1 e 0 @7323 ]
-"6501
-[v _PWM1OE `VEb  1 e 0 @12446 ]
-"6575
-[v _RCIF `VEb  1 e 0 @141 ]
-"6625
-[v _SSP1EN `VEb  1 e 0 @4269 ]
-"6629
-[v _SSP1IF `VEb  1 e 0 @139 ]
-"6679
-[v _T1GSPM `VEb  1 e 0 @204 ]
-"6703
-[v _TMR0CS `VEb  1 e 0 @1197 ]
-"6707
-[v _TMR0IF `VEb  1 e 0 @90 ]
-"6715
-[v _TMR1GE `VEb  1 e 0 @207 ]
-"6717
-[v _TMR1GIE `VEb  1 e 0 @1167 ]
-"6719
-[v _TMR1GIF `VEb  1 e 0 @143 ]
+[v _UEP0bits UEP0bits `VES484  1 e 1 @3736 ]
+"5427
+[v _UEP1 UEP1 `VEuc  1 e 1 @3737 ]
+"6325
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"6349
+[v _IOCAF3 IOCAF3 `VEb  1 e 0 @7323 ]
+"6507
+[v _PWM1OE PWM1OE `VEb  1 e 0 @12446 ]
+"6581
+[v _RCIF RCIF `VEb  1 e 0 @141 ]
+"6631
+[v _SSP1EN SSP1EN `VEb  1 e 0 @4269 ]
+"6635
+[v _SSP1IF SSP1IF `VEb  1 e 0 @139 ]
+"6685
+[v _T1GSPM T1GSPM `VEb  1 e 0 @204 ]
+"6709
+[v _TMR0CS TMR0CS `VEb  1 e 0 @1197 ]
+"6713
+[v _TMR0IF TMR0IF `VEb  1 e 0 @90 ]
 "6721
-[v _TMR1IE `VEb  1 e 0 @1160 ]
+[v _TMR1GE TMR1GE `VEb  1 e 0 @207 ]
 "6723
-[v _TMR1IF `VEb  1 e 0 @136 ]
+[v _TMR1GIE TMR1GIE `VEb  1 e 0 @1167 ]
 "6725
-[v _TMR1ON `VEb  1 e 0 @192 ]
+[v _TMR1GIF TMR1GIF `VEb  1 e 0 @143 ]
+"6727
+[v _TMR1IE TMR1IE `VEb  1 e 0 @1160 ]
 "6729
-[v _TMR2IF `VEb  1 e 0 @137 ]
+[v _TMR1IF TMR1IF `VEb  1 e 0 @136 ]
 "6731
-[v _TMR2ON `VEb  1 e 0 @226 ]
-"29 asic.c
-[v _PrecalcHashes `[6]ul  1 e 24 0 ]
-"31
-[v _send32_data `Yus  1 e 2 0 ]
-"32
-[v _send32_count `Yuc  1 e 1 0 ]
-"33
-[v _last_bit0 `Yuc  1 e 1 0 ]
-[v _last_bit1 `Yuc  1 e 1 0 ]
+[v _TMR1ON TMR1ON `VEb  1 e 0 @192 ]
+"6735
+[v _TMR2IF TMR2IF `VEb  1 e 0 @137 ]
+"6737
+[v _TMR2ON TMR2ON `VEb  1 e 0 @226 ]
 [s S1387 _id 12 `uc 1 version 1 0 `[7]uc 1 product 7 1 `ul 1 serial 4 8 ]
-"25 klondike.c
-[v _ID `DCCS1387  1 e 12 0 ]
+"25 C:\Users\george\Documents\GitHub\Avalon\firmware\Klondike.X\klondike.c
+[v _ID ID `DCCS1387  1 e 12 0 ]
 "28
-[v _BankRanges `[8]ul  1 e 32 0 ]
+[v _BankRanges BankRanges `[8]ul  1 e 32 0 ]
 "29
-[v _BankSize `uc  1 e 1 0 ]
-[v _WorkNow `uc  1 e 1 0 ]
-[v _ResultQC `uc  1 e 1 0 ]
-[v _SlowTick `uc  1 e 1 0 ]
+[v _BankSize BankSize `uc  1 e 1 0 ]
+[v _WorkNow WorkNow `uc  1 e 1 0 ]
+[v _ResultQC ResultQC `uc  1 e 1 0 ]
+[v _SlowTick SlowTick `uc  1 e 1 0 ]
 "30
-[v _SlaveAddress `uc  1 e 1 0 ]
+[v _SlaveAddress SlaveAddress `uc  1 e 1 0 ]
 "31
-[v _HashTime `uc  1 e 1 0 ]
+[v _HashTime HashTime `uc  1 e 1 0 ]
 [s S1397 _workstatus 13 `uc 1 State 1 0 `uc 1 ChipCount 1 1 `uc 1 SlaveCount 1 2 `uc 1 WorkQC 1 3 `uc 1 WorkID 1 4 `uc 1 Temp 1 5 `uc 1 FanSpeed 1 6 `uc 1 ErrorCount 1 7 `us 1 HashCount 2 8 `us 1 MaxCount 2 10 `uc 1 Noise 1 12 ]
 "32
-[v _Status `VES1397  1 e 13 0 ]
+[v _Status Status `VES1397  1 e 13 0 ]
 [s S1391 _workcfg 6 `us 1 HashClock 2 0 `uc 1 TempTarget 1 2 `uc 1 TempCritical 1 3 `uc 1 FanTarget 1 4 `uc 1 pad 1 5 ]
 "33
-[v _Cfg `S1391  1 e 6 0 ]
+[v _Cfg Cfg `S1391  1 e 6 0 ]
+[s S1300 _worktask 45 `uc 1 WorkID 1 0 `[8]ul 1 MidState 32 1 `[3]ul 1 Merkle 12 33 ]
 "34
-[v _WorkQue `[4]S1300  1 e 180 @9020 ]
+[v _WorkQue WorkQue `[4]S1300  1 e 180 @9020 ]
 "35
-[v _ResultQue `VE[8]uc  1 e 8 0 ]
+[v _ResultQue ResultQue `VE[8]uc  1 e 8 0 ]
 "36
-[v _ClockCfg `[2]ul  1 e 8 0 ]
+[v _ClockCfg ClockCfg `[2]ul  1 e 8 0 ]
 "38
-[v _NonceRanges `[8]ul  1 e 32 0 ]
-"47 main.c
-[v _INPacket `[64]uc  1 e 64 @544 ]
+[v _NonceRanges NonceRanges `[8]ul  1 e 32 0 ]
+"47 C:\Users\george\Documents\GitHub\Avalon\firmware\Klondike.X\main.c
+[v _INPacket INPacket `[64]uc  1 e 64 @544 ]
 "48
-[v _OUTPacket `[64]uc  1 e 64 @672 ]
+[v _OUTPacket OUTPacket `[64]uc  1 e 64 @672 ]
 "50
-[v _USBGenericOutHandle `*.0v  1 e 1 0 ]
+[v _USBGenericOutHandle USBGenericOutHandle `*.4v  1 e 1 0 ]
 "51
-[v _USBGenericInHandle `*.0v  1 e 1 0 ]
+[v _USBGenericInHandle USBGenericInHandle `*.4v  1 e 1 0 ]
 "53
-[v _WQI `uc  1 e 1 0 ]
-[v _WQX `uc  1 e 1 0 ]
+[v _WQI WQI `uc  1 e 1 0 ]
+[v _WQX WQX `uc  1 e 1 0 ]
 "98
-[v _main `(i  1 e 2 0 ]
+[v _main main `(i  1 e 2 0 ]
 {
 "143
 } 0
-"669 ../USB/usb_device.c
-[v _USBDeviceTasks `(v  1 e 0 0 ]
+"182
+[v _ProcessIO ProcessIO `(v  1 e 0 0 ]
+{
+"205
+} 0
+"44 C:\Users\george\Documents\GitHub\Avalon\firmware\Klondike.X\klondike.c
+[v _ProcessCmd ProcessCmd `(v  1 e 0 0 ]
+{
+[v ProcessCmd@cmd cmd `*.6uc  1 a 1 69 ]
+[v ProcessCmd@cmd cmd `*.6uc  1 a 1 69 ]
+"103
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"6
+[v ___lwdiv@quotient quotient `ui  1 a 2 11 ]
+"7
+[v ___lwdiv@counter counter `uc  1 a 1 10 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 6 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 8 ]
+"26
+} 0
+"208 C:\Users\george\Documents\GitHub\Avalon\firmware\Klondike.X\main.c
+[v _SendCmdReply SendCmdReply `(v  1 e 0 0 ]
+{
+"212
+[v SendCmdReply@n n `uc  1 a 1 23 ]
+"208
+[v SendCmdReply@cmd cmd `*.39uc  1 p 2 12 ]
+[v SendCmdReply@data data `*.26uc  1 p 2 14 ]
+[v SendCmdReply@count count `uc  1 p 1 16 ]
+"223
+} 0
+"106 C:\Users\george\Documents\GitHub\Avalon\firmware\Klondike.X\klondike.c
+[v _AsicPushWork AsicPushWork `(v  1 e 0 0 ]
+{
+"115
+} 0
+"3 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic\wmul.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"4
+[v ___wmul@product product `ui  1 a 2 10 ]
+"3
+[v ___wmul@multiplier multiplier `ui  1 p 2 6 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 8 ]
+"13
+} 0
+"319 C:\Users\george\Documents\GitHub\Avalon\firmware\Klondike.X\asic.c
+[v _AsicPreCalc AsicPreCalc `(v  1 e 0 0 ]
+{
+"322
+[v AsicPreCalc@m m `[8]ul  1 a 32 24 ]
+"320
+[v AsicPreCalc@K K `[3]ul  1 a 12 8 ]
+"321
+[v AsicPreCalc@x x `ul  1 a 4 60 ]
+[v AsicPreCalc@y y `ul  1 a 4 56 ]
+[v AsicPreCalc@z z `ul  1 a 4 20 ]
+"323
+[v AsicPreCalc@n n `uc  1 a 1 64 ]
+[s S1300 _worktask 45 `uc 1 WorkID 1 0 `[8]ul 1 MidState 32 1 `[3]ul 1 Merkle 12 33 ]
+"319
+[v AsicPreCalc@work work `*.39S1300  1 p 2 22 ]
+"320
+[v AsicPreCalc@F3348 F3348 `[3]ul  1 s 12 F3348 ]
+"357
+} 0
+"3 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic\bmul.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+{
+[v ___bmul@multiplier multiplier `uc  1 a 1 8 ]
+"4
+[v ___bmul@product product `uc  1 a 1 7 ]
+"3
+[v ___bmul@multiplier multiplier `uc  1 a 1 8 ]
+[v ___bmul@multiplicand multiplicand `uc  1 p 1 6 ]
+"13
+} 0
+"314 C:\Users\george\Documents\GitHub\Avalon\firmware\Klondike.X\asic.c
+[v _rotate rotate `(ul  1 e 4 0 ]
+{
+[v rotate@x x `ul  1 p 4 9 ]
+[v rotate@y y `uc  1 p 1 13 ]
+"316
+} 0
+"36
+[v _SendAsicData SendAsicData `(v  1 e 0 0 ]
+{
+[s S1300 _worktask 45 `uc 1 WorkID 1 0 `[8]ul 1 MidState 32 1 `[3]ul 1 Merkle 12 33 ]
+[v SendAsicData@work work `*.39S1300  1 p 2 12 ]
+[v SendAsicData@split split `uc  1 p 1 14 ]
+"56
+} 0
+"59
+[v _Send32 Send32 `(v  1 e 0 0 ]
+{
+"309
+} 0
+"146 C:\Users\george\Documents\GitHub\Avalon\firmware\Klondike.X\main.c
+[v _InitializeSystem InitializeSystem `(v  1 s 0 InitializeSystem ]
+{
+"166
+} 0
+"170
+[v _UserInit UserInit `(v  1 e 0 0 ]
+{
+"179
+} 0
+"297 C:\Users\george\Documents\GitHub\Avalon\firmware\Klondike.X\klondike.c
+[v _InitResultRx InitResultRx `(v  1 e 0 0 ]
+{
+"312
+} 0
+"280
+[v _InitWorkTick InitWorkTick `(v  1 e 0 0 ]
+{
+"294
+} 0
+"267
+[v _InitTempSensor InitTempSensor `(v  1 e 0 0 ]
+{
+"277
+} 0
+"247
+[v _InitFAN InitFAN `(v  1 e 0 0 ]
+{
+"264
+} 0
+"144
+[v _DetectAsics DetectAsics `(v  1 e 0 0 ]
+{
+"165
+[v DetectAsics@x x `uc  1 a 1 22 ]
+"169
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"6
+[v ___awdiv@quotient quotient `i  1 a 2 12 ]
+"7
+[v ___awdiv@sign sign `uc  1 a 1 11 ]
+[v ___awdiv@counter counter `uc  1 a 1 10 ]
+"5
+[v ___awdiv@divisor divisor `i  1 p 2 6 ]
+[v ___awdiv@dividend dividend `i  1 p 2 8 ]
+"37
+} 0
+"174 C:\Users\george\Documents\GitHub\Avalon\firmware\Klondike.X\klondike.c
+[v _WorkTick WorkTick `(v  1 e 0 0 ]
+{
+"199
+} 0
+"669 C:\Users\george\Documents\GitHub\Avalon\firmware/USB/usb_device.c
+[v _USBDeviceTasks USBDeviceTasks `(v  1 e 0 0 ]
 {
 "670
-[v USBDeviceTasks@i `uc  1 a 1 7 ]
+[v USBDeviceTasks@i i `uc  1 a 1 7 ]
 "1004
 } 0
-"2456
-[v _USBWakeFromSuspend `(v  1 s 0 USBWakeFromSuspend ]
-{
-"2499
-} 0
-"2399
-[v _USBSuspend `(v  1 s 0 USBSuspend ]
-{
-"2438
-} 0
-"2356
-[v _USBStallHandler `(v  1 s 0 USBStallHandler ]
-{
-"2380
-} 0
 "2523
-[v _USBCtrlEPService `(v  1 s 0 USBCtrlEPService ]
+[v _USBCtrlEPService USBCtrlEPService `(v  1 s 0 USBCtrlEPService ]
 {
 "2551
-[v USBCtrlEPService@setup_cnt `uc  1 a 1 25 ]
+[v USBCtrlEPService@setup_cnt setup_cnt `uc  1 a 1 25 ]
 "2580
 } 0
-"2623
-[v _USBCtrlTrfSetupHandler `(v  1 s 0 USBCtrlTrfSetupHandler ]
+"2748
+[v _USBCtrlTrfInHandler USBCtrlTrfInHandler `(v  1 s 0 USBCtrlTrfInHandler ]
 {
-"2671
-} 0
-"1786
-[v _USBCtrlEPServiceComplete `(v  1 s 0 USBCtrlEPServiceComplete ]
-{
-"1914
-} 0
-"1660
-[v _USBCtrlEPAllowDataStage `(v  1 e 0 0 ]
-{
-"1687
+"2749
+[v USBCtrlTrfInHandler@lastDTS lastDTS `uc  1 a 1 11 ]
+"2819
 } 0
 "2695
-[v _USBCtrlTrfOutHandler `(v  1 s 0 USBCtrlTrfOutHandler ]
+[v _USBCtrlTrfOutHandler USBCtrlTrfOutHandler `(v  1 s 0 USBCtrlTrfOutHandler ]
 {
 "2722
 } 0
 "2019
-[v _USBCtrlTrfRxService `(v  1 s 0 USBCtrlTrfRxService ]
+[v _USBCtrlTrfRxService USBCtrlTrfRxService `(v  1 s 0 USBCtrlTrfRxService ]
 {
 "2020
-[v USBCtrlTrfRxService@byteToRead `uc  1 a 1 11 ]
+[v USBCtrlTrfRxService@byteToRead byteToRead `uc  1 a 1 11 ]
 "2021
-[v USBCtrlTrfRxService@i `uc  1 a 1 10 ]
+[v USBCtrlTrfRxService@i i `uc  1 a 1 10 ]
 "2110
 } 0
-"1590
-[v _USBCtrlEPAllowStatusStage `(v  1 e 0 0 ]
+"2623
+[v _USBCtrlTrfSetupHandler USBCtrlTrfSetupHandler `(v  1 s 0 USBCtrlTrfSetupHandler ]
 {
-"1630
-} 0
-"2748
-[v _USBCtrlTrfInHandler `(v  1 s 0 USBCtrlTrfInHandler ]
-{
-"2749
-[v USBCtrlTrfInHandler@lastDTS `uc  1 a 1 11 ]
-"2819
-} 0
-"1938
-[v _USBCtrlTrfTxService `(v  1 s 0 USBCtrlTrfTxService ]
-{
-"1939
-[v USBCtrlTrfTxService@byteToSend `uc  1 a 1 8 ]
-"1991
+"2671
 } 0
 "2839
-[v _USBCheckStdRequest `(v  1 s 0 USBCheckStdRequest ]
+[v _USBCheckStdRequest USBCheckStdRequest `(v  1 s 0 USBCheckStdRequest ]
 {
 "2885
 } 0
-"2132
-[v _USBStdSetCfgHandler `(v  1 s 0 USBStdSetCfgHandler ]
-{
-"2139
-[v USBStdSetCfgHandler@p `*uc  1 a 2 21 ]
-[v USBStdSetCfgHandler@i_1089 `uc  1 a 1 23 ]
-"2133
-[v USBStdSetCfgHandler@i `uc  1 a 1 24 ]
-"2187
-} 0
-"10 /opt/microchip/xc8/v1.12/sources/memset.c
-[v _memset `(*v  1 e 1 0 ]
-{
-[v memset@p1 `*.0v  1 a 1 wreg ]
-"15
-[v memset@p `*.0uc  1 a 1 11 ]
-"10
-[v memset@p1 `*.0v  1 a 1 wreg ]
-[v memset@c `i  1 p 2 6 ]
-[v memset@n `ui  1 p 2 8 ]
-"22
-} 0
-"2207 ../USB/usb_device.c
-[v _USBStdGetDscHandler `(v  1 s 0 USBStdGetDscHandler ]
-{
-"2265
-} 0
-"2283
-[v _USBStdGetStatusHandler `(v  1 s 0 USBStdGetStatusHandler ]
-{
-"2314
-[v USBStdGetStatusHandler@p `*.0S61  1 a 1 6 ]
-"2337
-} 0
 "2907
-[v _USBStdFeatureReqHandler `(v  1 s 0 USBStdFeatureReqHandler ]
+[v _USBStdFeatureReqHandler USBStdFeatureReqHandler `(v  1 s 0 USBStdFeatureReqHandler ]
 {
 "2913
-[v USBStdFeatureReqHandler@pUEP `*uc  1 a 2 0 ]
+[v USBStdFeatureReqHandler@pUEP pUEP `*.39uc  1 a 2 0 ]
+[s S27 . 1 `uc 1 BC8 1 0 :1:0 
+`uc 1 BC9 1 0 :1:1 
+`uc 1 BSTALL 1 0 :1:2 
+`uc 1 DTSEN 1 0 :1:3 
+`uc 1 INCDIS 1 0 :1:4 
+`uc 1 KEN 1 0 :1:5 
+`uc 1 DTS 1 0 :1:6 
+`uc 1 UOWN 1 0 :1:7 
+]
 "2908
-[v USBStdFeatureReqHandler@p `*.0S61  1 a 1 3 ]
+[s S36 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID0 1 0 :1:2 
+`uc 1 PID1 1 0 :1:3 
+`uc 1 PID2 1 0 :1:4 
+`uc 1 PID3 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+]
+[s S43 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[u S47 _BD_STAT 1 `uc 1 Val 1 0 `S27 1 . 1 0 `S36 1 . 1 0 `S43 1 . 1 0 ]
+[s S52 . 4 `S47 1 STAT 1 0 `uc 1 CNT 1 1 `uc 1 ADRL 1 2 `uc 1 ADRH 1 3 ]
+[s S57 . 4 `uc 1 filler1 1 0 :8:0 
+`uc 1 filler2 1 1 :8:0 
+`us 1 ADR 2 2 ]
+[u S61 __BDT 4 `S52 1 . 4 0 `S57 1 . 4 0 `ul 1 Val 4 0 `[4]uc 1 v 4 0 ]
+[v USBStdFeatureReqHandler@p p `*.4S61  1 a 1 3 ]
 [s S134 . 1 `uc 1 ping_pong_state 1 0 :1:0 
 `uc 1 transfer_terminated 1 0 :1:1 
 ]
 "2909
 [u S137 . 1 `S134 1 bits 1 0 `uc 1 Val 1 0 ]
-[v USBStdFeatureReqHandler@current_ep_data `S137  1 a 1 2 ]
+[v USBStdFeatureReqHandler@current_ep_data current_ep_data `S137  1 a 1 2 ]
 "3131
 } 0
-"630 main.c
-[v _USER_USB_CALLBACK_EVENT_HANDLER `(E5  1 e 1 0 ]
+"2283
+[v _USBStdGetStatusHandler USBStdGetStatusHandler `(v  1 s 0 USBStdGetStatusHandler ]
 {
-[v USER_USB_CALLBACK_EVENT_HANDLER@event `i  1 p 2 16 ]
-[v USER_USB_CALLBACK_EVENT_HANDLER@pdata `*.0v  1 p 1 18 ]
-[v USER_USB_CALLBACK_EVENT_HANDLER@size `us  1 p 2 19 ]
+[s S27 . 1 `uc 1 BC8 1 0 :1:0 
+`uc 1 BC9 1 0 :1:1 
+`uc 1 BSTALL 1 0 :1:2 
+`uc 1 DTSEN 1 0 :1:3 
+`uc 1 INCDIS 1 0 :1:4 
+`uc 1 KEN 1 0 :1:5 
+`uc 1 DTS 1 0 :1:6 
+`uc 1 UOWN 1 0 :1:7 
+]
+"2314
+[s S36 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID0 1 0 :1:2 
+`uc 1 PID1 1 0 :1:3 
+`uc 1 PID2 1 0 :1:4 
+`uc 1 PID3 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+]
+[s S43 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[u S47 _BD_STAT 1 `uc 1 Val 1 0 `S27 1 . 1 0 `S36 1 . 1 0 `S43 1 . 1 0 ]
+[s S52 . 4 `S47 1 STAT 1 0 `uc 1 CNT 1 1 `uc 1 ADRL 1 2 `uc 1 ADRH 1 3 ]
+[s S57 . 4 `uc 1 filler1 1 0 :8:0 
+`uc 1 filler2 1 1 :8:0 
+`us 1 ADR 2 2 ]
+[u S61 __BDT 4 `S52 1 . 4 0 `S57 1 . 4 0 `ul 1 Val 4 0 `[4]uc 1 v 4 0 ]
+[v USBStdGetStatusHandler@p p `*.4S61  1 a 1 6 ]
+"2337
+} 0
+"2207
+[v _USBStdGetDscHandler USBStdGetDscHandler `(v  1 s 0 USBStdGetDscHandler ]
+{
+"2265
+} 0
+"2132
+[v _USBStdSetCfgHandler USBStdSetCfgHandler `(v  1 s 0 USBStdSetCfgHandler ]
+{
+"2139
+[v USBStdSetCfgHandler@p p `*.39uc  1 a 2 21 ]
+[v USBStdSetCfgHandler@i_1089 i `uc  1 a 1 23 ]
+"2133
+[v USBStdSetCfgHandler@i i `uc  1 a 1 24 ]
+"2187
+} 0
+"10 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\memset.c
+[v _memset memset `(*.4v  1 e 1 0 ]
+{
+[v memset@p1 p1 `*.4v  1 a 1 10 ]
+"15
+[v memset@p p `*.4uc  1 a 1 11 ]
+"10
+[v memset@p1 p1 `*.4v  1 a 1 10 ]
+[v memset@c c `i  1 p 2 6 ]
+[v memset@n n `ui  1 p 2 8 ]
+"22
+} 0
+"1786 C:\Users\george\Documents\GitHub\Avalon\firmware/USB/usb_device.c
+[v _USBCtrlEPServiceComplete USBCtrlEPServiceComplete `(v  1 s 0 USBCtrlEPServiceComplete ]
+{
+"1914
+} 0
+"1660
+[v _USBCtrlEPAllowDataStage USBCtrlEPAllowDataStage `(v  1 e 0 0 ]
+{
+"1687
+} 0
+"1938
+[v _USBCtrlTrfTxService USBCtrlTrfTxService `(v  1 s 0 USBCtrlTrfTxService ]
+{
+"1939
+[v USBCtrlTrfTxService@byteToSend byteToSend `uc  1 a 1 8 ]
+"1991
+} 0
+"1590
+[v _USBCtrlEPAllowStatusStage USBCtrlEPAllowStatusStage `(v  1 e 0 0 ]
+{
+"1630
+} 0
+"2356
+[v _USBStallHandler USBStallHandler `(v  1 s 0 USBStallHandler ]
+{
+"2380
+} 0
+"2399
+[v _USBSuspend USBSuspend `(v  1 s 0 USBSuspend ]
+{
+"2438
+} 0
+"2456
+[v _USBWakeFromSuspend USBWakeFromSuspend `(v  1 s 0 USBWakeFromSuspend ]
+{
+"2499
+} 0
+"630 C:\Users\george\Documents\GitHub\Avalon\firmware\Klondike.X\main.c
+[v _USER_USB_CALLBACK_EVENT_HANDLER USER_USB_CALLBACK_EVENT_HANDLER `(E5  1 e 1 0 ]
+{
+[v USER_USB_CALLBACK_EVENT_HANDLER@event event `i  1 p 2 16 ]
+[v USER_USB_CALLBACK_EVENT_HANDLER@pdata pdata `*.4v  1 p 1 18 ]
+[v USER_USB_CALLBACK_EVENT_HANDLER@size size `us  1 p 2 19 ]
 "671
 } 0
-"174 klondike.c
-[v _WorkTick `(v  1 e 0 0 ]
-{
-"199
-} 0
-"146 main.c
-[v _InitializeSystem `(v  1 s 0 InitializeSystem ]
-{
-"166
-} 0
-"467 ../USB/usb_device.c
-[v _USBDeviceInit `(v  1 e 0 0 ]
-{
-"481
-[v USBDeviceInit@p `*uc  1 a 2 8 ]
-[v USBDeviceInit@i_718 `uc  1 a 1 10 ]
-"468
-[v USBDeviceInit@i `uc  1 a 1 11 ]
-"552
-} 0
-"182 main.c
-[v _ProcessIO `(v  1 e 0 0 ]
-{
-"205
-} 0
-"44 klondike.c
-[v _ProcessCmd `(v  1 e 0 0 ]
-{
-[v ProcessCmd@cmd `*uc  1 a 1 wreg ]
-[v ProcessCmd@cmd `*uc  1 a 1 wreg ]
-"103
-} 0
-"106
-[v _AsicPushWork `(v  1 e 0 0 ]
-{
-"115
-} 0
-"36 asic.c
-[v _SendAsicData `(v  1 e 0 0 ]
-{
-[s S1300 _worktask 45 `uc 1 WorkID 1 0 `[8]ul 1 MidState 32 1 `[3]ul 1 Merkle 12 33 ]
-[v SendAsicData@work `*S1300  1 p 2 12 ]
-[v SendAsicData@split `uc  1 p 1 14 ]
-"56
-} 0
-"59
-[v _Send32 `(v  1 e 0 0 ]
-{
-"309
-} 0
-"319
-[v _AsicPreCalc `(v  1 e 0 0 ]
-{
-"322
-[v AsicPreCalc@m `[8]ul  1 a 32 24 ]
-"320
-[v AsicPreCalc@K `[3]ul  1 a 12 8 ]
-"321
-[v AsicPreCalc@x `ul  1 a 4 60 ]
-[v AsicPreCalc@y `ul  1 a 4 56 ]
-[v AsicPreCalc@z `ul  1 a 4 20 ]
-"323
-[v AsicPreCalc@n `uc  1 a 1 64 ]
-"319
-[v AsicPreCalc@work `*S1300  1 p 2 22 ]
-"320
-[v AsicPreCalc@F3347 `[3]ul  1 s 12 F3347 ]
-"357
-} 0
-"314
-[v _rotate `(ul  1 e 4 0 ]
-{
-[v rotate@x `ul  1 p 4 9 ]
-[v rotate@y `uc  1 p 1 13 ]
-"316
-} 0
-"208 main.c
-[v _SendCmdReply `(v  1 e 0 0 ]
-{
-"212
-[v SendCmdReply@n `uc  1 a 1 23 ]
-"208
-[v SendCmdReply@cmd `*uc  1 p 2 12 ]
-[v SendCmdReply@data `*.muc  1 p 2 14 ]
-[v SendCmdReply@count `uc  1 p 1 16 ]
-"223
-} 0
-"170
-[v _UserInit `(v  1 e 0 0 ]
-{
-"179
-} 0
-"144 klondike.c
-[v _DetectAsics `(v  1 e 0 0 ]
-{
-"165
-[v DetectAsics@x `uc  1 a 1 22 ]
-"169
-} 0
-"247
-[v _InitFAN `(v  1 e 0 0 ]
-{
-"264
-} 0
-"267
-[v _InitTempSensor `(v  1 e 0 0 ]
-{
-"277
-} 0
-"280
-[v _InitWorkTick `(v  1 e 0 0 ]
-{
-"294
-} 0
-"297
-[v _InitResultRx `(v  1 e 0 0 ]
-{
-"312
-} 0
-"264 main.c
-[v _USBCBSuspend `(v  1 e 0 0 ]
-{
-"281
-} 0
-"305
-[v _USBCBWakeFromSuspend `(v  1 e 0 0 ]
-{
-"314
-} 0
-"335
-[v _USBCB_SOF_Handler `(v  1 e 0 0 ]
-{
-"338
-} 0
-"358
-[v _USBCBErrorHandler `(v  1 e 0 0 ]
-{
-"377
-} 0
-"409
-[v _USBCBCheckOtherReq `(v  1 e 0 0 ]
-{
-"411
-} 0
-"248 ../USB/usb_function_generic.c
-[v _USBCheckVendorRequest `(v  1 e 0 0 ]
-{
-"296
-} 0
-"434 main.c
-[v _USBCBStdSetDscHandler `(v  1 e 0 0 ]
-{
-"436
-} 0
 "460
-[v _USBCBInitEP `(v  1 e 0 0 ]
+[v _USBCBInitEP USBCBInitEP `(v  1 e 0 0 ]
 {
 "465
 } 0
-"1056 ../USB/usb_device.c
-[v _USBEnableEndpoint `(v  1 e 0 0 ]
+"1173 C:\Users\george\Documents\GitHub\Avalon\firmware/USB/usb_device.c
+[v _USBTransferOnePacket USBTransferOnePacket `(*.4v  1 e 1 0 ]
 {
-[v USBEnableEndpoint@ep `uc  1 a 1 wreg ]
-"1057
-[v USBEnableEndpoint@p `*uc  1 a 2 13 ]
+[v USBTransferOnePacket@ep ep `uc  1 a 1 14 ]
+[s S27 . 1 `uc 1 BC8 1 0 :1:0 
+`uc 1 BC9 1 0 :1:1 
+`uc 1 BSTALL 1 0 :1:2 
+`uc 1 DTSEN 1 0 :1:3 
+`uc 1 INCDIS 1 0 :1:4 
+`uc 1 KEN 1 0 :1:5 
+`uc 1 DTS 1 0 :1:6 
+`uc 1 UOWN 1 0 :1:7 
+]
+"1174
+[s S36 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID0 1 0 :1:2 
+`uc 1 PID1 1 0 :1:3 
+`uc 1 PID2 1 0 :1:4 
+`uc 1 PID3 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+]
+[s S43 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[u S47 _BD_STAT 1 `uc 1 Val 1 0 `S27 1 . 1 0 `S36 1 . 1 0 `S43 1 . 1 0 ]
+[s S52 . 4 `S47 1 STAT 1 0 `uc 1 CNT 1 1 `uc 1 ADRL 1 2 `uc 1 ADRH 1 3 ]
+[s S57 . 4 `uc 1 filler1 1 0 :8:0 
+`uc 1 filler2 1 1 :8:0 
+`us 1 ADR 2 2 ]
+[u S61 __BDT 4 `S52 1 . 4 0 `S57 1 . 4 0 `ul 1 Val 4 0 `[4]uc 1 v 4 0 ]
+[v USBTransferOnePacket@handle handle `*.4VES61  1 a 1 15 ]
+"1173
+[v USBTransferOnePacket@ep ep `uc  1 a 1 14 ]
+[v USBTransferOnePacket@dir dir `uc  1 p 1 9 ]
+[v USBTransferOnePacket@data data `*.6uc  1 p 1 10 ]
+[v USBTransferOnePacket@len len `uc  1 p 1 11 ]
+"1223
+} 0
 "1056
-[v USBEnableEndpoint@ep `uc  1 a 1 wreg ]
-[v USBEnableEndpoint@options `uc  1 p 1 10 ]
+[v _USBEnableEndpoint USBEnableEndpoint `(v  1 e 0 0 ]
+{
+[v USBEnableEndpoint@ep ep `uc  1 a 1 15 ]
+"1057
+[v USBEnableEndpoint@p p `*.39uc  1 a 2 13 ]
+"1056
+[v USBEnableEndpoint@ep ep `uc  1 a 1 15 ]
+[v USBEnableEndpoint@options options `uc  1 p 1 10 ]
 "1079
 } 0
 "1713
-[v _USBConfigureEndpoint `(v  1 s 0 USBConfigureEndpoint ]
+[v _USBConfigureEndpoint USBConfigureEndpoint `(v  1 s 0 USBConfigureEndpoint ]
 {
-[v USBConfigureEndpoint@EPNum `uc  1 a 1 wreg ]
+[v USBConfigureEndpoint@EPNum EPNum `uc  1 a 1 8 ]
+[s S27 . 1 `uc 1 BC8 1 0 :1:0 
+`uc 1 BC9 1 0 :1:1 
+`uc 1 BSTALL 1 0 :1:2 
+`uc 1 DTSEN 1 0 :1:3 
+`uc 1 INCDIS 1 0 :1:4 
+`uc 1 KEN 1 0 :1:5 
+`uc 1 DTS 1 0 :1:6 
+`uc 1 UOWN 1 0 :1:7 
+]
 "1714
-[v USBConfigureEndpoint@handle `*.0VES61  1 a 1 9 ]
+[s S36 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID0 1 0 :1:2 
+`uc 1 PID1 1 0 :1:3 
+`uc 1 PID2 1 0 :1:4 
+`uc 1 PID3 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+]
+[s S43 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[u S47 _BD_STAT 1 `uc 1 Val 1 0 `S27 1 . 1 0 `S36 1 . 1 0 `S43 1 . 1 0 ]
+[s S52 . 4 `S47 1 STAT 1 0 `uc 1 CNT 1 1 `uc 1 ADRL 1 2 `uc 1 ADRH 1 3 ]
+[s S57 . 4 `uc 1 filler1 1 0 :8:0 
+`uc 1 filler2 1 1 :8:0 
+`us 1 ADR 2 2 ]
+[u S61 __BDT 4 `S52 1 . 4 0 `S57 1 . 4 0 `ul 1 Val 4 0 `[4]uc 1 v 4 0 ]
+[v USBConfigureEndpoint@handle handle `*.4VES61  1 a 1 9 ]
 "1713
-[v USBConfigureEndpoint@EPNum `uc  1 a 1 wreg ]
-[v USBConfigureEndpoint@direction `uc  1 p 1 6 ]
+[v USBConfigureEndpoint@EPNum EPNum `uc  1 a 1 8 ]
+[v USBConfigureEndpoint@direction direction `uc  1 p 1 6 ]
 "1754
 } 0
-"1173
-[v _USBTransferOnePacket `(*v  1 e 1 0 ]
+"434 C:\Users\george\Documents\GitHub\Avalon\firmware\Klondike.X\main.c
+[v _USBCBStdSetDscHandler USBCBStdSetDscHandler `(v  1 e 0 0 ]
 {
-[v USBTransferOnePacket@ep `uc  1 a 1 wreg ]
-"1174
-[v USBTransferOnePacket@handle `*.0VES61  1 a 1 15 ]
-"1173
-[v USBTransferOnePacket@ep `uc  1 a 1 wreg ]
-[v USBTransferOnePacket@dir `uc  1 p 1 9 ]
-[v USBTransferOnePacket@data `*uc  1 p 1 10 ]
-[v USBTransferOnePacket@len `uc  1 p 1 11 ]
-"1223
+"436
 } 0
-"5 /opt/microchip/xc8/v1.12/sources/lwdiv.c
-[v ___lwdiv `(ui  1 e 2 0 ]
+"409
+[v _USBCBCheckOtherReq USBCBCheckOtherReq `(v  1 e 0 0 ]
 {
-"6
-[v ___lwdiv@quotient `ui  1 a 2 11 ]
-"7
-[v ___lwdiv@counter `uc  1 a 1 10 ]
-"5
-[v ___lwdiv@divisor `ui  1 p 2 6 ]
-[v ___lwdiv@dividend `ui  1 p 2 8 ]
-"26
+"411
 } 0
-"5 /opt/microchip/xc8/v1.12/sources/awdiv.c
-[v ___awdiv `(i  1 e 2 0 ]
+"248 C:\Users\george\Documents\GitHub\Avalon\firmware/USB/usb_function_generic.c
+[v _USBCheckVendorRequest USBCheckVendorRequest `(v  1 e 0 0 ]
 {
-"6
-[v ___awdiv@quotient `i  1 a 2 12 ]
-"7
-[v ___awdiv@sign `uc  1 a 1 11 ]
-[v ___awdiv@counter `uc  1 a 1 10 ]
-"5
-[v ___awdiv@divisor `i  1 p 2 6 ]
-[v ___awdiv@dividend `i  1 p 2 8 ]
-"37
+"296
 } 0
-"3 /opt/microchip/xc8/v1.12/sources/bmul.c
-[v ___bmul `(uc  1 e 1 0 ]
+"358 C:\Users\george\Documents\GitHub\Avalon\firmware\Klondike.X\main.c
+[v _USBCBErrorHandler USBCBErrorHandler `(v  1 e 0 0 ]
 {
-[v ___bmul@multiplier `uc  1 a 1 wreg ]
-"4
-[v ___bmul@product `uc  1 a 1 7 ]
-"3
-[v ___bmul@multiplier `uc  1 a 1 wreg ]
-[v ___bmul@multiplicand `uc  1 p 1 6 ]
-"13
+"377
 } 0
-"3 /opt/microchip/xc8/v1.12/sources/wmul.c
-[v ___wmul `(ui  1 e 2 0 ]
+"335
+[v _USBCB_SOF_Handler USBCB_SOF_Handler `(v  1 e 0 0 ]
 {
-"4
-[v ___wmul@product `ui  1 a 2 10 ]
-"3
-[v ___wmul@multiplier `ui  1 p 2 6 ]
-[v ___wmul@multiplicand `ui  1 p 2 8 ]
-"13
+"338
 } 0
-"70 main.c
-[v _ISRCode `II(v  1 e 0 0 ]
+"305
+[v _USBCBWakeFromSuspend USBCBWakeFromSuspend `(v  1 e 0 0 ]
+{
+"314
+} 0
+"264
+[v _USBCBSuspend USBCBSuspend `(v  1 e 0 0 ]
+{
+"281
+} 0
+"467 C:\Users\george\Documents\GitHub\Avalon\firmware/USB/usb_device.c
+[v _USBDeviceInit USBDeviceInit `(v  1 e 0 0 ]
+{
+"481
+[v USBDeviceInit@p p `*.39uc  1 a 2 8 ]
+[v USBDeviceInit@i_718 i `uc  1 a 1 10 ]
+"468
+[v USBDeviceInit@i i `uc  1 a 1 11 ]
+"552
+} 0
+"70 C:\Users\george\Documents\GitHub\Avalon\firmware\Klondike.X\main.c
+[v _ISRCode ISRCode `II(v  1 e 0 0 ]
 {
 "95
 } 0
-"202 klondike.c
-[v _ResultRx `(v  1 e 0 0 ]
+"202 C:\Users\george\Documents\GitHub\Avalon\firmware\Klondike.X\klondike.c
+[v _ResultRx ResultRx `(v  1 e 0 0 ]
 {
 "203
-[v ResultRx@TimeOut `uc  1 a 1 12 ]
+[v ResultRx@TimeOut TimeOut `uc  1 a 1 12 ]
 "232
 } 0
-"208 main.c
-[v i1_SendCmdReply `(v  1 e 0 0 ]
+"208 C:\Users\george\Documents\GitHub\Avalon\firmware\Klondike.X\main.c
+[v i1_SendCmdReply SendCmdReply `(v  1 e 0 0 ]
 {
-[v i1SendCmdReply@n `uc  1 a 1 11 ]
-[v i1SendCmdReply@cmd `*uc  1 p 2 6 ]
-[v i1SendCmdReply@data `*.muc  1 p 2 8 ]
-[v i1SendCmdReply@count `uc  1 p 1 10 ]
+[v i1SendCmdReply@n SendCmdReply `uc  1 a 1 11 ]
+[v i1SendCmdReply@cmd cmd `*.39uc  1 p 2 6 ]
+[v i1SendCmdReply@data data `*.26uc  1 p 2 8 ]
+[v i1SendCmdReply@count count `uc  1 p 1 10 ]
 "223
 } 0
-"3 /opt/microchip/xc8/v1.12/sources/wmul.c
-[v i1___wmul `(ui  1 e 2 0 ]
+"3 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic\bmul.c
+[v i1___bmul __bmul `(uc  1 e 1 0 ]
 {
-[v i1___wmul@product `ui  1 a 2 4 ]
-[v i1___wmul@multiplier `ui  1 p 2 0 ]
-[v i1___wmul@multiplicand `ui  1 p 2 2 ]
+[v i1___bmul@multiplier multiplier `uc  1 a 1 1 ]
+[v i1___bmul@product __bmul `uc  1 a 1 2 ]
+[v i1___bmul@multiplier multiplier `uc  1 a 1 1 ]
+[v i1___bmul@multiplicand multiplicand `uc  1 p 1 0 ]
 "13
 } 0
-"3 /opt/microchip/xc8/v1.12/sources/bmul.c
-[v i1___bmul `(uc  1 e 1 0 ]
+"3 C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic\wmul.c
+[v i1___wmul __wmul `(ui  1 e 2 0 ]
 {
-[v i1___bmul@multiplier `uc  1 a 1 wreg ]
-[v i1___bmul@product `uc  1 a 1 2 ]
-[v i1___bmul@multiplier `uc  1 a 1 wreg ]
-[v i1___bmul@multiplicand `uc  1 p 1 0 ]
+[v i1___wmul@product __wmul `ui  1 a 2 4 ]
+[v i1___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v i1___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
 "13
 } 0
