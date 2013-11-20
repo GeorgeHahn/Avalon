@@ -31,9 +31,10 @@
 #include "HardwareProfile.h"
 #include "klondike.h"
 
+// TODO: Config bits
 #if defined (USE_INTERNAL_OSC)  //Definition in the hardware profile
-    __CONFIG(FOSC_INTOSC & WDTE_OFF & PWRTE_ON & MCLRE_OFF & CP_OFF & BOREN_ON & CLKOUTEN_OFF & IESO_OFF & FCMEN_OFF);
-    __CONFIG(WRT_OFF & CPUDIV_NOCLKDIV & USBLSCLK_48MHz & PLLMULT_3x & PLLEN_ENABLED & STVREN_ON &  BORV_LO & LPBOR_OFF & LVP_OFF);
+    //__CONFIG(FOSC_INTOSC & WDTE_OFF & PWRTE_ON & MCLRE_OFF & CP_OFF & BOREN_ON & CLKOUTEN_OFF & IESO_OFF & FCMEN_OFF);
+    //__CONFIG(WRT_OFF & CPUDIV_NOCLKDIV & USBLSCLK_48MHz & PLLMULT_3x & PLLEN_ENABLED & STVREN_ON &  BORV_LO & LPBOR_OFF & LVP_OFF);
 #else
     __CONFIG(FOSC_HS & WDTE_OFF & PWRTE_ON & MCLRE_OFF & CP_OFF & BOREN_ON & CLKOUTEN_OFF & IESO_OFF & FCMEN_OFF);
     __CONFIG(WRT_OFF & CPUDIV_NOCLKDIV & USBLSCLK_48MHz & PLLMULT_4x & PLLEN_ENABLED & STVREN_ON &  BORV_LO & LPBOR_OFF & LVP_OFF);
@@ -69,8 +70,8 @@ void SendCmdReply(char *cmd, BYTE *ReplyBuf, BYTE count);
 void interrupt ISRCode()
 {
     //if(RCIF)
-    if(IOCBF)
-        ResultRx();
+    //if(IOCBF)
+    //    ResultRx();
     //if(TMR0IF)
     //    WorkTick();
     //if(RCIF)

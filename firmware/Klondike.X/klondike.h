@@ -156,7 +156,7 @@ void SendCmdReply(char *cmd, BYTE *ReplyBuf, BYTE count);
         LED0 = 1;             \
         LED1 = 1;             \
         LED2 = 1;             \
-        LED3 = 1;             \
+        LED3 = 1;             \\\
     }
 
 //#define LED_On()        LED = 1;
