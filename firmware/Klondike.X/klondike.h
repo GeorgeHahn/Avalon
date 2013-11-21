@@ -159,9 +159,10 @@ void SendCmdReply(char *cmd, BYTE *ReplyBuf, BYTE count);
         LED3 = 1;             \\\
     }
 
-//#define LED_On()        LED = 1;
-//#define LED_Off()       LED = 0;
-//#define LED_Toggle()    LED = !LED;
+#define PASTE(first, secod) first ## secod
+#define LED_On(LEDUM)   PASTE(LED, LEDUM) = 1;
+#define LED_Off(LEDUM)       PASTE(LED, LEDUM) = 0;
+#define LED_Toggle(LEDUM)    PASTE(LED, LEDUM) = !PASTE(LED, LEDUM);
 
 #define MIN_FAN_SPEED   64
 #define FAN_PWM         LATCbits.LATC5

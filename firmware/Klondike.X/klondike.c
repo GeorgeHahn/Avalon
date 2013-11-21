@@ -99,7 +99,7 @@ void ProcessCmd(char *cmd)
         default:
             break;
         }
-    LED_On();
+    LED_On(1);
 }
 
 void AsicPushWork(void)
@@ -188,7 +188,7 @@ void WorkTick(void)
     }
 
    if(++SlowTick == 0) {
-        LED_Off();
+        LED_Off(1);
         Status.Temp = ADRESH;
         // todo: adjust fan speed for target temperature
         ADCON0bits.GO_nDONE = 1;
