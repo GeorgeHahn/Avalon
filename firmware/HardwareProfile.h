@@ -111,7 +111,7 @@
     		#include "HardwareProfile - LPC USB Development Kit - PIC16F1459.h"
         #endif
         #if defined (_16LF1459)
-    		#include "HardwareProfile - Klondike.h"
+    		#include "HardwareProfile - Avalon.h"
         #endif
     #endif
 #endif

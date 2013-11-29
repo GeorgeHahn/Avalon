@@ -1,5 +1,5 @@
 /********************************************************************
- FileName:      HardwareProfile - Klondike.h
+ FileName:      HardwareProfile - Avalon.h
  Dependencies:  See INCLUDES section
  Processor:     PIC16LF145x USB Microcontrollers
  Hardware:      Klondike

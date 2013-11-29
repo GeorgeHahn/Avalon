@@ -55,257 +55,35 @@ void SendAsicData(WORKTASK *work, BYTE split)
     ClockCfg[0] = ClockCfg[0] & ~CLOCK_NOCHG_MASK;
 }
 
-void Send32(void)
+//#define DATA_ZERO   0x48 0b01001000
+//#define DATA_ONE    0x90 0b10010000
+//#define DATA_SPLIT  0x50 0b01010000
+
+#define datap LATC1
+#define datan LATC2
+#define zeroboth LATC ~= 0b00000011
+
+#define asicport LATC
+#define asiczero 0b00000001
+#define asicone 0b00000010
+
+#define idle { datap = 1; datan = 1; }
+#define send0 { zeroboth; datap = 1; datan = 1; }
+#define send1 { zeroboth; datan = 1; datap = 1; }
+
+
+void Send32(void)p
 {
-    #asm
-    BANKSEL(LATC) 
-    MOVF (_send32_data) & 0x7F, W
-    MOVWF FSR1L
-    MOVF (_send32_data+1) & 0x7F, W
-    MOVWF FSR1H
-
-next_word:
-    // bit 0
-    MOVLW DATA_ZERO
-    CLRF LATC & 0x7F
-    BTFSC INDF1,0
-    MOVLW DATA_ONE
-    MOVWF LATC & 0x7F
-
-    // bit 1
-    MOVLW DATA_ZERO
-    CLRF LATC & 0x7F
-    BTFSC INDF1,1
-    MOVLW DATA_ONE
-    MOVWF LATC & 0x7F
-
-    // bit 2
-    MOVLW DATA_ZERO
-    CLRF LATC & 0x7F
-    BTFSC INDF1,2
-    MOVLW DATA_ONE
-    MOVWF LATC & 0x7F
-
-    // bit 3
-    MOVLW DATA_ZERO
-    CLRF LATC & 0x7F
-    BTFSC INDF1,3
-    MOVLW DATA_ONE
-    MOVWF LATC & 0x7F
-
-    // bit 4
-    MOVLW DATA_ZERO
-    CLRF LATC & 0x7F
-    BTFSC INDF1,4
-    MOVLW DATA_ONE
-    MOVWF LATC & 0x7F
-
-    // bit 5
-    MOVLW DATA_ZERO
-    CLRF LATC & 0x7F
-    BTFSC INDF1,5
-    MOVLW DATA_ONE
-    MOVWF LATC & 0x7F
-
-    // bit 6
-    MOVLW DATA_ZERO
-    CLRF LATC & 0x7F
-    BTFSC INDF1,6
-    MOVLW DATA_ONE
-    MOVWF LATC & 0x7F
-
-    // bit 7
-    MOVLW DATA_ZERO
-    CLRF LATC & 0x7F
-    BTFSC INDF1,7
-    MOVLW DATA_ONE
-    MOVWF LATC & 0x7F
-
-    // select next byte
-    ADDFSR FSR1, 0x01 & 0x3F
-
-    // bit 8
-    MOVLW DATA_ZERO
-    CLRF LATC & 0x7F
-    BTFSC INDF1,0
-    MOVLW DATA_ONE
-    MOVWF LATC & 0x7F
-
-    // bit 9
-    MOVLW DATA_ZERO
-    CLRF LATC & 0x7F
-    BTFSC INDF1,1
-    MOVLW DATA_ONE
-    MOVWF LATC & 0x7F
-
-    // bit 10
-    MOVLW DATA_ZERO
-    CLRF LATC & 0x7F
-    BTFSC INDF1,2
-    MOVLW DATA_ONE
-    MOVWF LATC & 0x7F
-
-    // bit 11
-    MOVLW DATA_ZERO
-    CLRF LATC & 0x7F
-    BTFSC INDF1,3
-    MOVLW DATA_ONE
-    MOVWF LATC & 0x7F
-
-    // bit 12
-    MOVLW DATA_ZERO
-    CLRF LATC & 0x7F
-    BTFSC INDF1,4
-    MOVLW DATA_ONE
-    MOVWF LATC & 0x7F
-
-    // bit 13
-    MOVLW DATA_ZERO
-    CLRF LATC & 0x7F
-    BTFSC INDF1,5
-    MOVLW DATA_ONE
-    MOVWF LATC & 0x7F
-
-    // bit 14
-    MOVLW DATA_ZERO
-    CLRF LATC & 0x7F
-    BTFSC INDF1,6
-    MOVLW DATA_ONE
-    MOVWF LATC & 0x7F
-
-    // bit 15
-    MOVLW DATA_ZERO
-    CLRF LATC & 0x7F
-    BTFSC INDF1,7
-    MOVLW DATA_ONE
-    MOVWF LATC & 0x7F
-
-    // select next byte
-    ADDFSR FSR1, 0x01 & 0x3F
-
-    // bit 16
-    MOVLW DATA_ZERO
-    CLRF LATC & 0x7F
-    BTFSC INDF1,0
-    MOVLW DATA_ONE
-    MOVWF LATC & 0x7F
-
-    // bit 17
-    MOVLW DATA_ZERO
-    CLRF LATC & 0x7F
-    BTFSC INDF1,1
-    MOVLW DATA_ONE
-    MOVWF LATC & 0x7F
-
-    // bit 18
-    MOVLW DATA_ZERO
-    CLRF LATC & 0x7F
-    BTFSC INDF1,2
-    MOVLW DATA_ONE
-    MOVWF LATC & 0x7F
-
-    // bit 19
-    MOVLW DATA_ZERO
-    CLRF LATC & 0x7F
-    BTFSC INDF1,3
-    MOVLW DATA_ONE
-    MOVWF LATC & 0x7F
-
-    // bit 20
-    MOVLW DATA_ZERO
-    CLRF LATC & 0x7F
-    BTFSC INDF1,4
-    MOVLW DATA_ONE
-    MOVWF LATC & 0x7F
-
-    // bit 21
-    MOVLW DATA_ZERO
-    CLRF LATC & 0x7F
-    BTFSC INDF1,5
-    MOVLW DATA_ONE
-    MOVWF LATC & 0x7F
-
-    // bit 22
-    MOVLW DATA_ZERO
-    CLRF LATC & 0x7F
-    BTFSC INDF1,6
-    MOVLW DATA_ONE
-    MOVWF LATC & 0x7F
-
-    // bit 23
-    MOVLW DATA_ZERO
-    CLRF LATC & 0x7F
-    BTFSC INDF1,7
-    MOVLW DATA_ONE
-    MOVWF LATC & 0x7F
-
-    // select next byte
-    ADDFSR FSR1, 0x01 & 0x3F
-
-    // bit 24
-    MOVLW DATA_ZERO
-    CLRF LATC & 0x7F
-    BTFSC INDF1,0
-    MOVLW DATA_ONE
-    MOVWF LATC & 0x7F
-
-    // bit 25
-    MOVLW DATA_ZERO
-    CLRF LATC & 0x7F
-    BTFSC INDF1,1
-    MOVLW DATA_ONE
-    MOVWF LATC & 0x7F
-
-    // bit 26
-    MOVLW DATA_ZERO
-    CLRF LATC & 0x7F
-    BTFSC INDF1,2
-    MOVLW DATA_ONE
-    MOVWF LATC & 0x7F
-
-    // bit 27
-    MOVLW DATA_ZERO
-    CLRF LATC & 0x7F
-    BTFSC INDF1,3
-    MOVLW DATA_ONE
-    MOVWF LATC & 0x7F
-
-    // bit 28
-    MOVLW DATA_ZERO
-    CLRF LATC & 0x7F
-    BTFSC INDF1,4
-    MOVLW DATA_ONE
-    MOVWF LATC & 0x7F
-
-    // bit 29
-    MOVLW DATA_ZERO
-    CLRF LATC & 0x7F
-    BTFSC INDF1,5
-    MOVLW DATA_ONE
-    MOVWF LATC & 0x7F
-
-    // bit 30
-    MOVLW DATA_ZERO
-    CLRF LATC & 0x7F
-    BTFSC INDF1,6
-    MOVLW DATA_ONE
-    MOVWF LATC & 0x7F
-
-    // bit 31
-    MOVF _last_bit0 & 0x7F,W
-    CLRF LATC & 0x7F
-    BTFSC INDF1,7
-    MOVF _last_bit1 & 0x7F,W
-    MOVWF LATC & 0x7F
-
-    // select next byte
-    ADDFSR FSR1, 0x01 & 0x3F
-
-    // check if done
-    DECFSZ _send32_count & 0x7F, F
-    GOTO next_word
-    #endasm
-    
+    idle
+    for(int i = 0; i < 32; i++)
+    {
+        if(send32_data & 1)
+            send1
+        else
+            send0
+        send32_data >>= 1;
+    }
+    idle
 }
 
 #define r(x) ((x-n)&7)

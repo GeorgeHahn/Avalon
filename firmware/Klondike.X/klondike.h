@@ -142,11 +142,27 @@ void SendCmdReply(char *cmd, BYTE *ReplyBuf, BYTE count);
 #define CLOCK_FREQ      48000000
 
 // PIC Pin Allocations
-#define LED             LATAbits.LATA5
-#define InitLED()       TRISAbits.TRISA5 = 0; LED = 1;
-#define LED_On()        LED = 1;
-#define LED_Off()       LED = 0;
-#define LED_Toggle()    LED = !LED;
+#define LED0             LATDbits.LATD3 // LED 1 - D3
+#define LED1             LATDbits.LATD2 // LED 2 - D2
+#define LED2             LATDbits.LATD1 // LED 3 - D1
+#define LED3             LATDbits.LATD0 // LED 4 - D0
+
+#define InitLEDs()            \
+    {                         \
+        TRISDbits.TRISD3 = 0; \
+        TRISDbits.TRISD3 = 0; \
+        TRISDbits.TRISD3 = 0; \
+        TRISDbits.TRISD3 = 0; \
+        LED0 = 1;             \
+        LED1 = 1;             \
+        LED2 = 1;             \
+        LED3 = 1;             \\\
+    }
+
+#define PASTE(first, secod) first ## secod
+#define LED_On(LEDUM)   PASTE(LED, LEDUM) = 1;
+#define LED_Off(LEDUM)       PASTE(LED, LEDUM) = 0;
+#define LED_Toggle(LEDUM)    PASTE(LED, LEDUM) = !PASTE(LED, LEDUM);
 
 #define MIN_FAN_SPEED   64
 #define FAN_PWM         LATCbits.LATC5
