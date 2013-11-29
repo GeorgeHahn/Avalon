@@ -160,18 +160,19 @@
       (Path "Design Resources" ".\avalon.dsn" "Design Cache")
       (Path "Design Resources" "Library")
       (Path "Design Resources" "Library" ".\parts.olb")
-      (Path "Outputs"))
+      (Path "Outputs")
+      (Select "Design Resources" ".\avalon.dsn" "SCHEMATIC1" "PAGE1"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 701 0 1421"))
+        (Placement "44 0 1 -1 -1 -1 -1 0 250 0 1421"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 2 3 -1 -1 -4 -27 104 1600 104 933")
-        (Scroll "1009 0")
+        (Scroll "0 1019")
         (Zoom "184")
         (Occurrence "/"))
       (Path "C:\USERS\GEORGE\DOCUMENTS\GITHUB\AVALON\HARDWARE\AVALON.DSN")
