@@ -5,6 +5,8 @@ Public Domain Bitcoin ASIC Miner Project
 
 Firmware and driver based on Klondike Project
   
+![First prototype](https://raw.github.com/GeorgeHahn/Avalon/master/img_angle.JPG)
+
 ## SUMMARY
 
   This is an open source effort to design and build a Bitcoin mining board based on the second generation Avalon ASIC. The final goal is to have a small board that holds 10 ASIC chips. This board can be controlled via USB communication. An example host would be a PC, Raspberry Pi or TP-Link WR703N router. The host will run cgminer with a custom driver based on the Avalon one and control the board via USB.
@@ -16,9 +18,6 @@ Firmware and driver based on Klondike Project
   Power for this board is supplied via a barrel jack connector (2.5mm ID, 5.5mm OD). For future revisions, Molex PCI-e or 4 pin power connectors may be added. Another limit on the first revision design is the data connection - these boards are USB only for now. In the future, CAN may be added to make it possible to chain multiple miners together.
   
   The design is currently in Cadence OrCAD + Allegro format, but will be completely backported to [Upverter](https://upverter.com/GeorgeHahn/0bb015271a32ca8e/Avalon/) once tested.
-
-![First prototype](https://raw.github.com/GeorgeHahn/Avalon/master/img_angle.png)
-![First prototype](https://raw.github.com/GeorgeHahn/Avalon/master/img_top.png)
 
 ## STATUS
 
@@ -38,6 +37,8 @@ Firmware and driver based on Klondike Project
  - ▢ Future
   - ▢ Try a prototype with metal substrate board (for better heat dissipation)
   - ▢ Measure current on 3.3v and 5v rails; switch to switching regulators if current is significant
+
+![First prototype](https://raw.github.com/GeorgeHahn/Avalon/master/img_top.JPG)
   
 ## ISSUES
 First prototype has the following issues. Serious issues are bolded, optional improvements are italicized.
