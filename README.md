@@ -17,8 +17,8 @@ Firmware and driver based on Klondike Project
   
   The design is currently in Cadence OrCAD + Allegro format, but will be completely backported to [Upverter](https://upverter.com/GeorgeHahn/0bb015271a32ca8e/Avalon/) once tested.
 
-![First prototype](https://raw.github.com/username/projectname/branch/img_angle.png)
-![First prototype](https://raw.github.com/username/projectname/branch/img_top.png)
+![First prototype](https://raw.github.com/GeorgeHahn/Avalon/master/img_angle.png)
+![First prototype](https://raw.github.com/GeorgeHahn/Avalon/master/img_top.png)
 
 ## STATUS
 
