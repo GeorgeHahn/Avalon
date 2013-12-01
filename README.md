@@ -40,13 +40,13 @@ Firmware and driver based on Klondike Project
 
 ![First prototype](https://raw.github.com/GeorgeHahn/Avalon/master/img_top.JPG)
   
-## ISSUES
+## [ISSUES](https://github.com/GeorgeHahn/Avalon/issues)
 First prototype has the following issues. Serious issues are bolded, optional improvements are italicized.
 
  - ▢ [#2](https://github.com/GeorgeHahn/Avalon/issues/2) **Switching FET (U21) has an incorrect footprint**
  - ▢ [#3](https://github.com/GeorgeHahn/Avalon/issues/3) **D1 and Q1 have suboptimal footprints**
  - ▢ [#4](https://github.com/GeorgeHahn/Avalon/issues/4) **C1 and C2 have incorrectly sized footprints**
- - ▢ [#5](https://github.com/GeorgeHahn/Avalon/issues/5) **Ground for some pins on U5 are not connected**
+ - ☑ [#5](https://github.com/GeorgeHahn/Avalon/issues/5) **Ground for some pins on U5 are not connected**
  - ▢ [#6](https://github.com/GeorgeHahn/Avalon/issues/6) Vcore SMPS overvoltage level should be set to A3255 maximum voltage (set by R3)
  - ☑ [#7](https://github.com/GeorgeHahn/Avalon/issues/7) Via-in-pads can be eliminated
  - ☑ [#8](https://github.com/GeorgeHahn/Avalon/issues/8) Status LEDs and D1 don't have polarity indicators on silkscreen
@@ -55,7 +55,6 @@ First prototype has the following issues. Serious issues are bolded, optional im
  - ▢ [#11](https://github.com/GeorgeHahn/Avalon/issues/11) *Barrel jack is a through hole part, should be switched to SMT*
  - ▢ [#12](https://github.com/GeorgeHahn/Avalon/issues/12) *Should have more input capacitors*
  - ▢ [#13](https://github.com/GeorgeHahn/Avalon/issues/13) *Should switch away from micro USB connectors for improved durability*
- - ▢ [#14](https://github.com/GeorgeHahn/Avalon/issues/14) *Clock distribution IC U5 can probably be replaced with a buffer without any negative impact*
  - ☑ *Location for C2, C25-27, C15 is suboptimal*
 
 
