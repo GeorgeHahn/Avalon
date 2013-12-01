@@ -48,8 +48,8 @@ First prototype has the following issues. Serious issues are bolded, optional im
  - ▢ [#4](https://github.com/GeorgeHahn/Avalon/issues/4) **C1 and C2 have incorrectly sized footprints**
  - ▢ [#5](https://github.com/GeorgeHahn/Avalon/issues/5) **Ground for some pins on U5 are not connected**
  - ▢ [#6](https://github.com/GeorgeHahn/Avalon/issues/6) Vcore SMPS overvoltage level should be set to A3255 maximum voltage (set by R3)
- - ▢ [#7](https://github.com/GeorgeHahn/Avalon/issues/7) Via-in-pads can be eliminated
- - ▢ [#8](https://github.com/GeorgeHahn/Avalon/issues/8) Status LEDs and D1 don't have polarity indicators on silkscreen
+ - ☑ [#7](https://github.com/GeorgeHahn/Avalon/issues/7) Via-in-pads can be eliminated
+ - ☑ [#8](https://github.com/GeorgeHahn/Avalon/issues/8) Status LEDs and D1 don't have polarity indicators on silkscreen
  - ▢ [#9](https://github.com/GeorgeHahn/Avalon/issues/9) Some parts are missing silkscreen reference designators
  - ▢ [#10](https://github.com/GeorgeHahn/Avalon/issues/10) The 3.3v regulator should take 5v input rather than VIN or be switched to a regulator that can handle higher input voltage
  - ▢ [#11](https://github.com/GeorgeHahn/Avalon/issues/11) *Barrel jack is a through hole part, should be switched to SMT*

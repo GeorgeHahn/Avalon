@@ -3,43 +3,209 @@
 |                                                                    Page   1  |
 |------------------------------------------------------------------------------|
 |  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
-|                                                    Tue Nov 05 16:07:50 2013  |
+|                                                    Tue Nov 05 16:48:05 2013  |
 |------------------------------------------------------------------------------|
-| COMPONENT DEFINITION added to board drawing                                  |
+| NET CHANGES                                                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|    device type                                                               |
+|   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- DRILL - UNPLATED M3_PART_DRILL_
+  D+           pins MOVED FROM this net (to net name listed on right)
+                                 J3.3            7140.00 16895.2
+                                                                        N285281
+                - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+               pins ADDED TO this existing net (pins not previously on any net)
+                                 L3.2                           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  D-           pins MOVED FROM this net (to net name listed on right)
+                                 J3.2            7165.59 16895.2
+                                                                        N285277
+                - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+               pins ADDED TO this existing net (pins not previously on any net)
+                                 L2.2                           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  GND          pins MOVED FROM this net (to net name listed on right)
+                                 J3.5            7088.82 16895.2
+                                                                         N41888
+                                 J3.6            7236.95 16909.4
+                                                                         N41888
+                - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+               pins ADDED TO this existing net (pins not previously on any net)
+                                 L4.2                           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N41888       pins ADDED TO this new net
+                                 L4.1                           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N56615       pins ADDED TO this new net
+                                 L5.1                           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N63965       pins ADDED TO this new net
+                                 L6.1                           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N65992       pins ADDED TO this new net
+                                 L7.1                           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N68134       pins ADDED TO this new net
+                                 L8.1                           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N71187       pins ADDED TO this new net
+                                 L9.1                           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N79243       pins ADDED TO this new net
+                                 L12.1                          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N80211       pins ADDED TO this new net
 |------------------------------------------------------------------------------|
 |                                 ECO   REPORT                                 |
 |                                                                    Page   2  |
 |------------------------------------------------------------------------------|
 |  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
-|                                                    Tue Nov 05 16:07:50 2013  |
+|                                                    Tue Nov 05 16:48:05 2013  |
 |------------------------------------------------------------------------------|
-| COMPONENTS CHANGED from one device type to another in board drawing          |
+| NET CHANGES                                                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|    ref des        | new device type     |   x   |   y   |  old  device type  |
+|   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- H1                  DRILL - UNPLATED M3_PART_DRILL_                 DRILL - UNPLATED M3_DRILL_M3_33
- H2                  DRILL - UNPLATED M3_PART_DRILL_                 DRILL - UNPLATED M3_DRILL_M3_33
- H3                  DRILL - UNPLATED M3_PART_DRILL_                 DRILL - UNPLATED M3_DRILL_M3_33
- H4                  DRILL - UNPLATED M3_PART_DRILL_                 DRILL - UNPLATED M3_DRILL_M3_33
+                                 L13.1                          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N80743       pins ADDED TO this new net
+                                 L10.1                          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N81099       pins ADDED TO this new net
+                                 L14.1                          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N82159       pins ADDED TO this new net
+                                 L11.1                          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N285277      pins ADDED TO this new net
+                                 L2.1                           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N285281      pins ADDED TO this new net
+                                 L3.1                           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  VCORE        pins MOVED FROM this net (to net name listed on right)
+                                 U8.6            6144.17 14909.8
+                                                                         N56615
+                                 U8.7            6144.17 14890.1
+                                                                         N56615
+                                 U9.6            6134.17 14179.8
+                                                                         N63965
+                                 U9.7            6134.17 14160.1
+                                                                         N63965
+                                 U10.6           5364.17 14199.8
+                                                                         N65992
+                                 U10.7           5364.17 14180.1
+                                                                         N65992
+                                 U11.6           5344.17 14909.8
+                                                                         N68134
+                                 U11.7           5344.17 14890.1
+                                                                         N68134
+                                 U12.6           5344.17 15669.8
+                                                                         N71187
+                                 U12.7           5344.17 15650.1
+                                                                         N71187
+                                 U13.6           7974.17 14199.8
+                                                                         N79243
+                                 U13.7           7974.17 14180.1
+                                                                         N79243
+                                 U14.6           7204.17 14189.8
+                                                                         N80211
+                                 U14.7           7204.17 14170.1
 |------------------------------------------------------------------------------|
 |                                 ECO   REPORT                                 |
 |                                                                    Page   3  |
 |------------------------------------------------------------------------------|
 |  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
-|                                                    Tue Nov 05 16:07:50 2013  |
+|                                                    Tue Nov 05 16:48:05 2013  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+                                                                         N80211
+                                 U15.6           7214.17 14909.8
+                                                                         N81099
+                                 U15.7           7214.17 14890.1
+                                                                         N81099
+                                 U16.6           7974.17 15669.8
+                                                                         N80743
+                                 U16.7           7974.17 15650.1
+                                                                         N80743
+                                 U17.6           7984.17 14909.8
+                                                                         N82159
+                                 U17.7           7984.17 14890.1
+                                                                         N82159
+                - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+               pins ADDED TO this existing net (pins not previously on any net)
+                                 L5.2                           
+                                 L6.2                           
+                                 L7.2                           
+                                 L8.2                           
+                                 L9.2                           
+                                 L10.2                          
+                                 L11.2                          
+                                 L12.2                          
+                                 L13.2                          
+                                 L14.2                          
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   4  |
+|------------------------------------------------------------------------------|
+|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
+|                                                    Tue Nov 05 16:48:05 2013  |
+|------------------------------------------------------------------------------|
+| COMPONENT DEFINITION added to board drawing                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|    device type                                                               |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ INDUCTOR_1_IND_0603_BLM18HE102S
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   5  |
+|------------------------------------------------------------------------------|
+|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
+|                                                    Tue Nov 05 16:48:05 2013  |
+|------------------------------------------------------------------------------|
+| COMPONENTS ADDED to board drawing                                            |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|    ref des        |    device type                                           |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ L2                  INDUCTOR_1_IND_0603_BLM18HE102S 
+ L3                  INDUCTOR_1_IND_0603_BLM18HE102S 
+ L4                  INDUCTOR_1_IND_0603_BLM18HE102S 
+ L5                  INDUCTOR_1_IND_0603_BLM18HE102S 
+ L6                  INDUCTOR_1_IND_0603_BLM18HE102S 
+ L7                  INDUCTOR_1_IND_0603_BLM18HE102S 
+ L8                  INDUCTOR_1_IND_0603_BLM18HE102S 
+ L9                  INDUCTOR_1_IND_0603_BLM18HE102S 
+ L10                 INDUCTOR_1_IND_0603_BLM18HE102S 
+ L11                 INDUCTOR_1_IND_0603_BLM18HE102S 
+ L12                 INDUCTOR_1_IND_0603_BLM18HE102S 
+ L13                 INDUCTOR_1_IND_0603_BLM18HE102S 
+ L14                 INDUCTOR_1_IND_0603_BLM18HE102S 
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   6  |
+|------------------------------------------------------------------------------|
+|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
+|                                                    Tue Nov 05 16:48:05 2013  |
 |------------------------------------------------------------------------------|
 | SLOT PROPERTIES added to board drawing                                       |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
 |   slot_id    |   x   |   y   |   property   |             value              |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- H1.1                           PRIM_FILE      .\pstchip.dat
- H2.1                           PRIM_FILE      .\pstchip.dat
- H3.1                           PRIM_FILE      .\pstchip.dat
- H4.1                           PRIM_FILE      .\pstchip.dat
+ L2.2                           PRIM_FILE      .\pstchip.dat
+ L3.2                           PRIM_FILE      .\pstchip.dat
+ L4.2                           PRIM_FILE      .\pstchip.dat
+ L5.2                           PRIM_FILE      .\pstchip.dat
+ L6.2                           PRIM_FILE      .\pstchip.dat
+ L7.2                           PRIM_FILE      .\pstchip.dat
+ L8.2                           PRIM_FILE      .\pstchip.dat
+ L9.2                           PRIM_FILE      .\pstchip.dat
+ L10.2                          PRIM_FILE      .\pstchip.dat
+ L11.2                          PRIM_FILE      .\pstchip.dat
+ L12.2                          PRIM_FILE      .\pstchip.dat
+ L13.2                          PRIM_FILE      .\pstchip.dat
+ L14.2                          PRIM_FILE      .\pstchip.dat
 |------------------------------------------------------------------------------|
-|   total ECO changes reported  9                                              |
+|   total ECO changes reported  77                                             |
 |------------------------------------------------------------------------------|

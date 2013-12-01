@@ -1,5 +1,5 @@
 FILE_TYPE = EXPANDEDPARTLIST;
-{ Using PSTWRITER 16.6.0 d001Nov-05-2013 at 16:07:50 }
+{ Using PSTWRITER 16.6.0 d001Nov-05-2013 at 16:48:05 }
 DIRECTIVES
  PST_VERSION='PST_HDL_CENTRIC_VERSION_0';
  ROOT_DRAWING='AVALON';
@@ -1834,6 +1834,136 @@ SECTION_NUMBER 1
  '@AVALON.SCHEMATIC1(SCH_1):INS8699@DISCRETE.INDUCTOR.NORMAL(CHIPS)':
  C_PATH='@avalon.schematic1(sch_1):ins8699@discrete.\inductor.normal\(chips)',
  P_PATH='@avalon.schematic1(sch_1):page1_ins8699@discrete.\inductor.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ L10 'INDUCTOR_1_IND_0603_BLM18HE102S':;
+
+SECTION_NUMBER 1
+ '@AVALON.SCHEMATIC1(SCH_1):INS313748@AVALON.INDUCTOR_1.NORMAL(CHIPS)':
+ C_PATH='@avalon.schematic1(sch_1):ins313748@avalon.\inductor_1.normal\(chips)',
+ P_PATH='@avalon.schematic1(sch_1):page1_ins313748@avalon.\inductor_1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ L11 'INDUCTOR_1_IND_0603_BLM18HE102S':;
+
+SECTION_NUMBER 1
+ '@AVALON.SCHEMATIC1(SCH_1):INS315234@AVALON.INDUCTOR_1.NORMAL(CHIPS)':
+ C_PATH='@avalon.schematic1(sch_1):ins315234@avalon.\inductor_1.normal\(chips)',
+ P_PATH='@avalon.schematic1(sch_1):page1_ins315234@avalon.\inductor_1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ L12 'INDUCTOR_1_IND_0603_BLM18HE102S':;
+
+SECTION_NUMBER 1
+ '@AVALON.SCHEMATIC1(SCH_1):INS315266@AVALON.INDUCTOR_1.NORMAL(CHIPS)':
+ C_PATH='@avalon.schematic1(sch_1):ins315266@avalon.\inductor_1.normal\(chips)',
+ P_PATH='@avalon.schematic1(sch_1):page1_ins315266@avalon.\inductor_1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ L13 'INDUCTOR_1_IND_0603_BLM18HE102S':;
+
+SECTION_NUMBER 1
+ '@AVALON.SCHEMATIC1(SCH_1):INS315298@AVALON.INDUCTOR_1.NORMAL(CHIPS)':
+ C_PATH='@avalon.schematic1(sch_1):ins315298@avalon.\inductor_1.normal\(chips)',
+ P_PATH='@avalon.schematic1(sch_1):page1_ins315298@avalon.\inductor_1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ L14 'INDUCTOR_1_IND_0603_BLM18HE102S':;
+
+SECTION_NUMBER 1
+ '@AVALON.SCHEMATIC1(SCH_1):INS315330@AVALON.INDUCTOR_1.NORMAL(CHIPS)':
+ C_PATH='@avalon.schematic1(sch_1):ins315330@avalon.\inductor_1.normal\(chips)',
+ P_PATH='@avalon.schematic1(sch_1):page1_ins315330@avalon.\inductor_1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ L2 'INDUCTOR_1_IND_0603_BLM18HE102S':;
+
+SECTION_NUMBER 1
+ '@AVALON.SCHEMATIC1(SCH_1):INS278074@AVALON.INDUCTOR_1.NORMAL(CHIPS)':
+ C_PATH='@avalon.schematic1(sch_1):ins278074@avalon.\inductor_1.normal\(chips)',
+ P_PATH='@avalon.schematic1(sch_1):page1_ins278074@avalon.\inductor_1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ L3 'INDUCTOR_1_IND_0603_BLM18HE102S':;
+
+SECTION_NUMBER 1
+ '@AVALON.SCHEMATIC1(SCH_1):INS285247@AVALON.INDUCTOR_1.NORMAL(CHIPS)':
+ C_PATH='@avalon.schematic1(sch_1):ins285247@avalon.\inductor_1.normal\(chips)',
+ P_PATH='@avalon.schematic1(sch_1):page1_ins285247@avalon.\inductor_1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ L4 'INDUCTOR_1_IND_0603_BLM18HE102S':;
+
+SECTION_NUMBER 1
+ '@AVALON.SCHEMATIC1(SCH_1):INS285460@AVALON.INDUCTOR_1.NORMAL(CHIPS)':
+ C_PATH='@avalon.schematic1(sch_1):ins285460@avalon.\inductor_1.normal\(chips)',
+ P_PATH='@avalon.schematic1(sch_1):page1_ins285460@avalon.\inductor_1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ L5 'INDUCTOR_1_IND_0603_BLM18HE102S':;
+
+SECTION_NUMBER 1
+ '@AVALON.SCHEMATIC1(SCH_1):INS295034@AVALON.INDUCTOR_1.NORMAL(CHIPS)':
+ C_PATH='@avalon.schematic1(sch_1):ins295034@avalon.\inductor_1.normal\(chips)',
+ P_PATH='@avalon.schematic1(sch_1):page1_ins295034@avalon.\inductor_1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ L6 'INDUCTOR_1_IND_0603_BLM18HE102S':;
+
+SECTION_NUMBER 1
+ '@AVALON.SCHEMATIC1(SCH_1):INS295066@AVALON.INDUCTOR_1.NORMAL(CHIPS)':
+ C_PATH='@avalon.schematic1(sch_1):ins295066@avalon.\inductor_1.normal\(chips)',
+ P_PATH='@avalon.schematic1(sch_1):page1_ins295066@avalon.\inductor_1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ L7 'INDUCTOR_1_IND_0603_BLM18HE102S':;
+
+SECTION_NUMBER 1
+ '@AVALON.SCHEMATIC1(SCH_1):INS295098@AVALON.INDUCTOR_1.NORMAL(CHIPS)':
+ C_PATH='@avalon.schematic1(sch_1):ins295098@avalon.\inductor_1.normal\(chips)',
+ P_PATH='@avalon.schematic1(sch_1):page1_ins295098@avalon.\inductor_1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ L8 'INDUCTOR_1_IND_0603_BLM18HE102S':;
+
+SECTION_NUMBER 1
+ '@AVALON.SCHEMATIC1(SCH_1):INS295130@AVALON.INDUCTOR_1.NORMAL(CHIPS)':
+ C_PATH='@avalon.schematic1(sch_1):ins295130@avalon.\inductor_1.normal\(chips)',
+ P_PATH='@avalon.schematic1(sch_1):page1_ins295130@avalon.\inductor_1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ L9 'INDUCTOR_1_IND_0603_BLM18HE102S':;
+
+SECTION_NUMBER 1
+ '@AVALON.SCHEMATIC1(SCH_1):INS295162@AVALON.INDUCTOR_1.NORMAL(CHIPS)':
+ C_PATH='@avalon.schematic1(sch_1):ins295162@avalon.\inductor_1.normal\(chips)',
+ P_PATH='@avalon.schematic1(sch_1):page1_ins295162@avalon.\inductor_1.normal\(chips)',
  PRIM_FILE='.\pstchip.dat',
  SECTION='';
 
