@@ -12,7 +12,7 @@ Firmware and driver based on Klondike Project
   This is an open source effort to design and build a Bitcoin mining board based on the second generation Avalon ASIC. The final goal is to have a small board that holds 10 ASIC chips. This board can be controlled via USB communication. An example host would be a PC, Raspberry Pi or TP-Link WR703N router. The host will run cgminer with a custom driver based on the Avalon one and control the board via USB.
     
   
-  Each board has a barrel jack power connector. A 10 chip board should be capable of 16000 MH/s and consume about 30W of power. Alternatively, the switching power supply onboard can be turned to a lower voltage, trading hashrate for power efficiency. The supply is variable from 0.700V to 1.708V. Each board can be easily powered by a low cost power adapter.
+  Each board has a barrel jack power connector. A 10 chip board should be capable of 15000 MH/s and consume about 30W power. Alternatively, the switching power supply onboard can be turned to a lower voltage, trading hashrate for power efficiency. The supply is variable from 0.700V to 1.708V. Each board can be easily powered by a low cost power adapter.
   
   
   Power for this board is supplied via a barrel jack connector (2.5mm ID, 5.5mm OD). For future revisions, Molex PCI-e or 4 pin power connectors may be added. Another limit on the first revision design is the data connection - these boards are USB only for now. In the future, CAN may be added to make it possible to chain multiple miners together.
@@ -43,18 +43,19 @@ Firmware and driver based on Klondike Project
 ## ISSUES
 First prototype has the following issues. Serious issues are bolded, optional improvements are italicized.
 
- - ▢ **Switching FET (U21) has an incorrect footprint**
- - ▢ **D1 and Q1 have suboptimal footprints**
- - ▢ **C1 and C2 have incorrectly sized footprints**
- - ▢ **Ground for some pins on U5 is not connected**
- - ▢ Vcore SMPS overvoltage level should be set to A3255 maximum voltage (set by R3)
- - ▢ Status LEDs and D1 don't have polarity indicators on silkscreen
- - ▢ Some parts are missing silkscreen reference designators
- - ▢ The 3.3v regulator should take 5v input rather than VIN or be switched to a regulator that can handle higher input voltage
- - ▢ *Barrel jack is a through hole part, should be switched to SMT*
- - ▢ *Should have more input capacitors*
- - ▢ *Should switch away from micro USB connectors for improved durability*
- - ▢ *Clock distribution IC U5 can probably be replaced with a buffer without any negative impact*
+ - ▢ [#2](https://github.com/GeorgeHahn/Avalon/issues/2) **Switching FET (U21) has an incorrect footprint**
+ - ▢ [#3](https://github.com/GeorgeHahn/Avalon/issues/3) **D1 and Q1 have suboptimal footprints**
+ - ▢ [#4](https://github.com/GeorgeHahn/Avalon/issues/4) **C1 and C2 have incorrectly sized footprints**
+ - ▢ [#5](https://github.com/GeorgeHahn/Avalon/issues/5) **Ground for some pins on U5 are not connected**
+ - ▢ [#6](https://github.com/GeorgeHahn/Avalon/issues/6) Vcore SMPS overvoltage level should be set to A3255 maximum voltage (set by R3)
+ - ▢ [#7](https://github.com/GeorgeHahn/Avalon/issues/7) Via-in-pads can be eliminated
+ - ▢ [#8](https://github.com/GeorgeHahn/Avalon/issues/8) Status LEDs and D1 don't have polarity indicators on silkscreen
+ - ▢ [#9](https://github.com/GeorgeHahn/Avalon/issues/9) Some parts are missing silkscreen reference designators
+ - ▢ [#10](https://github.com/GeorgeHahn/Avalon/issues/10) The 3.3v regulator should take 5v input rather than VIN or be switched to a regulator that can handle higher input voltage
+ - ▢ [#11](https://github.com/GeorgeHahn/Avalon/issues/11) *Barrel jack is a through hole part, should be switched to SMT*
+ - ▢ [#12](https://github.com/GeorgeHahn/Avalon/issues/12) *Should have more input capacitors*
+ - ▢ [#13](https://github.com/GeorgeHahn/Avalon/issues/13) *Should switch away from micro USB connectors for improved durability*
+ - ▢ [#14](https://github.com/GeorgeHahn/Avalon/issues/14) *Clock distribution IC U5 can probably be replaced with a buffer without any negative impact*
  - ☑ *Location for C2, C25-27, C15 is suboptimal*
 
 
