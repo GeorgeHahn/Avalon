@@ -38,8 +38,10 @@ Firmware and driver based on Klondike Project
   - ▢ Try a prototype with metal substrate board (for better heat dissipation)
   - ▢ Measure current on 3.3v and 5v rails; switch to switching regulators if current is significant
 
+
+## [SCHEMATIC](https://raw.github.com/GeorgeHahn/Avalon/master/hardware/Schematic.pdf) / [LAYOUT](https://github.com/GeorgeHahn/Avalon/tree/master/hardware/allegro/gerbers)
 ![First prototype](https://raw.github.com/GeorgeHahn/Avalon/master/img_top.JPG)
-  
+
 ## [ISSUES](https://github.com/GeorgeHahn/Avalon/issues)
 First prototype has the following issues. Serious issues are bolded, optional improvements are italicized.
 
