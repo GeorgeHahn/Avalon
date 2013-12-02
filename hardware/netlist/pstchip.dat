@@ -1,5 +1,5 @@
 FILE_TYPE=LIBRARY_PARTS;
-{ Using PSTWRITER 16.6.0 d001Dec-01-2013 at 17:59:00}
+{ Using PSTWRITER 16.6.0 d001Dec-02-2013 at 06:45:58}
 primitive 'CAPACITOR_CAP_2917_330UF';
   pin
     '1':
@@ -1032,20 +1032,22 @@ end_primitive;
 primitive 'AP1117IE33G-13_SOT224_AP1117IE3';
   pin
     'VIN':
-      PIN_NUMBER='(1)';
+      PIN_NUMBER='(3)';
       PINUSE='UNSPEC';
     'VOUT':
       PIN_NUMBER='(2)';
       PINUSE='UNSPEC';
     'GND':
-      PIN_NUMBER='(3)';
+      PIN_NUMBER='(1)';
       PINUSE='UNSPEC';
+    'VOUT2':
+      PIN_NUMBER='(4)';
+      PINUSE='POWER';
   end_pin;
   body
     PART_NAME='AP1117IE33G-13';
     JEDEC_TYPE='sot224';
     VALUE='AP1117IE33G-13';
-    NC_PINS='(4)';
   end_body;
 end_primitive;
 primitive 'KA78L05AIDTF_8-SOIC_KA78L05AIDT';

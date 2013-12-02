@@ -53,7 +53,7 @@ First prototype has the following issues. Serious issues are bolded, optional im
  - ☑ [#7](https://github.com/GeorgeHahn/Avalon/issues/7) Via-in-pads can be eliminated
  - ☑ [#8](https://github.com/GeorgeHahn/Avalon/issues/8) Status LEDs and D1 don't have polarity indicators on silkscreen
  - ▢ [#9](https://github.com/GeorgeHahn/Avalon/issues/9) Some parts are missing silkscreen reference designators
- - ▢ [#10](https://github.com/GeorgeHahn/Avalon/issues/10) The 3.3v regulator should take 5v input rather than VIN or be switched to a regulator that can handle higher input voltage
+ - ☑ [#10](https://github.com/GeorgeHahn/Avalon/issues/10) The 3.3v regulator should take 5v input rather than VIN or be switched to a regulator that can handle higher input voltage
  - ▢ [#11](https://github.com/GeorgeHahn/Avalon/issues/11) *Barrel jack is a through hole part, should be switched to SMT*
  - ▢ [#12](https://github.com/GeorgeHahn/Avalon/issues/12) *Should have more input capacitors*
  - ▢ [#13](https://github.com/GeorgeHahn/Avalon/issues/13) *Should switch away from micro USB connectors for improved durability*
