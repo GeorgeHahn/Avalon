@@ -1,5 +1,5 @@
 FILE_TYPE=LIBRARY_PARTS;
-{ Using PSTWRITER 16.6.0 d001Nov-05-2013 at 16:48:05}
+{ Using PSTWRITER 16.6.0 d001Dec-01-2013 at 17:58:15}
 primitive 'CAPACITOR_CAP_2917_330UF';
   pin
     '1':
@@ -237,17 +237,17 @@ primitive 'DRILL - UNPLATED M3_PART_DRILL_';
     VALUE='Drill - Unplated M3';
   end_body;
 end_primitive;
-primitive 'CONN JACK PWR_0_CUI_PJ_037BH_CU';
+primitive 'CONN JACK PWR_1_CUI_PJ_037BH_CU';
   pin
-    '2':
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
     '1':
       PIN_NUMBER='(1)';
       PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
   end_pin;
   body
-    PART_NAME='CONN JACK PWR_0';
+    PART_NAME='CONN JACK PWR_1';
     JEDEC_TYPE='CUI_PJ_037BH';
     VALUE='CUI PJ-037BH';
   end_body;
@@ -592,21 +592,6 @@ primitive 'RESISTOR_RES_0603_470';
     PART_NAME='RESISTOR';
     JEDEC_TYPE='res_0603';
     VALUE='470';
-  end_body;
-end_primitive;
-primitive 'RESISTOR_RES_0603_RESISTOR';
-  pin
-    '1':
-      PIN_NUMBER='(1)';
-      PINUSE='UNSPEC';
-    '2':
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
-  end_pin;
-  body
-    PART_NAME='RESISTOR';
-    JEDEC_TYPE='res_0603';
-    VALUE='RESISTOR';
   end_body;
 end_primitive;
 primitive 'RESISTOR_RES_0603_1.21K';

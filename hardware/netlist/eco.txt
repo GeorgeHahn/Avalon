@@ -3,59 +3,19 @@
 |                                                                    Page   1  |
 |------------------------------------------------------------------------------|
 |  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
-|                                                    Sun Dec 01 12:48:02 2013  |
+|                                                    Sun Dec 01 17:59:01 2013  |
 |------------------------------------------------------------------------------|
 | NET CHANGES                                                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
 |   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-  GND          pins MOVED FROM this net (to net name listed on right)
-                                 J1.1            6040.00 16723.7
-                                                                            VIN
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
   VIN          pins MOVED FROM this net (to net name listed on right)
-                                 J1.2            6040.00 16960.0
-                                                                            GND
-|------------------------------------------------------------------------------|
-|                                 ECO   REPORT                                 |
-|                                                                    Page   2  |
+                                 C38.1           5740.00 16768.5
+                                                                            5V0
+                                 C39.1           5670.00 16768.5
+                                                                            5V0
+                                 U3.1            5580.55 16728.6
+                                                                            5V0
 |------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
-|                                                    Sun Dec 01 12:48:02 2013  |
-|------------------------------------------------------------------------------|
-| COMPONENT DEFINITION added to board drawing                                  |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|    device type                                                               |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- CONN JACK PWR_1_CUI_PJ_037BH_CU
-|------------------------------------------------------------------------------|
-|                                 ECO   REPORT                                 |
-|                                                                    Page   3  |
-|------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
-|                                                    Sun Dec 01 12:48:02 2013  |
-|------------------------------------------------------------------------------|
-| COMPONENTS CHANGED from one device type to another in board drawing          |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|    ref des        | new device type     |   x   |   y   |  old  device type  |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- J1                  CONN JACK PWR_1_CUI_PJ_037BH_CU 6040.00 16960.0 CONN JACK PWR_0_CUI_PJ_037BH_CU
- R4                  RESISTOR_RES_0603_0   7430.00 16130.0 RESISTOR_RES_0603_RESISTOR
- R5                  RESISTOR_RES_0603_5.11K 7330.00 16230.0 RESISTOR_RES_0603_RESISTOR
-|------------------------------------------------------------------------------|
-|                                 ECO   REPORT                                 |
-|                                                                    Page   4  |
-|------------------------------------------------------------------------------|
-|  C:/USERS/GEORGE/DOCUMENTS/GITHUB/AVALON/HARDWARE/allegro/AVALON.brd         |
-|                                                    Sun Dec 01 12:48:02 2013  |
-|------------------------------------------------------------------------------|
-| SLOT PROPERTIES added to board drawing                                       |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|   slot_id    |   x   |   y   |   property   |             value              |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- J1.2           6040.00 16960.0 PRIM_FILE      .\pstchip.dat
- R4.2           7430.00 16130.0 PRIM_FILE      .\pstchip.dat
- R5.2           7330.00 16230.0 PRIM_FILE      .\pstchip.dat
-|------------------------------------------------------------------------------|
-|   total ECO changes reported  9                                              |
+|   total ECO changes reported  3                                              |
 |------------------------------------------------------------------------------|
