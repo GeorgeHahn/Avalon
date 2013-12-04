@@ -4,7 +4,9 @@ Avalon
 Public Domain Bitcoin ASIC Miner Project
 
 Firmware and driver based on Klondike Project
-  
+
+Donations: 14kf3rM66cLMrhR3eXHMjh4B5W5Xko1jJr
+
 ![First prototype](https://raw.github.com/GeorgeHahn/Avalon/master/img_angle.JPG)
 
 ## SUMMARY
