@@ -75,3 +75,5 @@ First prototype has the following issues. Serious issues are bolded, optional im
 ## THANKS
 
 Special thanks to [CUI Inc](http://www.cui.com/) for going the extra mile to get me a sample of their PJ-037BH connector. Thanks to TI for samples of ICs used in the SMPS module. Thanks to AVX for samples of the SMPS output capacitors.
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/GeorgeHahn/avalon/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
